@@ -1,0 +1,61 @@
+{
+    "description": "Resident Evil Spencer Mansion",
+    "mapper": "Aeris004",
+    "porter": "s2ze",
+    "stages": 1,
+    "extraStages": 0,
+    "tier": "2",
+    "tags": [
+        "secrets",
+        "items"
+    ],
+    "items": [
+        {
+            "name": "Flamethrower",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 1,
+                    "cooldown": 0,
+                    "maxuses": 0
+                },
+                {
+                    "description": "",
+                    "type": "counter",
+                    "mode": 6
+                }
+            ]
+        }
+    ],
+    "music": [
+        {
+            "name": "Resident Evil 1 Remake OST - Creatures of the Night",
+            "link": "https://www.youtube.com/watch?v=bt7gOfGqpyU"
+        },
+        {
+            "name": "Resident Evil 1 Remake OST - Tyrant 2",
+            "link": "https://www.youtube.com/watch?v=QQbYxAWYn34"
+        },
+        {
+            "name": "Resident Evil 1 Remake OST - Minimum Safe Distance",
+            "link": "https://www.youtube.com/watch?v=RSZG234mZiQ"
+        },
+        {
+            "name": "Resident Evil 1 Remake OST - Deception",
+            "link": "https://www.youtube.com/watch?v=JlzJSm2sphA"
+        },
+        {
+            "name": "Resident Evil 1 Remake OST - Attic",
+            "link": "https://www.youtube.com/watch?app=desktop&v=o6UCz4pbdg8"
+        },
+        {
+            "name": "Resident Evil 1 Remake OST - Terror 2",
+            "link": "https://www.youtube.com/watch?v=3JJ0nY9bbKE&t=20s"
+        },
+        {
+            "name": "Resident Evil 1 OST - The Tyrant's Room",
+            "link": "https://www.youtube.com/watch?v=6r1vpNPaRK4"
+        }
+    ]
+}
