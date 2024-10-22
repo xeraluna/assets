@@ -1,0 +1,128 @@
+{
+    "description": "Last Man Standing",
+    "mapper": "Hannibal",
+    "porter": "s2ze",
+    "stages": 10,
+    "extraStages": 0,
+    "tier": "4",
+    "tags": [],
+    "items": [],
+    "music": [
+        {
+            "name": "Phantom Power - Overpowered",
+            "link": "https://www.youtube.com/watch?v=nvRDAPE1Eac"
+        },
+        {
+            "name": "XCOM Enemy Unknown OST - Our Last Hope (Finale)",
+            "link": "https://www.youtube.com/watch?v=TBiZu6dGfMo"
+        },
+        {
+            "name": "Metal Gear Solid: The Twin Snakes OST - Ambush",
+            "link": "https://www.youtube.com/watch?v=qCXEL_ljLiI"
+        },
+        {
+            "name": "Halo 3 OST - Warthog Run",
+            "link": "https://www.youtube.com/watch?v=t-T6lEYJHm8"
+        },
+        {
+            "name": "Crysis Warhead OST - Train Battle Theme",
+            "link": "https://www.youtube.com/watch?v=z51solWn8Z4"
+        },
+        {
+            "name": "Damjan Mravunac - Boss Fight Strings (Serious Sam 3 OST)",
+            "link": "https://www.youtube.com/watch?v=UPbJhuAqDzk"
+        },
+        {
+            "name": "Really Slow Motion - Reborn From Ashes",
+            "link": "https://www.youtube.com/watch?v=HxJCncfuOhU"
+        },
+        {
+            "name": "Cris Velasco - Escape the Tower (ZombiU OST)",
+            "link": "https://www.youtube.com/watch?v=3IzCMtzipM4"
+        },
+        {
+            "name": "Crysis Warhead OST - Airfield 1",
+            "link": "https://www.youtube.com/watch?v=Rijwe_NFtas"
+        },
+        {
+            "name": "Call of Duty 2: Modern Warfare 2 OST - Boat Ride",
+            "link": "https://www.youtube.com/watch?v=5ns-MAji3yY"
+        },
+        {
+            "name": "SawanoHiroyuki[nZk] - 進撃st-hrn-egt20130629巨人",
+            "link": "https://www.youtube.com/watch?v=4o9_6ykX4T8"
+        },
+        {
+            "name": "Crysis Warhead OST - Airfield Hero Theme",
+            "link": "https://www.youtube.com/watch?v=1djMWs1XyK8"
+        },
+        {
+            "name": "Daft Punk - TRON Legacy (End Titles)",
+            "link": "https://www.youtube.com/watch?v=G6tuvKE6_lA"
+        },
+        {
+            "name": "Jack Wall - Suicide Mission (Mass Effect 2 OST)",
+            "link": "https://www.youtube.com/watch?v=VTsD2FjmLsw&rco=1"
+        },
+        {
+            "name": "The Bloody Beetroots - Rocksteady",
+            "link": "https://www.youtube.com/watch?v=uepBi6p904o"
+        },
+        {
+            "name": "The Prodigy - Omen",
+            "link": "https://www.youtube.com/watch?v=ySfbujeCSvI"
+        },
+        {
+            "name": "The Prodigy - Invaders Must Die",
+            "link": "https://www.youtube.com/watch?v=1T-sGC37XHE"
+        },
+        {
+            "name": "Pendulum - The Vulture",
+            "link": "https://www.youtube.com/watch?v=-NfTuf5wIfw"
+        },
+        {
+            "name": "Pendulum - Self vs Self",
+            "link": "https://www.youtube.com/watch?v=ubBT_AQxZ4c"
+        },
+        {
+            "name": "Pendulum - Immunize (ft. Liam Howlett)",
+            "link": "https://www.youtube.com/watch?v=daHsEZXERr8"
+        },
+        {
+            "name": "Linkin Park - The Catalyst (Pendulum Remix)",
+            "link": "https://www.youtube.com/watch?v=ACEwdNxdKZw"
+        },
+        {
+            "name": "The Qemists - Stompbox",
+            "link": "https://www.youtube.com/watch?v=ukXhVcJCrXA"
+        },
+        {
+            "name": "Pendulum - Crush",
+            "link": "https://www.youtube.com/watch?v=4anUYfgxyf4"
+        },
+        {
+            "name": "Pendulum - Encoder",
+            "link": "https://www.youtube.com/watch?v=dbQFh0IeZdg"
+        },
+        {
+            "name": "Pendulum - The Other Side",
+            "link": "https://www.youtube.com/watch?v=z0hwFJ1rbbU"
+        },
+        {
+            "name": "Madeon - Finale (Netsky Remix)",
+            "link": "https://www.youtube.com/watch?v=TIv-qSL2NKA"
+        },
+        {
+            "name": "Pendulum - Witchcraft x Watercolour (Mashup)",
+            "link": "https://www.youtube.com/watch?v=H6HzBxlAfxU"
+        },
+        {
+            "name": "Pendulum - The Tempest (Live at Brixton Academy)",
+            "link": "https://www.youtube.com/watch?v=_p-jQho-Mr0"
+        },
+        {
+            "name": "Imagine Dragons - On Top of the World",
+            "link": "https://www.youtube.com/watch?v=w5tWYmIOWGk"
+        }
+    ]
+}
