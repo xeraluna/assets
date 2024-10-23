@@ -1,7 +1,6 @@
 {
     "description": "Last Man Standing",
     "mapper": "Hannibal",
-    "porter": "s2ze",
     "stages": 10,
     "extraStages": 0,
     "tier": "4",

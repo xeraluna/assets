@@ -1,7 +1,6 @@
 {
     "description": "Journey",
     "mapper": "Soft Serve",
-    "porter": "s2ze",
     "stages": 1,
     "extraStages": 0,
     "tier": "3",

@@ -1,7 +1,6 @@
 {
     "description": "Star Wars Deathstar",
     "mapper": "FreeZe",
-    "porter": "s2ze",
     "stages": 1,
     "extraStages": 0,
     "tier": "1",
