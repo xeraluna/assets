@@ -90,10 +90,10 @@
         },
         {
             "name": "Zombie Reverse",
-            "description": "",
+            "description": "Alters and corrupts human items. Upon triggering, streams of hearts will appear on the sides of every player's screen. Using human items within the period will deflect item's effects to humans. (Note: only works for gravity and shield in CS2)",
             "usage": [
                 {
-                    "description": "Alters and corrupts human items. Upon triggering, streams of hearts will appear on the sides of every player's screen. Using human items within the period will deflect item's effects to humans. (Note: only works for gravity and shield in CS2)",
+                    "description": "",
                     "type": "button",
                     "mode": 2,
                     "cooldown": 80,
