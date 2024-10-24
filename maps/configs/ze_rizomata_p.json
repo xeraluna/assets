@@ -10,7 +10,7 @@
     ],
     "items": [
         {
-            "name": "Heal 1",
+            "name": "Heal (2)",
             "description": "",
             "usage": [
                 {
@@ -21,7 +21,7 @@
                     "maxuses": 0
                 },
                 {
-                    "description": "",
+                    "description": "Mouse2",
                     "type": "game_ui",
                     "mode": 2,
                     "cooldown": 30,
@@ -30,27 +30,7 @@
             ]
         },
         {
-            "name": "Heal 2",
-            "description": "",
-            "usage": [
-                {
-                    "description": "",
-                    "type": "button",
-                    "mode": 2,
-                    "cooldown": 55,
-                    "maxuses": 0
-                },
-                {
-                    "description": "",
-                    "type": "game_ui",
-                    "mode": 2,
-                    "cooldown": 30,
-                    "maxuses": 0
-                }
-            ]
-        },
-        {
-            "name": "Earth 1",
+            "name": "Earth (2)",
             "description": "",
             "usage": [
                 {
@@ -61,7 +41,7 @@
                     "maxuses": 0
                 },
                 {
-                    "description": "",
+                    "description": "Mouse2",
                     "type": "game_ui",
                     "mode": 2,
                     "cooldown": 10,
@@ -70,7 +50,7 @@
             ]
         },
         {
-            "name": "Earth 2",
+            "name": "Water (2)",
             "description": "",
             "usage": [
                 {
@@ -81,27 +61,7 @@
                     "maxuses": 0
                 },
                 {
-                    "description": "",
-                    "type": "game_ui",
-                    "mode": 2,
-                    "cooldown": 10,
-                    "maxuses": 0
-                }
-            ]
-        },
-        {
-            "name": "Water 1",
-            "description": "",
-            "usage": [
-                {
-                    "description": "",
-                    "type": "button",
-                    "mode": 2,
-                    "cooldown": 50,
-                    "maxuses": 0
-                },
-                {
-                    "description": "",
+                    "description": "Mouse2",
                     "type": "game_ui",
                     "mode": 2,
                     "cooldown": 40,
@@ -110,7 +70,7 @@
             ]
         },
         {
-            "name": "Water 2",
+            "name": "Wind (2)",
             "description": "",
             "usage": [
                 {
@@ -121,47 +81,7 @@
                     "maxuses": 0
                 },
                 {
-                    "description": "",
-                    "type": "game_ui",
-                    "mode": 2,
-                    "cooldown": 40,
-                    "maxuses": 0
-                }
-            ]
-        },
-        {
-            "name": "Wind 1",
-            "description": "",
-            "usage": [
-                {
-                    "description": "",
-                    "type": "button",
-                    "mode": 2,
-                    "cooldown": 50,
-                    "maxuses": 0
-                },
-                {
-                    "description": "",
-                    "type": "game_ui",
-                    "mode": 2,
-                    "cooldown": 20,
-                    "maxuses": 0
-                }
-            ]
-        },
-        {
-            "name": "Wind 2",
-            "description": "",
-            "usage": [
-                {
-                    "description": "",
-                    "type": "button",
-                    "mode": 2,
-                    "cooldown": 50,
-                    "maxuses": 0
-                },
-                {
-                    "description": "",
+                    "description": "Mouse2",
                     "type": "game_ui",
                     "mode": 2,
                     "cooldown": 20,
@@ -174,7 +94,7 @@
             "description": "",
             "usage": [
                 {
-                    "description": "",
+                    "description": "Mouse2",
                     "type": "game_ui",
                     "mode": 2,
                     "cooldown": 10,
@@ -187,7 +107,7 @@
             "description": "",
             "usage": [
                 {
-                    "description": "",
+                    "description": "Mouse2",
                     "type": "game_ui",
                     "mode": 2,
                     "cooldown": 30,
@@ -200,7 +120,7 @@
             "description": "",
             "usage": [
                 {
-                    "description": "",
+                    "description": "Mouse2",
                     "type": "game_ui",
                     "mode": 2,
                     "cooldown": 60,
