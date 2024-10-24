@@ -1,0 +1,173 @@
+{
+    "description": "Arcana Heart",
+    "mapper": "Tenshi/Ayano",
+    "stages": 4,
+    "extraStages": 3,
+    "tier": "4",
+    "tags": [
+        "balls",
+        "items",
+        "secrets"
+    ],
+    "items": [
+        {
+            "name": "Gravity",
+            "description": "Summon a static yellow could, slows zombies within its radius. (Note: Subjected to ZM Reverse's effect)",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 60,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Cube",
+            "description": "Summon an opaque wall-like cube that is climbable for zombies.",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 60,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Heal",
+            "description": "Summon a static floating heart, heals humans up to 150 HP at a slow rate within its radius. (Note: CS2 version do not require humans to shoot the heart to regain HP)",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 80,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Water",
+            "description": "Summons a minor tsunami that drags humans towards the zombies.",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 70,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Heal",
+            "description": "Creates a healing effect to zombies around the user.",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 50,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Push",
+            "description": "Shoots out beams of hearts that pushes zombies, the direction of the push can be at any given angle based on the user's POV",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 50,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Reverse",
+            "description": "",
+            "usage": [
+                {
+                    "description": "Alters and corrupts human items. Upon triggering, streams of hearts will appear on the sides of every player's screen. Using human items within the period will deflect item's effects to humans. (Note: only works for gravity and shield in CS2)",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 80,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Shield",
+            "description": "Creates a wide hemisphere around the user, blocks off zombies from entering the radius of the hemisphere for a period of time. (Note: Subjected to ZM Reverse's effect)",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 80,
+                    "maxuses": 0
+                }
+            ]
+        }
+    ],
+    "music": [
+        {
+            "name": "Taishi - Chronicle (Original Mix)",
+            "link": "https://www.youtube.com/watch?v=cIVwN7HK0Zo&ab_channel=UpliftingNova"
+        },
+        {
+            "name": "void (Mournfinale) - Artifiction #10 Crisscrosser",
+            "link": "https://www.youtube.com/watch?v=Fef9d2QmyuE&ab_channel=AAAnatolia006"
+        },
+        {
+            "name": "Phantasma - Flamme Bleue",
+            "link": "https://www.youtube.com/watch?v=gpz09SLhSgY&ab_channel=Anookmusicchannel"
+        },
+        {
+            "name": "Arcaea - Epilogue",
+            "link": "https://www.youtube.com/watch?v=P0JXTEfZXv0&ab_channel=Arcaea%E8%AD%9C%E9%9D%A2%E9%9F%B3%E6%BA%90%E6%89%80"
+        },
+        {
+            "name": "Fractal Dreamers - Paradigm Shift",
+            "link": "https://www.youtube.com/watch?v=DyRuEj5aetg&ab_channel=FractalDreamers"
+        },
+        {
+            "name": "FFXIV OST - 万魔殿パンデモニウム煉獄編4《Embers》",
+            "link": "https://www.youtube.com/watch?v=ozsz8Lyjy_g&ab_channel=%E3%82%A8%E3%82%B9%E3%81%AE%E3%81%BE%E3%81%A3%E3%81%9F%E3%82%8A%E5%AE%9F%E6%B3%81"
+        },
+        {
+            "name": "void / 星熊南巫 - Testify (ft. 星熊南巫)",
+            "link": "https://www.youtube.com/watch?v=xkUN_9HFNPg&ab_channel=%E6%98%9F%E7%86%8A%E5%8D%97%E5%B7%AB%28hoshikumaminami%29%2CD%CC%B4E%CC%B7A%CC%B7T%CC%B4H%CC%B4N%CC%B7Y%CC%B5A%CC%B6N%CC%B4N%CC%B7"
+        },
+        {
+            "name": "Yoohsic Roomz - Astrum",
+            "link": "https://www.youtube.com/watch?v=iMseUYzmQK0&ab_channel=Yooh-Topic"
+        },
+        {
+            "name": "くるぶっこちゃん - Orion (Intro)",
+            "link": "https://www.bilibili.com/video/BV1bA411X7oN/"
+        },
+        {
+            "name": "NeLiME - Leviathan",
+            "link": "https://www.youtube.com/watch?v=k_XVi7gE_Gs&ab_channel=NeLiME"
+        },
+        {
+            "name": "Cre-sc3NT - The Girl",
+            "link": "https://www.youtube.com/watch?v=Sz5gpigUBzk"
+        },
+        {
+            "name": "Street - Sakura Fubuki",
+            "link": "https://www.youtube.com/watch?v=0keUnlH_0IY&ab_channel=Street"
+        },
+        {
+            "name": "Genesis (feat. Lily) - Morrigan",
+            "link": "https://www.youtube.com/watch?v=sw1WtD6NGmQ"
+        }
+
+    ]
+}
