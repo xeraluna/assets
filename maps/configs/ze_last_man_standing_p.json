@@ -4,7 +4,9 @@
     "stages": 10,
     "extraStages": 0,
     "tier": "4",
-    "tags": [],
+    "tags": [
+        "items"
+    ],
     "items": [],
     "music": [
         {

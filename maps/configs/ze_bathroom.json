@@ -10,6 +10,7 @@
     "items": [
         {
             "name": "Sponge Builder",
+            "description": "",
             "usage": [
                 {
                     "description": "",
@@ -22,6 +23,7 @@
         },
         {
             "name": "Mouse Trap",
+            "description": "",
             "usage": [
                 {
                     "description": "",

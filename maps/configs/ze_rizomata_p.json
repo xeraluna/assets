@@ -11,6 +11,7 @@
     "items": [
         {
             "name": "Heal 1",
+            "description": "",
             "usage": [
                 {
                     "description": "",
@@ -30,6 +31,7 @@
         },
         {
             "name": "Heal 2",
+            "description": "",
             "usage": [
                 {
                     "description": "",
@@ -49,6 +51,7 @@
         },
         {
             "name": "Earth 1",
+            "description": "",
             "usage": [
                 {
                     "description": "",
@@ -68,6 +71,7 @@
         },
         {
             "name": "Earth 2",
+            "description": "",
             "usage": [
                 {
                     "description": "",
@@ -87,6 +91,7 @@
         },
         {
             "name": "Water 1",
+            "description": "",
             "usage": [
                 {
                     "description": "",
@@ -106,6 +111,7 @@
         },
         {
             "name": "Water 2",
+            "description": "",
             "usage": [
                 {
                     "description": "",
@@ -125,6 +131,7 @@
         },
         {
             "name": "Wind 1",
+            "description": "",
             "usage": [
                 {
                     "description": "",
@@ -144,6 +151,7 @@
         },
         {
             "name": "Wind 2",
+            "description": "",
             "usage": [
                 {
                     "description": "",
@@ -163,6 +171,7 @@
         },
         {
             "name": "Zombie Death",
+            "description": "",
             "usage": [
                 {
                     "description": "",
@@ -175,6 +184,7 @@
         },
         {
             "name": "Zombie Haste",
+            "description": "",
             "usage": [
                 {
                     "description": "",
@@ -187,6 +197,7 @@
         },
         {
             "name": "Zombie Curse",
+            "description": "",
             "usage": [
                 {
                     "description": "",

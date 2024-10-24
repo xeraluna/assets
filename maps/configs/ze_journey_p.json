@@ -11,6 +11,7 @@
     "items": [
         {
             "name": "Abyssal Orb",
+            "description": "",
             "usage": [
                 {
                     "description": "",
@@ -23,6 +24,7 @@
         },
         {
             "name": "Lightning Orb",
+            "description": "",
             "usage": [
                 {
                     "description": "",
@@ -35,6 +37,7 @@
         },
         {
             "name": "Gust Orb",
+            "description": "",
             "usage": [
                 {
                     "description": "",
@@ -47,6 +50,7 @@
         },
         {
             "name": "Glacial Orb",
+            "description": "",
             "usage": [
                 {
                     "description": "",
@@ -59,6 +63,7 @@
         },
         {
             "name": "Divine Orb",
+            "description": "",
             "usage": [
                 {
                     "description": "",
@@ -71,6 +76,7 @@
         },
         {
             "name": "Burning Orb",
+            "description": "",
             "usage": [
                 {
                     "description": "",
@@ -83,6 +89,7 @@
         },
         {
             "name": "Celestial Embrace",
+            "description": "",
             "usage": []
         }
     ],

@@ -11,6 +11,7 @@
     "items": [
         {
             "name": "Blue Lightsaber",
+            "description": "",
             "usage": [
                 {
                     "description": "",
@@ -23,6 +24,7 @@
         },
         {
             "name": "Red Lightsaber",
+            "description": "",
             "usage": [
                 {
                     "description": "",
