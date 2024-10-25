@@ -7,7 +7,310 @@
     "tags": [
         "items"
     ],
-    "items": [],
+    "items": [
+        {
+            "name": "Prototype Flamethrower",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 1,
+                    "cooldown": 0,
+                    "maxuses": 0
+                },
+                {
+                    "description": "",
+                    "type": "counter",
+                    "mode": 6
+                }
+            ]
+        },
+        {
+            "name": "Fuel Can",
+            "description": "",
+            "usage": []
+        },
+        {
+            "name": "Zombie Shockwave",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 7,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Antlion",
+            "description": "",
+            "usage": []
+        },
+        {
+            "name": "Immunizer Backpack",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 4,
+                    "cooldown": 20,
+                    "maxuses": 1
+                }
+            ]
+        },
+        {
+            "name": "Unlimited Ammo",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 3,
+                    "cooldown": 0,
+                    "maxuses": 1
+                }
+            ]
+        },
+        {
+            "name": "Hyperboost",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 4,
+                    "cooldown": 48,
+                    "maxuses": 1
+                }
+            ]
+        },
+        {
+            "name": "Immunizer Weapon",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 1,
+                    "cooldown": 0,
+                    "maxuses": 0
+                },
+                {
+                    "description": "",
+                    "type": "counter",
+                    "mode": 6
+                }
+            ]
+        },
+        {
+            "name": "Zero Gravity",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 30,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Mutator Backpack",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 10,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Portal Gun",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 1,
+                    "cooldown": 0,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Thunder Gun",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 3,
+                    "cooldown": 0,
+                    "maxuses": 4
+                }
+            ]
+        },
+        {
+            "name": "Juggernaut",
+            "description": "",
+            "usage": []
+        },
+        {
+            "name": "Soldier NPC",
+            "description": "",
+            "usage": []
+        },
+        {
+            "name": "Zombie Jumper",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 5,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Vortigaunt",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 5,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Freezer",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 25,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Mines",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 3,
+                    "cooldown": 0,
+                    "maxuses": 16
+                }
+            ]
+        },
+        {
+            "name": "Zombie Summoner",
+            "description": "",
+            "usage": []
+        },
+        {
+            "name": "Zombie Predator",
+            "description": "",
+            "usage": []
+        },
+        {
+            "name": "M60 Minigun",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 1,
+                    "cooldown": 0,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Gauss Beam Rifle",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 45,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Tank",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "game_ui",
+                    "mode": 1,
+                    "cooldown": 0,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Turret",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 1,
+                    "cooldown": 0,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Alma",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 15,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Alex Mercer",
+            "description": "",
+            "usage": []
+        },
+        {
+            "name": "Mech",
+            "description": "",
+            "usage": []
+        },
+        {
+            "name": "Train Driver",
+            "description": "",
+            "usage": []
+        }
+    ],
     "music": [
         {
             "name": "Phantom Power - Overpowered",
