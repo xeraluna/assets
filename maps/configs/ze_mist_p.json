@@ -1,0 +1,110 @@
+{
+    "description": "Mist",
+    "mapper": "Unknown",
+    "stages": 1,
+    "extraStages": 0,
+    "tier": "3",
+    "tags": [
+        "balls",
+        "items",
+        "laser"
+    ],
+    "items": [
+        {
+            "name": "Cleansing Aura",
+            "description": "Heal",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 60,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Static Field",
+            "description": "Summons a puddle to slow zm",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 10,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Toxic Haze",
+            "description": "Shotgun spam item",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 1,
+                    "cooldown": 0,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Spirit Burst",
+            "description": "Ball spam",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 10,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Acid Flame",
+            "description": "Flamethrower",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 10,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Ice Nova",
+            "description": "Freeze zms around the user",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 10,
+                    "maxuses": 0
+                }
+            ]
+        }
+    ],
+    "music": [
+        {
+            "name": "Popol Vuh - Aguirre I",
+            "link": "https://youtu.be/mPtcG8WDuLc"
+        },
+        {
+            "name": "Keiichi Okabe - Birth of a Wish",
+            "link": "https://youtu.be/ci3gO75B3Yc"
+        },
+        {
+            "name": "Keiichi Okabe - Grandma (Destruction)",
+            "link": "https://youtu.be/tDHRpWNq2-s"
+        },
+        {
+            "name": "Jocelyn Pook - Backwards Priests",
+            "link": "https://youtu.be/8XX6qHRQV7I"
+        }
+    ]
+}

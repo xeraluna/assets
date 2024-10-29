@@ -1,0 +1,178 @@
+{
+    "description": "Santa",
+    "mapper": "Luffaren",
+    "stages": 4,
+    "extraStages": 4,
+    "tier": "5",
+    "tags": [
+        "items",
+        "secrets",
+        "unhinged"
+    ],
+    "items": [
+        {
+            "name": "Healing Shitbox",
+            "description": "One-use heal",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 3,
+                    "cooldown": 0,
+                    "maxuses": 1
+                }
+            ]
+        },
+        {
+            "name": "Mini Cannon",
+            "description": "Spam E at an interval to use, slows zms and do damage to npcs and bosses (Note: highly recommend to use marco)",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 1,
+                    "cooldown": 0,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Beam Cannon",
+            "description": "Spam E to use, slows zm and do damage to npc and bosses",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 1,
+                    "cooldown": 0,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Rocket Cannon",
+            "description": "Shoots a rocket that slows and possibly kills zms, deals tons of damage to npcs and bosses as well",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 7,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Herder",
+            "description": "An item that pushes zm , only found in socrates boss room",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 5,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Speeder",
+            "description": "Increase the user's speed for a brief moment, but would awaken sleeping npc as a consequence",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 7,
+                    "maxuses": 0
+                }
+            ]
+        }
+    ],
+    "music": [
+        {
+            "name": "Lion King - Circle Of Life",
+            "link": "https://youtu.be/GibiNy4d4gc"
+        },
+        {
+            "name": "Lion King - Stampede",
+            "link": "https://youtu.be/x__EVvWUT3A"
+        },
+        {
+            "name": "Jethro Tull - Forest Dance I & II",
+            "link": "https://youtu.be/baHjrcJWajI"
+        },
+        {
+            "name": "Donkey Kong Country - Fear Factory",
+            "link": "https://youtu.be/GNHPvgH0mqs"
+        },
+        {
+            "name": "JeffFML - Drippin' That Chocolate Sauce",
+            "link": "https://youtu.be/7CfffAtEQ-U"
+        },
+        {
+            "name": "JGS Music - Fear Factory Remake",
+            "link": "https://youtu.be/mN5lwFhzgKM"
+        },
+        {
+            "name": "Wham! - Last Christmas",
+            "link": "https://youtu.be/E8gmARGvPlI"
+        },
+        {
+            "name": "Daimoku - Nam Myoho Renge Kyo",
+            "link": "https://youtu.be/KfRcUpoPl7w"
+        },
+        {
+            "name": "Holy Music",
+            "link": ""
+        },
+        {
+            "name": "Luffaren - ze_santassination Mixtape",
+            "link": "https://youtu.be/gePCW9Cs-4Y"
+        },
+        {
+            "name": "Ji Pyeong Kwon - Sad Romance",
+            "link": "https://youtu.be/ja7JAJNe8a0"
+        },
+        {
+            "name": "Pat Boone - Jingle Bells, West One Music - Race To The Line",
+            "link": "https://youtu.be/KIQslS-O4QU"
+        },
+        {
+            "name": "Peter Crowley - A Mysterious Christmas",
+            "link": "https://youtu.be/2k9ST6G1_Zg"
+        },
+        {
+            "name": "Position Music - Carol of the Bells",
+            "link": "https://youtu.be/bU4XulP0cns"
+        },
+        {
+            "name": "Position Music - What Child is This",
+            "link": "https://youtu.be/BCqKRmGB3_I"
+        },
+        {
+            "name": "Kenji Kawai - Seven Swords' Victory",
+            "link": "https://youtu.be/OvSNnTqZucc"
+        },
+        {
+            "name": "Position Music - O Tannenbaum",
+            "link": "https://youtu.be/bGuwJnSsMYU"
+        },
+        {
+            "name": "Position Music - Deck the Halls",
+            "link": "https://youtu.be/zvHv1mYW9Kg"
+        },
+        {
+            "name": "Position Music - We Wish You Marry Christmas",
+            "link": "https://youtu.be/3551uYvDvlk"
+        },
+        {
+            "name": "VinVulpis - Giygas HD Theme, Silent Hill 2 - Ashes and Ghost, Thunderino - Mountain Spirits, Silent Hill 2 - Black Fairy",
+            "link": ""
+        },
+        {
+            "name": "Dark Souls - Four Kings",
+            "link": "https://youtu.be/h3-5t7Pd_Us"
+        }
+    ]
+}
