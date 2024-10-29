@@ -10,7 +10,7 @@
     ],
     "items": [
         {
-            "name": "Heal (2)",
+            "name": "Heal",
             "description": "",
             "usage": [
                 {
@@ -30,7 +30,7 @@
             ]
         },
         {
-            "name": "Earth (2)",
+            "name": "Earth",
             "description": "",
             "usage": [
                 {
@@ -50,7 +50,7 @@
             ]
         },
         {
-            "name": "Water (2)",
+            "name": "Water",
             "description": "",
             "usage": [
                 {
@@ -70,7 +70,7 @@
             ]
         },
         {
-            "name": "Wind (2)",
+            "name": "Wind",
             "description": "",
             "usage": [
                 {
