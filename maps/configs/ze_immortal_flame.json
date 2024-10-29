@@ -1,0 +1,26 @@
+{
+    "description": "Immortal Flame",
+    "mapper": "Chartapilus",
+    "stages": 1,
+    "extraStages": 0,
+    "tier": "3",
+    "tags": [
+        "laser",
+        "grey"
+    ],
+    "items": [],
+    "music": [
+        {
+            "name": "【FELT】- 06. L.U.S.T",
+            "link": "https://youtu.be/gTvjfYQUCI4?si=rjIWplWL5U_t6jKo"
+        },
+        {
+            "name": "ARForst - Antique",
+            "link": "https://youtu.be/Smgv0PyX_j8?si=nKCTqSdPs2nyOLu8"
+        },
+        {
+            "name": "Panda Eyes & Teminite - Immortal Flame",
+            "link": "https://youtu.be/GByGJqmYBuo?si=1Qke9igAKDWyoZ9w"
+        }
+    ]
+}
