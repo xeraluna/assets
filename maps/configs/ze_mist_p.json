@@ -11,7 +11,7 @@
     "items": [
         {
             "name": "Cleansing Aura",
-            "description": "Heal",
+            "description": "Spawns a healing area.",
             "usage": [
                 {
                     "description": "",
@@ -24,7 +24,7 @@
         },
         {
             "name": "Static Field",
-            "description": "Summons a puddle to slow zm",
+            "description": "Summons a puddle to slow ZMs.",
             "usage": [
                 {
                     "description": "",
@@ -37,7 +37,7 @@
         },
         {
             "name": "Toxic Haze",
-            "description": "Shotgun spam item",
+            "description": "Looks cool.",
             "usage": [
                 {
                     "description": "",
@@ -50,7 +50,7 @@
         },
         {
             "name": "Spirit Burst",
-            "description": "Ball spam",
+            "description": "Spawns a push ball.",
             "usage": [
                 {
                     "description": "",
@@ -76,7 +76,7 @@
         },
         {
             "name": "Ice Nova",
-            "description": "Freeze zms around the user",
+            "description": "Freeze ZMs around the user.",
             "usage": [
                 {
                     "description": "",

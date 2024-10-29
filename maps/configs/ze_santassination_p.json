@@ -25,7 +25,7 @@
         },
         {
             "name": "Mini Cannon",
-            "description": "Spam E at an interval to use, slows zms and do damage to npcs and bosses (Note: highly recommend to use marco)",
+            "description": "Spam E at an interval to use, slows zms and do damage to npcs and bosses.",
             "usage": [
                 {
                     "description": "",
@@ -38,7 +38,7 @@
         },
         {
             "name": "Beam Cannon",
-            "description": "Spam E to use, slows zm and do damage to npc and bosses",
+            "description": "Spam E to use, slows ZM and do damage to npc and bosses.",
             "usage": [
                 {
                     "description": "",
@@ -51,7 +51,7 @@
         },
         {
             "name": "Rocket Cannon",
-            "description": "Shoots a rocket that slows and possibly kills zms, deals tons of damage to npcs and bosses as well",
+            "description": "Shoots a rocket that slows and damages ZMs, deals damage to npcs and bosses as well.",
             "usage": [
                 {
                     "description": "",
@@ -64,7 +64,7 @@
         },
         {
             "name": "Herder",
-            "description": "An item that pushes zm , only found in socrates boss room",
+            "description": "Creates a beam that pushes ZMs, only found in Socrates boss room.",
             "usage": [
                 {
                     "description": "",
@@ -77,7 +77,7 @@
         },
         {
             "name": "Speeder",
-            "description": "Increase the user's speed for a brief moment, but would awaken sleeping npc as a consequence",
+            "description": "Increase the user's speed for a brief moment.",
             "usage": [
                 {
                     "description": "",
