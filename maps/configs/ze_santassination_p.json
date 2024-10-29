@@ -1,8 +1,8 @@
 {
     "description": "Santa",
     "mapper": "Luffaren",
-    "stages": 4,
-    "extraStages": 4,
+    "stages": 8,
+    "extraStages": 0,
     "tier": "5",
     "tags": [
         "items",
