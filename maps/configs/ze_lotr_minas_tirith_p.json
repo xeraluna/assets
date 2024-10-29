@@ -52,7 +52,7 @@
         },
         {
             "name": "Gandalf",
-            "description": "",
+            "description": "Light protection: zombies around you will get pushed away and can't get close. You Shall Not Pass: all nearby zombies get pushed very far away.",
             "usage": [
                 {
                     "description": "Light - Mouse2",
@@ -72,10 +72,14 @@
         },
         {
             "name": "White Knight",
-            "description": "",
+            "description": "E: Toggle between regular slash attack and heavy slash attack - regular slash attack, small push and low damage & heavy slash attack, high damage and knockback. Defense: makes you invulnerable for 2 seconds. Nuke: Kills nearby zombies, immobile during charge.",
             "usage": [
                 {
-                    "description": "Invulnerable - Mouse2",
+                    "description": "Sword Mode",
+                    "type": "button"
+                },
+                {
+                    "description": "Defense - Mouse2",
                     "type": "game_ui",
                     "mode": 2,
                     "cooldown": 6,
@@ -147,59 +151,59 @@
     "music": [
         {
             "name": "Pendulum - Encoder",
-            "link": ""
+            "link": "https://www.youtube.com/watch?v=QtKs1m_SQgg"
         },
         {
             "name": "Rome Total War OST - Time to kill",
-            "link": ""
+            "link": "https://www.youtube.com/watch?v=FaHRw0ksiJs"
         },
         {
             "name": "LOTR The Returns of The King OST - Minas Tirith",
-            "link": ""
+            "link": "https://www.youtube.com/watch?v=afY_Srf4xjk"
         },
         {
             "name": "FFXII OST - Esper Battle",
-            "link": ""
+            "link": "https://www.youtube.com/watch?v=Lhqh_SYadWY"
         },
         {
             "name": "Rome Total War OST - Romantic Battle",
-            "link": ""
+            "link": "https://www.youtube.com/watch?v=t6E-JqvB6vU"
         },
         {
             "name": "Globus - Preliator",
-            "link": ""
+            "link": "https://www.youtube.com/watch?v=ebk877L4DeU"
         },
         {
             "name": "FFXI OST - Awakening",
-            "link": ""
+            "link": "https://www.youtube.com/watch?v=Zq87fRPXwLg"
         },
         {
             "name": "Christopher Drake - Finish What The Jester Started",
-            "link": ""
+            "link": "https://www.youtube.com/watch?v=-rprvLs3GfA"
         },
         {
             "name": "Chrono Cross OST - Orphan of Flame",
-            "link": ""
+            "link": "https://www.youtube.com/watch?v=-HGAnQDgEKw"
         },
         {
             "name": "Inception - Dream Within a Dream",
-            "link": ""
+            "link": "https://www.youtube.com/watch?v=kFc0T_D36W8"
         },
         {
             "name": "Shadow of the Colossus OST - The Opened Way",
-            "link": ""
+            "link": "https://www.youtube.com/watch?v=36M-NwEFSOc"
         },
         {
             "name": "LOTR Battle for the Middle Earth - Spreading Hope",
-            "link": ""
+            "link": "https://www.youtube.com/watch?v=jKr-gWKkwuM"
         },
         {
             "name": "LOTR The Returns of The King OST - The Grace of Undomiel",
-            "link": ""
+            "link": "https://www.youtube.com/watch?v=PEDEdrz8Okc"
         },
         {
             "name": "LOTR The Returns of The King OST - The White Tree",
-            "link": ""
+            "link": "https://www.youtube.com/watch?v=kbf94uPFXNA"
         }
     ]
 }
