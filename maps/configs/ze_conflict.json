@@ -1,0 +1,37 @@
+{
+    "description": "Conflict",
+    "mapper": "Rio/Rakka",
+    "stages": 1,
+    "extraStages": 1,
+    "tier": "3",
+    "tags": [
+        "laser"
+    ],
+    "items": [],
+    "music": [
+        {
+            "name": "Deemo 3.1 - siromaru+cranky - Conflict (VILA Remix)",
+            "link": "https://youtu.be/VfS_oufcMb4?si=b6ZrMxbuJ1ft1xIT"
+        },
+        {
+            "name": "Cranky - BLACK GOLD | TAPSONIC BOLD",
+            "link": "https://youtu.be/mb9F01t_V9U?si=3PLOuOSFNWmfXPsp"
+        },
+        {
+            "name": "Cranky - OLD GOLD",
+            "link": "https://youtu.be/fJEC1ELySgg?si=Q3n6ll1cJEzTzoSI"
+        },
+        {
+            "name": "403 - Northen lights",
+            "link": "https://youtu.be/eBLHijpaODM?si=d9nZl-5pACdcFf6I"
+        },
+        {
+            "name": "conflict / siromaru + cranky",
+            "link": "https://youtu.be/e8HRTlkGD4Q?si=JHFJos4RV5__p_jl"
+        },
+        {
+            "name": "NieN - FEEL MA BEAT",
+            "link": "https://youtu.be/ijJ3SlpP8MU?si=MeFabk3yT689KVag"
+        }
+    ]
+}
