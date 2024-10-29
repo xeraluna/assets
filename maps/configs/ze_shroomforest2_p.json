@@ -1,0 +1,239 @@
+{
+    "description": "Shroomforest2",
+    "mapper": "TaskuVaras, Moltard",
+    "stages": 7,
+    "extraStages": 1,
+    "tier": "2",
+    "tags": [
+        "bosses",
+        "laser",
+        "items"
+    ],
+    "items": [
+        {
+            "name": "Zombie Shroom",
+            "description": "Throws a mushroom forward, mushroom will release gases/chemicals that give humans drug effects.",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 75,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Cloud",
+            "description": "Summons a thundercloud that will instant kill unlucky humans.",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 75,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Ammo",
+            "description": "Grants unlimited ammo to humans for a short period.",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 60,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Water",
+            "description": "Summons a minor tsunami which has a small range, push and drag ZMs along the wave.",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 60,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Mines",
+            "description": "Places landmine on the floor. Upon stepped by ZMs, it will explode that damage and slow ZMs.",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 4,
+                    "cooldown": 4,
+                    "maxuses": 6
+                }
+            ]
+        },
+        {
+            "name": "Gravity",
+            "description": "Slows ZMs around the gravity particle.",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 60,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Wind",
+            "description": "A radial vortex like wind that follows the user, push ZMs upon touching the radius of the wind. (May boost ZMs if used carelessly)",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 60,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Ice",
+            "description": "Summons a thin slab of ice, freeze ZMs upon touching.",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 60,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Earth",
+            "description": "Erects a tall grass wall, permanently blocking the way for a brief moment.",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 60,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Heal",
+            "description": "Heal humans, overheals during extreme stages.",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 60,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Fire",
+            "description": "Ignites a puddle of fire, slow and damage ZMs.",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 60,
+                    "maxuses": 0
+                }
+            ]
+        }
+    ],
+    "music": [
+        {
+            "name": "Hans Zimmer - Wheel of Fortune",
+            "link": "https://www.youtube.com/watch?v=XMgMOYKZ96g"
+        },
+        {
+            "name": "Yoko Shimomura - Mechanical Rhythm",
+            "link": "https://www.youtube.com/watch?v=a_YyP_zQQJs"
+        },
+        {
+            "name": "Frank Klepacki - Hell March",
+            "link": "https://www.youtube.com/watch?v=e3YzmjmAGoI"
+        },
+        {
+            "name": "Super Smash Bros. Brawl - Stickerbrush Symphony",
+            "link": "https://www.youtube.com/watch?v=gJkVwt_JJXo"
+        },
+        {
+            "name": "Pantera - Regular People",
+            "link": "https://www.youtube.com/watch?v=81CQqZ5KNt8"
+        },
+        {
+            "name": "Unstoppable - Cost of Courage",
+            "link": "https://www.youtube.com/watch?v=hRjZRjNbtqs"
+        },
+        {
+            "name": "Rammstein - Sonne",
+            "link": "https://www.youtube.com/watch?v=StZcUAPRRac"
+        },
+        {
+            "name": "Lamb of God - Redneck",
+            "link": "https://www.youtube.com/watch?v=oqdZpxkzNvc"
+        },
+        {
+            "name": "Sbeast - Castlevania 2 Bloody Tears Metal Cover",
+            "link": "https://www.youtube.com/watch?v=brQspy5l0p4"
+        },
+        {
+            "name": "Slayer - Raining Blood",
+            "link": "https://www.youtube.com/watch?v=Gy3BOmvLf2w"
+        },
+        {
+            "name": "Howard Shore - The Shadow of the Past",
+            "link": "https://www.youtube.com/watch?v=t032o9ECs0c"
+        },
+        {
+            "name": "Duke Nukem Forever Theme Song",
+            "link": "https://www.youtube.com/watch?v=aimevcEOV9A"
+        },
+        {
+            "name": "Megadeth - Into The Lungs Of Hell",
+            "link": "https://www.youtube.com/watch?v=J87B6icfOtY"
+        },
+        {
+            "name": "Hans Zimmer - Code of Conduct",
+            "link": "https://www.youtube.com/watch?v=AK4cq7JqrkE"
+        },
+        {
+            "name": "TLOZ Twilight Princess - Diababa",
+            "link": "https://www.youtube.com/watch?v=CT_pReZiNd4"
+        },
+        {
+            "name": "Tolkuton - Muumimetallia 1",
+            "link": "https://www.youtube.com/watch?v=-myPWO4B_B8"
+        },
+        {
+            "name": "Megadeth - Dialectic Chaos",
+            "link": "https://www.youtube.com/watch?v=Eq3QYXDyojE"
+        },
+        {
+            "name": "Smash Bros - Master Orders Stage Select",
+            "link": "https://www.youtube.com/watch?v=uezUxgsPAVs"
+        },
+        {
+            "name": "F-Zero X - Car Select",
+            "link": "https://www.youtube.com/watch?v=yhtEJh9su20"
+        },
+        {
+            "name": "Super Mario 64 Soundtrack - Ultimate Bowser Clear",
+            "link": "https://www.youtube.com/watch?v=NUP3tq-oeG4"
+        }
+    ]
+}
