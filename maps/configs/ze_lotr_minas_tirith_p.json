@@ -1,0 +1,205 @@
+{
+    "description": "LOTR Minas Tirith",
+    "mapper": "Hannibal",
+    "stages": 8,
+    "extraStages": 0,
+    "tier": "4",
+    "tags": [
+        "items",
+        "itemlevels"
+    ],
+    "items": [
+        {
+            "name": "Flag",
+            "description": "Gives you 200hp on pick up.",
+            "usage": []
+        },
+        {
+            "name": "Armor",
+            "description": "Immunity from 6 zombie hits. Has a small push effect while unbroken. Upon breaking, gain speed and invulnerability for 2 seconds.",
+            "usage": []
+        },
+        {
+            "name": "Ammo Barrel",
+            "description": "Place the barrel down. Provides infinite ammo around it, spawns grenades in the barrel. 20s duration, 60s cooldown.",
+            "usage": [
+                {
+                    "description": "Mouse2",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 60,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Oil Barrel",
+            "description": "Place a pool of oil below you. Place up to 2 every 60 seconds. Throw a grenade at the oil to ignite it. Slows zombies.",
+            "usage": [
+                {
+                    "description": "Mouse2",
+                    "type": "game_ui",
+                    "mode": 5,
+                    "cooldown": 60,
+                    "maxuses": 2
+                }
+            ]
+        },
+        {
+            "name": "Horse",
+            "description": "Gives you speed and has similar effects to armor.",
+            "usage": []
+        },
+        {
+            "name": "Gandalf",
+            "description": "",
+            "usage": [
+                {
+                    "description": "Light - Mouse2",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 75,
+                    "maxuses": 0
+                },
+                {
+                    "description": "You Shall Not Pass - DAWDS",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 75,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "White Knight",
+            "description": "",
+            "usage": [
+                {
+                    "description": "Invulnerable - Mouse2",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 6,
+                    "maxuses": 0
+                },
+                {
+                    "description": "Nuke - AADDSWSW",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 150,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Totem Pole",
+            "description": "Extra speed and health.",
+            "usage": []
+        },
+        {
+            "name": "Zombie TNT Barrel",
+            "description": "Place/launch a barrel.",
+            "usage": [
+                {
+                    "description": "Barrel - Mouse2",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 20,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Ladder",
+            "description": "Humans can shoot the ladder placed down to break them or shoot the ladder on your back to prevent any future placements. 10 second cooldown, limited ladders.",
+            "usage": []
+        },
+        {
+            "name": "Zombie Troll",
+            "description": "Smash attack, kills humans, guards, breaks barricades.",
+            "usage": []
+        },
+        {
+            "name": "Zombie Balrog",
+            "description": "High health, no knockback. 3 nukes from white knight or bullet damage. Kill guards and break barricades by walking through them. Sword attack, kills humans in the way. Roar, gives nearby zombies additional speed for 10 seconds.",
+            "usage": [
+                {
+                    "description": "Slash - Mouse1",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 3.5,
+                    "maxuses": 0
+                },
+                {
+                    "description": "Roar - Mouse2",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 15,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Nazgul",
+            "description": "Can fly around the map damaging humans, but they can't infect.",
+            "usage": []
+        }
+    ],
+    "music": [
+        {
+            "name": "Pendulum - Encoder",
+            "link": ""
+        },
+        {
+            "name": "Rome Total War OST - Time to kill",
+            "link": ""
+        },
+        {
+            "name": "LOTR The Returns of The King OST - Minas Tirith",
+            "link": ""
+        },
+        {
+            "name": "FFXII OST - Esper Battle",
+            "link": ""
+        },
+        {
+            "name": "Rome Total War OST - Romantic Battle",
+            "link": ""
+        },
+        {
+            "name": "Globus - Preliator",
+            "link": ""
+        },
+        {
+            "name": "FFXI OST - Awakening",
+            "link": ""
+        },
+        {
+            "name": "Christopher Drake - Finish What The Jester Started",
+            "link": ""
+        },
+        {
+            "name": "Chrono Cross OST - Orphan of Flame",
+            "link": ""
+        },
+        {
+            "name": "Inception - Dream Within a Dream",
+            "link": ""
+        },
+        {
+            "name": "Shadow of the Colossus OST - The Opened Way",
+            "link": ""
+        },
+        {
+            "name": "LOTR Battle for the Middle Earth - Spreading Hope",
+            "link": ""
+        },
+        {
+            "name": "LOTR The Returns of The King OST - The Grace of Undomiel",
+            "link": ""
+        },
+        {
+            "name": "LOTR The Returns of The King OST - The White Tree",
+            "link": ""
+        }
+    ]
+}
