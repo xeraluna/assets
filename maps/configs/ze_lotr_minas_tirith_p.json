@@ -55,14 +55,14 @@
             "description": "Light protection: zombies around you will get pushed away and can't get close. You Shall Not Pass: all nearby zombies get pushed very far away.",
             "usage": [
                 {
-                    "description": "Light - Mouse2",
+                    "description": "Mouse2 - Light",
                     "type": "game_ui",
                     "mode": 2,
                     "cooldown": 75,
                     "maxuses": 0
                 },
                 {
-                    "description": "You Shall Not Pass - DAWDS",
+                    "description": "DAWDS - You Shall Not Pass",
                     "type": "game_ui",
                     "mode": 2,
                     "cooldown": 75,
@@ -75,18 +75,18 @@
             "description": "E: Toggle between regular slash attack and heavy slash attack - regular slash attack, small push and low damage & heavy slash attack, high damage and knockback. Defense: makes you invulnerable for 2 seconds. Nuke: Kills nearby zombies, immobile during charge.",
             "usage": [
                 {
-                    "description": "Sword Mode",
+                    "description": "E - Sword Mode",
                     "type": "button"
                 },
                 {
-                    "description": "Defense - Mouse2",
+                    "description": "Mouse2 - Defense",
                     "type": "game_ui",
                     "mode": 2,
                     "cooldown": 6,
                     "maxuses": 0
                 },
                 {
-                    "description": "Nuke - AADDSWSW",
+                    "description": "AADDSWSW - Nuke",
                     "type": "game_ui",
                     "mode": 2,
                     "cooldown": 150,
@@ -127,14 +127,14 @@
             "description": "High health, no knockback. 3 nukes from white knight or bullet damage. Kill guards and break barricades by walking through them. Sword attack, kills humans in the way. Roar, gives nearby zombies additional speed for 10 seconds.",
             "usage": [
                 {
-                    "description": "Slash - Mouse1",
+                    "description": "Mouse1 - Slash",
                     "type": "game_ui",
                     "mode": 2,
                     "cooldown": 3.5,
                     "maxuses": 0
                 },
                 {
-                    "description": "Roar - Mouse2",
+                    "description": "Mouse2 - Roar",
                     "type": "game_ui",
                     "mode": 2,
                     "cooldown": 15,
