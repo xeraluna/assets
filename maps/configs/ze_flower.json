@@ -1,0 +1,26 @@
+{
+    "description": "Flower",
+    "mapper": "Karon",
+    "stages": 1,
+    "extraStages": 0,
+    "tier": "3",
+    "tags": [
+        "laser",
+        "balls"
+    ],
+    "items": [],
+    "music": [
+        {
+            "name": "LV.4 - Aestivalis",
+            "link": "https://youtu.be/48W6QWPZL-A?si=VOd22rx7eYThEh1Q"
+        },
+        {
+            "name": "BlackY - Downburst",
+            "link": "https://youtu.be/hFFhglTBD1E?si=9rWS2sYLLiD0EqJk"
+        },
+        {
+            "name": "DJ Yoshitaka - FLOWER (Orchestra Arr.)",
+            "link": "https://youtu.be/UFnU1G53330?si=xAotnLQEiGLb7E6W"
+        }
+    ]
+}
