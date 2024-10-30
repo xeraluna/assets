@@ -1,0 +1,29 @@
+{
+    "description": "Super Mario 64",
+    "mapper": "Blue Blue",
+    "stages": 2,
+    "extraStages": 1,
+    "tier": "2",
+    "tags": [
+        "secrets"
+    ],
+    "items": [],
+    "music": [
+        {
+            "name": "Super Mario 64 - Snow Mountain",
+            "link": "https://www.youtube.com/watch?v=6iZ_buAz55g"
+        },
+        {
+            "name": "Super Mario 64 - Powerful Mario",
+            "link": "https://www.youtube.com/watch?v=Tk4D7ZClKB8"
+        },
+        {
+            "name": "Super Mario 64 - Slider",
+            "link": "https://www.youtube.com/watch?v=lc9B5GkWw94"
+        },
+        {
+            "name": "NIYARI計画 - Hooray for Hollywood INST ver",
+            "link": "https://www.youtube.com/watch?v=ixN6TsBgjIE"
+        }
+    ]
+}	
