@@ -1,0 +1,207 @@
+{
+    "description": "Visualizer",
+    "mapper": "M4dara",
+    "stages": 6,
+    "extraStages": 0,
+    "tier": "4",
+    "tags": [
+        "bosses",
+        "balls",
+        "items",
+        "kz"
+    ],
+    "items": [
+        {
+            "name": "Heal",
+            "description": "A slow heal.",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 100,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Energy Ball",
+            "description": "Looks cool.",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 3,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Square",
+            "description": "An opaque cube wall that obstructs way and could stuck ZMs. (or humans if used carelessly)",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 60,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Shield",
+            "description": "A cylinder push around the user, blocks ZMs from entering the radius of the shield.",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 60,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Freeze Ball",
+            "description": "A forward ball that freeze ZMs upon impact.",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 35,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Gravity Ball",
+            "description": "A forward ball that sucks ZMs into it upon impact.",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 50,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Energy Ball",
+            "description": "Forward ball that deal minor damage to humans upon impact.",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 8,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Freeze Ball",
+            "description": "Forward ball that greatly slow humans upon impact.",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 50,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Gravity",
+            "description": "Pull or suck humans into to the user, only occurs when humans are close to the user. ",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 90,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Heal",
+            "description": "Provides healing effect to ZMs around the user.",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 50,
+                    "maxuses": 0
+                }
+            ]
+        }
+    ],
+    "music": [
+        {
+            "name": "Worakls - Nocturne",
+            "link": "https://www.youtube.com/watch?v=JvqXj2cAaY4"
+        },
+        {
+            "name": "Vakhtang - Now",
+            "link": "https://www.youtube.com/watch?v=Ls1yV5tNe2M"
+        },
+        {
+            "name": "Vakhtang - Angel",
+            "link": "https://www.youtube.com/watch?v=YIenFljkIjA"
+        },
+        {
+            "name": "The Toxic Avenger - My Only Chance",
+            "link": "https://www.youtube.com/watch?v=SeAAi7jWOl8"
+        },
+        {
+            "name": "The Toxic Avenger - Make this Right",
+            "link": "https://www.youtube.com/watch?v=1CGMk_roNaE"
+        },
+        {
+            "name": "Sakuzyo - Neurotoxin (full length)",
+            "link": "https://www.youtube.com/watch?v=-_zY83GT1nc"
+        },
+        {
+            "name": "Michael FK - Sonder",
+            "link": "https://www.youtube.com/watch?v=-eEei3WafM0"
+        },
+        {
+            "name": "Carbon Based Lifeforms - Interloper",
+            "link": "https://www.youtube.com/watch?v=zrduIntJN10"
+        },
+        {
+            "name": "IndiGhost - Pastel Sunset",
+            "link": "https://www.youtube.com/watch?v=TeWNFUDgHmo"
+        },
+        {
+            "name": "Fluke - Zion",
+            "link": "https://www.youtube.com/watch?v=c6zkoRBMkqg"
+        },
+        {
+            "name": "deadmau5 - Alone With You",
+            "link": "https://www.youtube.com/watch?v=zmC6kd3I40Q"
+        },
+        {
+            "name": "Danger - 8:02",
+            "link": "https://www.youtube.com/watch?v=T9QmKYttBt4"
+        },
+        {
+            "name": "Danger - 7:53",
+            "link": "https://www.youtube.com/watch?v=nk1UqObbpLo"
+        },
+        {
+            "name": "DANGER - 4h30",
+            "link": "https://www.youtube.com/watch?v=HuyioN2YTrM"
+        },
+        {
+            "name": "07:41 The Beginning of Something - Haven",
+            "link": "https://www.youtube.com/watch?v=l6RyJLDc1tk"
+        }
+    ]
+}
