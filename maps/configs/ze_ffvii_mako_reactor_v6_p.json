@@ -1,0 +1,117 @@
+{
+    "description": "Another FFVII Mako Reactor",
+    "mapper": "Hannibal",
+    "stages": 5,
+    "extraStages": 1,
+    "tier": "3",
+    "tags": [
+        "bosses",
+        "laser",
+        "items",
+        "itemlevels",
+        "finalfantasy"
+    ],
+    "items": [],
+    "music": [
+        {
+            "name": "FFVII Opening Theme - Bombing Mission",
+            "link": "https://www.youtube.com/watch?v=NoWU28L_ZmQ"
+        },
+        {
+            "name": "FFVII - Mako Reactor",
+            "link": "https://www.youtube.com/watch?v=9ZH6coTxDTo"
+        },
+        {
+            "name": "FFVII - Fight On!",
+            "link": "https://www.youtube.com/watch?v=QYPgLFyrYoc"
+        },
+        {
+            "name": "FFVII - Hurry!",
+            "link": "https://www.youtube.com/watch?v=QAOfIrNnSYk"
+        },
+        {
+            "name": "FFVII AC - Black Water",
+            "link": "https://www.youtube.com/watch?v=qxxY_-othYc"
+        },
+        {
+            "name": "FFVII AC - Battle in the Forgotten City",
+            "link": "https://www.youtube.com/watch?v=BWZ8eG5o5Xg"
+        },
+        {
+            "name": "FFVII AC - J-E-N-O-V-A",
+            "link": "https://www.youtube.com/watch?v=zs0JGX4dD3g"
+        },
+        {
+            "name": "FFVII AC - Beyond the Wasteland",
+            "link": "https://www.youtube.com/watch?v=RFs4fmTS2x0"
+        },
+        {
+            "name": "FFX - Pursuit - Those Who Come Closer",
+            "link": "https://www.youtube.com/watch?v=bRSCaz9kV1k"
+        },
+        {
+            "name": "Kingdom Hearts 2 - A Fight To The Death",
+            "link": "https://www.youtube.com/watch?v=QpAAi900QT8"
+        },
+        {
+            "name": "FinalFFVII AC - Divinity I",
+            "link": "https://www.youtube.com/watch?v=y_BwisQ_d18"
+        },
+        {
+            "name": "FFVII AC - One-Winged Angel",
+            "link": "https://www.youtube.com/watch?v=R3cZ-lCaE2c"
+        },
+        {
+            "name": "The Prodigy - Voodoo People (Pendulum Remix)",
+            "link": "https://www.youtube.com/watch?v=XQEBzauVIlA"
+        },
+        {
+            "name": "Pendulum - Midnight Runner",
+            "link": "https://www.youtube.com/watch?v=degq0sxYlLI"
+        },
+        {
+            "name": "The Qemists - Stompbox",
+            "link": "https://www.youtube.com/watch?v=ukXhVcJCrXA"
+        },
+        {
+            "name": "Pendulum - The Other Side",
+            "link": "https://www.youtube.com/watch?v=tyox7ogMf0o"
+        },
+        {
+            "name": "Pendulum - Blood Sugar",
+            "link": "https://www.youtube.com/watch?v=gkwpXipZUoE"
+        },
+        {
+            "name": "Pendulum - Slam (Prelude intro)",
+            "link": "https://www.youtube.com/watch?v=d0G8nWHXTfw"
+        },
+        {
+            "name": "Pendulum - Tarantula (Pendulum vs fresh ft Spyda & Tenor Fly)",
+            "link": "https://www.youtube.com/watch?v=_SgjMpm_hCI"
+        },
+        {
+            "name": "Pendulum - The Fountain (feat. Steven Wilson)",
+            "link": "https://www.youtube.com/watch?v=m0VwXqtL8X0"
+        },
+        {
+            "name": "Pendulum - Self Vs Self",
+            "link": "https://www.youtube.com/watch?v=yJE1_Jm6gtw"
+        },
+        {
+            "name": "Pendulum - The Tempest Live at Brixton Academy",
+            "link": "https://www.youtube.com/watch?v=_p-jQho-Mr0"
+        },
+        {
+            "name": "Pendulum - 9000 Miles",
+            "link": "https://www.youtube.com/watch?v=3WHQTJe537w"
+        },
+        {
+            "name": "Kingdom Hearts 2 - Rage Awakaned",
+            "link": "https://www.youtube.com/watch?v=Aa7SyxcKTbs"
+        },
+        {
+            "name": "Kingdom Hearts 2 - Fate of the Unknown",
+            "link": "https://www.youtube.com/watch?v=33mSdue12Ks"
+        }
+    ]
+}
