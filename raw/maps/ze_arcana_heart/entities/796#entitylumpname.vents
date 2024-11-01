@@ -1,0 +1,115 @@
+====0====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1024
+damagecap                      Integer    500
+damage                         Integer    500
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Laser_Move_S3&0000
+targetname                     CString    [PR#]Laser_Hurt_S3&0000
+classname                      CString    trigger_hurt
+origin                         CString    0.000000 0.000000 376.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3447
+model                          CString    maps\ze_arcana_heart\entities\Laser_Hurt_S3_3447.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    2000
+speed                          Integer    1999
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 270, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Laser_Move_S3&0000
+classname                      CString    func_movelinear
+origin                         CString    0.000000 0.000000 8.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3449
+model                          CString    maps\ze_arcana_heart\entities\Laser_Move_S3_3449.vmdl
+_template_lump_ent_index       CString    1
+@OnFullyOpen Kill !self
+
+====2====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    100
+speed                          Integer    100
+authoredposition               CString    0
+startposition                  Float64    0
+movedir                        Vector     <0, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Laser_Move_S3&0000
+targetname                     CString    [PR#]Laser_Model_S3&0000
+classname                      CString    func_movelinear
+origin                         CString    0.000000 0.000000 728.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5507
+model                          CString    maps\ze_arcana_heart\entities\Laser_Model_S3_5507.vmdl
+_template_lump_ent_index       CString    2
+
+====3====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    True
+effect_name                    CString    particles/arcana_particles/custom_particle_052.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Laser_Move_S3&0000
+targetname                     CString    [PR#]Laser_Particle_S3&0000
+classname                      CString    info_particle_system
+origin                         CString    -0.001953 0.000000 759.999023
+angles                         CString    -0.000000 -90.000000 89.999977
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    801
+_template_lump_ent_index       CString    3
+

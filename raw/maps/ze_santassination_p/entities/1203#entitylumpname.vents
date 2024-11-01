@@ -1,0 +1,327 @@
+====0====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]sf_sled_p_2
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_sled_p_1
+classname                      CString    path_track
+origin                         CString    -5476.000000 232.000000 -11446.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1526
+_template_lump_ent_index       CString    0
+
+====1====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    200
+target                         CString    [PR#]sf_sled_p_3
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_sled_p_2
+classname                      CString    path_track
+origin                         CString    -8996.000000 232.000000 -11446.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1521
+_template_lump_ent_index       CString    1
+@OnPass OnlyOnce StartSound [PR#]sf_sled_s_leftright
+@OnPass Delay=2 OnlyOnce Disable [PR#]sf_sled_push
+@OnPass Delay=2 OnlyOnce Command [PR#]server say ***MAGIC ZOMBIE PUSH IS DISABLED***
+@OnPass Delay=3 OnlyOnce Command [PR#]server say ***ZOMBIES CAN NOW GET YOU FROM THE SIDES***
+@OnPass Delay=3 OnlyOnce Stop [PR#]sf_sledburrito
+@OnPass Delay=3.2 OnlyOnce Start [PR#]sf_sledburrito
+@OnPass Delay=2 OnlyOnce Disable [PR#]sf_sled_hurt
+
+====2====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]sf_sled_p_4
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_sled_p_3
+classname                      CString    path_track
+origin                         CString    -10660.000000 232.000000 -11446.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1522
+_template_lump_ent_index       CString    2
+@OnPass Break [PR#]sf_sled_bugsafe
+
+====3====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    200
+target                         CString    [PR#]sf_sled_p_5
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_sled_p_4
+classname                      CString    path_track
+origin                         CString    -12452.000000 232.000000 -11446.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1523
+_template_lump_ent_index       CString    3
+@OnPass OnlyOnce StartSound [PR#]sf_sled_s_stop
+@OnPass Delay=1 OnlyOnce Stop [PR#]sf_sledburrito
+@OnPass OnlyOnce Disable [PR#]sf_sled_antiedge
+@OnPass OnlyOnce Disable [PR#]sf_sled_antiedge_tp
+
+====4====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]sf_sled_p_6
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_sled_p_5
+classname                      CString    path_track
+origin                         CString    -13284.000000 232.000000 -11446.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1524
+_template_lump_ent_index       CString    4
+@OnPass OnlyOnce ForceSpawn [PR#]sf_sled_wallex
+@OnPass OnlyOnce Break [PR#]sf_sleighbreak
+@OnPass OnlyOnce ForceSpawn [PR#]sf_snpc_7
+
+====5====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_sled_p_6
+classname                      CString    path_track
+origin                         CString    -14052.000000 232.000000 -11446.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1525
+_template_lump_ent_index       CString    5
+@OnPass Delay=3 OnlyOnce StartSound [PR#]sf_sled_s_leave
+@OnPass Delay=18 OnlyOnce StartSound [PR#]sf_sled_s_scream
+@OnPass Delay=28 OnlyOnce StartSound [PR#]sf_sled_s_scream
+@OnPass OnlyOnce SetAnimationNotLooping [PR#]sf_sled_model idle
+@OnPass Delay=0.05 OnlyOnce SetIdleAnimationLooping [PR#]sf_sled_model idle
+@OnPass Delay=2 SetParent [PR#]sf_sled_model
+@OnPass Delay=2.5 OnlyOnce Kill [PR#]sf_sled
+@OnPass Delay=2 SetParent [PR#]sf_sled_push
+@OnPass Delay=10 OnlyOnce Command [PR#]server say ***FACTORY DOOR OPENS IN 10 SECONDS***
+@OnPass Delay=15 OnlyOnce Command [PR#]server say ***FACTORY DOOR OPENS IN 5 SECONDS***
+@OnPass Delay=20 OnlyOnce Open [PR#]sf_complexdoor
+@OnPass Delay=20 OnlyOnce Command [PR#]server say ***FALL BACK***
+@OnPass Delay=22 OnlyOnce Stop [PR#]sf_factorysmoke
+@OnPass Delay=22.05 OnlyOnce Start [PR#]sf_factorysmoke
+@OnPass Delay=16 OnlyOnce Command [PR#]server say ***FACTORY DOOR OPENS IN 4 SECONDS***
+@OnPass Delay=17 OnlyOnce Command [PR#]server say ***FACTORY DOOR OPENS IN 3 SECONDS***
+@OnPass Delay=18 OnlyOnce Command [PR#]server say ***FACTORY DOOR OPENS IN 2 SECONDS***
+@OnPass Delay=19 OnlyOnce Command [PR#]server say ***FACTORY DOOR OPENS IN 1 SECOND***
+@OnPass Delay=30 OnlyOnce StartSound [PR#]music_sf_epic
+@OnPass Delay=5 OnlyOnce StartSound [PR#]music_sad
+@OnPass Delay=30 OnlyOnce StopSound [PR#]music_sad
+@OnPass Delay=20 OnlyOnce Enable [PR#]cancer_light
+@OnPass Delay=10 OnlyOnce Start [PR#]snow_particle_3
+
+====6====
+triggeronstarttouch            Boolean    False
+speed                          Integer    350
+pushdir                        Vector     <0, 135, 0>
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]sf_sled
+targetname                     CString    [PR#]sf_sled_push
+classname                      CString    trigger_push
+origin                         CString    -5460.000000 232.000000 -11350.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2336
+model                          CString    maps\ze_santassination_p\entities\sf_sled_push_2336.vmdl
+_template_lump_ent_index       CString    6
+
+====7====
+triggeronstarttouch            Boolean    False
+speed                          Integer    450
+pushdir                        Vector     <0, 225, 0>
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]sf_sled
+targetname                     CString    [PR#]sf_sled_push
+classname                      CString    trigger_push
+origin                         CString    -5460.000000 232.000000 -11350.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2338
+model                          CString    maps\ze_santassination_p\entities\sf_sled_push_2338.vmdl
+_template_lump_ent_index       CString    7
+
+====8====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.sled_intro
+sourceentityname               CString    [PR#]sf_sled_push
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_sled_s_intro
+classname                      CString    point_soundevent
+origin                         CString    -5572.000000 248.000000 -11446.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1507
+_template_lump_ent_index       CString    8
+
+====9====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.sled_leave
+sourceentityname               CString    [PR#]sf_sled_push
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_sled_s_leave
+classname                      CString    point_soundevent
+origin                         CString    -5572.000000 248.000000 -11382.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1511
+_template_lump_ent_index       CString    9
+
+====10====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.sled_leftright
+sourceentityname               CString    [PR#]sf_sled_push
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_sled_s_leftright
+classname                      CString    point_soundevent
+origin                         CString    -5572.000000 248.000000 -11414.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1509
+_template_lump_ent_index       CString    10
+
+====11====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.sled_scream
+sourceentityname               CString    [PR#]sf_sled_push
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_sled_s_scream
+classname                      CString    point_soundevent
+origin                         CString    -5572.000000 248.000000 -11366.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1512
+_template_lump_ent_index       CString    11
+
+====12====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.mexico
+sourceentityname               CString    [PR#]sf_sled_push
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_sled_s_start
+classname                      CString    point_soundevent
+origin                         CString    -5572.000000 248.000000 -11430.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1508
+_template_lump_ent_index       CString    12
+
+====13====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.sled_hit
+sourceentityname               CString    [PR#]sf_sled_push
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_sled_s_stop
+classname                      CString    point_soundevent
+origin                         CString    -5572.000000 248.000000 -11398.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1510
+_template_lump_ent_index       CString    13
+
+====14====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_explosion
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_sled_wallex
+classname                      CString    env_entity_maker
+origin                         CString    -13300.000000 232.000000 -11350.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2335
+_template_lump_ent_index       CString    14
+
+====15====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_030.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_sledburrito
+classname                      CString    info_particle_system
+origin                         CString    -10276.000000 -136.000000 -10954.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2316
+_template_lump_ent_index       CString    15
+
+====16====
+max                            Integer    2
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]sf_sledglass_math
+classname                      CString    math_counter
+origin                         CString    -8743.650391 230.854004 -11453.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2276
+_template_lump_ent_index       CString    16
+@OnHitMax Delay=1 OnlyOnce Command [PR#]server say ***BLACK HOLE AND NAZI NIPPLE HAS BEEN ACTIVATED***
+@OnHitMax Delay=2 OnlyOnce Command [PR#]server say ***GLASS WILL BREAK IN 5 SECONDS***
+@OnHitMax Delay=7 OnlyOnce Break [PR#]sf_sledwindow_hitler
+@OnHitMax Delay=7 OnlyOnce Break [PR#]sf_sledwindow_elev
+@OnHitMax Delay=10 StopSound [PR#]music_sf_enter
+@OnHitMax Delay=7 OnlyOnce ForceSpawn [PR#]sf_snpc_6
+@OnHitMax FireUser1 [PR#]SkyBridgeCave
+

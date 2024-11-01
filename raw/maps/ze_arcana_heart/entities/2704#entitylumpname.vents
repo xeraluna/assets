@@ -1,0 +1,146 @@
+====0====
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S2_Trigger
+classname                      CString    trigger_once
+origin                         CString    28640.000000 -1744.000000 -708.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1980
+model                          CString    maps\ze_arcana_heart\entities\S2_Trigger_1980.vmdl
+_template_lump_ent_index       CString    0
+@OnTrigger OnlyOnce Test [PR#]S2_End_Trigger_Branch
+@OnTrigger OnlyOnce Enable [PR#]Map_Post_S2
+@OnTrigger OnlyOnce Disable [PR#]Map_Post_S2_Boss
+@OnTrigger OnlyOnce Enable [PR#]Map_Fog
+@OnTrigger OnlyOnce Alpha [PR#]player 255
+
+====1====
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S2_Trigger
+classname                      CString    trigger_once
+origin                         CString    20384.000000 8080.000000 2524.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3572
+model                          CString    maps\ze_arcana_heart\entities\S2_Trigger_3572.vmdl
+_template_lump_ent_index       CString    1
+@OnTrigger Delay=10 OnlyOnce Teleport [PR#]S2_Egg_Des
+@OnTrigger Delay=10 OnlyOnce KeyValue !activator health 180
+@OnTrigger Delay=10 OnlyOnce KeyValue !activator max_health 180
+@OnTrigger AddContext !activator s2egg:1
+
+====2====
+wait                           Float64    1
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S2_Trigger_Final_Human
+classname                      CString    trigger_multiple
+origin                         CString    28640.000000 4528.000000 2416.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1301
+model                          CString    maps\ze_arcana_heart\entities\S2_Trigger_Final_Human_1301.vmdl
+_template_lump_ent_index       CString    2
+@OnTrigger OnlyOnce Kill [PR#]S2_Trigger_Final_Zombie
+@OnStartTouch AddContext !activator nuke:1
+@OnTrigger Delay=2 OnlyOnce Trigger [PR#]Map_Nuke_Relay
+@OnTrigger Delay=2 OnlyOnce SetValue [PR#]Map_Stage_Counter 4
+
+====3====
+filtername                     CString    [PR#]Filter_T
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S2_Trigger_Final_Zombie_2
+classname                      CString    trigger_once
+origin                         CString    28640.000000 4624.000000 672.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1610
+model                          CString    maps\ze_arcana_heart\entities\S2_Trigger_Final_Zombie_2_1610.vmdl
+_template_lump_ent_index       CString    3
+@OnTrigger OnlyOnce Fade [PR#]S2_Fail_Fade
+@OnTrigger OnlyOnce Kill [PR#]S2_Trigger_Final_Human_2
+@OnTrigger Delay=2.1 OnlyOnce SetValue [PR#]Map_Stage_Counter 2
+@OnTrigger Delay=2 OnlyOnce Trigger [PR#]Map_Nuke_Relay
+@OnTrigger OnlyOnce Command [PR#]Server say >>Stage Failed<<
+
+====4====
+wait                           Float64    1
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S2_Trigger_Final_Human_2
+classname                      CString    trigger_multiple
+origin                         CString    28640.000000 4624.000000 704.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1613
+model                          CString    maps\ze_arcana_heart\entities\S2_Trigger_Final_Human_2_1613.vmdl
+_template_lump_ent_index       CString    4
+@OnStartTouch AddContext !activator nuke:1
+@OnTrigger Delay=2 OnlyOnce Trigger [PR#]Map_Nuke_Relay
+@OnTrigger Delay=2 OnlyOnce SetValue [PR#]Map_Stage_Counter 3
+@OnTrigger OnlyOnce Kill [PR#]S2_Trigger_Final_Zombie_2
+
+====5====
+filtername                     CString    [PR#]Filter_T
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S2_Trigger_Final_Zombie
+classname                      CString    trigger_once
+origin                         CString    28640.000000 3376.000000 2384.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2649
+model                          CString    maps\ze_arcana_heart\entities\S2_Trigger_Final_Zombie_2649.vmdl
+_template_lump_ent_index       CString    5
+@OnTrigger OnlyOnce Fade [PR#]S2_Fail_Fade
+@OnTrigger OnlyOnce Kill [PR#]S2_Trigger_Final_Human
+@OnTrigger Delay=2.1 OnlyOnce SetValue [PR#]Map_Stage_Counter 2
+@OnTrigger Delay=2 OnlyOnce Trigger [PR#]Map_Nuke_Relay
+@OnTrigger OnlyOnce Command [PR#]Server say >>Stage Failed<<
+
+====6====
+max                            Integer    2
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Map_Trigger_Counter_S2_1
+classname                      CString    math_counter
+origin                         CString    21128.000000 2344.000000 3328.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2745
+_template_lump_ent_index       CString    6
+@OnHitMax Kill !self
+@OnHitMax Delay=15 Toggle [PR#]S2_Door_1
+@OnHitMax Delay=15 OnlyOnce FireUser1 [PR#]S2_Torch_1
+@OnHitMax FireUser1 [PR#]Map_Count_Particle
+@OnHitMax Delay=35 KeyValue [PR#]S2_Fall_Tele_Des origin 5632 3520 10280
+
+====7====
+max                            Integer    2
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Map_Trigger_Counter_S2_2
+classname                      CString    math_counter
+origin                         CString    21076.000000 7556.000000 3744.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2636
+_template_lump_ent_index       CString    7
+@OnHitMax Kill !self
+@OnHitMax StartForward [PR#]S2_Elvto_Main_3
+@OnHitMax FireUser1 [PR#]S2_Afk_1
+

@@ -1,0 +1,305 @@
+====0====
+canbepickedup                  Boolean    True
+spawnflags                     Integer    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <140, 255, 33>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+targetname                     CString    [PR#]Item_Ammo
+classname                      CString    weapon_glock
+origin                         CString    -25.000000 -2.000000 10.580299
+angles                         Vector     <-0, 0, 0>
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5594
+_template_lump_ent_index       CString    0
+@OnPlayerPickup OnlyOnce Command [PR#]Cmd say ** Player has picked up Ammo. **
+@OnPlayerPickup Delay=0.1 AddAttribute !activator Player_Ammo
+
+====1====
+spawnflags                     Integer64  17409
+forcenpcexclude                Boolean    False
+lip                            Integer    0
+wait                           Float64    2
+speed                          Integer    0
+movedir                        Vector     <0, 0, 0>
+locked_sound                   CString    Buzz.off
+use_sound                      CString    Buzz
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Item_Ammo
+targetname                     CString    [PR#]Button_Ammo
+classname                      CString    func_button
+origin                         CString    -9.500000 -3.000000 62.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5595
+model                          CString    maps\ze_8bit\entities\Button_Ammo_5595.vmdl
+_template_lump_ent_index       CString    1
+@OnPressed TestActivator [PR#]Filter_ammo
+
+====2====
+filterattribute                CString    Player_Ammo
+negated                        CString    0
+targetname                     CString    [PR#]Filter_ammo
+classname                      CString    filter_activator_attribute_int
+origin                         CString    0.000000 0.000000 16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5597
+_template_lump_ent_index       CString    2
+@OnPass Delay=60 Unlock [PR#]Button_Ammo
+@OnPass Lock [PR#]Button_Ammo
+@OnPass Delay=0.1 Start [PR#]Particle_material_ammo
+@OnPass Delay=10 Stop [PR#]Particle_material_ammo
+@OnPass Enable [PR#]Timer_ammo
+@OnPass Delay=10 Disable [PR#]Timer_ammo
+@OnPass Delay=10 Color [PR#]Ammo_box 255 0 0
+@OnPass Delay=60 Color [PR#]Ammo_box 255 255 255
+
+====3====
+flag_as_weather                CString    0
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/8bit_particles/item_ammo.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Item_Ammo
+targetname                     CString    [PR#]Particle_material_ammo
+classname                      CString    info_particle_system
+origin                         CString    16.000000 0.000000 8.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5591
+_template_lump_ent_index       CString    3
+
+====4====
+filter_radius                  Float64    128
+negated                        CString    0
+targetname                     CString    [PR#]weap_prox_filter
+classname                      CString    filter_proximity
+origin                         CString    3.122070 -0.192139 31.670830
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    11554
+_template_lump_ent_index       CString    4
+
+====5====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+enableuseoutput                Boolean    False
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+uselocaloffset                 Boolean    False
+spawnobject                    CString    0
+spawnflags                     Integer64  19457
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+propdata                       CString    0
+pressuredelay                  Float64    0
+preferredcarryangles           Vector     <0, 0, 0>
+performancemode                CString    PM_NO_GIBS
+parentname                     CString    [PR#]Item_Ammo
+notsolid                       CString    1
+nodamageforces                 Boolean    False
+material                       CString    10
+massscale                      Float64    0
+health                         Integer    0
+forcetoenablemotion            Float64    0
+explosion                      CString    0
+exploderadius                  Float64    0
+explodemagnitude               Integer    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+disablereceiveshadows          Boolean    False
+damagetype                     CString    0
+damagetoenablemotion           Integer    0
+targetname                     CString    [PR#]Ammo_box
+classname                      CString    func_physbox
+origin                         CString    15.500000 0.000000 52.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5599
+model                          CString    maps\ze_8bit\entities\Ammo_box_5599.vmdl
+_template_lump_ent_index       CString    5
+
+====6====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    True
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]give_ammo
+classname                      CString    logic_relay
+origin                         CString    -158.932617 18.786133 -40.970459
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    11550
+_template_lump_ent_index       CString    6
+@OnTrigger Add [PR#]ammo_counter 1
+
+====7====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]ammo_init
+classname                      CString    logic_relay
+origin                         CString    -158.932617 18.786133 -24.970459
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    11549
+_template_lump_ent_index       CString    7
+@OnSpawn SetParent [PR#]weap_prox_filter [PR#]Item_Ammo
+
+====8====
+max                            Integer    128
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]ammo_counter
+classname                      CString    math_counter
+origin                         CString    -158.932617 34.786133 -40.970459
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    11551
+_template_lump_ent_index       CString    8
+@OutValue FindEntity [PR#]weap_finder
+@OutValue Trigger [PR#]give_ammo
+@OnHitMax Disable [PR#]give_ammo
+@OnHitMax Delay=0.02 SetValueNoFire [PR#]ammo_counter 0
+@OnHitMax Delay=0.02 Enable [PR#]give_ammo
+
+====9====
+filter06                       CString    [PR#]weap_class_filter4
+filter05                       CString    [PR#]weap_class_filter3
+filter04                       CString    [PR#]weap_class_filter2
+filter03                       CString    [PR#]weap_context_filter
+filter02                       CString    [PR#]weap_class_filter
+filter01                       CString    [PR#]weap_prox_filter
+filtertype                     CString    0
+negated                        CString    0
+targetname                     CString    [PR#]weap_filters
+classname                      CString    filter_multi
+origin                         CString    -158.932617 34.786133 -24.970459
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    11547
+_template_lump_ent_index       CString    9
+
+====10====
+filterclass                    CString    weapon_molotov
+negated                        CString    1
+targetname                     CString    [PR#]weap_class_filter4
+classname                      CString    filter_activator_class
+origin                         CString    -158.932617 38.786133 -8.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    11548
+_template_lump_ent_index       CString    10
+
+====11====
+filterclass                    CString    weapon_hegrenade
+negated                        CString    1
+targetname                     CString    [PR#]weap_class_filter3
+classname                      CString    filter_activator_class
+origin                         CString    -158.932617 54.786133 -8.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    11546
+_template_lump_ent_index       CString    11
+
+====12====
+filterclass                    CString    weapon_*
+negated                        CString    0
+targetname                     CString    [PR#]weap_class_filter
+classname                      CString    filter_activator_class
+origin                         CString    -158.932617 50.786133 -24.970459
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    11545
+_template_lump_ent_index       CString    12
+
+====13====
+method                         CString    2
+filtername                     CString    [PR#]weap_filters
+targetname                     CString    [PR#]weap_finder
+classname                      CString    point_entity_finder
+origin                         CString    -158.932617 58.786133 -45.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    11552
+_template_lump_ent_index       CString    13
+@OnFoundEntity SetAmmoAmount !caller 999
+@OnFoundEntity AddContext !caller hasAmmo:1
+@OnFoundEntity Delay=0.01 RemoveContext !caller hasAmmo
+
+====14====
+responsecontext                CString    hasAmmo
+negated                        CString    1
+targetname                     CString    [PR#]weap_context_filter
+classname                      CString    filter_activator_context
+origin                         CString    -158.932617 66.786133 -24.970459
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    11544
+_template_lump_ent_index       CString    14
+
+====15====
+filterclass                    CString    weapon_knife
+negated                        CString    1
+targetname                     CString    [PR#]weap_class_filter2
+classname                      CString    filter_activator_class
+origin                         CString    -158.932617 78.786133 -12.029541
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    11543
+_template_lump_ent_index       CString    15
+
+====16====
+initialdelay                   Float64    0
+refiretime                     Float64    1
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    False
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Timer_ammo
+classname                      CString    logic_timer
+origin                         CString    -66.338867 -19.994873 -52.187439
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    11553
+_template_lump_ent_index       CString    16
+@OnTimer Trigger [PR#]give_ammo
+

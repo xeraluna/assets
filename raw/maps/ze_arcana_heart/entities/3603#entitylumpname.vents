@@ -1,0 +1,42 @@
+====0====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Gear_2_Relay_Forward
+classname                      CString    logic_relay
+origin                         CString    0.000000 -16.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2989
+_template_lump_ent_index       CString    0
+@OnTrigger StartForward [PR#]S2_Elvto_Main_2
+
+====1====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Gear_2_Relay_Stop
+classname                      CString    logic_relay
+origin                         CString    0.000000 -32.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1619
+_template_lump_ent_index       CString    1
+@OnTrigger Stop [PR#]S2_Elvto_Main_2
+
+====2====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Gear_2_Relay_Back
+classname                      CString    logic_relay
+origin                         CString    0.000000 -48.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1139
+_template_lump_ent_index       CString    2
+@OnTrigger StartBackward [PR#]S2_Elvto_Main_2
+

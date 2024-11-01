@@ -1,0 +1,166 @@
+[
+    {
+        "name": "Item_heal",
+        "shortname": "Item_heal",
+        "hammerid": "4733",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "4734",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "Item_electro",
+        "shortname": "Item_electro",
+        "hammerid": "4739",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "4740",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "Item_cannon_ultimate",
+        "shortname": "Item_cannon_ultimate",
+        "hammerid": "4970",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "4968",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "Item_Stopper",
+        "shortname": "Item_Stopper",
+        "hammerid": "4988",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "4989",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "Item_Mine",
+        "shortname": "Item_Mine",
+        "hammerid": "5019",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "5020",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "Item_Fire",
+        "shortname": "Item_Fire",
+        "hammerid": "5038",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "5039",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "Item_Ammo",
+        "shortname": "Item_Ammo",
+        "hammerid": "5594",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "5595",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            },
+            {
+                "type": "counter",
+                "hammerid": "11551",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    }
+]

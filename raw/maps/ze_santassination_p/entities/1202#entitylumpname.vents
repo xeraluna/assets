@@ -1,0 +1,755 @@
+====0====
+wait                           Float64    0
+filtername                     CString    [PR#]filter_ct
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_gateface_trigger
+classname                      CString    trigger_multiple
+origin                         CString    -13276.000000 -3200.000000 -12646.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1871
+model                          CString    maps\ze_santassination_p\entities\sf_gateface_trigger_1871.vmdl
+_template_lump_ent_index       CString    0
+@OnStartTouch AddContext !activator chocolateperson:1
+@OnStartTouch StartSound [PR#]sf_gateface_s_c
+@OnStartTouch Color !activator 0 0 0
+
+====1====
+solidbsp                       CString    0
+dmg                            Integer    1
+spawnflags                     Integer64  528
+volume                         Integer    10
+message                        CString    sounds/ambient/nature/water_streamloop3.vsnd
+fanfriction                    Integer    20
+maxspeed                       Integer    75
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_icewaterfirst_rot
+classname                      CString    func_rotating
+origin                         CString    -10836.000000 -13944.000000 -13382.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1957
+model                          CString    maps\ze_santassination_p\entities\sf_icewaterfirst_rot_1957.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+solidbsp                       CString    0
+dmg                            Integer    1
+spawnflags                     Integer64  530
+volume                         Integer    10
+message                        CString    sounds/ambient/nature/water_streamloop3.vsnd
+fanfriction                    Integer    20
+maxspeed                       Integer    25
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_icewaterfirst_rot
+classname                      CString    func_rotating
+origin                         CString    -11956.000000 -14264.000000 -13382.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1959
+model                          CString    maps\ze_santassination_p\entities\sf_icewaterfirst_rot_1959.vmdl
+_template_lump_ent_index       CString    2
+
+====3====
+solidbsp                       CString    0
+dmg                            Integer    1
+spawnflags                     Integer64  528
+volume                         Integer    10
+message                        CString    sounds/ambient/nature/water_streamloop3.vsnd
+fanfriction                    Integer    20
+maxspeed                       Integer    100
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_icewaterfirst_rot
+classname                      CString    func_rotating
+origin                         CString    -11140.000000 -14312.000000 -13382.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1961
+model                          CString    maps\ze_santassination_p\entities\sf_icewaterfirst_rot_1961.vmdl
+_template_lump_ent_index       CString    3
+
+====4====
+solidbsp                       CString    0
+dmg                            Integer    1
+spawnflags                     Integer64  528
+volume                         Integer    10
+message                        CString    sounds/ambient/nature/water_streamloop3.vsnd
+fanfriction                    Integer    20
+maxspeed                       Integer    100
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_icewaterfirst_rot
+classname                      CString    func_rotating
+origin                         CString    -9582.120117 -14366.500000 -13382.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1963
+model                          CString    maps\ze_santassination_p\entities\sf_icewaterfirst_rot_1963.vmdl
+_template_lump_ent_index       CString    4
+
+====5====
+solidbsp                       CString    0
+dmg                            Integer    1
+spawnflags                     Integer64  530
+volume                         Integer    10
+message                        CString    sounds/ambient/nature/water_streamloop3.vsnd
+fanfriction                    Integer    20
+maxspeed                       Integer    25
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_icewaterfirst_rot
+classname                      CString    func_rotating
+origin                         CString    -9188.000000 -14184.000000 -13382.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1965
+model                          CString    maps\ze_santassination_p\entities\sf_icewaterfirst_rot_1965.vmdl
+_template_lump_ent_index       CString    5
+
+====6====
+solidbsp                       CString    0
+dmg                            Integer    1
+spawnflags                     Integer64  530
+volume                         Integer    10
+message                        CString    sounds/ambient/nature/water_streamloop3.vsnd
+fanfriction                    Integer    20
+maxspeed                       Integer    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_icewaterfirst_rot
+classname                      CString    func_rotating
+origin                         CString    -10143.000000 -13893.299805 -13382.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1967
+model                          CString    maps\ze_santassination_p\entities\sf_icewaterfirst_rot_1967.vmdl
+_template_lump_ent_index       CString    6
+
+====7====
+solidbsp                       CString    0
+dmg                            Integer    1
+spawnflags                     Integer64  528
+volume                         Integer    10
+message                        CString    sounds/ambient/nature/water_streamloop3.vsnd
+fanfriction                    Integer    20
+maxspeed                       Integer    75
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_icewaterfirst_rot
+classname                      CString    func_rotating
+origin                         CString    -9734.400391 -13941.000000 -13382.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1969
+model                          CString    maps\ze_santassination_p\entities\sf_icewaterfirst_rot_1969.vmdl
+_template_lump_ent_index       CString    7
+
+====8====
+solidbsp                       CString    0
+dmg                            Integer    1
+spawnflags                     Integer64  528
+volume                         Integer    10
+message                        CString    sounds/ambient/nature/water_streamloop3.vsnd
+fanfriction                    Integer    20
+maxspeed                       Integer    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_icewaterfirst_rot
+classname                      CString    func_rotating
+origin                         CString    -8084.000000 -12888.000000 -13382.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1971
+model                          CString    maps\ze_santassination_p\entities\sf_icewaterfirst_rot_1971.vmdl
+_template_lump_ent_index       CString    8
+
+====9====
+solidbsp                       CString    0
+dmg                            Integer    1
+spawnflags                     Integer64  530
+volume                         Integer    10
+message                        CString    sounds/ambient/nature/water_streamloop3.vsnd
+fanfriction                    Integer    20
+maxspeed                       Integer    75
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_icewaterfirst_rot
+classname                      CString    func_rotating
+origin                         CString    -7348.000000 -12728.000000 -13382.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1973
+model                          CString    maps\ze_santassination_p\entities\sf_icewaterfirst_rot_1973.vmdl
+_template_lump_ent_index       CString    9
+
+====10====
+solidbsp                       CString    0
+dmg                            Integer    1
+spawnflags                     Integer64  528
+volume                         Integer    10
+message                        CString    sounds/ambient/nature/water_streamloop3.vsnd
+fanfriction                    Integer    20
+maxspeed                       Integer    25
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_icewaterfirst_rot
+classname                      CString    func_rotating
+origin                         CString    -7204.000000 -12248.000000 -13382.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1975
+model                          CString    maps\ze_santassination_p\entities\sf_icewaterfirst_rot_1975.vmdl
+_template_lump_ent_index       CString    10
+
+====11====
+solidbsp                       CString    0
+dmg                            Integer    1
+spawnflags                     Integer64  530
+volume                         Integer    10
+message                        CString    sounds/ambient/nature/water_streamloop3.vsnd
+fanfriction                    Integer    20
+maxspeed                       Integer    100
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_icewaterfirst_rot
+classname                      CString    func_rotating
+origin                         CString    -7108.000000 -11768.000000 -13382.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1977
+model                          CString    maps\ze_santassination_p\entities\sf_icewaterfirst_rot_1977.vmdl
+_template_lump_ent_index       CString    11
+
+====12====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    100000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]sf_iwf_blocker_1
+classname                      CString    func_breakable
+origin                         CString    -8068.000000 -11432.000000 -12134.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2471
+model                          CString    maps\ze_santassination_p\entities\sf_iwf_blocker_1_2471.vmdl
+_template_lump_ent_index       CString    12
+
+====13====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    100000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]sf_iwf_blocker_2
+classname                      CString    func_breakable
+origin                         CString    -6980.000000 -12264.000000 -11526.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2473
+model                          CString    maps\ze_santassination_p\entities\sf_iwf_blocker_2_2473.vmdl
+_template_lump_ent_index       CString    13
+
+====14====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]sf_iwf_rblocker_1
+classname                      CString    logic_relay
+origin                         CString    -7972.000000 -11672.000000 -12262.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1929
+_template_lump_ent_index       CString    14
+@OnTrigger Break [PR#]sf_iwf_blocker_1
+
+====15====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]sf_iwf_rblocker_2
+classname                      CString    logic_relay
+origin                         CString    -7140.000000 -12504.000000 -11545.312500
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1938
+_template_lump_ent_index       CString    15
+@OnTrigger Break [PR#]sf_iwf_blocker_2
+
+====16====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    100000
+lip                            Integer    0
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.doorstop1
+noise1                         CString    custom.sfx.doors.doormove1
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_lavadoor_1
+classname                      CString    func_door
+origin                         CString    -13964.000000 -1592.000000 -11774.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1396
+model                          CString    maps\ze_santassination_p\entities\sf_lavadoor_1_1396.vmdl
+_template_lump_ent_index       CString    16
+
+====17====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    100000
+lip                            Integer    0
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.doorstop1
+noise1                         CString    custom.sfx.doors.doormove1
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_lavadoor_2
+classname                      CString    func_door
+origin                         CString    -11964.000000 -2808.000000 -11518.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1400
+model                          CString    maps\ze_santassination_p\entities\sf_lavadoor_2_1400.vmdl
+_template_lump_ent_index       CString    17
+
+====18====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    100000
+lip                            Integer    0
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.doorstop1
+noise1                         CString    custom.sfx.doors.doormove1
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_lavadoor_3
+classname                      CString    func_door
+origin                         CString    -11252.000000 -2448.000000 -11579.379883
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1404
+model                          CString    maps\ze_santassination_p\entities\sf_lavadoor_3_1404.vmdl
+_template_lump_ent_index       CString    18
+
+====19====
+snapshot_mesh                  Integer    0
+alphascale                     Float64    1
+selfillumscale                 Float64    1
+colortint                      Vector     <255, 255, 255>
+scale                          Float64    2.5
+start_active                   Boolean    True
+effect_textureoverride         CString    materials/luffaren/bulb_color_tga_27fdd0d.vtex
+effect_name                    CString    particles/pingas/env_light_glow_parentable_autism.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_pikachu
+classname                      CString    env_particle_glow
+origin                         CString    -7460.000000 264.000000 -11350.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1533
+_template_lump_ent_index       CString    19
+
+====20====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_029.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_pikachu_p
+classname                      CString    info_particle_system
+origin                         CString    -7460.000000 264.000000 -11286.000000
+angles                         CString    0.000000 -179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1536
+_template_lump_ent_index       CString    20
+
+====21====
+triggeronstarttouch            Boolean    False
+speed                          Integer    1000
+pushdir                        Vector     <0, 180, 0>
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_pikachu_push
+classname                      CString    trigger_push
+origin                         CString    -8268.000000 248.000000 -11270.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1534
+model                          CString    maps\ze_santassination_p\entities\sf_pikachu_push_1534.vmdl
+_template_lump_ent_index       CString    21
+@OnUser1 OnlyOnce StartSound [PR#]sf_pikachu_s
+@OnUser1 Delay=4.5 OnlyOnce Enable [PR#]sf_pikachu_push
+@OnUser1 Delay=4 OnlyOnce Stop [PR#]sf_pikachu_p
+@OnUser1 Delay=4.2 OnlyOnce Start [PR#]sf_pikachu_p
+@OnUser1 Delay=15 OnlyOnce StopPlayEndCap [PR#]sf_pikachu_p
+@OnUser1 Delay=15 OnlyOnce Disable [PR#]sf_pikachu_push
+@OnUser1 Delay=15 OnlyOnce Kill [PR#]sf_pikachu
+@OnUser1 Delay=4.5 OnlyOnce StartShake [PR#]shakesmallest
+
+====22====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    False
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.pokethemon
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_pikachu_s
+classname                      CString    point_soundevent
+origin                         CString    -7460.000000 264.000000 -11325.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1531
+_template_lump_ent_index       CString    22
+
+====23====
+solidbsp                       CString    0
+dmg                            Integer    10000
+spawnflags                     Integer64  918
+volume                         Integer    10
+message                        CString    sounds/ambient/machines/pump_loop_1.vsnd
+fanfriction                    Integer    20
+maxspeed                       Integer    200
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_rotbridge
+classname                      CString    func_rotating
+origin                         CString    -9332.000000 2151.679932 -11334.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2352
+model                          CString    maps\ze_santassination_p\entities\sf_rotbridge_2352.vmdl
+_template_lump_ent_index       CString    23
+@OnUser1 OnlyOnce Start !self
+@OnUser1 Delay=1.3 OnlyOnce Stop !self
+@OnUser1 Delay=10 OnlyOnce Kill !self
+
+====24====
+movesoundmaxtime               Float64    0
+movesoundmintime               Float64    0
+movesoundmaxpitch              Integer    200
+movesoundminpitch              Integer    60
+volume                         Integer    10
+movesound                      CString    sounds/ambient/wind/flag_and_rope_loop.vsnd
+dmg                            Integer    100000
+bank                           CString    0
+height                         Integer    0
+wheels                         Integer    50
+orientationtype                CString    1
+velocitytype                   CString    0
+speed                          Integer    0
+startspeed                     Integer    200
+target                         CString    [PR#]sf_sled_p_1
+spawnflags                     Integer64  531
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_sled
+classname                      CString    func_tracktrain
+origin                         CString    -5476.000000 248.000000 -11446.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2381
+model                          CString    maps\ze_santassination_p\entities\sf_sled_2381.vmdl
+_template_lump_ent_index       CString    24
+
+====25====
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+idleanim                       CString    idle
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganim                   CString    idle
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    2
+skin                           CString    0
+model                          CString    models/luffaren/luff_sleigh.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]sf_sled
+targetname                     CString    [PR#]sf_sled_model
+classname                      CString    prop_dynamic
+origin                         CString    -5156.000000 248.000000 -11462.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2441
+_template_lump_ent_index       CString    25
+

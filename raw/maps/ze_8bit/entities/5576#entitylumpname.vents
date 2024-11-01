@@ -1,0 +1,103 @@
+====0====
+triggeronstarttouch            Boolean    False
+speed                          Integer    2000
+pushdir                        Vector     <0, 0, 0>
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Move_attack_boss4_right
+targetname                     CString    [PR#]Push_attack_boss4_2
+classname                      CString    trigger_push
+origin                         CString    -600.000000 0.000000 68.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5567
+model                          CString    maps\ze_8bit\entities\Push_attack_boss4_2_5567.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    1250
+speed                          Integer    600
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 270, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Move_attack_boss4_right
+classname                      CString    func_movelinear
+origin                         CString    -5.000000 0.000000 27.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5569
+model                          CString    maps\ze_8bit\entities\Move_attack_boss4_right_5569.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+flag_as_weather                CString    0
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    True
+effect_name                    CString    particles/8bit_particles/attack_push.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Move_attack_boss4_right
+targetname                     CString    [PR#]Attack_push3_2_1
+classname                      CString    info_particle_system
+origin                         CString    -19.000000 16.000000 68.000000
+angles                         CString    0.000000 -179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5589
+_template_lump_ent_index       CString    2
+
+====3====
+flag_as_weather                CString    0
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    True
+effect_name                    CString    particles/8bit_particles/attack_push.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Move_attack_boss4_right
+targetname                     CString    [PR#]Attack_push3_2
+classname                      CString    info_particle_system
+origin                         CString    -19.000000 -16.000000 68.000000
+angles                         CString    0.000000 -179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5590
+_template_lump_ent_index       CString    3
+

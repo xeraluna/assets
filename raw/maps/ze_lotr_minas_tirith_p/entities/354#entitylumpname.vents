@@ -1,0 +1,24 @@
+====0====
+subclass_name                  CString    44
+canbepickedup                  Boolean    True
+spawnflags                     Integer    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <205, 250, 249>
+renderamt                      Integer    255
+rendermode                     CString    1
+renderfx                       CString    0
+targetname                     CString    [PR#]item_supply_s3
+classname                      CString    weapon_hegrenade
+origin                         CString    -0.129883 0.089966 -0.200195
+angles                         Vector     <-0, 0, 0>
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    353
+_template_lump_ent_index       CString    0
+@OnPlayerPickup Delay=1 OnlyOnce ForceSpawn [PR#]item_supply_s6
+@OnPlayerPickup OnlyOnce KeyValues !self targetname nothing
+

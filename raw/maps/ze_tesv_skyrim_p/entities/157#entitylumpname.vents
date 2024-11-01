@@ -1,0 +1,44 @@
+====0====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+notsolid                       CString    0
+preferredcarryangles           Vector     <0, 0, 0>
+enableuseoutput                Boolean    False
+forcetoenablemotion            Float64    0
+damagetoenablemotion           Integer    0
+massscale                      Float64    0
+damagetype                     CString    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    0
+health                         Integer    0
+propdata                       CString    0
+spawnflags                     Integer64  16385
+uselocaloffset                 Boolean    False
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]lever_break
+classname                      CString    func_physbox
+origin                         CString    0.000000 -0.125000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2272
+model                          CString    maps\ze_tesv_skyrim_p\entities\lever_break_2272.vmdl
+_template_lump_ent_index       CString    0
+

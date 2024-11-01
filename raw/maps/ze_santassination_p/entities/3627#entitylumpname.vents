@@ -1,0 +1,175 @@
+====0====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+notsolid                       CString    0
+preferredcarryangles           Vector     <0, 0, 0>
+enableuseoutput                Boolean    False
+forcetoenablemotion            Float64    0
+damagetoenablemotion           Integer    0
+massscale                      Float64    0
+damagetype                     CString    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    0
+propdata                       CString    0
+spawnflags                     Integer64  16902
+uselocaloffset                 Boolean    False
+performancemode                CString    1
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+damagefilter                   CString    [PR#]filter_ct_no
+targetname                     CString    [PR#]projectile_phys_1&0000
+classname                      CString    func_physbox
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    22717
+model                          CString    maps\ze_santassination_p\entities\projectile_phys_1_22717.vmdl
+_template_lump_ent_index       CString    0
+@OnBreak Delay=0.02 FireUser1 [PR#]projectile_t_1&0000
+@OnTakeDamage FireUser1 !self
+@OnDamaged FireUser1 !self
+@OnUser1 Delay=0.02 OnlyOnce Break !self
+@OnBreak FireUser4 [PR#]projectile_s_1&0000
+@OnUser1 OnlyOnce ForceSpawn [PR#]projectile_spawner_1&0000
+
+====1====
+force                          CString    10000
+forcetime                      CString    0
+attach1                        CString    [PR#]projectile_phys_1&0000
+spawnflags                     Integer64  27
+targetname                     CString    [PR#]projectile_t_1&0000
+classname                      CString    phys_thruster
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3635
+_template_lump_ent_index       CString    1
+@OnUser1 OnlyOnce Kill !self
+
+====2====
+damage_old                     CString    1000
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    20
+damage                         Integer    625
+filtername                     CString    [PR#]filter_npc_hitbox_item
+spawnflags                     Integer64  9
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]projectile_phys_1&0000
+targetname                     CString    [PR#]projectile_hurt_1&0000
+classname                      CString    trigger_hurt
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3636
+model                          CString    maps\ze_santassination_p\entities\projectile_hurt_1_3636.vmdl
+_template_lump_ent_index       CString    2
+@OnHurt FireUser1 [PR#]projectile_phys_1&0000
+@OnHurtPlayer FireUser1 [PR#]projectile_phys_1&0000
+@OnHurt TestActivator [PR#]filter_npc_hitbox_item_no_t
+
+====3====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]projectile_relay_1&0000
+classname                      CString    logic_relay
+origin                         CString    0.000000 0.000000 32.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3638
+_template_lump_ent_index       CString    3
+@OnSpawn OnlyOnce Kill [PR#]projectile_relay_1&0000
+@OnSpawn Delay=5 OnlyOnce Break [PR#]projectile_phys_1&0000
+@OnSpawn OnlyOnce FireUser1 [PR#]projectile_s_1&0000
+
+====4====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    True
+effect_name                    CString    particles/luffaren/custom_particle_026.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]projectile_phys_1&0000
+targetname                     CString    [PR#]projectile_particle_1&0000
+classname                      CString    info_particle_system
+origin                         CString    -8.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3640
+_template_lump_ent_index       CString    4
+@OnUser1 FireUser1 [PR#]projectile_phys_1&0000
+@OnUser1 OnlyOnce Kill !self
+
+====5====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.rocket.gas
+sourceentityname               CString    [PR#]projectile_phys_1&0000
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]projectile_s_1&0000
+classname                      CString    point_soundevent
+origin                         CString    0.000000 0.000000 16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3639
+_template_lump_ent_index       CString    5
+@OnUser1 StartSound !self
+@OnUser1 StartSound !self
+@OnUser4 Delay=0.05 OnlyOnce Kill !self
+@OnUser4 OnlyOnce StopSound !self
+@OnUser4 OnlyOnce StopSound !self
+
+====6====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_explosion
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]projectile_phys_1&0000
+targetname                     CString    [PR#]projectile_spawner_1&0000
+classname                      CString    env_entity_maker
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3641
+_template_lump_ent_index       CString    6
+

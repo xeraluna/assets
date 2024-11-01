@@ -1,0 +1,285 @@
+====0====
+movesoundmaxtime               Float64    0
+movesoundmintime               Float64    0
+movesoundmaxpitch              Integer    200
+movesoundminpitch              Integer    60
+volume                         Integer    0
+dmg                            Integer    0
+bank                           CString    0
+height                         Integer    4
+wheels                         Integer    50
+orientationtype                CString    1
+velocitytype                   CString    0
+speed                          Integer    0
+startspeed                     Integer    200
+target                         CString    [PR#]Trace_Path_1&0000
+spawnflags                     Integer64  522
+disableshadows                 CString    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNone
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Trace_TrackTrain&0000
+classname                      CString    func_tracktrain
+origin                         CString    0.000000 0.000000 60.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2631
+model                          CString    maps\ze_arcana_heart\entities\Trace_TrackTrain_2631.vmdl
+_template_lump_ent_index       CString    0
+@OnUser1 Delay=2 OnlyOnce SetSpeedReal !self 200
+@OnUser1 Delay=12 OnlyOnce FireUser2 !self
+@OnUser2 OnlyOnce Stop !self
+@OnUser2 Delay=2 OnlyOnce FireUser4 !self
+@OnUser1 OnlyOnce Open [PR#]Trace_Move_1&0000
+@OnUser1 Delay=2 OnlyOnce Enable [PR#]Trace_Timer&0000
+@OnUser2 Delay=1 OnlyOnce Disable [PR#]Trace_Timer&0000
+@OnUser4 Kill [PR#]Trace_*
+
+====1====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]Trace_Path_2&0000
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Trace_Path_1&0000
+classname                      CString    path_track
+origin                         CString    0.000000 0.000000 60.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3299
+_template_lump_ent_index       CString    1
+
+====2====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Trace_Path_2&0000
+classname                      CString    path_track
+origin                         CString    -256.000000 0.000000 60.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4748
+_template_lump_ent_index       CString    2
+@OnPass OnlyOnce FireUser2 !activator
+
+====3====
+initialdelay                   Float64    0
+refiretime                     Float64    0.10000000149011612
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    False
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Trace_Timer&0000
+classname                      CString    logic_timer
+origin                         CString    0.000000 -24.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2630
+_template_lump_ent_index       CString    3
+@OnTimer ForceSpawn [PR#]Trace_Maker&0000
+
+====4====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+burstscale                     Float64    100
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+targetname                     CString    [PR#]Trace_Model&0000
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Trace_TrackTrain&0000
+rendertocubemaps               Boolean    True
+disableshadows                 CString    1
+solid                          CString    6
+skin                           CString    default
+rendercolor                    Vector     <0, 0, 0>
+model                          CString    models/props/diamond_02.vmdl
+classname                      CString    prop_dynamic
+origin                         CString    0.000000 0.000000 564.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5510
+_template_lump_ent_index       CString    4
+
+====5====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer64  577
+volume                         Integer    10
+fanfriction                    Integer    0
+maxspeed                       Integer    200
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Trace_TrackTrain&0000
+targetname                     CString    [PR#]Trace_Rota_1&0000
+classname                      CString    func_rotating
+origin                         CString    0.000000 0.000000 662.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4249
+model                          CString    maps\ze_arcana_heart\entities\Trace_Rota_1_4249.vmdl
+_template_lump_ent_index       CString    5
+
+====6====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    192
+speed                          Integer    384
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Trace_Rota_1&0000
+targetname                     CString    [PR#]Trace_Move_1&0000
+classname                      CString    func_movelinear
+origin                         CString    -96.000000 0.000000 666.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3290
+model                          CString    maps\ze_arcana_heart\entities\Trace_Move_1_3290.vmdl
+_template_lump_ent_index       CString    6
+@OnFullyClosed Open !self
+@OnFullyOpen Close !self
+
+====7====
+nointerpolate                  Boolean    False
+touchoutputperentitydelay      Float64    0
+enableuseoutput                Boolean    False
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+uselocaloffset                 Boolean    False
+spawnobject                    CString    0
+spawnflags                     Integer64  52225
+rendermode                     CString    kRenderNone
+renderfx                       CString    kRenderFxNone
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+propdata                       CString    0
+pressuredelay                  Float64    0
+preferredcarryangles           Vector     <0, 0, 0>
+performancemode                CString    0
+notsolid                       CString    0
+nodamageforces                 Boolean    False
+material                       CString    0
+massscale                      Float64    0
+health                         Integer    0
+forcetoenablemotion            Float64    0
+fademindist                    Float64    -1
+fademaxdist                    Float64    0
+explosion                      CString    0
+exploitablebyplayer            CString    0
+exploderadius                  Float64    0
+explodemagnitude               Integer    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+disablereceiveshadows          Boolean    True
+damagetype                     CString    0
+damagetoenablemotion           Integer    0
+damagefilter                   CString    [PR#]Filter_T
+targetname                     CString    [PR#]Trace_Target&0000
+classname                      CString    func_physbox
+origin                         CString    -256.000000 0.000000 60.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3294
+model                          CString    maps\ze_arcana_heart\entities\Trace_Target_3294.vmdl
+_template_lump_ent_index       CString    7
+
+====8====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]Trace_Path_1&0000
+target                         CString    [PR#]Trace_Path_2&0000
+measurereference               CString    [PR#]Trace_Path_1&0000
+measuretarget                  CString    [PR#]Trace_Target&0000
+targetname                     CString    [PR#]Trace_Measure&0000
+classname                      CString    logic_measure_movement
+origin                         CString    0.000000 0.000000 16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2741
+_template_lump_ent_index       CString    8
+
+====9====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S3_Ball_5
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Trace_Move_1&0000
+targetname                     CString    [PR#]Trace_Maker&0000
+classname                      CString    env_entity_maker
+origin                         CString    -96.000000 0.000000 664.000000
+angles                         CString    89.999992 -0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4328
+_template_lump_ent_index       CString    9
+

@@ -1,0 +1,496 @@
+====0====
+wait                           Float64    0
+filtername                     CString    [PR#]boss_sw_final
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]smalldwboss_physbox
+targetname                     CString    [PR#]smalldwboss_trigger_f
+classname                      CString    trigger_multiple
+origin                         CString    0.000000 0.000000 56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    10462
+model                          CString    maps\ze_tesv_skyrim_p\entities\smalldwboss_trigger_f_10462.vmdl
+_template_lump_ent_index       CString    0
+@OnTrigger Delay=0.1 Deactivate [PR#]smalldwboss_thrust_otse
+@OnTrigger Activate [PR#]smalldwboss_thrust_otse
+@OnTouching Disable [PR#]smalldwboss_trigger_l2
+@OnTouching Disable [PR#]smalldwboss_trigger_l
+@OnTouching Disable [PR#]smalldwboss_trigger_r2
+@OnTouching Disable [PR#]smalldwboss_trigger_r
+@OnEndTouchAll Enable [PR#]smalldwboss_trigger_l2
+@OnEndTouchAll Enable [PR#]smalldwboss_trigger_l
+@OnEndTouchAll Enable [PR#]smalldwboss_trigger_r2
+@OnEndTouchAll Enable [PR#]smalldwboss_trigger_r
+
+====1====
+force                          CString    2000
+forcetime                      CString    0.030000
+attach1                        CString    [PR#]smalldwboss_physbox
+spawnflags                     Integer64  30
+targetname                     CString    [PR#]smalldwboss_thrust_paremale
+classname                      CString    phys_thruster
+origin                         CString    32.000000 -32.000000 -16.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    10446
+_template_lump_ent_index       CString    1
+
+====2====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+notsolid                       CString    0
+preferredcarryangles           Vector     <0, 0, 0>
+enableuseoutput                Boolean    False
+forcetoenablemotion            Float64    0
+damagetoenablemotion           Integer    0
+massscale                      Float64    0
+damagetype                     CString    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    10
+health                         Integer    999999999
+propdata                       CString    0
+spawnflags                     Integer64  8473600
+uselocaloffset                 Boolean    False
+performancemode                CString    1
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+targetname                     CString    [PR#]smalldwboss_physbox
+classname                      CString    func_physbox
+origin                         CString    0.000000 0.000000 -16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    10451
+model                          CString    maps\ze_tesv_skyrim_p\entities\smalldwboss_physbox_10451.vmdl
+_template_lump_ent_index       CString    2
+
+====3====
+force                          CString    2000
+forcetime                      CString    0.100000
+attach1                        CString    [PR#]smalldwboss_physbox
+spawnflags                     Integer64  30
+targetname                     CString    [PR#]smalldwboss_thrust_otse
+classname                      CString    phys_thruster
+origin                         CString    16.000000 0.000000 -16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    10447
+_template_lump_ent_index       CString    3
+
+====4====
+dampallrotation                Boolean    False
+angularlimit                   Float64    3000
+attach1                        CString    [PR#]smalldwboss_physbox
+spawnflags                     Integer    0
+targetname                     CString    [PR#]smalldwboss_keepupright
+classname                      CString    phys_keepupright
+origin                         CString    0.000000 0.000000 -16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    10444
+_template_lump_ent_index       CString    4
+
+====5====
+force                          CString    2000
+forcetime                      CString    0.030000
+attach1                        CString    [PR#]smalldwboss_physbox
+spawnflags                     Integer64  30
+targetname                     CString    [PR#]smalldwboss_thrust_vasakule
+classname                      CString    phys_thruster
+origin                         CString    32.000000 32.000000 -16.000000
+angles                         CString    -0.000000 -89.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    10450
+_template_lump_ent_index       CString    5
+
+====6====
+burstscale                     Float64    100
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+spawnflags                     Integer64  256
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/centurion/smallnewcenturion.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]smalldwboss_physbox
+targetname                     CString    [PR#]smalldwboss_prop
+classname                      CString    prop_dynamic
+origin                         CString    0.000000 0.000000 -23.000000
+angles                         CString    -0.000000 -179.999954 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    10442
+_template_lump_ent_index       CString    6
+
+====7====
+initialdelay                   Float64    0
+refiretime                     Float64    0.5
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    False
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]smalldwboss_timer2
+classname                      CString    logic_timer
+origin                         CString    -64.000000 -48.000000 64.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    10438
+_template_lump_ent_index       CString    7
+@OnTimer Disable [PR#]smalldwboss_trigger_l2
+@OnTimer Disable [PR#]smalldwboss_trigger_l
+@OnTimer Disable [PR#]smalldwboss_trigger_f
+@OnTimer Disable [PR#]smalldwboss_trigger_r
+@OnTimer Disable [PR#]smalldwboss_trigger_r2
+@OnTimer Delay=0.05 Enable [PR#]smalldwboss_trigger_r2
+@OnTimer Delay=0.05 Enable [PR#]smalldwboss_trigger_r
+@OnTimer Delay=0.05 Enable [PR#]smalldwboss_trigger_f
+@OnTimer Delay=0.05 Enable [PR#]smalldwboss_trigger_l
+@OnTimer Delay=0.05 Enable [PR#]smalldwboss_trigger_l2
+
+====8====
+force                          CString    4000
+forcetime                      CString    0.030000
+attach1                        CString    [PR#]smalldwboss_physbox
+spawnflags                     Integer64  30
+targetname                     CString    [PR#]smalldwboss_thrust_vasakule2
+classname                      CString    phys_thruster
+origin                         CString    31.000000 33.000000 -16.000000
+angles                         CString    -0.000000 -89.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    10443
+_template_lump_ent_index       CString    8
+
+====9====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+notsolid                       CString    0
+preferredcarryangles           Vector     <0, 0, 0>
+enableuseoutput                Boolean    False
+forcetoenablemotion            Float64    0
+damagetoenablemotion           Integer    0
+massscale                      Float64    0
+damagetype                     CString    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    2500
+propdata                       CString    0
+spawnflags                     Integer64  114688
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]smalldwboss_physbox
+performancemode                CString    1
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+damagefilter                   CString    [PR#]filter_ct
+targetname                     CString    [PR#]smalldwboss_physbox2
+classname                      CString    func_physbox
+origin                         CString    0.000000 0.000000 38.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    10472
+model                          CString    maps\ze_tesv_skyrim_p\entities\smalldwboss_physbox2_10472.vmdl
+_template_lump_ent_index       CString    9
+@OnBreak Delay=8.5 Enable [PR#]dwboss_smallbosstrigger
+@OnBreak Delay=3.8 Disable [PR#]smalldwboss_prop
+@OnBreak SetAnimation [PR#]smalldwboss_prop pack
+@OnBreak SetDefaultAnimation [PR#]smalldwboss_prop
+@OnBreak Kill [PR#]smallboss_hurt
+@OnBreak Kill [PR#]smallboss_hurttrigger
+@OnBreak Kill [PR#]smalldwboss_targettrigger
+@OnBreak Kill [PR#]smallboss_hurtcase
+@OnBreak Kill [PR#]smalldwboss_thrust_otse
+@OnBreak Kill [PR#]smalldwboss_keepupright
+@OnBreak Kill [PR#]smalldwboss_thrust_vasakule
+@OnBreak Kill [PR#]smalldwboss_thrust_paremale
+@OnBreak Kill [PR#]smalldwboss_timer2
+@OnBreak Delay=4 Kill [PR#]smalldwboss_physbox
+@OnBreak Delay=3.7 Start [PR#]smalldwboss_exp
+@OnBreak Delay=4.2 Kill [PR#]smalldwboss_exp
+@OnBreak Delay=3.71 Enable [PR#]smalldwboss_exp
+@OnBreak Delay=4 Stop [PR#]smalldwboss_exp
+@OnBreak Delay=4.3 Kill [PR#]smalldwboss_prop
+@OnBreak Delay=3.7 StartSound [PR#]smalldwboss_expsound
+@OnBreak Kill [PR#]smalldwboss_thrust_paremale2
+@OnBreak Kill [PR#]smalldwboss_thrust_vasakule2
+
+====10====
+force                          CString    4000
+forcetime                      CString    0.030000
+attach1                        CString    [PR#]smalldwboss_physbox
+spawnflags                     Integer64  30
+targetname                     CString    [PR#]smalldwboss_thrust_paremale2
+classname                      CString    phys_thruster
+origin                         CString    31.000000 -33.000000 -16.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    10448
+_template_lump_ent_index       CString    10
+
+====11====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    20
+damage                         Integer    100
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]smalldwboss_physbox
+targetname                     CString    [PR#]smallboss_hurt
+classname                      CString    trigger_hurt
+origin                         CString    50.599609 0.000000 40.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    10474
+model                          CString    maps\ze_tesv_skyrim_p\entities\smallboss_hurt_10474.vmdl
+_template_lump_ent_index       CString    11
+
+====12====
+wait                           Float64    1
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]smalldwboss_physbox
+targetname                     CString    [PR#]smallboss_hurttrigger
+classname                      CString    trigger_multiple
+origin                         CString    56.000000 0.000000 40.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    10469
+model                          CString    maps\ze_tesv_skyrim_p\entities\smallboss_hurttrigger_10469.vmdl
+_template_lump_ent_index       CString    12
+@OnStartTouch PickRandom [PR#]smallboss_hurtcase
+@OnStartTouch Disable !self
+@OnStartTouch Delay=1.6 Enable !self
+
+====13====
+targetname                     CString    [PR#]smallboss_hurtcase
+classname                      CString    logic_case
+origin                         CString    -96.000000 -48.000000 64.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    10439
+_template_lump_ent_index       CString    13
+@OnCase01 Delay=0.2 Enable [PR#]smallboss_hurt
+@OnCase01 SetAnimationNotLooping [PR#]smalldwboss_prop backslash
+@OnCase01 Delay=1 Disable [PR#]smallboss_hurt
+@OnCase02 Delay=1 Disable [PR#]smallboss_hurt
+@OnCase02 Delay=0.2 Enable [PR#]smallboss_hurt
+@OnCase02 SetAnimationNotLooping [PR#]smalldwboss_prop smallslash
+@OnCase01 Delay=0.2 StartSound [PR#]smalldwboss_s1
+@OnCase02 Delay=0.2 StartSound [PR#]smalldwboss_s1
+
+====14====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]smalldwboss_relay
+classname                      CString    logic_relay
+origin                         CString    -128.000000 -48.000000 64.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    10440
+_template_lump_ent_index       CString    14
+@OnTrigger Delay=0.25 SetDefaultAnimationLooping [PR#]smalldwboss_prop smalljooks
+@OnTrigger Delay=0.25 Enable [PR#]smalldwboss_timer2
+@OnTrigger Delay=0.25 Enable [PR#]smallboss_hurttrigger
+@OnTrigger Delay=0.05 SetAnimationNotLooping [PR#]smalldwboss_prop unpack
+
+====15====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    -1
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/fusroderp/custom_particle_102.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]smalldwboss_prop
+targetname                     CString    [PR#]smalldwboss_exp
+classname                      CString    info_particle_system
+origin                         CString    8.000000 0.000000 52.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    10467
+_template_lump_ent_index       CString    15
+
+====16====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    128
+damagecap                      Integer    20
+damage                         Integer    100
+spawnflags                     Integer64  1097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]smalldwboss_prop
+targetname                     CString    [PR#]smalldwboss_exp
+classname                      CString    trigger_hurt
+origin                         CString    8.000000 0.000000 38.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    10476
+model                          CString    maps\ze_tesv_skyrim_p\entities\smalldwboss_exp_10476.vmdl
+_template_lump_ent_index       CString    16
+
+====17====
+wait                           Float64    0
+filtername                     CString    [PR#]boss_sw_final
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]smalldwboss_physbox
+targetname                     CString    [PR#]smalldwboss_trigger_r
+classname                      CString    trigger_multiple
+origin                         CString    1024.000000 -272.000000 56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    10479
+model                          CString    maps\ze_tesv_skyrim_p\entities\smalldwboss_trigger_r_10479.vmdl
+_template_lump_ent_index       CString    17
+@OnTrigger Delay=0.2 Deactivate [PR#]smalldwboss_thrust_vasakule
+@OnTrigger Activate [PR#]smalldwboss_thrust_vasakule
+@OnTouching Disable [PR#]smalldwboss_trigger_l2
+@OnTouching Disable [PR#]smalldwboss_trigger_l
+@OnTouching Disable [PR#]smalldwboss_trigger_r2
+@OnEndTouchAll Enable [PR#]smalldwboss_trigger_l2
+@OnEndTouchAll Enable [PR#]smalldwboss_trigger_l
+@OnEndTouchAll Enable [PR#]smalldwboss_trigger_r2
+
+====18====
+wait                           Float64    0
+filtername                     CString    [PR#]boss_sw_final
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]smalldwboss_physbox
+targetname                     CString    [PR#]smalldwboss_trigger_l
+classname                      CString    trigger_multiple
+origin                         CString    1024.000000 272.000000 56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    10417
+model                          CString    maps\ze_tesv_skyrim_p\entities\smalldwboss_trigger_l_10417.vmdl
+_template_lump_ent_index       CString    18
+@OnTrigger Delay=0.2 Deactivate [PR#]smalldwboss_thrust_paremale
+@OnTrigger Activate [PR#]smalldwboss_thrust_paremale
+@OnTouching Disable [PR#]smalldwboss_trigger_l2
+@OnTouching Disable [PR#]smalldwboss_trigger_r2
+@OnEndTouchAll Enable [PR#]smalldwboss_trigger_l2
+@OnEndTouchAll Enable [PR#]smalldwboss_trigger_r2
+
+====19====
+wait                           Float64    0
+filtername                     CString    [PR#]boss_sw_final
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]smalldwboss_physbox
+targetname                     CString    [PR#]smalldwboss_trigger_r2
+classname                      CString    trigger_multiple
+origin                         CString    0.000000 0.000000 56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    10481
+model                          CString    maps\ze_tesv_skyrim_p\entities\smalldwboss_trigger_r2_10481.vmdl
+_template_lump_ent_index       CString    19
+@OnTrigger Delay=0.2 Deactivate [PR#]smalldwboss_thrust_vasakule2
+@OnTrigger Activate [PR#]smalldwboss_thrust_vasakule2
+@OnTouching Disable [PR#]smalldwboss_trigger_l2
+@OnEndTouchAll Enable [PR#]smalldwboss_trigger_l2
+
+====20====
+wait                           Float64    0
+filtername                     CString    [PR#]boss_sw_final
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]smalldwboss_physbox
+targetname                     CString    [PR#]smalldwboss_trigger_l2
+classname                      CString    trigger_multiple
+origin                         CString    0.000000 0.000000 56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    10404
+model                          CString    maps\ze_tesv_skyrim_p\entities\smalldwboss_trigger_l2_10404.vmdl
+_template_lump_ent_index       CString    20
+@OnTrigger Delay=0.2 Deactivate [PR#]smalldwboss_thrust_paremale2
+@OnTrigger Activate [PR#]smalldwboss_thrust_paremale2
+@OnTouching Disable [PR#]smalldwboss_trigger_r2
+@OnEndTouchAll Enable [PR#]smalldwboss_trigger_r2
+

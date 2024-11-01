@@ -1,0 +1,21 @@
+====0====
+fadetime                       Float64    1
+exposurespeeddown              Float64    1
+exposurespeedup                Float64    1
+enableexposure                 Boolean    True
+maxexposure                    Float64    1
+minexposure                    Float64    1
+master                         Boolean    False
+postprocessing                 CString    lighting/postprocessing/extreme.vpost
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]EXTREME_PP
+classname                      CString    post_processing_volume
+origin                         CString    2.753326 16.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    13143
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\EXTREME_PP_13143.vmdl
+_template_lump_ent_index       CString    0
+

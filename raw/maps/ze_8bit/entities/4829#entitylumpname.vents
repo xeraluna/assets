@@ -1,0 +1,68 @@
+====0====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    20
+damage                         Integer    20
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Func_move_high_boss_attack2&0000
+targetname                     CString    [PR#]Trigger_hurt_high_boss_attack2&0000
+classname                      CString    trigger_hurt
+origin                         CString    -1.000000 0.000000 1.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4837
+model                          CString    maps\ze_8bit\entities\Trigger_hurt_high_boss_attack2_4837.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    1200
+speed                          Integer    600
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 180, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Func_move_high_boss_attack2&0000
+classname                      CString    func_movelinear
+origin                         CString    0.000000 0.000000 1.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4819
+model                          CString    maps\ze_8bit\entities\Func_move_high_boss_attack2_4819.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Logic_relay_attack_laser_boss4_7&0000
+classname                      CString    logic_relay
+origin                         CString    23.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5695
+_template_lump_ent_index       CString    2
+@OnSpawn Delay=2.2 Kill [PR#]Trigger_hurt_high_boss_attack2&0000
+@OnSpawn Delay=2.2 Kill [PR#]Func_move_high_boss_attack2&0000
+@OnSpawn Delay=0.05 Open [PR#]Func_move_high_boss_attack2&0000
+@OnSpawn Delay=2.2 Kill !self
+

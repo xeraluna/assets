@@ -1,0 +1,362 @@
+====0====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_025.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]lionking_mufasaskip_p
+classname                      CString    info_particle_system
+origin                         CString    6404.000000 11992.000000 -1314.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7906
+_template_lump_ent_index       CString    0
+
+====1====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_speeder
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]lionking_speeders
+classname                      CString    env_entity_maker
+origin                         CString    -508.000000 4024.000000 -250.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    60
+_template_lump_ent_index       CString    1
+
+====2====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_speeder
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]lionking_speeders
+classname                      CString    env_entity_maker
+origin                         CString    -504.000000 4076.000000 -250.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    61
+_template_lump_ent_index       CString    2
+
+====3====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_speeder
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]lionking_speeders
+classname                      CString    env_entity_maker
+origin                         CString    -500.000000 4124.000000 -250.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    62
+_template_lump_ent_index       CString    3
+
+====4====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_speeder
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]lionking_speeders
+classname                      CString    env_entity_maker
+origin                         CString    -508.000000 3972.000000 -250.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    63
+_template_lump_ent_index       CString    4
+
+====5====
+triggeronstarttouch            Boolean    False
+speed                          Integer    250
+pushdir                        Vector     <0, 0, 0>
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]lionking_zpushrock
+classname                      CString    trigger_push
+origin                         CString    8068.000000 11720.000000 -1350.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    39
+model                          CString    maps\ze_santassination_p\entities\lionking_zpushrock_39.vmdl
+_template_lump_ent_index       CString    5
+
+====6====
+triggeronstarttouch            Boolean    False
+speed                          Integer    250
+pushdir                        Vector     <0, 90, 0>
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]lionking_zpushrock
+classname                      CString    trigger_push
+origin                         CString    7732.000000 11864.000000 -1350.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    41
+model                          CString    maps\ze_santassination_p\entities\lionking_zpushrock_41.vmdl
+_template_lump_ent_index       CString    6
+
+====7====
+triggeronstarttouch            Boolean    False
+speed                          Integer    250
+pushdir                        Vector     <0, 270, 0>
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]lionking_zpushrock
+classname                      CString    trigger_push
+origin                         CString    7732.000000 11432.000000 -1350.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    43
+model                          CString    maps\ze_santassination_p\entities\lionking_zpushrock_43.vmdl
+_template_lump_ent_index       CString    7
+
+====8====
+triggeronstarttouch            Boolean    False
+speed                          Integer    250
+pushdir                        Vector     <0, 180, 0>
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]lionking_zpushrock
+classname                      CString    trigger_push
+origin                         CString    7522.000000 11404.000000 -374.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    45
+model                          CString    maps\ze_santassination_p\entities\lionking_zpushrock_45.vmdl
+_template_lump_ent_index       CString    8
+
+====9====
+snapshot_mesh                  Integer    0
+alphascale                     Float64    1
+selfillumscale                 Float64    1
+colortint                      Vector     <255, 255, 255>
+scale                          Float64    2.5
+start_active                   Boolean    True
+effect_textureoverride         CString    materials/luffaren/mufasa_color_tga_80a9f77b.vtex
+effect_name                    CString    particles/pingas/env_light_glow_parentable_autism.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]mufasa_jumper
+targetname                     CString    [PR#]lionking_sprite_mufasa
+classname                      CString    env_particle_glow
+origin                         CString    3180.000000 12768.000000 -798.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3757
+_template_lump_ent_index       CString    9
+
+====10====
+snapshot_mesh                  Integer    0
+alphascale                     Float64    1
+selfillumscale                 Float64    1
+colortint                      Vector     <255, 255, 255>
+scale                          Float64    0.75
+start_active                   Boolean    True
+effect_textureoverride         CString    materials/luffaren/zazu_color_tga_18e74b6d.vtex
+effect_name                    CString    particles/pingas/env_light_glow_parentable_autism.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]tr_3
+targetname                     CString    [PR#]lionking_sprite_zazu
+classname                      CString    env_particle_glow
+origin                         CString    2980.000000 12800.000000 -806.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3765
+_template_lump_ent_index       CString    10
+
+====11====
+snapshot_mesh                  Integer    0
+alphascale                     Float64    1
+selfillumscale                 Float64    1
+colortint                      Vector     <255, 255, 255>
+scale                          Float64    0.8999999761581421
+start_active                   Boolean    True
+effect_textureoverride         CString    materials/luffaren/simba_color_tga_627d030e.vtex
+effect_name                    CString    particles/pingas/env_light_glow_parentable_autism.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]simba_jumper
+targetname                     CString    [PR#]lionking_sprite_simba
+classname                      CString    env_particle_glow
+origin                         CString    -1308.000000 11768.000000 -1314.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3743
+_template_lump_ent_index       CString    11
+
+====12====
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]teleport_destination
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]teleport_s1_1
+classname                      CString    trigger_teleport
+origin                         CString    11108.000000 11128.000000 -614.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3776
+model                          CString    maps\ze_santassination_p\entities\teleport_s1_1_3776.vmdl
+_template_lump_ent_index       CString    12
+
+====13====
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]teleport_destination
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]teleport_s1_2
+classname                      CString    trigger_teleport
+origin                         CString    1380.000000 6328.000000 1178.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3779
+model                          CString    maps\ze_santassination_p\entities\teleport_s1_2_3779.vmdl
+_template_lump_ent_index       CString    13
+
+====14====
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]teleport_destination
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]teleport_s1_3
+classname                      CString    trigger_teleport
+origin                         CString    356.000000 11768.000000 -614.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3784
+model                          CString    maps\ze_santassination_p\entities\teleport_s1_3_3784.vmdl
+_template_lump_ent_index       CString    14
+
+====15====
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]teleport_destination
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]teleport_s1_4
+classname                      CString    trigger_teleport
+origin                         CString    8156.000000 11768.000000 -614.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3786
+model                          CString    maps\ze_santassination_p\entities\teleport_s1_4_3786.vmdl
+_template_lump_ent_index       CString    15
+
+====16====
+wait                           Float64    0.5
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]lionking_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    2260.000000 3888.000000 154.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4043
+model                          CString    maps\ze_santassination_p\entities\lionking_event_triggers_4043.vmdl
+_template_lump_ent_index       CString    16
+@OnTrigger Delay=10 Enable [PR#]lionking_light_push
+@OnTrigger StartSound [PR#]lionking_light_s
+@OnTrigger Disable !self
+
+====17====
+wait                           Float64    0.5
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]lionking_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    -2204.000000 11768.000000 -1318.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4098
+model                          CString    maps\ze_santassination_p\entities\lionking_event_triggers_4098.vmdl
+_template_lump_ent_index       CString    17
+@OnTrigger Disable !self
+@OnTrigger Delay=2 OnlyOnce Trigger [PR#]e_stampede_start
+
+====18====
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_LOOPING
+idleanim                       CString    run
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    run
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    2
+skin                           CString    0
+model                          CString    models/luffaren/luff_santa.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]lionking_santamover
+targetname                     CString    [PR#]lionking_santa
+classname                      CString    prop_dynamic
+origin                         CString    6532.000000 12984.000000 -806.000000
+angles                         CString    0.000000 -179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4102
+_template_lump_ent_index       CString    18
+

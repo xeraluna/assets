@@ -1,0 +1,161 @@
+====0====
+nointerpolate                  Boolean    False
+touchoutputperentitydelay      Float64    0
+enableuseoutput                Boolean    False
+damagetoenablemotion           Integer    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+spawnobject                    CString    0
+uselocaloffset                 Boolean    False
+spawnflags                     Integer64  8442880
+rendermode                     CString    10
+renderfx                       CString    0
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    0
+propdata                       CString    0
+pressuredelay                  Float64    0
+preferredcarryangles           Vector     <0, 0, 0>
+performancemode                CString    1
+parentname                     CString    [PR#]object_soldier_1_2&0000
+notsolid                       CString    1
+nodamageforces                 Boolean    True
+material                       CString    3
+massscale                      Float64    0
+health                         Integer    56
+gibdir                         CString    0 0 0
+forcetoenablemotion            Float64    0
+fadescale                      CString    1
+fademindist                    Float64    -1
+explosion                      CString    0
+exploitablebyplayer            CString    0
+exploderadius                  Float64    0
+explodemagnitude               Integer    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+disablereceiveshadows          Boolean    True
+damagetype                     CString    0
+damagefilter                   CString    [PR#]nohumanos
+targetname                     CString    [PR#]ph_object_soldier_5_2&0000
+classname                      CString    func_physbox
+origin                         CString    -0.799805 0.150024 27.240234
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    996
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\ph_object_soldier_5_2_996.vmdl
+_template_lump_ent_index       CString    0
+@OnBreak FireUser1 [PR#]object_soldier_2_2&0000
+@OnBreak SetAnimation [PR#]object_soldier_1_2&0000 death
+@OnBreak SetDefaultAnimation [PR#]object_soldier_1_2&0000 death_idle
+@OnBreak EmitBlood [PR#]object_soldier_4_2
+@OnUser1 Kill [PR#]object_soldier_1_2&0000
+@OnBreak StartSound [PR#]muerte_soldado
+@OnBreak Kill [PR#]ph_object_soldier_5_2_2&0000
+
+====1====
+fallingspeedthreshold          CString    -150
+triggeronstarttouch            Boolean    False
+speed                          Integer    276
+pushdir                        Vector     <0, 180, 0>
+filtername                     CString    [PR#]zombies
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]object_soldier_2_2&0000
+classname                      CString    trigger_push
+origin                         CString    -0.100586 0.010010 40.780273
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7936
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\object_soldier_2_2_7936.vmdl
+_template_lump_ent_index       CString    1
+@OnStartTouch RemoveHealth [PR#]ph_object_soldier_5_2&0000 2
+@OnUser1 OnlyOnce ForceSpawnAtEntityOrigin [PR#]BloodGush_EntMaker !caller
+@OnUser1 Delay=0.02 OnlyOnce Kill !self
+
+====2====
+wait                           Float64    1
+filtername                     CString    [PR#]zombies
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]object_soldier_2_2&0000
+classname                      CString    trigger_multiple
+origin                         CString    -0.700195 0.150024 40.450195
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8042
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\object_soldier_2_2_8042.vmdl
+_template_lump_ent_index       CString    2
+@OnStartTouch OnlyOnce Enable [PR#]ph_object_soldier_5_2&0000
+@OnStartTouch OnlyOnce Kill [PR#]ph_object_soldier_5_2_2&0000
+
+====3====
+filtername                     CString    [PR#]filter_destroycades
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]ph_object_soldier_5_2_2&0000
+classname                      CString    func_clip_vphysics
+origin                         CString    12015.299805 1174.150024 -6786.549805
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2614
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\ph_object_soldier_5_2_2_2614.vmdl
+_template_lump_ent_index       CString    3
+
+====4====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+_minlight                      CString    0.000000
+defaultanim                    CString    idle
+fadescale                      CString    1
+maxanimtime                    CString    10
+minanimtime                    CString    5
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    idle
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/pmodels/player/slow/amberlyn/lotr/human_archer/archer_rafuron.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]object_soldier_1_2&0000
+classname                      CString    prop_dynamic
+origin                         CString    -0.100586 -0.579956 -5.259766
+angles                         CString    0.000000 -179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2851
+_template_lump_ent_index       CString    4
+

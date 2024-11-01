@@ -1,0 +1,464 @@
+====0====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.music.fs_boss2
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]music_fs_boss2
+classname                      CString    point_soundevent
+origin                         CString    124.000000 200.000000 -30.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3323
+_template_lump_ent_index       CString    0
+@OnUser1 StartSound !self
+@OnUser1 StartSound !self
+@OnUser2 StopSound !self
+@OnUser2 StopSound !self
+@OnUser4 OnlyOnce Kill !self
+
+====1====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.music.fs_evilbuildup
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]music_fs_final1
+classname                      CString    point_soundevent
+origin                         CString    92.000000 200.000000 -30.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3317
+_template_lump_ent_index       CString    1
+@OnUser1 StartSound !self
+@OnUser1 StartSound !self
+@OnUser2 StopSound !self
+@OnUser2 StopSound !self
+@OnUser4 OnlyOnce Kill !self
+
+====2====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.music.fs_gloomybuildup
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]music_fs_final2
+classname                      CString    point_soundevent
+origin                         CString    108.000000 200.000000 -30.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3318
+_template_lump_ent_index       CString    2
+@OnUser1 StartSound !self
+@OnUser1 StartSound !self
+@OnUser2 StopSound !self
+@OnUser2 StopSound !self
+@OnUser4 OnlyOnce Kill !self
+
+====3====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.music.fs_epic
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]music_fs_outer1
+classname                      CString    point_soundevent
+origin                         CString    44.000000 200.000000 -30.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3310
+_template_lump_ent_index       CString    3
+@OnUser1 StartSound !self
+@OnUser1 StartSound !self
+@OnUser2 StopSound !self
+@OnUser2 StopSound !self
+@OnUser4 OnlyOnce Kill !self
+
+====4====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.music.fs_epicsecond
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]music_fs_outer2
+classname                      CString    point_soundevent
+origin                         CString    60.000000 200.000000 -30.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3311
+_template_lump_ent_index       CString    4
+@OnUser1 StartSound !self
+@OnUser1 StartSound !self
+@OnUser2 StopSound !self
+@OnUser2 StopSound !self
+@OnUser4 OnlyOnce Kill !self
+
+====5====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.music.a_mysterious_christmas
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]music_fs_start
+classname                      CString    point_soundevent
+origin                         CString    28.000000 200.000000 -30.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    453
+_template_lump_ent_index       CString    5
+@OnUser1 StartSound !self
+@OnUser1 StartSound !self
+@OnUser2 StopSound !self
+@OnUser2 StopSound !self
+@OnUser4 OnlyOnce Kill !self
+
+====6====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.music.fs_triumph
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]music_fs_win
+classname                      CString    point_soundevent
+origin                         CString    140.000000 200.000000 -30.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3324
+_template_lump_ent_index       CString    6
+@OnUser1 StartSound !self
+@OnUser1 StartSound !self
+@OnUser2 StopSound !self
+@OnUser2 StopSound !self
+@OnUser4 OnlyOnce Kill !self
+
+====7====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    100000
+lip                            Integer    128
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.door_metal_gate_close1
+noise1                         CString    custom.sfx.doors.door_metal_gate_move2
+speed                          Float64    100
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_bossdoor1
+classname                      CString    func_door
+origin                         CString    -1962.000000 -6776.000000 -10310.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2711
+model                          CString    maps\ze_santassination_p\entities\fs_bossdoor1_2711.vmdl
+_template_lump_ent_index       CString    7
+
+====8====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    100000
+lip                            Integer    16
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.door_metal_gate_close1
+noise1                         CString    custom.sfx.doors.door_metal_gate_move2
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_bossdoore1
+classname                      CString    func_door
+origin                         CString    -414.000000 -7416.000000 -10358.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2713
+model                          CString    maps\ze_santassination_p\entities\fs_bossdoore1_2713.vmdl
+_template_lump_ent_index       CString    8
+
+====9====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    10000000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]fs_bosszcage1
+classname                      CString    func_breakable
+origin                         CString    -292.000000 -6168.000000 -10038.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7670
+model                          CString    maps\ze_santassination_p\entities\fs_bosszcage1_7670.vmdl
+_template_lump_ent_index       CString    9
+
+====10====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    100000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]fs_connect_elevatorbreak
+classname                      CString    func_breakable
+origin                         CString    2364.000000 -7376.000000 -14038.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7962
+model                          CString    maps\ze_santassination_p\entities\fs_connect_elevatorbreak_7962.vmdl
+_template_lump_ent_index       CString    10
+@OnBreak Delay=10 Break [PR#]fs_lowerelevator_break
+
+====11====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    100000
+lip                            Integer    128
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.door_metal_gate_close1
+noise1                         CString    custom.sfx.doors.door_metal_gate_move2
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_connect_maindoor
+classname                      CString    func_door
+origin                         CString    3164.500000 -6776.000000 -13702.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3330
+model                          CString    maps\ze_santassination_p\entities\fs_connect_maindoor_3330.vmdl
+_template_lump_ent_index       CString    11
+
+====12====
+max                            Integer    5
+min                            Integer    0
+startvalue                     Integer    4
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]fs_connect_math
+classname                      CString    math_counter
+origin                         CString    2588.000000 -6776.000000 -14142.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3270
+_template_lump_ent_index       CString    12
+@OnHitMin Delay=3 OnlyOnce Open [PR#]fs_connect_maindoor
+@OnHitMin OnlyOnce Break [PR#]fs_connect_wallbreak
+@OnHitMin Delay=5 OnlyOnce Break [PR#]fs_connect_elevatorbreak
+@OnHitMin Delay=7 OnlyOnce Break [PR#]fs_connect_windowbreak
+@OnHitMin Delay=30 OnlyOnce FireUser1 [PR#]teleport_s4_1
+
+====13====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    100000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]fs_connect_wallbreak
+classname                      CString    func_breakable
+origin                         CString    2548.850098 -5488.259766 -14534.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8024
+model                          CString    maps\ze_santassination_p\entities\fs_connect_wallbreak_8024.vmdl
+_template_lump_ent_index       CString    13
+
+====14====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    0
+health                         Integer    100000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]fs_connect_windowbreak
+classname                      CString    func_breakable
+origin                         CString    1484.000000 -4804.500000 -12902.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7964
+model                          CString    maps\ze_santassination_p\entities\fs_connect_windowbreak_7964.vmdl
+_template_lump_ent_index       CString    14
+@OnBreak Delay=5 OnlyOnce KeyValues [PR#]fs_tele_firstouter angles 0 270 0
+@OnBreak Delay=5 OnlyOnce KeyValues [PR#]fs_tele_firstouter origin 860 -3460 -840
+
+====15====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    100000
+lip                            Integer    64
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.door_metal_gate_close1
+noise1                         CString    custom.sfx.doors.door_metal_gate_move2
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_elevatordoorfirst
+classname                      CString    func_door
+origin                         CString    4924.040039 -7384.000000 -15894.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3294
+model                          CString    maps\ze_santassination_p\entities\fs_elevatordoorfirst_3294.vmdl
+_template_lump_ent_index       CString    15
+

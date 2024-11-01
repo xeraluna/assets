@@ -1,0 +1,704 @@
+====0====
+case02                         CString    PressedAttack2
+case01                         CString    PressedAttack
+vscripts                       CString    game_ui
+targetname                     CString    [PR#]ww_ui&0000
+classname                      CString    logic_case
+origin                         CString    16.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29228
+_template_lump_ent_index       CString    0
+@OnCase01 Trigger [PR#]ww_relay&0000
+@OnCase02 Trigger [PR#]ww_shout&0000
+
+====1====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]ww_relay&0000
+classname                      CString    logic_relay
+origin                         CString    32.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29229
+_template_lump_ent_index       CString    1
+@OnTrigger SetAnimationNotLooping [PR#]ww&0000 [PR#]rynnak
+@OnTrigger Delay=0.3 Enable [PR#]ww_attk&0000
+@OnTrigger Delay=0.7 Disable [PR#]ww_attk&0000
+@OnTrigger Disable !self
+@OnTrigger Delay=2 Enable !self
+@OnTrigger StartSound [PR#]ww_look&0000
+
+====2====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    128
+damagecap                      Integer    200
+damage                         Integer    150
+filtername                     CString    [PR#]filter_t_no
+spawnflags                     Integer64  1101
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ww_knife&0000
+targetname                     CString    [PR#]ww_attk&0000
+classname                      CString    trigger_hurt
+origin                         CString    12.000000 -116.000000 56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29226
+model                          CString    maps\ze_tesv_skyrim_p\entities\ww_attk_29226.vmdl
+_template_lump_ent_index       CString    2
+
+====3====
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_LOOPING
+idleanim                       CString    jooks
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/ww/werewolf2.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]ww&0000
+classname                      CString    prop_dynamic
+origin                         CString    107.000000 -115.000000 -5.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29223
+_template_lump_ent_index       CString    3
+
+====4====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+notsolid                       CString    0
+preferredcarryangles           Vector     <0, 0, 0>
+enableuseoutput                Boolean    False
+forcetoenablemotion            Float64    0
+damagetoenablemotion           Integer    0
+massscale                      Float64    0
+damagetype                     CString    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    7500
+propdata                       CString    0
+spawnflags                     Integer64  50176
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ww&0000
+performancemode                CString    1
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+damagefilter                   CString    [PR#]ct_a_items
+targetname                     CString    [PR#]ww_phbox&0000
+classname                      CString    func_physbox
+origin                         CString    51.000000 -117.000000 99.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29247
+model                          CString    maps\ze_tesv_skyrim_p\entities\ww_phbox_29247.vmdl
+_template_lump_ent_index       CString    4
+@OnDamaged Delay=0.01 Disable [PR#]ww_push2&0000
+@OnDamaged Enable [PR#]ww_push2&0000
+@OnBreak Break [PR#]ww_phbox&0000
+
+====5====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+notsolid                       CString    0
+preferredcarryangles           Vector     <0, 0, 0>
+enableuseoutput                Boolean    False
+forcetoenablemotion            Float64    0
+damagetoenablemotion           Integer    0
+massscale                      Float64    0
+damagetype                     CString    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    7500
+propdata                       CString    0
+spawnflags                     Integer64  50176
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ww&0000
+performancemode                CString    1
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+damagefilter                   CString    [PR#]ct_a_items
+targetname                     CString    [PR#]ww_phbox&0000
+classname                      CString    func_physbox
+origin                         CString    81.000000 -117.000000 71.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29249
+model                          CString    maps\ze_tesv_skyrim_p\entities\ww_phbox_29249.vmdl
+_template_lump_ent_index       CString    5
+@OnBreak Delay=1 Kill [PR#]ww_push4&0000
+@OnBreak Delay=1 Kill [PR#]ww_push3&0000
+@OnBreak Delay=1 Kill [PR#]ww_stop2&0000
+@OnBreak Delay=1 Kill [PR#]ww_howl&0000
+@OnBreak Delay=1 Kill [PR#]ww_shout&0000
+@OnBreak Delay=1 Kill [PR#]ww_look&0000
+@OnBreak Delay=1 Kill [PR#]ww_relay&0000
+@OnBreak Delay=1 Kill [PR#]ww_push&0000
+@OnBreak Delay=1 Kill [PR#]ww_push2&0000
+@OnBreak Delay=1 Kill [PR#]ww_dead&0000
+@OnBreak Delay=1 Kill [PR#]ww_attk&0000
+@OnBreak SetDefaultAnimation [PR#]ww&0000 surm
+@OnBreak SetAnimation [PR#]ww&0000
+@OnBreak Enable [PR#]ww_tele
+@OnBreak Deactivate [PR#]ww_ui&0000
+@OnBreak Trigger [PR#]ww_break
+@OnBreak SetValue [PR#]ww_dead&0000 1
+@OnBreak Kill [PR#]ww_movement&0000
+@OnBreak break [PR#]ww_phbox&0000
+
+====6====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+notsolid                       CString    0
+preferredcarryangles           Vector     <0, 0, 0>
+enableuseoutput                Boolean    False
+forcetoenablemotion            Float64    0
+damagetoenablemotion           Integer    0
+massscale                      Float64    0
+damagetype                     CString    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    7500
+propdata                       CString    0
+spawnflags                     Integer64  50176
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ww&0000
+performancemode                CString    1
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+damagefilter                   CString    [PR#]ct_a_items
+targetname                     CString    [PR#]ww_phbox&0000
+classname                      CString    func_physbox
+origin                         CString    55.000000 -117.000000 99.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29251
+model                          CString    maps\ze_tesv_skyrim_p\entities\ww_phbox_29251.vmdl
+_template_lump_ent_index       CString    6
+@OnDamaged Delay=0.01 Disable [PR#]ww_push&0000
+@OnDamaged Enable [PR#]ww_push&0000
+@OnBreak Break [PR#]ww_phbox&0000
+
+====7====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+notsolid                       CString    0
+preferredcarryangles           Vector     <0, 0, 0>
+enableuseoutput                Boolean    False
+forcetoenablemotion            Float64    0
+damagetoenablemotion           Integer    0
+massscale                      Float64    0
+damagetype                     CString    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    7500
+propdata                       CString    0
+spawnflags                     Integer64  50176
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ww&0000
+performancemode                CString    1
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+damagefilter                   CString    [PR#]ct_a_items
+targetname                     CString    [PR#]ww_phbox&0000
+classname                      CString    func_physbox
+origin                         CString    53.000000 -119.000000 99.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29253
+model                          CString    maps\ze_tesv_skyrim_p\entities\ww_phbox_29253.vmdl
+_template_lump_ent_index       CString    7
+@OnDamaged Delay=0.01 Disable [PR#]ww_push4&0000
+@OnDamaged Enable [PR#]ww_push4&0000
+@OnBreak Break [PR#]ww_phbox&0000
+
+====8====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+notsolid                       CString    0
+preferredcarryangles           Vector     <0, 0, 0>
+enableuseoutput                Boolean    False
+forcetoenablemotion            Float64    0
+damagetoenablemotion           Integer    0
+massscale                      Float64    0
+damagetype                     CString    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    7500
+propdata                       CString    0
+spawnflags                     Integer64  50176
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ww&0000
+performancemode                CString    1
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+damagefilter                   CString    [PR#]ct_a_items
+targetname                     CString    [PR#]ww_phbox&0000
+classname                      CString    func_physbox
+origin                         CString    53.000000 -115.000000 99.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29255
+model                          CString    maps\ze_tesv_skyrim_p\entities\ww_phbox_29255.vmdl
+_template_lump_ent_index       CString    8
+@OnDamaged Delay=0.01 Disable [PR#]ww_push3&0000
+@OnDamaged Enable [PR#]ww_push3&0000
+@OnBreak Break [PR#]ww_phbox&0000
+
+====9====
+initialvalue                   Integer    0
+targetname                     CString    [PR#]ww_dead&0000
+classname                      CString    logic_branch
+origin                         CString    100.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29263
+_template_lump_ent_index       CString    9
+@OnTrue sethealth !activator 0
+@OnFalse Delay=0.25 Test !self
+@OnTrue RemoveContext !activator t_item_user
+
+====10====
+canbepickedup                  Boolean    True
+spawnflags                     Integer    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+targetname                     CString    [PR#]ww_knife&0000
+classname                      CString    weapon_knife
+origin                         CString    59.000000 -114.000000 12.000000
+angles                         Vector     <-0, -179.9999, 0>
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29224
+_template_lump_ent_index       CString    10
+@OnPlayerPickup KeyValue !activator runspeed 1.09
+@OnPlayerPickup KeyValue !activator health 10000
+@OnPlayerPickup Activate [PR#]ww_ui&0000
+@OnPlayerPickup SetDamageFilter !activator [PR#]t_filter
+@OnPlayerPickup Alpha !activator 0
+@OnPlayerPickup Open [PR#]ww_push_t&0000
+@OnPlayerPickup Test [PR#]ww_dead&0000 0
+@OnPlayerPickup AddContext !activator t_item_user:1
+
+====11====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+sourceentityname               CString    [PR#]ww&0000
+soundname                      CString    ww.look
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]ww_look&0000
+classname                      CString    snd_event_point
+origin                         CString    48.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29231
+_template_lump_ent_index       CString    11
+
+====12====
+triggeronstarttouch            Boolean    False
+speed                          Integer    119
+pushdir                        Vector     <0, 180, -90>
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ww_push_t&0000
+targetname                     CString    [PR#]ww_push&0000
+classname                      CString    trigger_push
+origin                         CString    60.000000 -115.000000 63.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29235
+model                          CString    maps\ze_tesv_skyrim_p\entities\ww_push_29235.vmdl
+_template_lump_ent_index       CString    12
+@OnStartTouch Delay=0.03 KeyValue !activator gravity 1
+@OnStartTouch KeyValue !activator gravity 3.5
+
+====13====
+triggeronstarttouch            Boolean    False
+speed                          Integer    130
+pushdir                        Vector     <0, 270, 0>
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ww_push_t&0000
+targetname                     CString    [PR#]ww_push3&0000
+classname                      CString    trigger_push
+origin                         CString    60.000000 -115.000000 63.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29243
+model                          CString    maps\ze_tesv_skyrim_p\entities\ww_push3_29243.vmdl
+_template_lump_ent_index       CString    13
+@OnStartTouch Delay=0.03 KeyValue !activator gravity 1
+@OnStartTouch KeyValue !activator gravity 3.5
+
+====14====
+triggeronstarttouch            Boolean    False
+speed                          Integer    121
+pushdir                        Vector     <0, 0, -90>
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ww_push_t&0000
+targetname                     CString    [PR#]ww_push2&0000
+classname                      CString    trigger_push
+origin                         CString    60.000000 -115.000000 63.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29233
+model                          CString    maps\ze_tesv_skyrim_p\entities\ww_push2_29233.vmdl
+_template_lump_ent_index       CString    14
+@OnStartTouch KeyValue !activator gravity 3.5
+@OnStartTouch Delay=0.03 KeyValue !activator gravity 1
+
+====15====
+triggeronstarttouch            Boolean    False
+speed                          Integer    130
+pushdir                        Vector     <0, 90, 0>
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ww_push_t&0000
+targetname                     CString    [PR#]ww_push4&0000
+classname                      CString    trigger_push
+origin                         CString    60.000000 -115.000000 63.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29245
+model                          CString    maps\ze_tesv_skyrim_p\entities\ww_push4_29245.vmdl
+_template_lump_ent_index       CString    15
+@OnStartTouch Delay=0.03 KeyValue !activator gravity 1
+@OnStartTouch KeyValue !activator gravity 3.5
+
+====16====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]ww_shout&0000
+classname                      CString    logic_relay
+origin                         CString    64.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29237
+_template_lump_ent_index       CString    16
+@OnTrigger SetAnimationNotLooping [PR#]ww&0000 howl
+@OnTrigger Disable !self
+@OnTrigger Delay=25 Enable !self
+@OnTrigger Delay=0.25 StartSound [PR#]ww_howl&0000
+@OnTrigger KeyValue !activator movetype 1
+@OnTrigger Delay=0.4 Enable [PR#]ww_stop2&0000
+@OnTrigger Delay=3 Disable [PR#]ww_stop2&0000
+@OnTrigger Delay=2.3 KeyValue !activator movetype 2
+
+====17====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    ww.howl
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]ww_howl&0000
+classname                      CString    snd_event_point
+origin                         CString    80.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29238
+_template_lump_ent_index       CString    17
+
+====18====
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]ww_strip&0000
+classname                      CString    trigger_once
+origin                         CString    62.000000 -114.000000 60.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29239
+model                          CString    maps\ze_tesv_skyrim_p\entities\ww_strip_29239.vmdl
+_template_lump_ent_index       CString    18
+@OnStartTouch OnlyOnce FindEntity [PR#]ww_knife_stripper&0000
+
+====19====
+wait                           Float64    1
+filtername                     CString    [PR#]filter_ct
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ww_knife&0000
+targetname                     CString    [PR#]ww_stop2&0000
+classname                      CString    trigger_multiple
+origin                         CString    64.000000 -112.000000 56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29241
+model                          CString    maps\ze_tesv_skyrim_p\entities\ww_stop2_29241.vmdl
+_template_lump_ent_index       CString    19
+@OnStartTouch KeyValue !activator speed 0.8
+@OnStartTouch Delay=3 KeyValue !activator speed 1
+
+====20====
+filtername                     CString    [PR#]ww_knife&0000
+negated                        CString    1
+targetname                     CString    [PR#]ww_knife_filter_a&0000
+classname                      CString    filter_activator_name
+origin                         CString    -41.000000 1.000000 -3.294922
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29257
+_template_lump_ent_index       CString    20
+
+====21====
+filter03                       CString    [PR#]knife_filter
+filter02                       CString    [PR#]ww_knife_filter_b
+filter01                       CString    [PR#]ww_knife_filter_a&0000
+filtertype                     CString    0
+negated                        CString    0
+targetname                     CString    [PR#]ww_knife_filters&0000
+classname                      CString    filter_multi
+origin                         CString    -41.000000 -15.000000 -3.294922
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29258
+_template_lump_ent_index       CString    21
+
+====22====
+method                         CString    0
+filtername                     CString    [PR#]ww_knife_filters&0000
+targetname                     CString    [PR#]ww_knife_stripper&0000
+classname                      CString    point_entity_finder
+origin                         CString    -41.000000 -31.000000 -3.294922
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29259
+_template_lump_ent_index       CString    22
+@OnFoundEntity Kill !caller
+
+====23====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]ww_movement&0000
+target                         CString    [PR#]ww&0000
+measurereference               CString    [PR#]ww_movement&0000
+measuretarget                  CString    [PR#]ww_dummy&0000
+targetname                     CString    [PR#]ww_movement&0000
+classname                      CString    logic_measure_movement
+origin                         CString    -45.000000 -60.000000 38.229492
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29261
+_template_lump_ent_index       CString    23
+
+====24====
+clothscale                     Float64    1
+startdisabled                  Boolean    True
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer64  256
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    default
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ww_knife&0000
+targetname                     CString    [PR#]ww_dummy&0000
+classname                      CString    prop_dynamic
+origin                         CString    107.000000 -115.000000 -5.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29262
+_template_lump_ent_index       CString    24
+
+====25====
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    1
+speed                          Integer    1
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer    0
+movedir                        Vector     <0, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ww&0000
+targetname                     CString    [PR#]ww_push_t&0000
+classname                      CString    func_movelinear
+origin                         CString    87.000000 -56.000000 8.172852
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29264
+model                          CString    maps\ze_tesv_skyrim_p\entities\ww_push_t_29264.vmdl
+_template_lump_ent_index       CString    25
+@OnFullyOpen Close !self
+@OnFullyClosed Open !self
+

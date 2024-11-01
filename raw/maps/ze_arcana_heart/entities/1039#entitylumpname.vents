@@ -1,0 +1,257 @@
+====0====
+canbepickedup                  Boolean    True
+spawnflags                     Integer    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+targetname                     CString    [PR#]Item_Push_Elite
+classname                      CString    weapon_p250
+origin                         CString    -4.000000 0.000000 -1.000000
+angles                         Vector     <-0, 0, 0>
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4310
+_template_lump_ent_index       CString    0
+@OnPlayerPickup OnlyOnce Unlock [PR#]Item_Push_Button
+@OnPlayerPickup OnlyOnce Command [PR#]Server say 「Push」
+@OnPlayerPickup Delay=0.02 KeyValue !activator targetname player_push
+@OnPlayerPickup KeyValue [PR#]player_push targetname player_none
+@OnPlayerPickup Delay=0.04 FireUser1 [PR#]Item_Push_Measure
+@OnPlayerPickup FireUser2 [PR#]Item_Push_Measure
+@OnPlayerPickup Delay=0.5 OnlyOnce Command [PR#]Server say 「Function」Push zombies in the direction of the crosshair
+@OnPlayerPickup Delay=1 OnlyOnce Command [PR#]Server say 「Duration」6 sec 「Cooldown」50 sec
+
+====1====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    Effect.Push
+sourceentityname               CString    [PR#]Item_Push_Elite
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Item_Push_Snd_1
+classname                      CString    point_soundevent
+origin                         CString    16.000000 0.000000 -99.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4307
+_template_lump_ent_index       CString    1
+
+====2====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/arcana_items/custom_particle_102.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Item_Push_Move
+targetname                     CString    [PR#]Item_Push_Model
+classname                      CString    info_particle_system
+origin                         CString    40.000000 0.000000 -23.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1732
+_template_lump_ent_index       CString    2
+
+====3====
+spawnflags                     Integer64  19457
+forcenpcexclude                Boolean    False
+lip                            Integer    0
+wait                           Float64    3
+speed                          Integer    5
+movedir                        Vector     <0, 0, 0>
+unlocked_sound                 CString    0
+locked_sound                   CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Item_Push_Move
+vscripts                       CString    tsumugi/button.nut
+targetname                     CString    [PR#]Item_Push_Button
+classname                      CString    func_button
+origin                         CString    22.000000 0.000000 5.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2511
+model                          CString    maps\ze_arcana_heart\entities\Item_Push_Button_2511.vmdl
+_template_lump_ent_index       CString    3
+@OnPressed TestActivator [PR#]Item_Push_Filter
+
+====4====
+snapshot_mesh                  Integer    0
+alphascale                     Float64    1
+selfillumscale                 Float64    1
+colortint                      Vector     <255, 255, 255>
+scale                          Float64    1
+start_active                   Boolean    True
+effect_name                    CString    particles/sprite/core_0.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Item_Push_Elite
+targetname                     CString    [PR#]Item_Push_Spr
+classname                      CString    env_particle_glow
+origin                         CString    0.000000 0.000000 117.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4806
+_template_lump_ent_index       CString    4
+
+====5====
+triggeronstarttouch            Boolean    False
+speed                          Integer    700
+pushdir                        Vector     <0, 0, 0>
+filtername                     CString    [PR#]Filter_T
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Item_Push_Move
+targetname                     CString    [PR#]Item_Push_Hurt
+classname                      CString    trigger_push
+origin                         CString    953.000000 0.000000 -23.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1659
+model                          CString    maps\ze_arcana_heart\entities\Item_Push_Hurt_1659.vmdl
+_template_lump_ent_index       CString    5
+
+====6====
+measuretype                    CString    1
+targetscale                    Float64    1
+targetreference                CString    [PR#]Item_Push_Move
+target                         CString    [PR#]Item_Push_Move
+measurereference               CString    [PR#]Item_Push_Move
+targetname                     CString    [PR#]Item_Push_Measure
+classname                      CString    logic_measure_movement
+origin                         CString    16.000000 -48.000000 -99.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6019
+_template_lump_ent_index       CString    6
+@OnUser1 Delay=0.02 Enable [PR#]Item_Push_Measure
+@OnUser1 SetMeasureTarget [PR#]Item_Push_Measure player_push
+@OnUser2 Disable [PR#]Item_Push_Measure
+@OnUser2 SetMeasureTarget [PR#]Item_Push_Measure [PR#]Item_Push_Move
+
+====7====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  6188
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    False
+dmg                            Integer    0
+lip                            Integer    0
+wait                           Integer    1
+speed                          Float64    100
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNone
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Item_Push_Elite
+targetname                     CString    [PR#]Item_Push_Move
+classname                      CString    func_door
+origin                         CString    0.000000 0.000000 1.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6015
+model                          CString    maps\ze_arcana_heart\entities\Item_Push_Move_6015.vmdl
+_template_lump_ent_index       CString    7
+
+====8====
+filtername                     CString    [PR#]player_push
+negated                        CString    0
+targetname                     CString    [PR#]Item_Push_Filter
+classname                      CString    filter_activator_name
+origin                         CString    0.000000 -16.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6018
+_template_lump_ent_index       CString    8
+@OnPass Delay=50 Start [PR#]Item_Push_Model_2
+@OnPass Delay=50 Unlock [PR#]Item_Push_Button
+@OnPass Delay=6 Stop [PR#]Item_Push_Model
+@OnPass Delay=6 Disable [PR#]Item_Push_Hurt
+@OnPass StartSound [PR#]Item_Push_Snd_1
+@OnPass Stop [PR#]Item_Push_Model_2
+@OnPass Lock [PR#]Item_Push_Button
+@OnPass Start [PR#]Item_Push_Model
+@OnPass Enable [PR#]Item_Push_Hurt
+
+====9====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Item_Push_Relay_1
+classname                      CString    logic_relay
+origin                         CString    16.000000 -32.000000 -99.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6020
+_template_lump_ent_index       CString    9
+@OnSpawn OnlyOnce Disable [PR#]Item_Push_Measure
+@OnSpawn Kill !self
+
+====10====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    True
+effect_name                    CString    particles/arcana_items/custom_particle_100.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Item_Push_Elite
+targetname                     CString    [PR#]Item_Push_Model_2
+classname                      CString    info_particle_system
+origin                         CString    40.000000 0.000000 29.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4529
+_template_lump_ent_index       CString    10
+

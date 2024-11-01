@@ -1,0 +1,178 @@
+[
+    {
+        "name": "Item_Push_Elite",
+        "shortname": "Item_Push_Elite",
+        "hammerid": "4310",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "2511",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "Item_ZHeal_Knife",
+        "shortname": "Item_ZHeal_Knife",
+        "hammerid": "4570",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "4356",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "Item_ZWater_Knife",
+        "shortname": "Item_ZWater_Knife",
+        "hammerid": "2958",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "2728",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "Item_Heal_Elite",
+        "shortname": "Item_Heal_Elite",
+        "hammerid": "3169",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "2857",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "Item_ZCube_Knife",
+        "shortname": "Item_ZCube_Knife",
+        "hammerid": "2941",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "3697",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "Item_Gravity_Elite",
+        "shortname": "Item_Gravity_Elite",
+        "hammerid": "2845",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "2848",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "Item_Shield_Elite",
+        "shortname": "Item_Shield_Elite",
+        "hammerid": "3792",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "2690",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "Item_ZReverse_Knife",
+        "shortname": "Item_ZReverse_Knife",
+        "hammerid": "2029",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "4353",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    }
+]

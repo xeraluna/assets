@@ -1,0 +1,182 @@
+====0====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    208
+speed                          Integer    208
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <90, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]CrushPush_Move&0000
+classname                      CString    func_movelinear
+origin                         CString    0.000000 0.000000 328.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    867
+model                          CString    maps\ze_arcana_heart\entities\CrushPush_Move_867.vmdl
+_template_lump_ent_index       CString    0
+@OnFullyOpen FireUser1 [PR#]CrushPush_Particle&0000
+@OnFullyOpen Delay=0.7 Kill !self
+
+====1====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+burstscale                     Float64    100
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <100, 255, 133>
+renderamt                      Integer    200
+rendermode                     CString    kRenderWorldGlow
+renderfx                       CString    kRenderFxNone
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+skin                           CString    default
+model                          CString    models/props/tenshi/arcana/diamond_03.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]CrushPush_Move&0000
+targetname                     CString    [PR#]CrushPush_Model&0000
+classname                      CString    prop_dynamic
+origin                         CString    0.000000 0.000000 272.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    869
+_template_lump_ent_index       CString    1
+@OnUser2 Disable !self
+@OnUser1 Enable !self
+
+====2====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+burstscale                     Float64    100
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <164, 254, 244>
+renderamt                      Integer    255
+rendermode                     CString    kRenderWorldGlow
+renderfx                       CString    kRenderFxNone
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+skin                           CString    default
+model                          CString    models/props/tenshi/arcana/love_03.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]CrushPush_Move&0000
+targetname                     CString    [PR#]CrushPush_Model&0000
+classname                      CString    prop_dynamic
+origin                         CString    0.000000 0.000000 232.000000
+angles                         CString    -0.000000 45.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    870
+_template_lump_ent_index       CString    2
+@OnUser2 Disable !self
+@OnUser1 Enable !self
+
+====3====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]CrushPush_Relay&0000
+classname                      CString    logic_relay
+origin                         CString    30.000000 -32.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    871
+_template_lump_ent_index       CString    3
+@OnSpawn Open [PR#]CrushPush_Move&0000
+@OnSpawn Kill !self
+
+====4====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/arcana_particles/custom_particle_074.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]CrushPush_Particle&0000
+classname                      CString    info_particle_system
+origin                         CString    0.000000 0.000000 1.029785
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    872
+_template_lump_ent_index       CString    4
+@OnUser1 Start !self
+@OnUser1 Delay=1.5 Stop !self
+@OnUser1 Delay=1.52 Kill !self
+

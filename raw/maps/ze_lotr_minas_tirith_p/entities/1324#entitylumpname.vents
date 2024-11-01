@@ -1,0 +1,1435 @@
+====0====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+vrad_brush_cast_shadows        Boolean    False
+scriptedmovement               Boolean    False
+solidbsp                       Boolean    False
+invert_exclusion               CString    0
+solidity                       CString    0
+_minlight                      CString    0.000000
+spawnflags                     Integer64  2
+disableshadows                 CString    0
+startdisabled                  Boolean    False
+inputfilter                    CString    0
+lightmapstatic                 CString    1
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_ret
+classname                      CString    func_brush
+origin                         CString    -10602.780273 5304.439941 -25070.099609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2892
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_ret_2892.vmdl
+_template_lump_ent_index       CString    0
+@OnUser4 Enable !self
+
+====1====
+wait                           Float64    1
+filtername                     CString    [PR#]humanos
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_ret
+classname                      CString    trigger_multiple
+origin                         CString    -11087.000000 5180.000000 -24686.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8121
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_ret_8121.vmdl
+_template_lump_ent_index       CString    1
+@OnStartTouch FireUser1 [PR#]global_aviso
+
+====2====
+fadescale                      CString    1
+solidbsp                       CString    0
+distance                       Integer    -90
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  320
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    False
+dmg                            Integer    0
+lip                            Integer    0
+wait                           Integer    -1
+speed                          Float64    100
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_prop_dynamic
+classname                      CString    func_door_rotating
+origin                         CString    -12833.599609 130.930054 -22491.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1280
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_prop_dynamic_1280.vmdl
+_template_lump_ent_index       CString    2
+@OnOpen Delay=6 Toggle [PR#]stage_3_ret6
+@OnOpen Delay=2 Trigger [PR#]fire_catapult2
+@OnOpen Add [PR#]stage_3_counter 1
+@OnOpen Command [PR#]consola say ** Catapult 1 activated **
+@OnOpen Lock !self
+
+====3====
+fadescale                      CString    1
+solidbsp                       CString    0
+distance                       Integer    -90
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  320
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    False
+dmg                            Integer    0
+lip                            Integer    0
+wait                           Integer    -1
+speed                          Float64    100
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_prop_dynamic
+classname                      CString    func_door_rotating
+origin                         CString    -12204.839844 -1667.659912 -22491.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1282
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_prop_dynamic_1282.vmdl
+_template_lump_ent_index       CString    3
+@OnOpen Delay=6 Trigger [PR#]fire_catapult1
+@OnOpen Delay=6 Toggle [PR#]stage_3_ret7
+@OnOpen Add [PR#]stage_3_counter 1
+@OnOpen Command [PR#]consola say ** Catapult 2 activated **
+@OnOpen Lock !self
+
+====4====
+fadescale                      CString    1
+solidbsp                       CString    0
+distance                       Integer    -90
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  320
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    False
+dmg                            Integer    0
+lip                            Integer    0
+wait                           Integer    -1
+speed                          Float64    100
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_prop_dynamic
+classname                      CString    func_door_rotating
+origin                         CString    -11680.500000 2189.699951 -22812.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1334
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_prop_dynamic_1334.vmdl
+_template_lump_ent_index       CString    4
+@OnOpen Delay=10 Open [PR#]stage_3_gate_2
+@OnOpen Command [PR#]consola say ** THE LEVER HAS BEEN PRESSED ** THE GATE IS OPENING IN 10 SECONDS ! **
+@OnOpen Lock !self
+
+====5====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+_minlight                      CString    0.000000
+fadescale                      CString    1
+maxanimtime                    CString    10
+maxdxlevel                     CString    0
+minanimtime                    CString    5
+mindxlevel                     CString    0
+randomanimation                CString    0
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/pmodels/props_wasteland/prison_archgate002b.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]stage_3_verja
+targetname                     CString    [PR#]stage_3_prop_dynamic
+classname                      CString    prop_dynamic
+origin                         CString    -11927.950195 -2214.000000 -22736.000000
+angles                         CString    -0.000000 112.999992 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2798
+_template_lump_ent_index       CString    5
+
+====6====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+_minlight                      CString    0.000000
+fadescale                      CString    1
+maxanimtime                    CString    10
+maxdxlevel                     CString    0
+minanimtime                    CString    5
+mindxlevel                     CString    0
+randomanimation                CString    0
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    6
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/lotr/minas_puerta_principal_r.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]stage_3_gate_2
+targetname                     CString    [PR#]stage_3_prop_dynamic
+classname                      CString    prop_dynamic
+origin                         CString    -12279.000000 1337.382080 -23656.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2898
+_template_lump_ent_index       CString    6
+
+====7====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+_minlight                      CString    0.000000
+defaultanim                    CString    idle
+fadescale                      CString    1
+maxanimtime                    CString    10
+maxdxlevel                     CString    0
+minanimtime                    CString    5
+mindxlevel                     CString    0
+randomanimation                CString    0
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    idle
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/pmodels/props/archi/kr/l01_oriflam_01.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_prop_dynamic
+classname                      CString    prop_dynamic
+origin                         CString    -10895.000000 4978.000000 -23146.699219
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2933
+_template_lump_ent_index       CString    7
+
+====8====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+_minlight                      CString    0.000000
+defaultanim                    CString    L01_afraid_1_idle
+fadescale                      CString    1
+maxanimtime                    CString    10
+maxdxlevel                     CString    0
+minanimtime                    CString    5
+mindxlevel                     CString    0
+randomanimation                CString    0
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/pmodels/npc/horse/horse.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_prop_dynamic
+classname                      CString    prop_dynamic
+origin                         CString    -12089.129883 4529.089844 -24535.300781
+angles                         CString    -0.000000 -17.999996 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2934
+_template_lump_ent_index       CString    8
+
+====9====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+_minlight                      CString    0.000000
+defaultanim                    CString    idle
+fadescale                      CString    1
+maxanimtime                    CString    10
+maxdxlevel                     CString    0
+minanimtime                    CString    5
+mindxlevel                     CString    0
+randomanimation                CString    0
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    idle
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/pmodels/props/archi/kr/l01_oriflam_01.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_prop_dynamic
+classname                      CString    prop_dynamic
+origin                         CString    -12999.000000 178.000000 -22017.710938
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2939
+_template_lump_ent_index       CString    9
+
+====10====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+_minlight                      CString    0.000000
+defaultanim                    CString    idle
+fadescale                      CString    1
+maxanimtime                    CString    10
+maxdxlevel                     CString    0
+minanimtime                    CString    5
+mindxlevel                     CString    0
+randomanimation                CString    0
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    idle
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/pmodels/props/archi/kr/l01_oriflam_01.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_prop_dynamic
+classname                      CString    prop_dynamic
+origin                         CString    -12383.000000 -1662.000000 -22017.710938
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2940
+_template_lump_ent_index       CString    10
+
+====11====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+_minlight                      CString    0.000000
+defaultanim                    CString    idle
+fadescale                      CString    1
+maxanimtime                    CString    10
+maxdxlevel                     CString    0
+minanimtime                    CString    5
+mindxlevel                     CString    0
+randomanimation                CString    0
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    idle
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/pmodels/props/archi/kr/l01_oriflam_01.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_prop_dynamic
+classname                      CString    prop_dynamic
+origin                         CString    -10824.580078 -3643.220215 -21642.710938
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2941
+_template_lump_ent_index       CString    11
+
+====12====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+_minlight                      CString    0.000000
+defaultanim                    CString    idle
+fadescale                      CString    1
+maxanimtime                    CString    10
+maxdxlevel                     CString    0
+minanimtime                    CString    5
+mindxlevel                     CString    0
+randomanimation                CString    0
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    idle
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/pmodels/props/archi/kr/l01_oriflam_01.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_prop_dynamic
+classname                      CString    prop_dynamic
+origin                         CString    -10799.000000 -406.000000 -20720.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2947
+_template_lump_ent_index       CString    12
+
+====13====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+_minlight                      CString    0.000000
+defaultanim                    CString    idle
+fadescale                      CString    1
+maxanimtime                    CString    10
+maxdxlevel                     CString    0
+minanimtime                    CString    5
+mindxlevel                     CString    0
+randomanimation                CString    0
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    idle
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/pmodels/props/archi/kr/l01_oriflam_01.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_prop_dynamic
+classname                      CString    prop_dynamic
+origin                         CString    -10671.000000 -726.000000 -20720.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2948
+_template_lump_ent_index       CString    13
+
+====14====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    True
+explosion                      CString    0
+material                       CString    8
+health                         Integer    1
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]stage_3_breakable2
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]stage_3_prop_dynamic
+classname                      CString    func_breakable
+origin                         CString    -9063.000000 -1058.739990 -22524.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3063
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_prop_dynamic_3063.vmdl
+_template_lump_ent_index       CString    14
+
+====15====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    True
+explosion                      CString    0
+material                       CString    8
+health                         Integer    1
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]stage_3_breakable
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]stage_3_prop_dynamic
+classname                      CString    func_breakable
+origin                         CString    -9767.000000 -1058.739990 -22524.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3065
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_prop_dynamic_3065.vmdl
+_template_lump_ent_index       CString    15
+
+====16====
+wait                           CString    -1
+filtername                     CString    [PR#]hum
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_prop_dynamic
+classname                      CString    trigger_once
+origin                         CString    -9383.000000 -1362.000000 -22463.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7987
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_prop_dynamic_7987.vmdl
+_template_lump_ent_index       CString    16
+@OnStartTouch OnlyOnce Command [PR#]consola say ** DEFEND THIS PLACE FOR 35 SECONDS **
+@OnStartTouch Delay=35 OnlyOnce Break [PR#]stage_3_door8
+
+====17====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    True
+explosion                      CString    0
+material                       CString    2
+health                         Integer    0
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+targetname                     CString    [PR#]stage_3_verja
+classname                      CString    func_breakable
+origin                         CString    -11929.000000 -2211.000000 -22724.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2646
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_verja_2646.vmdl
+_template_lump_ent_index       CString    17
+
+====18====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    20
+damage                         Integer    100000
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_nuke
+classname                      CString    trigger_hurt
+origin                         CString    -10750.969727 2090.060059 -23624.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8268
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_nuke_8268.vmdl
+_template_lump_ent_index       CString    18
+
+====19====
+check_if_dest_clear_for_player Boolean    False
+uselandmarkangles              CString    1
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]stage_3_target
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_trigger
+classname                      CString    trigger_teleport
+origin                         CString    -11839.000000 5322.000000 -23888.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7872
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_trigger_7872.vmdl
+_template_lump_ent_index       CString    19
+
+====20====
+fallingspeedthreshold          CString    -150
+triggeronstarttouch            Boolean    False
+speed                          Integer    400
+pushdir                        Vector     <0, 180, 0>
+filtername                     CString    [PR#]zombies
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_trigger
+classname                      CString    trigger_push
+origin                         CString    -7071.000000 1626.000000 -20636.378906
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7946
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_trigger_7946.vmdl
+_template_lump_ent_index       CString    20
+@OnUser1 OnlyOnce Kill !self
+
+====21====
+wait                           CString    -1
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_trigger
+classname                      CString    trigger_once
+origin                         CString    -10671.000000 6458.000000 -25365.800781
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7981
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_trigger_7981.vmdl
+_template_lump_ent_index       CString    21
+@OnStartTouch Delay=10 OnlyOnce Command [PR#]consola say ** THEY ARE TRYING TO GET IN ** SHOOT! **
+@OnStartTouch Delay=1 OnlyOnce Lock [PR#]stage_2_door_f1
+@OnStartTouch OnlyOnce Lock [PR#]stage_2_door_f2
+@OnStartTouch OnlyOnce Lock [PR#]stage_2_door_f2
+@OnStartTouch Delay=1 OnlyOnce SetParent [PR#]stage_2_door_f2 stage_3_door2
+@OnStartTouch Delay=1 OnlyOnce SetParent [PR#]stage_2_door_f1 stage_3_door1
+@OnStartTouch Delay=0.1 OnlyOnce StartSound [PR#]musica_st_3_1
+@OnStartTouch OnlyOnce Trigger [PR#]musica_muteAll
+@OnStartTouch OnlyOnce Close [PR#]stage_2_door_f1
+
+====22====
+wait                           CString    -1
+filtername                     CString    [PR#]humanos
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_trigger
+classname                      CString    trigger_once
+origin                         CString    -7667.000000 1006.000000 -20671.750000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7999
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_trigger_7999.vmdl
+_template_lump_ent_index       CString    22
+@OnStartTouch OnlyOnce Trigger [PR#]stage_3_fin
+
+====23====
+wait                           CString    -1
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_trigger
+classname                      CString    trigger_once
+origin                         CString    -11143.000000 1389.260010 -21024.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8021
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_trigger_8021.vmdl
+_template_lump_ent_index       CString    23
+@OnStartTouch OnlyOnce Command [PR#]consola say ** DEFEND THIS PLACE FOR 70 SECONDS! **
+@OnStartTouch Delay=70 OnlyOnce Unlock [PR#]stage_3_door14
+@OnStartTouch Delay=70 OnlyOnce Command [PR#]consola say ** DOORS UNLOCKED ** RETREAT ! **
+@OnStartTouch Delay=70 OnlyOnce StartSound [PR#]global_horn
+@OnStartTouch Delay=10 OnlyOnce StartSound [PR#]sonidos_gandalf_resistid
+@OnStartTouch Delay=75 OnlyOnce StartSound [PR#]sonidos_gandalf_retirada
+@OnStartTouch Delay=70.5 OnlyOnce Open [PR#]stage_3_door14
+@OnTrigger Delay=70 OnlyOnce Enable [PR#]item_extreme_matar
+
+====24====
+wait                           CString    -1
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_trigger5
+classname                      CString    trigger_once
+origin                         CString    -10007.000000 -3102.020020 -22648.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7985
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_trigger5_7985.vmdl
+_template_lump_ent_index       CString    24
+@OnStartTouch Delay=5 OnlyOnce Trigger [PR#]stage_3_catapult_rock1_1
+@OnStartTouch Delay=15 OnlyOnce Trigger [PR#]stage_3_catapult_rock2_1
+@OnStartTouch Delay=25 OnlyOnce Trigger [PR#]stage_1_catapult_rock3_1
+@OnStartTouch OnlyOnce Command [PR#]consola say ** PROTECT THE BUILDING UNTIL CIVILIAN EVACUATION! *
+@OnStartTouch Delay=6 OnlyOnce KeyValues [PR#]spawn_teleport_mass target stage_3_teleport_3
+
+====25====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+_minlight                      CString    0.000000
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    True
+explosion                      CString    0
+material                       CString    1
+health                         Integer    1
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]stage_3_door7
+classname                      CString    func_breakable
+origin                         CString    -9799.089844 -2933.180176 -22810.599609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2658
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_door7_2658.vmdl
+_template_lump_ent_index       CString    25
+
+====26====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+randomanimation                CString    0
+minanimtime                    CString    5
+maxanimtime                    CString    10
+holdanimation                  CString    0
+fadescale                      CString    1
+animateeveryframe              CString    0
+health                         Integer    0
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    1
+fademindist                    Float64    2
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    0
+rendermode                     CString    10
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+damagefilter                   CString    [PR#]nohumanosOZombies
+disableshadows                 CString    1
+skin                           CString    0
+model                          CString    models/lotr/debris_group_citycombo_3_go.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_2_catapult_rock3_7
+classname                      CString    prop_dynamic_override
+origin                         CString    -9837.000000 -2955.560059 -22872.000000
+angles                         CString    -0.000000 -90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1054
+_template_lump_ent_index       CString    26
+
+====27====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+_minlight                      CString    0.000000
+fadescale                      CString    1
+maxanimtime                    CString    10
+maxdxlevel                     CString    0
+minanimtime                    CString    5
+mindxlevel                     CString    0
+randomanimation                CString    0
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    6
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/lotr/minas_escalera_arco1.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ph_stage_3_breakable
+targetname                     CString    [PR#]stage_4_bridge_1
+classname                      CString    prop_dynamic
+origin                         CString    -9771.160156 -1158.000000 -22656.000000
+angles                         CString    -0.000000 -90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2712
+_template_lump_ent_index       CString    27
+
+====28====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+_minlight                      CString    0.000000
+fadescale                      CString    1
+maxanimtime                    CString    10
+maxdxlevel                     CString    0
+minanimtime                    CString    5
+mindxlevel                     CString    0
+randomanimation                CString    0
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    6
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/lotr/minas_escalera_arco1.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ph_stage_3_breakable2
+targetname                     CString    [PR#]stage_4_bridge_1
+classname                      CString    prop_dynamic
+origin                         CString    -9063.000000 -1158.739990 -22655.699219
+angles                         CString    -0.000000 -90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2713
+_template_lump_ent_index       CString    28
+
+====29====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+_minlight                      CString    0.000000
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    True
+explosion                      CString    0
+material                       CString    1
+health                         Integer    1
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]stage_3_door3
+classname                      CString    func_breakable
+origin                         CString    -10807.000000 4882.000000 -23718.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2791
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_door3_2791.vmdl
+_template_lump_ent_index       CString    29
+
+====30====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+_minlight                      CString    0.000000
+defaultanim                    CString    wall_idle
+fadescale                      CString    1
+maxanimtime                    CString    10
+maxdxlevel                     CString    0
+minanimtime                    CString    5
+mindxlevel                     CString    0
+randomanimation                CString    0
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/pmodels/props/archi/l01/l01_brk_wall/l01_brk_wall.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_falling_tower
+classname                      CString    prop_dynamic
+origin                         CString    -12559.000000 4221.360352 -22625.500000
+angles                         CString    -0.000000 66.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2935
+_template_lump_ent_index       CString    30
+
+====31====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    20
+damage                         Integer    100000
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_rocas
+classname                      CString    trigger_hurt
+origin                         CString    -12143.000000 3682.000000 -23664.300781
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8277
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_rocas_8277.vmdl
+_template_lump_ent_index       CString    31
+
+====32====
+fadescale                      CString    1
+solidbsp                       CString    0
+distance                       Integer    35
+loopmovesound                  Boolean    False
+spawnflags                     Integer    0
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    999999
+lip                            Integer    0
+wait                           Integer    -1
+noise2                         CString    floodgate_stop
+noise1                         CString    floodgate_move_short
+speed                          Float64    5
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_gate_2
+classname                      CString    func_door_rotating
+origin                         CString    -12516.650391 1338.010010 -23421.900391
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1044
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_gate_2_1044.vmdl
+_template_lump_ent_index       CString    32
+@OnOpen Delay=0.1 OnlyOnce StartSound [PR#]musica_st_3_2
+@OnOpen Delay=5 OnlyOnce Command [PR#]consola say ** USE THE CATAPULTS IN ORDER TO CONTINUE THE MINAS TIRITH DEFENSE! **
+@OnOpen OnlyOnce Trigger [PR#]musica_muteAll
+@OnOpen Delay=6 OnlyOnce KeyValues !self dmg 80
+
+====33====
+_minlight                      CString    0.000000
+ajarangles                     CString    0 0 0
+axis                           CString    1636.05 -3633.91 -11039.7, 1636.05 -3633.91 -10987.7
+disablereceiveshadows          CString    0
+fadescale                      CString    1
+glowdist                       CString    1024
+renderamt                      CString    255
+renderfx                       CString    0
+rendermode                     CString    0
+opendir                        CString    1
+spawnflags                     Integer64  2048
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    True
+forceclosed                    Boolean    False
+soundlockedoverride            CString    DoorHandles.Locked1
+health                         Integer    0
+dmg                            Integer    5
+returndelay                    Integer    -1
+soundmoveoverride              CString    floodgate_move_short
+speed                          Integer    50
+distance                       Float64    90
+spawnpos                       CString    0
+ajardoorshouldntalwaysopen     Boolean    False
+ajarangle                      Float64    0
+hardware                       CString    1
+glowteam                       Integer    -1
+glowcolor                      Vector     <255, 255, 255>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+rendercolor                    Vector     <255, 255, 255>
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/pmodels/props/archi/kr/kr_balistes_doors/kr_balistes_doors_03.vmdl
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_door6
+classname                      CString    prop_door_rotating
+origin                         CString    -11546.950195 -1639.909912 -23443.699219
+angles                         CString    -0.000000 118.499992 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2656
+_template_lump_ent_index       CString    33
+@OnOpen Delay=1 Unlock !self
+@OnOpen Lock !self
+
+====34====
+_minlight                      CString    0.000000
+ajarangles                     CString    0 0 0
+axis                           CString    1804.78 -3542.3 -11039.7, 1804.78 -3542.3 -10987.7
+disablereceiveshadows          CString    0
+fadescale                      CString    1
+glowdist                       CString    1024
+renderamt                      CString    255
+renderfx                       CString    0
+rendermode                     CString    0
+opendir                        CString    1
+spawnflags                     Integer64  2048
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    True
+forceclosed                    Boolean    False
+soundlockedoverride            CString    DoorHandles.Locked1
+health                         Integer    0
+dmg                            Integer    5
+returndelay                    Integer    -1
+soundmoveoverride              CString    floodgate_move_short
+soundcloseoverride             CString    tr.GalleryStop
+soundopenoverride              CString    security_door.open
+speed                          Integer    50
+distance                       Float64    90
+spawnpos                       CString    0
+ajardoorshouldntalwaysopen     Boolean    False
+ajarangle                      Float64    0
+hardware                       CString    1
+glowteam                       Integer    -1
+glowcolor                      Vector     <255, 255, 255>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+rendercolor                    Vector     <255, 255, 255>
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/pmodels/props/archi/kr/kr_balistes_doors/kr_balistes_doors_02.vmdl
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_door6
+classname                      CString    prop_door_rotating
+origin                         CString    -11378.219727 -1548.300049 -23443.699219
+angles                         CString    -0.000000 118.499992 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2657
+_template_lump_ent_index       CString    34
+@OnOpen Delay=1 Unlock !self
+@OnOpen Lock !self
+

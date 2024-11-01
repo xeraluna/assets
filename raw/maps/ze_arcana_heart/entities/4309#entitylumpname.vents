@@ -1,0 +1,198 @@
+====0====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/arcana_particles/custom_particle_087.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Line_Particle&0000
+classname                      CString    info_particle_system
+origin                         CString    -24.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4311
+_template_lump_ent_index       CString    0
+
+====1====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer64  579
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    20
+disableshadows                 CString    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Line_Rota&0000
+classname                      CString    func_rotating
+origin                         CString    -155.000000 0.000000 8.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2952
+model                          CString    maps\ze_arcana_heart\entities\Line_Rota_2952.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+burstscale                     Float64    100
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <100, 255, 133>
+renderamt                      Integer    200
+rendermode                     CString    kRenderWorldGlow
+renderfx                       CString    kRenderFxNone
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+skin                           CString    default
+model                          CString    models/props/tenshi/arcana/diamond_03.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Line_Rota&0000
+targetname                     CString    [PR#]Line_Model&0000
+classname                      CString    prop_dynamic
+origin                         CString    -155.000000 0.000000 32.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4314
+_template_lump_ent_index       CString    2
+
+====3====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+burstscale                     Float64    100
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <164, 254, 244>
+renderamt                      Integer    255
+rendermode                     CString    kRenderWorldGlow
+renderfx                       CString    kRenderFxNone
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+skin                           CString    default
+model                          CString    models/props/tenshi/arcana/love_03.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Line_Rota&0000
+targetname                     CString    [PR#]Line_Model&0000
+classname                      CString    prop_dynamic
+origin                         CString    -155.000000 0.000000 -8.000000
+angles                         CString    -0.000000 45.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4317
+_template_lump_ent_index       CString    3
+
+====4====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    100
+damage                         Integer    100
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Line_Hurt&0000
+classname                      CString    trigger_hurt
+origin                         CString    892.000000 -8.000000 88.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4302
+model                          CString    maps\ze_arcana_heart\entities\Line_Hurt_4302.vmdl
+_template_lump_ent_index       CString    4
+
+====5====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Line_Relay&0000
+classname                      CString    logic_relay
+origin                         CString    16.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4304
+_template_lump_ent_index       CString    5
+@OnSpawn Delay=7 Start [PR#]Line_Particle&0000
+@OnSpawn Delay=7 Enable [PR#]Line_Hurt&0000
+@OnSpawn Delay=8 Stop [PR#]Line_Particle&0000
+@OnSpawn Delay=7.3 Kill [PR#]Line_Hurt&0000
+@OnSpawn Kill !self
+@OnSpawn Delay=8.5 Kill [PR#]Line_Particle&0000
+@OnSpawn Delay=8.5 Kill [PR#]Line_Model&0000
+@OnSpawn Delay=8.5 Kill [PR#]Line_Rota&0000
+

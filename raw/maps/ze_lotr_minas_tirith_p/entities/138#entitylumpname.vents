@@ -1,0 +1,556 @@
+====0====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+defaultanim                    CString    crouch_walk_lower
+fadescale                      CString    1
+maxanimtime                    CString    10
+maxdxlevel                     CString    0
+minanimtime                    CString    5
+mindxlevel                     CString    0
+randomanimation                CString    0
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_LOOPING
+idleanim                       CString    crouch_walk_lower
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    crouch_walk_lower
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/shitfix/balrog/balrog.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]item_balrog_1
+classname                      CString    prop_dynamic
+origin                         CString    0.000000 1.000000 1.599609
+angles                         CString    -0.000000 1.999990 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2721
+_template_lump_ent_index       CString    0
+@OnUser1 OnlyOnce SetDefaultAnimation !self balrog_death_idle
+@OnUser1 OnlyOnce SetAnimation !self balrog_death
+@OnUser1 OnlyOnce ClearParent !self
+@OnUser1 OnlyOnce KeyValues !self targetname balrog_dead
+
+====1====
+nointerpolate                  Boolean    False
+touchoutputperentitydelay      Float64    0
+enableuseoutput                Boolean    False
+damagetoenablemotion           Integer    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+spawnobject                    CString    0
+uselocaloffset                 Boolean    False
+spawnflags                     Integer64  8444928
+rendermode                     CString    10
+renderfx                       CString    0
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    0
+propdata                       CString    0
+pressuredelay                  Float64    0
+preferredcarryangles           Vector     <0, 0, 0>
+performancemode                CString    1
+parentname                     CString    [PR#]item_balrog
+notsolid                       CString    0
+nodamageforces                 Boolean    True
+material                       CString    3
+massscale                      Float64    0
+health                         Integer    54000
+gibdir                         CString    0 0 0
+forcetoenablemotion            Float64    0
+fadescale                      CString    1
+fademindist                    Float64    -1
+explosion                      CString    0
+exploitablebyplayer            CString    0
+exploderadius                  Float64    0
+explodemagnitude               Integer    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+disablereceiveshadows          Boolean    True
+damagetype                     CString    0
+damagefilter                   CString    [PR#]humanos_y_items
+targetname                     CString    [PR#]ph_item_balrog_hp
+classname                      CString    func_physbox
+origin                         CString    40.000000 -19.000000 193.299805
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    727
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\ph_item_balrog_hp_727.vmdl
+_template_lump_ent_index       CString    1
+@OnBreak FireUser1 [PR#]item_balrog_1
+@OnBreak FireUser1 [PR#]item_balrog_6
+@OnBreak Delay=0.1 FindEntity [PR#]balrogfinder
+@OnBreak Kill [PR#]item_balrog_7
+@OnBreak Kill [PR#]item_balrog_8
+@OnBreak Kill [PR#]item_balrog_22
+@OnBreak Deactivate [PR#]item_balrog_11
+@OnBreak Delay=0.25 KeyValues [PR#]item_balrog_11 targetname balrog_ui
+@OnHealthChanged Start [PR#]item_balrog_17
+@OnHealthChanged Delay=0.02 Stop [PR#]item_balrog_17
+
+====2====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    global.balrog_scream
+sourceentityname               CString    [PR#]item_balrog
+spawnflags                     CString    49
+radius                         CString    8250
+message                        CString    sounds/sfx/balrog_scream.vsnd
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]item_balrog_21
+classname                      CString    point_soundevent
+origin                         CString    28.000000 213.000000 1.599609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    729
+_template_lump_ent_index       CString    2
+
+====3====
+wait                           Float64    1
+filtername                     CString    [PR#]specialbalrognospeedyfilter
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]item_balrog_12
+classname                      CString    trigger_multiple
+origin                         CString    40.000000 -19.000000 193.299805
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8110
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\item_balrog_12_8110.vmdl
+_template_lump_ent_index       CString    3
+@OnStartTouch KeyValues !activator speed 1.5
+@OnStartTouch Delay=10 KeyValues !activator speed 1
+@OnStartTouch Color !activator 255 0 0
+@OnStartTouch Delay=10 Color !activator 255 255 255
+
+====4====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    strider_step2
+fadeout                        CString    0
+fadein                         CString    0
+sourceentityname               CString    [PR#]item_balrog
+radius                         CString    4250
+message                        CString    sounds/sfx/strider_step2.vsnd
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_balrog
+targetname                     CString    [PR#]item_balrog_13
+classname                      CString    snd_event_point
+origin                         CString    3.299805 135.909912 2.599609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    722
+_template_lump_ent_index       CString    4
+
+====5====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    128
+damagecap                      Integer    20
+damage                         Integer    500
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_balrog
+targetname                     CString    [PR#]item_balrog_10
+classname                      CString    trigger_hurt
+origin                         CString    -4.000000 -8.000000 193.299805
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8255
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\item_balrog_10_8255.vmdl
+_template_lump_ent_index       CString    5
+@OnHurtPlayer Trigger [PR#]HurtSlower
+
+====6====
+case16                         CString    PressedAttack2
+case15                         CString    PressedAttack
+case14                         CString    PressedMoveRight
+case13                         CString    PressedBack
+case12                         CString    PressedMoveLeft
+case11                         CString    PressedForward
+vscripts                       CString    game_ui
+spawnflags                     CString    0
+fieldofview                    CString    -1.000000
+targetname                     CString    [PR#]item_balrog_11
+classname                      CString    logic_case
+origin                         CString    45.400391 119.830078 2.599609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    717
+_template_lump_ent_index       CString    6
+@OnCase15 Trigger [PR#]item_balrog_7
+@OnCase16 Trigger [PR#]item_balrog_8
+
+====7====
+frequency                      Float64    200
+duration                       Float64    1
+radius                         Float64    4000
+amplitude                      Float64    2
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_balrog
+targetname                     CString    [PR#]item_balrog_16
+classname                      CString    env_shake
+origin                         CString    -50.900391 149.310059 1.599609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    725
+_template_lump_ent_index       CString    7
+
+====8====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/minasparticles/custom_particle_029.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_balrog_1
+targetname                     CString    [PR#]item_balrog_17
+classname                      CString    info_particle_system
+origin                         CString    60.000000 -0.070068 241.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3067
+_template_lump_ent_index       CString    8
+@OnUser4 Stop !self
+@OnUser4 Delay=0.02 Start !self
+@OnUser1 OnlyOnce FireUser4 !self
+@OnUser1 OnlyOnce FireUser2 !self
+@OnUser2 Delay=0.02 AddOutput !self OnUser1>!self>FireUser4>>0>1
+@OnUser2 Delay=0.02 AddOutput !self OnUser1>!self>FireUser2>>0>1
+@OnUser1 OnlyOnce SetParentAttachment !self forward
+
+====9====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    strider_step3
+fadeout                        CString    0
+fadein                         CString    0
+sourceentityname               CString    [PR#]item_balrog
+radius                         CString    4250
+message                        CString    sounds/sfx/strider_step3.vsnd
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_balrog
+targetname                     CString    [PR#]item_balrog_14
+classname                      CString    snd_event_point
+origin                         CString    -25.599609 144.060059 1.599609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    723
+_template_lump_ent_index       CString    9
+
+====10====
+targetname                     CString    [PR#]item_balrog_15
+classname                      CString    logic_case
+origin                         CString    -41.200195 111.399902 1.599609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    726
+_template_lump_ent_index       CString    10
+@OnCase01 StartSound [PR#]item_balrog_13
+@OnCase02 StartSound [PR#]item_balrog_14
+
+====11====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    strider_skewer1
+sourceentityname               CString    [PR#]item_balrog
+radius                         CString    8250
+message                        CString    sounds/sfx/strider_skewer1.vsnd
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_balrog
+targetname                     CString    [PR#]item_balrog_9
+classname                      CString    snd_event_point
+origin                         CString    44.000000 165.000000 1.599609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    721
+_template_lump_ent_index       CString    11
+
+====12====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]item_balrog_8
+classname                      CString    logic_relay
+origin                         CString    60.000000 197.000000 2.599609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    718
+_template_lump_ent_index       CString    12
+@OnUser1 Enable [PR#]item_balrog_12
+@OnUser1 Delay=3 Disable [PR#]item_balrog_12
+@OnUser1 SetAnimation [PR#]item_balrog_1 balrog_groar
+@OnUser1 Delay=1 StartSound [PR#]item_balrog_21
+@OnUser1 KeyValues !activator speed 0
+@OnUser1 Disable !self
+@OnUser1 Delay=15 Enable !self
+@OnUser1 Disable [PR#]item_balrog_7
+@OnUser1 Delay=6.5 Enable [PR#]item_balrog_7
+@OnTrigger OnlyOnce FireUser1 !self
+@OnUser1 Delay=15 AddOutput !self OnTrigger>!self>FireUser1>>0>1
+@OnUser1 Disable [PR#]item_balrog_22
+@OnUser1 Delay=6.5 Enable [PR#]item_balrog_22
+@OnUser1 Delay=6 KeyValues !activator speed 0.7
+
+====13====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]item_balrog_7
+classname                      CString    logic_relay
+origin                         CString    60.000000 165.000000 2.599609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    720
+_template_lump_ent_index       CString    13
+@OnUser1 SetAnimation [PR#]item_balrog_1 balrog_attack1
+@OnUser1 Delay=1.25 StartSound [PR#]item_balrog_9
+@OnUser1 Disable [PR#]item_balrog_8
+@OnUser1 Delay=3.5 Enable [PR#]item_balrog_8
+@OnUser1 Delay=1.75 Enable [PR#]item_balrog_10
+@OnUser1 Delay=2.2 Disable [PR#]item_balrog_10
+@OnUser1 KeyValues !activator speed 0
+@OnUser1 Disable !self
+@OnUser1 Delay=3.5 Enable !self
+@OnUser1 Delay=3.5 AddOutput !self OnTrigger>!self>FireUser1>>0>1
+@OnTrigger OnlyOnce FireUser1 !self
+@OnUser1 Disable [PR#]item_balrog_22
+@OnUser1 Delay=3.5 Enable [PR#]item_balrog_22
+@OnUser1 Delay=1.75 Explode [PR#]item_balrog_24
+@OnUser1 Delay=3 KeyValues !activator speed 0.7
+@OnUser1 Delay=0.5 KeyValues !activator speed 0
+@OnUser1 Delay=1 KeyValues !activator speed 0
+@OnUser1 Delay=1.5 KeyValues !activator speed 0
+@OnUser1 Delay=2 KeyValues !activator speed 0
+@OnUser1 Delay=2.5 KeyValues !activator speed 0
+@OnUser1 KeyValues !activator movetype 0
+@OnUser1 Delay=3 KeyValues !activator movetype 2
+
+====14====
+frequency                      Float64    150
+duration                       Float64    9
+radius                         Float64    500
+amplitude                      Float64    8
+spawnflags                     Integer64  5
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]item_balrog_6
+classname                      CString    env_shake
+origin                         CString    80.000000 168.149902 2.599609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    719
+_template_lump_ent_index       CString    14
+@OnUser1 Delay=2 OnlyOnce StartShake !self
+@OnUser1 OnlyOnce KeyValues !self targetname balrog_shake
+@OnUser1 Delay=12 OnlyOnce Kill !self
+
+====15====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]item_balrog_10
+target                         CString    [PR#]item_balrog_12
+measurereference               CString    [PR#]item_balrog_10
+measuretarget                  CString    [PR#]item_balrog_10
+targetname                     CString    [PR#]item_balrog_26
+classname                      CString    logic_measure_movement
+origin                         CString    -131.700195 -260.219971 -55.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    62
+_template_lump_ent_index       CString    15
+
+====16====
+converttodebriswhenpossible    CString    0
+pushscale                      Float64    1
+inner_radius                   Float64    0
+spawnflags                     Integer    0
+explodeonspawn                 Boolean    False
+targetentityname               CString    [PR#]ph_*
+radius                         CString    96
+damage                         CString    0
+magnitude                      CString    300
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_balrog
+targetname                     CString    [PR#]item_balrog_25
+classname                      CString    env_physexplosion
+origin                         CString    24.000000 -3.000000 26.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    79
+_template_lump_ent_index       CString    16
+
+====17====
+converttodebriswhenpossible    CString    0
+pushscale                      Float64    1
+inner_radius                   Float64    0
+spawnflags                     Integer    0
+explodeonspawn                 Boolean    False
+targetentityname               CString    [PR#]ph_*
+radius                         CString    171
+damage                         CString    0
+magnitude                      CString    500
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_balrog
+targetname                     CString    [PR#]item_balrog_24
+classname                      CString    env_physexplosion
+origin                         CString    374.000000 -144.000000 166.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    77
+_template_lump_ent_index       CString    17
+
+====18====
+converttodebriswhenpossible    CString    0
+pushscale                      Float64    1
+inner_radius                   Float64    0
+spawnflags                     Integer    0
+explodeonspawn                 Boolean    False
+targetentityname               CString    [PR#]ph_*
+radius                         CString    171
+damage                         CString    0
+magnitude                      CString    500
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_balrog
+targetname                     CString    [PR#]item_balrog_24
+classname                      CString    env_physexplosion
+origin                         CString    374.000000 27.000000 166.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    78
+_template_lump_ent_index       CString    18
+
+====19====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    128
+damagecap                      Integer    20
+damage                         Integer    300
+filtername                     CString    [PR#]nozombies
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_balrog
+targetname                     CString    [PR#]item_balrog_23
+classname                      CString    trigger_hurt
+origin                         CString    24.000000 -3.000000 25.599609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8258
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\item_balrog_23_8258.vmdl
+_template_lump_ent_index       CString    19
+@OnHurtPlayer Trigger [PR#]HurtSlower
+
+====20====
+filtername                     CString    [PR#]zombies
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_balrog
+targetname                     CString    [PR#]item_balrog_18
+classname                      CString    trigger_once
+origin                         CString    0.299805 -0.219971 0.200195
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7957
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\item_balrog_18_7957.vmdl
+_template_lump_ent_index       CString    20
+@OnStartTouch OnlyOnce Trigger [PR#]StripAndCleanPlayer
+@OnStartTouch OnlyOnce Kill !self
+
+====21====
+initialdelay                   Float64    0
+refiretime                     Float64    0.949999988079071
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    False
+spawnflags                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]item_balrog_22
+classname                      CString    logic_timer
+origin                         CString    -11.299805 172.679932 2.599609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    724
+_template_lump_ent_index       CString    21
+@OnTimer PickRandom [PR#]item_balrog_15
+@OnTimer StartShake [PR#]item_balrog_16
+@OnTimer Explode [PR#]item_balrog_25
+@OnTimer OnlyOnce SetParentAttachment [PR#]item_balrog_17 forward
+
+====22====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]item_balrog
+target                         CString    [PR#]item_balrog_1
+measurereference               CString    [PR#]item_balrog
+measuretarget                  CString    [PR#]item_balrog
+targetname                     CString    [PR#]cocksuckerbalrogfix
+classname                      CString    logic_measure_movement
+origin                         CString    26.544922 180.874512 48.226562
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    21864
+_template_lump_ent_index       CString    22
+

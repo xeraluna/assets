@@ -1,0 +1,1381 @@
+====0====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S3_Beam_3
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Laser_Move_3
+targetname                     CString    [PR#]Boss_S3_Maker_3
+classname                      CString    env_entity_maker
+origin                         CString    -1272.000000 -96.000000 504.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2608
+_template_lump_ent_index       CString    0
+
+====1====
+case28                         CString    UnpressedDuck
+case27                         CString    UnpressedSpeed
+case26                         CString    UnpressedAttack2
+case25                         CString    UnpressedAttack
+case24                         CString    UnpressedMoveRight
+case23                         CString    UnpressedBack
+case22                         CString    UnpressedMoveLeft
+case21                         CString    UnpressedForward
+case18                         CString    PressedDuck
+case17                         CString    PressedSpeed
+case16                         CString    PressedAttack2
+case15                         CString    PressedAttack
+case14                         CString    PressedMoveRight
+case13                         CString    PressedBack
+case12                         CString    PressedMoveLeft
+case11                         CString    PressedForward
+case02                         CString    PlayerOff
+case01                         CString    PlayerOn
+spawnflags                     Integer    0
+targetname                     CString    [PR#]Boss_S3_Case_2
+classname                      CString    logic_case
+origin                         CString    16.000000 -16.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3818
+_template_lump_ent_index       CString    1
+@OnCase01 ForceSpawn [PR#]Boss_S3_Maker_5
+@OnCase02 ForceSpawn [PR#]Boss_S3_Maker_4
+
+====2====
+wait                           Float64    0
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Main_Rota_3
+targetname                     CString    [PR#]Boss_S3_TargetTrigger
+classname                      CString    trigger_multiple
+origin                         CString    -136.000000 -560.000000 152.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3774
+model                          CString    maps\ze_arcana_heart\entities\Boss_S3_TargetTrigger_3774.vmdl
+_template_lump_ent_index       CString    2
+@OnTrigger Disable !self
+@OnUser2 AddOutput !self OnTrigger>!self>FireUser4>>0>1
+@OnUser2 Delay=0.03 Enable !self
+@OnUser4 Delay=0.02 SetParent [PR#]Trace_Target* !activator
+@OnUser4 Delay=0.04 SetParentAttachment [PR#]Trace_Target* axis_of_intent
+@OnUser4 Delay=0.06 FireUser1 [PR#]Trace_TrackTrain*
+
+====3====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer64  577
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    40
+disableshadows                 CString    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Laser_Move
+targetname                     CString    [PR#]Boss_S3_Laser_Rota
+classname                      CString    func_rotating
+origin                         CString    -136.000000 -80.000000 344.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3459
+model                          CString    maps\ze_arcana_heart\entities\Boss_S3_Laser_Rota_3459.vmdl
+_template_lump_ent_index       CString    3
+
+====4====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+burstscale                     Float64    100
+clothscale                     Float64    1
+startdisabled                  Boolean    True
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <0, 0, 0>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+skin                           CString    default
+model                          CString    models/props/diamond_02.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Main_Rota_1
+targetname                     CString    [PR#]Boss_S3_Main_Model_3
+classname                      CString    prop_dynamic
+origin                         CString    -136.000000 -80.000000 8.000000
+angles                         CString    0.000000 -179.999985 179.999985
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2808
+_template_lump_ent_index       CString    4
+
+====5====
+nointerpolate                  Boolean    False
+touchoutputperentitydelay      Float64    0
+enableuseoutput                Boolean    False
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+uselocaloffset                 Boolean    False
+spawnobject                    CString    0
+spawnflags                     Integer64  50176
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+propdata                       CString    0
+pressuredelay                  Float64    0
+preferredcarryangles           Vector     <0, 0, 0>
+performancemode                CString    0
+notsolid                       CString    0
+nodamageforces                 Boolean    False
+material                       CString    0
+massscale                      Float64    0
+health                         Integer    99999999
+forcetoenablemotion            Float64    0
+fademindist                    Float64    -1
+fademaxdist                    Float64    0
+explosion                      CString    0
+exploitablebyplayer            CString    0
+exploderadius                  Float64    0
+explodemagnitude               Integer    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+disablereceiveshadows          Boolean    False
+damagetype                     CString    0
+damagetoenablemotion           Integer    0
+damagefilter                   CString    [PR#]Filter_T
+targetname                     CString    [PR#]Boss_S3_Hitbox_2
+classname                      CString    func_physbox
+origin                         CString    -136.000000 -1216.000000 152.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2588
+model                          CString    maps\ze_arcana_heart\entities\Boss_S3_Hitbox_2_2588.vmdl
+_template_lump_ent_index       CString    5
+@OnHealthChanged Subtract [PR#]Boss_S3_Hp_Main 1
+
+====6====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S3_Beam_3
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Laser_Move_2
+targetname                     CString    [PR#]Boss_S3_Maker_2
+classname                      CString    env_entity_maker
+origin                         CString    -1272.000000 -64.000000 504.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2601
+_template_lump_ent_index       CString    6
+
+====7====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/arcana_particles/custom_particle_049.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Laser_Rota
+targetname                     CString    [PR#]Boss_S3_Laser_Particle
+classname                      CString    info_particle_system
+origin                         CString    -136.000977 -208.000977 248.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3337
+_template_lump_ent_index       CString    7
+
+====8====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/arcana_particles/custom_particle_049.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Laser_Rota
+targetname                     CString    [PR#]Boss_S3_Laser_Particle
+classname                      CString    info_particle_system
+origin                         CString    -136.000000 48.000000 248.000000
+angles                         CString    0.000000 -179.999969 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3451
+_template_lump_ent_index       CString    8
+
+====9====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/arcana_particles/custom_particle_049.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Laser_Rota
+targetname                     CString    [PR#]Boss_S3_Laser_Particle
+classname                      CString    info_particle_system
+origin                         CString    -7.999023 -79.999023 248.000000
+angles                         CString    -0.000000 90.000015 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3453
+_template_lump_ent_index       CString    9
+
+====10====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/arcana_particles/custom_particle_049.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Laser_Rota
+targetname                     CString    [PR#]Boss_S3_Laser_Particle
+classname                      CString    info_particle_system
+origin                         CString    -264.000977 -80.000977 248.000000
+angles                         CString    -0.000000 -90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4504
+_template_lump_ent_index       CString    10
+
+====11====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    224
+speed                          Integer    112
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <90, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Boss_S3_Laser_Move
+classname                      CString    func_movelinear
+origin                         CString    -136.000000 -80.000000 376.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4174
+model                          CString    maps\ze_arcana_heart\entities\Boss_S3_Laser_Move_4174.vmdl
+_template_lump_ent_index       CString    11
+
+====12====
+initialdelay                   Float64    0
+refiretime                     Float64    0.20000000298023224
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    False
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Boss_S3_Main_Timer_1
+classname                      CString    logic_timer
+origin                         CString    0.000000 -32.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4760
+_template_lump_ent_index       CString    12
+@OnTimer ForceSpawn [PR#]Boss_S3_Maker_1
+
+====13====
+initialvalue                   Integer    0
+targetname                     CString    [PR#]Boss_S3_Branch_3
+classname                      CString    logic_branch
+origin                         CString    16.000000 -80.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2813
+_template_lump_ent_index       CString    13
+@OnTrue FireUser4 [PR#]Boss_S3_Case_1
+@OnFalse Delay=16.1 SetParent [PR#]Boss_S3_Main_Model [PR#]Boss_S3_Main_Rota_1
+@OnFalse Delay=16.05 Fade [PR#]Boss_S3_Main_Fade
+@OnFalse Delay=16.05 KeyValue [PR#]Boss_S3_Main_Model origin -10880 11904 12432
+@OnFalse Delay=16 Disable [PR#]Boss_S3_Main_Timer_2
+@OnFalse Delay=1 Enable [PR#]Boss_S3_Main_Timer_2
+@OnFalse Delay=0.05 KeyValue [PR#]Boss_S3_Main_Model origin -11896 11904 12432
+@OnFalse ClearParent [PR#]Boss_S3_Main_Model
+@OnFalse Delay=16 Disable [PR#]Boss_S3_Main_Model_2
+@OnFalse Delay=16 Disable [PR#]Boss_S3_Main_Timer_3
+@OnFalse Enable [PR#]Boss_S3_Main_Model_2
+@OnFalse Fade [PR#]Boss_S3_Main_Fade
+@OnFalse Enable [PR#]Boss_S3_Main_Timer_3
+@OnFalse Delay=20 FireUser4 [PR#]Boss_S3_Case_1
+
+====14====
+nointerpolate                  Boolean    False
+touchoutputperentitydelay      Float64    0
+enableuseoutput                Boolean    False
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+uselocaloffset                 Boolean    False
+spawnobject                    CString    0
+spawnflags                     Integer64  50176
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+propdata                       CString    0
+pressuredelay                  Float64    0
+preferredcarryangles           Vector     <0, 0, 0>
+performancemode                CString    0
+parentname                     CString    [PR#]Boss_S3_Main_Model
+notsolid                       CString    0
+nodamageforces                 Boolean    False
+material                       CString    0
+massscale                      Float64    0
+health                         Integer    99999999
+forcetoenablemotion            Float64    0
+fademindist                    Float64    -1
+fademaxdist                    Float64    0
+explosion                      CString    0
+exploitablebyplayer            CString    0
+exploderadius                  Float64    0
+explodemagnitude               Integer    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+disablereceiveshadows          Boolean    False
+damagetype                     CString    0
+damagetoenablemotion           Integer    0
+damagefilter                   CString    [PR#]Filter_T
+targetname                     CString    [PR#]Boss_S3_Hitbox_1
+classname                      CString    func_physbox
+origin                         CString    -136.000000 -80.000000 152.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2597
+model                          CString    maps\ze_arcana_heart\entities\Boss_S3_Hitbox_1_2597.vmdl
+_template_lump_ent_index       CString    14
+@OnHealthChanged Subtract [PR#]Boss_S3_Hp_Main 1
+
+====15====
+filterteam                     CString    3
+negated                        CString    0
+targetname                     CString    [PR#]Boss_S3_Hp_Add
+classname                      CString    filter_activator_team
+origin                         CString    56.000000 16.000000 440.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2807
+_template_lump_ent_index       CString    15
+@OnPass Add [PR#]Boss_S3_Hp_Main 60
+
+====16====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+burstscale                     Float64    100
+clothscale                     Float64    1
+startdisabled                  Boolean    True
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+skin                           CString    default
+model                          CString    models/props/diamond_02_small.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Laser_Rota
+targetname                     CString    [PR#]Boss_S3_Laser_Model
+classname                      CString    prop_dynamic
+origin                         CString    -264.000000 -80.000000 248.000000
+angles                         CString    89.999985 -90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3238
+_template_lump_ent_index       CString    16
+
+====17====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+burstscale                     Float64    100
+clothscale                     Float64    1
+startdisabled                  Boolean    True
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+skin                           CString    default
+model                          CString    models/props/diamond_02_small.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Laser_Rota
+targetname                     CString    [PR#]Boss_S3_Laser_Model
+classname                      CString    prop_dynamic
+origin                         CString    -8.000000 -80.000000 248.000000
+angles                         CString    89.999985 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3452
+_template_lump_ent_index       CString    17
+
+====18====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+burstscale                     Float64    100
+clothscale                     Float64    1
+startdisabled                  Boolean    True
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+skin                           CString    default
+model                          CString    models/props/diamond_02_small.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Laser_Rota
+targetname                     CString    [PR#]Boss_S3_Laser_Model
+classname                      CString    prop_dynamic
+origin                         CString    -136.000000 48.000000 248.000000
+angles                         CString    89.999985 -179.999969 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3947
+_template_lump_ent_index       CString    18
+
+====19====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+burstscale                     Float64    100
+clothscale                     Float64    1
+startdisabled                  Boolean    True
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+targetname                     CString    [PR#]Boss_S3_Laser_Model
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Laser_Rota
+rendertocubemaps               Boolean    True
+disableshadows                 CString    1
+solid                          CString    6
+skin                           CString    default
+rendercolor                    Vector     <255, 255, 255>
+model                          CString    models/props/diamond_02_small.vmdl
+classname                      CString    prop_dynamic
+origin                         CString    -136.000000 -208.000000 248.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5529
+_template_lump_ent_index       CString    19
+
+====20====
+initialdelay                   Float64    0
+upperrandombound               Float64    0.5
+lowerrandombound               Float64    0.20000000298023224
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    True
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Boss_S3_Main_Timer_2
+classname                      CString    logic_timer
+origin                         CString    0.000000 -48.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2760
+_template_lump_ent_index       CString    20
+@OnTimer ForceSpawn [PR#]Boss_S3_Maker_2
+
+====21====
+initialdelay                   Float64    0
+upperrandombound               Float64    0.5
+lowerrandombound               Float64    0.20000000298023224
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    True
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Boss_S3_Main_Timer_2
+classname                      CString    logic_timer
+origin                         CString    0.000000 -64.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3049
+_template_lump_ent_index       CString    21
+@OnTimer ForceSpawn [PR#]Boss_S3_Maker_3
+
+====22====
+initialvalue                   Integer    0
+targetname                     CString    [PR#]Boss_S3_Branch_2
+classname                      CString    logic_branch
+origin                         CString    16.000000 -64.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2814
+_template_lump_ent_index       CString    22
+@OnFalse Fade [PR#]Boss_S3_Main_Fade
+@OnFalse Command [PR#]Server say >>Reflect<<
+@OnFalse Delay=2 Enable [PR#]Boss_S3_Look_Trigger
+@OnFalse SetValue [PR#]Boss_S3_Branch_1 1
+@OnFalse SetValue [PR#]Boss_S3_Branch_3 1
+@OnFalse Delay=17 Disable [PR#]Boss_S3_Look_Trigger
+@OnFalse Toggle [PR#]S3_Wall_2
+@OnFalse Delay=17 Toggle [PR#]S3_Wall_2
+@OnFalse Delay=2 FireUser4 [PR#]Boss_S3_Case_1
+@OnFalse SetValue !self 1
+@OnTrue FireUser4 [PR#]Boss_S3_Case_1
+@OnFalse Delay=15 SetValue [PR#]Boss_S3_Branch_3 0
+@OnFalse Delay=15 SetValue [PR#]Boss_S3_Branch_1 0
+@OnFalse Enable [PR#]Boss_S3_Main_Model_3
+@OnFalse Delay=17 Kill [PR#]Boss_S3_Main_Model_3
+@OnFalse SetDamageFilter [PR#]Boss_S3_Hitbox_1 [PR#]Filter_T
+@OnFalse SetDamageFilter [PR#]Boss_S3_Hitbox_2
+@OnFalse Delay=17 Kill [PR#]Boss_S3_Hitbox_2
+@OnFalse Delay=17 SetDamageFilter [PR#]Boss_S3_Hitbox_1
+
+====23====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Boss_S3_Death_Relay
+classname                      CString    logic_relay
+origin                         CString    64.000000 -16.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1506
+_template_lump_ent_index       CString    23
+@OnTrigger FireUser1 [PR#]S3_Bgm_3
+@OnTrigger Delay=15 Enable [PR#]S3_Tele_1
+@OnTrigger Delay=6 Enable [PR#]S3_Tele_2
+@OnTrigger Delay=0.05 Kill [PR#]Boss_S3_*
+@OnTrigger Delay=15 Kill [PR#]S3_Wall_*
+@OnTrigger Delay=6 Disable [PR#]Map_Fog
+@OnTrigger Disable [PR#]Map_Post_S3
+@OnTrigger Enable [PR#]Map_Post_S3_End
+
+====24====
+initialdelay                   Float64    0
+upperrandombound               Float64    1.7999999523162842
+lowerrandombound               Float64    0.800000011920929
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    True
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Boss_S3_Main_Timer_3
+classname                      CString    logic_timer
+origin                         CString    16.000000 -32.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2870
+_template_lump_ent_index       CString    24
+@OnTimer PickRandom [PR#]Boss_S3_Case_2
+
+====25====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S3_Laser_1
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Boss_S3_Maker_5
+classname                      CString    env_entity_maker
+origin                         CString    -136.000000 944.000000 56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3239
+_template_lump_ent_index       CString    25
+
+====26====
+initialdelay                   Float64    0
+upperrandombound               Float64    50
+lowerrandombound               Float64    30
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    True
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Boss_S3_Main_Timer_4
+classname                      CString    logic_timer
+origin                         CString    32.000000 -32.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2811
+_template_lump_ent_index       CString    26
+@OnTimer FireUser3 [PR#]Boss_S3_Case_1
+
+====27====
+max                            Integer    10
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Boss_S3_Hp_Counter
+classname                      CString    math_counter
+origin                         CString    64.000000 -32.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1691
+_template_lump_ent_index       CString    27
+@OutValue Trigger [PR#]Boss_S3_Hp_Relay
+@OnHitMax OnlyOnce Trigger [PR#]Boss_S3_Death_Relay
+
+====28====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+burstscale                     Float64    100
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+skin                           CString    default
+model                          CString    models/props/diamond_02.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Main_Rota_1
+targetname                     CString    [PR#]Boss_S3_Main_Model
+classname                      CString    prop_dynamic
+origin                         CString    -136.000000 -80.000000 136.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.200000 1.200000 1.200000
+hammeruniqueid                 CString    2007
+_template_lump_ent_index       CString    28
+@OnUser1 FireUser1 [PR#]Boss_S3_Main_Move_1
+@OnUser1 Open [PR#]Boss_S3_Laser_Move_2
+@OnUser1 Open [PR#]Boss_S3_Laser_Move_3
+@OnUser1 Delay=12 FireUser1 [PR#]Boss_S3_Case_1
+@OnUser1 Delay=5 Fade [PR#]Boss_S3_Main_Fade
+@OnUser1 Delay=5 FireUser1 [PR#]S3_Bgm_2
+@OnUser1 Delay=5 SetDamageFilter [PR#]Boss_S3_Hitbox_1
+
+====29====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S3_Laser_1
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Boss_S3_Maker_4
+classname                      CString    env_entity_maker
+origin                         CString    -136.000000 944.000000 4.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1471
+_template_lump_ent_index       CString    29
+
+====30====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    88
+speed                          Integer    24
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <-90, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Main_Model
+targetname                     CString    [PR#]Boss_S3_Main_Move_1
+classname                      CString    func_movelinear
+origin                         CString    -136.000000 -80.000000 8.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1303
+model                          CString    maps\ze_arcana_heart\entities\Boss_S3_Main_Move_1_1303.vmdl
+_template_lump_ent_index       CString    30
+@OnFullyClosed Open !self
+@OnFullyOpen Close !self
+@OnUser1 OnlyOnce Open !self
+
+====31====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer64  577
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    400
+disableshadows                 CString    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Boss_S3_Main_Rota_3
+classname                      CString    func_rotating
+origin                         CString    -136.000000 -80.000000 25.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1524
+model                          CString    maps\ze_arcana_heart\entities\Boss_S3_Main_Rota_3_1524.vmdl
+_template_lump_ent_index       CString    31
+
+====32====
+rendercolor                    Vector     <0, 0, 0>
+renderamt                      Integer    255
+holdtime                       CString    0
+duration                       CString    2
+spawnflags                     Integer    1
+targetname                     CString    [PR#]Boss_S3_Main_Fade
+classname                      CString    env_fade
+origin                         CString    0.000000 16.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4809
+_template_lump_ent_index       CString    32
+
+====33====
+test_occlusion                 Boolean    False
+timeout                        Float64    0
+fov2d                          Boolean    False
+fieldofview                    CString    0.900000
+looktime                       CString    0
+target                         CString    [PR#]Map_S3_Boss_LookTarget
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Main_Rota_3
+targetname                     CString    [PR#]Boss_S3_Look_Trigger
+classname                      CString    trigger_look
+origin                         CString    -616.000000 -80.000000 168.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1132
+model                          CString    maps\ze_arcana_heart\entities\Boss_S3_Look_Trigger_1132.vmdl
+_template_lump_ent_index       CString    33
+@OnTrigger KeyValue !activator speed 0.1
+@OnTrigger Delay=5 KeyValue !activator speed 1
+@OnTrigger Hurt [PR#]Boss_S3_Hurt
+
+====34====
+test_occlusion                 Boolean    False
+timeout                        Float64    0
+fov2d                          Boolean    False
+fieldofview                    CString    0.900000
+looktime                       CString    0
+target                         CString    [PR#]Map_S3_Boss_LookTarget
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Main_Rota_3
+targetname                     CString    [PR#]Boss_S3_Look_Trigger
+classname                      CString    trigger_look
+origin                         CString    -136.000000 400.000000 168.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2789
+model                          CString    maps\ze_arcana_heart\entities\Boss_S3_Look_Trigger_2789.vmdl
+_template_lump_ent_index       CString    34
+@OnTrigger KeyValue !activator speed 0.1
+@OnTrigger Delay=5 KeyValue !activator speed 1
+@OnTrigger Hurt [PR#]Boss_S3_Hurt
+
+====35====
+test_occlusion                 Boolean    False
+timeout                        Float64    0
+fov2d                          Boolean    False
+fieldofview                    CString    0.900000
+looktime                       CString    0
+target                         CString    [PR#]Map_S3_Boss_LookTarget
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Main_Rota_3
+targetname                     CString    [PR#]Boss_S3_Look_Trigger
+classname                      CString    trigger_look
+origin                         CString    344.000000 -80.000000 168.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3180
+model                          CString    maps\ze_arcana_heart\entities\Boss_S3_Look_Trigger_3180.vmdl
+_template_lump_ent_index       CString    35
+@OnTrigger KeyValue !activator speed 0.1
+@OnTrigger Delay=5 KeyValue !activator speed 1
+@OnTrigger Hurt [PR#]Boss_S3_Hurt
+
+====36====
+test_occlusion                 Boolean    False
+timeout                        Float64    0
+fov2d                          Boolean    False
+fieldofview                    CString    0.900000
+looktime                       CString    0
+target                         CString    [PR#]Map_S3_Boss_LookTarget
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Main_Rota_3
+targetname                     CString    [PR#]Boss_S3_Look_Trigger
+classname                      CString    trigger_look
+origin                         CString    -136.000000 -560.000000 168.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3512
+model                          CString    maps\ze_arcana_heart\entities\Boss_S3_Look_Trigger_3512.vmdl
+_template_lump_ent_index       CString    36
+@OnTrigger KeyValue !activator speed 0.1
+@OnTrigger Delay=5 KeyValue !activator speed 1
+@OnTrigger Hurt [PR#]Boss_S3_Hurt
+
+====37====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1024
+damagecap                      Integer    20
+damage                         Integer    18
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Laser_Rota
+targetname                     CString    [PR#]Boss_S3_Laser_Hurt
+classname                      CString    trigger_hurt
+origin                         CString    -136.000000 -80.000000 248.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    842
+model                          CString    maps\ze_arcana_heart\entities\Boss_S3_Laser_Hurt_842.vmdl
+_template_lump_ent_index       CString    37
+
+====38====
+damagetype                     CString    1024
+damagedelay                    Float64    0
+damage                         Integer    1
+damageradius                   Float64    0
+damagetarget                   CString    !activator
+targetname                     CString    [PR#]Boss_S3_Hurt
+classname                      CString    point_hurt
+origin                         CString    16.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4477
+_template_lump_ent_index       CString    38
+
+====39====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer64  513
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    200
+disableshadows                 CString    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Main_Move_1
+targetname                     CString    [PR#]Boss_S3_Main_Rota_2
+classname                      CString    func_rotating
+origin                         CString    -136.000000 -80.000000 9.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1312
+model                          CString    maps\ze_arcana_heart\entities\Boss_S3_Main_Rota_2_1312.vmdl
+_template_lump_ent_index       CString    39
+
+====40====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    880
+speed                          Integer    880
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 90, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Boss_S3_Laser_Move_2
+classname                      CString    func_movelinear
+origin                         CString    -1272.000000 -64.000000 8.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3050
+model                          CString    maps\ze_arcana_heart\entities\Boss_S3_Laser_Move_2_3050.vmdl
+_template_lump_ent_index       CString    40
+@OnFullyOpen Close !self
+@OnFullyClosed Open !self
+
+====41====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer64  577
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    60
+disableshadows                 CString    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Boss_S3_Main_Rota_1
+classname                      CString    func_rotating
+origin                         CString    -136.000000 -80.000000 17.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3436
+model                          CString    maps\ze_arcana_heart\entities\Boss_S3_Main_Rota_1_3436.vmdl
+_template_lump_ent_index       CString    41
+
+====42====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S3_Ball_5
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Main_Rota_2
+targetname                     CString    [PR#]Boss_S3_Maker_1
+classname                      CString    env_entity_maker
+origin                         CString    -136.000000 -104.000000 16.000000
+angles                         CString    -0.000000 -90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1297
+_template_lump_ent_index       CString    42
+
+====43====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S3_Ball_5
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Main_Rota_2
+targetname                     CString    [PR#]Boss_S3_Maker_1
+classname                      CString    env_entity_maker
+origin                         CString    -112.000000 -80.000000 16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3348
+_template_lump_ent_index       CString    43
+
+====44====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S3_Ball_5
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Main_Rota_2
+targetname                     CString    [PR#]Boss_S3_Maker_1
+classname                      CString    env_entity_maker
+origin                         CString    -160.000000 -80.000000 16.000000
+angles                         CString    0.000000 -179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4489
+_template_lump_ent_index       CString    44
+
+====45====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S3_Ball_5
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S3_Main_Rota_2
+targetname                     CString    [PR#]Boss_S3_Maker_1
+classname                      CString    env_entity_maker
+origin                         CString    -136.000000 -56.000000 16.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4499
+_template_lump_ent_index       CString    45
+
+====46====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    880
+speed                          Integer    880
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 270, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Boss_S3_Laser_Move_3
+classname                      CString    func_movelinear
+origin                         CString    -1272.000000 -96.000000 8.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2592
+model                          CString    maps\ze_arcana_heart\entities\Boss_S3_Laser_Move_3_2592.vmdl
+_template_lump_ent_index       CString    46
+@OnFullyClosed Open !self
+@OnFullyOpen Close !self
+
+====47====
+max                            Integer    99999999
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Boss_S3_Hp_Main
+classname                      CString    math_counter
+origin                         CString    48.000000 -32.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1709
+_template_lump_ent_index       CString    47
+@OnHitMin Add [PR#]Boss_S3_Hp_Counter 1
+
+====48====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Boss_S3_Hp_Relay
+classname                      CString    logic_relay
+origin                         CString    64.000000 -16.000000 16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3444
+_template_lump_ent_index       CString    48
+@OnTrigger CountPlayersInZone [PR#]Boss_S3_Zone
+
+====49====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+burstscale                     Float64    100
+clothscale                     Float64    1
+startdisabled                  Boolean    True
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <0, 0, 0>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+skin                           CString    default
+model                          CString    models/props/diamond_02.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Boss_S3_Main_Model_2
+classname                      CString    prop_dynamic
+origin                         CString    -136.000000 944.000000 136.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.200000 1.200000 1.200000
+hammeruniqueid                 CString    2788
+_template_lump_ent_index       CString    49
+
+====50====
+initialvalue                   Integer    0
+targetname                     CString    [PR#]Boss_S3_Branch_1
+classname                      CString    logic_branch
+origin                         CString    16.000000 -48.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4476
+_template_lump_ent_index       CString    50
+@OnFalse Delay=10.05 KeyValue [PR#]Boss_S3_Main_Model origin -10880 11904 12432
+@OnFalse Delay=10.05 Disable [PR#]Boss_S3_Main_Timer_1
+@OnFalse Delay=10 Fade [PR#]Boss_S3_Main_Fade
+@OnFalse Delay=0.05 Enable [PR#]Boss_S3_Main_Timer_1
+@OnFalse Delay=0.05 KeyValue [PR#]Boss_S3_Main_Model origin -9888 11896 12432
+@OnFalse Fade [PR#]Boss_S3_Main_Fade
+@OnTrue Enable [PR#]Boss_S3_Main_Timer_1
+@OnTrue Delay=10 Disable [PR#]Boss_S3_Main_Timer_1
+@OnFalse Delay=13 FireUser4 [PR#]Boss_S3_Case_1
+@OnTrue Delay=16 FireUser4 [PR#]Boss_S3_Case_1
+

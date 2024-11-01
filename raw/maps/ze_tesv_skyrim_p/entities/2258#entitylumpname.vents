@@ -1,0 +1,41 @@
+====0====
+solidbsp                       CString    0
+distance                       Integer    90
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  1422
+spawnpos                       CString    0
+unlocked_sound                 CString    0
+locked_sound                   CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    0
+lip                            Integer    0
+wait                           Integer    -1
+speed                          Float64    65
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]lever_button
+classname                      CString    func_door_rotating
+origin                         CString    1.000000 31.000000 -36.200195
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2117
+model                          CString    maps\ze_tesv_skyrim_p\entities\lever_button_2117.vmdl
+_template_lump_ent_index       CString    0
+@OnFullyOpen Delay=25 OnlyOnce Open [PR#]st3_door10
+@OnFullyOpen Delay=25 OnlyOnce Open [PR#]st3_door11
+@OnFullyOpen Delay=28 OnlyOnce Open [PR#]st3_door12
+@OnFullyOpen Delay=28 OnlyOnce Open [PR#]st3_door13
+@OnFullyOpen Command [PR#]CMD say *** Hold for 25 seconds ***
+

@@ -1,0 +1,158 @@
+====0====
+flag_as_weather                CString    0
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/8bit_particles/item_cannonultima_used.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Move_cannon_ultimate
+targetname                     CString    [PR#]Particle_material_cannon_ultimate
+classname                      CString    info_particle_system
+origin                         CString    0.000000 0.000000 67.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4974
+_template_lump_ent_index       CString    0
+
+====1====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    20
+damage                         Integer    999999
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Move_cannon_ultimate
+targetname                     CString    [PR#]Hurt_cannon_ultimate
+classname                      CString    trigger_hurt
+origin                         CString    0.000000 0.000000 67.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4975
+model                          CString    maps\ze_8bit\entities\Hurt_cannon_ultimate_4975.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+health                         Integer    100
+movesoundmaxtime               Float64    0
+movesoundmintime               Float64    0
+movesoundmaxpitch              Integer    200
+movesoundminpitch              Integer    60
+volume                         Integer    10
+dmg                            Integer    0
+bank                           CString    0
+height                         Integer    4
+wheels                         Integer    50
+orientationtype                CString    1
+velocitytype                   CString    0
+speed                          Integer    0
+startspeed                     Integer    300
+target                         CString    [PR#]Path_track_cannon_ultimate_1
+spawnflags                     Integer64  538
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Move_cannon_ultimate
+classname                      CString    func_tanktrain
+origin                         CString    19.000000 0.000000 67.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4977
+model                          CString    maps\ze_8bit\entities\Move_cannon_ultimate_4977.vmdl
+_template_lump_ent_index       CString    2
+
+====3====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]Path_track_cannon_ultimate_2
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Path_track_cannon_ultimate_1
+classname                      CString    path_track
+origin                         CString    19.000000 0.000000 67.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4980
+_template_lump_ent_index       CString    3
+
+====4====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Path_track_cannon_ultimate_2
+classname                      CString    path_track
+origin                         CString    1035.000000 0.000000 67.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4981
+_template_lump_ent_index       CString    4
+@OnPass Kill [PR#]Particle_material_cannon_ultimate
+@OnPass Kill [PR#]Hurt_cannon_ultimate
+@OnPass Delay=0.05 Kill [PR#]Path_track_cannon_ultimate_2
+@OnPass Kill [PR#]Path_track_cannon_ultimate_1
+@OnPass Kill [PR#]Move_cannon_ultimate
+@OnPass Delay=2 OnlyOnce Kill [PR#]Cannon_ultimate_sound
+@OnPass Delay=2 OnlyOnce Enable [PR#]teleport_after_ultimate
+
+====5====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    cannon_ultimate_attack
+spawnflags                     CString    49
+message                        CString    sounds/8bit_sound/cannon_ultimate_attack.vsnd
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Cannon_ultimate_sound
+classname                      CString    point_soundevent
+origin                         CString    0.000000 17.000000 67.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4996
+_template_lump_ent_index       CString    5
+
+====6====
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Move_cannon_ultimate
+targetname                     CString    [PR#]once_cannon_ultimate
+classname                      CString    trigger_once
+origin                         CString    20.000000 1.000000 167.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    11535
+model                          CString    maps\ze_8bit\entities\once_cannon_ultimate_11535.vmdl
+_template_lump_ent_index       CString    6
+@OnStartTouch Teleport [PR#]teleport_room_cannon_ultimate
+

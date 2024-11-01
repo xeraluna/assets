@@ -1,0 +1,541 @@
+====0====
+nointerpolate                  Boolean    False
+touchoutputperentitydelay      Float64    0
+enableuseoutput                Boolean    False
+damagetoenablemotion           Integer    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+spawnobject                    CString    0
+uselocaloffset                 Boolean    False
+spawnflags                     Integer64  8444928
+rendermode                     CString    10
+renderfx                       CString    0
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    0
+propdata                       CString    0
+pressuredelay                  Float64    0
+preferredcarryangles           Vector     <0, 0, 0>
+performancemode                CString    1
+parentname                     CString    [PR#]item_troll_1_2&0000
+notsolid                       CString    0
+nodamageforces                 Boolean    True
+material                       CString    8
+massscale                      Float64    0
+health                         Integer    8000
+gibdir                         CString    0 0 0
+forcetoenablemotion            Float64    0
+fadescale                      CString    1
+fademindist                    Float64    -1
+explosion                      CString    0
+exploitablebyplayer            CString    0
+exploderadius                  Float64    0
+explodemagnitude               Integer    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+disablereceiveshadows          Boolean    True
+damagetype                     CString    0
+damagefilter                   CString    [PR#]humanos_y_items
+targetname                     CString    [PR#]ph_troll_hp_2&0000
+classname                      CString    func_physbox
+origin                         CString    -27.730469 13.920044 141.799805
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    349
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\ph_troll_hp_2_349.vmdl
+_template_lump_ent_index       CString    0
+@OnBreak Break [PR#]ph_troll_hp_2&0000
+@OnHealthChanged Enable [PR#]trollpush2&0000
+@OnHealthChanged Delay=0.02 Disable [PR#]trollpush2&0000
+
+====1====
+nointerpolate                  Boolean    False
+gibdir                         CString    0 0 0
+fadescale                      CString    1
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+notsolid                       CString    0
+preferredcarryangles           Vector     <0, 0, 0>
+enableuseoutput                Boolean    False
+forcetoenablemotion            Float64    0
+damagetoenablemotion           Integer    0
+massscale                      Float64    0
+damagetype                     CString    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    0
+rendermode                     CString    10
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    True
+explosion                      CString    0
+material                       CString    8
+health                         Integer    8000
+propdata                       CString    0
+performancemode                CString    1
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+damagefilter                   CString    [PR#]humanos_y_items
+spawnflags                     Integer64  8444928
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_troll_1_2&0000
+targetname                     CString    [PR#]ph_troll_hp_2&0000
+classname                      CString    func_physbox
+origin                         CString    -14.730469 13.920044 141.750000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    21887
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\ph_troll_hp_2_21887.vmdl
+_template_lump_ent_index       CString    1
+@OnBreak ForceSpawnAtEntityOrigin [PR#]BloodGush_EntMaker !caller
+@OnBreak SetAnimation [PR#]item_troll_x&0000 death
+@OnBreak OnlyOnce FireUser1 [PR#]item_troll_4_2
+@OnBreak Kill [PR#]ph_troll_hp_23&0000
+@OnBreak ClearParent [PR#]item_troll_x&0000
+@OnBreak Deactivate [PR#]trollui&0000
+@OnBreak Delay=0.02 FireUser1 [PR#]item_troll_x&0000
+@OnHealthChanged Delay=0.05 Subtract [PR#]max_3_trolls 1
+@OnBreak Delay=0.05 Enable [PR#]crear_troll
+@OnBreak Delay=0.1 Enable [PR#]item_troll_4_2
+@OnHealthChanged Enable [PR#]trollpush&0000
+@OnHealthChanged Delay=0.02 Disable [PR#]trollpush&0000
+
+====2====
+nointerpolate                  Boolean    False
+touchoutputperentitydelay      Float64    0
+enableuseoutput                Boolean    False
+damagetoenablemotion           Integer    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+spawnobject                    CString    0
+uselocaloffset                 Boolean    False
+spawnflags                     Integer64  8444928
+rendermode                     CString    10
+renderfx                       CString    0
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    0
+propdata                       CString    0
+pressuredelay                  Float64    0
+preferredcarryangles           Vector     <0, 0, 0>
+performancemode                CString    1
+parentname                     CString    [PR#]item_troll_1_2&0000
+notsolid                       CString    0
+nodamageforces                 Boolean    True
+material                       CString    8
+massscale                      Float64    0
+health                         Integer    4000
+gibdir                         CString    0 0 0
+forcetoenablemotion            Float64    0
+fadescale                      CString    1
+fademindist                    Float64    -1
+explosion                      CString    0
+exploitablebyplayer            CString    0
+exploderadius                  Float64    0
+explodemagnitude               Integer    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+disablereceiveshadows          Boolean    True
+damagetype                     CString    0
+damagefilter                   CString    [PR#]humanos_y_items
+targetname                     CString    [PR#]ph_troll_hp_23&0000
+classname                      CString    func_physbox
+origin                         CString    3.329102 14.920044 211.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1349
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\ph_troll_hp_23_1349.vmdl
+_template_lump_ent_index       CString    2
+@OnHealthChanged Delay=0.05 Disable [PR#]item_troll_4_2_2
+@OnHealthChanged Enable [PR#]item_troll_4_2_2
+@OnBreak Delay=0.02 FireUser1 [PR#]item_troll_x&0000
+@OnBreak SetAnimation [PR#]item_troll_x&0000 death
+@OnBreak Delay=0.1 Enable [PR#]item_troll_4_2
+@OnBreak ForceSpawnAtEntityOrigin [PR#]BloodGush_EntMaker !caller
+@OnHealthChanged Delay=0.05 Subtract [PR#]max_3_trolls 1
+@OnBreak Delay=0.05 Enable [PR#]crear_troll
+@OnBreak FireUser1 [PR#]item_troll_4_2
+@OnBreak Kill [PR#]ph_troll_hp_2&0000
+@OnBreak ClearParent [PR#]item_troll_x&0000
+@OnHealthChanged Enable [PR#]trollpush3&0000
+@OnHealthChanged Delay=0.02 Disable [PR#]trollpush3&0000
+
+====3====
+fadescale                      CString    1
+disableshadows                 CString    0
+_minlight                      CString    0.000000
+canbepickedup                  Boolean    True
+spawnflags                     Integer    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    0
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+vscripts                       CString    Filter.nut
+targetname                     CString    [PR#]item_troll_1_2&0000
+classname                      CString    weapon_knife
+origin                         CString    -0.540039 11.920044 56.500000
+angles                         Vector     <-0, 0, 0>
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    348
+_template_lump_ent_index       CString    3
+@OnPlayerPickup OnlyOnce Activate [PR#]trollui&0000
+@OnPlayerPickup OnlyOnce KeyValues !activator health 40000
+@OnPlayerPickup OnlyOnce KeyValues !activator speed 0.9
+@OnPlayerPickup OnlyOnce SetAnimationLooping [PR#]item_troll_x&0000 walk_lower
+@OnPlayerPickup OnlyOnce SetDefaultAnimation [PR#]item_troll_x&0000 walk_lower
+@OnPlayerPickup OnlyOnce Alpha !activator 0
+@OnPlayerPickup OnlyOnce Add [PR#]z_t_troll_c 1
+@OnPlayerPickup OnlyOnce KeyValues !activator max_health 40000
+@OnPlayerPickup OnlyOnce SetDamageFilter !activator [PR#]nohumanos
+@OnPlayerPickup AddContext !activator troll:1
+@OnPlayerPickup AddOutput !activator OnKilled>resetplayeritem>Trigger>>3>1
+
+====4====
+comparevalue                   Float64    0
+initialvalue                   Float64    0
+targetname                     CString    [PR#]item_troll_2_2&0000
+classname                      CString    logic_compare
+origin                         CString    77.269531 3.920044 61.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    346
+_template_lump_ent_index       CString    4
+@OnEqualTo SetAnimation [PR#]item_troll_x&0000 Idle_Shoot_KNIFE
+@OnEqualTo Delay=0.5 Enable [PR#]item_troll_5_2&0000
+@OnEqualTo Delay=0.6 Disable [PR#]item_troll_5_2&0000
+@OnEqualTo SetCompareValue [PR#]item_troll_2_2&0000 1
+@OnEqualTo Delay=2 SetCompareValue [PR#]item_troll_2_2&0000 0
+@OnEqualTo Delay=0.3 StartSound [PR#]item_troll_woosh_2&0000
+@OnEqualTo Delay=0.5 Explode [PR#]item_troll_5_1&0000
+
+====5====
+case16                         CString    PressedAttack2
+case02                         CString    PlayerOff
+targetname                     CString    [PR#]trollui&0000
+vscripts                       CString    game_ui
+classname                      CString    logic_case
+origin                         CString    17.410156 -76.079956 31.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    13326
+_template_lump_ent_index       CString    5
+@OnCase16 Compare [PR#]item_troll_2_2&0000
+@OnCase02 Trigger [PR#]resetplayeritem
+
+====6====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    20
+damage                         Integer    500
+filtername                     CString    [PR#]humanos
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_troll_1_2&0000
+targetname                     CString    [PR#]item_troll_5_2&0000
+classname                      CString    trigger_hurt
+origin                         CString    77.269531 5.920044 120.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8238
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\item_troll_5_2_8238.vmdl
+_template_lump_ent_index       CString    6
+@OnHurt StartSound [PR#]item_troll_flesh_2&0000
+
+====7====
+converttodebriswhenpossible    CString    0
+pushscale                      Float64    1
+inner_radius                   Float64    0
+spawnflags                     Integer    0
+explodeonspawn                 Boolean    False
+targetentityname               CString    [PR#]ph_*
+radius                         CString    64
+damage                         CString    0
+magnitude                      CString    160
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_troll_1_2&0000
+targetname                     CString    [PR#]item_troll_5_1&0000
+classname                      CString    env_physexplosion
+origin                         CString    82.269531 5.920044 120.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    84
+_template_lump_ent_index       CString    7
+
+====8====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+fadeout                        CString    0
+fadein                         CString    0
+sourceentityname               CString    [PR#]item_troll_1_2&0000
+radius                         CString    4250
+message                        CString    sounds/physics/flesh/flesh_bloody_break.vsnd
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]item_troll_flesh_2&0000
+classname                      CString    point_soundevent
+origin                         CString    109.269531 -28.079956 61.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    345
+_template_lump_ent_index       CString    8
+
+====9====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    underwater_explode3
+fadeout                        CString    0
+fadein                         CString    0
+sourceentityname               CString    [PR#]item_troll_1_2&0000
+radius                         CString    4250
+message                        CString    sounds/sfx/underwater_explode3.vsnd
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_troll_1_2&0000
+targetname                     CString    [PR#]item_troll_woosh_2&0000
+classname                      CString    snd_event_point
+origin                         CString    86.069336 -24.159912 61.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    347
+_template_lump_ent_index       CString    9
+
+====10====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+_minlight                      CString    0.000000
+defaultanim                    CString    crouch_idle_lower
+fadescale                      CString    1
+maxanimtime                    CString    10
+maxdxlevel                     CString    0
+minanimtime                    CString    5
+mindxlevel                     CString    0
+randomanimation                CString    0
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_LOOPING
+idleanim                       CString    walk_lower
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    walk_lower
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/shitfix/troll/troll.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]cocksuckertrollfixer2&0000
+targetname                     CString    [PR#]item_troll_x&0000
+classname                      CString    prop_dynamic
+origin                         CString    -24.201172 14.190552 53.000000
+angles                         CString    -0.000000 90.000008 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2670
+_template_lump_ent_index       CString    10
+@OnUser1 Delay=0.02 AddOutput !self OnAnimationDone>!self>SetAnimation>died>0>-1
+@OnUser1 Delay=0.02 AddOutput !self OnAnimationDone>!self>SetDefaultAnimation>died>0>-1
+
+====11====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]item_troll_1_2&0000
+target                         CString    [PR#]cocksuckertrollfixer2&0000
+measurereference               CString    [PR#]item_troll_1_2&0000
+measuretarget                  CString    [PR#]item_troll_1_2&0000
+targetname                     CString    [PR#]cocksuckertrollfix&0000
+classname                      CString    logic_measure_movement
+origin                         CString    -0.085938 -94.954346 72.515625
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    21865
+_template_lump_ent_index       CString    11
+
+====12====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 0, 0>
+loopmovesound                  Boolean    False
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    False
+dmg                            Integer    0
+lip                            Integer    0
+speed                          Float64    100
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+wait                           Integer    1
+spawnflags                     Integer64  2060
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]cocksuckertrollfixer2&0000
+classname                      CString    func_door
+origin                         CString    -0.540039 11.920044 56.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    21867
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\cocksuckertrollfixer2_21867.vmdl
+_template_lump_ent_index       CString    12
+
+====13====
+triggeronstarttouch            Boolean    False
+speed                          Integer    125
+pushdir                        Vector     <0, 180, -90>
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]trollpush&0000
+classname                      CString    trigger_push
+origin                         CString    1.269531 5.920044 83.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    21894
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\trollpush_21894.vmdl
+_template_lump_ent_index       CString    13
+@OnStartTouch Delay=0.03 KeyValue !activator gravity 1
+@OnStartTouch KeyValue !activator gravity 3.5
+
+====14====
+triggeronstarttouch            Boolean    False
+speed                          Integer    125
+pushdir                        Vector     <0, 0, -90>
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]trollpush2&0000
+classname                      CString    trigger_push
+origin                         CString    1.269531 5.920044 83.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    21892
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\trollpush2_21892.vmdl
+_template_lump_ent_index       CString    14
+@OnStartTouch Delay=0.03 KeyValue !activator gravity 1
+@OnStartTouch KeyValue !activator gravity 3.5
+
+====15====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]item_troll_1_2&0000
+target                         CString    [PR#]trollpush&0000
+measurereference               CString    [PR#]item_troll_1_2&0000
+measuretarget                  CString    [PR#]item_troll_1_2&0000
+targetname                     CString    [PR#]trollpushmm&0000
+classname                      CString    logic_measure_movement
+origin                         CString    -58.730469 -73.130127 81.412109
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    21896
+_template_lump_ent_index       CString    15
+
+====16====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]item_troll_1_2&0000
+target                         CString    [PR#]trollpush2&0000
+measurereference               CString    [PR#]item_troll_1_2&0000
+measuretarget                  CString    [PR#]item_troll_1_2&0000
+targetname                     CString    [PR#]trollpush2mm&0000
+classname                      CString    logic_measure_movement
+origin                         CString    -39.345703 -73.130127 81.412109
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    21897
+_template_lump_ent_index       CString    16
+
+====17====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]item_troll_1_2&0000
+target                         CString    [PR#]trollpush3&0000
+measurereference               CString    [PR#]item_troll_1_2&0000
+measuretarget                  CString    [PR#]item_troll_1_2&0000
+targetname                     CString    [PR#]trollpush3mm&0000
+classname                      CString    logic_measure_movement
+origin                         CString    -16.730469 -73.130127 81.412109
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    21900
+_template_lump_ent_index       CString    17
+
+====18====
+triggeronstarttouch            Boolean    False
+speed                          Integer    200
+pushdir                        Vector     <0, 180, -90>
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]trollpush3&0000
+classname                      CString    trigger_push
+origin                         CString    1.269531 5.920044 83.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    21898
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\trollpush3_21898.vmdl
+_template_lump_ent_index       CString    18
+@OnStartTouch Delay=0.03 KeyValue !activator gravity 1
+@OnStartTouch KeyValue !activator gravity 3.5
+

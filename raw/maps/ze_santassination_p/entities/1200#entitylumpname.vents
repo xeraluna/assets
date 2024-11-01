@@ -1,0 +1,999 @@
+====0====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_000.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_p_3
+classname                      CString    info_particle_system
+origin                         CString    -8076.120117 3240.000000 -5094.000000
+angles                         CString    15.000000 164.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4773
+_template_lump_ent_index       CString    0
+@OnUser1 Stop !self
+@OnUser1 Delay=0.05 Start !self
+@OnUser2 Stop !self
+
+====1====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.steam_release_2.door
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_p_3
+classname                      CString    point_soundevent
+origin                         CString    -8076.120117 3240.000000 -5094.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4774
+_template_lump_ent_index       CString    1
+@OnUser1 StartSound !self
+
+====2====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.steam_release_2.door
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_p_3
+classname                      CString    point_soundevent
+origin                         CString    -8076.120117 3240.000000 -5094.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4775
+_template_lump_ent_index       CString    2
+@OnUser1 StartSound !self
+
+====3====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_000.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_p_3
+classname                      CString    info_particle_system
+origin                         CString    -8492.000000 3240.000000 -5094.000000
+angles                         CString    15.000000 15.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4780
+_template_lump_ent_index       CString    3
+@OnUser1 Stop !self
+@OnUser1 Delay=0.05 Start !self
+@OnUser2 Stop !self
+
+====4====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.steam_release_2.door
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_p_3
+classname                      CString    point_soundevent
+origin                         CString    -8492.000000 3240.000000 -5094.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4781
+_template_lump_ent_index       CString    4
+@OnUser1 StartSound !self
+
+====5====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.steam_release_2.door
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_p_3
+classname                      CString    point_soundevent
+origin                         CString    -8492.000000 3240.000000 -5094.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4782
+_template_lump_ent_index       CString    5
+@OnUser1 StartSound !self
+
+====6====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 90, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    68
+wait                           Integer    -1
+closesound                     CString    custom.sfx.doors.drawbridge_stop1
+startclosesound                CString    custom.sfx.doors.doormove7
+noise2                         CString    custom.sfx.doors.drawbridge_stop1
+noise1                         CString    custom.sfx.doors.doormove7
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_mazegate_1
+classname                      CString    func_door
+origin                         CString    -7932.000000 -536.000000 -5294.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4797
+model                          CString    maps\ze_santassination_p\entities\bb_mazegate_1_4797.vmdl
+_template_lump_ent_index       CString    6
+
+====7====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 270, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    68
+wait                           Integer    -1
+closesound                     CString    custom.sfx.doors.drawbridge_stop1
+startclosesound                CString    custom.sfx.doors.doormove7
+noise2                         CString    custom.sfx.doors.drawbridge_stop1
+noise1                         CString    custom.sfx.doors.doormove7
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_mazegate_1
+classname                      CString    func_door
+origin                         CString    -7932.000000 -696.000000 -5294.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4799
+model                          CString    maps\ze_santassination_p\entities\bb_mazegate_1_4799.vmdl
+_template_lump_ent_index       CString    7
+
+====8====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 90, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    68
+wait                           Integer    -1
+closesound                     CString    custom.sfx.doors.drawbridge_stop1
+startclosesound                CString    custom.sfx.doors.doormove7
+noise2                         CString    custom.sfx.doors.drawbridge_stop1
+noise1                         CString    custom.sfx.doors.doormove7
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_mazegate_2
+classname                      CString    func_door
+origin                         CString    -9340.000000 -536.000000 -5294.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4803
+model                          CString    maps\ze_santassination_p\entities\bb_mazegate_2_4803.vmdl
+_template_lump_ent_index       CString    8
+
+====9====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 270, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    68
+wait                           Integer    -1
+closesound                     CString    custom.sfx.doors.drawbridge_stop1
+startclosesound                CString    custom.sfx.doors.doormove7
+noise2                         CString    custom.sfx.doors.drawbridge_stop1
+noise1                         CString    custom.sfx.doors.doormove7
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_mazegate_2
+classname                      CString    func_door
+origin                         CString    -9340.000000 -696.000000 -5294.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4805
+model                          CString    maps\ze_santassination_p\entities\bb_mazegate_2_4805.vmdl
+_template_lump_ent_index       CString    9
+
+====10====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 90, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    68
+wait                           Integer    -1
+closesound                     CString    custom.sfx.doors.drawbridge_stop1
+startclosesound                CString    custom.sfx.doors.doormove7
+noise2                         CString    custom.sfx.doors.drawbridge_stop1
+noise1                         CString    custom.sfx.doors.doormove7
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_mazegate_3
+classname                      CString    func_door
+origin                         CString    -7932.000000 -1688.000000 -5294.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4809
+model                          CString    maps\ze_santassination_p\entities\bb_mazegate_3_4809.vmdl
+_template_lump_ent_index       CString    10
+
+====11====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 270, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    68
+wait                           Integer    -1
+closesound                     CString    custom.sfx.doors.drawbridge_stop1
+startclosesound                CString    custom.sfx.doors.doormove7
+noise2                         CString    custom.sfx.doors.drawbridge_stop1
+noise1                         CString    custom.sfx.doors.doormove7
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_mazegate_3
+classname                      CString    func_door
+origin                         CString    -7932.000000 -1848.000000 -5294.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4811
+model                          CString    maps\ze_santassination_p\entities\bb_mazegate_3_4811.vmdl
+_template_lump_ent_index       CString    11
+
+====12====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 90, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    68
+wait                           Integer    -1
+closesound                     CString    custom.sfx.doors.drawbridge_stop1
+startclosesound                CString    custom.sfx.doors.doormove7
+noise2                         CString    custom.sfx.doors.drawbridge_stop1
+noise1                         CString    custom.sfx.doors.doormove7
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_mazegate_4
+classname                      CString    func_door
+origin                         CString    -9340.000000 -1688.000000 -5294.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4816
+model                          CString    maps\ze_santassination_p\entities\bb_mazegate_4_4816.vmdl
+_template_lump_ent_index       CString    12
+
+====13====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 270, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    68
+wait                           Integer    -1
+closesound                     CString    custom.sfx.doors.drawbridge_stop1
+startclosesound                CString    custom.sfx.doors.doormove7
+noise2                         CString    custom.sfx.doors.drawbridge_stop1
+noise1                         CString    custom.sfx.doors.doormove7
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_mazegate_4
+classname                      CString    func_door
+origin                         CString    -9340.000000 -1848.000000 -5294.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4818
+model                          CString    maps\ze_santassination_p\entities\bb_mazegate_4_4818.vmdl
+_template_lump_ent_index       CString    13
+
+====14====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 90, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    32
+wait                           Integer    -1
+closesound                     CString    custom.sfx.doors.drawbridge_stop1
+startclosesound                CString    custom.sfx.doors.doormove7
+noise2                         CString    custom.sfx.doors.drawbridge_stop1
+noise1                         CString    custom.sfx.doors.doormove7
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_mazegate_5
+classname                      CString    func_door
+origin                         CString    -9276.000000 -3320.000000 -5294.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4608
+model                          CString    maps\ze_santassination_p\entities\bb_mazegate_5_4608.vmdl
+_template_lump_ent_index       CString    14
+
+====15====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 270, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    32
+wait                           Integer    -1
+closesound                     CString    custom.sfx.doors.drawbridge_stop1
+startclosesound                CString    custom.sfx.doors.doormove7
+noise2                         CString    custom.sfx.doors.drawbridge_stop1
+noise1                         CString    custom.sfx.doors.doormove7
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_mazegate_5
+classname                      CString    func_door
+origin                         CString    -9276.000000 -3480.000000 -5294.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4610
+model                          CString    maps\ze_santassination_p\entities\bb_mazegate_5_4610.vmdl
+_template_lump_ent_index       CString    15
+
+====16====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 270, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    8
+wait                           Integer    -1
+closesound                     CString    custom.sfx.doors.drawbridge_stop1
+startclosesound                CString    custom.sfx.doors.doormove7
+noise2                         CString    custom.sfx.doors.drawbridge_stop1
+noise1                         CString    custom.sfx.doors.doormove7
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_mazegate_6
+classname                      CString    func_door
+origin                         CString    -11372.000000 -3576.000000 -5294.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4602
+model                          CString    maps\ze_santassination_p\entities\bb_mazegate_6_4602.vmdl
+_template_lump_ent_index       CString    16
+
+====17====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 90, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    8
+wait                           Integer    -1
+closesound                     CString    custom.sfx.doors.drawbridge_stop1
+startclosesound                CString    custom.sfx.doors.doormove7
+noise2                         CString    custom.sfx.doors.drawbridge_stop1
+noise1                         CString    custom.sfx.doors.doormove7
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_mazegate_6
+classname                      CString    func_door
+origin                         CString    -11372.000000 -3416.000000 -5294.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4604
+model                          CString    maps\ze_santassination_p\entities\bb_mazegate_6_4604.vmdl
+_template_lump_ent_index       CString    17
+
+====18====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    True
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    4
+wait                           Integer    -1
+closesound                     CString    custom.sfx.doors.drawbridge_stop1
+startclosesound                CString    custom.sfx.doors.doormove7
+noise2                         CString    custom.sfx.doors.drawbridge_stop1
+noise1                         CString    custom.sfx.doors.doormove7
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_mazegate_7
+classname                      CString    func_door
+origin                         CString    -16000.000000 2520.000000 -4494.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4492
+model                          CString    maps\ze_santassination_p\entities\bb_mazegate_7_4492.vmdl
+_template_lump_ent_index       CString    18
+
+====19====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 180, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    True
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    4
+wait                           Integer    -1
+closesound                     CString    custom.sfx.doors.drawbridge_stop1
+startclosesound                CString    custom.sfx.doors.doormove7
+noise2                         CString    custom.sfx.doors.drawbridge_stop1
+noise1                         CString    custom.sfx.doors.doormove7
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_mazegate_7
+classname                      CString    func_door
+origin                         CString    -16120.000000 2520.000000 -4494.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4494
+model                          CString    maps\ze_santassination_p\entities\bb_mazegate_7_4494.vmdl
+_template_lump_ent_index       CString    19
+
+====20====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+_minlight                      CString    0.250000
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    True
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    0
+wait                           Integer    -1
+closesound                     CString    custom.sfx.doors.drawbridge_stop1
+startclosesound                CString    custom.sfx.doors.doormove7
+noise2                         CString    custom.sfx.doors.drawbridge_stop1
+noise1                         CString    custom.sfx.doors.doormove7
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_mazegate_8
+classname                      CString    func_door
+origin                         CString    -12212.000000 2008.000000 -4838.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4444
+model                          CString    maps\ze_santassination_p\entities\bb_mazegate_8_4444.vmdl
+_template_lump_ent_index       CString    20
+
+====21====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+_minlight                      CString    0.250000
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    4
+wait                           Integer    -1
+closesound                     CString    custom.sfx.doors.drawbridge_stop1
+startclosesound                CString    custom.sfx.doors.doormove7
+noise2                         CString    custom.sfx.doors.drawbridge_stop1
+noise1                         CString    custom.sfx.doors.doormove7
+speed                          Float64    40
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_mazegate_9
+classname                      CString    func_door
+origin                         CString    -15196.000000 4216.000000 -6790.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5183
+model                          CString    maps\ze_santassination_p\entities\bb_mazegate_9_5183.vmdl
+_template_lump_ent_index       CString    21
+
+====22====
+createnavobstacle              Boolean    True
+movedir                        Vector     <90, 0, 0>
+loopmovesound                  Boolean    False
+_minlight                      CString    0.250000
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    8
+wait                           Integer    -1
+noise2                         CString    sounds/doors/drawbridge_stop1.vsnd
+noise1                         CString    sounds/doors/doormove7.vsnd
+speed                          Float64    20
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_sewergate
+classname                      CString    func_door
+origin                         CString    -10300.000000 728.000000 -5286.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5205
+model                          CString    maps\ze_santassination_p\entities\bb_sewergate_5205.vmdl
+_template_lump_ent_index       CString    22
+
+====23====
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_sewerteleport_dest
+classname                      CString    info_teleport_destination
+origin                         CString    -10716.000000 4632.000000 -5766.000000
+angles                         CString    -0.000000 -89.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5212
+_template_lump_ent_index       CString    23
+
+====24====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_003.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_snowsmoke
+classname                      CString    info_particle_system
+origin                         CString    -8284.000000 10424.000000 -5382.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5160
+_template_lump_ent_index       CString    24
+
+====25====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_003.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_snowsmoke
+classname                      CString    info_particle_system
+origin                         CString    -5884.000000 12440.000000 -5126.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5161
+_template_lump_ent_index       CString    25
+
+====26====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_003.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_snowsmoke
+classname                      CString    info_particle_system
+origin                         CString    -9872.400391 13674.599609 -5389.450195
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5162
+_template_lump_ent_index       CString    26
+
+====27====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_003.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_snowsmoke
+classname                      CString    info_particle_system
+origin                         CString    -13904.500000 14980.900391 -5389.399902
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5163
+_template_lump_ent_index       CString    27
+
+====28====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_npc_beaver
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_spawnbeaver_1
+classname                      CString    env_entity_maker
+origin                         CString    -8412.000000 4071.709961 -5190.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5108
+_template_lump_ent_index       CString    28
+
+====29====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_npc_beaver
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_spawnbeaver_1
+classname                      CString    env_entity_maker
+origin                         CString    -8136.779785 3544.000000 -5174.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5109
+_template_lump_ent_index       CString    29
+
+====30====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_npc_beaver
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_spawnbeaver_2
+classname                      CString    env_entity_maker
+origin                         CString    -8284.000000 4312.000000 -4614.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5110
+_template_lump_ent_index       CString    30
+
+====31====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_npc_beaver
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_spawnbeaver_3
+classname                      CString    env_entity_maker
+origin                         CString    -8396.000000 1368.000000 -5414.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5111
+_template_lump_ent_index       CString    31
+
+====32====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_npc_beaver
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_spawnbeaver_3
+classname                      CString    env_entity_maker
+origin                         CString    -7420.000000 1274.599976 -5398.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5112
+_template_lump_ent_index       CString    32
+
+====33====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_npc_beaver
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_spawnbeaver_3
+classname                      CString    env_entity_maker
+origin                         CString    -7644.000000 1048.000000 -5414.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5113
+_template_lump_ent_index       CString    33
+
+====34====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_npc_beaver
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_spawnbeaver_3
+classname                      CString    env_entity_maker
+origin                         CString    -8644.000000 -704.000000 -5414.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5114
+_template_lump_ent_index       CString    34
+

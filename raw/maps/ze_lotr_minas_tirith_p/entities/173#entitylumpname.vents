@@ -1,0 +1,104 @@
+====0====
+nointerpolate                  Boolean    False
+gibdir                         CString    0 0 0
+fadescale                      CString    1
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+notsolid                       CString    0
+preferredcarryangles           Vector     <0, 0, 0>
+enableuseoutput                Boolean    False
+forcetoenablemotion            Float64    0
+damagetoenablemotion           Integer    0
+massscale                      Float64    0
+damagetype                     CString    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    True
+explosion                      CString    0
+material                       CString    1
+health                         Integer    4000000
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+targetname                     CString    [PR#]item_escalera_s1_2
+classname                      CString    func_physbox
+origin                         CString    14.200195 -1.539978 74.099609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    170
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\item_escalera_s1_2_170.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+_minlight                      CString    0.000000
+fadescale                      CString    1
+maxanimtime                    CString    10
+maxdxlevel                     CString    0
+minanimtime                    CString    5
+mindxlevel                     CString    0
+randomanimation                CString    0
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/props/cs_militia/ladderwood.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_escalera_s1_2
+targetname                     CString    [PR#]item_escalera_s2_2
+classname                      CString    prop_dynamic
+origin                         CString    14.549805 -1.039978 83.000000
+angles                         CString    9.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2655
+_template_lump_ent_index       CString    1
+

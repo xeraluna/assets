@@ -1,0 +1,145 @@
+[
+    {
+        "name": "item_holder_1&0000",
+        "shortname": "item_holder_1&0000",
+        "hammerid": "3481",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "3478",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "item_holder_2&0000",
+        "shortname": "item_holder_2&0000",
+        "hammerid": "3518",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "3516",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "item_holder_3&0000",
+        "shortname": "item_holder_3&0000",
+        "hammerid": "3589",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "3587",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "item_holder_4&0000",
+        "shortname": "item_holder_4&0000",
+        "hammerid": "3706",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "3702",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "item_holder_6&0000",
+        "shortname": "item_holder_6&0000",
+        "hammerid": "547",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "543",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "item_holder_5&0000",
+        "shortname": "item_holder_5&0000",
+        "hammerid": "830",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "824",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "luff_knife",
+        "shortname": "luff_knife",
+        "hammerid": "3450",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    }
+]

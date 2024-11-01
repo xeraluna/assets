@@ -1,0 +1,635 @@
+====0====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    20
+damage                         Integer    1000
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_mexisled_hurt2
+classname                      CString    trigger_hurt
+origin                         CString    10164.000000 -12312.000000 -23578.400391
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    605
+model                          CString    maps\ze_santassination_p\entities\fs_mexisled_hurt2_605.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+precomputedboundsmaxs          CString    10654.922852 -11263.679688 -11336.728516
+precomputedboundsmins          CString    8832.187500 -12800.259766 -12746.656250
+precomputedobbextent           CString    891.943359 774.631348 701.588867
+precomputedobbangles           CString    1.000000 -3.000000 -0.000000
+precomputedobborigin           CString    9742.081055 -11991.611328 -12052.137695
+precomputedfieldsvalid         CString    1
+fade_size_end                  Float64    0.02500000037252903
+fade_size_start                Float64    0.05000000074505806
+showlight                      Boolean    False
+rendertocubemaps               Boolean    True
+brightnessscale                Float64    1
+shadowfade_size_end            Float64    0.05000000074505806
+shadowfade_size_start          Float64    0.10000000149011612
+pvs_modify_entity              Boolean    False
+shadowpriority                 CString    -1
+shadowmapsize                  CString    512
+minroughness                   Float64    0
+bakespeculartocubemaps         Boolean    False
+inner_angle                    Float64    180
+outer_angle                    Float64    180
+size_params                    Vector     <0, 24, 0.15>
+shape                          CString    3
+bouncescale                    Float64    1
+bouncelight                    CString    1
+skirt                          Float64    0.10000000149011612
+brightness_lumens              Float64    3817
+colortemperature               Float64    6600
+colormode                      CString    0
+enabled                        Boolean    False
+brightness_legacy              Float64    3.8164100646972656
+brightness_nits                Float64    149865
+brightness_candelas            Float64    304
+brightness_units               CString    0
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+castshadows                    CString    1
+directlight                    CString    2
+range                          Float64    1536
+brightness                     Float64    1.9324599504470825
+color                          Vector     <255, 0, 0>
+targetname                     CString    [PR#]fs_mexisled_light
+classname                      CString    light_omni2
+origin                         CString    10396.000000 -12312.000000 -23462.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    616
+_template_lump_ent_index       CString    1
+
+====2====
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_LOOPING
+idleanim                       CString    idle
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    idle
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    2
+skin                           CString    0
+model                          CString    models/luffaren/luff_sleigh.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]fs_mexisled_mover
+targetname                     CString    [PR#]fs_mexisled_model
+classname                      CString    prop_dynamic
+origin                         CString    10636.000000 -12312.000000 -23622.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    615
+_template_lump_ent_index       CString    2
+
+====3====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 180, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  44
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    False
+dmg                            Integer    0
+lip                            Integer    0
+wait                           Integer    -1
+speed                          Float64    200
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_mexisled_mover
+classname                      CString    func_door
+origin                         CString    10188.000000 -12300.000000 -23094.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    617
+model                          CString    maps\ze_santassination_p\entities\fs_mexisled_mover_617.vmdl
+_template_lump_ent_index       CString    3
+@OnFullyOpen Delay=0.02 OnlyOnce SetIdleAnimationLooping [PR#]fs_mexisled_model idle
+@OnFullyOpen OnlyOnce SetAnimationLooping [PR#]fs_mexisled_model idle
+
+====4====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_014.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_mexisled_p
+classname                      CString    info_particle_system
+origin                         CString    10204.000000 -12312.000000 -23526.000000
+angles                         CString    0.000000 -179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    611
+_template_lump_ent_index       CString    4
+
+====5====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.sled_revenge
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_mexisled_s
+classname                      CString    point_soundevent
+origin                         CString    10092.000000 -12312.000000 -23526.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    612
+_template_lump_ent_index       CString    5
+
+====6====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    100000
+lip                            Integer    128
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.door_metal_gate_close1
+noise1                         CString    custom.sfx.doors.door_metal_gate_move2
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_mufasadoor
+classname                      CString    func_door
+origin                         CString    -51.500000 -6552.000000 -5894.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3378
+model                          CString    maps\ze_santassination_p\entities\fs_mufasadoor_3378.vmdl
+_template_lump_ent_index       CString    6
+@OnFullyOpen OnlyOnce FireUser1 [PR#]reindeer_4
+
+====7====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    10000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]fs_outerbreak1
+classname                      CString    func_breakable
+origin                         CString    156.000000 -3456.000000 -13510.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7892
+model                          CString    maps\ze_santassination_p\entities\fs_outerbreak1_7892.vmdl
+_template_lump_ent_index       CString    7
+
+====8====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    100000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]fs_outerbreakgate
+classname                      CString    func_breakable
+origin                         CString    -2308.000000 -8152.000000 -10730.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8022
+model                          CString    maps\ze_santassination_p\entities\fs_outerbreakgate_8022.vmdl
+_template_lump_ent_index       CString    8
+
+====9====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    100000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]fs_outerbreakgate2
+classname                      CString    func_breakable
+origin                         CString    -4388.000000 -6876.000000 -10702.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7956
+model                          CString    maps\ze_santassination_p\entities\fs_outerbreakgate2_7956.vmdl
+_template_lump_ent_index       CString    9
+
+====10====
+movesoundmaxtime               Float64    0
+movesoundmintime               Float64    0
+movesoundmaxpitch              Integer    200
+movesoundminpitch              Integer    60
+volume                         Integer    10
+stopsound                      CString    custom.sfx.doors.drawbridge_stop1
+movesound                      CString    custom.sfx.doors.drawbridge_move1
+bank                           CString    0
+height                         Integer    0
+wheels                         Integer    0
+orientationtype                CString    0
+velocitytype                   CString    0
+startspeed                     Integer    200
+target                         CString    [PR#]fs_outerelevator_1_p1
+spawnflags                     Integer64  531
+dmg                            Integer    100000
+speed                          Integer    0
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_outerelevator_1
+classname                      CString    func_tracktrain
+origin                         CString    412.000000 -3288.000000 -14758.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3300
+model                          CString    maps\ze_santassination_p\entities\fs_outerelevator_1_3300.vmdl
+_template_lump_ent_index       CString    10
+
+====11====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    100000
+lip                            Integer    32
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.door_metal_gate_close1
+noise1                         CString    custom.sfx.doors.door_metal_gate_move2
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_outeruppergate
+classname                      CString    func_door
+origin                         CString    -1060.000000 -3448.500000 -14566.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3319
+model                          CString    maps\ze_santassination_p\entities\fs_outeruppergate_3319.vmdl
+_template_lump_ent_index       CString    11
+
+====12====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_015.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_particle_towersmoke
+classname                      CString    info_particle_system
+origin                         CString    1564.000000 -6552.000000 -5958.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5890
+_template_lump_ent_index       CString    12
+
+====13====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_015.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_particle_towersmoke
+classname                      CString    info_particle_system
+origin                         CString    1564.000000 -6552.000000 -8774.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5894
+_template_lump_ent_index       CString    13
+
+====14====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_015.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_particle_towersmoke
+classname                      CString    info_particle_system
+origin                         CString    1564.000000 -6552.000000 -11590.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5898
+_template_lump_ent_index       CString    14
+
+====15====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_015.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_particle_towersmoke
+classname                      CString    info_particle_system
+origin                         CString    1564.000000 -6552.000000 -14406.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5902
+_template_lump_ent_index       CString    15
+
+====16====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_015.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_particle_towersmoke
+classname                      CString    info_particle_system
+origin                         CString    1564.000000 -6552.000000 -17222.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5906
+_template_lump_ent_index       CString    16
+
+====17====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_015.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_particle_towersmoke
+classname                      CString    info_particle_system
+origin                         CString    1564.000000 -6552.000000 -20038.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5910
+_template_lump_ent_index       CString    17
+
+====18====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    99999
+lip                            Integer    288
+wait                           Integer    -1
+closesound                     CString    custom.sfx.doors.door_metal_gate_close1
+noise1                         CString    custom.sfx.doors.door_metal_gate_move2
+speed                          Float64    500
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_rightelevator_door
+classname                      CString    func_door
+origin                         CString    -4260.000000 -9104.000000 -16326.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2716
+model                          CString    maps\ze_santassination_p\entities\fs_rightelevator_door_2716.vmdl
+_template_lump_ent_index       CString    18
+
+====19====
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_tele_elevatorshaft
+classname                      CString    info_teleport_destination
+origin                         CString    4636.000000 -5528.000000 -15590.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3205
+_template_lump_ent_index       CString    19
+
+====20====
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_tele_firstinner
+classname                      CString    info_teleport_destination
+origin                         CString    -100.000000 -6808.000000 -16934.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3398
+_template_lump_ent_index       CString    20
+

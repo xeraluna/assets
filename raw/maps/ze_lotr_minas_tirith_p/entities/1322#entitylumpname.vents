@@ -1,0 +1,85 @@
+====0====
+wait                           Float64    1
+filtername                     CString    [PR#]filter_3
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_1_trigger_aumentonivel
+classname                      CString    trigger_multiple
+origin                         CString    -17126.460938 3327.510010 -26095.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8056
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_1_trigger_aumentonivel_8056.vmdl
+_template_lump_ent_index       CString    0
+@OnStartTouch Delay=2 KeyValues !activator targetname 4
+@OnStartTouch Delay=2 AddScore !activator 100
+
+====1====
+wait                           Float64    1
+filtername                     CString    [PR#]filter_0
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_1_trigger_aumentonivel
+classname                      CString    trigger_multiple
+origin                         CString    -17126.460938 2934.260010 -26119.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8058
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_1_trigger_aumentonivel_8058.vmdl
+_template_lump_ent_index       CString    1
+@OnStartTouch Delay=2 KeyValues !activator targetname 1
+@OnStartTouch Delay=2 AddScore !activator 100
+
+====2====
+wait                           Float64    1
+filtername                     CString    [PR#]filter_4
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_1_trigger_aumentonivel
+classname                      CString    trigger_multiple
+origin                         CString    -17126.460938 2540.959961 -26111.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8060
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_1_trigger_aumentonivel_8060.vmdl
+_template_lump_ent_index       CString    2
+@OnStartTouch Delay=2 KeyValues !activator targetname 5
+@OnStartTouch Delay=2 AddScore !activator 100
+
+====3====
+wait                           Float64    1
+filtername                     CString    [PR#]filter_2
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_1_trigger_aumentonivel
+classname                      CString    trigger_multiple
+origin                         CString    -17126.460938 2147.300049 -26103.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8062
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_1_trigger_aumentonivel_8062.vmdl
+_template_lump_ent_index       CString    3
+@OnStartTouch Delay=2 KeyValues !activator targetname 3
+@OnStartTouch Delay=2 AddScore !activator 100
+
+====4====
+wait                           Float64    1
+filtername                     CString    [PR#]filter_1
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_1_trigger_aumentonivel
+classname                      CString    trigger_multiple
+origin                         CString    -17126.460938 1754.010010 -26087.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8064
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_1_trigger_aumentonivel_8064.vmdl
+_template_lump_ent_index       CString    4
+@OnStartTouch Delay=2 KeyValues !activator targetname 2
+@OnStartTouch Delay=2 AddScore !activator 100
+

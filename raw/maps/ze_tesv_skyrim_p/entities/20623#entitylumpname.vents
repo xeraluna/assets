@@ -1,0 +1,40 @@
+====0====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    0
+health                         Integer    1
+propdata                       CString    0
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+solidity                       CString    0
+spawnflags                     Integer    1
+disableshadows                 CString    0
+startdisabled                  CString    1
+lightmapstatic                 CString    1
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sovng_end_wall3
+classname                      CString    func_breakable
+origin                         CString    103.659180 -4.144531 -338.284180
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5024
+model                          CString    maps\ze_tesv_skyrim_p\entities\sovng_end_wall3_5024.vmdl
+_template_lump_ent_index       CString    0
+

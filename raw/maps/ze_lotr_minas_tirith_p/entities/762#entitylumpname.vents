@@ -1,0 +1,137 @@
+====0====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]factory_template_type2x
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]stage_1_barricade_1_14&0000
+targetname                     CString    [PR#]factory_template_type2em&0000
+classname                      CString    env_entity_maker
+origin                         CString    0.000000 0.000000 0.459961
+angles                         CString    -0.000000 -90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    842
+_template_lump_ent_index       CString    0
+@OnEntitySpawned Kill !self
+
+====1====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+cpoint1                        CString    [PR#]cade11
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    True
+effect_name                    CString    particles/easter_cade/model_mimic.vpcf
+fadescale                      CString    1
+holdanimation                  CString    0
+maxanimtime                    CString    10
+minanimtime                    CString    5
+randomanimation                CString    0
+solid                          CString    0
+disablereceiveshadows          CString    1
+rendercolor                    CString    205 250 249
+performancemode                CString    0
+skin                           CString    0
+model                          CString    models/pmodels/props/furnitures/humans/table01.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]stage_1_barricade_1_12_2&0000
+targetname                     CString    [PR#]stage_1_barricade_1_12&0000
+classname                      CString    info_particle_system
+origin                         CString    0.000000 24.000000 17.319824
+angles                         CString    -89.999977 -0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2738
+_template_lump_ent_index       CString    1
+
+====2====
+fadescale                      CString    1
+disableshadows                 CString    0
+ammo                           CString    350
+_minlight                      CString    0.000000
+canbepickedup                  Boolean    True
+spawnflags                     Integer    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    1
+renderfx                       CString    0
+targetname                     CString    [PR#]stage_1_barricade_1_14&0000
+classname                      CString    weapon_deagle
+origin                         CString    0.000000 60.000000 -7.649902
+angles                         Vector     <-0, -90, 0>
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    753
+_template_lump_ent_index       CString    2
+@OnPlayerPickup OnlyOnce Enablex [PR#]stage_1_barricade_1_12_5
+@OnPlayerPickup OnlyOnce FireUser1 [PR#]stage_1_barricade_1_12_2&0000
+@OnPlayerPickup OnlyOnce DisableReceivingFlashlight [PR#]stage_1_barricade_1_12&0000
+@OnPlayerPickup OnlyOnce KeyValues [PR#]stage_1_barricade_1_12&0000 disableshadowdepth 1
+@OnPlayerPickup AddContext !activator cader:1
+
+====3====
+forcenpcexclude                Boolean    False
+wait                           Float64    3
+spawnflags                     Integer64  17409
+lip                            Integer    76
+speed                          Integer    1024
+movedir                        Vector     <90, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    10
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]stage_1_barricade_1_14&0000
+targetname                     CString    [PR#]stage_1_barricade_1_12_2&0000
+classname                      CString    func_button
+origin                         CString    1.200195 7.250000 17.160156
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    247
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_1_barricade_1_12_2_247.vmdl
+_template_lump_ent_index       CString    3
+@OnUser1 OnlyOnce Enable [PR#]cadefix11&0000
+@OnPressed Trigger [PR#]cadefix11&0000
+
+====4====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    True
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]cadefix11&0000
+classname                      CString    logic_relay
+origin                         CString    3.304688 3.856445 42.459961
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    30373
+_template_lump_ent_index       CString    4
+@OnTrigger OnlyOnce Kill [PR#]stage_1_barricade_1_12&0000
+@OnTrigger OnlyOnce Kill [PR#]stage_1_barricade_1_12_2&0000
+@OnTrigger OnlyOnce ForceSpawn [PR#]factory_template_type2em&0000
+@OnTrigger OnlyOnce Kill [PR#]stage_1_barricade_1_12_3
+@OnTrigger OnlyOnce Kill [PR#]stage_1_barricade_1_12_4
+@OnTrigger OnlyOnce Kill [PR#]stage_1_barricade_1_12_5
+@OnTrigger OnlyOnce Trigger [PR#]ColorActivator
+

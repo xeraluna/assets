@@ -1,0 +1,442 @@
+====0====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    100000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]lionking_breakfirst
+classname                      CString    func_breakable
+origin                         CString    7236.000000 7672.000000 -774.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4103
+model                          CString    maps\ze_santassination_p\entities\lionking_breakfirst_4103.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    100000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]lionking_breakfirst
+classname                      CString    func_breakable
+origin                         CString    7364.000000 9400.000000 -1094.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4107
+model                          CString    maps\ze_santassination_p\entities\lionking_breakfirst_4107.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    100000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]lionking_breaksecond
+classname                      CString    func_breakable
+origin                         CString    -764.000000 8568.000000 -1030.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4105
+model                          CString    maps\ze_santassination_p\entities\lionking_breaksecond_4105.vmdl
+_template_lump_ent_index       CString    2
+
+====3====
+triggeronstarttouch            Boolean    False
+speed                          Integer    300
+pushdir                        Vector     <0, 45, 0>
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]lionking_light_push
+classname                      CString    trigger_push
+origin                         CString    2388.000000 3920.000000 154.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4041
+model                          CString    maps\ze_santassination_p\entities\lionking_light_push_4041.vmdl
+_template_lump_ent_index       CString    3
+
+====4====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.lionking_light
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]lionking_light_s
+classname                      CString    point_soundevent
+origin                         CString    2308.000000 3992.000000 210.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4038
+_template_lump_ent_index       CString    4
+
+====5====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 270, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  4140
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    False
+dmg                            Integer    0
+lip                            Integer    0
+wait                           Integer    -1
+speed                          Float64    400
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]lionking_santamover
+classname                      CString    func_door
+origin                         CString    6532.000000 12632.000000 -646.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4056
+model                          CString    maps\ze_santassination_p\entities\lionking_santamover_4056.vmdl
+_template_lump_ent_index       CString    5
+@OnFullyOpen SetAnimationLooping [PR#]lionking_santa idle
+@OnFullyOpen Delay=0.05 SetIdleAnimationLooping [PR#]lionking_santa idle
+
+====6====
+snapshot_mesh                  Integer    0
+alphascale                     Float64    1
+selfillumscale                 Float64    1
+colortint                      Vector     <255, 255, 255>
+scale                          Float64    2.5
+start_active                   Boolean    False
+effect_textureoverride         CString    materials/luffaren/mufasa_dead_color_tga_ce415b08.vtex
+effect_name                    CString    particles/pingas/env_light_glow_parentable_autism.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]lionking_sprite_mufasadead
+classname                      CString    env_particle_glow
+origin                         CString    6404.000000 12024.000000 -1302.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4131
+_template_lump_ent_index       CString    6
+
+====7====
+snapshot_mesh                  Integer    0
+alphascale                     Float64    1
+selfillumscale                 Float64    1
+colortint                      Vector     <255, 255, 255>
+scale                          Float64    2
+start_active                   Boolean    True
+effect_textureoverride         CString    materials/luffaren/mufasa_color_tga_80a9f77b.vtex
+effect_name                    CString    particles/pingas/env_light_glow_parentable_autism.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]lionking_sprite_priderock
+classname                      CString    env_particle_glow
+origin                         CString    2308.000000 3992.000000 210.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3792
+_template_lump_ent_index       CString    7
+
+====8====
+snapshot_mesh                  Integer    0
+alphascale                     Float64    1
+selfillumscale                 Float64    1
+colortint                      Vector     <255, 255, 255>
+scale                          Float64    0.75
+start_active                   Boolean    True
+effect_textureoverride         CString    materials/luffaren/zazu_color_tga_18e74b6d.vtex
+effect_name                    CString    particles/pingas/env_light_glow_parentable_autism.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]lionking_sprite_priderock
+classname                      CString    env_particle_glow
+origin                         CString    2180.000000 4056.000000 314.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3793
+_template_lump_ent_index       CString    8
+
+====9====
+movesoundmaxtime               Float64    0
+movesoundmintime               Float64    0
+movesoundmaxpitch              Integer    200
+movesoundminpitch              Integer    60
+volume                         Integer    10
+dmg                            Integer    0
+bank                           CString    0
+height                         Integer    0
+wheels                         Integer    50
+orientationtype                CString    1
+velocitytype                   CString    0
+speed                          Integer    0
+startspeed                     Integer    230
+target                         CString    [PR#]tr_1_p_1
+spawnflags                     Integer64  539
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]tr_1
+classname                      CString    func_tracktrain
+origin                         CString    -1308.000000 11800.000000 -1342.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3738
+model                          CString    maps\ze_santassination_p\entities\tr_1_3738.vmdl
+_template_lump_ent_index       CString    9
+
+====10====
+movesoundmaxtime               Float64    0
+movesoundmintime               Float64    0
+movesoundmaxpitch              Integer    200
+movesoundminpitch              Integer    60
+volume                         Integer    10
+dmg                            Integer    0
+bank                           CString    0
+height                         Integer    0
+wheels                         Integer    50
+orientationtype                CString    1
+velocitytype                   CString    0
+speed                          Integer    0
+startspeed                     Integer    500
+target                         CString    [PR#]tr_1_p_2
+spawnflags                     Integer64  539
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]tr_2
+classname                      CString    func_tracktrain
+origin                         CString    3180.000000 12800.000000 -862.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3751
+model                          CString    maps\ze_santassination_p\entities\tr_2_3751.vmdl
+_template_lump_ent_index       CString    10
+
+====11====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.music.lionking_waaaaaaaaaaah
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]music_lionking_1
+classname                      CString    point_soundevent
+origin                         CString    -348.000000 216.000000 -30.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    288
+_template_lump_ent_index       CString    11
+@OnUser1 StartSound !self
+@OnUser1 StartSound !self
+@OnUser2 StopSound !self
+@OnUser2 StopSound !self
+@OnUser4 OnlyOnce Kill !self
+
+====12====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.music.lionking
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]music_lionking_2
+classname                      CString    point_soundevent
+origin                         CString    -332.000000 216.000000 -30.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    294
+_template_lump_ent_index       CString    12
+@OnUser1 StartSound !self
+@OnUser1 StartSound !self
+@OnUser2 StopSound !self
+@OnUser2 StopSound !self
+@OnUser4 OnlyOnce Kill !self
+
+====13====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_010.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]e_stampede_particle
+classname                      CString    info_particle_system
+origin                         CString    -3164.000000 11736.000000 -1254.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4158
+_template_lump_ent_index       CString    13
+
+====14====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_011.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]e_stampede_particle_still
+classname                      CString    info_particle_system
+origin                         CString    6500.000000 11768.000000 -1254.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4130
+_template_lump_ent_index       CString    14
+
+====15====
+targetname                     CString    [PR#]e_stampede_spawncase
+classname                      CString    logic_case
+origin                         CString    -3012.000000 11736.000000 -1342.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3952
+_template_lump_ent_index       CString    15
+@OnCase01 ForceSpawn [PR#]e_stampede_spawner_1
+@OnCase02 ForceSpawn [PR#]e_stampede_spawner_2
+@OnCase03 ForceSpawn [PR#]e_stampede_spawner_3
+@OnCase04 ForceSpawn [PR#]e_stampede_spawner_4
+@OnCase05 ForceSpawn [PR#]e_stampede_spawner_5
+@OnCase06 ForceSpawn [PR#]e_stampede_spawner_6
+@OnCase07 ForceSpawn [PR#]e_stampede_spawner_7
+@OnCase08 ForceSpawn [PR#]e_stampede_spawner_8
+@OnCase09 ForceSpawn [PR#]e_stampede_spawner_9
+@OnCase10 ForceSpawn [PR#]e_stampede_spawner_10
+
+====16====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_stampededeer
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]e_stampede_spawner_1
+classname                      CString    env_entity_maker
+origin                         CString    -3132.000000 11224.000000 -1342.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3942
+_template_lump_ent_index       CString    16
+

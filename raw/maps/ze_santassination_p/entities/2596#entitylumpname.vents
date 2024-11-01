@@ -1,0 +1,141 @@
+====0====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_npc_bender
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]i_presentsleep_template1&0000
+classname                      CString    env_entity_maker
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2595
+_template_lump_ent_index       CString    0
+
+====1====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.benderwake
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]i_presentsleep_sound1&0000
+classname                      CString    point_soundevent
+origin                         CString    0.000000 0.000000 56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2599
+_template_lump_ent_index       CString    1
+
+====2====
+wait                           Float64    0.10000000149011612
+filtername                     CString    [PR#]filter_ct
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]i_presentsleep_model1&0000
+targetname                     CString    [PR#]g_presentsleep1&0000
+classname                      CString    trigger_multiple
+origin                         CString    0.000000 0.000000 40.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2597
+model                          CString    maps\ze_santassination_p\entities\g_presentsleep1_2597.vmdl
+_template_lump_ent_index       CString    2
+@OnTrigger OnlyOnce Trigger [PR#]i_presentsleep_relay1&0000
+@OnTrigger OnlyOnce Disable !self
+@OnUser1 OnlyOnce Enable [PR#]i_presentsleep_relay1&0000
+@OnUser1 Delay=0.05 OnlyOnce Trigger [PR#]i_presentsleep_relay1&0000
+@OnUser2 Enable [PR#]i_presentsleep_relay1&0000
+@OnUser3 Disable [PR#]i_presentsleep_relay1&0000
+
+====3====
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_LOOPING
+idleanim                       CString    dead
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    dead
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    2
+skin                           CString    0
+model                          CString    models/luffaren/luff_bender.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]i_presentsleep_model1&0000
+classname                      CString    prop_dynamic
+origin                         CString    0.000000 0.000000 -8.000000
+angles                         CString    -0.000000 -89.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2600
+_template_lump_ent_index       CString    3
+
+====4====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]i_presentsleep_relay1&0000
+classname                      CString    logic_relay
+origin                         CString    0.000000 0.000000 128.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2601
+_template_lump_ent_index       CString    4
+@OnTrigger Delay=1.2 OnlyOnce Kill [PR#]i_presentsleep_template1&0000
+@OnTrigger Delay=1.2 OnlyOnce Kill [PR#]i_presentsleep_sound1&0000
+@OnTrigger Delay=1.2 OnlyOnce Kill [PR#]i_presentsleep_model1&0000
+@OnTrigger Delay=1.18 OnlyOnce ForceSpawn [PR#]i_presentsleep_template1&0000
+@OnTrigger Delay=0.05 OnlyOnce SetIdleAnimationLooping [PR#]i_presentsleep_model1&0000 idle
+@OnTrigger OnlyOnce StartSound [PR#]i_presentsleep_sound1&0000
+@OnTrigger OnlyOnce SetAnimationNotLooping [PR#]i_presentsleep_model1&0000 wakeup
+@OnSpawn OnlyOnce PickRandom [PR#]i_presentsleep_case1&0000
+@OnTrigger OnlyOnce Kill [PR#]i_presentsleep_relay1&0000
+@OnSpawn Delay=0.05 OnlyOnce Kill [PR#]i_presentsleep_case1&0000
+
+====5====
+case03                         CString    do
+case02                         CString    dont
+case01                         CString    do
+targetname                     CString    [PR#]i_presentsleep_case1&0000
+classname                      CString    logic_case
+origin                         CString    0.000000 0.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2602
+_template_lump_ent_index       CString    5
+@OnCase01 Enable [PR#]i_presentsleep_relay1&0000
+@OnCase02 Disable [PR#]i_presentsleep_relay1&0000
+@OnCase03 Enable [PR#]i_presentsleep_relay1&0000
+

@@ -1,0 +1,21 @@
+====0====
+fadetime                       Float64    1
+exposurespeeddown              Float64    1
+exposurespeedup                Float64    1
+enableexposure                 Boolean    True
+maxexposure                    Float64    1
+minexposure                    Float64    1
+master                         Boolean    True
+postprocessing                 CString    postprocess/rain.vpost
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]cc_rainy
+classname                      CString    post_processing_volume
+origin                         CString    0.000000 0.000000 -32.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    20617
+model                          CString    maps\ze_tesv_skyrim_p\entities\cc_rainy_20617.vmdl
+_template_lump_ent_index       CString    0
+

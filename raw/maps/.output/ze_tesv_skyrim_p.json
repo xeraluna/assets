@@ -1,0 +1,200 @@
+[
+    {
+        "name": "troll_knife&0000",
+        "shortname": "troll_knife&0000",
+        "hammerid": "29179",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "ww_knife&0000",
+        "shortname": "ww_knife&0000",
+        "hammerid": "29224",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "elder_1_wep",
+        "shortname": "elder_1_wep",
+        "hammerid": "723",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "724",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "special_1_wep",
+        "shortname": "special_1_wep",
+        "hammerid": "225",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "703",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "healelite",
+        "shortname": "healelite",
+        "hammerid": "401",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "402",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "elder",
+        "shortname": "elder",
+        "hammerid": "406",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "st3_torchwep",
+        "shortname": "st3_torchwep",
+        "hammerid": "2132",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "lever_glock",
+        "shortname": "lever_glock",
+        "hammerid": "2276",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "giant_knife",
+        "shortname": "giant_knife",
+        "hammerid": "29267",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "knife_dr",
+        "shortname": "knife_dr",
+        "hammerid": "29313",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "night_knife",
+        "shortname": "night_knife",
+        "hammerid": "29345",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "knife_archmage",
+        "shortname": "knife_archmage",
+        "hammerid": "29372",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "dr_knife",
+        "shortname": "dr_knife",
+        "hammerid": "29402",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "doh_knife",
+        "shortname": "doh_knife",
+        "hammerid": "29435",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "mg_knife",
+        "shortname": "mg_knife",
+        "hammerid": "29494",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    }
+]

@@ -1,0 +1,352 @@
+====0====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]newH_stage_1_path_cheap
+classname                      CString    path_track
+origin                         CString    0.000000 -0.089966 1.000000
+angles                         CString    -0.000000 179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    848
+_template_lump_ent_index       CString    0
+@OnPass StopSound [PR#]global_sound_fallin2 0
+@OnPass StartShake [PR#]global_shake_catapult
+@OnPass Break [PR#]newH_stage_1_cheap_1
+@OnPass Kill [PR#]newH_stage_1_path_cheap
+@OnPass Delay=0.02 Kill [PR#]newH_stage_1_cheap_3
+@OnPass Kill [PR#]newH_stage_1_path_cheap_2
+@OnPass Kill [PR#]newH_stage_1_cheap_5
+@OnPass Break [PR#]newH_stage_1_cheap_4
+@OnPass Delay=0.1 Kill [PR#]newH_stage_1_cheap_16
+@OnPass Kill [PR#]newH_stage_1_cheap_15
+@OnPass Start [PR#]newH_stage_1_cheap_16
+@OnPass Kill [PR#]stage_1_catapult_rock1_2_3
+@OnPass StartSound [PR#]exploex
+@OnPass Delay=0.1 Kill [PR#]exploex
+@OnPass FireUser1 [PR#]extreme_indicador
+@OnPass FireUser1 [PR#]newH_stage_1_cheap_6
+@OnPass Disable [PR#]MeteorLight
+@OnPass Delay=0.1 Kill [PR#]MeteorLight
+@OnPass StopSound [PR#]incoming
+@OnPass Delay=1 Kill [PR#]incoming
+
+====1====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+randomanimation                CString    0
+minanimtime                    CString    5
+maxanimtime                    CString    10
+holdanimation                  CString    0
+fadescale                      CString    1
+animateeveryframe              CString    0
+health                         Integer    0
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    5179
+fademindist                    Float64    4921
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+damagefilter                   CString    [PR#]humanos
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/lotr/minas_roca1_br_go.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]newH_stage_1_cheap_3
+targetname                     CString    [PR#]newH_stage_1_cheap_4
+classname                      CString    prop_dynamic_override
+origin                         CString    1304.000000 1.499878 4559.000000
+angles                         CString    -0.000000 179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    844
+_template_lump_ent_index       CString    1
+
+====2====
+fadescale                      CString    1
+movesoundmaxtime               Float64    0
+movesoundmintime               Float64    0
+movesoundmaxpitch              Integer    200
+movesoundminpitch              Integer    60
+volume                         Integer    10
+dmg                            Integer    0
+bank                           CString    0
+height                         Integer    4
+wheels                         Integer    50
+orientationtype                CString    1
+velocitytype                   CString    0
+speed                          Integer    0
+startspeed                     Integer    2500
+target                         CString    [PR#]newH_stage_1_path_cheap_2
+spawnflags                     Integer64  538
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]newH_stage_1_cheap_3
+classname                      CString    func_tracktrain
+origin                         CString    1312.000000 -10.560181 4571.000000
+angles                         CString    -0.000000 179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    845
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\newH_stage_1_cheap_3_845.vmdl
+_template_lump_ent_index       CString    2
+
+====3====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]newH_stage_1_path_cheap
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]newH_stage_1_path_cheap_2
+classname                      CString    path_track
+origin                         CString    1311.799805 -10.380127 4570.900391
+angles                         CString    -0.000000 179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    843
+_template_lump_ent_index       CString    3
+
+====4====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]DTurd
+classname                      CString    logic_relay
+origin                         CString    0.099609 45.979980 -3.979980
+angles                         CString    -0.000000 179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    93
+_template_lump_ent_index       CString    4
+@OnSpawn Delay=1 TurnOn [PR#]newH_stage_1_cheap_6
+@OnSpawn StartForward [PR#]newH_stage_1_cheap_3
+@OnSpawn Kill !self
+@OnSpawn StartSound [PR#]incoming
+
+====5====
+parentname                     CString    newH_stage_1_cheap_4
+damagetype                     CString    1
+damagedelay                    Float64    0
+damage                         Integer    344
+damageradius                   Float64    192
+targetname                     CString    [PR#]newH_stage_1_cheap_6
+classname                      CString    point_hurt
+origin                         CString    1311.000000 -11.500122 4593.000000
+angles                         CString    -0.000000 179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    21835
+_template_lump_ent_index       CString    5
+@OnUser1 ClearParent !self
+@OnUser1 Delay=0.02 Kill !self
+
+====6====
+flag_as_weather                CString    0
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/minasparticles/custom_particle_010.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]newH_stage_1_cheap_16
+classname                      CString    info_particle_system
+origin                         CString    -7.299805 5.619995 35.850098
+angles                         CString    0.000000 89.999992 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3016
+_template_lump_ent_index       CString    6
+
+====7====
+flag_as_weather                CString    0
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    True
+effect_name                    CString    particles/minasparticles/custom_particle_042.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]newH_stage_1_cheap_3
+targetname                     CString    [PR#]newH_stage_1_cheap_15
+classname                      CString    info_particle_system
+origin                         CString    1313.700195 -16.500122 4572.099609
+angles                         CString    0.000000 89.999992 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3017
+_template_lump_ent_index       CString    7
+
+====8====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    explode_9
+sourceentityname               CString    [PR#]newH_stage_1_path_cheap
+radius                         CString    3050
+message                        CString    sounds/sfx/explode_9.vsnd
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]newH_stage_1_path_cheap
+targetname                     CString    [PR#]exploex
+classname                      CString    snd_event_point
+origin                         CString    28.700195 57.569946 -11.979980
+angles                         CString    -0.000000 179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1426
+_template_lump_ent_index       CString    8
+
+====9====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+maxanimtime                    CString    10
+minanimtime                    CString    5
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 0, 0>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+skin                           CString    0
+model                          CString    models/pmodels/effects/vol_light64x256.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]extreme_indicador
+classname                      CString    prop_dynamic
+origin                         CString    78.000000 -0.500000 282.000000
+angles                         CString    -13.999999 179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2611
+_template_lump_ent_index       CString    9
+@OnUser1 OnlyOnce Kill !self
+
+====10====
+flag_as_weather                CString    0
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    True
+effect_name                    CString    particles/minasparticles/custom_particle_027.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]extreme_indicador
+classname                      CString    info_particle_system
+origin                         CString    -9.000000 3.500000 7.000000
+angles                         CString    -0.000000 87.999977 179.999985
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3081
+_template_lump_ent_index       CString    10
+@OnUser1 OnlyOnce Kill !self
+
+====11====
+radius                         CString    3050
+message                        CString    sounds/sfx/explode_9.vsnd
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+sourceentityname               CString    [PR#]newH_stage_1_path_cheap
+soundname                      CString    incoming
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]newH_stage_1_path_cheap
+targetname                     CString    [PR#]incoming
+classname                      CString    snd_event_point
+origin                         CString    -1.000000 -1.500000 20.000000
+angles                         CString    -0.000000 179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    30452
+_template_lump_ent_index       CString    11
+

@@ -1,0 +1,127 @@
+====0====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+_minlight                      CString    0.000000
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    True
+explosion                      CString    0
+material                       CString    1
+health                         Integer    1
+propdata                       CString    0
+spawnflags                     Integer64  3
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]stage_2_door_4
+classname                      CString    func_breakable
+origin                         CString    -14903.000000 4436.000000 -26220.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2795
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_2_door_4_2795.vmdl
+_template_lump_ent_index       CString    0
+@OnBreak Delay=15 ForceSpawn [PR#]stage_2_template4
+
+====1====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+_minlight                      CString    0.000000
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    True
+explosion                      CString    0
+material                       CString    1
+health                         Integer    1600
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]stage_2_door_6
+classname                      CString    func_breakable
+origin                         CString    -12890.000000 4933.000000 -26306.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2882
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_2_door_6_2882.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+_minlight                      CString    0.000000
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    True
+explosion                      CString    0
+material                       CString    1
+health                         Integer    1600
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]stage_2_door_5
+classname                      CString    func_breakable
+origin                         CString    -13181.000000 4554.500000 -26306.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2642
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_2_door_5_2642.vmdl
+_template_lump_ent_index       CString    2
+

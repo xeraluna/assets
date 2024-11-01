@@ -1,0 +1,70 @@
+====0====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    99999
+damage                         Integer    99999
+filtername                     CString    [PR#]Filter_CT
+startdisabled                  Boolean    False
+spawnflags                     Integer64  4097
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Heart_S3_4_D&0000
+targetname                     CString    [PR#]Heart_S3_4_H&0000
+classname                      CString    trigger_hurt
+origin                         CString    0.000000 0.000000 368.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5043
+model                          CString    maps\ze_arcana_heart\entities\Heart_S3_4_H_5043.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Heart_S3_4_R&0000
+classname                      CString    logic_relay
+origin                         CString    0.000000 0.000000 -16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2515
+_template_lump_ent_index       CString    1
+@OnSpawn Delay=0.02 OnlyOnce Kill !self
+@OnSpawn OnlyOnce Open [PR#]Heart_S3_4_D&0000
+
+====2====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    5000
+speed                          Integer    1000
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <90, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Heart_S3_4_D&0000
+classname                      CString    func_movelinear
+origin                         CString    0.000000 0.000000 368.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1333
+model                          CString    maps\ze_arcana_heart\entities\Heart_S3_4_D_1333.vmdl
+_template_lump_ent_index       CString    2
+@OnFullyOpen KillHierarchy !self
+

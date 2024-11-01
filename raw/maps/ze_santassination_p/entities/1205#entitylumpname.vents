@@ -1,0 +1,1725 @@
+====0====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    1000
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+damagefilter                   CString    [PR#]filter_t
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_breakable
+origin                         CString    -15780.000000 -84.000000 -11446.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7790
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_7790.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    500
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    2
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_breakable
+origin                         CString    -13172.000000 -248.000000 -9558.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7940
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_7940.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    500
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    2
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_breakable
+origin                         CString    -13172.000000 -24.000000 -9558.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7942
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_7942.vmdl
+_template_lump_ent_index       CString    2
+
+====3====
+wait                           Float64    0.10000000149011612
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    -8732.000000 696.000000 -11278.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2754
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_2754.vmdl
+_template_lump_ent_index       CString    3
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger OnlyOnce Break [PR#]sf_sledwindow_elev
+
+====4====
+wait                           Float64    0.10000000149011612
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    -8708.000000 -344.000000 -11278.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2752
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_2752.vmdl
+_template_lump_ent_index       CString    4
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger OnlyOnce Break [PR#]sf_sledwindow_hitler
+
+====5====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_button
+origin                         CString    -12868.000000 -1864.000000 -11746.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1408
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_1408.vmdl
+_template_lump_ent_index       CString    5
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed OnlyOnce Open [PR#]sf_lavadoor_1
+
+====6====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_button
+origin                         CString    -13348.000000 -1864.000000 -11554.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1412
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_1412.vmdl
+_template_lump_ent_index       CString    6
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed Delay=10 OnlyOnce Open [PR#]sf_lavadoor_2
+@OnPressed Delay=10 OnlyOnce Open [PR#]sf_lavadoor_3
+@OnPressed Delay=10 OnlyOnce Command [PR#]server say ***OPENING DOORS***
+@OnPressed Delay=5 OnlyOnce Command [PR#]server say ***OPENING DOORS IN 5 SECONDS***
+@OnPressed OnlyOnce Command [PR#]server say ***OPENING DOORS IN 10 SECONDS***
+@OnPressed OnlyOnce KeyValues [PR#]teleport_destination origin -15490 220 200
+@OnPressed OnlyOnce KeyValues [PR#]teleport_destination angles 0 270 0
+
+====7====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_button
+origin                         CString    -8980.000000 -3064.000000 -9498.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1416
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_1416.vmdl
+_template_lump_ent_index       CString    7
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed OnlyOnce Command [PR#]server say ***OPENING UPPER CHAPEL DOOR IN 10 SECONDS***
+@OnPressed Delay=5 OnlyOnce Command [PR#]server say ***OPENING UPPER CHAPEL DOOR IN 5 SECONDS***
+@OnPressed Delay=10 OnlyOnce Command [PR#]server say ***OPENING UPPER CHAPEL DOOR***
+@OnPressed Delay=10 OnlyOnce Open [PR#]sf_chapeldoortop
+@OnPressed Delay=15 OnlyOnce ForceSpawn [PR#]sf_snpc_11
+@OnPressed Delay=1 OnlyOnce Disable [PR#]sf_light_14
+
+====8====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    15
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_button
+origin                         CString    -8612.000000 696.000000 -9498.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1429
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_1429.vmdl
+_template_lump_ent_index       CString    8
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed Delay=15 OnlyOnce Open [PR#]sf_exitdoor_2
+@OnPressed Delay=15 OnlyOnce Command [PR#]server say ***BRIDGE EXIT GATE IS OPENING***
+@OnPressed Delay=10 OnlyOnce Command [PR#]server say ***BRIDGE EXIT GATE IS OPENING IN 5 SECONDS***
+@OnPressed OnlyOnce Command [PR#]server say ***BRIDGE EXIT GATE IS OPENING IN 15 SECONDS***
+@OnPressed Delay=20 OnlyOnce Command [PR#]server say ***HEAD TOWARD SANTAS LAIR***
+@OnPressed Delay=22 OnlyOnce Command [PR#]server say ***YOUR FEET BECOME NIMBLE THROUGH DETERMINATION***
+@OnPressed Delay=40 OnlyOnce FireUser1 [PR#]teleport_s3_9
+@OnPressed Delay=17 OnlyOnce Trigger [PR#]mixtape_doom_relay
+@OnPressed Enable [PR#]mixtape_doom_musiclow
+@OnPressed Delay=15 OnlyOnce ForceSpawn [PR#]sf_snpc_13
+@OnPressed Delay=1 OnlyOnce Disable [PR#]sf_light_16
+
+====9====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    15
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_button
+origin                         CString    -8900.000000 1112.000000 -11354.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1445
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_1445.vmdl
+_template_lump_ent_index       CString    9
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed Delay=5 OnlyOnce FireUser1 [PR#]sf_rotbridge
+@OnPressed OnlyOnce Command [PR#]server say ***NAZI NIPPLE***
+@OnPressed OnlyOnce Add [PR#]sf_sledglass_math 1
+@OnPressed Delay=1 OnlyOnce Disable [PR#]sf_light_8
+
+====10====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    15
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_button
+origin                         CString    -8836.000000 -456.000000 -11418.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1450
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_1450.vmdl
+_template_lump_ent_index       CString    10
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed OnlyOnce Command [PR#]server say ***BLACK HOLE***
+@OnPressed OnlyOnce Add [PR#]sf_sledglass_math 1
+@OnPressed Delay=1 OnlyOnce Disable [PR#]sf_light_7
+
+====11====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    15
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_button
+origin                         CString    -12036.000000 1847.989990 -12730.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1455
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_1455.vmdl
+_template_lump_ent_index       CString    11
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed Delay=20 OnlyOnce Command [PR#]server say ***MAIN ELEVATOR IS LEAVING***
+@OnPressed Delay=20 OnlyOnce StartForward [PR#]sf_elevator
+@OnPressed Delay=15 OnlyOnce Command [PR#]server say ***MAIN ELEVATOR IS LEAVING IN 5 SECONDS***
+@OnPressed OnlyOnce Command [PR#]server say ***MAIN ELEVATOR IS LEAVING IN 20 SECONDS***
+@OnPressed Delay=20 OnlyOnce FireUser1 [PR#]sf_elevator
+@OnPressed Delay=1 OnlyOnce Enable [PR#]sf_elevator_light
+@OnPressed Delay=1 OnlyOnce Disable [PR#]sf_light_6
+@OnPressed Delay=20 OnlyOnce SetPosition [PR#]sf_elevator_light_mover 0.425000
+
+====12====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    15
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_button
+origin                         CString    -12164.000000 1336.000000 -10522.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1460
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_1460.vmdl
+_template_lump_ent_index       CString    12
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed Delay=25 OnlyOnce FireUser1 [PR#]teleport_s3_6
+@OnPressed StartForward [PR#]sf_elevator
+@OnPressed OnlyOnce Command [PR#]server say ***OPENING BASE SOCRATES ELEVATOR GATE***
+@OnPressed OnlyOnce Open [PR#]sf_elevator_doorsecond
+@OnPressed Delay=1 OnlyOnce Disable [PR#]sf_light_10
+@OnPressed OnlyOnce StopPlayEndCap [PR#]snow_particle_3
+@OnPressed SetPosition [PR#]sf_elevator_light_mover 0.687500
+
+====13====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    15
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_button
+origin                         CString    -13956.000000 -3720.000000 -8730.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1465
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_1465.vmdl
+_template_lump_ent_index       CString    13
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed OnlyOnce Command [PR#]server say ***BUTTON 1 PRESSED***
+@OnPressed OnlyOnce Break [PR#]sf_surfbreak2
+@OnPressed Delay=1 OnlyOnce Disable [PR#]sf_light_11
+
+====14====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    15
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_button
+origin                         CString    -15252.000000 -3726.600098 -8986.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1470
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_1470.vmdl
+_template_lump_ent_index       CString    14
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed OnlyOnce Open [PR#]sf_surfdoor_1
+@OnPressed OnlyOnce Command [PR#]server say ***BUTTON 2 PRESSED***
+@OnPressed Delay=5 OnlyOnce Break [PR#]sf_ladderbreakup
+@OnPressed Delay=1 OnlyOnce Disable [PR#]sf_light_12
+
+====15====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    15
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_button
+origin                         CString    -9996.000000 -3160.000000 -9114.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1475
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_1475.vmdl
+_template_lump_ent_index       CString    15
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed Delay=5 OnlyOnce SetSpeed [PR#]sf_surfdoor_3 1
+@OnPressed OnlyOnce Open [PR#]sf_surfdoor_2
+@OnPressed Delay=2 OnlyOnce Break [PR#]sf_surfbreak
+@OnPressed OnlyOnce Command [PR#]server say ***BUTTON 3 PRESSED***
+@OnPressed Delay=1 OnlyOnce Command [PR#]server say ***YOU CAN NOW ADVANCE***
+@OnPressed Delay=2 OnlyOnce ForceSpawn [PR#]sf_snpc_10
+@OnPressed Delay=1 OnlyOnce Disable [PR#]sf_light_13
+@OnPressed Delay=1 OnlyOnce Enable [PR#]sf_surfdoor_3_light
+@OnPressed Delay=5 OnlyOnce Open [PR#]sf_surfdoor_3_light_mover
+
+====16====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    15
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_button
+origin                         CString    -9444.000000 -408.000000 -9498.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1480
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_1480.vmdl
+_template_lump_ent_index       CString    16
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed OnlyOnce Command [PR#]server say ***SEXY REINDEER IS OPENING IN 15 SECONDS***
+@OnPressed Delay=10 OnlyOnce Command [PR#]server say ***SEXY REINDEER IS OPENING IN 5 SECONDS***
+@OnPressed Delay=15 OnlyOnce Command [PR#]server say ***SEXY REINDEER IS SPREADING***
+@OnPressed Delay=15 OnlyOnce Open [PR#]sf_exitdoor_1
+@OnPressed Delay=15 OnlyOnce SetAnimationLooping [PR#]sf_exitdoor_1_model sit
+@OnPressed Delay=15.05 OnlyOnce SetIdleAnimationLooping [PR#]sf_exitdoor_1_model sit
+@OnPressed OnlyOnce FireUser1 [PR#]teleport_s3_8
+@OnPressed Delay=15 OnlyOnce ForceSpawn [PR#]sf_snpc_12
+@OnPressed OnlyOnce Trigger [PR#]mixtape_doom_relaymusic
+@OnPressed Delay=1 OnlyOnce Disable [PR#]sf_light_15
+
+====17====
+wait                           Float64    0
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    -11812.000000 -872.000000 -12630.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1542
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_1542.vmdl
+_template_lump_ent_index       CString    17
+@OnTrigger OnlyOnce Disable !self
+@OnTrigger OnlyOnce Command [PR#]server say ***MAJOR FACE WALL EXPLODES IN 15 SECONDS***
+@OnTrigger Delay=15 OnlyOnce Break [PR#]sf_facewall2
+@OnTrigger Delay=15 OnlyOnce ForceSpawn [PR#]sf_facewall2_t
+@OnTrigger Delay=15 OnlyOnce Kill [PR#]sf_facewall2_s
+@OnTrigger Delay=13 OnlyOnce StartSound [PR#]sf_facewall2_s
+@OnTrigger Delay=13 OnlyOnce Command [PR#]server say ***MAJOR FACE WALL IS ABOUT TO EXPLODE***
+@OnTrigger Delay=15 OnlyOnce Command [PR#]server say ***MAJOR FACE WALL WENT BOOM***
+
+====18====
+wait                           Float64    0
+filtername                     CString    [PR#]filter_ct
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    -15647.900391 -1884.000000 -11525.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1547
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_1547.vmdl
+_template_lump_ent_index       CString    18
+@OnStartTouch Delay=1.55 Command [PR#]server say ***THE PIZZA IS AGGRESSIVE***
+@OnStartTouch ForceSpawnAtEntityOrigin [PR#]s_pizzasplotion_spawner !activator
+
+====19====
+wait                           Float64    0
+filtername                     CString    [PR#]filter_ct
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    -11012.000000 1208.000000 -11174.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1857
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_1857.vmdl
+_template_lump_ent_index       CString    19
+@OnStartTouch ForceSpawnAtEntityOrigin [PR#]s_sexysound_maker !activator
+
+====20====
+spawnflags                     Integer64  1025
+forcenpcexclude                Boolean    False
+lip                            Integer    0
+wait                           Float64    -1
+speed                          Integer    5
+movedir                        Vector     <0, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_button
+origin                         CString    -9648.000000 -9312.000000 -11562.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2041
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_2041.vmdl
+_template_lump_ent_index       CString    20
+@OnPressed Delay=30 OnlyOnce Command [PR#]server say ***LEFT LEFT SECOND FACE WALL HAS EXPLODED***
+@OnPressed OnlyOnce Command [PR#]server say ***LEFT LEFT SECOND FACE WALL OPENS IN 30 SECONDS***
+@OnPressed Delay=28 OnlyOnce StartSound [PR#]sf_facewall_s_1
+@OnPressed Delay=30 OnlyOnce Break [PR#]sf_facewall_1
+@OnPressed Delay=35 OnlyOnce Kill [PR#]sf_facewall_s_1
+@OnPressed Delay=30 OnlyOnce ForceSpawn [PR#]sf_facewall_ex_1
+@OnPressed Delay=31 OnlyOnce Kill [PR#]sf_facewall_ex_1
+@OnPressed Delay=1 OnlyOnce Disable [PR#]sf_light_3
+
+====21====
+spawnflags                     Integer64  1025
+forcenpcexclude                Boolean    False
+lip                            Integer    0
+wait                           Float64    -1
+speed                          Integer    5
+movedir                        Vector     <0, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_button
+origin                         CString    -12952.000000 -9312.000000 -11562.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2049
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_2049.vmdl
+_template_lump_ent_index       CString    21
+@OnPressed Delay=20 OnlyOnce Command [PR#]server say ***RIGHT RIGHT SECOND FACE WALL HAS EXPLODED***
+@OnPressed OnlyOnce Command [PR#]server say ***RIGHT RIGHT SECOND FACE WALL OPENS IN 20 SECONDS***
+@OnPressed Delay=18 OnlyOnce StartSound [PR#]sf_facewall_s_2
+@OnPressed Delay=20 OnlyOnce Break [PR#]sf_facewall_2
+@OnPressed Delay=25 OnlyOnce Kill [PR#]sf_facewall_s_2
+@OnPressed Delay=21 OnlyOnce Kill [PR#]sf_facewall_ex_2
+@OnPressed Delay=20 OnlyOnce ForceSpawn [PR#]sf_facewall_ex_2
+@OnPressed Delay=1 OnlyOnce Disable [PR#]sf_light_4
+
+====22====
+wait                           Float64    0
+filtername                     CString    [PR#]filter_nomixtape_fix
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    -10340.000000 792.000000 -12726.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2168
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_2168.vmdl
+_template_lump_ent_index       CString    22
+@OnStartTouch AddContext !activator mixtape_hater:1
+@OnStartTouch Add [PR#]mixtape_math 1
+
+====23====
+wait                           Float64    0.10000000149011612
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    12260.000000 1560.000000 -9414.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2193
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_2193.vmdl
+_template_lump_ent_index       CString    23
+@OnTrigger OnlyOnce Disable !self
+@OnTrigger OnlyOnce Open [PR#]sf_endgate
+@OnTrigger Delay=2 OnlyOnce Command [PR#]server say ***GET INSIDE SANTAS LAIR***
+@OnTrigger Delay=20 OnlyOnce FireUser1 [PR#]teleport_s3_10
+
+====24====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    500
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    2
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_breakable
+origin                         CString    -12884.000000 -208.000000 -9590.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2279
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_2279.vmdl
+_template_lump_ent_index       CString    24
+
+====25====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    500
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    2
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_breakable
+origin                         CString    -12964.000000 -606.669983 -9590.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2281
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_2281.vmdl
+_template_lump_ent_index       CString    25
+
+====26====
+spawnflags                     Integer64  1025
+forcenpcexclude                Boolean    False
+lip                            Integer    0
+wait                           Float64    -1
+speed                          Integer    5
+movedir                        Vector     <0, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_button
+origin                         CString    -15043.700195 -2181.739990 -10474.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2301
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_2301.vmdl
+_template_lump_ent_index       CString    26
+@OnPressed Delay=22 OnlyOnce Open [PR#]sf_factorydoor
+@OnPressed Delay=22 OnlyOnce Command [PR#]server say ***SEXY VENT GATE IS OPENING***
+@OnPressed Delay=17 OnlyOnce Command [PR#]server say ***SEXY VENT GATE IS OPENING IN 5 SECONDS***
+@OnPressed Delay=2 OnlyOnce Command [PR#]server say ***SEXY VENT GATE IS OPENING IN 20 SECONDS***
+@OnPressed Delay=37 OnlyOnce Break [PR#]sf_factorybreak
+@OnPressed OnlyOnce Command [PR#]server say ***THE BABYLON BABY BUTTON HAS BEEN TOUCHED***
+@OnPressed Delay=1 OnlyOnce Command [PR#]server say ***THE BABYLON BABY IS PLEASED WITH YOUR ASSISTANCE***
+@OnPressed OnlyOnce StartSound [PR#]sf_babylon
+@OnPressed OnlyOnce Disable [PR#]sf_babylontrigger
+@OnPressed OnlyOnce FireUser1 [PR#]teleport_s3_5
+@OnPressed Delay=25 OnlyOnce ForceSpawnAtEntityOrigin [PR#]s_sexysound_maker !activator
+@OnPressed Delay=27 OnlyOnce ForceSpawnAtEntityOrigin [PR#]s_sexysound_maker !activator
+@OnPressed Delay=23 OnlyOnce ForceSpawnAtEntityOrigin [PR#]s_sexysound_maker !activator
+@OnPressed Delay=25 OnlyOnce ForceSpawn [PR#]sf_snpc_8
+@OnPressed Delay=1 OnlyOnce Disable [PR#]sf_light_9
+
+====27====
+wait                           Float64    0.10000000149011612
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    -5348.000000 216.000000 -11334.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2365
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_2365.vmdl
+_template_lump_ent_index       CString    27
+@OnTrigger OnlyOnce Disable !self
+@OnTrigger Delay=20 OnlyOnce StartForward [PR#]sf_sled
+@OnTrigger Delay=20 OnlyOnce StartSound [PR#]sf_sled_s_start
+@OnTrigger Delay=2 OnlyOnce StartSound [PR#]sf_sled_s_intro
+@OnTrigger Delay=2 OnlyOnce Command [PR#]server say ***20 SECONDS UNTIL DEPARTURE***
+@OnTrigger Delay=15 OnlyOnce Command [PR#]server say ***5 SECONDS UNTIL DEPARTURE***
+@OnTrigger Delay=20 OnlyOnce Command [PR#]server say ***THE BURRITO SHITTER IS DEPARTING***
+@OnTrigger Delay=20 OnlyOnce Enable [PR#]sf_sled_push
+@OnTrigger OnlyOnce Command [PR#]server say ***THE MEXISLED CAN TAKE YOU OVER THE BORDER FOR 40$***
+@OnTrigger Delay=1 OnlyOnce Command [PR#]server say ***YOU MANAGED TO SCRAPE TOGETHER 41$ FROM YOUR TUITION MONEY***
+@OnTrigger Delay=21 OnlyOnce Command [PR#]server say ***NEXT STOP - ILLEGALITY***
+@OnTrigger Delay=20 OnlyOnce SetAnimationLooping [PR#]sf_sled_model run
+@OnTrigger Delay=20.05 OnlyOnce SetIdleAnimationLooping [PR#]sf_sled_model run
+@OnTrigger Delay=10 OnlyOnce Command [PR#]server say ***THE MEXISLED WOULD PREFER YOU TO CALL IT -THE BURRITO SHITTER-***
+@OnTrigger Delay=12 OnlyOnce Command [PR#]server say ***PLEASE COMPLY TO THIS REQUEST OR YOUR CLUB PENGUIN ACCOUNT WILL BE DISABLED***
+@OnTrigger Delay=15 OnlyOnce FireUser1 [PR#]teleport_s3_4
+@OnTrigger Delay=22 OnlyOnce Enable [PR#]sf_sled_antiedge
+@OnTrigger Delay=22 OnlyOnce Command [PR#]server say ***PUNISHING EDGERS WITH BURRITO LOVE***
+@OnTrigger Delay=22 OnlyOnce Enable [PR#]sf_sled_antiedge_tp
+@OnTrigger Delay=20 OnlyOnce Enable [PR#]sf_sled_hurt
+
+====28====
+wait                           Float64    1
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    -8412.000000 216.000000 -11286.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2374
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_2374.vmdl
+_template_lump_ent_index       CString    28
+@OnTrigger OnlyOnce Disable !self
+@OnTrigger OnlyOnce FireUser1 [PR#]sf_pikachu_push
+@OnTrigger Delay=0.05 OnlyOnce Kill !self
+
+====29====
+wait                           Float64    0
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    -13540.000000 792.000000 -12549.959961
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2392
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_2392.vmdl
+_template_lump_ent_index       CString    29
+@OnTrigger OnlyOnce Disable !self
+@OnTrigger OnlyOnce Command [PR#]server say ***SANTA FACTORY DOOR IS OPENING IN 20 SECONDS***
+@OnTrigger Delay=15 OnlyOnce Command [PR#]server say ***SANTA FACTORY DOOR IS OPENING IN 5 SECONDS***
+@OnTrigger Delay=20 OnlyOnce Command [PR#]server say ***SANTA FACTORY DOOR IS OPENING***
+@OnTrigger Delay=20 OnlyOnce Open [PR#]sf_entrancedoor
+@OnTrigger Delay=19.5 OnlyOnce Stop [PR#]sf_entrancedoor_p
+@OnTrigger Delay=19.75 OnlyOnce Start [PR#]sf_entrancedoor_p
+@OnTrigger Delay=23 OnlyOnce Stop [PR#]sf_entrancedoor_p
+@OnTrigger Delay=40 OnlyOnce Stop [PR#]sf_snowsmoke_3
+@OnTrigger Delay=5 OnlyOnce StartSound [PR#]music_sf_enter
+@OnTrigger Delay=56.5 OnlyOnce Command [PR#]server say ***SMELL THE DANK MIXTAPE***
+@OnTrigger Delay=65 OnlyOnce Command [PR#]server say ***THE MIXTAPE IS OUT OF CONTROL***
+@OnTrigger Delay=60 OnlyOnce FireUser1 [PR#]teleport_s3_3
+@OnTrigger Delay=20 OnlyOnce ForceSpawn [PR#]sf_snpc_4
+
+====30====
+wait                           Float64    0
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    -11956.000000 -2664.000000 -13030.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2418
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_2418.vmdl
+_template_lump_ent_index       CString    30
+@OnTrigger OnlyOnce Disable !self
+@OnTrigger OnlyOnce Stop [PR#]sf_gateface_cp
+@OnTrigger Delay=0.05 OnlyOnce Start [PR#]sf_gateface_cp
+@OnTrigger Delay=13 OnlyOnce StartSound [PR#]sf_gateface_s_intro
+@OnTrigger Delay=14 OnlyOnce Command [PR#]server say ***SATISFY THE LIPS WITH SEWER CHOCOLATE IN ORDER TO ENTER***
+@OnTrigger Delay=13 OnlyOnce StartShake [PR#]sf_gateface_shake
+@OnTrigger Delay=80 OnlyOnce Break [PR#]sf_gateface_breakice
+@OnTrigger Delay=2 OnlyOnce FireUser1 [PR#]music_sf_entrance
+@OnTrigger Delay=15 OnlyOnce Command [PR#]server say ***7 SMEARED HUMANS SHOULD BE ABLE TO SATISFY THOSE SORE LIPS***
+@OnTrigger Delay=16 OnlyOnce Command [PR#]server say ***GOOD LUCK***
+@OnTrigger OnlyOnce Stop [PR#]sf_snowsmoke_1
+@OnTrigger Delay=20 OnlyOnce FireUser1 [PR#]teleport_s3_2
+
+====31====
+wait                           Float64    0
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    -7812.000000 -8423.990234 -11686.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2420
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_2420.vmdl
+_template_lump_ent_index       CString    31
+@OnTrigger OnlyOnce Disable !self
+@OnTrigger Delay=2 OnlyOnce FireUser1 [PR#]music_sf_chapel
+@OnTrigger OnlyOnce Stop [PR#]sf_snowsmoke_1
+@OnTrigger Delay=0.05 OnlyOnce Start [PR#]sf_snowsmoke_1
+@OnTrigger Delay=10 OnlyOnce FireUser2 [PR#]music_sf_intro
+
+====32====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    1000
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_breakable
+origin                         CString    -9380.000000 -2016.000000 -13574.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2431
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_2431.vmdl
+_template_lump_ent_index       CString    32
+@OnBreak StartSound [PR#]sf_teeth
+@OnBreak Command [PR#]server say ***HITLERS TEETH ARE NOW BROKEN***
+@OnBreak Delay=1 Command [PR#]server say ***DEMOCRACY HEREBY WINS THE SUPERBOWL***
+
+====33====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    0
+wait                           Float64    -1
+speed                          Integer    50
+movedir                        Vector     <0, 90, 0>
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.lever4
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_button
+origin                         CString    -8046.000000 -4004.000000 -11974.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2459
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_2459.vmdl
+_template_lump_ent_index       CString    33
+@OnPressed OnlyOnce Command [PR#]server say ***SECRET SANTA CHAPEL DOOR IS OPENING IN 20 SECONDS*** 
+@OnPressed Delay=20 OnlyOnce Command [PR#]server say ***SECRET SANTA CHAPEL DOOR IS OPENING*** 
+@OnPressed Delay=20 OnlyOnce Open [PR#]sf_chapeldoor
+@OnPressed Delay=20 OnlyOnce StartShake [PR#]sf_chapeldoorshake
+@OnPressed Delay=20 OnlyOnce Stop [PR#]sf_chapeldoorparticle
+@OnPressed Delay=20.02 OnlyOnce Start [PR#]sf_chapeldoorparticle
+@OnPressed Delay=23 OnlyOnce Stop [PR#]sf_chapeldoorparticle
+@OnPressed Delay=35 OnlyOnce Stop [PR#]sf_snowsmoke_2
+@OnPressed Delay=35.05 OnlyOnce Start [PR#]sf_snowsmoke_2
+@OnPressed Delay=5 OnlyOnce FireUser1 [PR#]teleport_s3_1
+@OnPressed Delay=20 OnlyOnce ForceSpawn [PR#]sf_snpc_3
+@OnPressed Delay=20 OnlyOnce StartSound [PR#]sf_chapel_ambient
+
+====34====
+spawnflags                     Integer64  1025
+forcenpcexclude                Boolean    False
+lip                            Integer    0
+wait                           Float64    -1
+speed                          Integer    5
+movedir                        Vector     <0, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_button
+origin                         CString    -11436.000000 -9612.000000 -11562.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2494
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_2494.vmdl
+_template_lump_ent_index       CString    34
+@OnPressed Delay=10 OnlyOnce SetSpeed [PR#]sf_firstelevator_1 1
+@OnPressed Delay=9 OnlyOnce Open [PR#]sf_firstelevatord_1
+@OnPressed Delay=20 OnlyOnce Close [PR#]sf_firstelevatord_1
+@OnPressed OnlyOnce Command [PR#]server say ***RIGHT PRIMAL ELEVATOR LEAVES IN 10 SECONDS***
+@OnPressed Delay=10 OnlyOnce Command [PR#]server say ***RIGHT PRIMAL ELEVATOR IS LEAVING***
+@OnPressed Delay=1 Disable [PR#]sf_light_2
+
+====35====
+spawnflags                     Integer64  1025
+forcenpcexclude                Boolean    False
+lip                            Integer    0
+wait                           Float64    -1
+speed                          Integer    5
+movedir                        Vector     <0, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_button
+origin                         CString    -11164.000000 -9612.000000 -11562.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2496
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_2496.vmdl
+_template_lump_ent_index       CString    35
+@OnPressed Delay=20 OnlyOnce Close [PR#]sf_firstelevatord_2
+@OnPressed Delay=10 OnlyOnce SetSpeed [PR#]sf_firstelevator_2 1
+@OnPressed Delay=9 OnlyOnce Open [PR#]sf_firstelevatord_2
+@OnPressed Delay=10 OnlyOnce Command [PR#]server say ***LEFT PRIMAL ELEVATOR IS LEAVING***
+@OnPressed OnlyOnce Command [PR#]server say ***LEFT PRIMAL ELEVATOR LEAVES IN 10 SECONDS***
+@OnPressed Delay=1 OnlyOnce Disable [PR#]sf_light_1
+
+====36====
+spawnflags                     Integer64  1025
+forcenpcexclude                Boolean    False
+lip                            Integer    0
+wait                           Float64    -1
+speed                          Integer    5
+movedir                        Vector     <0, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_event_triggers
+classname                      CString    func_button
+origin                         CString    -7064.000000 -10736.000000 -13290.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2500
+model                          CString    maps\ze_santassination_p\entities\sf_event_triggers_2500.vmdl
+_template_lump_ent_index       CString    36
+@OnPressed Delay=30 OnlyOnce SetSpeed [PR#]sf_firstelevator_second 1
+@OnPressed Delay=30 OnlyOnce Command [PR#]server say ***SECONDARY PROTOCOL ELEVATOR IS LEAVING***
+@OnPressed OnlyOnce Command [PR#]server say ***SECONDARY PROTOCOL ELEVATOR IS LEAVING IN 30 SECONDS***
+@OnPressed Delay=29.5 OnlyOnce Trigger [PR#]sf_iwf_rblocker_2
+@OnPressed Delay=33.5 OnlyOnce Trigger [PR#]sf_iwf_rblocker_1
+@OnPressed Delay=25 OnlyOnce Command [PR#]server say ***SECONDARY PROTOCOL ELEVATOR IS LEAVING IN 5 SECONDS***
+@OnPressed Delay=1 OnlyOnce Disable [PR#]sf_light_5
+@OnPressed Delay=1 OnlyOnce enable [PR#]sf_firstelevator_second_light
+@OnPressed Delay=30 OnlyOnce Open [PR#]sf_firstelevator_second_light_mover
+
+====37====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_npc_elv
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_snpc_10
+classname                      CString    env_entity_maker
+origin                         CString    -9106.730469 -3637.310059 -9502.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1362
+_template_lump_ent_index       CString    37
+
+====38====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_presentsleep
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_snpc_10
+classname                      CString    env_entity_maker
+origin                         CString    -9279.889648 -3346.709961 -9534.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1375
+_template_lump_ent_index       CString    38
+
+====39====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_npc_elv
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_snpc_11
+classname                      CString    env_entity_maker
+origin                         CString    -8934.629883 -490.758972 -9502.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1363
+_template_lump_ent_index       CString    39
+
+====40====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_presentsleep
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_snpc_11
+classname                      CString    env_entity_maker
+origin                         CString    -9708.629883 -305.937012 -9534.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1373
+_template_lump_ent_index       CString    40
+
+====41====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_presentsleep
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_snpc_11
+classname                      CString    env_entity_maker
+origin                         CString    -8580.370117 -849.057983 -9534.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1374
+_template_lump_ent_index       CString    41
+
+====42====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_npc_elv
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_snpc_12
+classname                      CString    env_entity_maker
+origin                         CString    -9921.179688 650.117004 -9502.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1364
+_template_lump_ent_index       CString    42
+
+====43====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_npc_elv
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_snpc_12
+classname                      CString    env_entity_maker
+origin                         CString    -8871.610352 1579.910034 -9502.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1365
+_template_lump_ent_index       CString    43
+
+====44====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_presentsleep
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_snpc_12
+classname                      CString    env_entity_maker
+origin                         CString    -9999.040039 -1393.869995 -9246.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1372
+_template_lump_ent_index       CString    44
+
+====45====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_npc_beaver
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_snpc_13
+classname                      CString    env_entity_maker
+origin                         CString    -870.700989 1646.000000 -9490.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1366
+_template_lump_ent_index       CString    45
+
+====46====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_npc_elv
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_snpc_13
+classname                      CString    env_entity_maker
+origin                         CString    3064.750000 1484.219971 -9498.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1367
+_template_lump_ent_index       CString    46
+
+====47====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_npc_elv
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_snpc_13
+classname                      CString    env_entity_maker
+origin                         CString    6037.549805 1717.449951 -9498.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1368
+_template_lump_ent_index       CString    47
+
+====48====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_npc_beaver
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_snpc_13
+classname                      CString    env_entity_maker
+origin                         CString    10189.000000 1410.170044 -9498.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1369
+_template_lump_ent_index       CString    48
+
+====49====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_npc_elv
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_snpc_13
+classname                      CString    env_entity_maker
+origin                         CString    10171.900391 1465.439941 -9498.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1370
+_template_lump_ent_index       CString    49
+
+====50====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_npc_elv
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_snpc_13
+classname                      CString    env_entity_maker
+origin                         CString    14186.900391 1619.920044 -9502.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1371
+_template_lump_ent_index       CString    50
+
+====51====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_presentsleep
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_snpc_13
+classname                      CString    env_entity_maker
+origin                         CString    -7908.000000 1688.000000 -9526.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1391
+_template_lump_ent_index       CString    51
+
+====52====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_presentsleep
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_snpc_13
+classname                      CString    env_entity_maker
+origin                         CString    -7908.000000 1432.000000 -9526.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1392
+_template_lump_ent_index       CString    52
+
+====53====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    10000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]sf_surfbreak
+classname                      CString    func_breakable
+origin                         CString    -12259.500000 -3560.000000 -10214.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2175
+model                          CString    maps\ze_santassination_p\entities\sf_surfbreak_2175.vmdl
+_template_lump_ent_index       CString    53
+@OnBreak Delay=20 OnlyOnce Stop [PR#]sf_factorysmoke
+
+====54====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    10000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]sf_surfbreak2
+classname                      CString    func_breakable
+origin                         CString    -14308.000000 -3176.000000 -9062.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2165
+model                          CString    maps\ze_santassination_p\entities\sf_surfbreak2_2165.vmdl
+_template_lump_ent_index       CString    54
+
+====55====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    100000
+lip                            Integer    64
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.floodgate_stop1
+noise1                         CString    custom.sfx.doors.doormove1
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_surfdoor_1
+classname                      CString    func_door
+origin                         CString    -10996.000000 -3160.000000 -8870.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2255
+model                          CString    maps\ze_santassination_p\entities\sf_surfdoor_1_2255.vmdl
+_template_lump_ent_index       CString    55
+
+====56====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    100000
+lip                            Integer    64
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.floodgate_stop1
+noise1                         CString    custom.sfx.doors.doormove1
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_surfdoor_2
+classname                      CString    func_door
+origin                         CString    -10996.000000 -3160.000000 -9446.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2257
+model                          CString    maps\ze_santassination_p\entities\sf_surfdoor_2_2257.vmdl
+_template_lump_ent_index       CString    56
+
+====57====
+movesoundmaxtime               Float64    0
+movesoundmintime               Float64    0
+movesoundmaxpitch              Integer    200
+movesoundminpitch              Integer    60
+volume                         Integer    10
+stopsound                      CString    custom.sfx.doors.floodgate_stop1
+movesound                      CString    custom.sfx.doors.doormove2
+bank                           CString    0
+height                         Integer    0
+wheels                         Integer    0
+orientationtype                CString    1
+velocitytype                   CString    0
+startspeed                     Integer    100
+target                         CString    [PR#]sf_surfdoor_3_p1
+movedir                        CString    90 0 0
+spawnflags                     Integer64  531
+forceclosed                    CString    1
+dmg                            Integer    100000
+wait                           CString    -1
+noise2                         CString    custom.sfx.doors.floodgate_stop1
+noise1                         CString    custom.sfx.doors.doormove2
+speed                          Integer    0
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_surfdoor_3
+classname                      CString    func_tracktrain
+origin                         CString    -10100.000000 -3160.000000 -9166.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2252
+model                          CString    maps\ze_santassination_p\entities\sf_surfdoor_3_2252.vmdl
+_template_lump_ent_index       CString    57
+
+====58====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.teeth
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_teeth
+classname                      CString    point_soundevent
+origin                         CString    -9380.000000 -2016.000000 -13574.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2422
+_template_lump_ent_index       CString    58
+
+====59====
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_tele_1
+classname                      CString    info_teleport_destination
+origin                         CString    -12676.000000 -2952.000000 -9478.000000
+angles                         CString    -0.000000 -89.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2277
+_template_lump_ent_index       CString    59
+
+====60====
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_tele_2
+classname                      CString    info_teleport_destination
+origin                         CString    -12612.000000 1048.000000 -9510.000000
+angles                         CString    0.000000 -179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2278
+_template_lump_ent_index       CString    60
+
+====61====
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_tele_3
+classname                      CString    info_teleport_destination
+origin                         CString    -8660.000000 808.000000 -11382.000000
+angles                         CString    0.000000 -135.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2187
+_template_lump_ent_index       CString    61
+
+====62====
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_telechapel_ded
+classname                      CString    info_teleport_destination
+origin                         CString    -8244.000000 -7800.000000 -11974.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2248
+_template_lump_ent_index       CString    62
+
+====63====
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_telechapel_high
+classname                      CString    info_teleport_destination
+origin                         CString    -8868.000000 -2952.000000 -9510.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2283
+_template_lump_ent_index       CString    63
+

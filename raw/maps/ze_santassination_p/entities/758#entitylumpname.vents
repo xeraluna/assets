@@ -1,0 +1,513 @@
+====0====
+silenttozombies                Boolean    False
+exploitablebyplayer            CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+disablereceiveshadows          Boolean    False
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+physicsmode                    CString    1
+skippresettle                  Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+auto_convert_back_from_debris  Boolean    True
+nonavmeshblocker               Boolean    False
+forcenpcexclude                Boolean    False
+forcenavignore                 Boolean    False
+enableuseoutput                Boolean    False
+forcetoenablemotion            Float64    0
+damagetoenablemotion           Integer    0
+buoyancyscale                  Float64    1
+massscale                      Float64    0
+inertiascale                   Float64    1
+acceptdamagefromheldobjects    Boolean    False
+nodamageforces                 CString    0
+damagetype                     CString    0
+physdamagescale                Float64    0.10000000149011612
+shadowcastdist                 Integer    0
+minhealthdmg                   Integer    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer64  12
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    2
+skin                           CString    2
+model                          CString    models/luffaren/npc_phys_present.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]npc_phys2g2&0000
+classname                      CString    prop_physics_multiplayer
+origin                         CString    0.000000 0.000000 8.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    23857
+_template_lump_ent_index       CString    0
+@OnUser1 OnlyOnce FireUser3 [PR#]npc_ents4&0000
+@OnUser1 Delay=10 OnlyOnce Kill !self
+@OnUser1 OnlyOnce Kill [PR#]npc_t_f4&0000
+@OnUser1 OnlyOnce Kill [PR#]npc_t_s4&0000
+@OnUser1 OnlyOnce Stop [PR#]npc_particle4&0000
+@OnUser1 Delay=0.05 OnlyOnce Start [PR#]npc_particle4&0000
+@OnUser1 Delay=0.05 OnlyOnce Kill [PR#]npc_ents4&0000
+@OnUser1 OnlyOnce StopSound [PR#]npc_ents4&0000
+@OnUser1 OnlyOnce Kill [PR#]npc_trigger4&0000
+@OnUser1 OnlyOnce FireUser1 [PR#]npc_model4&0000
+@OnUser1 Delay=5 OnlyOnce FireUser1 [PR#]present_fade_timer&0000
+@OnUser1 Delay=0.5 OnlyOnce Kill [PR#]npc_particle4&0000
+@OnUser1 Delay=0.05 OnlyOnce Kill [PR#]npc_ents4_fix&0000
+
+====1====
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+lightingorigin                 CString    [PR#]npc_ents4&0000
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_LOOPING
+idleanim                       CString    idle
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    idle
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    2
+skin                           CString    0
+model                          CString    models/luffaren/luff_present.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]npc_phys2g2&0000
+targetname                     CString    [PR#]npc_model4&0000
+classname                      CString    prop_dynamic
+origin                         CString    -8.000000 0.000000 -8.000000
+angles                         CString    -0.000000 -89.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    769
+_template_lump_ent_index       CString    1
+@OnUser1 SetAnimationLooping [PR#]npc_model4&0000 dead
+@OnUser1 Delay=0.05 SetIdleAnimationLooping [PR#]npc_model4&0000 dead
+@OnUser2 Delay=0.05 SetIdleAnimationLooping [PR#]npc_model4&0000 run
+@OnUser2 SetAnimationLooping [PR#]npc_model4&0000 run
+
+====2====
+wait                           Float64    1
+filtername                     CString    [PR#]filter_npc_fix
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]npc_phys2g2&0000
+targetname                     CString    [PR#]npc_ents4&0000
+classname                      CString    trigger_multiple
+origin                         CString    0.000000 0.000000 72.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    763
+model                          CString    maps\ze_santassination_p\entities\npc_ents4_763.vmdl
+_template_lump_ent_index       CString    2
+@OnTrigger FireUser1 [PR#]npc_ents4&0000
+@OnTrigger OnlyOnce FireUser2 [PR#]npc_model4&0000
+@Ontrigger Trigger [PR#]filter_present_fix_relay
+@OnTrigger Disable !self
+@OnTrigger Delay=7 Enable !self
+@OnTrigger Delay=7.02 TouchTest !self
+@OnNotTouching CountPlayersInZone [PR#]filter_npc_cooldown_reset
+@OnUser4 TouchTest !self
+@OnUser4 Delay=0.5 FireUser4 !self
+
+====3====
+initialdelay                   Float64    0
+refiretime                     Float64    0.10000000149011612
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    False
+spawnflags                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]npc_ents4&0000
+classname                      CString    logic_timer
+origin                         CString    80.000000 0.000000 168.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    770
+_template_lump_ent_index       CString    3
+@OnTimer Deactivate [PR#]npc_t_f4&0000
+
+====4====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.present
+sourceentityname               CString    [PR#]npc_phys2g2&0000
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]npc_ents4&0000
+classname                      CString    point_soundevent
+origin                         CString    112.000000 0.000000 168.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    771
+_template_lump_ent_index       CString    4
+@OnUser1 StartSound !self
+@OnUser1 StartSound !self
+
+====5====
+dampallrotation                Boolean    False
+angularlimit                   Float64    100
+attach1                        CString    [PR#]npc_phys2g2&0000
+spawnflags                     Integer    0
+targetname                     CString    [PR#]npc_ents4&0000
+classname                      CString    phys_keepupright
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    774
+_template_lump_ent_index       CString    5
+
+====6====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.hit
+sourceentityname               CString    [PR#]npc_phys2g2&0000
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]npc_ents4&0000
+classname                      CString    point_soundevent
+origin                         CString    96.000000 0.000000 168.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    775
+_template_lump_ent_index       CString    6
+@OnUser2 StartSound !self
+@OnUser2 StartSound !self
+
+====7====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.gulpuff
+sourceentityname               CString    [PR#]npc_phys2g2&0000
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]npc_ents4&0000
+classname                      CString    point_soundevent
+origin                         CString    96.000000 0.000000 184.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    782
+_template_lump_ent_index       CString    7
+@OnUser3 StartSound !self
+@OnUser3 StartSound !self
+
+====8====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]npc_ents4&0000
+classname                      CString    logic_relay
+origin                         CString    48.000000 0.000000 16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    784
+_template_lump_ent_index       CString    8
+@OnSpawn OnlyOnce Kill !self
+@OnSpawn Delay=60 OnlyOnce Break [PR#]npc_phys2gg2&0000
+@OnSpawn OnlyOnce EnableMotion [PR#]npc_phys2g2&0000
+@OnSpawn OnlyOnce FireUser4 [PR#]npc_ents4&0000
+
+====9====
+spawnflags                     CString    28
+attach1                        CString    npc_phys2g3
+force                          CString    400
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]npc_ents4_hurt&0000
+target                         CString    [PR#]npc_phys2gg2&0000
+measurereference               CString    [PR#]npc_ents4_hurt&0000
+measuretarget                  CString    [PR#]npc_ents4_hurt&0000
+targetname                     CString    [PR#]npc_ents4&0000
+classname                      CString    logic_measure_movement
+origin                         CString    88.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    24314
+_template_lump_ent_index       CString    9
+
+====10====
+wait                           Float64    0
+filtername                     CString    [PR#]filter_npc_present
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]npc_phys2g2&0000
+targetname                     CString    [PR#]npc_trigger4&0000
+classname                      CString    trigger_multiple
+origin                         CString    0.000000 0.000000 72.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    766
+model                          CString    maps\ze_santassination_p\entities\npc_trigger4_766.vmdl
+_template_lump_ent_index       CString    10
+@OnTrigger Activate [PR#]npc_t_f4&0000
+
+====11====
+wait                           Float64    0
+filtername                     CString    [PR#]filter_npc_present
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]npc_phys2g2&0000
+targetname                     CString    [PR#]npc_trigger4&0000
+classname                      CString    trigger_multiple
+origin                         CString    0.000000 0.000000 40.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    776
+model                          CString    maps\ze_santassination_p\entities\npc_trigger4_776.vmdl
+_template_lump_ent_index       CString    11
+@OnTrigger Delay=0.01 Activate [PR#]npc_t_s4&0000
+@OnTrigger KeyValues [PR#]npc_t_s4&0000 angles 0 270 0
+
+====12====
+wait                           Float64    0
+filtername                     CString    [PR#]filter_npc_present
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]npc_phys2g2&0000
+targetname                     CString    [PR#]npc_trigger4&0000
+classname                      CString    trigger_multiple
+origin                         CString    0.000000 0.000000 40.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    779
+model                          CString    maps\ze_santassination_p\entities\npc_trigger4_779.vmdl
+_template_lump_ent_index       CString    12
+@OnTrigger KeyValues [PR#]npc_t_s4&0000 angles 0 90 0
+@OnTrigger Delay=0.01 Activate [PR#]npc_t_s4&0000
+
+====13====
+force                          CString    800
+forcetime                      CString    0
+attach1                        CString    [PR#]npc_phys2g2&0000
+spawnflags                     Integer64  28
+targetname                     CString    [PR#]npc_t_s4&0000
+classname                      CString    phys_thruster
+origin                         CString    120.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    773
+_template_lump_ent_index       CString    13
+
+====14====
+force                          CString    4000
+forcetime                      CString    0
+attach1                        CString    [PR#]npc_phys2g2&0000
+spawnflags                     Integer64  26
+targetname                     CString    [PR#]npc_t_f4&0000
+classname                      CString    phys_thruster
+origin                         CString    48.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    772
+_template_lump_ent_index       CString    14
+
+====15====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_025.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]npc_phys2g2&0000
+targetname                     CString    [PR#]npc_particle4&0000
+classname                      CString    info_particle_system
+origin                         CString    0.000000 -0.200195 11.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    783
+_template_lump_ent_index       CString    15
+
+====16====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+enableuseoutput                Boolean    False
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+uselocaloffset                 Boolean    False
+damagefilter                   CString    [PR#]filter_t_no
+spawnobject                    CString    0
+spawnflags                     Integer64  50176
+rendermode                     CString    0
+renderfx                       CString    0
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+propdata                       CString    0
+pressuredelay                  Float64    0
+preferredcarryangles           Vector     <0, 0, 0>
+performancemode                CString    1
+notsolid                       CString    0
+nodamageforces                 Boolean    False
+material                       CString    8
+massscale                      Float64    100
+health                         Integer    1875
+forcetoenablemotion            Float64    0
+fademindist                    Float64    -1
+explosion                      CString    0
+exploderadius                  Float64    0
+explodemagnitude               Integer    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+disablereceiveshadows          Boolean    False
+damagetype                     CString    0
+damagetoenablemotion           Integer    0
+targetname                     CString    [PR#]npc_phys2gg2&0000
+classname                      CString    func_physbox
+origin                         CString    8.000000 0.000000 32.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    756
+model                          CString    maps\ze_santassination_p\entities\npc_phys2gg2_756.vmdl
+_template_lump_ent_index       CString    16
+@OnBreak OnlyOnce FireUser1 [PR#]npc_phys2g2&0000
+@OnBreak Kill [PR#]npc_ents4_hurt&0000
+
+====17====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]npc_tadd4&0000
+classname                      CString    logic_relay
+origin                         CString    41.000000 -1.799805 43.799805
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3152
+_template_lump_ent_index       CString    17
+@OnSpawn Delay=0.2 OnlyOnce Kill !self
+@OnSpawn OnlyOnce Trigger [PR#]npc_truthadd
+@OnUser1 OnlyOnce AddHealth [PR#]npc_phys2gg2&0000 625
+
+====18====
+initialdelay                   Float64    0
+refiretime                     Float64    0.019999999552965164
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    False
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]present_fade_timer&0000
+classname                      CString    logic_timer
+origin                         CString    96.000000 -16.000000 168.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    13083
+_template_lump_ent_index       CString    18
+@OnTimer Subtract [PR#]present_fade_counter&0000 1
+@OnUser1 Enable !self
+@OnUser1 Delay=0.02 FireTimer !self
+
+====19====
+max                            Integer    255
+min                            Integer    0
+startvalue                     Integer    255
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]present_fade_counter&0000
+classname                      CString    math_counter
+origin                         CString    112.000000 -16.000000 168.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    13084
+_template_lump_ent_index       CString    19
+@OutValue Alpha [PR#]npc_model4&0000
+@OnHitMin Delay=0.02 Kill !self
+@OnHitMin Delay=0.02 Kill [PR#]present_fade_timer&0000
+@OnHitMin Disable [PR#]present_fade_timer&0000
+
+====20====
+initialdelay                   Float64    0
+refiretime                     Float64    0.10000000149011612
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    False
+spawnflags                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]npc_ents4_fix&0000
+classname                      CString    logic_timer
+origin                         CString    80.000000 -16.000000 168.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    23820
+_template_lump_ent_index       CString    20
+@OnTimer Deactivate [PR#]npc_t_s4&0000
+
+====21====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    20
+damage                         Integer    180
+filtername                     CString    [PR#]filter_ct
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]npc_phys2g2&0000
+targetname                     CString    [PR#]npc_ents4_hurt&0000
+classname                      CString    trigger_hurt
+origin                         CString    8.000000 0.000000 32.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    759
+model                          CString    maps\ze_santassination_p\entities\npc_ents4_hurt_759.vmdl
+_template_lump_ent_index       CString    21
+@OnHurtPlayer FireUser2 [PR#]npc_ents4&0000
+@OnHurtPlayer FireUser1 [PR#]filter_triggerhurt_no
+

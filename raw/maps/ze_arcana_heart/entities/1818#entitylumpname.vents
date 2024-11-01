@@ -1,0 +1,48 @@
+====0====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    99999
+movedistance                   Float64    6770
+speed                          Integer    900
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer    0
+movedir                        Vector     <90, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Heart_Rtv_2_3_D&0000
+classname                      CString    func_movelinear
+origin                         CString    0.000000 0.000000 328.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1866
+model                          CString    maps\ze_arcana_heart\entities\Heart_Rtv_2_3_D_1866.vmdl
+_template_lump_ent_index       CString    0
+@OnFullyOpen Kill !self
+
+====1====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Heart_Rtv_2_3_R&0000
+classname                      CString    logic_relay
+origin                         CString    0.000000 0.000000 -16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1819
+_template_lump_ent_index       CString    1
+@OnSpawn OnlyOnce Kill !self
+@OnSpawn OnlyOnce Open [PR#]Heart_Rtv_2_3_D&0000
+

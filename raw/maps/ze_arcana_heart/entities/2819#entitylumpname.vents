@@ -1,0 +1,243 @@
+====0====
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S4_Trigger
+classname                      CString    trigger_once
+origin                         CString    22160.000000 -6352.000000 4168.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1432
+model                          CString    maps\ze_arcana_heart\entities\S4_Trigger_1432.vmdl
+_template_lump_ent_index       CString    0
+@OnTrigger FireUser1 [PR#]Map_Count_Particle
+@OnTrigger Delay=15 FireUser2 [PR#]S4_Door_5
+@OnTrigger Delay=15 FireUser2 [PR#]S4_Door_5_1
+
+====1====
+wait                           Float64    1
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S4_Trigger
+classname                      CString    trigger_multiple
+origin                         CString    24000.000000 -13872.000000 8.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1699
+model                          CString    maps\ze_arcana_heart\entities\S4_Trigger_1699.vmdl
+_template_lump_ent_index       CString    1
+@OnStartTouch KeyValue !activator origin 7232 -12288 6758
+@OnStartTouch TestActivator [PR#]Filter_T
+
+====2====
+wait                           Float64    1
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S4_Trigger
+classname                      CString    trigger_multiple
+origin                         CString    18880.000000 -14192.000000 8.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1712
+model                          CString    maps\ze_arcana_heart\entities\S4_Trigger_1712.vmdl
+_template_lump_ent_index       CString    2
+@OnStartTouch KeyValue !activator origin 5056 -12288 6758
+@OnStartTouch TestActivator [PR#]Filter_T
+
+====3====
+wait                           Float64    1
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S4_Trigger
+classname                      CString    trigger_multiple
+origin                         CString    28608.000000 -13008.000000 4152.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4086
+model                          CString    maps\ze_arcana_heart\entities\S4_Trigger_4086.vmdl
+_template_lump_ent_index       CString    3
+@OnStartTouch SetHealth !activator -1
+
+====4====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    999999
+damage                         Integer    999999
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S4_Trigger
+classname                      CString    trigger_hurt
+origin                         CString    29120.000000 -7120.000000 6730.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4101
+model                          CString    maps\ze_arcana_heart\entities\S4_Trigger_4101.vmdl
+_template_lump_ent_index       CString    4
+
+====5====
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S4_Trigger
+classname                      CString    trigger_once
+origin                         CString    29120.000000 -14992.000000 7672.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4104
+model                          CString    maps\ze_arcana_heart\entities\S4_Trigger_4104.vmdl
+_template_lump_ent_index       CString    5
+@OnTrigger Delay=7 OnlyOnce FireUser1 [PR#]S4_Train_Case
+@OnTrigger OnlyOnce Enable [PR#]S4_Final_Scene
+
+====6====
+wait                           Float64    1
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S4_Trigger_Final_Human
+classname                      CString    trigger_multiple
+origin                         CString    28608.000000 944.000000 -3848.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3853
+model                          CString    maps\ze_arcana_heart\entities\S4_Trigger_Final_Human_3853.vmdl
+_template_lump_ent_index       CString    6
+@OnTrigger OnlyOnce Kill [PR#]S4_Trigger_Final_Zombie
+@OnStartTouch AddContext !activator nuke:1
+@OnTrigger Delay=5 OnlyOnce SetValue [PR#]Map_Stage_Counter 8
+@OnTrigger Delay=5 OnlyOnce Trigger [PR#]Map_Nuke_Relay
+
+====7====
+filtername                     CString    [PR#]Filter_T
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S4_Trigger_Final_Zombie
+classname                      CString    trigger_once
+origin                         CString    29120.000000 -6320.000000 6936.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4096
+model                          CString    maps\ze_arcana_heart\entities\S4_Trigger_Final_Zombie_4096.vmdl
+_template_lump_ent_index       CString    7
+@OnTrigger OnlyOnce Kill [PR#]S4_Trigger_Final_Human
+@OnTrigger Delay=5.1 OnlyOnce SetValue [PR#]Map_Stage_Counter 4
+@OnTrigger Delay=5 OnlyOnce Trigger [PR#]Map_Nuke_Relay
+@OnTrigger OnlyOnce Command [PR#]Server say >>Stage Failed<<
+
+====8====
+max                            Integer    2
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Map_Trigger_Counter_S4_1
+classname                      CString    math_counter
+origin                         CString    21224.000000 -14552.000000 -464.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2070
+_template_lump_ent_index       CString    8
+@OnHitMax Kill !self
+@OnHitMax Delay=8 FireUser1 [PR#]Map_Count_Particle
+@OnHitMax Delay=23 Open [PR#]S4_Door_2
+@OnHitMax Delay=13 Enable [PR#]Map_Trigger_Counter_S4_2
+@OnHitMax Delay=23 FireUser1 [PR#]Map_Count_Particle
+@OnHitMax Delay=38 StartForward [PR#]S4_Door_2_1
+@OnHitMax Delay=34 Close [PR#]S4_Door_2_2
+@OnHitMax Delay=5 Stop [PR#]Map_Trigger_Particle
+@OnHitMax Start [PR#]Map_Trigger_Particle
+
+====9====
+max                            Integer    2
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Map_Trigger_Counter_S4_2
+classname                      CString    math_counter
+origin                         CString    20664.000000 -15576.000000 3520.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2050
+_template_lump_ent_index       CString    9
+@OnHitMax Kill !self
+@OnHitMax FireUser1 [PR#]Map_Count_Particle
+@OnHitMax Delay=15 Open [PR#]S4_Door_3
+@OnHitMax Delay=5 Enable [PR#]Map_Trigger_Counter_S4_3
+@OnHitMax Delay=5 Stop [PR#]Map_Trigger_Particle
+@OnHitMax Start [PR#]Map_Trigger_Particle
+
+====10====
+max                            Integer    3
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Map_Trigger_Counter_S4_3
+classname                      CString    math_counter
+origin                         CString    21064.000000 -12616.000000 4160.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2827
+_template_lump_ent_index       CString    10
+@OnHitMax Kill !self
+@OnHitMax Delay=20 FireUser1 [PR#]Map_Count_Particle
+@OnHitMax Delay=35 FireUser1 [PR#]S4_Door_4
+@OnHitMax Delay=5 Enable [PR#]Map_Trigger_Counter_S4_4
+@OnHitMax Delay=2 Kill [PR#]S4_Wall_1
+@OnHitMax Delay=6 Toggle [PR#]S4_Wall_2
+@OnHitMax Delay=40 Command [PR#]Server say >Maybe the cubes can be climbed<
+@OnHitMax Delay=5 Stop [PR#]Map_Trigger_Particle
+@OnHitMax Start [PR#]Map_Trigger_Particle
+
+====11====
+max                            Integer    2
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Map_Trigger_Counter_S4_4
+classname                      CString    math_counter
+origin                         CString    22312.000000 -8600.000000 4800.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1422
+_template_lump_ent_index       CString    11
+@OnHitMax Kill !self
+@OnHitMax Delay=5 FireUser1 [PR#]Map_Count_Particle
+@OnHitMax Delay=20 FireUser1 [PR#]S4_Door_5
+@OnHitMax Delay=5 Enable [PR#]Map_Trigger_Counter_S4_5
+@OnHitMax Delay=5 Stop [PR#]Map_Trigger_Particle
+@OnHitMax Start [PR#]Map_Trigger_Particle
+
+====12====
+max                            Integer    5
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Map_Trigger_Counter_S4_5
+classname                      CString    math_counter
+origin                         CString    25928.000000 -8344.000000 5120.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4393
+_template_lump_ent_index       CString    12
+@OnHitMax Kill !self
+@OnHitMax Delay=15 FireUser1 [PR#]Map_Count_Particle
+@OnHitMax Delay=30 Kill [PR#]S4_Door_6
+@OnHitMax Delay=35 Enable [PR#]S4_Tele_1
+@OnHitMax Delay=30 FireUser1 [PR#]Temp_S4_Boss
+@OnHitMax Delay=40 FireUser1 [PR#]S4_Afk_3
+@OnHitMax Delay=35 FireUser1 [PR#]S4_Bgm_2
+@OnHitMax Delay=32 Trigger [PR#]Boss_S4_Hp_Add_Relay
+@OnHitMax Delay=35.4 Disable [PR#]S4_Tele_1
+@OnHitMax Delay=5 Stop [PR#]Map_Trigger_Particle
+@OnHitMax Start [PR#]Map_Trigger_Particle
+@OnHitMax Delay=34 Enable [PR#]S4_Tele_1_Hp_Reset
+@OnHitMax Delay=36 Kill [PR#]S4_Tele_1_Hp_Reset
+

@@ -1,0 +1,57 @@
+====0====
+nointerpolate                  Boolean    False
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    0
+health                         Integer    4000
+propdata                       CString    0
+spawnflags                     Integer64  3072
+uselocaloffset                 Boolean    False
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+damagefilter                   CString    [PR#]Filter_CT
+targetname                     CString    [PR#]ZCube_Trigger
+classname                      CString    func_breakable
+origin                         CString    192.000000 0.000000 124.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2668
+model                          CString    maps\ze_arcana_heart\entities\ZCube_Trigger_2668.vmdl
+_template_lump_ent_index       CString    0
+@OnUser1 CountPlayersInZone [PR#]Map_ZMCube_Zone
+
+====1====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]ZCube_Relay
+classname                      CString    logic_relay
+origin                         CString    16.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2678
+_template_lump_ent_index       CString    1
+@OnSpawn Kill !self
+@OnSpawn FireUser1 [PR#]ZCube_Trigger
+@OnSpawn Delay=7 Kill [PR#]ZCube_*
+

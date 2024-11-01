@@ -1,0 +1,64 @@
+====0====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]i_xbarrel_trio_relay&0000
+classname                      CString    logic_relay
+origin                         CString    0.000000 0.000000 16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7
+_template_lump_ent_index       CString    0
+@OnSpawn OnlyOnce Kill [PR#]i_xbarrel_trio_relay&0000
+@OnSpawn Delay=0.1 OnlyOnce Kill [PR#]i_xbarrel_trio&0000
+@OnSpawn OnlyOnce ForceSpawn [PR#]i_xbarrel_trio&0000
+
+====1====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_exbarrel
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]i_xbarrel_trio&0000
+classname                      CString    env_entity_maker
+origin                         CString    -72.000000 64.000000 0.000000
+angles                         CString    -0.000000 -89.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8
+_template_lump_ent_index       CString    1
+
+====2====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_exbarrel
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]i_xbarrel_trio&0000
+classname                      CString    env_entity_maker
+origin                         CString    76.000000 76.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    9
+_template_lump_ent_index       CString    2
+
+====3====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_exbarrel
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]i_xbarrel_trio&0000
+classname                      CString    env_entity_maker
+origin                         CString    -76.000000 -84.000000 0.000000
+angles                         CString    -0.000000 45.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    10
+_template_lump_ent_index       CString    3
+

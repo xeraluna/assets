@@ -1,0 +1,191 @@
+====0====
+triggeronstarttouch            Boolean    False
+speed                          Integer    400
+pushdir                        Vector     <0, 180, 0>
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ZWater_Move
+targetname                     CString    [PR#]ZWater_Trigger
+classname                      CString    trigger_push
+origin                         CString    1160.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2879
+model                          CString    maps\ze_arcana_heart\entities\ZWater_Trigger_2879.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    6
+damage                         Integer    6
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ZWater_Move
+targetname                     CString    [PR#]ZWater_Trigger_2
+classname                      CString    trigger_hurt
+origin                         CString    1160.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2961
+model                          CString    maps\ze_arcana_heart\entities\ZWater_Trigger_2_2961.vmdl
+_template_lump_ent_index       CString    1
+@OnHurtPlayer Delay=0.49 KeyValue !activator speed 1
+@OnHurtPlayer KeyValue !activator speed 0.5
+
+====2====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 180, 0>
+loopmovesound                  Boolean    False
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+lip                            Integer    -1200
+wait                           Integer    -1
+dmg                            Integer    0
+speed                          Float64    128
+spawnflags                     Integer64  4108
+disableshadows                 CString    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNone
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ZWater_Move_Dy
+targetname                     CString    [PR#]ZWater_Move
+classname                      CString    func_door
+origin                         CString    1160.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2683
+model                          CString    maps\ze_arcana_heart\entities\ZWater_Move_2683.vmdl
+_template_lump_ent_index       CString    2
+@OnFullyOpen KillHierarchy !self
+@OnFullyOpen Delay=0.01 Kill [PR#]ZWater_*
+
+====3====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/arcana_items/custom_particle_125.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ZWater_Move
+targetname                     CString    [PR#]ZWater_Eff
+classname                      CString    info_particle_system
+origin                         CString    1160.000000 0.000000 0.000000
+angles                         CString    0.000000 -179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2682
+_template_lump_ent_index       CString    3
+
+====4====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+clothscale                     Float64    1
+startdisabled                  Boolean    True
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    2
+fademindist                    Float64    1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    0
+rendermode                     CString    kRenderNone
+renderfx                       CString    kRenderFxNone
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+skin                           CString    default
+model                          CString    models/luff_cv/target.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]ZWater_Move_Dy
+classname                      CString    prop_dynamic
+origin                         CString    1160.000000 0.000000 0.000000
+angles                         CString    0.000000 -179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    12102
+_template_lump_ent_index       CString    4
+
+====5====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]ZWater_Relay_1
+classname                      CString    logic_relay
+origin                         CString    1128.000000 0.000000 -184.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2675
+_template_lump_ent_index       CString    5
+@OnSpawn Delay=0.1 Open [PR#]ZWater_Move
+@OnSpawn Delay=0.1 Enable [PR#]ZWater_Trigger
+@OnSpawn Delay=0.1 Start [PR#]ZWater_Eff
+@OnSpawn Delay=0.1 Enable [PR#]ZWater_Trigger_2
+@OnSpawn Delay=0.1 StartSound [PR#]ZWater_Snd
+
+====6====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    Effect.Water
+sourceentityname               CString    [PR#]ZWater_Move
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]ZWater_Snd
+classname                      CString    point_soundevent
+origin                         CString    1160.000000 0.000000 16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2499
+_template_lump_ent_index       CString    6
+@OnUser1 PlaySound !self
+

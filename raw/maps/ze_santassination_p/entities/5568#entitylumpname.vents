@@ -1,0 +1,566 @@
+====0====
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_LOOPING
+idleanim                       CString    idle
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    idle
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    2
+skin                           CString    0
+model                          CString    models/luffaren/moonmonster.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]i_mm_phys&0000
+targetname                     CString    [PR#]i_mm_model&0000
+classname                      CString    prop_dynamic
+origin                         CString    0.000000 0.000000 168.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5546
+_template_lump_ent_index       CString    0
+
+====1====
+silenttozombies                Boolean    False
+exploitablebyplayer            CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+disablereceiveshadows          Boolean    False
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+physicsmode                    CString    1
+skippresettle                  Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+auto_convert_back_from_debris  Boolean    True
+nonavmeshblocker               Boolean    False
+forcenpcexclude                Boolean    False
+forcenavignore                 Boolean    False
+enableuseoutput                Boolean    False
+forcetoenablemotion            Float64    0
+damagetoenablemotion           Integer    0
+buoyancyscale                  Float64    1
+massscale                      Float64    0
+inertiascale                   Float64    1
+acceptdamagefromheldobjects    Boolean    False
+nodamageforces                 CString    0
+damagetype                     CString    0
+physdamagescale                Float64    0.10000000149011612
+shadowcastdist                 Integer    0
+minhealthdmg                   Integer    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer64  12
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    2
+skin                           CString    2
+model                          CString    models/luffaren/npc_phys_mm.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]i_mm_phys&0000
+classname                      CString    prop_physics_multiplayer
+origin                         CString    0.000000 0.000000 24.099609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    23858
+_template_lump_ent_index       CString    1
+@OnUser1 OnlyOnce FireUser3 [PR#]npc_ents4
+@OnUser1 Delay=10 OnlyOnce Kill !self
+@OnUser1 OnlyOnce Kill [PR#]npc_t_f4
+@OnUser1 OnlyOnce Kill [PR#]npc_t_s4
+@OnUser1 OnlyOnce Stop [PR#]npc_particle4
+@OnUser1 Delay=0.05 OnlyOnce Start [PR#]npc_particle4
+@OnUser1 Delay=0.05 OnlyOnce Kill [PR#]npc_ents4
+@OnUser1 OnlyOnce StopSound [PR#]npc_ents4
+@OnUser1 OnlyOnce Kill [PR#]npc_trigger4
+@OnUser1 OnlyOnce FireUser1 [PR#]npc_model4
+@OnUser1 Delay=5 OnlyOnce FireUser1 [PR#]present_fade_timer
+@OnUser1 Delay=0.5 OnlyOnce Kill [PR#]npc_particle4
+@OnUser1 Delay=0.05 OnlyOnce Kill [PR#]npc_ents4_fix
+
+====2====
+dampallrotation                Boolean    False
+angularlimit                   Float64    3000
+attach1                        CString    [PR#]i_mm_phys&0000
+spawnflags                     Integer    0
+targetname                     CString    [PR#]i_mm_upright&0000
+classname                      CString    phys_keepupright
+origin                         CString    0.000000 0.000000 72.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5567
+_template_lump_ent_index       CString    2
+
+====3====
+force                          CString    5000
+forcetime                      CString    0
+attach1                        CString    [PR#]i_mm_phys&0000
+spawnflags                     Integer64  26
+targetname                     CString    [PR#]i_mm_t_s&0000
+classname                      CString    phys_thruster
+origin                         CString    512.000000 0.000000 72.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5572
+_template_lump_ent_index       CString    3
+
+====4====
+force                          CString    25000
+forcetime                      CString    0
+attach1                        CString    [PR#]i_mm_phys&0000
+spawnflags                     Integer64  58
+targetname                     CString    [PR#]i_mm_t_f&0000
+classname                      CString    phys_thruster
+origin                         CString    0.000000 0.000000 72.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5571
+_template_lump_ent_index       CString    4
+
+====5====
+wait                           Float64    0
+filtername                     CString    [PR#]filter_npc_mm
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]i_mm_phys&0000
+targetname                     CString    [PR#]i_mm_trigger&0000
+classname                      CString    trigger_multiple
+origin                         CString    0.000000 0.000000 168.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5575
+model                          CString    maps\ze_santassination_p\entities\i_mm_trigger_5575.vmdl
+_template_lump_ent_index       CString    5
+@OnTrigger KeyValues [PR#]i_mm_t_s&0000 angles 0 270 0
+@OnTrigger Delay=0.01 Activate [PR#]i_mm_t_s&0000
+@OnTrigger Deactivate [PR#]i_mm_t_s&0000
+@OnTrigger KeyValues [PR#]i_mm_t_s_fix&0000 angles 0 270 0
+@OnTrigger Deactivate [PR#]i_mm_t_s_fix&0000
+@OnTrigger Delay=0.01 Activate [PR#]i_mm_t_s_fix&0000
+
+====6====
+wait                           Float64    0
+filtername                     CString    [PR#]filter_npc_mm
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]i_mm_phys&0000
+targetname                     CString    [PR#]i_mm_trigger&0000
+classname                      CString    trigger_multiple
+origin                         CString    0.000000 0.000000 168.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5577
+model                          CString    maps\ze_santassination_p\entities\i_mm_trigger_5577.vmdl
+_template_lump_ent_index       CString    6
+@OnTrigger Activate [PR#]i_mm_t_f&0000
+
+====7====
+wait                           Float64    0
+filtername                     CString    [PR#]filter_npc_mm
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]i_mm_phys&0000
+targetname                     CString    [PR#]i_mm_trigger&0000
+classname                      CString    trigger_multiple
+origin                         CString    0.000000 0.000000 168.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5579
+model                          CString    maps\ze_santassination_p\entities\i_mm_trigger_5579.vmdl
+_template_lump_ent_index       CString    7
+@OnTrigger Delay=0.01 Activate [PR#]i_mm_t_s&0000
+@OnTrigger KeyValues [PR#]i_mm_t_s&0000 angles 0 90 0
+@OnTrigger Deactivate [PR#]i_mm_t_s&0000
+@OnTrigger KeyValues [PR#]i_mm_t_s_fix&0000 angles 0 90 0
+@OnTrigger Deactivate [PR#]i_mm_t_s_fix&0000
+@OnTrigger Delay=0.01 Activate [PR#]i_mm_t_s_fix&0000
+
+====8====
+wait                           Float64    0.5
+filtername                     CString    [PR#]filter_ct
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]i_mm_phys&0000
+targetname                     CString    [PR#]i_mm_trigger&0000
+classname                      CString    trigger_multiple
+origin                         CString    0.000000 0.000000 168.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5584
+model                          CString    maps\ze_santassination_p\entities\i_mm_trigger_5584.vmdl
+_template_lump_ent_index       CString    8
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger Enable [PR#]i_mm_targettrigger&0000
+@OnTrigger Enable [PR#]i_mm_trigger&0000
+@OnTrigger Enable [PR#]i_mm_timer&0000
+@OnTrigger EnableMotion [PR#]i_mm_phys&0000
+@OnTrigger Enable [PR#]i_mm_timer_fix&0000
+@OnTrigger FireUser4 [PR#]i_mm_targettrigger&0000
+
+====9====
+wait                           Float64    0.5
+filtername                     CString    [PR#]filter_ct
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]i_mm_phys&0000
+targetname                     CString    [PR#]i_mm_trigger&0000
+classname                      CString    trigger_multiple
+origin                         CString    0.000000 0.000000 168.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5586
+model                          CString    maps\ze_santassination_p\entities\i_mm_trigger_5586.vmdl
+_template_lump_ent_index       CString    9
+@OnTrigger FireUser2 [PR#]i_mm_s_moods&0000
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger Skin [PR#]i_mm_model&0000 1
+
+====10====
+initialdelay                   Float64    0
+refiretime                     Float64    0.10000000149011612
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    False
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]i_mm_timer&0000
+classname                      CString    logic_timer
+origin                         CString    48.000000 0.000000 144.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5581
+_template_lump_ent_index       CString    10
+@OnTimer Deactivate [PR#]i_mm_t_f&0000
+@OnTimer Deactivate [PR#]i_mm_t_s&0000
+
+====11====
+wait                           Float64    0.5
+filtername                     CString    [PR#]filter_npc_fix
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]i_mm_phys&0000
+targetname                     CString    [PR#]i_mm_targettrigger&0000
+classname                      CString    trigger_multiple
+origin                         CString    0.000000 0.000000 168.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5582
+model                          CString    maps\ze_santassination_p\entities\i_mm_targettrigger_5582.vmdl
+_template_lump_ent_index       CString    11
+@OnTrigger Enable [PR#]i_mm_steptimer&0000
+@OnTrigger SetAnimationLooping [PR#]i_mm_model&0000 run
+@OnTrigger Delay=0.02 SetIdleAnimationLooping [PR#]i_mm_model&0000 run
+@OnTrigger Skin [PR#]i_mm_model&0000 2
+@OnTrigger Delay=0.02 FireUser3 [PR#]i_mm_s_moods&0000
+@OnTrigger FireUser3 [PR#]i_mm_s_moods&0000
+@OnTrigger Delay=7.02 SetIdleAnimationLooping [PR#]i_mm_model&0000 idle
+@OnTrigger Delay=7 Disable [PR#]i_mm_steptimer&0000
+@OnTrigger Delay=7 SetAnimationLooping [PR#]i_mm_model&0000 idle
+@OnTrigger Delay=7 Skin [PR#]i_mm_model&0000 1
+@OnTrigger Delay=7 FireUser2 [PR#]i_mm_s_moods&0000
+@Ontrigger Trigger [PR#]filter_mm_fix_relay
+@OnTrigger Disable !self
+@OnTrigger Delay=7 Enable !self
+@OnTrigger Delay=7.02 TouchTest !self
+@OnNotTouching CountPlayersInZone [PR#]filter_npc_cooldown_reset
+@OnUser4 TouchTest !self
+@OnUser4 Delay=0.5 FireUser4 !self
+
+====12====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.mm_friendly
+sourceentityname               CString    [PR#]i_mm_model&0000
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]i_mm_s_moods&0000
+classname                      CString    point_soundevent
+origin                         CString    0.000000 16.000000 432.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5591
+_template_lump_ent_index       CString    12
+@OnUser1 Delay=0.01 StartSound !self
+@OnUser1 StopSound [PR#]i_mm_s_moods&0000
+
+====13====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.mm_roar
+sourceentityname               CString    [PR#]i_mm_model&0000
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]i_mm_s_moods&0000
+classname                      CString    point_soundevent
+origin                         CString    0.000000 48.000000 432.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5592
+_template_lump_ent_index       CString    13
+@OnUser3 Delay=0.01 StartSound !self
+@OnUser3 StopSound [PR#]i_mm_s_moods&0000
+
+====14====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.mm_growl
+sourceentityname               CString    [PR#]i_mm_model&0000
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]i_mm_s_moods&0000
+classname                      CString    point_soundevent
+origin                         CString    0.000000 32.000000 432.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5593
+_template_lump_ent_index       CString    14
+@OnUser2 Delay=0.01 StartSound !self
+@OnUser2 StopSound [PR#]i_mm_s_moods&0000
+
+====15====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.bigstep
+sourceentityname               CString    [PR#]i_mm_model&0000
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]i_mm_s_run&0000
+classname                      CString    point_soundevent
+origin                         CString    72.000000 -48.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8547
+_template_lump_ent_index       CString    15
+@OnUser1 StartSound !self
+
+====16====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.mm_spaz1
+sourceentityname               CString    [PR#]i_mm_model&0000
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]i_mm_s_spaz&0000
+classname                      CString    point_soundevent
+origin                         CString    0.000000 64.000000 432.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5594
+_template_lump_ent_index       CString    16
+@OnUser1 StartSound !self
+
+====17====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.mm_spaz2
+sourceentityname               CString    [PR#]i_mm_model&0000
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]i_mm_s_spaz&0000
+classname                      CString    point_soundevent
+origin                         CString    0.000000 80.000000 432.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5595
+_template_lump_ent_index       CString    17
+@OnUser2 StartSound !self
+
+====18====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.mm_spaz3
+sourceentityname               CString    [PR#]i_mm_model&0000
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]i_mm_s_spaz&0000
+classname                      CString    point_soundevent
+origin                         CString    0.000000 96.000000 432.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5596
+_template_lump_ent_index       CString    18
+@OnUser3 StartSound !self
+
+====19====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    False
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.mm_spaz
+sourceentityname               CString    [PR#]i_mm_model&0000
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]i_mm_s_spaz&0000
+classname                      CString    point_soundevent
+origin                         CString    0.000000 64.000000 448.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8548
+_template_lump_ent_index       CString    19
+@OnUser1 StartSound !self
+
+====20====
+initialdelay                   Float64    0
+upperrandombound               Float64    0.30000001192092896
+lowerrandombound               Float64    0.10000000149011612
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    True
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]i_mm_steptimer&0000
+classname                      CString    logic_timer
+origin                         CString    72.000000 -48.000000 56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5590
+_template_lump_ent_index       CString    20
+@OnTimerHigh StartSound [PR#]i_mm_s_run&0000
+@OnTimerLow StartSound [PR#]i_mm_s_run&0000
+
+====21====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    True
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]i_mm_init&0000
+classname                      CString    logic_relay
+origin                         CString    96.000000 -32.000000 104.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5597
+_template_lump_ent_index       CString    21
+@OnSpawn OnlyOnce FireUser1 [PR#]i_mm_s_moods&0000
+@OnUser4 OnlyOnce Kill !self
+@OnUser4 Delay=0.05 OnlyOnce Kill [PR#]i_mm_s_moods&0000
+@OnUser4 OnlyOnce Kill [PR#]i_mm_s_run&0000
+@OnUser4 OnlyOnce Kill [PR#]i_mm_steptimer&0000
+@OnUser4 Delay=0.5 OnlyOnce Break [PR#]i_mm_phys&0000
+@OnUser4 OnlyOnce Kill [PR#]i_mm_timer&0000
+@OnUser4 OnlyOnce Kill [PR#]i_mm_t_s&0000
+@OnUser4 OnlyOnce Kill [PR#]i_mm_t_f&0000
+@OnUser4 OnlyOnce Kill [PR#]i_mm_upright&0000
+@OnUser4 ClearParent [PR#]i_mm_model&0000
+@OnUser4 SetAnimationLooping [PR#]i_mm_model&0000 spaz1
+@OnUser4 Delay=0.02 SetIdleAnimationLooping [PR#]i_mm_model&0000 spaz1
+@OnUser4 Delay=11 SetAnimationLooping [PR#]i_mm_model&0000 spaz1
+@OnUser4 Delay=11.2 SetIdleAnimationLooping [PR#]i_mm_model&0000 spaz1
+@OnUser1 Delay=10 OnlyOnce FireUser4 !self
+@OnUser1 Delay=0.05 StartSound [PR#]i_mm_s_moods&0000
+@OnUser1 Delay=0.05 StartSound [PR#]i_mm_s_spaz&0000
+@OnUser4 Delay=0.05 OnlyOnce Kill [PR#]i_mm_s_spaz&0000
+@OnUser4 OnlyOnce StopSound [PR#]i_mm_s_spaz&0000
+@OnUser4 OnlyOnce StopSound [PR#]i_mm_s_moods&0000
+@OnUser1 Delay=0.06 StartSound [PR#]i_mm_s_spaz&0000
+@OnUser1 Delay=0.06 StartSound [PR#]i_mm_s_moods&0000
+@OnSpawn FireUser1 [PR#]i_mm_targettrigger&0000
+@OnUser4 OnlyOnce Kill [PR#]i_mm_timer_fix&0000
+@OnUser4 OnlyOnce Kill [PR#]i_mm_t_s_fix&0000
+
+====22====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    20
+damage                         Integer    300
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]i_mm_phys&0000
+targetname                     CString    [PR#]i_mm_hurt&0000
+classname                      CString    trigger_hurt
+origin                         CString    0.000000 0.000000 136.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5573
+model                          CString    maps\ze_santassination_p\entities\i_mm_hurt_5573.vmdl
+_template_lump_ent_index       CString    22
+@OnHurtPlayer FireUser1 [PR#]filter_triggerhurt_no
+
+====23====
+initialdelay                   Float64    0
+refiretime                     Float64    0.10000000149011612
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    False
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]i_mm_timer_fix&0000
+classname                      CString    logic_timer
+origin                         CString    64.000000 0.000000 144.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    23845
+_template_lump_ent_index       CString    23
+@OnTimer Deactivate [PR#]i_mm_t_s_fix&0000
+
+====24====
+force                          CString    200
+forcetime                      CString    0
+attach1                        CString    [PR#]i_mm_phys&0000
+spawnflags                     Integer64  28
+targetname                     CString    [PR#]i_mm_t_s_fix&0000
+classname                      CString    phys_thruster
+origin                         CString    544.000000 0.000000 72.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    28523
+_template_lump_ent_index       CString    24
+

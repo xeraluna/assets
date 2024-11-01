@@ -1,0 +1,95 @@
+====0====
+flag_as_weather                CString    0
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    -1
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/8bit_particles/custom_particle_020.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Particle_ex&0000
+classname                      CString    info_particle_system
+origin                         CString    0.000000 0.000000 17.000002
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    11563
+_template_lump_ent_index       CString    0
+
+====1====
+ignoredclass                   Integer    0
+spawnflags                     Integer64  17
+iradiusoverride                Integer    0
+imagnitude                     Integer    50
+rendermode                     CString    kRenderTransAlpha
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Explo&0000
+classname                      CString    env_explosion
+origin                         CString    0.000000 0.000000 34.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    11566
+_template_lump_ent_index       CString    1
+
+====2====
+frequency                      Float64    115.11499786376953
+duration                       Float64    3
+radius                         Float64    10000
+amplitude                      Float64    15
+spawnflags                     Integer64  4
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shake_explosion&0000
+classname                      CString    env_shake
+origin                         CString    0.000000 17.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    11565
+_template_lump_ent_index       CString    2
+
+====3====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    Explode5
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Explosion_music_1&0000
+classname                      CString    point_soundevent
+origin                         CString    16.000000 0.000000 18.000002
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    11564
+_template_lump_ent_index       CString    3
+
+====4====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]logic_particle_exp&0000
+classname                      CString    logic_relay
+origin                         CString    0.000000 -16.197510 17.000002
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    11561
+_template_lump_ent_index       CString    4
+@OnSpawn Delay=0.01 Explode [PR#]Explo&0000
+@OnSpawn Delay=0.1 Start [PR#]Particle_ex&0000
+@OnSpawn Delay=0.03 StartShake [PR#]Shake_explosion&0000
+@OnSpawn Delay=3 OnlyOnce Kill [PR#]Shake_explosion&0000
+@OnSpawn Delay=3 Kill [PR#]Explo&0000
+@OnSpawn Delay=0.1 StartSound [PR#]Explosion_music_1&0000
+@OnSpawn Delay=3 Kill [PR#]Explosion_music_1&0000
+@OnSpawn Delay=3.01 OnlyOnce Kill !self
+@OnSpawn Delay=3 Kill [PR#]Particle_ex&0000
+

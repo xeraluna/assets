@@ -1,0 +1,123 @@
+====0====
+force                          CString    1500
+forcetime                      CString    0
+attach1                        CString    [PR#]Rocket
+spawnflags                     Integer64  59
+targetname                     CString    [PR#]Phys_rocket
+classname                      CString    phys_thruster
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 -89.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5132
+_template_lump_ent_index       CString    0
+
+====1====
+gibdir                         CString    0 0 0
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+notsolid                       CString    0
+preferredcarryangles           Vector     <0, 0, 0>
+enableuseoutput                Boolean    False
+forcetoenablemotion            Float64    0
+damagetoenablemotion           Integer    0
+massscale                      Float64    0
+damagetype                     CString    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    True
+explosion                      CString    0
+material                       CString    2
+health                         Integer    0
+propdata                       CString    0
+spawnflags                     Integer64  17409
+uselocaloffset                 Boolean    False
+performancemode                CString    1
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]Rocket
+classname                      CString    func_physbox
+origin                         CString    0.000000 -11.000000 0.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5125
+model                          CString    maps\ze_8bit\entities\Rocket_5125.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+fireballsprite                 CString    sprites/zerogxplode.spr
+ignoredclass                   Integer    0
+spawnflags                     Integer64  2
+iradiusoverride                Integer    0
+imagnitude                     Integer    200
+rendermode                     CString    kRenderTransAlpha
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rocket
+targetname                     CString    [PR#]Explosion_attack_rocket_boss3
+classname                      CString    env_explosion
+origin                         CString    0.000000 0.000000 7.031982
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5128
+_template_lump_ent_index       CString    2
+
+====3====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    True
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Relay_attcak_rocket
+classname                      CString    logic_relay
+origin                         CString    27.000000 4.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5133
+_template_lump_ent_index       CString    3
+@OnSpawn Delay=1 OnlyOnce Break [PR#]Rocket
+@OnSpawn Delay=1 OnlyOnce Explode [PR#]Explosion_attack_rocket_boss3
+@OnSpawn Delay=1.5 OnlyOnce Kill [PR#]Explosion_attack_rocket_boss3
+@OnSpawn Delay=1.5 OnlyOnce Kill [PR#]Phys_rocket
+@OnSpawn Delay=1.6 OnlyOnce Kill !self
+@OnSpawn Delay=1 OnlyOnce Start [PR#]Part_rocket2
+@OnSpawn Delay=1.5 OnlyOnce Kill [PR#]Part_rocket2
+
+====4====
+flag_as_weather                CString    0
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/8bit_particles/custom_particle_020.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rocket
+targetname                     CString    [PR#]Part_rocket2
+classname                      CString    info_particle_system
+origin                         CString    -2.000000 1.000000 -1.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    11503
+_template_lump_ent_index       CString    4
+

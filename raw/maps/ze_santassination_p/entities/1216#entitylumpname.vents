@@ -1,0 +1,569 @@
+====0====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    100000
+lip                            Integer    16
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.door_metal_gate_close1
+noise1                         CString    custom.sfx.doors.door_metal_gate_move2
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_elevatordoormain
+classname                      CString    func_door
+origin                         CString    4911.410156 -5528.000000 -15542.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3284
+model                          CString    maps\ze_santassination_p\entities\fs_elevatordoormain_3284.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+movesoundmaxtime               Float64    0
+movesoundmintime               Float64    0
+movesoundmaxpitch              Integer    200
+movesoundminpitch              Integer    60
+volume                         Integer    10
+stopsound                      CString    custom.sfx.doors.drawbridge_stop1
+movesound                      CString    custom.sfx.doors.drawbridge_move1
+bank                           CString    0
+height                         Integer    0
+wheels                         Integer    0
+orientationtype                CString    0
+velocitytype                   CString    0
+startspeed                     Integer    250
+target                         CString    [PR#]fs_finalelevator_p1
+spawnflags                     Integer64  531
+dmg                            Integer    100000
+speed                          Integer    0
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_finalelevator
+classname                      CString    func_tracktrain
+origin                         CString    -2660.000000 -6664.000000 -6726.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2701
+model                          CString    maps\ze_santassination_p\entities\fs_finalelevator_2701.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    10000
+lip                            Integer    512
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.door_metal_gate_close1
+noise1                         CString    custom.sfx.doors.gate_move1
+speed                          Float64    20
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_finalgate
+classname                      CString    func_door
+origin                         CString    663.500000 -6536.000000 -2310.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3149
+model                          CString    maps\ze_santassination_p\entities\fs_finalgate_3149.vmdl
+_template_lump_ent_index       CString    2
+@OnFullyClosed Delay=5 OnlyOnce FireUser1 [PR#]bosss_start1
+@OnFullyOpen Delay=15 OnlyOnce Close [PR#]fs_finalgate
+@OnFullyOpen Delay=15 OnlyOnce Command [PR#]server say ***FINAL GATE IS CLOSING***
+@OnFullyOpen Delay=10 OnlyOnce Command [PR#]server say ***FINAL GATE IS CLOSING IN 5 SECONDS***
+@OnFullyOpen OnlyOnce Command [PR#]server say ***FINAL GATE IS CLOSING IN 15 SECONDS***
+
+====3====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 180, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    10000
+lip                            Integer    256
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.door_metal_gate_close1
+noise1                         CString    custom.sfx.doors.gate_move1
+speed                          Float64    100
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_finalgatetruth
+classname                      CString    func_door
+origin                         CString    535.500000 -13192.000000 -22918.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3141
+model                          CString    maps\ze_santassination_p\entities\fs_finalgatetruth_3141.vmdl
+_template_lump_ent_index       CString    3
+
+====4====
+movesoundmaxtime               Float64    0
+movesoundmintime               Float64    0
+movesoundmaxpitch              Integer    200
+movesoundminpitch              Integer    60
+volume                         Integer    10
+stopsound                      CString    custom.sfx.doors.drawbridge_stop1
+movesound                      CString    custom.sfx.doors.drawbridge_move1
+bank                           CString    0
+height                         Integer    0
+wheels                         Integer    0
+orientationtype                CString    0
+velocitytype                   CString    0
+startspeed                     Integer    200
+target                         CString    [PR#]fs_firstelevator_p1
+spawnflags                     Integer64  531
+dmg                            Integer    100000
+speed                          Integer    0
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_firstelevator
+classname                      CString    func_tracktrain
+origin                         CString    -4260.000000 -9288.000000 -16470.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1293
+model                          CString    maps\ze_santassination_p\entities\fs_firstelevator_1293.vmdl
+_template_lump_ent_index       CString    4
+
+====5====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    10000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]fs_firstelevator
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]fs_firstelevator_break
+classname                      CString    func_breakable
+origin                         CString    -4260.000000 -9320.000000 -16342.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7894
+model                          CString    maps\ze_santassination_p\entities\fs_firstelevator_break_7894.vmdl
+_template_lump_ent_index       CString    5
+
+====6====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    100000
+lip                            Integer    0
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.door_metal_gate_close1
+noise1                         CString    custom.sfx.doors.door_metal_gate_move2
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_innerlowergate
+classname                      CString    func_door
+origin                         CString    -3123.500000 -7948.009766 -18374.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3266
+model                          CString    maps\ze_santassination_p\entities\fs_innerlowergate_3266.vmdl
+_template_lump_ent_index       CString    6
+
+====7====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    100000
+lip                            Integer    64
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.door_metal_gate_close1
+noise1                         CString    custom.sfx.doors.door_metal_gate_move2
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_inneruppergate
+classname                      CString    func_door
+origin                         CString    -2148.000000 -7335.500000 -14982.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3321
+model                          CString    maps\ze_santassination_p\entities\fs_inneruppergate_3321.vmdl
+_template_lump_ent_index       CString    7
+
+====8====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    100000
+lip                            Integer    0
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.door_metal_gate_close1
+noise1                         CString    custom.sfx.doors.door_metal_gate_move2
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_inneruppergate2
+classname                      CString    func_door
+origin                         CString    -2084.000000 -6895.500000 -11958.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3235
+model                          CString    maps\ze_santassination_p\entities\fs_inneruppergate2_3235.vmdl
+_template_lump_ent_index       CString    8
+@OnFullyOpen Delay=33 OnlyOnce FireUser1 [PR#]fs_outergate1
+@OnFullyOpen Delay=40 OnlyOnce FireUser1 [PR#]fs_outergate2
+@OnFullyOpen Delay=7 OnlyOnce FireUser1 [PR#]reindeer_2
+
+====9====
+movesoundmaxtime               Float64    0
+movesoundmintime               Float64    0
+movesoundmaxpitch              Integer    200
+movesoundminpitch              Integer    60
+volume                         Integer    10
+stopsound                      CString    custom.sfx.doors.drawbridge_stop1
+movesound                      CString    custom.sfx.doors.drawbridge_move1
+bank                           CString    0
+height                         Integer    0
+wheels                         Integer    0
+orientationtype                CString    0
+velocitytype                   CString    0
+startspeed                     Integer    375
+target                         CString    [PR#]fs_lowerelevator_p1
+spawnflags                     Integer64  531
+dmg                            Integer    100000
+speed                          Integer    0
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_lowerelevator
+classname                      CString    func_tracktrain
+origin                         CString    2364.000000 -7592.000000 -19382.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3197
+model                          CString    maps\ze_santassination_p\entities\fs_lowerelevator_3197.vmdl
+_template_lump_ent_index       CString    9
+
+====10====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    10000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]fs_lowerelevator
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]fs_lowerelevator_break
+classname                      CString    func_breakable
+origin                         CString    2472.000000 -7424.000000 -19222.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7897
+model                          CString    maps\ze_santassination_p\entities\fs_lowerelevator_break_7897.vmdl
+_template_lump_ent_index       CString    10
+
+====11====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    500
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]fs_lowerelevator_break2
+classname                      CString    func_breakable
+origin                         CString    -4260.000000 -9089.500000 -18500.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7880
+model                          CString    maps\ze_santassination_p\entities\fs_lowerelevator_break2_7880.vmdl
+_template_lump_ent_index       CString    11
+
+====12====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    100000
+lip                            Integer    128
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.door_metal_gate_close1
+noise1                         CString    custom.sfx.doors.door_metal_gate_move2
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_lowergate
+classname                      CString    func_door
+origin                         CString    -35.500000 -6824.000000 -18886.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3327
+model                          CString    maps\ze_santassination_p\entities\fs_lowergate_3327.vmdl
+_template_lump_ent_index       CString    12
+
+====13====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_npc_elv
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_lowernpcfall
+classname                      CString    env_entity_maker
+origin                         CString    1488.000000 -6552.000000 -16906.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3196
+_template_lump_ent_index       CString    13
+
+====14====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    1000000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]fs_mexisled_break
+classname                      CString    func_breakable
+origin                         CString    10284.000000 -12296.000000 -23518.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    609
+model                          CString    maps\ze_santassination_p\entities\fs_mexisled_break_609.vmdl
+_template_lump_ent_index       CString    14
+@OnBreak Delay=10 OnlyOnce FireUser2 [PR#]skybox_swapper_t_timer
+@OnBreak Delay=50 OnlyOnce FireUser1 [PR#]skybox_swapper_t_timer
+
+====15====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    20
+damage                         Integer    10000000
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_mexisled_hurt
+classname                      CString    trigger_hurt
+origin                         CString    10284.000000 -12296.000000 -23514.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    607
+model                          CString    maps\ze_santassination_p\entities\fs_mexisled_hurt_607.vmdl
+_template_lump_ent_index       CString    15
+

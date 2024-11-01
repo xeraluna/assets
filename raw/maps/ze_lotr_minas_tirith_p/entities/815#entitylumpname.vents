@@ -1,0 +1,124 @@
+====0====
+nointerpolate                  Boolean    False
+gibdir                         CString    0 0 0
+fadescale                      CString    1
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+notsolid                       CString    0
+preferredcarryangles           Vector     <0, 0, 0>
+enableuseoutput                Boolean    False
+forcetoenablemotion            Float64    0
+damagetoenablemotion           Integer    0
+massscale                      Float64    4.999999873689376E-05
+damagetype                     CString    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    0
+rendermode                     CString    10
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    True
+explosion                      CString    0
+material                       CString    1
+health                         Integer    480
+propdata                       CString    0
+spawnflags                     Integer64  1024
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+damagefilter                   CString    [PR#]nada
+targetname                     CString    [PR#]ph_barricade_16&0000
+classname                      CString    func_physbox
+origin                         CString    0.800781 -0.519775 8.500000
+angles                         CString    -0.000000 179.999954 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    773
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\ph_barricade_16_773.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+_minlight                      CString    0.000000
+fadescale                      CString    1
+maxanimtime                    CString    10
+maxdxlevel                     CString    0
+minanimtime                    CString    5
+mindxlevel                     CString    0
+randomanimation                CString    0
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    2250
+fademindist                    Float64    2000
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/props/cs_militia/toilet.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ph_barricade_16&0000
+targetname                     CString    [PR#]ph_barricade_prop_16&0000
+classname                      CString    prop_dynamic
+origin                         CString    -2.099609 -0.759766 -7.689941
+angles                         CString    -0.000000 179.999954 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2748
+_template_lump_ent_index       CString    1
+
+====2====
+initialdelay                   Float64    0
+refiretime                     Float64    2
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    False
+spawnflags                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]ph_barricade_16x&0000
+classname                      CString    logic_timer
+origin                         CString    18.000000 -2.000000 -4.379883
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    814
+_template_lump_ent_index       CString    2
+@OnTimer Kill !self
+@OnTimer Delay=100 Break [PR#]ph_barricade_16&0000
+@OnTimer SetDamageFilter [PR#]ph_barricade_16&0000
+@OnTimer DisableMotion [PR#]ph_barricade_16&0000
+

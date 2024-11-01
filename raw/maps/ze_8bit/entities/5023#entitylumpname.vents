@@ -1,0 +1,131 @@
+====0====
+canbepickedup                  Boolean    True
+spawnflags                     Integer    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <193, 36, 241>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+targetname                     CString    [PR#]Item_Mine
+classname                      CString    weapon_glock
+origin                         CString    -25.000000 -2.000000 10.580299
+angles                         Vector     <-0, 0, 0>
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5019
+_template_lump_ent_index       CString    0
+@OnPlayerPickup OnlyOnce Command [PR#]Cmd say ** Player has picked up Mine. **
+@OnPlayerPickup Delay=0.1 AddAttribute !activator Player_Mine
+
+====1====
+spawnflags                     Integer64  17409
+forcenpcexclude                Boolean    False
+lip                            Integer    0
+wait                           Float64    2
+speed                          Integer    0
+movedir                        Vector     <0, 0, 0>
+locked_sound                   CString    Buzz.off
+use_sound                      CString    Buzz
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Item_Mine
+targetname                     CString    [PR#]Button_Mine
+classname                      CString    func_button
+origin                         CString    -9.500000 -1.500000 62.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5020
+model                          CString    maps\ze_8bit\entities\Button_Mine_5020.vmdl
+_template_lump_ent_index       CString    1
+@OnPressed TestActivator [PR#]Filter_Mine
+
+====2====
+filterattribute                CString    Player_Mine
+negated                        CString    0
+targetname                     CString    [PR#]Filter_Mine
+classname                      CString    filter_activator_attribute_int
+origin                         CString    0.000000 0.000000 16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5022
+_template_lump_ent_index       CString    2
+@OnPass Delay=10 Unlock [PR#]Button_Mine
+@OnPass Delay=0.01 ForceSpawn [PR#]Maker_Mine
+@OnPass Lock [PR#]Button_Mine
+@OnPass Add [PR#]Counter_mine 1
+
+====3====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Template_Mine
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Item_Mine
+targetname                     CString    [PR#]Maker_Mine
+classname                      CString    env_entity_maker
+origin                         CString    12.000000 0.000000 31.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5024
+_template_lump_ent_index       CString    3
+
+====4====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+enableuseoutput                Boolean    False
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+uselocaloffset                 Boolean    False
+spawnobject                    CString    0
+spawnflags                     Integer64  52225
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+propdata                       CString    0
+pressuredelay                  Float64    0
+preferredcarryangles           Vector     <0, 0, 0>
+performancemode                CString    PM_NO_GIBS
+parentname                     CString    [PR#]Item_Mine
+notsolid                       CString    1
+nodamageforces                 Boolean    False
+material                       CString    8
+massscale                      Float64    0
+health                         Integer    0
+forcetoenablemotion            Float64    0
+explosion                      CString    0
+exploderadius                  Float64    0
+explodemagnitude               Integer    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+disablereceiveshadows          Boolean    False
+damagetype                     CString    0
+damagetoenablemotion           Integer    0
+targetname                     CString    [PR#]Mine
+classname                      CString    func_physbox
+origin                         CString    34.000000 -1.000000 47.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5025
+model                          CString    maps\ze_8bit\entities\Mine_5025.vmdl
+_template_lump_ent_index       CString    4
+

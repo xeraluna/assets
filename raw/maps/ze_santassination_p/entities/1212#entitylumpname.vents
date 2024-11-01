@@ -1,0 +1,661 @@
+====0====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    1000000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]truth_socrates3
+classname                      CString    func_breakable
+origin                         CString    9227.990234 -4872.000000 -24710.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5770
+model                          CString    maps\ze_santassination_p\entities\truth_socrates3_5770.vmdl
+_template_lump_ent_index       CString    0
+@OnBreak Delay=20 OnlyOnce FireUser1 [PR#]teleport_s4_12
+@OnBreak Delay=30 OnlyOnce ForceSpawn [PR#]npc_s5_6
+@OnBreak OnlyOnce ForceSpawn [PR#]truth_monster
+@OnBreak Delay=20 OnlyOnce PickRandom [PR#]truth_bridgebreak_case
+@OnBreak Delay=30 OnlyOnce PickRandom [PR#]truth_bridgebreak_case
+
+====1====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    1000000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]truth_socrates4
+classname                      CString    func_breakable
+origin                         CString    6716.000000 -4728.000000 -24550.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5654
+model                          CString    maps\ze_santassination_p\entities\truth_socrates4_5654.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    1000000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]truth_socrates5
+classname                      CString    func_breakable
+origin                         CString    10012.000000 -3160.000000 -24582.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5613
+model                          CString    maps\ze_santassination_p\entities\truth_socrates5_5613.vmdl
+_template_lump_ent_index       CString    2
+
+====3====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    1000000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]truth_socrates6
+classname                      CString    func_breakable
+origin                         CString    6940.000000 -9656.000000 -24646.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3683
+model                          CString    maps\ze_santassination_p\entities\truth_socrates6_3683.vmdl
+_template_lump_ent_index       CString    3
+@OnBreak Delay=30 OnlyOnce FireUser1 [PR#]teleport_s4_13
+
+====4====
+max                            Integer    3
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]truthmath
+classname                      CString    math_counter
+origin                         CString    1532.000000 -6600.000000 -2358.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3382
+_template_lump_ent_index       CString    4
+@OnHitMax OnlyOnce Enable [PR#]truth
+@OnHitMax Delay=10 OnlyOnce Command [PR#]server say ***YOU WANT TO STOP...***
+@OnHitMax Delay=8 OnlyOnce Command [PR#]server say ***YOU DO NOT WANT TO DO THIS ANYMORE...***
+@OnHitMax Delay=6 OnlyOnce Command [PR#]server say ***YOU FEEL LIKE THE WORLD IS GOING TO BREAK APART SOON...***
+@OnHitMax Delay=4 OnlyOnce Command [PR#]server say ***YOU SUDDENLY FEEL UNEASY ABOUT FACING SANTA...***
+@OnHitMax Delay=2 OnlyOnce Command [PR#]server say ***THE TRUE PATH IS CLEAR NOW***
+@OnHitMax Delay=6 OnlyOnce PickRandom [PR#]predator_horn
+@OnHitMax Delay=6 OnlyOnce Enable [PR#]predator_horn_timer
+@OnHitMax OnlyOnce Disable [PR#]truth_not
+@OnHitMax Delay=6 OnlyOnce Enable [PR#]SunTruth
+
+====5====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_healthkit
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_healthkit_spawn
+classname                      CString    env_entity_maker
+origin                         CString    -3908.000000 -7880.000000 -11582.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3364
+_template_lump_ent_index       CString    5
+
+====6====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_healthkit
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_healthkit_spawn
+classname                      CString    env_entity_maker
+origin                         CString    -4740.000000 -11080.000000 -10430.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3061
+_template_lump_ent_index       CString    6
+
+====7====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_healthkit
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_healthkit_spawn
+classname                      CString    env_entity_maker
+origin                         CString    -644.000000 -9096.000000 -11582.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3060
+_template_lump_ent_index       CString    7
+
+====8====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_healthkit
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_healthkit_spawn
+classname                      CString    env_entity_maker
+origin                         CString    -2244.000000 -7160.000000 -18558.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3059
+_template_lump_ent_index       CString    8
+
+====9====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_healthkit
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_healthkit_spawn
+classname                      CString    env_entity_maker
+origin                         CString    -392.526001 -5588.810059 -15166.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3058
+_template_lump_ent_index       CString    9
+
+====10====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_speeder
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]items_s5
+classname                      CString    env_entity_maker
+origin                         CString    9373.019531 -6673.689941 -25406.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2762
+_template_lump_ent_index       CString    10
+
+====11====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_speeder
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]items_s5
+classname                      CString    env_entity_maker
+origin                         CString    4315.209961 -6274.629883 -24766.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2731
+_template_lump_ent_index       CString    11
+
+====12====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_speeder
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]items_s5
+classname                      CString    env_entity_maker
+origin                         CString    3402.000000 -15398.000000 -23246.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    554
+_template_lump_ent_index       CString    12
+
+====13====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_speeder
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]items_s5
+classname                      CString    env_entity_maker
+origin                         CString    3932.000000 -13196.000000 -23358.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    555
+_template_lump_ent_index       CString    13
+
+====14====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_speeder
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]items_s5
+classname                      CString    env_entity_maker
+origin                         CString    5340.000000 -12360.000000 -23120.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    556
+_template_lump_ent_index       CString    14
+
+====15====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_speeder
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]items_s5
+classname                      CString    env_entity_maker
+origin                         CString    4435.290039 -14536.900391 -23614.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    557
+_template_lump_ent_index       CString    15
+
+====16====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_speeder
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]items_s5
+classname                      CString    env_entity_maker
+origin                         CString    4668.000000 -14536.000000 -23614.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    558
+_template_lump_ent_index       CString    16
+
+====17====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_speeder
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]items_s5
+classname                      CString    env_entity_maker
+origin                         CString    8828.000000 -14078.000000 -24154.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    559
+_template_lump_ent_index       CString    17
+
+====18====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_speeder
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]items_s5
+classname                      CString    env_entity_maker
+origin                         CString    8872.000000 -12414.000000 -24154.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    560
+_template_lump_ent_index       CString    18
+
+====19====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_speeder
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]items_s5
+classname                      CString    env_entity_maker
+origin                         CString    10461.400391 -12682.099609 -24062.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    561
+_template_lump_ent_index       CString    19
+
+====20====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_speeder
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]items_s5
+classname                      CString    env_entity_maker
+origin                         CString    12360.000000 -12408.400391 -23782.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    562
+_template_lump_ent_index       CString    20
+
+====21====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_speeder
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]items_s5
+classname                      CString    env_entity_maker
+origin                         CString    12682.200195 -7861.129883 -24894.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    563
+_template_lump_ent_index       CString    21
+
+====22====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_speeder
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]items_s5
+classname                      CString    env_entity_maker
+origin                         CString    13973.200195 -8402.950195 -24126.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    564
+_template_lump_ent_index       CString    22
+
+====23====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_speeder
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]items_s5
+classname                      CString    env_entity_maker
+origin                         CString    11165.299805 -6222.120117 -23358.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    565
+_template_lump_ent_index       CString    23
+
+====24====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_speeder
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]items_s5
+classname                      CString    env_entity_maker
+origin                         CString    11121.599609 -4726.220215 -25022.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    566
+_template_lump_ent_index       CString    24
+
+====25====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_speeder
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]items_s5
+classname                      CString    env_entity_maker
+origin                         CString    8831.230469 -6283.479980 -24894.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    567
+_template_lump_ent_index       CString    25
+
+====26====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_speeder
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]items_s5
+classname                      CString    env_entity_maker
+origin                         CString    8538.190430 -10505.500000 -24894.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    568
+_template_lump_ent_index       CString    26
+
+====27====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_speeder
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]items_s5
+classname                      CString    env_entity_maker
+origin                         CString    7832.459961 -7647.890137 -25662.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    569
+_template_lump_ent_index       CString    27
+
+====28====
+snapshot_mesh                  Integer    0
+alphascale                     Float64    1
+selfillumscale                 Float64    1
+colortint                      Vector     <255, 255, 255>
+scale                          Float64    2.5
+start_active                   Boolean    True
+effect_textureoverride         CString    materials/luffaren/mufasa_dead_color_tga_ce415b08.vtex
+effect_name                    CString    particles/pingas/env_light_glow_parentable_autism.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truthmufasatruth
+classname                      CString    env_particle_glow
+origin                         CString    10268.000000 2104.000000 -24862.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2673
+_template_lump_ent_index       CString    28
+
+====29====
+triggeronstarttouch            Boolean    False
+speed                          Integer    500
+pushdir                        Vector     <0, 90, 0>
+filtername                     CString    [PR#]filter_ct
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truthwinpush_ct
+classname                      CString    trigger_push
+origin                         CString    10268.000000 -2376.000000 -24966.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3339
+model                          CString    maps\ze_santassination_p\entities\truthwinpush_ct_3339.vmdl
+_template_lump_ent_index       CString    29
+
+====30====
+triggeronstarttouch            Boolean    False
+speed                          Integer    500
+pushdir                        Vector     <0, 270, 0>
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truthwinpush_t
+classname                      CString    trigger_push
+origin                         CString    10268.000000 2552.000000 -24966.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3337
+model                          CString    maps\ze_santassination_p\entities\truthwinpush_t_3337.vmdl
+_template_lump_ent_index       CString    30
+
+====31====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.truth_win.global
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]music_truth_win
+classname                      CString    point_soundevent
+origin                         CString    156.000000 120.000000 -14.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    51
+_template_lump_ent_index       CString    31
+@OnUser1 StartSound !self
+@OnUser1 StartSound !self
+@OnUser2 StopSound !self
+@OnUser2 StopSound !self
+
+====32====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.sleigh
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sound_truthfade
+classname                      CString    point_soundevent
+origin                         CString    44.000000 200.000000 58.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2750
+_template_lump_ent_index       CString    32
+@OnUser1 Delay=0.05 StartSound !self
+@OnUser1 Delay=0.05 StartSound !self
+@OnUser1 StopSound !self
+
+====33====
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]tele_truth
+classname                      CString    info_teleport_destination
+origin                         CString    1436.000000 -13256.000000 -22974.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3171
+_template_lump_ent_index       CString    33
+
+====34====
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]tele_truthz
+classname                      CString    info_teleport_destination
+origin                         CString    2236.000000 -13256.000000 -22646.000000
+angles                         CString    0.000000 -179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3175
+_template_lump_ent_index       CString    34
+

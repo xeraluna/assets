@@ -1,0 +1,251 @@
+====0====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+randomanimation                CString    0
+minanimtime                    CString    5
+maxanimtime                    CString    10
+holdanimation                  CString    0
+fadescale                      CString    1
+animateeveryframe              CString    0
+health                         Integer    0
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    1
+fademindist                    Float64    2
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    0
+rendermode                     CString    10
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+skin                           CString    0
+model                          CString    models/lotr/debris_group_combo_2_go.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_1_cheap_1
+classname                      CString    prop_dynamic_override
+origin                         CString    0.400391 -0.560059 0.339844
+angles                         CString    -0.000000 -90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    941
+_template_lump_ent_index       CString    0
+@OnBreak StartShake [PR#]global_shake_catapult
+@OnBreak PickRandom [PR#]global_case_sound_cat
+@OnBreak StopSound [PR#]global_sound_fallin2 0
+@OnBreak Start [PR#]newH_stage_1_cheap_16x
+
+====1====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_1_path_cheap
+classname                      CString    path_track
+origin                         CString    -2.700195 1.810059 -23.910156
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    943
+_template_lump_ent_index       CString    1
+@OnPass StopSound [PR#]global_sound_fallin2 0
+@OnPass PickRandom [PR#]global_case_sound_cat
+@OnPass StartShake [PR#]global_shake_catapult
+@OnPass Break [PR#]stage_1_cheap_1
+@OnPass Kill [PR#]stage_1_path_cheap
+@OnPass Kill [PR#]stage_1_path_cheap_2
+@OnPass Kill [PR#]stage_1_cheap_5
+@OnPass Break [PR#]stage_1_cheap_4
+@OnPass Delay=1 Kill [PR#]newH_stage_1_cheap_16x
+@OnPass Kill [PR#]stage_1_cheap_2
+@OnPass Kill [PR#]stage_1_cheap_6
+@OnPass Delay=0.02 Kill [PR#]stage_1_cheap_3
+
+====2====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    True
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]stage_1_cheap_4
+classname                      CString    logic_relay
+origin                         CString    -1276.900391 8.489990 3562.040039
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    72
+_template_lump_ent_index       CString    2
+@OnSpawn Kill !self
+@OnSpawn Delay=1 TurnOn [PR#]stage_1_cheap_6
+@OnSpawn Delay=0.1 StartForward [PR#]stage_1_cheap_3
+@OnSpawn StartSound [PR#]global_sound_fallin2
+
+====3====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+randomanimation                CString    0
+minanimtime                    CString    5
+maxanimtime                    CString    10
+holdanimation                  CString    0
+fadescale                      CString    1
+animateeveryframe              CString    0
+health                         Integer    0
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    5179
+fademindist                    Float64    4921
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+damagefilter                   CString    [PR#]humanos
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/lotr/minas_roca1_br_go.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]stage_1_cheap_3
+targetname                     CString    [PR#]stage_1_cheap_4
+classname                      CString    prop_dynamic_override
+origin                         CString    -1286.900391 -0.589966 3529.419922
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    380
+_template_lump_ent_index       CString    3
+
+====4====
+fadescale                      CString    1
+movesoundmaxtime               Float64    0
+movesoundmintime               Float64    0
+movesoundmaxpitch              Integer    200
+movesoundminpitch              Integer    60
+volume                         Integer    10
+dmg                            Integer    0
+bank                           CString    0
+height                         Integer    4
+wheels                         Integer    50
+orientationtype                CString    1
+velocitytype                   CString    0
+speed                          Integer    0
+startspeed                     Integer    3000
+target                         CString    [PR#]stage_1_path_cheap_2
+spawnflags                     Integer64  522
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_1_cheap_3
+classname                      CString    func_tracktrain
+origin                         CString    -1294.000000 14.000000 3565.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    382
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_1_cheap_3_382.vmdl
+_template_lump_ent_index       CString    4
+
+====5====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]stage_1_path_cheap
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_1_path_cheap_2
+classname                      CString    path_track
+origin                         CString    -1309.900391 8.709961 3564.519531
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    381
+_template_lump_ent_index       CString    5
+
+====6====
+parentname                     CString    stage_1_cheap_3
+damagetype                     CString    0
+damagedelay                    Float64    0
+damage                         Integer    420
+damageradius                   Float64    192
+targetname                     CString    [PR#]stage_1_cheap_6
+classname                      CString    point_hurt
+origin                         CString    -1294.000000 13.000000 3564.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    21836
+_template_lump_ent_index       CString    6
+
+====7====
+flag_as_weather                CString    0
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/minasparticles/custom_particle_007.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]newH_stage_1_cheap_16x
+classname                      CString    info_particle_system
+origin                         CString    6.500000 -5.300049 21.879883
+angles                         CString    -0.000000 -90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3018
+_template_lump_ent_index       CString    7
+

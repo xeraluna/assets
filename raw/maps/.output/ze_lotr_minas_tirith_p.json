@@ -1,0 +1,486 @@
+[
+    {
+        "name": "new1_stage_2_short_torch&0000",
+        "shortname": "new1_stage_2_short_torch&0000",
+        "hammerid": "731",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "nnew1_stage_2_short_torch&0000",
+        "shortname": "nnew1_stage_2_short_torch&0000",
+        "hammerid": "734",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "prop_explosive_temp2&0000",
+        "shortname": "prop_explosive_temp2&0000",
+        "hammerid": "736",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "249",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "item_armor_2_c&0000",
+        "shortname": "item_armor_2_c&0000",
+        "hammerid": "145",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "item_troll_1_2&0000",
+        "shortname": "item_troll_1_2&0000",
+        "hammerid": "348",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "item_flag_1&0000",
+        "shortname": "item_flag_1&0000",
+        "hammerid": "901",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "newH_item_horse_2&0000",
+        "shortname": "newH_item_horse_2&0000",
+        "hammerid": "675",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "item_totem_1&0000",
+        "shortname": "item_totem_1&0000",
+        "hammerid": "900",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "item_supply_s3",
+        "shortname": "item_supply_s3",
+        "hammerid": "353",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "stage_1_barricade_1_1&0000",
+        "shortname": "stage_1_barricade_1_1&0000",
+        "hammerid": "749",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "227",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "stage_1_barricade_1_14&0000",
+        "shortname": "stage_1_barricade_1_14&0000",
+        "hammerid": "753",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "247",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "stage_1_barricade_1_5&0000",
+        "shortname": "stage_1_barricade_1_5&0000",
+        "hammerid": "750",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "243",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "stage_1_barricade_1_8&0000",
+        "shortname": "stage_1_barricade_1_8&0000",
+        "hammerid": "751",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "231",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "stage_1_barricade_1_20&0000",
+        "shortname": "stage_1_barricade_1_20&0000",
+        "hammerid": "754",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "233",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "stage_1_barricade_1_11&0000",
+        "shortname": "stage_1_barricade_1_11&0000",
+        "hammerid": "752",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "229",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "stage_1_barricade_1_29&0000",
+        "shortname": "stage_1_barricade_1_29&0000",
+        "hammerid": "755",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "245",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "stage_1_barricade_1_35&0000",
+        "shortname": "stage_1_barricade_1_35&0000",
+        "hammerid": "756",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "225",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "stage_1_barricade_1_38&0000",
+        "shortname": "stage_1_barricade_1_38&0000",
+        "hammerid": "757",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "239",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "stage_1_barricade_1_41&0000",
+        "shortname": "stage_1_barricade_1_41&0000",
+        "hammerid": "758",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "241",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "stage_1_barricade_1_44&0000",
+        "shortname": "stage_1_barricade_1_44&0000",
+        "hammerid": "759",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "235",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "stage_1_barricade_1_47&0000",
+        "shortname": "stage_1_barricade_1_47&0000",
+        "hammerid": "760",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "237",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "item_nazgul_5&0000",
+        "shortname": "item_nazgul_5&0000",
+        "hammerid": "395",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "item_escalera_1",
+        "shortname": "item_escalera_1",
+        "hammerid": "157",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "item_escalera_1_2",
+        "shortname": "item_escalera_1_2",
+        "hammerid": "167",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "item_supply_1",
+        "shortname": "item_supply_1",
+        "hammerid": "351",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "item_gandalf",
+        "shortname": "item_gandalf",
+        "hammerid": "683",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "item_goliath",
+        "shortname": "item_goliath",
+        "hammerid": "695",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "30461",
+                "event": "OnPressed",
+                "mode": 9,
+                "cooldown": 99,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "item_balrog",
+        "shortname": "item_balrog",
+        "hammerid": "716",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "item_oil_1",
+        "shortname": "item_oil_1",
+        "hammerid": "865",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "item_tnt_1",
+        "shortname": "item_tnt_1",
+        "hammerid": "1117",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    }
+]

@@ -1,0 +1,87 @@
+====0====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+_minlight                      CString    0.000000
+defaultanim                    CString    strong_wind
+fadescale                      CString    1
+maxanimtime                    CString    10
+maxdxlevel                     CString    0
+minanimtime                    CString    5
+mindxlevel                     CString    0
+randomanimation                CString    0
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    strong_wind
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/pmodels/props/archi/l11/l11_banner.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_flag_1&0000
+targetname                     CString    [PR#]item_flag_1_1&0000
+classname                      CString    prop_dynamic
+origin                         CString    -11.469727 -2.000000 79.000000
+angles                         CString    -0.000000 -88.000008 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2824
+_template_lump_ent_index       CString    0
+
+====1====
+fadescale                      CString    1
+disableshadows                 CString    0
+_minlight                      CString    0.000000
+canbepickedup                  Boolean    True
+spawnflags                     Integer    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+targetname                     CString    [PR#]item_flag_1&0000
+classname                      CString    weapon_knife
+origin                         CString    -5.000000 0.099976 -1.599609
+angles                         Vector     <-0, 0, 0>
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    901
+_template_lump_ent_index       CString    1
+@OnPlayerPickup OnlyOnce KeyValues !activator health 200
+@OnPlayerPickup OnlyOnce Add [PR#]h_t_flag_c 1
+@OnPlayerPickup OnlyOnce KeyValues !activator max_health 200
+@OnPlayerPickup AddOutput !activator OnKilled>resetplayeritem>Trigger>>3>1
+

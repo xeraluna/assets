@@ -1,0 +1,864 @@
+====0====
+filterteam                     CString    3
+negated                        CString    0
+targetname                     CString    [PR#]Boss_S2_Hp_Add
+classname                      CString    filter_activator_team
+origin                         CString    0.000000 64.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2759
+_template_lump_ent_index       CString    0
+@OnPass Add [PR#]Boss_S2_Hp_Main 40
+
+====1====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    64
+speed                          Integer    16
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <-90, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNone
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Boss_S2_Move_5
+classname                      CString    func_movelinear
+origin                         CString    -36.000000 -32.000000 744.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2643
+model                          CString    maps\ze_arcana_heart\entities\Boss_S2_Move_5_2643.vmdl
+_template_lump_ent_index       CString    1
+@OnUser1 Open !self
+@OnFullyOpen Close !self
+@OnFullyClosed Open !self
+
+====2====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Ball_3
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_2
+targetname                     CString    [PR#]Boss_S2_Maker_2
+classname                      CString    env_entity_maker
+origin                         CString    -28.000000 -40.000000 744.000000
+angles                         CString    -0.000000 -45.000004 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1246
+_template_lump_ent_index       CString    2
+
+====3====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Ball_3
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_2
+targetname                     CString    [PR#]Boss_S2_Maker_2
+classname                      CString    env_entity_maker
+origin                         CString    -44.000000 -24.000000 744.000000
+angles                         CString    -0.000000 135.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1521
+_template_lump_ent_index       CString    3
+
+====4====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Ball_3
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_2
+targetname                     CString    [PR#]Boss_S2_Maker_2
+classname                      CString    env_entity_maker
+origin                         CString    -44.000000 -40.000000 744.000000
+angles                         CString    0.000000 -135.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1528
+_template_lump_ent_index       CString    4
+
+====5====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Ball_3
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_2
+targetname                     CString    [PR#]Boss_S2_Maker_2
+classname                      CString    env_entity_maker
+origin                         CString    -36.000000 -40.000000 744.000000
+angles                         CString    -0.000000 -90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1692
+_template_lump_ent_index       CString    5
+
+====6====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Ball_3
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_2
+targetname                     CString    [PR#]Boss_S2_Maker_2
+classname                      CString    env_entity_maker
+origin                         CString    -28.000000 -32.000000 744.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2973
+_template_lump_ent_index       CString    6
+
+====7====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Ball_3
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_2
+targetname                     CString    [PR#]Boss_S2_Maker_2
+classname                      CString    env_entity_maker
+origin                         CString    -44.000000 -32.000000 744.000000
+angles                         CString    0.000000 -179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3031
+_template_lump_ent_index       CString    7
+
+====8====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Ball_3
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_2
+targetname                     CString    [PR#]Boss_S2_Maker_2
+classname                      CString    env_entity_maker
+origin                         CString    -36.000000 -24.000000 744.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3479
+_template_lump_ent_index       CString    8
+
+====9====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Ball_3
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_2
+targetname                     CString    [PR#]Boss_S2_Maker_2
+classname                      CString    env_entity_maker
+origin                         CString    -28.000000 -24.000000 744.000000
+angles                         CString    -0.000000 45.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4220
+_template_lump_ent_index       CString    9
+
+====10====
+initialdelay                   Float64    0
+upperrandombound               Float64    8
+lowerrandombound               Float64    2
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    True
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Boss_S2_Timer_1
+classname                      CString    logic_timer
+origin                         CString    16.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3768
+_template_lump_ent_index       CString    10
+@OnTimer OnlyOnce FireUser1 [PR#]S2_Door_9
+@OnTimer OnlyOnce Kill !self
+
+====11====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    544
+speed                          Integer    840
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNone
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_1
+targetname                     CString    [PR#]Boss_S2_Move_4
+classname                      CString    func_movelinear
+origin                         CString    -4.000000 -32.000000 -4.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1662
+model                          CString    maps\ze_arcana_heart\entities\Boss_S2_Move_4_1662.vmdl
+_template_lump_ent_index       CString    11
+@OnUser1 Open !self
+@OnFullyOpen Close !self
+@OnFullyClosed Open !self
+
+====12====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Beam_2
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_3
+targetname                     CString    [PR#]Boss_S2_Maker_3
+classname                      CString    env_entity_maker
+origin                         CString    -20.000000 -32.000000 712.000000
+angles                         CString    0.000000 -179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3040
+_template_lump_ent_index       CString    12
+
+====13====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Beam_2
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_3
+targetname                     CString    [PR#]Boss_S2_Maker_3
+classname                      CString    env_entity_maker
+origin                         CString    -36.000000 -48.000000 712.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3042
+_template_lump_ent_index       CString    13
+
+====14====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Beam_2
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_3
+targetname                     CString    [PR#]Boss_S2_Maker_3
+classname                      CString    env_entity_maker
+origin                         CString    -36.000000 -16.000000 712.000000
+angles                         CString    -0.000000 -90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3750
+_template_lump_ent_index       CString    14
+
+====15====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Beam_2
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_3
+targetname                     CString    [PR#]Boss_S2_Maker_3
+classname                      CString    env_entity_maker
+origin                         CString    -52.000000 -32.000000 712.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4910
+_template_lump_ent_index       CString    15
+
+====16====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Boss_S2_Death_Relay_True
+classname                      CString    logic_relay
+origin                         CString    0.000000 32.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2493
+_template_lump_ent_index       CString    16
+@OnTrigger FireUser1 [PR#]S2_Fall_Tele_4
+@OnTrigger Delay=8 Kill [PR#]S2_Door_9
+@OnTrigger Delay=2 Open [PR#]S2_Scene_Move_1
+@OnTrigger Delay=14 Kill [PR#]S2_Wall_2
+@OnUser1 Delay=14 Teleport [PR#]S2_Tele_Des_3
+@OnTrigger Delay=8 FireUser1 [PR#]S2_Bgm_3
+@OnTrigger SetValue [PR#]S2_End_Trigger_Branch 1
+@OnTrigger Kill [PR#]Boss_S2_*
+@OnTrigger StopPlayEndCap [PR#]S2_Bgm_Lyric_Text
+@OnTrigger Kill [PR#]S2_Bgm_Lyric_Count
+@OnTrigger Kill [PR#]S2_Bgm_Lyric_Timer
+@OnTrigger Delay=0.02 Kill [PR#]S2_Bgm_Lyric_Text
+
+====17====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer64  513
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    200
+disableshadows                 CString    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNone
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Move_5
+targetname                     CString    [PR#]Boss_S2_Rota_2
+classname                      CString    func_rotating
+origin                         CString    -36.000000 -32.000000 748.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2976
+model                          CString    maps\ze_arcana_heart\entities\Boss_S2_Rota_2_2976.vmdl
+_template_lump_ent_index       CString    17
+
+====18====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    544
+speed                          Integer    544
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 90, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNone
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_1
+targetname                     CString    [PR#]Boss_S2_Move_1
+classname                      CString    func_movelinear
+origin                         CString    -36.000000 0.000000 -4.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2897
+model                          CString    maps\ze_arcana_heart\entities\Boss_S2_Move_1_2897.vmdl
+_template_lump_ent_index       CString    18
+@OnUser1 Open !self
+@OnFullyOpen Close !self
+@OnFullyClosed Open !self
+
+====19====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Ball_4
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_3
+targetname                     CString    [PR#]Boss_S2_Maker_4
+classname                      CString    env_entity_maker
+origin                         CString    -28.000000 -40.000000 776.000000
+angles                         CString    -0.000000 -45.000004 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1322
+_template_lump_ent_index       CString    19
+
+====20====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Ball_4
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_3
+targetname                     CString    [PR#]Boss_S2_Maker_4
+classname                      CString    env_entity_maker
+origin                         CString    -28.000000 -24.000000 776.000000
+angles                         CString    -0.000000 45.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3466
+_template_lump_ent_index       CString    20
+
+====21====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Ball_4
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_3
+targetname                     CString    [PR#]Boss_S2_Maker_4
+classname                      CString    env_entity_maker
+origin                         CString    -44.000000 -40.000000 776.000000
+angles                         CString    0.000000 -135.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3481
+_template_lump_ent_index       CString    21
+
+====22====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Ball_4
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_3
+targetname                     CString    [PR#]Boss_S2_Maker_4
+classname                      CString    env_entity_maker
+origin                         CString    -44.000000 -24.000000 776.000000
+angles                         CString    -0.000000 135.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4385
+_template_lump_ent_index       CString    22
+
+====23====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer64  515
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    180
+disableshadows                 CString    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNone
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Boss_S2_Rota_3
+classname                      CString    func_rotating
+origin                         CString    -36.000000 -32.000000 728.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3755
+model                          CString    maps\ze_arcana_heart\entities\Boss_S2_Rota_3_3755.vmdl
+_template_lump_ent_index       CString    23
+
+====24====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Boss_S2_Death_Relay_False
+classname                      CString    logic_relay
+origin                         CString    16.000000 32.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4705
+_template_lump_ent_index       CString    24
+@OnTrigger Delay=2 FireUser1 [PR#]S2_Torch_2
+@OnTrigger CancelPending [PR#]S2_Boss_Failed_Kill
+@OnTrigger Delay=0.02 Kill [PR#]S2_Boss_Failed_Kill
+@OnUser1 Delay=14 Teleport [PR#]S2_Tele_Des_3
+@OnTrigger Delay=14 Kill [PR#]S2_Wall_2
+@OnTrigger Delay=8 FireUser1 [PR#]S2_Bgm_3
+@OnTrigger Delay=8 Kill [PR#]S2_Door_9
+@OnTrigger FireUser1 [PR#]S2_Fall_Tele_4
+@OnTrigger StopPlayEndCap [PR#]S2_Bgm_Lyric_Text
+@OnTrigger Kill [PR#]S2_Bgm_Lyric_Count
+@OnTrigger Kill [PR#]Boss_S2_*
+@OnTrigger Kill [PR#]S2_Bgm_Lyric_Timer
+@OnTrigger Delay=0.02 Kill [PR#]S2_Bgm_Lyric_Text
+
+====25====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Sqr_4
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_3
+targetname                     CString    [PR#]Boss_S2_Maker_5
+classname                      CString    env_entity_maker
+origin                         CString    -52.000000 -48.000000 728.000000
+angles                         CString    -0.000000 45.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2865
+_template_lump_ent_index       CString    25
+
+====26====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Sqr_4
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_3
+targetname                     CString    [PR#]Boss_S2_Maker_5
+classname                      CString    env_entity_maker
+origin                         CString    -20.000000 -16.000000 728.000000
+angles                         CString    0.000000 -135.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2969
+_template_lump_ent_index       CString    26
+
+====27====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Sqr_4
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_3
+targetname                     CString    [PR#]Boss_S2_Maker_5
+classname                      CString    env_entity_maker
+origin                         CString    -20.000000 -48.000000 728.000000
+angles                         CString    -0.000000 135.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3122
+_template_lump_ent_index       CString    27
+
+====28====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Sqr_4
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_3
+targetname                     CString    [PR#]Boss_S2_Maker_5
+classname                      CString    env_entity_maker
+origin                         CString    -52.000000 -16.000000 728.000000
+angles                         CString    -0.000000 -45.000004 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3276
+_template_lump_ent_index       CString    28
+
+====29====
+max                            Integer    99999999
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Boss_S2_Hp_Main
+classname                      CString    math_counter
+origin                         CString    0.000000 16.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2737
+_template_lump_ent_index       CString    29
+@OnHitMin Add [PR#]Boss_S2_Hp_Counter 1
+
+====30====
+nointerpolate                  Boolean    False
+touchoutputperentitydelay      Float64    0
+enableuseoutput                Boolean    False
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+uselocaloffset                 Boolean    False
+spawnobject                    CString    0
+spawnflags                     Integer64  50176
+rendermode                     CString    kRenderNone
+renderfx                       CString    kRenderFxNone
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+propdata                       CString    0
+pressuredelay                  Float64    0
+preferredcarryangles           Vector     <0, 0, 0>
+performancemode                CString    0
+notsolid                       CString    0
+nodamageforces                 Boolean    False
+material                       CString    0
+massscale                      Float64    0
+health                         Integer    99999999
+forcetoenablemotion            Float64    0
+fademindist                    Float64    -1
+fademaxdist                    Float64    0
+explosion                      CString    0
+exploitablebyplayer            CString    0
+exploderadius                  Float64    0
+explodemagnitude               Integer    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+disablereceiveshadows          Boolean    False
+damagetype                     CString    0
+damagetoenablemotion           Integer    0
+damagefilter                   CString    [PR#]Filter_T
+targetname                     CString    [PR#]Boss_S2_Hitbox
+classname                      CString    func_physbox
+origin                         CString    -36.000000 -32.000000 848.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3215
+model                          CString    maps\ze_arcana_heart\entities\Boss_S2_Hitbox_3215.vmdl
+_template_lump_ent_index       CString    30
+@OnHealthChanged Subtract [PR#]Boss_S2_Hp_Main 1
+
+====31====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    544
+speed                          Integer    544
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 270, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNone
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_1
+targetname                     CString    [PR#]Boss_S2_Move_3
+classname                      CString    func_movelinear
+origin                         CString    -36.000000 -64.000000 -4.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3247
+model                          CString    maps\ze_arcana_heart\entities\Boss_S2_Move_3_3247.vmdl
+_template_lump_ent_index       CString    31
+@OnUser1 Open !self
+@OnFullyOpen Close !self
+@OnFullyClosed Open !self
+
+====32====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer64  513
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    160
+disableshadows                 CString    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNone
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Boss_S2_Rota_1
+classname                      CString    func_rotating
+origin                         CString    -36.000000 -32.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2899
+model                          CString    maps\ze_arcana_heart\entities\Boss_S2_Rota_1_2899.vmdl
+_template_lump_ent_index       CString    32
+@OnUser1 KillHierarchy !self
+
+====33====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    544
+speed                          Integer    840
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 180, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNone
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Rota_1
+targetname                     CString    [PR#]Boss_S2_Move_2
+classname                      CString    func_movelinear
+origin                         CString    -68.000000 -32.000000 -4.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3251
+model                          CString    maps\ze_arcana_heart\entities\Boss_S2_Move_2_3251.vmdl
+_template_lump_ent_index       CString    33
+@OnUser1 Open !self
+@OnFullyOpen Close !self
+@OnFullyClosed Open !self
+
+====34====
+max                            Integer    10
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Boss_S2_Hp_Counter
+classname                      CString    math_counter
+origin                         CString    16.000000 16.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2775
+_template_lump_ent_index       CString    34
+@OutValue Trigger [PR#]Boss_S2_Hp_Add_Relay
+@OnHitMax Trigger [PR#]Boss_S2_Death_Relay_False
+
+====35====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    True
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Boss_S2_Hp_Add_Relay
+classname                      CString    logic_relay
+origin                         CString    32.000000 48.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3728
+_template_lump_ent_index       CString    35
+@OnTrigger CountPlayersInZone [PR#]Boss_S2_Zone
+
+====36====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Boss_S2_Start
+classname                      CString    logic_relay
+origin                         CString    -4.000000 -64.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4246
+_template_lump_ent_index       CString    36
+@OnSpawn FireUser1 [PR#]Boss_S2_Move_*
+
+====37====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Ball_2
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Move_4
+targetname                     CString    [PR#]Boss_S2_Maker_1
+classname                      CString    env_entity_maker
+origin                         CString    -4.000000 -32.000000 0.000000
+angles                         CString    -89.999992 -0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1415
+_template_lump_ent_index       CString    37
+
+====38====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Ball_2
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Move_3
+targetname                     CString    [PR#]Boss_S2_Maker_1
+classname                      CString    env_entity_maker
+origin                         CString    -36.000000 -64.000000 0.000000
+angles                         CString    -89.999992 -0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2851
+_template_lump_ent_index       CString    38
+
+====39====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Ball_2
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Move_2
+targetname                     CString    [PR#]Boss_S2_Maker_1
+classname                      CString    env_entity_maker
+origin                         CString    -68.000000 -32.000000 0.000000
+angles                         CString    -89.999992 -0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3245
+_template_lump_ent_index       CString    39
+
+====40====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_S2_Ball_2
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_S2_Move_1
+targetname                     CString    [PR#]Boss_S2_Maker_1
+classname                      CString    env_entity_maker
+origin                         CString    -36.000000 0.000000 0.000000
+angles                         CString    -89.999992 -0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4734
+_template_lump_ent_index       CString    40
+

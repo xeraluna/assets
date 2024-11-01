@@ -1,0 +1,124 @@
+====0====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    10000
+speed                          Integer    1600
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 270, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <122, 91, 155>
+renderamt                      Integer    200
+rendermode                     CString    kRenderWorldGlow
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Key_Move_5&0000
+classname                      CString    func_movelinear
+origin                         CString    0.000000 320.000000 -6.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2229
+model                          CString    maps\ze_arcana_heart\entities\Key_Move_5_2229.vmdl
+_template_lump_ent_index       CString    0
+@OnFullyOpen Kill !self
+
+====1====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    256
+damagecap                      Integer    20
+damage                         Integer    20
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Key_Move_5&0000
+targetname                     CString    [PR#]Key_Move_5_Hurt&0000
+classname                      CString    trigger_hurt
+origin                         CString    0.000000 320.000000 248.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2117
+model                          CString    maps\ze_arcana_heart\entities\Key_Move_5_Hurt_2117.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    131072
+damagecap                      Integer    -2
+damage                         Integer    -2
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Key_Move_5&0000
+targetname                     CString    [PR#]Key_Move_5_Hurt&0000
+classname                      CString    trigger_hurt
+origin                         CString    0.000000 320.000000 -6.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2122
+model                          CString    maps\ze_arcana_heart\entities\Key_Move_5_Hurt_2122.vmdl
+_template_lump_ent_index       CString    2
+@OnHurtPlayer FireUser1 [PR#]Rtv_2_No_Damage
+
+====3====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    0
+speed                          Integer    0
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <163, 144, 193>
+renderamt                      Integer    240
+rendermode                     CString    kRenderWorldGlow
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Key_Move_5&0000
+targetname                     CString    [PR#]Key_Move_5_Hurt&0000
+classname                      CString    func_movelinear
+origin                         CString    0.000000 320.000000 -6.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2227
+model                          CString    maps\ze_arcana_heart\entities\Key_Move_5_Hurt_2227.vmdl
+_template_lump_ent_index       CString    3
+
+====4====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Key_Move_5_R&0000
+classname                      CString    logic_relay
+origin                         CString    0.000000 0.000000 16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2225
+_template_lump_ent_index       CString    4
+@OnSpawn Open [PR#]Key_Move_5&0000
+@OnSpawn Delay=0.02 Kill !self
+

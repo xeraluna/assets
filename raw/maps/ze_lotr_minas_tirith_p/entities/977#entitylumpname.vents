@@ -1,0 +1,395 @@
+====0====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+spawnflags                     CString    49
+message                        CString    sounds/physics/flesh/flesh_squishy_impact_hard3.vsnd
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]nazsoundat1&0000
+classname                      CString    point_soundevent
+origin                         CString    295.600586 24.150024 63.220215
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    396
+_template_lump_ent_index       CString    0
+
+====1====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    128
+damagecap                      Integer    20
+damage                         Integer    250
+filtername                     CString    [PR#]nozombies
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_nazgul_5&0000
+targetname                     CString    [PR#]item_nazgul_12&0000
+classname                      CString    trigger_hurt
+origin                         CString    140.100586 5.660034 62.509766
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8242
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\item_nazgul_12_8242.vmdl
+_template_lump_ent_index       CString    1
+@OnHurtPlayer EmitBlood [PR#]sangrect
+@OnHurtPlayer StartSound [PR#]nazsoundat1&0000
+@OnHurtPlayer Trigger [PR#]HurtSlower
+
+====2====
+nointerpolate                  Boolean    False
+touchoutputperentitydelay      Float64    0
+enableuseoutput                Boolean    False
+damagetoenablemotion           Integer    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+uselocaloffset                 Boolean    False
+spawnobject                    CString    0
+spawnflags                     Integer64  8444928
+rendermode                     CString    10
+renderfx                       CString    0
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    0
+propdata                       CString    0
+pressuredelay                  Float64    0
+preferredcarryangles           Vector     <0, 0, 0>
+performancemode                CString    1
+parentname                     CString    [PR#]item_nazgul_5&0000
+notsolid                       CString    0
+nodamageforces                 Boolean    True
+material                       CString    1
+massscale                      Float64    0
+health                         Integer    2208
+gibdir                         CString    0 0 0
+forcetoenablemotion            Float64    0
+fadescale                      CString    1
+fademindist                    Float64    -1
+fademaxdist                    Float64    0
+explosion                      CString    0
+exploitablebyplayer            CString    0
+exploderadius                  Float64    0
+explodemagnitude               Integer    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+disablereceiveshadows          Boolean    True
+damagetype                     CString    0
+damagefilter                   CString    [PR#]humanos_y_items
+targetname                     CString    [PR#]ph_item_nazgul_7&0000
+classname                      CString    func_physbox
+origin                         CString    -12.299805 -11.500000 98.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    37
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\ph_item_nazgul_7_37.vmdl
+_template_lump_ent_index       CString    2
+@OnUser2 Break !self
+@OnHealthChanged Delay=0.3 Disable [PR#]item_nazgul_8
+@OnHealthChanged Enable [PR#]item_nazgul_8
+@OnBreak Delay=0.1 OnlyOnce Enable [PR#]item_nazgul_9
+@OnBreak Delay=0.01 OnlyOnce StartSound [PR#]global_sound_nazgul
+@OnBreak OnlyOnce BecomeRagdoll [PR#]item_nazgul_4&0000
+@OnBreak OnlyOnce ForceSpawn [PR#]item_nazgul_15
+@OnBreak OnlyOnce Disable [PR#]item_nazgul_1&0000
+@OnBreak OnlyOnce Disable [PR#]item_nazgul_3
+@OnHealthChanged Start [PR#]item_nazgul_13&0000
+@OnHealthChanged Delay=0.02 Stop [PR#]item_nazgul_13&0000
+@OnHealthChanged Enable [PR#]nazpush&0000
+@OnHealthChanged Delay=0.02 Disable [PR#]nazpush&0000
+@OnBreak Break [PR#]ph_item_nazgul_7b
+@OnBreak Deactivate [PR#]nazgului&0000
+
+====3====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+_minlight                      CString    0.000000
+defaultanim                    CString    idle_lower
+fadescale                      CString    1
+maxanimtime                    CString    10
+maxdxlevel                     CString    0
+minanimtime                    CString    5
+mindxlevel                     CString    0
+randomanimation                CString    0
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    idle_lower
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/pmodels/player/slow/hannibal/fell_beast/slow.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_nazgul_5&0000
+targetname                     CString    [PR#]item_nazgul_4&0000
+classname                      CString    prop_dynamic
+origin                         CString    77.400391 -0.790039 -224.439941
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2684
+_template_lump_ent_index       CString    3
+
+====4====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/minasparticles/custom_particle_030.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_nazgul_5&0000
+targetname                     CString    [PR#]item_nazgul_13&0000
+classname                      CString    info_particle_system
+origin                         CString    23.600586 0.150024 57.060059
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2639
+_template_lump_ent_index       CString    4
+@OnUser4 Delay=0.02 Start !self
+@OnUser4 Stop !self
+@OnUser2 Delay=0.02 AddOutput !self OnUser1>!self>FireUser2>>0>1
+@OnUser2 Delay=0.02 AddOutput !self OnUser1>!self>FireUser4>>0>1
+@OnUser1 OnlyOnce FireUser2 !self
+@OnUser1 OnlyOnce FireUser4 !self
+
+====5====
+uselocaloffset                 Boolean    False
+waveheight                     CString    3.000000
+speed                          CString    100
+rendermode                     CString    10
+renderfx                       CString    0
+rendercolor                    CString    255 255 255
+renderamt                      CString    255
+parentname                     CString    [PR#]item_nazgul_5&0000
+movedistance                   CString    100
+movedir                        CString    0 0 0
+disableshadows                 CString    0
+disablereceiveshadows          CString    0
+_minlight                      CString    0.000000
+targetname                     CString    [PR#]item_nazgul_10&0000
+classname                      CString    func_water
+origin                         CString    -0.099609 -0.010010 57.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    397
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\item_nazgul_10_397.vmdl
+_template_lump_ent_index       CString    5
+
+====6====
+fadescale                      CString    1
+disableshadows                 CString    0
+_minlight                      CString    0.000000
+canbepickedup                  Boolean    True
+spawnflags                     Integer    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    0
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+vscripts                       CString    Filter.nut
+targetname                     CString    [PR#]item_nazgul_5&0000
+classname                      CString    weapon_knife
+origin                         CString    -5.399414 -0.790039 40.549805
+angles                         Vector     <-0, 0, 0>
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    395
+_template_lump_ent_index       CString    6
+@OnPlayerPickup OnlyOnce KeyValues !activator speed 3
+@OnPlayerPickup Delay=0.05 OnlyOnce Enable [PR#]item_nazgul_3
+@OnPlayerPickup OnlyOnce Enable [PR#]item_nazgul_1&0000
+@OnPlayerPickup OnlyOnce KeyValues !activator health 60000
+@OnPlayerPickup OnlyOnce KeyValues !activator max_health 60000
+@OnPlayerPickup OnlyOnce Alpha !activator 0
+@OnPlayerPickup OnlyOnce SetDamageFilter !activator [PR#]nohumanos
+@OnPlayerPickup OnlyOnce AddContext !activator nazgul:1
+@OnPlayerPickup Activate [PR#]nazgului&0000
+@OnPlayerPickup KeyValues !activator gravity 0.6
+@OnPlayerPickup AddOutput !activator OnKilled>resetplayeritem>Trigger>>3>1
+
+====7====
+converttodebriswhenpossible    CString    0
+pushscale                      Float64    1
+inner_radius                   Float64    0
+spawnflags                     Integer    0
+explodeonspawn                 Boolean    False
+targetentityname               CString    [PR#]ph_*
+radius                         CString    164
+damage                         CString    0
+magnitude                      CString    250
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_nazgul_5&0000
+targetname                     CString    [PR#]item_nazgul_16&0000
+classname                      CString    env_physexplosion
+origin                         CString    139.700195 5.500000 63.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    82
+_template_lump_ent_index       CString    7
+
+====8====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    underwater_explode4
+sourceentityname               CString    [PR#]item_nazgul_5&0000
+radius                         CString    3250
+health                         CString    20
+message                        CString    sounds/sfx/underwater_explode4.vsnd
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_nazgul_5&0000
+targetname                     CString    [PR#]item_nazgul_2&0000
+classname                      CString    snd_event_point
+origin                         CString    -697.099609 -124.180054 -376.979980
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    974
+_template_lump_ent_index       CString    8
+
+====9====
+initialdelay                   Float64    0
+refiretime                     Float64    1.399999976158142
+upperrandombound               Float64    20
+lowerrandombound               Float64    5
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    False
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]item_nazgul_1&0000
+classname                      CString    logic_timer
+origin                         CString    -697.099609 -108.180054 -376.979980
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    973
+_template_lump_ent_index       CString    9
+@OnTimer StartSound [PR#]item_nazgul_2&0000
+@OnTimer Explode [PR#]item_nazgul_16&0000
+
+====10====
+triggeronstarttouch            Boolean    False
+speed                          Integer    150
+pushdir                        Vector     <0, 180, -90>
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]nazpush&0000
+classname                      CString    trigger_push
+origin                         CString    -6.190430 -2.500000 68.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    13268
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\nazpush_13268.vmdl
+_template_lump_ent_index       CString    10
+@OnStartTouch Delay=0.03 KeyValue !activator gravity 1
+@OnStartTouch KeyValue !activator gravity 3.5
+
+====11====
+triggeronstarttouch            Boolean    False
+speed                          Integer    150
+pushdir                        Vector     <0, 0, -90>
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]nazpush2&0000
+classname                      CString    trigger_push
+origin                         CString    -6.190430 -2.500000 68.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    13276
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\nazpush2_13276.vmdl
+_template_lump_ent_index       CString    11
+@OnStartTouch Delay=0.03 KeyValue !activator gravity 1
+@OnStartTouch KeyValue !activator gravity 3.5
+
+====12====
+case02                         CString    PlayerOff
+targetname                     CString    [PR#]nazgului&0000
+vscripts                       CString    game_ui
+classname                      CString    logic_case
+origin                         CString    65.700195 -62.500000 42.340820
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    13329
+_template_lump_ent_index       CString    12
+@OnCase02 Trigger [PR#]resetplayeritem
+
+====13====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]item_nazgul_5&0000
+target                         CString    [PR#]nazpush&0000
+measurereference               CString    [PR#]item_nazgul_5&0000
+measuretarget                  CString    [PR#]item_nazgul_5&0000
+targetname                     CString    [PR#]nazpushmm&0000
+classname                      CString    logic_measure_movement
+origin                         CString    182.315430 25.963501 118.956055
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    21870
+_template_lump_ent_index       CString    13
+
+====14====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]item_nazgul_5&0000
+target                         CString    [PR#]nazpush2&0000
+measurereference               CString    [PR#]item_nazgul_5&0000
+measuretarget                  CString    [PR#]item_nazgul_5&0000
+targetname                     CString    [PR#]nazpush2mm&0000
+classname                      CString    logic_measure_movement
+origin                         CString    201.700195 25.963501 118.956055
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    21871
+_template_lump_ent_index       CString    14
+

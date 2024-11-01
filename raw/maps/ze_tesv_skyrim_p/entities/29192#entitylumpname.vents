@@ -1,0 +1,699 @@
+====0====
+triggeronstarttouch            Boolean    False
+speed                          Integer    130
+pushdir                        Vector     <0, 90, 0>
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]troll_push_t&0000
+targetname                     CString    [PR#]troll_push3&0000
+classname                      CString    trigger_push
+origin                         CString    -19.500000 -141.000000 12.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29207
+model                          CString    maps\ze_tesv_skyrim_p\entities\troll_push3_29207.vmdl
+_template_lump_ent_index       CString    0
+@OnStartTouch Delay=0.03 KeyValue !activator gravity 1
+@OnStartTouch KeyValue !activator gravity 3.5
+
+====1====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    128
+damagecap                      Integer    300
+damage                         Integer    300
+filtername                     CString    [PR#]filter_t_no
+spawnflags                     Integer64  1101
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]troll_knife&0000
+targetname                     CString    [PR#]troll_attk_1&0000
+classname                      CString    trigger_hurt
+origin                         CString    -86.000000 -136.000000 16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29182
+model                          CString    maps\ze_tesv_skyrim_p\entities\troll_attk_1_29182.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+notsolid                       CString    0
+preferredcarryangles           Vector     <0, 0, 0>
+enableuseoutput                Boolean    False
+forcetoenablemotion            Float64    0
+damagetoenablemotion           Integer    0
+massscale                      Float64    0
+damagetype                     CString    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    10000
+propdata                       CString    0
+spawnflags                     Integer64  50176
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]troll&0000
+performancemode                CString    1
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+damagefilter                   CString    [PR#]ct_a_items
+targetname                     CString    [PR#]troll_phbox&0000
+classname                      CString    func_physbox
+origin                         CString    -14.000000 -128.000000 -14.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29194
+model                          CString    maps\ze_tesv_skyrim_p\entities\troll_phbox_29194.vmdl
+_template_lump_ent_index       CString    2
+@OnBreak OnlyOnce Break [PR#]troll_phbox&0000
+@OnBreak OnlyOnce Kill [PR#]troll_push&0000
+@OnBreak OnlyOnce Kill [PR#]troll_push2&0000
+@OnBreak OnlyOnce Kill [PR#]troll_push3&0000
+@OnBreak OnlyOnce Kill [PR#]troll_push4&0000
+@OnBreak OnlyOnce Kill [PR#]troll_relay_1&0000
+@OnBreak OnlyOnce Kill [PR#]troll_relay_2&0000
+@OnBreak OnlyOnce Kill [PR#]troll_look_1&0000
+@OnBreak OnlyOnce Kill [PR#]troll_kisa
+@OnBreak OnlyOnce Deactivate [PR#]troll_ui&0000
+@OnBreak OnlyOnce Kill [PR#]troll_stop
+@OnBreak OnlyOnce SetValue [PR#]troll_dead&0000 1
+@OnBreak Delay=1 OnlyOnce Kill [PR#]troll_dead&0000
+@OnBreak OnlyOnce Kill [PR#]troll_attk_1&0000
+@OnBreak OnlyOnce Kill [PR#]troll_attk_2&0000
+@OnBreak OnlyOnce SetDefaultAnimation [PR#]troll&0000 surm
+@OnBreak OnlyOnce Kill [PR#]troll_movement&0000
+@OnBreak Trigger [PR#]troll_break
+@OnBreak OnlyOnce SetAnimation [PR#]troll&0000
+
+====3====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+notsolid                       CString    0
+preferredcarryangles           Vector     <0, 0, 0>
+enableuseoutput                Boolean    False
+forcetoenablemotion            Float64    0
+damagetoenablemotion           Integer    0
+massscale                      Float64    0
+damagetype                     CString    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    10000
+propdata                       CString    0
+spawnflags                     Integer64  50176
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]troll&0000
+performancemode                CString    1
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+damagefilter                   CString    [PR#]ct_a_items
+targetname                     CString    [PR#]troll_phbox&0000
+classname                      CString    func_physbox
+origin                         CString    7.000000 -128.000000 42.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29199
+model                          CString    maps\ze_tesv_skyrim_p\entities\troll_phbox_29199.vmdl
+_template_lump_ent_index       CString    3
+@OnDamaged Delay=0.01 Disable [PR#]troll_push&0000
+@OnDamaged Enable [PR#]troll_push&0000
+@OnBreak Break [PR#]troll_phbox&0000
+
+====4====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+notsolid                       CString    0
+preferredcarryangles           Vector     <0, 0, 0>
+enableuseoutput                Boolean    False
+forcetoenablemotion            Float64    0
+damagetoenablemotion           Integer    0
+massscale                      Float64    0
+damagetype                     CString    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    10000
+propdata                       CString    0
+spawnflags                     Integer64  50176
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]troll&0000
+performancemode                CString    1
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+damagefilter                   CString    [PR#]ct_a_items
+targetname                     CString    [PR#]troll_phbox&0000
+classname                      CString    func_physbox
+origin                         CString    -35.000000 -128.000000 42.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29201
+model                          CString    maps\ze_tesv_skyrim_p\entities\troll_phbox_29201.vmdl
+_template_lump_ent_index       CString    4
+@OnDamaged Delay=0.01 Disable [PR#]troll_push2&0000
+@OnDamaged Enable [PR#]troll_push2&0000
+@OnBreak Break [PR#]troll_phbox&0000
+
+====5====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+notsolid                       CString    0
+preferredcarryangles           Vector     <0, 0, 0>
+enableuseoutput                Boolean    False
+forcetoenablemotion            Float64    0
+damagetoenablemotion           Integer    0
+massscale                      Float64    0
+damagetype                     CString    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    10000
+propdata                       CString    0
+spawnflags                     Integer64  50176
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]troll&0000
+performancemode                CString    1
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+damagefilter                   CString    [PR#]ct_a_items
+targetname                     CString    [PR#]troll_phbox&0000
+classname                      CString    func_physbox
+origin                         CString    -14.000000 -110.000000 42.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29203
+model                          CString    maps\ze_tesv_skyrim_p\entities\troll_phbox_29203.vmdl
+_template_lump_ent_index       CString    5
+@OnDamaged Delay=0.01 Disable [PR#]troll_push4&0000
+@OnDamaged Enable [PR#]troll_push4&0000
+@OnBreak Break [PR#]troll_phbox&0000
+
+====6====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+notsolid                       CString    0
+preferredcarryangles           Vector     <0, 0, 0>
+enableuseoutput                Boolean    False
+forcetoenablemotion            Float64    0
+damagetoenablemotion           Integer    0
+massscale                      Float64    0
+damagetype                     CString    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    10000
+propdata                       CString    0
+spawnflags                     Integer64  50176
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]troll&0000
+performancemode                CString    1
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+damagefilter                   CString    [PR#]ct_a_items
+targetname                     CString    [PR#]troll_phbox&0000
+classname                      CString    func_physbox
+origin                         CString    -14.000000 -146.000000 42.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29205
+model                          CString    maps\ze_tesv_skyrim_p\entities\troll_phbox_29205.vmdl
+_template_lump_ent_index       CString    6
+@OnDamaged Delay=0.01 Disable [PR#]troll_push3&0000
+@OnDamaged Enable [PR#]troll_push3&0000
+@OnBreak Break [PR#]troll_phbox&0000
+
+====7====
+triggeronstarttouch            Boolean    False
+speed                          Integer    130
+pushdir                        Vector     <0, 270, 0>
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]troll_push_t&0000
+targetname                     CString    [PR#]troll_push4&0000
+classname                      CString    trigger_push
+origin                         CString    -19.500000 -141.000000 12.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29209
+model                          CString    maps\ze_tesv_skyrim_p\entities\troll_push4_29209.vmdl
+_template_lump_ent_index       CString    7
+@OnStartTouch Delay=0.03 KeyValue !activator gravity 1
+@OnStartTouch KeyValue !activator gravity 3.5
+
+====8====
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]troll_strip&0000
+classname                      CString    trigger_once
+origin                         CString    -20.000000 -142.000000 -12.000000
+angles                         CString    -0.000000 -179.999893 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29216
+model                          CString    maps\ze_tesv_skyrim_p\entities\troll_strip_29216.vmdl
+_template_lump_ent_index       CString    8
+@OnStartTouch OnlyOnce FindEntity [PR#]troll_knife_stripper&0000
+
+====9====
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_LOOPING
+idleanim                       CString    jooks
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/troll/troll.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]troll&0000
+classname                      CString    prop_dynamic
+origin                         CString    8.000000 -142.000000 -48.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29198
+_template_lump_ent_index       CString    9
+
+====10====
+initialvalue                   Integer    0
+targetname                     CString    [PR#]troll_dead&0000
+classname                      CString    logic_branch
+origin                         CString    88.000000 -20.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29215
+_template_lump_ent_index       CString    10
+@OnTrue sethealth !activator 0
+@OnFalse Delay=0.25 Test !self
+@OnTrue RemoveContext !activator t_item_user
+
+====11====
+triggeronstarttouch            Boolean    False
+speed                          Integer    125
+pushdir                        Vector     <0, 180, -90>
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]troll_push_t&0000
+targetname                     CString    [PR#]troll_push&0000
+classname                      CString    trigger_push
+origin                         CString    -19.500000 -141.000000 12.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29196
+model                          CString    maps\ze_tesv_skyrim_p\entities\troll_push_29196.vmdl
+_template_lump_ent_index       CString    11
+@OnStartTouch Delay=0.03 KeyValue !activator gravity 1
+@OnStartTouch KeyValue !activator gravity 3.5
+
+====12====
+triggeronstarttouch            Boolean    False
+speed                          Integer    120
+pushdir                        Vector     <0, 0, -90>
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]troll_push_t&0000
+targetname                     CString    [PR#]troll_push2&0000
+classname                      CString    trigger_push
+origin                         CString    -19.500000 -141.000000 12.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29190
+model                          CString    maps\ze_tesv_skyrim_p\entities\troll_push2_29190.vmdl
+_template_lump_ent_index       CString    12
+@OnStartTouch Delay=0.03 KeyValue !activator gravity 1
+@OnStartTouch KeyValue !activator gravity 3.5
+
+====13====
+canbepickedup                  Boolean    True
+spawnflags                     Integer    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+targetname                     CString    [PR#]troll_knife&0000
+classname                      CString    weapon_knife
+origin                         CString    -20.000000 -142.000000 -46.000000
+angles                         Vector     <-0, -179.9999, 0>
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29179
+_template_lump_ent_index       CString    13
+@OnPlayerPickup KeyValue !activator runspeed 1.04
+@OnPlayerPickup KeyValue !activator health 10000
+@OnPlayerPickup Activate [PR#]troll_ui&0000
+@OnPlayerPickup SetDamageFilter !activator [PR#]t_filter
+@OnPlayerPickup Alpha !activator 0
+@OnPlayerPickup Test [PR#]troll_dead&0000
+@OnPlayerPickup Open [PR#]troll_push_t&0000
+@OnPlayerPickup AddContext !activator t_item_user:1
+
+====14====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]troll_relay_2&0000
+classname                      CString    logic_relay
+origin                         CString    64.000000 2.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29185
+_template_lump_ent_index       CString    14
+@OnTrigger SetAnimationNotLooping [PR#]troll&0000 kisa
+@OnTrigger Disable !self
+@OnTrigger Delay=35 Enable !self
+@OnTrigger StartSound [PR#]troll_kisa
+@OnTrigger KeyValue !activator movetype 1
+@OnTrigger AddHealth [PR#]troll_phbox&0000 1500
+@OnTrigger Enable [PR#]troll_attk_2&0000
+@OnTrigger Delay=2 Disable [PR#]troll_attk_2&0000
+@OnTrigger Delay=2 KeyValue !activator movetype 2
+
+====15====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]troll_relay_1&0000
+classname                      CString    logic_relay
+origin                         CString    88.000000 2.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29184
+_template_lump_ent_index       CString    15
+@OnTrigger SetAnimationNotLooping [PR#]troll&0000 [PR#]rynnak
+@OnTrigger Delay=0.5 Enable [PR#]troll_attk_1&0000
+@OnTrigger Delay=1 Disable [PR#]troll_attk_1&0000
+@OnTrigger Disable !self
+@OnTrigger Delay=2 Enable !self
+@OnTrigger StartSound [PR#]troll_look_1&0000
+
+====16====
+case02                         CString    PressedAttack2
+case01                         CString    PressedAttack
+vscripts                       CString    game_ui
+targetname                     CString    [PR#]troll_ui&0000
+classname                      CString    logic_case
+origin                         CString    112.299805 2.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29181
+_template_lump_ent_index       CString    16
+@OnCase01 Trigger [PR#]troll_relay_1&0000
+@OnCase02 Trigger [PR#]troll_relay_2&0000
+
+====17====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+sourceentityname               CString    [PR#]troll&0000
+soundname                      CString    troll.look
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]troll_look_1&0000
+classname                      CString    snd_event_point
+origin                         CString    40.000000 2.000000 -1.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29186
+_template_lump_ent_index       CString    17
+
+====18====
+wait                           Float64    1
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]troll_knife&0000
+targetname                     CString    [PR#]troll_attk_2&0000
+classname                      CString    trigger_multiple
+origin                         CString    -24.000000 -144.000000 16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29188
+model                          CString    maps\ze_tesv_skyrim_p\entities\troll_attk_2_29188.vmdl
+_template_lump_ent_index       CString    18
+@OnStartTouch KeyValue !activator health 10000
+
+====19====
+method                         CString    0
+filtername                     CString    [PR#]troll_knife_filters&0000
+targetname                     CString    [PR#]troll_knife_stripper&0000
+classname                      CString    point_entity_finder
+origin                         CString    -64.000000 -28.000000 11.390625
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29213
+_template_lump_ent_index       CString    19
+@OnFoundEntity Kill !caller
+
+====20====
+filter03                       CString    [PR#]knife_filter
+filter02                       CString    [PR#]troll_knife_filter_b&0000
+filter01                       CString    [PR#]troll_knife_filter_a&0000
+filtertype                     CString    0
+negated                        CString    0
+targetname                     CString    [PR#]troll_knife_filters&0000
+classname                      CString    filter_multi
+origin                         CString    -64.000000 -12.000000 11.390625
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29211
+_template_lump_ent_index       CString    20
+
+====21====
+filtername                     CString    [PR#]troll_knife&0000
+negated                        CString    1
+targetname                     CString    [PR#]troll_knife_filter_a&0000
+classname                      CString    filter_activator_name
+origin                         CString    -64.000000 4.000000 11.390625
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29212
+_template_lump_ent_index       CString    21
+
+====22====
+filter_radius                  Float64    128
+negated                        CString    0
+targetname                     CString    [PR#]troll_knife_filter_b&0000
+classname                      CString    filter_proximity
+origin                         CString    -20.000000 -142.000000 12.000000
+angles                         CString    -0.000000 -179.999893 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29214
+_template_lump_ent_index       CString    22
+
+====23====
+clothscale                     Float64    1
+startdisabled                  Boolean    True
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer64  256
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    default
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]troll_knife&0000
+targetname                     CString    [PR#]troll_dummy&0000
+classname                      CString    prop_dynamic
+origin                         CString    8.000000 -142.000000 -48.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29218
+_template_lump_ent_index       CString    23
+
+====24====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]troll_movement&0000
+target                         CString    [PR#]troll&0000
+measurereference               CString    [PR#]troll_movement&0000
+measuretarget                  CString    [PR#]troll_dummy&0000
+targetname                     CString    [PR#]troll_movement&0000
+classname                      CString    logic_measure_movement
+origin                         CString    -147.521484 -52.942871 8.229492
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29219
+_template_lump_ent_index       CString    24
+
+====25====
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    1
+speed                          Integer    1
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer    0
+movedir                        Vector     <0, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]troll&0000
+targetname                     CString    [PR#]troll_push_t&0000
+classname                      CString    func_movelinear
+origin                         CString    42.000000 -132.000000 -32.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    29220
+model                          CString    maps\ze_tesv_skyrim_p\entities\troll_push_t_29220.vmdl
+_template_lump_ent_index       CString    25
+@OnFullyOpen Close !self
+@OnFullyClosed Open !self
+

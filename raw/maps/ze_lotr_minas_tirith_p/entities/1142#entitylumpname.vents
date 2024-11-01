@@ -1,0 +1,181 @@
+====0====
+fadescale                      CString    1
+disableshadows                 CString    0
+ammo                           CString    35
+_minlight                      CString    0.000000
+canbepickedup                  Boolean    True
+spawnflags                     Integer    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    1
+renderfx                       CString    0
+targetname                     CString    [PR#]new1_stage_2_short_torch&0000
+classname                      CString    weapon_deagle
+origin                         CString    -10.700195 -12.790039 -46.000000
+angles                         Vector     <-0, 0, 0>
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    731
+_template_lump_ent_index       CString    0
+@OnPlayerPickup Delay=45 OnlyOnce Kill [PR#]new1_shortTorch&0000
+@OnPlayerPickup Delay=45 OnlyOnce Kill [PR#]new1_prop_torch&0000
+@OnPlayerPickup OnlyOnce ShowHudHint [PR#]global_aviso_antorcha
+@OnPlayerPickup OnlyOnce FireUser1 [PR#]new1_shortTorch2_2&0000
+@OnPlayerPickup Delay=10 OnlyOnce HideHudHint [PR#]global_aviso_antorcha
+
+====1====
+firedamage                     Float64    40
+fireradius                     Float64    80
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]new1_shortTorch2_2&0000
+targetname                     CString    [PR#]new1_shortTorch&0000
+classname                      CString    env_firesource
+origin                         CString    16.700195 -1.310059 7.250000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    732
+_template_lump_ent_index       CString    1
+
+====2====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    True
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]new1_prop_torch&0000
+classname                      CString    logic_relay
+origin                         CString    35.599609 -2.750000 -39.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    61
+_template_lump_ent_index       CString    2
+@OnSpawn Delay=2 Start [PR#]new1_prop_torch&0000
+
+====3====
+flag_as_weather                CString    0
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/minasparticles/custom_particle_019l.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]new1_shortTorch2_2&0000
+targetname                     CString    [PR#]new1_prop_torch&0000
+classname                      CString    info_particle_system
+origin                         CString    18.400391 0.250000 14.540039
+angles                         CString    45.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2722
+_template_lump_ent_index       CString    3
+
+====4====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+randomanimation                CString    0
+mindxlevel                     CString    0
+minanimtime                    CString    5
+maxdxlevel                     CString    0
+maxanimtime                    CString    10
+fadescale                      CString    1
+_minlight                      CString    0.000000
+health                         Integer    0
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/pmodels/props/tools/orc/lightsrc/orc_torch/orc_torch_chunk01.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]new1_shortTorch2_2&0000
+targetname                     CString    [PR#]new1_shortTorch2&0000
+classname                      CString    prop_dynamic_override
+origin                         CString    -8.500000 0.409912 -9.049805
+angles                         CString    -0.713188 -90.700996 -45.495598
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    730
+_template_lump_ent_index       CString    4
+
+====5====
+fadescale                      CString    1
+createnavobstacle              Boolean    True
+movedir                        Vector     <90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  4108
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    False
+dmg                            Integer    0
+lip                            Integer    56
+wait                           Integer    -1
+speed                          Float64    1024
+disableshadows                 CString    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]new1_stage_2_short_torch&0000
+targetname                     CString    [PR#]new1_shortTorch2_2&0000
+classname                      CString    func_door
+origin                         CString    6.799805 1.500000 3.310059
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    115
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\new1_shortTorch2_2_115.vmdl
+_template_lump_ent_index       CString    5
+@OnUser1 Delay=0.02 OnlyOnce Open !self
+@OnUser1 OnlyOnce Unlock !self
+@OnOpen OnlyOnce Lock !self
+

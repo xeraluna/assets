@@ -1,0 +1,358 @@
+====0====
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]teleport_destination
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]teleport_s3_1
+classname                      CString    trigger_teleport
+origin                         CString    -9764.000000 -10088.000000 -10310.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    627
+model                          CString    maps\ze_santassination_p\entities\teleport_s3_1_627.vmdl
+_template_lump_ent_index       CString    0
+@OnUser1 Delay=0.1 OnlyOnce Enable !self
+@OnUser1 OnlyOnce KeyValues [PR#]teleport_destination origin -7500 -8450 -335
+@OnUser1 OnlyOnce KeyValues [PR#]teleport_destination angles 0 90 0
+
+====1====
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]teleport_destination
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]teleport_s3_2
+classname                      CString    trigger_teleport
+origin                         CString    -8260.000000 -5480.000000 -12806.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    636
+model                          CString    maps\ze_santassination_p\entities\teleport_s3_2_636.vmdl
+_template_lump_ent_index       CString    1
+@OnUser1 Delay=0.1 OnlyOnce Enable !self
+@OnUser1 OnlyOnce KeyValues [PR#]teleport_destination origin -9321 -3227 -1257
+@OnUser1 OnlyOnce KeyValues [PR#]teleport_destination angles 0 0 0
+
+====2====
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]teleport_destination
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]teleport_s3_3
+classname                      CString    trigger_teleport
+origin                         CString    -13924.000000 -1992.000000 -12454.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    646
+model                          CString    maps\ze_santassination_p\entities\teleport_s3_3_646.vmdl
+_template_lump_ent_index       CString    2
+@OnUser1 Delay=0.1 OnlyOnce Enable !self
+@OnUser1 OnlyOnce KeyValues [PR#]teleport_destination origin -12475 780 -1050
+@OnUser1 OnlyOnce KeyValues [PR#]teleport_destination angles 0 0 0
+
+====3====
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]teleport_destination
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]teleport_s3_4
+classname                      CString    trigger_teleport
+origin                         CString    -9284.000000 -968.000000 -15302.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    654
+model                          CString    maps\ze_santassination_p\entities\teleport_s3_4_654.vmdl
+_template_lump_ent_index       CString    3
+@OnUser1 Delay=0.1 OnlyOnce Enable !self
+@OnUser1 OnlyOnce KeyValues [PR#]teleport_destination origin -8560 580 250
+@OnUser1 OnlyOnce KeyValues [PR#]teleport_destination angles 0 225 0
+
+====4====
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]teleport_destination
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]teleport_s3_5
+classname                      CString    trigger_teleport
+origin                         CString    -12068.000000 -8.000000 -11494.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    679
+model                          CString    maps\ze_santassination_p\entities\teleport_s3_5_679.vmdl
+_template_lump_ent_index       CString    4
+@OnUser1 Delay=0.1 OnlyOnce Enable !self
+@OnUser1 OnlyOnce KeyValues [PR#]teleport_destination origin -15685 -1435 185
+@OnUser1 OnlyOnce KeyValues [PR#]teleport_destination angles 0 270 0
+
+====5====
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]teleport_destination
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]teleport_s3_6
+classname                      CString    trigger_teleport
+origin                         CString    -13284.000000 -1768.000000 -10918.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    685
+model                          CString    maps\ze_santassination_p\entities\teleport_s3_6_685.vmdl
+_template_lump_ent_index       CString    5
+@OnUser1 Delay=0.1 OnlyOnce Enable !self
+@OnUser1 OnlyOnce KeyValues [PR#]teleport_destination origin -10330 -425 1250
+@OnUser1 OnlyOnce KeyValues [PR#]teleport_destination angles 0 180 0
+
+====6====
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]teleport_destination
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]teleport_s3_7
+classname                      CString    trigger_teleport
+origin                         CString    -12260.000000 -232.000000 -9958.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    690
+model                          CString    maps\ze_santassination_p\entities\teleport_s3_7_690.vmdl
+_template_lump_ent_index       CString    6
+@OnUser1 Delay=0.1 OnlyOnce Enable !self
+@OnUser1 OnlyOnce KeyValues [PR#]teleport_destination origin -12288 1083 2190
+@OnUser1 OnlyOnce KeyValues [PR#]teleport_destination angles 0 180 0
+
+====7====
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]teleport_destination
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]teleport_s3_8
+classname                      CString    trigger_teleport
+origin                         CString    -13060.000000 -3432.000000 -9126.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    697
+model                          CString    maps\ze_santassination_p\entities\teleport_s3_8_697.vmdl
+_template_lump_ent_index       CString    7
+@OnUser1 Delay=0.1 OnlyOnce Enable !self
+@OnUser1 OnlyOnce KeyValues [PR#]teleport_destination origin -9120 -3565 2180
+@OnUser1 OnlyOnce KeyValues [PR#]teleport_destination angles 0 90 0
+
+====8====
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]teleport_destination
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]teleport_s3_9
+classname                      CString    trigger_teleport
+origin                         CString    -9188.000000 -296.000000 -9158.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    703
+model                          CString    maps\ze_santassination_p\entities\teleport_s3_9_703.vmdl
+_template_lump_ent_index       CString    8
+@OnUser1 Delay=0.1 OnlyOnce Enable !self
+@OnUser1 OnlyOnce KeyValues [PR#]teleport_destination origin -9430 615 2210
+@OnUser1 OnlyOnce KeyValues [PR#]teleport_destination angles 0 300 0
+
+====9====
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]teleport_destination
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]teleport_s3_10
+classname                      CString    trigger_teleport
+origin                         CString    -4836.000000 1688.000000 -14198.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    711
+model                          CString    maps\ze_santassination_p\entities\teleport_s3_10_711.vmdl
+_template_lump_ent_index       CString    9
+@OnUser1 Delay=0.1 OnlyOnce Enable !self
+@OnUser1 OnlyOnce KeyValues [PR#]teleport_destination origin 250 1530 2190
+@OnUser1 OnlyOnce KeyValues [PR#]teleport_destination angles 0 0 0
+
+====10====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.music.sf_chapel
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]music_sf_chapel
+classname                      CString    point_soundevent
+origin                         CString    -116.000000 216.000000 -30.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    285
+_template_lump_ent_index       CString    10
+@OnUser1 StartSound !self
+@OnUser1 StartSound !self
+@OnUser2 StopSound !self
+@OnUser2 StopSound !self
+@OnUser4 OnlyOnce Kill !self
+
+====11====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.music.sf_mixtape
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]music_sf_enter
+classname                      CString    point_soundevent
+origin                         CString    -84.000000 216.000000 -30.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    167
+_template_lump_ent_index       CString    11
+@OnUser1 StartSound !self
+@OnUser1 StartSound !self
+@OnUser2 StopSound !self
+@OnUser2 StopSound !self
+
+====12====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.music.sf_entrance
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]music_sf_entrance
+classname                      CString    point_soundevent
+origin                         CString    -100.000000 216.000000 -30.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    286
+_template_lump_ent_index       CString    12
+@OnUser1 StartSound !self
+@OnUser1 StartSound !self
+@OnUser2 StopSound !self
+@OnUser2 StopSound !self
+@OnUser4 OnlyOnce Kill !self
+
+====13====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.music.luff_jingle_bells
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]music_sf_epic
+classname                      CString    point_soundevent
+origin                         CString    -68.000000 216.000000 -30.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    457
+_template_lump_ent_index       CString    13
+@OnUser1 StartSound !self
+@OnUser1 StartSound !self
+@OnUser2 StopSound !self
+@OnUser2 StopSound !self
+@OnUser4 OnlyOnce Kill !self
+
+====14====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.music.sf_intro
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]music_sf_intro
+classname                      CString    point_soundevent
+origin                         CString    -132.000000 216.000000 -30.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    284
+_template_lump_ent_index       CString    14
+@OnUser1 StartSound !self
+@OnUser1 StartSound !self
+@OnUser2 StopSound !self
+@OnUser2 StopSound !self
+@OnUser4 OnlyOnce Kill !self
+
+====15====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_healthkit
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_healthkit_spawn
+classname                      CString    env_entity_maker
+origin                         CString    -10740.000000 -3288.000000 -9854.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3057
+_template_lump_ent_index       CString    15
+
+====16====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_healthkit
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_healthkit_spawn
+classname                      CString    env_entity_maker
+origin                         CString    -12964.000000 -2824.000000 -10494.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3056
+_template_lump_ent_index       CString    16
+
+====17====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_healthkit
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_healthkit_spawn
+classname                      CString    env_entity_maker
+origin                         CString    -7315.830078 -12708.000000 -11679.149414
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3055
+_template_lump_ent_index       CString    17
+
+====18====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_healthkit
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_healthkit_spawn
+classname                      CString    env_entity_maker
+origin                         CString    -8523.709961 -12633.500000 -12542.375977
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3054
+_template_lump_ent_index       CString    18
+

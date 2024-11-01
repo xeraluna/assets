@@ -1,0 +1,32 @@
+====0====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]i_sexysound_r&0000
+classname                      CString    logic_relay
+origin                         CString    0.000000 0.000000 16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1273
+_template_lump_ent_index       CString    0
+@OnSpawn OnlyOnce Kill [PR#]i_sexysound_r&0000
+@OnSpawn Delay=0.02 OnlyOnce StartSound [PR#]i_sexysound_s&0000
+@OnSpawn Delay=10 OnlyOnce Kill [PR#]i_sexysound_s&0000
+
+====1====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.sxy
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]i_sexysound_s&0000
+classname                      CString    point_soundevent
+origin                         CString    0.000000 0.000000 32.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1257
+_template_lump_ent_index       CString    1
+

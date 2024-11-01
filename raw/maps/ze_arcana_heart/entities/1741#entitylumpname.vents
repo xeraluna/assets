@@ -1,0 +1,159 @@
+====0====
+wait                           Float64    1
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Laser_Move_S1_2&0000
+targetname                     CString    [PR#]Laser_Trigger_S1_2&0000
+classname                      CString    trigger_multiple
+origin                         CString    -440.000000 488.000000 88.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1734
+model                          CString    maps\ze_arcana_heart\entities\Laser_Trigger_S1_2_1734.vmdl
+_template_lump_ent_index       CString    0
+@OnStartTouch TestActivator [PR#]S1_Movement_Filter
+@OnStartTouch ForceSpawnAtEntityOrigin [PR#]Maker_S1_Laser_Move !activator
+
+====1====
+wait                           Float64    1
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Laser_Move_S1_2&0000
+targetname                     CString    [PR#]Laser_Trigger_S1_2&0000
+classname                      CString    trigger_multiple
+origin                         CString    -440.000000 488.000000 88.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3028
+model                          CString    maps\ze_arcana_heart\entities\Laser_Trigger_S1_2_3028.vmdl
+_template_lump_ent_index       CString    1
+@OnStartTouch SetHealth !activator -1
+
+====2====
+movesoundmaxtime               Float64    0
+movesoundmintime               Float64    0
+movesoundmaxpitch              Integer    200
+movesoundminpitch              Integer    60
+volume                         Integer    10
+dmg                            Integer    0
+bank                           CString    0
+height                         Integer    4
+wheels                         Integer    50
+orientationtype                CString    0
+velocitytype                   CString    0
+speed                          Integer    0
+startspeed                     Integer    1300
+target                         CString    [PR#]S1_Trigger_Path_1
+spawnflags                     Integer64  538
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Laser_Move_S1_2&0000
+classname                      CString    func_tracktrain
+origin                         CString    -440.000000 488.000000 104.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1742
+model                          CString    maps\ze_arcana_heart\entities\Laser_Move_S1_2_1742.vmdl
+_template_lump_ent_index       CString    2
+
+====3====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    100
+speed                          Integer    0
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    155
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Laser_Move_S1_2&0000
+targetname                     CString    [PR#]Laser_Model_S1_2&0000
+classname                      CString    func_movelinear
+origin                         CString    -440.000000 488.000000 88.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3159
+model                          CString    maps\ze_arcana_heart\entities\Laser_Model_S1_2_3159.vmdl
+_template_lump_ent_index       CString    3
+
+====4====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    True
+effect_name                    CString    particles/arcana_particles/custom_particle_030.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Laser_Move_S1_2&0000
+targetname                     CString    [PR#]Laser_Particle_S1_2&0000
+classname                      CString    info_particle_system
+origin                         CString    232.000000 488.000000 88.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    841
+_template_lump_ent_index       CString    4
+
+====5====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    True
+effect_name                    CString    particles/arcana_particles/custom_particle_030.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Laser_Move_S1_2&0000
+targetname                     CString    [PR#]Laser_Particle_S1_2&0000
+classname                      CString    info_particle_system
+origin                         CString    -1112.000000 488.000000 88.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2767
+_template_lump_ent_index       CString    5
+

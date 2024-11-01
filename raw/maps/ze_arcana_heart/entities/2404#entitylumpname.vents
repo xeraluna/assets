@@ -1,0 +1,1800 @@
+====0====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    720
+speed                          Integer    1800
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNone
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Rota_4
+targetname                     CString    [PR#]Rtv_2_Boss_Move_2
+classname                      CString    func_movelinear
+origin                         CString    14432.000000 -3792.000000 -6152.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3065
+model                          CString    maps\ze_arcana_heart\entities\Rtv_2_Boss_Move_2_3065.vmdl
+_template_lump_ent_index       CString    0
+@OnFullyOpen Close !self
+@OnFullyClosed Open !self
+@OnUser1 Open !self
+
+====1====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Key_2
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Key_Maker_10
+classname                      CString    env_entity_maker
+origin                         CString    14288.000000 6448.000000 -8160.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2408
+_template_lump_ent_index       CString    1
+@OnUser4 KeyValue !self origin -960 8208 -984
+@OnUser1 KeyValue !self origin -968 8208 -984
+
+====2====
+wait                           Float64    1
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Boss_Tele_2
+classname                      CString    trigger_multiple
+origin                         CString    14224.000000 -3792.000000 -11072.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2112
+model                          CString    maps\ze_arcana_heart\entities\Rtv_2_Boss_Tele_2_2112.vmdl
+_template_lump_ent_index       CString    2
+@OnStartTouch Delay=3 KeyValue !activator health 266
+@OnStartTouch Delay=10 OnlyOnce Kill !self
+@OnStartTouch Delay=3 KeyValue !activator max_health 266
+@OnStartTouch PickRandom [PR#]Rtv_2_Spawn_Case
+
+====3====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Key_2
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Key_Maker_9
+classname                      CString    env_entity_maker
+origin                         CString    14256.000000 6448.000000 -8160.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2412
+_template_lump_ent_index       CString    3
+@OnUser4 KeyValue !self origin -992 8208 -984
+@OnUser2 KeyValue !self origin -984 8208 -984
+@OnUser1 KeyValue !self origin -1000 8208 -984
+@OnUser3 KeyValue !self origin -980 8208 -984
+
+====4====
+initialdelay                   Float64    0
+refiretime                     Float64    0.800000011920929
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    False
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Rtv_2_Boss_Timer_5
+classname                      CString    logic_timer
+origin                         CString    14152.000000 -3752.000000 -6144.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2386
+_template_lump_ent_index       CString    4
+@OnTimer ForceSpawn [PR#]Rtv_2_Boss_Maker_4
+
+====5====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    720
+speed                          Integer    1800
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 180, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNone
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Rota_4
+targetname                     CString    [PR#]Rtv_2_Boss_Move_1
+classname                      CString    func_movelinear
+origin                         CString    14016.000000 -3792.000000 -6152.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3071
+model                          CString    maps\ze_arcana_heart\entities\Rtv_2_Boss_Move_1_3071.vmdl
+_template_lump_ent_index       CString    5
+@OnFullyOpen Close !self
+@OnFullyClosed Open !self
+@OnUser1 Open !self
+
+====6====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer64  513
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    1800
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNone
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Boss_Rota_1
+classname                      CString    func_rotating
+origin                         CString    14224.000000 -3792.000000 -8840.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3097
+model                          CString    maps\ze_arcana_heart\entities\Rtv_2_Boss_Rota_1_3097.vmdl
+_template_lump_ent_index       CString    6
+
+====7====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Beam_4
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Rota_1
+targetname                     CString    [PR#]Rtv_2_Boss_Maker_2
+classname                      CString    env_entity_maker
+origin                         CString    14224.000000 -3816.000000 -8928.000000
+angles                         CString    -0.000000 -90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2390
+_template_lump_ent_index       CString    7
+
+====8====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Beam_4
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Rota_1
+targetname                     CString    [PR#]Rtv_2_Boss_Maker_2
+classname                      CString    env_entity_maker
+origin                         CString    14200.000000 -3792.000000 -8928.000000
+angles                         CString    0.000000 -179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2391
+_template_lump_ent_index       CString    8
+
+====9====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Beam_4
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Rota_1
+targetname                     CString    [PR#]Rtv_2_Boss_Maker_2
+classname                      CString    env_entity_maker
+origin                         CString    14224.000000 -3768.000000 -8928.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2392
+_template_lump_ent_index       CString    9
+
+====10====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Beam_4
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Rota_1
+targetname                     CString    [PR#]Rtv_2_Boss_Maker_2
+classname                      CString    env_entity_maker
+origin                         CString    14248.000000 -3792.000000 -8928.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2395
+_template_lump_ent_index       CString    10
+
+====11====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Rtv_2_Heart_3
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Rota_5
+targetname                     CString    [PR#]Rtv_2_Boss_Maker_8
+classname                      CString    env_entity_maker
+origin                         CString    14384.000000 -3792.000000 -4080.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2692
+_template_lump_ent_index       CString    11
+
+====12====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/arcana_particles/custom_particle_208.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Key_Win_Particle
+classname                      CString    info_particle_system
+origin                         CString    14104.000000 6392.000000 -8160.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1953
+_template_lump_ent_index       CString    12
+
+====13====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Key_2
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Key_Maker_6
+classname                      CString    env_entity_maker
+origin                         CString    14160.000000 6448.000000 -8160.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2409
+_template_lump_ent_index       CString    13
+@OnUser1 KeyValue !self origin -1080 8208 -984
+@OnUser4 KeyValue !self origin -1088 8208 -984
+@OnUser3 KeyValue !self origin -1072 8208 -984
+
+====14====
+initialdelay                   Float64    0
+upperrandombound               Float64    2
+lowerrandombound               Float64    1
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    True
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Rtv_2_Boss_Timer_4
+classname                      CString    logic_timer
+origin                         CString    15056.000000 -3808.000000 -6128.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2698
+_template_lump_ent_index       CString    14
+@OnTimer PickRandomShuffle [PR#]Rtv_2_Boss_Case_3_1
+
+====15====
+wait                           Float64    1
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Boss_Tele
+classname                      CString    trigger_multiple
+origin                         CString    14224.000000 -3792.000000 -11072.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1934
+model                          CString    maps\ze_arcana_heart\entities\Rtv_2_Boss_Tele_1934.vmdl
+_template_lump_ent_index       CString    15
+@OnStartTouch Delay=3 KeyValue !activator health 212
+@OnStartTouch Delay=10 OnlyOnce Kill !self
+@OnStartTouch Delay=3 KeyValue !activator max_health 212
+@OnStartTouch PickRandom [PR#]Rtv_2_Spawn_Case
+
+====16====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer64  67
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    10
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNone
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Boss_Rota_2
+classname                      CString    func_rotating
+origin                         CString    14224.000000 -3792.000000 -8888.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3109
+model                          CString    maps\ze_arcana_heart\entities\Rtv_2_Boss_Rota_2_3109.vmdl
+_template_lump_ent_index       CString    16
+
+====17====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Ball_6
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Move_2
+targetname                     CString    [PR#]Rtv_2_Boss_Maker_3
+classname                      CString    env_entity_maker
+origin                         CString    14432.000000 -3792.000000 -6136.000000
+angles                         CString    89.999992 -0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1960
+_template_lump_ent_index       CString    17
+
+====18====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Ball_6
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Move_4
+targetname                     CString    [PR#]Rtv_2_Boss_Maker_3
+classname                      CString    env_entity_maker
+origin                         CString    14224.000000 -3584.000000 -6136.000000
+angles                         CString    89.999992 -0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2283
+_template_lump_ent_index       CString    18
+
+====19====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Ball_6
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Move_1
+targetname                     CString    [PR#]Rtv_2_Boss_Maker_3
+classname                      CString    env_entity_maker
+origin                         CString    14016.000000 -3792.000000 -6136.000000
+angles                         CString    89.999992 -0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3068
+_template_lump_ent_index       CString    19
+
+====20====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Ball_6
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Move_3
+targetname                     CString    [PR#]Rtv_2_Boss_Maker_3
+classname                      CString    env_entity_maker
+origin                         CString    14224.000000 -4000.000000 -6136.000000
+angles                         CString    89.999992 -0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3167
+_template_lump_ent_index       CString    20
+
+====21====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Rtv_2_Heart_2
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Rota_5
+targetname                     CString    [PR#]Rtv_2_Boss_Maker_9
+classname                      CString    env_entity_maker
+origin                         CString    14384.000000 -3792.000000 -4064.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2689
+_template_lump_ent_index       CString    21
+
+====22====
+rendercolor                    Vector     <0, 0, 0>
+renderamt                      Integer    255
+holdtime                       CString    0
+duration                       CString    1.500000
+spawnflags                     Integer    1
+targetname                     CString    [PR#]Rtv_2_Boss_Fade
+classname                      CString    env_fade
+origin                         CString    14560.000000 -4096.000000 -11256.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3060
+_template_lump_ent_index       CString    22
+
+====23====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Key_2
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Key_Maker_7
+classname                      CString    env_entity_maker
+origin                         CString    14192.000000 6448.000000 -8160.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2413
+_template_lump_ent_index       CString    23
+@OnUser1 KeyValue !self origin -1048 8208 -984
+@OnUser2 KeyValue !self origin -1064 8208 -984
+@OnUser4 KeyValue !self origin -1056 8208 -984
+
+====24====
+wait                           Float64    1
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Key_Tele
+classname                      CString    trigger_multiple
+origin                         CString    14224.000000 -3792.000000 -10480.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1946
+model                          CString    maps\ze_arcana_heart\entities\Rtv_2_Key_Tele_1946.vmdl
+_template_lump_ent_index       CString    24
+@OnStartTouch Teleport [PR#]Rtv_2_ZM_Des
+
+====25====
+check_if_dest_clear_for_player Boolean    False
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]Rtv_2_Key_Des
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Key_Tele
+classname                      CString    trigger_teleport
+origin                         CString    14224.000000 -3792.000000 -8440.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2443
+model                          CString    maps\ze_arcana_heart\entities\Rtv_2_Key_Tele_2443.vmdl
+_template_lump_ent_index       CString    25
+
+====26====
+sounds                         CString    0
+solidbsp                       Boolean    False
+startdirection                 CString    -1
+startposition                  Float64    0.5
+spawnflags                     Integer64  33
+returnspeed                    Integer    0
+distance                       Integer    30
+speed                          Integer    380
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Boss_Rota_3
+classname                      CString    momentary_rot_button
+origin                         CString    14224.000000 -3792.000000 -8920.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3079
+model                          CString    maps\ze_arcana_heart\entities\Rtv_2_Boss_Rota_3_3079.vmdl
+_template_lump_ent_index       CString    26
+@OnUser1 Delay=1 FireUser1 !self
+@OnUser1 Delay=0.5 SetPosition !self 0
+@OnUser1 SetPosition !self 1
+
+====27====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    131072
+damagecap                      Integer    2
+damage                         Integer    2
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Boss_Hurt
+classname                      CString    trigger_hurt
+origin                         CString    14224.000000 -3792.000000 -8442.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4797
+model                          CString    maps\ze_arcana_heart\entities\Rtv_2_Boss_Hurt_4797.vmdl
+_template_lump_ent_index       CString    27
+
+====28====
+case28                         CString    UnpressedDuck
+case27                         CString    UnpressedSpeed
+case26                         CString    UnpressedAttack2
+case25                         CString    UnpressedAttack
+case24                         CString    UnpressedMoveRight
+case23                         CString    UnpressedBack
+case22                         CString    UnpressedMoveLeft
+case21                         CString    UnpressedForward
+case18                         CString    PressedDuck
+case17                         CString    PressedSpeed
+case16                         CString    PressedAttack2
+case15                         CString    PressedAttack
+case14                         CString    PressedMoveRight
+case13                         CString    PressedBack
+case12                         CString    PressedMoveLeft
+case11                         CString    PressedForward
+case02                         CString    PlayerOff
+case01                         CString    PlayerOn
+spawnflags                     Integer    0
+targetname                     CString    [PR#]Rtv_2_Boss_Case_1
+classname                      CString    logic_case
+origin                         CString    14216.000000 -3800.000000 -8816.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3108
+_template_lump_ent_index       CString    28
+@OnCase01 SetSpeed [PR#]Rtv_2_Boss_Rota_1 0.200000
+@OnCase02 SetSpeed [PR#]Rtv_2_Boss_Rota_1 0.400000
+@OnCase03 SetSpeed [PR#]Rtv_2_Boss_Rota_1 0.700000
+@OnCase04 SetSpeed [PR#]Rtv_2_Boss_Rota_1 1
+
+====29====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer64  515
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    10
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNone
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Boss_Main_Rota
+classname                      CString    func_rotating
+origin                         CString    14224.000000 -3792.000000 -5264.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3062
+model                          CString    maps\ze_arcana_heart\entities\Rtv_2_Boss_Main_Rota_3062.vmdl
+_template_lump_ent_index       CString    29
+
+====30====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    Effect.Win
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Pure_Clear
+classname                      CString    point_soundevent
+origin                         CString    14104.000000 6376.000000 -8160.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1933
+_template_lump_ent_index       CString    30
+
+====31====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Key_1
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Key_Maker_4
+classname                      CString    env_entity_maker
+origin                         CString    14320.000000 6448.000000 -8160.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2415
+_template_lump_ent_index       CString    31
+@OnUser2 KeyValue !self EntityTemplate Temp_Key_11
+@OnUser1 KeyValue !self EntityTemplate Temp_Key_6
+
+====32====
+initialvalue                   Integer    1
+targetname                     CString    [PR#]Rtv_2_Hard_Trigger
+classname                      CString    logic_branch
+origin                         CString    14104.000000 6312.000000 -8160.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2124
+_template_lump_ent_index       CString    32
+@OnFalse SetValue [PR#]Map_Stage_Counter 7
+@OnTrue SetValue [PR#]Map_Stage_Counter 5
+
+====33====
+filterteam                     CString    2
+negated                        CString    0
+targetname                     CString    [PR#]Rtv_2_Boss_Filter
+classname                      CString    filter_activator_team
+origin                         CString    14520.000000 -4008.000000 -11264.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1945
+_template_lump_ent_index       CString    33
+@OnPass Trigger [PR#]Rtv_2_Boss_Relay
+
+====34====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Rtv_2_Heart_1
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Rota_5
+targetname                     CString    [PR#]Rtv_2_Boss_Maker_10
+classname                      CString    env_entity_maker
+origin                         CString    14384.000000 -3792.000000 -4048.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3340
+_template_lump_ent_index       CString    34
+
+====35====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer64  64
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    1800
+disableshadows                 CString    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Boss_Rota_4
+classname                      CString    func_rotating
+origin                         CString    14224.000000 -3792.000000 -6152.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3073
+model                          CString    maps\ze_arcana_heart\entities\Rtv_2_Boss_Rota_4_3073.vmdl
+_template_lump_ent_index       CString    35
+@OnUser1 Start !self
+
+====36====
+case28                         CString    UnpressedDuck
+case27                         CString    UnpressedSpeed
+case26                         CString    UnpressedAttack2
+case25                         CString    UnpressedAttack
+case24                         CString    UnpressedMoveRight
+case23                         CString    UnpressedBack
+case22                         CString    UnpressedMoveLeft
+case21                         CString    UnpressedForward
+case18                         CString    PressedDuck
+case17                         CString    PressedSpeed
+case16                         CString    PressedAttack2
+case15                         CString    PressedAttack
+case14                         CString    PressedMoveRight
+case13                         CString    PressedBack
+case12                         CString    PressedMoveLeft
+case11                         CString    PressedForward
+case02                         CString    PlayerOff
+case01                         CString    PlayerOn
+spawnflags                     Integer    0
+targetname                     CString    [PR#]Rtv_2_Boss_Case_3_1
+classname                      CString    logic_case
+origin                         CString    15024.000000 -3808.000000 -6128.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2701
+_template_lump_ent_index       CString    36
+@OnCase01 SetSpeed [PR#]Rtv_2_Boss_Rota_5 1
+@OnCase02 SetSpeed [PR#]Rtv_2_Boss_Rota_5 0.800000
+@OnCase03 SetSpeed [PR#]Rtv_2_Boss_Rota_5 0.600000
+@OnCase04 SetSpeed [PR#]Rtv_2_Boss_Rota_5 0.400000
+@OnCase05 SetSpeed [PR#]Rtv_2_Boss_Rota_5 0.200000
+
+====37====
+initialdelay                   Float64    0
+upperrandombound               Float64    1.600000023841858
+lowerrandombound               Float64    0.800000011920929
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    True
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Rtv_2_Boss_Timer_1_2
+classname                      CString    logic_timer
+origin                         CString    14152.000000 -3784.000000 -6144.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3111
+_template_lump_ent_index       CString    37
+@OnTimer PickRandomShuffle [PR#]Rtv_2_Boss_Case_2_1
+@OnTimer PickRandomShuffle [PR#]Rtv_2_Boss_Case_2_2
+@OnTimer PickRandomShuffle [PR#]Rtv_2_Boss_Case_2_3
+@OnTimer PickRandomShuffle [PR#]Rtv_2_Boss_Case_2_4
+
+====38====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Ball_7
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Rota_1
+targetname                     CString    [PR#]Rtv_2_Boss_Maker_1
+classname                      CString    env_entity_maker
+origin                         CString    14224.000000 -3816.000000 -8864.000000
+angles                         CString    -30.000010 -90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2393
+_template_lump_ent_index       CString    38
+
+====39====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Ball_7
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Rota_1
+targetname                     CString    [PR#]Rtv_2_Boss_Maker_1
+classname                      CString    env_entity_maker
+origin                         CString    14248.000000 -3792.000000 -8864.000000
+angles                         CString    -30.000010 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2394
+_template_lump_ent_index       CString    39
+
+====40====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Ball_7
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Rota_3
+targetname                     CString    [PR#]Rtv_2_Boss_Maker_1
+classname                      CString    env_entity_maker
+origin                         CString    14232.000000 -3784.000000 -8864.000000
+angles                         CString    -25.000011 45.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3075
+_template_lump_ent_index       CString    40
+
+====41====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Ball_7
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Rota_3
+targetname                     CString    [PR#]Rtv_2_Boss_Maker_1
+classname                      CString    env_entity_maker
+origin                         CString    14232.000000 -3800.000000 -8864.000000
+angles                         CString    -25.000010 -45.000004 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3076
+_template_lump_ent_index       CString    41
+
+====42====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Ball_7
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Rota_3
+targetname                     CString    [PR#]Rtv_2_Boss_Maker_1
+classname                      CString    env_entity_maker
+origin                         CString    14216.000000 -3784.000000 -8864.000000
+angles                         CString    -25.000011 135.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3077
+_template_lump_ent_index       CString    42
+
+====43====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Ball_7
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Rota_3
+targetname                     CString    [PR#]Rtv_2_Boss_Maker_1
+classname                      CString    env_entity_maker
+origin                         CString    14216.000000 -3800.000000 -8864.000000
+angles                         CString    -25.000011 -135.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3078
+_template_lump_ent_index       CString    43
+
+====44====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Ball_7
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Rota_1
+targetname                     CString    [PR#]Rtv_2_Boss_Maker_1
+classname                      CString    env_entity_maker
+origin                         CString    14224.000000 -3768.000000 -8864.000000
+angles                         CString    -30.000010 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3099
+_template_lump_ent_index       CString    44
+
+====45====
+postspawninheritangles         Boolean    True
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Ball_7
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Rota_1
+targetname                     CString    [PR#]Rtv_2_Boss_Maker_1
+classname                      CString    env_entity_maker
+origin                         CString    14200.000000 -3792.000000 -8864.000000
+angles                         CString    -30.000010 -179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3112
+_template_lump_ent_index       CString    45
+
+====46====
+case28                         CString    UnpressedDuck
+case27                         CString    UnpressedSpeed
+case26                         CString    UnpressedAttack2
+case25                         CString    UnpressedAttack
+case24                         CString    UnpressedMoveRight
+case23                         CString    UnpressedBack
+case22                         CString    UnpressedMoveLeft
+case21                         CString    UnpressedForward
+case18                         CString    PressedDuck
+case17                         CString    PressedSpeed
+case16                         CString    PressedAttack2
+case15                         CString    PressedAttack
+case14                         CString    PressedMoveRight
+case13                         CString    PressedBack
+case12                         CString    PressedMoveLeft
+case11                         CString    PressedForward
+case02                         CString    PlayerOff
+case01                         CString    PlayerOn
+spawnflags                     Integer    0
+targetname                     CString    [PR#]Rtv_2_Boss_Case_2
+classname                      CString    logic_case
+origin                         CString    14136.000000 -3800.000000 -6144.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3069
+_template_lump_ent_index       CString    46
+@OnCase01 SetSpeed [PR#]Rtv_2_Boss_Rota_4 0.200000
+@OnCase02 SetSpeed [PR#]Rtv_2_Boss_Rota_4 0.400000
+@OnCase03 SetSpeed [PR#]Rtv_2_Boss_Rota_4 0.600000
+@OnCase04 SetSpeed [PR#]Rtv_2_Boss_Rota_4 0.800000
+@OnCase05 SetSpeed [PR#]Rtv_2_Boss_Rota_4 1
+
+====47====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Key_2
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Key_Maker_5
+classname                      CString    env_entity_maker
+origin                         CString    14128.000000 6448.000000 -8160.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2414
+_template_lump_ent_index       CString    47
+
+====48====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    True
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Rtv_2_Boss_Relay
+classname                      CString    logic_relay
+origin                         CString    14504.000000 -4008.000000 -11264.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3061
+_template_lump_ent_index       CString    48
+@OnTrigger Disable !self
+@OnTrigger Delay=3 Enable !self
+@OnTrigger Enable [PR#]Rtv_2_Boss_Hurt
+@OnTrigger Delay=0.1 Disable [PR#]Rtv_2_Boss_Hurt
+
+====49====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  4108
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    0
+lip                            Integer    -192
+wait                           Integer    -1
+speed                          Float64    1600
+disableshadows                 CString    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNone
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Rota_4
+targetname                     CString    [PR#]Rtv_2_Boss_Move_5
+classname                      CString    func_door
+origin                         CString    14416.000000 -3792.000000 -6144.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3344
+model                          CString    maps\ze_arcana_heart\entities\Rtv_2_Boss_Move_5_3344.vmdl
+_template_lump_ent_index       CString    49
+@OnFullyOpen Close !self
+@OnFullyClosed Open !self
+@OnUser1 Open !self
+
+====50====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer64  65
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    1800
+disableshadows                 CString    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Move_5
+targetname                     CString    [PR#]Rtv_2_Boss_Rota_5
+classname                      CString    func_rotating
+origin                         CString    14384.000000 -3792.000000 -6144.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2686
+model                          CString    maps\ze_arcana_heart\entities\Rtv_2_Boss_Rota_5_2686.vmdl
+_template_lump_ent_index       CString    50
+
+====51====
+damagetype                     CString    256
+negated                        CString    1
+targetname                     CString    [PR#]Rtv_2_No_Damage
+classname                      CString    filter_damage_type
+origin                         CString    14104.000000 6328.000000 -8160.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2279
+_template_lump_ent_index       CString    51
+@OnUser1 SetDamageFilter !activator [PR#]Rtv_2_No_Damage
+@OnUser1 Delay=0.52 SetDamageFilter !activator
+
+====52====
+nointerpolate                  Boolean    False
+vrad_brush_cast_shadows        Boolean    False
+scriptedmovement               Boolean    False
+solidbsp                       Boolean    False
+invert_exclusion               CString    0
+solidity                       CString    1
+startdisabled                  Boolean    True
+inputfilter                    CString    0
+uselocaloffset                 Boolean    False
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+spawnflags                     Integer64  2
+targetname                     CString    [PR#]Rtv_2_Wall_Black
+classname                      CString    func_brush
+origin                         CString    14224.000000 -3792.000000 -7176.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5987
+model                          CString    maps\ze_arcana_heart\entities\Rtv_2_Wall_Black_5987.vmdl
+_template_lump_ent_index       CString    52
+@OnUser1 Disable !self
+
+====53====
+case28                         CString    UnpressedDuck
+case27                         CString    UnpressedSpeed
+case26                         CString    UnpressedAttack2
+case25                         CString    UnpressedAttack
+case24                         CString    UnpressedMoveRight
+case23                         CString    UnpressedBack
+case22                         CString    UnpressedMoveLeft
+case21                         CString    UnpressedForward
+case18                         CString    PressedDuck
+case17                         CString    PressedSpeed
+case16                         CString    PressedAttack2
+case15                         CString    PressedAttack
+case14                         CString    PressedMoveRight
+case13                         CString    PressedBack
+case12                         CString    PressedMoveLeft
+case11                         CString    PressedForward
+case02                         CString    PlayerOff
+case01                         CString    PlayerOn
+spawnflags                     Integer    0
+targetname                     CString    [PR#]Rtv_2_Boss_Case_3
+classname                      CString    logic_case
+origin                         CString    15024.000000 -3792.000000 -6128.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2695
+_template_lump_ent_index       CString    53
+@OnCase01 ForceSpawn [PR#]Rtv_2_Boss_Maker_7
+@OnCase02 ForceSpawn [PR#]Rtv_2_Boss_Maker_8
+@OnCase03 ForceSpawn [PR#]Rtv_2_Boss_Maker_9
+@OnCase04 ForceSpawn [PR#]Rtv_2_Boss_Maker_10
+
+====54====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Key_1
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Key_Maker_2
+classname                      CString    env_entity_maker
+origin                         CString    14192.000000 6448.000000 -8160.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2417
+_template_lump_ent_index       CString    54
+@OnUser2 KeyValue !self EntityTemplate Temp_Key_11
+@OnUser1 KeyValue !self EntityTemplate Temp_Key_5
+
+====55====
+spawnflags                     Integer    1
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+targetname                     CString    [PR#]Rtv_2_Key_Floor
+classname                      CString    func_wall_toggle
+origin                         CString    14224.000000 3384.000000 -7914.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2433
+model                          CString    maps\ze_arcana_heart\entities\Rtv_2_Key_Floor_2433.vmdl
+_template_lump_ent_index       CString    55
+
+====56====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    720
+speed                          Integer    1800
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 90, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNone
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Rota_4
+targetname                     CString    [PR#]Rtv_2_Boss_Move_4
+classname                      CString    func_movelinear
+origin                         CString    14224.000000 -3584.000000 -6152.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3054
+model                          CString    maps\ze_arcana_heart\entities\Rtv_2_Boss_Move_4_3054.vmdl
+_template_lump_ent_index       CString    56
+@OnFullyOpen Close !self
+@OnFullyClosed Open !self
+@OnUser1 Open !self
+
+====57====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Key_1
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Key_Maker_3
+classname                      CString    env_entity_maker
+origin                         CString    14256.000000 6448.000000 -8160.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2416
+_template_lump_ent_index       CString    57
+@OnUser1 KeyValue !self EntityTemplate Temp_Key_5
+@OnUser2 KeyValue !self EntityTemplate Temp_Key_11
+
+====58====
+initialdelay                   Float64    0
+upperrandombound               Float64    2
+lowerrandombound               Float64    1
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    True
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Rtv_2_Boss_Timer_1
+classname                      CString    logic_timer
+origin                         CString    14152.000000 -3800.000000 -6144.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3070
+_template_lump_ent_index       CString    58
+@OnTimer PickRandomShuffle [PR#]Rtv_2_Boss_Case_2
+@OnUser1 OnlyOnce FireUser1 [PR#]Rtv_2_Boss_Rota_4
+@OnUser1 OnlyOnce Enable !self
+@OnUser1 OnlyOnce FireUser1 [PR#]Rtv_2_Boss_Move_1
+@OnUser1 OnlyOnce FireUser1 [PR#]Rtv_2_Boss_Move_2
+@OnUser1 OnlyOnce FireUser1 [PR#]Rtv_2_Boss_Move_3
+@OnUser1 OnlyOnce FireUser1 [PR#]Rtv_2_Boss_Move_4
+@OnUser1 OnlyOnce Enable [PR#]Rtv_2_Boss_Timer_1_2
+@OnUser1 OnlyOnce FireUser1 [PR#]Rtv_2_Boss_Move_5
+@OnUser1 OnlyOnce Enable [PR#]Rtv_2_Boss_Timer_4
+
+====59====
+case28                         CString    UnpressedDuck
+case27                         CString    UnpressedSpeed
+case26                         CString    UnpressedAttack2
+case25                         CString    UnpressedAttack
+case24                         CString    UnpressedMoveRight
+case23                         CString    UnpressedBack
+case22                         CString    UnpressedMoveLeft
+case21                         CString    UnpressedForward
+case18                         CString    PressedDuck
+case17                         CString    PressedSpeed
+case16                         CString    PressedAttack2
+case15                         CString    PressedAttack
+case14                         CString    PressedMoveRight
+case13                         CString    PressedBack
+case12                         CString    PressedMoveLeft
+case11                         CString    PressedForward
+case02                         CString    PlayerOff
+case01                         CString    PlayerOn
+spawnflags                     Integer    0
+targetname                     CString    [PR#]Rtv_2_Boss_Case_2_4
+classname                      CString    logic_case
+origin                         CString    14120.000000 -3752.000000 -6144.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2702
+_template_lump_ent_index       CString    59
+@OnCase01 SetSpeed [PR#]Rtv_2_Boss_Move_4 1800
+@OnCase02 SetSpeed [PR#]Rtv_2_Boss_Move_4 1400
+@OnCase03 SetSpeed [PR#]Rtv_2_Boss_Move_4 1000
+@OnCase04 SetSpeed [PR#]Rtv_2_Boss_Move_4 600
+@OnCase05 SetSpeed [PR#]Rtv_2_Boss_Move_4 200
+
+====60====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/arcana_particles/custom_particle_207.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Main_Model
+targetname                     CString    [PR#]Rtv_2_Boss_Main_Particle
+classname                      CString    info_particle_system
+origin                         CString    14223.950195 -3792.070068 -5128.000000
+angles                         CString    89.999992 -90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3064
+_template_lump_ent_index       CString    60
+
+====61====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/arcana_particles/custom_particle_206.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Main_Model
+targetname                     CString    [PR#]Rtv_2_Boss_Main_Particle
+classname                      CString    info_particle_system
+origin                         CString    14223.950195 -3792.070068 -5128.000000
+angles                         CString    89.999985 -90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    12085
+_template_lump_ent_index       CString    61
+
+====62====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Beam_5
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Rota_4
+targetname                     CString    [PR#]Rtv_2_Boss_Maker_6
+classname                      CString    env_entity_maker
+origin                         CString    14224.000000 -3792.000000 -6136.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3094
+_template_lump_ent_index       CString    62
+
+====63====
+case28                         CString    UnpressedDuck
+case27                         CString    UnpressedSpeed
+case26                         CString    UnpressedAttack2
+case25                         CString    UnpressedAttack
+case24                         CString    UnpressedMoveRight
+case23                         CString    UnpressedBack
+case22                         CString    UnpressedMoveLeft
+case21                         CString    UnpressedForward
+case18                         CString    PressedDuck
+case17                         CString    PressedSpeed
+case16                         CString    PressedAttack2
+case15                         CString    PressedAttack
+case14                         CString    PressedMoveRight
+case13                         CString    PressedBack
+case12                         CString    PressedMoveLeft
+case11                         CString    PressedForward
+case04                         CString    4
+case03                         CString    3
+case02                         CString    2
+case01                         CString    1
+spawnflags                     Integer    0
+targetname                     CString    [PR#]Rtv_2_Key_Case_1
+classname                      CString    logic_case
+origin                         CString    14104.000000 6424.000000 -8160.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2407
+_template_lump_ent_index       CString    63
+@OnCase01 ForceSpawn [PR#]Rtv_2_Key_Maker_1
+@OnCase02 ForceSpawn [PR#]Rtv_2_Key_Maker_2
+@OnCase03 ForceSpawn [PR#]Rtv_2_Key_Maker_3
+@OnCase04 ForceSpawn [PR#]Rtv_2_Key_Maker_4
+
+====64====
+case28                         CString    UnpressedDuck
+case27                         CString    UnpressedSpeed
+case26                         CString    UnpressedAttack2
+case25                         CString    UnpressedAttack
+case24                         CString    UnpressedMoveRight
+case23                         CString    UnpressedBack
+case22                         CString    UnpressedMoveLeft
+case21                         CString    UnpressedForward
+case18                         CString    PressedDuck
+case17                         CString    PressedSpeed
+case16                         CString    PressedAttack2
+case15                         CString    PressedAttack
+case14                         CString    PressedMoveRight
+case13                         CString    PressedBack
+case12                         CString    PressedMoveLeft
+case11                         CString    PressedForward
+case02                         CString    PlayerOff
+case01                         CString    PlayerOn
+spawnflags                     Integer    0
+targetname                     CString    [PR#]Rtv_2_Boss_Case_2_3
+classname                      CString    logic_case
+origin                         CString    14120.000000 -3768.000000 -6144.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2703
+_template_lump_ent_index       CString    64
+@OnCase01 SetSpeed [PR#]Rtv_2_Boss_Move_3 1800
+@OnCase02 SetSpeed [PR#]Rtv_2_Boss_Move_3 1400
+@OnCase03 SetSpeed [PR#]Rtv_2_Boss_Move_3 1000
+@OnCase04 SetSpeed [PR#]Rtv_2_Boss_Move_3 600
+@OnCase05 SetSpeed [PR#]Rtv_2_Boss_Move_3 200
+
+====65====
+wait                           Float64    1
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+vscripts                       CString    tsumugi/print_player_name.nut
+targetname                     CString    [PR#]Rtv_2_Trigger_Final
+classname                      CString    trigger_multiple
+origin                         CString    14224.000000 2756.000000 -7912.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1951
+model                          CString    maps\ze_arcana_heart\entities\Rtv_2_Trigger_Final_1951.vmdl
+_template_lump_ent_index       CString    65
+@OnTrigger Delay=5 OnlyOnce Test [PR#]Rtv_2_Hard_Trigger
+@OnStartTouch AddContext !activator nuke:1
+@OnTrigger OnlyOnce Start [PR#]Rtv_2_Key_Win_Particle
+@OnTrigger OnlyOnce StartSound [PR#]Rtv_2_Pure_Clear
+@OnTrigger OnlyOnce Kill [PR#]Rtv_2_Key_Fail_Particle
+@OnTrigger OnlyOnce Kill [PR#]Rtv_2_Track_Fail
+@OnTrigger Delay=5 OnlyOnce Trigger [PR#]Map_Nuke_Relay
+
+====66====
+case28                         CString    UnpressedDuck
+case27                         CString    UnpressedSpeed
+case26                         CString    UnpressedAttack2
+case25                         CString    UnpressedAttack
+case24                         CString    UnpressedMoveRight
+case23                         CString    UnpressedBack
+case22                         CString    UnpressedMoveLeft
+case21                         CString    UnpressedForward
+case18                         CString    PressedDuck
+case17                         CString    PressedSpeed
+case16                         CString    PressedAttack2
+case15                         CString    PressedAttack
+case14                         CString    PressedMoveRight
+case13                         CString    PressedBack
+case12                         CString    PressedMoveLeft
+case11                         CString    PressedForward
+case02                         CString    PlayerOff
+case01                         CString    PlayerOn
+spawnflags                     Integer    0
+targetname                     CString    [PR#]Rtv_2_Boss_Case_2_1
+classname                      CString    logic_case
+origin                         CString    14120.000000 -3800.000000 -6144.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3067
+_template_lump_ent_index       CString    66
+@OnCase01 SetSpeed [PR#]Rtv_2_Boss_Move_1 1800
+@OnCase02 SetSpeed [PR#]Rtv_2_Boss_Move_1 1400
+@OnCase03 SetSpeed [PR#]Rtv_2_Boss_Move_1 1000
+@OnCase04 SetSpeed [PR#]Rtv_2_Boss_Move_1 600
+@OnCase05 SetSpeed [PR#]Rtv_2_Boss_Move_1 200
+
+====67====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Rtv_2_Heart_4
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Rota_5
+targetname                     CString    [PR#]Rtv_2_Boss_Maker_7
+classname                      CString    env_entity_maker
+origin                         CString    14384.000000 -3792.000000 -4096.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2688
+_template_lump_ent_index       CString    67
+
+====68====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/arcana_particles/custom_particle_209.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Key_Fail_Particle
+classname                      CString    info_particle_system
+origin                         CString    14122.000000 6392.000000 -8160.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3527
+_template_lump_ent_index       CString    68
+
+====69====
+case28                         CString    UnpressedDuck
+case27                         CString    UnpressedSpeed
+case26                         CString    UnpressedAttack2
+case25                         CString    UnpressedAttack
+case24                         CString    UnpressedMoveRight
+case23                         CString    UnpressedBack
+case22                         CString    UnpressedMoveLeft
+case21                         CString    UnpressedForward
+case18                         CString    PressedDuck
+case17                         CString    PressedSpeed
+case16                         CString    PressedAttack2
+case15                         CString    PressedAttack
+case14                         CString    PressedMoveRight
+case13                         CString    PressedBack
+case12                         CString    PressedMoveLeft
+case11                         CString    PressedForward
+case07                         CString    7
+case06                         CString    6
+case05                         CString    5
+case04                         CString    4
+case03                         CString    3
+case02                         CString    2
+case01                         CString    1
+spawnflags                     Integer    0
+targetname                     CString    [PR#]Rtv_2_Key_Case_2
+classname                      CString    logic_case
+origin                         CString    14104.000000 6408.000000 -8160.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2406
+_template_lump_ent_index       CString    69
+@OnCase04 ForceSpawn [PR#]Rtv_2_Key_Maker_8
+@OnCase03 ForceSpawn [PR#]Rtv_2_Key_Maker_7
+@OnCase02 ForceSpawn [PR#]Rtv_2_Key_Maker_6
+@OnCase01 ForceSpawn [PR#]Rtv_2_Key_Maker_5
+@OnCase05 ForceSpawn [PR#]Rtv_2_Key_Maker_9
+@OnCase06 ForceSpawn [PR#]Rtv_2_Key_Maker_10
+@OnCase07 ForceSpawn [PR#]Rtv_2_Key_Maker_11
+
+====70====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Key_1
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Key_Maker_1
+classname                      CString    env_entity_maker
+origin                         CString    14128.000000 6448.000000 -8160.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2418
+_template_lump_ent_index       CString    70
+@OnUser2 KeyValue !self EntityTemplate Temp_Key_11
+@OnUser1 KeyValue !self EntityTemplate Temp_Key_6
+
+====71====
+initialdelay                   Float64    0
+refiretime                     Float64    0.4000000059604645
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    False
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Rtv_2_Boss_Timer_3
+classname                      CString    logic_timer
+origin                         CString    14152.000000 -3768.000000 -6144.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3093
+_template_lump_ent_index       CString    71
+@OnTimer ForceSpawn [PR#]Rtv_2_Boss_Maker_6
+@OnUser1 Delay=1.2 Enable !self
+@OnUser1 Delay=14.2 Disable !self
+
+====72====
+case28                         CString    UnpressedDuck
+case27                         CString    UnpressedSpeed
+case26                         CString    UnpressedAttack2
+case25                         CString    UnpressedAttack
+case24                         CString    UnpressedMoveRight
+case23                         CString    UnpressedBack
+case22                         CString    UnpressedMoveLeft
+case21                         CString    UnpressedForward
+case18                         CString    PressedDuck
+case17                         CString    PressedSpeed
+case16                         CString    PressedAttack2
+case15                         CString    PressedAttack
+case14                         CString    PressedMoveRight
+case13                         CString    PressedBack
+case12                         CString    PressedMoveLeft
+case11                         CString    PressedForward
+case02                         CString    PlayerOff
+case01                         CString    PlayerOn
+spawnflags                     Integer    0
+targetname                     CString    [PR#]Rtv_2_Boss_Case_2_2
+classname                      CString    logic_case
+origin                         CString    14120.000000 -3784.000000 -6144.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3053
+_template_lump_ent_index       CString    72
+@OnCase01 SetSpeed [PR#]Rtv_2_Boss_Move_2 1800
+@OnCase02 SetSpeed [PR#]Rtv_2_Boss_Move_2 1400
+@OnCase03 SetSpeed [PR#]Rtv_2_Boss_Move_2 1000
+@OnCase04 SetSpeed [PR#]Rtv_2_Boss_Move_2 600
+@OnCase05 SetSpeed [PR#]Rtv_2_Boss_Move_2 200
+
+====73====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+burstscale                     Float64    100
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    6
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+skin                           CString    default
+model                          CString    models/props/tenshi/arcana/love_02.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Main_Rota
+targetname                     CString    [PR#]Rtv_2_Boss_Main_Model
+classname                      CString    prop_dynamic
+origin                         CString    14224.000000 -3672.000000 -5128.000000
+angles                         CString    0.000000 -179.999969 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1949
+_template_lump_ent_index       CString    73
+
+====74====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    720
+speed                          Integer    1800
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 270, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNone
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Rota_4
+targetname                     CString    [PR#]Rtv_2_Boss_Move_3
+classname                      CString    func_movelinear
+origin                         CString    14224.000000 -4000.000000 -6152.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3056
+model                          CString    maps\ze_arcana_heart\entities\Rtv_2_Boss_Move_3_3056.vmdl
+_template_lump_ent_index       CString    74
+@OnFullyOpen Close !self
+@OnFullyClosed Open !self
+@OnUser1 Open !self
+
+====75====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Heart_Rtv_2
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Rtv_2_Boss_Rota_5
+targetname                     CString    [PR#]Rtv_2_Boss_Maker_4
+classname                      CString    env_entity_maker
+origin                         CString    14352.000000 -3792.000000 -4096.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2387
+_template_lump_ent_index       CString    75
+
+====76====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Key_2
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Key_Maker_11
+classname                      CString    env_entity_maker
+origin                         CString    14320.000000 6448.000000 -8160.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2411
+_template_lump_ent_index       CString    76
+
+====77====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Temp_Key_2
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Rtv_2_Key_Maker_8
+classname                      CString    env_entity_maker
+origin                         CString    14224.000000 6448.000000 -8160.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2410
+_template_lump_ent_index       CString    77
+@OnUser1 KeyValue !self origin -1044 8208 -984
+@OnUser2 KeyValue !self origin -1004 8208 -984
+@OnUser4 KeyValue !self origin -1024 8208 -984
+
+====78====
+initialdelay                   Float64    0
+upperrandombound               Float64    1.100000023841858
+lowerrandombound               Float64    0.30000001192092896
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    True
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Rtv_2_Boss_Timer_2
+classname                      CString    logic_timer
+origin                         CString    14232.000000 -3784.000000 -8816.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3107
+_template_lump_ent_index       CString    78
+@OnTimer PickRandomShuffle [PR#]Rtv_2_Boss_Case_1
+@OnUser1 OnlyOnce Enable !self
+@OnUser1 OnlyOnce FireUser1 [PR#]Rtv_2_Boss_Rota_3
+

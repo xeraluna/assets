@@ -1,0 +1,519 @@
+====0====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]sf_elevator_path_2
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_elevator_path_1
+classname                      CString    path_track
+origin                         CString    -12324.000000 1816.000000 -12774.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2331
+_template_lump_ent_index       CString    0
+
+====1====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]sf_elevator_path_3
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_elevator_path_2
+classname                      CString    path_track
+origin                         CString    -12324.000000 1816.000000 -11398.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2332
+_template_lump_ent_index       CString    1
+@OnPass Stop [PR#]sf_elevator
+@OnPass Delay=5 Break [PR#]sf_elevatorbreak_1
+
+====2====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]sf_elevator_path_4
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_elevator_path_3
+classname                      CString    path_track
+origin                         CString    -12324.000000 1816.000000 -10566.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2333
+_template_lump_ent_index       CString    2
+@OnPass Stop [PR#]sf_elevator
+
+====3====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_elevator_path_4
+classname                      CString    path_track
+origin                         CString    -12324.000000 1816.000000 -9542.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2334
+_template_lump_ent_index       CString    3
+@OnPass Stop [PR#]sf_elevator
+@OnPass Delay=5 Break [PR#]sf_elevatorbreak_3
+@OnPass Delay=1 StartSound [PR#]sf_babylon2
+@OnPass Delay=3 SetAnimationLooping [PR#]sf_babythird freaky
+@OnPass Delay=15 OnlyOnce FireUser1 [PR#]teleport_s3_7
+@OnPass Delay=20 OnlyOnce Command [PR#]server say ***FIND THE BUTTONS***
+@OnPass Delay=10 OnlyOnce Command [PR#]server say ***TIP - YOU CAN BREAK THE RUSTY METAL***
+@OnPass Disable [PR#]sf_elevator_light
+
+====4====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    10000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]sf_elevatorbreak_1
+classname                      CString    func_breakable
+origin                         CString    -12542.000000 1816.000000 -11910.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1493
+model                          CString    maps\ze_santassination_p\entities\sf_elevatorbreak_1_1493.vmdl
+_template_lump_ent_index       CString    4
+
+====5====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    10000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]sf_elevatorbreak_3
+classname                      CString    func_breakable
+origin                         CString    -12542.000000 1816.000000 -9668.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1495
+model                          CString    maps\ze_santassination_p\entities\sf_elevatorbreak_3_1495.vmdl
+_template_lump_ent_index       CString    5
+
+====6====
+solidbsp                       CString    0
+distance                       Integer    90
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  48
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    True
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    0
+wait                           Integer    4
+noise2                         CString    custom.sfx.doors.floodgate_stop1
+noise1                         CString    custom.sfx.doors.floodgate_move_short1
+speed                          Float64    15
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_endgate
+classname                      CString    func_door_rotating
+origin                         CString    15420.000000 1400.000000 -9222.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1437
+model                          CString    maps\ze_santassination_p\entities\sf_endgate_1437.vmdl
+_template_lump_ent_index       CString    6
+@OnFullyOpen Delay=2 OnlyOnce Command [PR#]server say ***SANTA'S LAIR GATE IS CLOSING IN 10 SECONDS***
+@OnFullyOpen Delay=12 OnlyOnce Command [PR#]server say ***SANTA'S LAIR GATE IS CLOSING***
+@OnFullyOpen Delay=12 OnlyOnce Close [PR#]sf_endgate
+@OnFullyClosed Delay=1 OnlyOnce Enable [PR#]KILL_ACT2_CHECK
+@OnFullyClosed Delay=3 OnlyOnce Trigger [PR#]KILL_ACT2_WINRELAY
+@OnFullyClosed Delay=2 OnlyOnce Disable [PR#]KILL_ACT2_CHECK
+
+====7====
+solidbsp                       CString    0
+distance                       Integer    90
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  50
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    True
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    0
+wait                           Integer    4
+noise2                         CString    custom.sfx.doors.floodgate_stop1
+noise1                         CString    custom.sfx.doors.floodgate_move_short1
+speed                          Float64    15
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_endgate
+classname                      CString    func_door_rotating
+origin                         CString    15420.000000 1912.000000 -9222.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1439
+model                          CString    maps\ze_santassination_p\entities\sf_endgate_1439.vmdl
+_template_lump_ent_index       CString    7
+
+====8====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 270, 0>
+loopmovesound                  Boolean    False
+_minlight                      CString    0.250000
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    100000
+lip                            Integer    128
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.boulder_impact_hard4
+noise1                         CString    custom.sfx.doors.concrete_block_scrape_rough_loop1
+speed                          Float64    25
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_entrancedoor
+classname                      CString    func_door
+origin                         CString    -13372.000000 856.000000 -12742.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1623
+model                          CString    maps\ze_santassination_p\entities\sf_entrancedoor_1623.vmdl
+_template_lump_ent_index       CString    8
+
+====9====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 90, 0>
+loopmovesound                  Boolean    False
+_minlight                      CString    0.250000
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    100000
+lip                            Integer    128
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.boulder_impact_hard4
+noise1                         CString    custom.sfx.doors.concrete_block_scrape_rough_loop1
+speed                          Float64    25
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_entrancedoor
+classname                      CString    func_door
+origin                         CString    -13372.000000 920.000000 -12742.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1627
+model                          CString    maps\ze_santassination_p\entities\sf_entrancedoor_1627.vmdl
+_template_lump_ent_index       CString    9
+
+====10====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_027.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_entrancedoor_p
+classname                      CString    info_particle_system
+origin                         CString    -13124.000000 888.000000 -12454.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1631
+_template_lump_ent_index       CString    10
+
+====11====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    100000
+lip                            Integer    0
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.floodgate_stop1
+noise1                         CString    custom.sfx.doors.doormove1
+speed                          Float64    50
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_exitdoor_1
+classname                      CString    func_door
+origin                         CString    -9524.000000 -392.000000 -9526.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2177
+model                          CString    maps\ze_santassination_p\entities\sf_exitdoor_1_2177.vmdl
+_template_lump_ent_index       CString    11
+
+====12====
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_LOOPING
+idleanim                       CString    stand
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    stand
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    2
+skin                           CString    0
+model                          CString    models/luffaren/luff_reindeer.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]sf_exitdoor_1
+targetname                     CString    [PR#]sf_exitdoor_1_model
+classname                      CString    prop_dynamic
+origin                         CString    -9524.000000 -392.000000 -9524.879883
+angles                         CString    -0.000000 -89.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2180
+_template_lump_ent_index       CString    12
+
+====13====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    100000
+lip                            Integer    128
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.floodgate_stop1
+noise1                         CString    custom.sfx.doors.floodgate_move_short1
+speed                          Float64    20
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_exitdoor_2
+classname                      CString    func_door
+origin                         CString    -8804.000000 920.000000 -9414.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2181
+model                          CString    maps\ze_santassination_p\entities\sf_exitdoor_2_2181.vmdl
+_template_lump_ent_index       CString    13
+
+====14====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    10000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]sf_facewall2
+classname                      CString    func_breakable
+origin                         CString    -11684.000000 -888.000000 -12630.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1540
+model                          CString    maps\ze_santassination_p\entities\sf_facewall2_1540.vmdl
+_template_lump_ent_index       CString    14
+@OnBreak Delay=1 OnlyOnce StartSound [PR#]sf_facewall2_pizzas
+@OnBreak Delay=2 OnlyOnce Kill [PR#]sf_facewall2_pizzas
+@OnBreak Delay=10 OnlyOnce FireUser1 [PR#]sf_elevator
+
+====15====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.pizzatime
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_facewall2_pizzas
+classname                      CString    point_soundevent
+origin                         CString    -11652.000000 -1192.000000 -12678.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2373
+_template_lump_ent_index       CString    15
+
+====16====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.fucking_open
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sf_facewall2_s
+classname                      CString    point_soundevent
+origin                         CString    -11716.000000 -888.000000 -12710.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1538
+_template_lump_ent_index       CString    16
+

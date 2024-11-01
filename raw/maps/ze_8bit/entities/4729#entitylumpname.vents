@@ -1,0 +1,61 @@
+====0====
+flag_as_weather                CString    0
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/8bit_particles/item_heal_used.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Particle_material_heal
+classname                      CString    info_particle_system
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4732
+_template_lump_ent_index       CString    0
+
+====1====
+wait                           Float64    0.5
+filtername                     CString    [PR#]filter_ct
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Material_Heal_trigger
+classname                      CString    trigger_multiple
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4982
+model                          CString    maps\ze_8bit\entities\Material_Heal_trigger_4982.vmdl
+_template_lump_ent_index       CString    1
+@OnStartTouch Delay=0.06 SetHealth !activator 200
+@OnStartTouch Delay=0.03 KeyValues !activator max_health 200
+
+====2====
+initialdelay                   Float64    0
+refiretime                     Float64    0.5
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    False
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Material_Heal_timer
+classname                      CString    logic_timer
+origin                         CString    8.000000 -33.036133 73.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    11542
+_template_lump_ent_index       CString    2
+@OnTimer Enable [PR#]Material_Heal_trigger
+@OnTimer Delay=0.2 Disable [PR#]Material_Heal_trigger
+

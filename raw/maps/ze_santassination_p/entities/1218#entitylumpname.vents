@@ -1,0 +1,234 @@
+====0====
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_tele_firstouter
+classname                      CString    info_teleport_destination
+origin                         CString    -5220.000000 -5288.000000 -16646.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3413
+_template_lump_ent_index       CString    0
+
+====1====
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_tele_lower
+classname                      CString    info_teleport_destination
+origin                         CString    -4260.000000 -9320.000000 -18182.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3215
+_template_lump_ent_index       CString    1
+
+====2====
+movesoundmaxtime               Float64    0
+movesoundmintime               Float64    0
+movesoundmaxpitch              Integer    200
+movesoundminpitch              Integer    60
+volume                         Integer    10
+stopsound                      CString    custom.sfx.doors.door_metal_large_chamber_close1
+startsound                     CString    custom.sfx.doors.conveyor_buzzer_01
+movesound                      CString    custom.sfx.doors.doormove1
+dmg                            Integer    1000000
+bank                           CString    0
+height                         Integer    0
+wheels                         Integer    0
+orientationtype                CString    1
+velocitytype                   CString    0
+speed                          Integer    0
+startspeed                     Integer    200
+target                         CString    [PR#]fs_tram_p_1
+spawnflags                     Integer64  531
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_tram_1
+classname                      CString    func_tracktrain
+origin                         CString    -4404.000000 -5544.000000 -16854.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3275
+model                          CString    maps\ze_santassination_p\entities\fs_tram_1_3275.vmdl
+_template_lump_ent_index       CString    2
+
+====3====
+movesoundmaxtime               Float64    0
+movesoundmintime               Float64    0
+movesoundmaxpitch              Integer    200
+movesoundminpitch              Integer    60
+volume                         Integer    10
+stopsound                      CString    custom.sfx.doors.door_metal_large_chamber_close1
+startsound                     CString    custom.sfx.doors.conveyor_buzzer_01
+movesound                      CString    custom.sfx.doors.doormove1
+dmg                            Integer    1000000
+bank                           CString    0
+height                         Integer    0
+wheels                         Integer    0
+orientationtype                CString    1
+velocitytype                   CString    0
+speed                          Integer    0
+startspeed                     Integer    200
+target                         CString    [PR#]fs_tram_p_1
+spawnflags                     Integer64  531
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_tram_2
+classname                      CString    func_tracktrain
+origin                         CString    -4404.000000 -5544.000000 -16854.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3163
+model                          CString    maps\ze_santassination_p\entities\fs_tram_2_3163.vmdl
+_template_lump_ent_index       CString    3
+
+====4====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]fs_tram_p_2
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_tram_p_1
+classname                      CString    path_track
+origin                         CString    -4404.000000 -5544.000000 -16854.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3159
+_template_lump_ent_index       CString    4
+
+====5====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]fs_tram_p_3
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_tram_p_2
+classname                      CString    path_track
+origin                         CString    -3796.000000 -5544.000000 -16854.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3160
+_template_lump_ent_index       CString    5
+
+====6====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]fs_tram_p_4
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_tram_p_3
+classname                      CString    path_track
+origin                         CString    -2268.000000 -5544.000000 -15062.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3161
+_template_lump_ent_index       CString    6
+
+====7====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_tram_p_4
+classname                      CString    path_track
+origin                         CString    -2044.000000 -5544.000000 -15062.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3162
+_template_lump_ent_index       CString    7
+@OnPass Delay=10 OnlyOnce Break [PR#]fs_trambreak
+
+====8====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    1000000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]fs_trambreak
+classname                      CString    func_breakable
+origin                         CString    -3204.000000 -5100.000000 -15878.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7868
+model                          CString    maps\ze_santassination_p\entities\fs_trambreak_7868.vmdl
+_template_lump_ent_index       CString    8
+
+====9====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    10000
+lip                            Integer    224
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.door_metal_gate_close1
+noise1                         CString    custom.sfx.doors.gate_move1
+speed                          Float64    20
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]fs_truthgate
+classname                      CString    func_door
+origin                         CString    -2596.000000 -3848.000000 -14502.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3289
+model                          CString    maps\ze_santassination_p\entities\fs_truthgate_3289.vmdl
+_template_lump_ent_index       CString    9
+

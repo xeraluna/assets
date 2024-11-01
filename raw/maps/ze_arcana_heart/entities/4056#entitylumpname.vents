@@ -1,0 +1,649 @@
+====0====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 292.5, 0>
+filtername                     CString    [PR#]Filter_T
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    -136.000000 322.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1628
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_1628.vmdl
+_template_lump_ent_index       CString    0
+@OnUser1 Disable !self
+@OnUser2 Enable !self
+
+====1====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 67.5, 0>
+filtername                     CString    [PR#]Filter_T
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    141.500000 336.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2482
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_2482.vmdl
+_template_lump_ent_index       CString    1
+@OnUser1 Disable !self
+@OnUser2 Enable !self
+
+====2====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 22.5, 0>
+filtername                     CString    [PR#]Filter_T
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    336.000000 141.500000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2484
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_2484.vmdl
+_template_lump_ent_index       CString    2
+@OnUser1 Disable !self
+@OnUser2 Enable !self
+
+====3====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 67.5, 0>
+filtername                     CString    [PR#]Filter_T
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    -136.000000 -322.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2595
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_2595.vmdl
+_template_lump_ent_index       CString    3
+@OnUser1 Disable !self
+@OnUser2 Enable !self
+
+====4====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 22.5, 0>
+filtername                     CString    [PR#]Filter_T
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    -322.000000 -136.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2605
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_2605.vmdl
+_template_lump_ent_index       CString    4
+@OnUser1 Disable !self
+@OnUser2 Enable !self
+
+====5====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 337.5, 0>
+filtername                     CString    [PR#]Filter_T
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    -322.000000 136.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2755
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_2755.vmdl
+_template_lump_ent_index       CString    5
+@OnUser1 Disable !self
+@OnUser2 Enable !self
+
+====6====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 112.5, 0>
+filtername                     CString    [PR#]Filter_T
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    -141.500000 336.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3058
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_3058.vmdl
+_template_lump_ent_index       CString    6
+@OnUser1 Disable !self
+@OnUser2 Enable !self
+
+====7====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 157.5, 0>
+filtername                     CString    [PR#]Filter_T
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    -336.000000 141.500000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3249
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_3249.vmdl
+_template_lump_ent_index       CString    7
+@OnUser1 Disable !self
+@OnUser2 Enable !self
+
+====8====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 202.5, 0>
+filtername                     CString    [PR#]Filter_T
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    -336.000000 -141.500000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3256
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_3256.vmdl
+_template_lump_ent_index       CString    8
+@OnUser1 Disable !self
+@OnUser2 Enable !self
+
+====9====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 247.5, 0>
+filtername                     CString    [PR#]Filter_T
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    -141.500000 -336.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3258
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_3258.vmdl
+_template_lump_ent_index       CString    9
+@OnUser1 Disable !self
+@OnUser2 Enable !self
+
+====10====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 292.5, 0>
+filtername                     CString    [PR#]Filter_T
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    141.500000 -336.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3261
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_3261.vmdl
+_template_lump_ent_index       CString    10
+@OnUser1 Disable !self
+@OnUser2 Enable !self
+
+====11====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 202.5, 0>
+filtername                     CString    [PR#]Filter_T
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    322.000000 136.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3607
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_3607.vmdl
+_template_lump_ent_index       CString    11
+@OnUser1 Disable !self
+@OnUser2 Enable !self
+
+====12====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 247.5, 0>
+filtername                     CString    [PR#]Filter_T
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    136.000000 322.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3612
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_3612.vmdl
+_template_lump_ent_index       CString    12
+@OnUser1 Disable !self
+@OnUser2 Enable !self
+
+====13====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 157.5, 0>
+filtername                     CString    [PR#]Filter_T
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    322.000000 -136.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3642
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_3642.vmdl
+_template_lump_ent_index       CString    13
+@OnUser1 Disable !self
+@OnUser2 Enable !self
+
+====14====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 337.5, 0>
+filtername                     CString    [PR#]Filter_T
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    336.000000 -141.500000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4040
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_4040.vmdl
+_template_lump_ent_index       CString    14
+@OnUser1 Disable !self
+@OnUser2 Enable !self
+
+====15====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 112.5, 0>
+filtername                     CString    [PR#]Filter_T
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    136.000000 -322.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4050
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_4050.vmdl
+_template_lump_ent_index       CString    15
+@OnUser1 Disable !self
+@OnUser2 Enable !self
+
+====16====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 292.5, 0>
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    -136.000000 322.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6026
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_6026.vmdl
+_template_lump_ent_index       CString    16
+@OnUser2 Disable !self
+@OnUser1 Enable !self
+
+====17====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 67.5, 0>
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    141.500000 336.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6028
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_6028.vmdl
+_template_lump_ent_index       CString    17
+@OnUser2 Disable !self
+@OnUser1 Enable !self
+
+====18====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 22.5, 0>
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    336.000000 141.500000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6030
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_6030.vmdl
+_template_lump_ent_index       CString    18
+@OnUser2 Disable !self
+@OnUser1 Enable !self
+
+====19====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 67.5, 0>
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    -136.000000 -322.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6032
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_6032.vmdl
+_template_lump_ent_index       CString    19
+@OnUser2 Disable !self
+@OnUser1 Enable !self
+
+====20====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 22.5, 0>
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    -322.000000 -136.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6034
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_6034.vmdl
+_template_lump_ent_index       CString    20
+@OnUser2 Disable !self
+@OnUser1 Enable !self
+
+====21====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 337.5, 0>
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    -322.000000 136.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6036
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_6036.vmdl
+_template_lump_ent_index       CString    21
+@OnUser2 Disable !self
+@OnUser1 Enable !self
+
+====22====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 112.5, 0>
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    -141.500000 336.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6038
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_6038.vmdl
+_template_lump_ent_index       CString    22
+@OnUser2 Disable !self
+@OnUser1 Enable !self
+
+====23====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 157.5, 0>
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    -336.000000 141.500000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6040
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_6040.vmdl
+_template_lump_ent_index       CString    23
+@OnUser2 Disable !self
+@OnUser1 Enable !self
+
+====24====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 202.5, 0>
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    -336.000000 -141.500000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6042
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_6042.vmdl
+_template_lump_ent_index       CString    24
+@OnUser2 Disable !self
+@OnUser1 Enable !self
+
+====25====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 247.5, 0>
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    -141.500000 -336.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6044
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_6044.vmdl
+_template_lump_ent_index       CString    25
+@OnUser2 Disable !self
+@OnUser1 Enable !self
+
+====26====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 292.5, 0>
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    141.500000 -336.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6046
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_6046.vmdl
+_template_lump_ent_index       CString    26
+@OnUser2 Disable !self
+@OnUser1 Enable !self
+
+====27====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 202.5, 0>
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    322.000000 136.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6048
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_6048.vmdl
+_template_lump_ent_index       CString    27
+@OnUser2 Disable !self
+@OnUser1 Enable !self
+
+====28====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 247.5, 0>
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    136.000000 322.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6050
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_6050.vmdl
+_template_lump_ent_index       CString    28
+@OnUser2 Disable !self
+@OnUser1 Enable !self
+
+====29====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 157.5, 0>
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    322.000000 -136.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6052
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_6052.vmdl
+_template_lump_ent_index       CString    29
+@OnUser2 Disable !self
+@OnUser1 Enable !self
+
+====30====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 337.5, 0>
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    336.000000 -141.500000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6054
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_6054.vmdl
+_template_lump_ent_index       CString    30
+@OnUser2 Disable !self
+@OnUser1 Enable !self
+
+====31====
+triggeronstarttouch            Boolean    False
+speed                          Integer    600
+pushdir                        Vector     <0, 112.5, 0>
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Trigger&0000
+classname                      CString    trigger_push
+origin                         CString    136.000000 -322.000000 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6056
+model                          CString    maps\ze_arcana_heart\entities\Shield_Trigger_6056.vmdl
+_template_lump_ent_index       CString    31
+@OnUser2 Disable !self
+@OnUser1 Enable !self
+
+====32====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    True
+effect_name                    CString    particles/arcana_items/custom_particle_115.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Shield_Particle&0000
+classname                      CString    info_particle_system
+origin                         CString    0.000000 0.000000 -8.000000
+angles                         CString    0.000000 -179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3263
+_template_lump_ent_index       CString    32
+
+====33====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Shield_Relay&0000
+classname                      CString    logic_relay
+origin                         CString    0.000000 0.000000 16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3264
+_template_lump_ent_index       CString    33
+@OnSpawn Kill !self
+@OnSpawn Delay=7 Kill [PR#]Shield_*
+

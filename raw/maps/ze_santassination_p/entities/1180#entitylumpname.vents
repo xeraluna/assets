@@ -1,0 +1,393 @@
+====0====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_stampededeer
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]e_stampede_spawner_2
+classname                      CString    env_entity_maker
+origin                         CString    -3132.000000 11336.000000 -1342.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3943
+_template_lump_ent_index       CString    0
+
+====1====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_stampededeer
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]e_stampede_spawner_3
+classname                      CString    env_entity_maker
+origin                         CString    -3132.000000 11464.000000 -1342.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3944
+_template_lump_ent_index       CString    1
+
+====2====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_stampededeer
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]e_stampede_spawner_4
+classname                      CString    env_entity_maker
+origin                         CString    -3132.000000 11592.000000 -1342.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3945
+_template_lump_ent_index       CString    2
+
+====3====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_stampededeer
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]e_stampede_spawner_5
+classname                      CString    env_entity_maker
+origin                         CString    -3132.000000 11720.000000 -1342.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3946
+_template_lump_ent_index       CString    3
+
+====4====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_stampededeer
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]e_stampede_spawner_6
+classname                      CString    env_entity_maker
+origin                         CString    -3132.000000 11848.000000 -1342.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3947
+_template_lump_ent_index       CString    4
+
+====5====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_stampededeer
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]e_stampede_spawner_7
+classname                      CString    env_entity_maker
+origin                         CString    -3132.000000 11976.000000 -1342.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3948
+_template_lump_ent_index       CString    5
+
+====6====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_stampededeer
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]e_stampede_spawner_8
+classname                      CString    env_entity_maker
+origin                         CString    -3132.000000 12104.000000 -1342.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3949
+_template_lump_ent_index       CString    6
+
+====7====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_stampededeer
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]e_stampede_spawner_9
+classname                      CString    env_entity_maker
+origin                         CString    -3132.000000 12232.000000 -1342.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3950
+_template_lump_ent_index       CString    7
+
+====8====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]e_stampede_start
+classname                      CString    logic_relay
+origin                         CString    -2972.000000 11720.000000 -1342.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4157
+_template_lump_ent_index       CString    8
+@OnTrigger FireUser2 [PR#]music_lionking_1
+@OnTrigger FireUser1 [PR#]music_lionking_2
+@OnTrigger Delay=20 Disable [PR#]e_stampede_wall
+@OnTrigger Delay=20 Stop [PR#]e_stampede_particle
+@OnTrigger Delay=20.05 Start [PR#]e_stampede_particle
+@OnTrigger Delay=20 Enable [PR#]e_stampede_timer
+@OnTrigger Delay=15 Command [PR#]server say ***SOMETHING IS COMING...***
+@OnTrigger Delay=20 Command [PR#]server say ***RUN***
+@OnTrigger Delay=54 Command [PR#]server say ***GET UP ON THAT ROCK***
+@OnTrigger Delay=10 StartShake [PR#]shakesmall
+@OnTrigger Delay=15 StartShake [PR#]shakesmall
+@OnTrigger Delay=20 StartShake [PR#]shake
+@OnTrigger Delay=25 StartShake [PR#]shake
+@OnTrigger Delay=30 StartShake [PR#]shake
+@OnTrigger Delay=35 StartShake [PR#]shake
+@OnTrigger Delay=30 KeyValues [PR#]teleport_destination origin -2295 10735 10750
+@OnTrigger Delay=30.5 Enable [PR#]teleport_s1_2
+@OnTrigger Delay=70 KeyValues [PR#]teleport_destination origin 4490 11630 10370
+@OnTrigger Delay=70.5 Enable [PR#]teleport_s1_3
+@OnTrigger Delay=144 Fade [PR#]fade_from_mufasadead
+@OnTrigger Delay=144.5 Enable [PR#]e_stampede_wall
+@OnTrigger Delay=144.5 Enable [PR#]teleport_s1_4
+@OnTrigger Delay=144.5 Start [PR#]lionking_sprite_mufasadead
+@OnTrigger Delay=144 StopPlayEndCap [PR#]e_stampede_particle
+@OnTrigger Delay=155 Stop [PR#]e_stampede_particle_still
+@OnTrigger Delay=155.05 Start [PR#]e_stampede_particle_still
+@OnTrigger Delay=144 FireUser1 [PR#]g_stampededeer*
+@OnTrigger Delay=143.5 Disable [PR#]e_stampede_timer
+@OnTrigger Delay=220 FireUser1 [PR#]KILL_ALL
+@OnTrigger Delay=220 Command [PR#]server say ***PROLOGUE COMPLETE***
+@OnTrigger Delay=210 Command [PR#]server say ***SANTA CLAUS WILL PAY FOR HIS DEEDS***
+@OnTrigger Delay=200 Command [PR#]server say ***MUFASA.. IS DEAD...***
+@OnTrigger Delay=143 Fade [PR#]fade_from_mufasadead_first
+@OnTrigger Delay=30 KeyValues [PR#]teleport_destination angles 0 90 0
+@OnTrigger Delay=70 KeyValues [PR#]teleport_destination angles 0 0 0
+@OnTrigger Delay=116 Open [PR#]lionking_santamover
+@OnTrigger Delay=135.8 SetAnimationNotLooping [PR#]lionking_santa mufasakick
+@OnTrigger Delay=135.85 SetIdleAnimationLooping [PR#]lionking_santa laugh
+@OnTrigger Delay=144.5 Disable [PR#]lionking_santa
+@OnTrigger Delay=129.6 SetAnimationLooping [PR#]lionking_santa angry
+@OnTrigger Delay=130.1 SetAnimationLooping [PR#]lionking_santa idle
+@OnTrigger Delay=148.5 PickRandom [PR#]e_stampede_spawncase
+@OnTrigger Delay=19 StartForward [PR#]tr_1
+@OnTrigger Delay=19 Enable [PR#]simba_jumptimer
+@OnTrigger Delay=220 FireUser1 [PR#]stage_2
+@OnTrigger Delay=61 FireUser1 [PR#]tr_1_p_8
+@OnTrigger Delay=138 Resume [PR#]tr_2
+@OnTrigger Delay=129.6 Enable [PR#]mufasa_jumptimer
+@OnTrigger Delay=131 FireUser1 [PR#]mufasa_jumptimer
+@OnTrigger Delay=142 Enable [PR#]simba_jumptimer
+@OnTrigger Delay=144.5 FireUser1 [PR#]simba_jumptimer
+@OnTrigger Delay=154 Enable [PR#]simba_jumptimer
+@OnTrigger Delay=154 Resume [PR#]tr_1
+@OnTrigger Delay=140.5 Enable [PR#]mufasa_jumptimer
+@OnTrigger Delay=144.5 FireUser1 [PR#]mufasa_jumptimer
+@OnTrigger Delay=144.5 Stop [PR#]lionking_sprite_mufasa
+@OnTrigger Delay=135.85 StartSound [PR#]santa_s_laugh2
+@OnTrigger Delay=145 ForceSpawn [PR#]lionking_mufasaskip_tem
+@OnTrigger Delay=218 FireUser1 [PR#]lionking_mufasaskip
+@OnTrigger Delay=144.5 Disable [PR#]lionking_zpushrock
+
+====9====
+initialdelay                   Float64    0
+upperrandombound               Float64    0.4000000059604645
+lowerrandombound               Float64    0.15000000596046448
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    True
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]e_stampede_timer
+classname                      CString    logic_timer
+origin                         CString    -3036.000000 11720.000000 -1342.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3953
+_template_lump_ent_index       CString    9
+@OnTimer PickRandom [PR#]e_stampede_spawncase
+
+====10====
+vrad_brush_cast_shadows        Boolean    False
+scriptedmovement               Boolean    False
+solidbsp                       Boolean    False
+invert_exclusion               CString    0
+solidity                       CString    0
+spawnflags                     Integer64  2
+disableshadows                 CString    1
+startdisabled                  Boolean    False
+inputfilter                    CString    0
+lightmapstatic                 CString    1
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]e_stampede_wall
+classname                      CString    func_brush
+origin                         CString    2660.000000 11784.000000 -582.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3767
+model                          CString    maps\ze_santassination_p\entities\e_stampede_wall_3767.vmdl
+_template_lump_ent_index       CString    10
+
+====11====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  4140
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    False
+dmg                            Integer    0
+lip                            Integer    0
+wait                           Integer    -1
+speed                          Float64    1000
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]tr_2
+targetname                     CString    [PR#]mufasa_jumper
+classname                      CString    func_door
+origin                         CString    3180.000000 12784.000000 -842.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3755
+model                          CString    maps\ze_santassination_p\entities\mufasa_jumper_3755.vmdl
+_template_lump_ent_index       CString    11
+
+====12====
+initialdelay                   Float64    0
+upperrandombound               Float64    0.10000000149011612
+lowerrandombound               Float64    0.10000000149011612
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    True
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]mufasa_jumptimer
+classname                      CString    logic_timer
+origin                         CString    3180.000000 12784.000000 -822.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3754
+_template_lump_ent_index       CString    12
+@OnUser1 Disable [PR#]mufasa_jumptimer
+@OnUser1 Delay=0.01 Close [PR#]mufasa_jumper
+@OnTimer Toggle [PR#]mufasa_jumper
+
+====13====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  4140
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    False
+dmg                            Integer    0
+lip                            Integer    0
+wait                           Integer    -1
+speed                          Float64    1000
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]tr_1
+targetname                     CString    [PR#]simba_jumper
+classname                      CString    func_door
+origin                         CString    -1308.000000 11784.000000 -1322.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3740
+model                          CString    maps\ze_santassination_p\entities\simba_jumper_3740.vmdl
+_template_lump_ent_index       CString    13
+
+====14====
+initialdelay                   Float64    0
+upperrandombound               Float64    0.10000000149011612
+lowerrandombound               Float64    0.10000000149011612
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    True
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]simba_jumptimer
+classname                      CString    logic_timer
+origin                         CString    -1308.000000 11784.000000 -1302.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3742
+_template_lump_ent_index       CString    14
+@OnUser1 Disable [PR#]simba_jumptimer
+@OnUser1 Delay=0.01 Close [PR#]simba_jumper
+@OnTimer Toggle [PR#]simba_jumper
+
+====15====
+movesoundmaxtime               Float64    0
+movesoundmintime               Float64    0
+movesoundmaxpitch              Integer    200
+movesoundminpitch              Integer    60
+volume                         Integer    10
+dmg                            Integer    0
+bank                           CString    0
+height                         Integer    0
+wheels                         Integer    50
+orientationtype                CString    1
+velocitytype                   CString    0
+speed                          Integer    0
+startspeed                     Integer    500
+target                         CString    [PR#]tr_1_p_3
+spawnflags                     Integer64  539
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]tr_3
+classname                      CString    func_tracktrain
+origin                         CString    2980.000000 12816.000000 -806.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3762
+model                          CString    maps\ze_santassination_p\entities\tr_3_3762.vmdl
+_template_lump_ent_index       CString    15
+

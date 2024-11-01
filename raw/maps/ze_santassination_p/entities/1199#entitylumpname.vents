@@ -1,0 +1,1831 @@
+====0====
+targetname                     CString    [PR#]bb_explosion_case
+classname                      CString    logic_case
+origin                         CString    -13988.000000 -1456.000000 -4942.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4402
+_template_lump_ent_index       CString    0
+@OnCase01 ForceSpawn [PR#]bb_explosion_1
+@OnCase02 ForceSpawn [PR#]bb_explosion_2
+@OnCase03 ForceSpawn [PR#]bb_explosion_3
+@OnCase04 ForceSpawn [PR#]bb_explosion_4
+@OnCase05 ForceSpawn [PR#]bb_explosion_5
+@OnCase06 ForceSpawn [PR#]bb_explosion_6
+@OnCase07 ForceSpawn [PR#]bb_explosion_7
+@OnCase08 ForceSpawn [PR#]bb_explosion_8
+@OnCase09 ForceSpawn [PR#]bb_explosion_9
+@OnCase10 ForceSpawn [PR#]bb_explosion_10
+@OnCase11 ForceSpawn [PR#]bb_explosion_11
+@OnCase12 ForceSpawn [PR#]bb_explosion_12
+@OnCase13 ForceSpawn [PR#]bb_explosion_13
+@OnCase14 ForceSpawn [PR#]bb_explosion_14
+@OnCase15 ForceSpawn [PR#]bb_explosion_15
+@OnCase16 ForceSpawn [PR#]bb_explosion_16
+
+====1====
+initialdelay                   Float64    0
+upperrandombound               Float64    2.5
+lowerrandombound               Float64    0.10000000149011612
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    True
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]bb_explosion_timer
+classname                      CString    logic_timer
+origin                         CString    -13972.000000 -1456.000000 -4942.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4403
+_template_lump_ent_index       CString    1
+@OnTimerLow StartShake [PR#]shakesmallest
+@OnTimerHigh PickRandom [PR#]bb_explosion_case
+@OnTimerHigh StartSound [PR#]sound_impact
+@OnTimerLow PickRandom [PR#]bb_explosion_case
+
+====2====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_001.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_factorysmoke
+classname                      CString    info_particle_system
+origin                         CString    -14228.799805 -4816.129883 -6220.970215
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4339
+_template_lump_ent_index       CString    2
+
+====3====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_001.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_factorysmoke
+classname                      CString    info_particle_system
+origin                         CString    -14008.700195 -1896.910034 -6156.970215
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4340
+_template_lump_ent_index       CString    3
+
+====4====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_001.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_factorysmoke
+classname                      CString    info_particle_system
+origin                         CString    -14616.799805 764.645020 -5772.970215
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4341
+_template_lump_ent_index       CString    4
+
+====5====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_001.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_factorysmoke
+classname                      CString    info_particle_system
+origin                         CString    -13670.099609 2643.770020 -7116.970215
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4342
+_template_lump_ent_index       CString    5
+
+====6====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_002.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_factorysmokered
+classname                      CString    info_particle_system
+origin                         CString    -14228.799805 -4816.129883 -6220.970215
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4345
+_template_lump_ent_index       CString    6
+
+====7====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_002.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_factorysmokered
+classname                      CString    info_particle_system
+origin                         CString    -14008.700195 -1896.910034 -6156.970215
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4346
+_template_lump_ent_index       CString    7
+
+====8====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_002.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_factorysmokered
+classname                      CString    info_particle_system
+origin                         CString    -14616.799805 764.645020 -5772.970215
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4347
+_template_lump_ent_index       CString    8
+
+====9====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_002.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_factorysmokered
+classname                      CString    info_particle_system
+origin                         CString    -13670.099609 2643.770020 -7116.970215
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4348
+_template_lump_ent_index       CString    9
+
+====10====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 180, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    True
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    96
+wait                           Integer    -1
+noise2                         CString    custom.sfx.doors.vent_open3
+noise1                         CString    custom.sfx.doors.sugarcane_lift_gate_open_01
+speed                          Float64    150
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_firstmaingate
+classname                      CString    func_door
+origin                         CString    -8284.000000 9800.000000 -5254.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5213
+model                          CString    maps\ze_santassination_p\entities\bb_firstmaingate_5213.vmdl
+_template_lump_ent_index       CString    10
+
+====11====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    1000000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]bb_firstsnowbreak
+classname                      CString    func_breakable
+origin                         CString    -11504.000000 14092.000000 -5382.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4784
+model                          CString    maps\ze_santassination_p\entities\bb_firstsnowbreak_4784.vmdl
+_template_lump_ent_index       CString    11
+
+====12====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    1000000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]bb_firstsnowbreak
+classname                      CString    func_breakable
+origin                         CString    -10332.000000 12968.000000 -5382.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4789
+model                          CString    maps\ze_santassination_p\entities\bb_firstsnowbreak_4789.vmdl
+_template_lump_ent_index       CString    12
+
+====13====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    1000000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]bb_firstsnowbreak
+classname                      CString    func_breakable
+origin                         CString    -10332.000000 14632.000000 -5318.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4792
+model                          CString    maps\ze_santassination_p\entities\bb_firstsnowbreak_4792.vmdl
+_template_lump_ent_index       CString    13
+
+====14====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    20
+damage                         Integer    1000000
+spawnflags                     Integer64  73
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_laserblocker_hurt
+classname                      CString    trigger_hurt
+origin                         CString    -12844.000000 -920.000000 -4934.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4430
+model                          CString    maps\ze_santassination_p\entities\bb_laserblocker_hurt_4430.vmdl
+_template_lump_ent_index       CString    14
+
+====15====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    20
+damage                         Integer    1000000
+spawnflags                     Integer64  73
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_laserblocker_hurt
+classname                      CString    trigger_hurt
+origin                         CString    -12844.000000 -920.000000 -4934.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4430
+model                          CString    maps\ze_santassination_p\entities\bb_laserblocker_hurt_4430.vmdl
+_template_lump_ent_index       CString    15
+
+====16====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_healthkit
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_healthkit_spawn
+classname                      CString    env_entity_maker
+origin                         CString    -8658.759766 5721.609863 -5822.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3053
+_template_lump_ent_index       CString    16
+
+====17====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]s_item_healthkit
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_healthkit_spawn
+classname                      CString    env_entity_maker
+origin                         CString    -7116.000000 5752.000000 -5213.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3052
+_template_lump_ent_index       CString    17
+
+====18====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    1
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    func_button
+origin                         CString    -15744.799805 40.900002 -5134.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4454
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_4454.vmdl
+_template_lump_ent_index       CString    18
+@OnPressed Delay=40 OnlyOnce Open [PR#]bb_mazegate_11
+@OnPressed Delay=40 OnlyOnce Command [PR#]server say ***FALL BACK***
+@OnPressed OnlyOnce Command [PR#]server say ***SUB-PRIMARY PROTOCOL DOOR WILL OPEN IN 40 SECONDS***
+@OnPressed Delay=40 OnlyOnce ForceSpawn [PR#]bb_spawnbeaver_5
+@OnPressed Delay=35 OnlyOnce Command [PR#]server say ***SUB-PRIMARY PROTOCOL DOOR WILL OPEN IN 5 SECONDS***
+@OnPressed Delay=1.5 OnlyOnce Disable [PR#]bb_light_11
+
+====19====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    1
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    func_button
+origin                         CString    -13916.000000 -1432.000000 -4942.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4460
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_4460.vmdl
+_template_lump_ent_index       CString    19
+@OnPressed OnlyOnce Enable [PR#]bb_explosion_timer
+@OnPressed OnlyOnce Command [PR#]server say ***SELF-DESTRUCT SEQUENCE HAS BEEN INITIATED***
+@OnPressed Delay=20 OnlyOnce Command [PR#]server say ***ESCAPE THE BEAVER STEELWORKS FACILITY***
+@OnPressed Delay=21 OnlyOnce Command [PR#]server say ***RUN***
+@OnPressed Delay=1 OnlyOnce Command [PR#]server say ***LASER SHUTDOWN IN 20 SECONDS***
+@OnPressed Delay=20 Disable [PR#]bb_laserblocker_hurt
+@OnPressed Delay=20 StopPlayEndCap [PR#]bb_lasterblocker
+@OnPressed Delay=3.05 OnlyOnce Start [PR#]bb_factorysmokered
+@OnPressed Delay=3 OnlyOnce Stop [PR#]bb_factorysmokered
+@OnPressed Delay=1 OnlyOnce Stop [PR#]bb_factorysmoke
+@OnPressed Delay=15 OnlyOnce Command [PR#]server say ***LASER SHUTDOWN IN 5 SECONDS***
+@OnPressed Delay=1.5 OnlyOnce Disable [PR#]bb_light_12
+
+====20====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    1
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    func_button
+origin                         CString    -15284.000000 5328.000000 -6894.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4466
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_4466.vmdl
+_template_lump_ent_index       CString    20
+@OnPressed Delay=30 OnlyOnce FireUser2 [PR#]bb_mazegate_10
+@OnPressed Delay=30 OnlyOnce Command [PR#]server say ***FINAL ELEVATOR DOOR IS CLOSING***
+@OnPressed OnlyOnce Command [PR#]server say ***FINAL ELEVATOR DOOR WILL CLOSE IN 30 SECONDS***
+@OnPressed Delay=25 OnlyOnce Command [PR#]server say ***FINAL ELEVATOR DOOR WILL CLOSE IN 5 SECONDS***
+@OnPressed Delay=30 OnlyOnce UpperRandomBound [PR#]bb_explosion_timer 0.500000
+@OnPressed OnlyOnce FireUser1 [PR#]teleport_s2_7
+@OnPressed Delay=1.5 OnlyOnce Disable [PR#]bb_light_18
+
+====21====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    1
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    func_button
+origin                         CString    -11772.000000 3048.000000 -4942.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4472
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_4472.vmdl
+_template_lump_ent_index       CString    21
+@OnPressed Delay=20 OnlyOnce Open [PR#]bb_mazegate_8
+@OnPressed OnlyOnce Command [PR#]server say ***PRIMARY PROTOCOL DOOR WILL OPEN IN 20 SECONDS***
+@OnPressed Delay=20 OnlyOnce Command [PR#]server say ***FALL BACK***
+@OnPressed Delay=5 OnlyOnce UpperRandomBound [PR#]bb_explosion_timer 2.000000
+@OnPressed Delay=20 OnlyOnce FireUser1 [PR#]teleport_s2_6
+@OnPressed Delay=20 OnlyOnce ForceSpawn [PR#]bb_spawnbeaver_5l
+@OnPressed Delay=1.5 OnlyOnce Disable [PR#]bb_light_13
+
+====22====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    1
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    func_button
+origin                         CString    -12852.000000 3868.000000 -4590.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4478
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_4478.vmdl
+_template_lump_ent_index       CString    22
+@OnPressed Delay=15 OnlyOnce Open [PR#]bb_elevator_door
+@OnPressed Delay=25 OnlyOnce Close [PR#]bb_elevator_door
+@OnPressed Delay=27 OnlyOnce SetSpeed [PR#]bb_elevator 1
+@OnPressed Delay=40 OnlyOnce Open [PR#]bb_elevator_door
+@OnPressed OnlyOnce Command [PR#]server say ***ELEVATOR OPENS IN 15 SECONDS***
+@OnPressed Delay=15 OnlyOnce Command [PR#]server say ***ELEVATOR DOOR IS OPEN***
+@OnPressed Delay=20 OnlyOnce Command [PR#]server say ***ELEVATOR LEAVES IN 5 SECONDS***
+@OnPressed Delay=5 OnlyOnce UpperRandomBound [PR#]bb_explosion_timer 1.500000
+@OnPressed Delay=27 OnlyOnce ForceSpawn [PR#]bb_spawnbeaver_7
+@OnPressed Delay=41 OnlyOnce Kill [PR#]bb_elevator_door
+@OnPressed Delay=1.5 OnlyOnce Disable [PR#]bb_light_15
+@OnPressed Delay=1.5 OnlyOnce Enable [PR#]bb_elevator_light
+@OnPressed Delay=27 OnlyOnce Open [PR#]bb_elevator_light_mover
+
+====23====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    1
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    func_button
+origin                         CString    -16092.000000 1032.000000 -4558.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4484
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_4484.vmdl
+_template_lump_ent_index       CString    23
+@OnPressed Delay=20 OnlyOnce Command [PR#]server say ***FALL BACK***
+@OnPressed Delay=20 OnlyOnce Open [PR#]bb_mazegate_7
+@OnPressed OnlyOnce Command [PR#]server say ***SECONDARY PROTOCOL DOOR WILL OPEN IN 20 SECONDS***
+@OnPressed Delay=20 OnlyOnce ForceSpawn [PR#]bb_spawnbeaver_6
+@OnPressed Delay=1.5 OnlyOnce Disable [PR#]bb_light_14
+
+====24====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    1
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    func_button
+origin                         CString    -15668.000000 3664.000000 -6894.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4499
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_4499.vmdl
+_template_lump_ent_index       CString    24
+@OnPressed Delay=5 OnlyOnce Open [PR#]bb_mazegate_9
+@OnPressed Delay=5 OnlyOnce UpperRandomBound [PR#]bb_explosion_timer 1.000000
+@OnPressed Delay=1.5 OnlyOnce Disable [PR#]bb_light_16
+@OnPressed Delay=5 OnlyOnce Disable [PR#]bb_mazegate_9_vphys
+
+====25====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    1
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    func_button
+origin                         CString    -15324.000000 5112.000000 -6894.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4505
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_4505.vmdl
+_template_lump_ent_index       CString    25
+@OnPressed Delay=5 OnlyOnce FireUser1 [PR#]bb_mazegate_10
+@OnPressed Delay=1.5 OnlyOnce Disable [PR#]bb_light_17
+@OnPressed OnlyOnce Enable [PR#]bb_final_hold_light
+@OnPressed Delay=1.5 OnlyOnce Enable [PR#]bb_final_hold_light
+@OnPressed Delay=5 OnlyOnce Disable [PR#]bb_mazegate_10_vphys
+
+====26====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    1
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    func_button
+origin                         CString    -9220.000000 -3488.000000 -5390.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4615
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_4615.vmdl
+_template_lump_ent_index       CString    26
+@OnPressed Delay=30 OnlyOnce Open [PR#]bb_mazegate_5
+@OnPressed OnlyOnce Command [PR#]server say ***STEELWORKS DOOR WILL OPEN IN 30 SECONDS***
+@OnPressed Delay=30 OnlyOnce Command [PR#]server say ***STEELWORKS DOOR IS OPENING***
+@OnPressed Delay=35 OnlyOnce Command [PR#]server say ***STEELWORKS DOOR WILL CLOSE IN 5 SECONDS***
+@OnPressed Delay=40 OnlyOnce Command [PR#]server say ***STEELWORKS DOOR IS CLOSING***
+@OnPressed Delay=40 OnlyOnce Close [PR#]bb_mazegate_5
+@OnPressed Delay=45 OnlyOnce Enable [PR#]teleport_s2_4
+@OnPressed Delay=44 OnlyOnce KeyValues [PR#]teleport_destination origin -9310 -3585 6570
+@OnPressed Delay=44 OnlyOnce KeyValues [PR#]teleport_destination angles 0 180 0
+@OnPressed Delay=49 OnlyOnce Enable [PR#]bb_beaver_relay
+@OnPressed Delay=49 OnlyOnce Enable [PR#]g_npc_death
+@OnPressed Delay=50 OnlyOnce PickRandom [PR#]bb_beaver_spawncase
+@OnPressed Delay=50.5 OnlyOnce PickRandom [PR#]bb_beaver_spawncase
+@OnPressed Delay=51 OnlyOnce PickRandom [PR#]bb_beaver_spawncase
+@OnPressed Delay=51.5 OnlyOnce PickRandom [PR#]bb_beaver_spawncase
+@OnPressed Delay=52 OnlyOnce PickRandom [PR#]bb_beaver_spawncase
+@OnPressed Delay=46 OnlyOnce Command [PR#]server say ***SOMETHING IS COMING...***
+@OnPressed Delay=60 OnlyOnce Command [PR#]server say ***THE BEAVERS ARE AGRESSIVE***
+@OnPressed Delay=52 OnlyOnce Command [PR#]server say ***THE BEAVERS ARE COMING***
+@OnPressed Delay=39 OnlyOnce FireUser2 [PR#]music_beaver_1
+@OnPressed Delay=42 OnlyOnce FireUser1 [PR#]music_beaverevent
+@OnPressed Delay=50 OnlyOnce Break [PR#]bb_beaver_break
+@OnPressed Delay=43 OnlyOnce StartShake [PR#]shake
+@OnPressed Delay=48 OnlyOnce StartShake [PR#]shake
+@OnPressed Delay=25 OnlyOnce Command [PR#]server say ***STEELWORKS DOOR WILL OPEN IN 5 SECONDS***
+@OnPressed Delay=25 OnlyOnce FireUser1 [PR#]teleport_s2_3
+@OnPressed Delay=30 OnlyOnce ForceSpawn [PR#]bb_event_weapon_spawn
+@OnPressed Delay=100 OnlyOnce Subtract [PR#]bb_beaver_counter 1000
+@OnPressed Delay=1.5 Disable [PR#]bb_light_10
+
+====27====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    1
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    func_button
+origin                         CString    -8504.000000 3292.000000 -5166.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4630
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_4630.vmdl
+_template_lump_ent_index       CString    27
+@OnPressed Delay=17 OnlyOnce Open [PR#]bb_maingate_3
+@OnPressed Delay=21 OnlyOnce FireUser2 [PR#]bb_maingate_p_3
+@OnPressed Delay=15.5 OnlyOnce FireUser1 [PR#]bb_maingate_p_3
+@OnPressed Delay=30 OnlyOnce FireUser1 [PR#]teleport_s2_2
+@OnPressed Delay=8 ForceSpawn [PR#]bb_spawnbeaver_2
+@OnPressed Delay=8.5 ForceSpawn [PR#]bb_spawnbeaver_2
+@OnPressed Delay=9 ForceSpawn [PR#]bb_spawnbeaver_2
+@OnPressed Delay=8.2 Break [PR#]bb_ceilingbreak_1
+@OnPressed Delay=17 OnlyOnce ForceSpawn [PR#]bb_spawnbeaver_3
+@OnPressed Delay=9 Stop [PR#]bb_snowsmoke
+@OnPressed OnlyOnce Command [PR#]server say ***INNER INNEST INCEST BEAVER BLASTDOOR IS OPENING IN 15 SECONDS***
+@OnPressed Delay=1.5 Disable [PR#]bb_light_4
+@OnPressed FireUser2 [PR#]BBEntranceSmoke
+@OnPressed StopPlayEndCap [PR#]snow_particle_1
+@OnPressed StopPlayEndCap [PR#]snow_particle_2
+
+====28====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    1
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    func_button
+origin                         CString    -8516.000000 5726.000000 -5166.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4636
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_4636.vmdl
+_template_lump_ent_index       CString    28
+@OnPressed Delay=10 OnlyOnce Open [PR#]bb_maingate_1
+@OnPressed Delay=8.5 OnlyOnce FireUser1 [PR#]bb_maingate_p_1
+@OnPressed Delay=14 OnlyOnce FireUser2 [PR#]bb_maingate_p_1
+@OnPressed Delay=1.5 OnlyOnce Disable [PR#]bb_light_2
+
+====29====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    1
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    func_button
+origin                         CString    -8140.000000 7320.000000 -5198.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4642
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_4642.vmdl
+_template_lump_ent_index       CString    29
+@OnPressed Delay=5 OnlyOnce Toggle [PR#]bb_drawbridge
+@OnPressed OnlyOnce Command [PR#]server say ***DRAWBRIDGE WILL DRAW ITSELF IN 5 SECONDS***
+@OnPressed Delay=5 OnlyOnce Command [PR#]server say ***DRAWBRIDGE IS DRAWING***
+@OnPressed Delay=1.5 OnlyOnce Disable [PR#]bb_light_1
+
+====30====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    1
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    func_button
+origin                         CString    -10352.000000 860.000000 -5390.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4672
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_4672.vmdl
+_template_lump_ent_index       CString    30
+@OnPressed Delay=40 OnlyOnce Open [PR#]bb_sewergate
+@OnPressed Delay=40 OnlyOnce Command [PR#]server say ***SEWER BLASTDOOR IS OPENING***
+@OnPressed OnlyOnce Command [PR#]server say ***SEWER BLASTDOOR WILL OPEN IN 40 SECONDS***
+@OnPressed Delay=1.5 Disable [PR#]bb_light_5
+
+====31====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    1
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    func_button
+origin                         CString    -8572.000000 9864.000000 -5386.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4732
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_4732.vmdl
+_template_lump_ent_index       CString    31
+@OnPressed Delay=5 OnlyOnce Open [PR#]bb_firstmaingate
+@OnPressed Delay=5 OnlyOnce ForceSpawn [PR#]bb_spawnbeaveroutside_1
+@OnPressed Delay=1.5 Disable [PR#]bb_light_0
+
+====32====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    1
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    func_button
+origin                         CString    -7984.000000 -740.000000 -5390.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4823
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_4823.vmdl
+_template_lump_ent_index       CString    32
+@OnPressed Delay=25 Open [PR#]bb_mazegate_1
+@OnPressed Command [PR#]server say ***FIRST FIRST JEDI-SCROLL-DOOR IS OPENING IN 15 SECONDS***
+@OnPressed Delay=25 Command [PR#]server say ***FIRST FIRST JEDI-SCROLL-DOOR IS OPENING***
+@OnPressed Delay=1.5 Disable [PR#]bb_light_6
+
+====33====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    1
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    func_button
+origin                         CString    -9288.000000 -740.000000 -5390.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4829
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_4829.vmdl
+_template_lump_ent_index       CString    33
+@OnPressed Delay=15 Open [PR#]bb_mazegate_2
+@OnPressed Delay=15 Command [PR#]server say ***SECOND FIRST JEDI-SCROLL-DOOR IS OPENING***
+@OnPressed Command [PR#]server say ***SECOND FIRST JEDI-SCROLL-DOOR IS OPENING IN 15 SECONDS***
+@OnPressed Delay=16 Command [PR#]server say ***INCEST***
+@OnPressed Delay=1.5 Disable [PR#]bb_light_7
+
+====34====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    1
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    func_button
+origin                         CString    -9392.000000 -1892.000000 -5390.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4835
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_4835.vmdl
+_template_lump_ent_index       CString    34
+@OnPressed Delay=15 Open [PR#]bb_mazegate_4
+@OnPressed Delay=15 Command [PR#]server say ***SECOND FIRST JEDI-SCROLL-DOOR IS OPENING***
+@OnPressed Command [PR#]server say ***SECOND FIRST JEDI-SCROLL-DOOR IS OPENING IN 15 SECONDS***
+@OnPressed Delay=16 Command [PR#]server say ***WINCEST***
+@OnPressed Delay=1.5 Disable [PR#]bb_light_9
+
+====35====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    1
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    func_button
+origin                         CString    -7880.000000 -1892.000000 -5390.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4841
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_4841.vmdl
+_template_lump_ent_index       CString    35
+@OnPressed Delay=15 Open [PR#]bb_mazegate_3
+@OnPressed Delay=15 Command [PR#]server say ***SECOND SECOND JEDI-SCROLL-DOOR IS OPENING***
+@OnPressed Command [PR#]server say ***SECOND SECOND JEDI-SCROLL-DOOR IS OPENING IN 15 SECONDS***
+@OnPressed Delay=1.5 Disable [PR#]bb_light_8
+
+====36====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    1
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    func_button
+origin                         CString    -8064.000000 4492.000000 -5166.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4847
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_4847.vmdl
+_template_lump_ent_index       CString    36
+@OnPressed Delay=22 OnlyOnce Open [PR#]bb_maingate_2
+@OnPressed Delay=26 OnlyOnce FireUser2 [PR#]bb_maingate_p_2
+@OnPressed Delay=20.5 OnlyOnce FireUser1 [PR#]bb_maingate_p_2
+@OnPressed Delay=22.5 OnlyOnce ForceSpawn [PR#]bb_spawnbeaver_1
+@OnPressed OnlyOnce Command [PR#]server say ***INNER BEAVER BLASTDOOR IS OPENING IN 20 SECONDS***
+@OnPressed Delay=1.5 OnlyOnce Disable [PR#]bb_light_3
+
+====37====
+wait                           Float64    1
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    -8248.000000 5892.000000 -5190.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5179
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_5179.vmdl
+_template_lump_ent_index       CString    37
+@OnTrigger OnlyOnce Disable !self
+@OnTrigger Delay=7 OnlyOnce FireUser1 [PR#]music_beaver_1
+@OnTrigger Delay=6 OnlyOnce FireUser2 [PR#]music_beaverforest
+@OnTrigger Delay=5 OnlyOnce FireUser1 [PR#]teleport_s2_1
+
+====38====
+wait                           Float64    0.10000000149011612
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    -8868.000000 8.000000 -5318.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3373
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_3373.vmdl
+_template_lump_ent_index       CString    38
+@OnTrigger Delay=30 OnlyOnce Break [PR#]bb_breakbalance
+@OnTrigger OnlyOnce FireUser1 [PR#]bb_breakbalance
+@OnTrigger OnlyOnce Add [PR#]bb_breakbalance_math 1
+@OnTrigger OnlyOnce Kill !self
+
+====39====
+wait                           Float64    0.10000000149011612
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    -8572.000000 240.000000 -5318.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3367
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_3367.vmdl
+_template_lump_ent_index       CString    39
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger Delay=30 OnlyOnce Break [PR#]bb_breakbalance
+@OnTrigger OnlyOnce Add [PR#]bb_breakbalance_math 1
+@OnTrigger OnlyOnce FireUser1 [PR#]bb_breakbalance
+
+====40====
+wait                           Float64    1
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    -8284.000000 3240.000000 -5126.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2840
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_2840.vmdl
+_template_lump_ent_index       CString    40
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger OnlyOnce Open [PR#]bb_maingate_3
+
+====41====
+wait                           Float64    1
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    -8284.000000 4432.000000 -5126.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2838
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_2838.vmdl
+_template_lump_ent_index       CString    41
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger OnlyOnce Open [PR#]bb_maingate_2
+
+====42====
+wait                           Float64    1
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    -8284.000000 5640.000000 -5126.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2836
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_2836.vmdl
+_template_lump_ent_index       CString    42
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger OnlyOnce Open [PR#]bb_maingate_1
+
+====43====
+wait                           Float64    1
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    -10340.000000 744.000000 -5350.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2834
+model                          CString    maps\ze_santassination_p\entities\bb_event_triggers_2834.vmdl
+_template_lump_ent_index       CString    43
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger OnlyOnce Open [PR#]bb_sewergate
+
+====44====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+cpoint1                        CString    [PR#]bb_laserblocker_target_1
+tint_cp_color                  Vector     <85, 255, 255>
+tint_cp                        Integer    3
+data_cp_value                  Vector     <16, 16, 16>
+data_cp                        Integer    2
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    True
+effect_name                    CString    particles/pingas/beam.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_lasterblocker
+classname                      CString    info_particle_system
+origin                         CString    -12844.000000 -1175.000000 -4934.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8607
+_template_lump_ent_index       CString    44
+
+====45====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+cpoint1                        CString    [PR#]bb_laserblocker_target_3
+tint_cp_color                  Vector     <85, 255, 255>
+tint_cp                        Integer    3
+data_cp_value                  Vector     <16, 16, 16>
+data_cp                        Integer    2
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    True
+effect_name                    CString    particles/pingas/beam.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_lasterblocker
+classname                      CString    info_particle_system
+origin                         CString    -12844.000000 -1175.000000 -4890.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    13005
+_template_lump_ent_index       CString    45
+
+====46====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    8
+wait                           Integer    -1
+noise2                         CString    sounds/doors/drawbridge_stop1.vsnd
+noise1                         CString    sounds/doors/doormove7.vsnd
+speed                          Float64    15
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_1
+classname                      CString    func_door
+origin                         CString    -8284.000000 5640.000000 -5066.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4647
+model                          CString    maps\ze_santassination_p\entities\bb_maingate_1_4647.vmdl
+_template_lump_ent_index       CString    46
+
+====47====
+createnavobstacle              Boolean    True
+movedir                        Vector     <90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    8
+wait                           Integer    -1
+noise2                         CString    sounds/doors/drawbridge_stop1.vsnd
+noise1                         CString    sounds/doors/doormove7.vsnd
+speed                          Float64    15
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_1
+classname                      CString    func_door
+origin                         CString    -8284.000000 5640.000000 -5170.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4650
+model                          CString    maps\ze_santassination_p\entities\bb_maingate_1_4650.vmdl
+_template_lump_ent_index       CString    47
+
+====48====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    8
+wait                           Integer    -1
+noise2                         CString    sounds/doors/drawbridge_stop1.vsnd
+noise1                         CString    sounds/doors/doormove7.vsnd
+speed                          Float64    15
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_2
+classname                      CString    func_door
+origin                         CString    -8284.000000 4440.000000 -5066.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4655
+model                          CString    maps\ze_santassination_p\entities\bb_maingate_2_4655.vmdl
+_template_lump_ent_index       CString    48
+
+====49====
+createnavobstacle              Boolean    True
+movedir                        Vector     <90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    8
+wait                           Integer    -1
+noise2                         CString    sounds/doors/drawbridge_stop1.vsnd
+noise1                         CString    sounds/doors/doormove7.vsnd
+speed                          Float64    15
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_2
+classname                      CString    func_door
+origin                         CString    -8284.000000 4440.000000 -5170.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4658
+model                          CString    maps\ze_santassination_p\entities\bb_maingate_2_4658.vmdl
+_template_lump_ent_index       CString    49
+
+====50====
+createnavobstacle              Boolean    True
+movedir                        Vector     <-90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    8
+wait                           Integer    -1
+noise2                         CString    sounds/doors/drawbridge_stop1.vsnd
+noise1                         CString    sounds/doors/doormove7.vsnd
+speed                          Float64    15
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_3
+classname                      CString    func_door
+origin                         CString    -8284.000000 3232.000000 -5066.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4663
+model                          CString    maps\ze_santassination_p\entities\bb_maingate_3_4663.vmdl
+_template_lump_ent_index       CString    50
+
+====51====
+createnavobstacle              Boolean    True
+movedir                        Vector     <90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  32
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    True
+dmg                            Integer    1000000
+lip                            Integer    8
+wait                           Integer    -1
+noise2                         CString    sounds/doors/drawbridge_stop1.vsnd
+noise1                         CString    sounds/doors/doormove7.vsnd
+speed                          Float64    15
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_3
+classname                      CString    func_door
+origin                         CString    -8284.000000 3232.000000 -5170.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4666
+model                          CString    maps\ze_santassination_p\entities\bb_maingate_3_4666.vmdl
+_template_lump_ent_index       CString    51
+
+====52====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_000.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_p_1
+classname                      CString    info_particle_system
+origin                         CString    -8492.000000 5664.000000 -5094.000000
+angles                         CString    15.000000 15.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4741
+_template_lump_ent_index       CString    52
+@OnUser1 Stop !self
+@OnUser1 Delay=0.05 Start !self
+@OnUser2 Stop !self
+
+====53====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.steam_release_2.door
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_p_1
+classname                      CString    point_soundevent
+origin                         CString    -8492.000000 5664.000000 -5094.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4742
+_template_lump_ent_index       CString    53
+@OnUser1 StartSound !self
+
+====54====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.steam_release_2.door
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_p_1
+classname                      CString    point_soundevent
+origin                         CString    -8492.000000 5664.000000 -5094.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4743
+_template_lump_ent_index       CString    54
+@OnUser1 StartSound !self
+
+====55====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_000.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_p_1
+classname                      CString    info_particle_system
+origin                         CString    -8076.120117 5664.000000 -5094.000000
+angles                         CString    15.000000 164.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4748
+_template_lump_ent_index       CString    55
+@OnUser1 Stop !self
+@OnUser1 Delay=0.05 Start !self
+@OnUser2 Stop !self
+
+====56====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.steam_release_2.door
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_p_1
+classname                      CString    point_soundevent
+origin                         CString    -8076.120117 5664.000000 -5094.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4749
+_template_lump_ent_index       CString    56
+@OnUser1 StartSound !self
+
+====57====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.steam_release_2.door
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_p_1
+classname                      CString    point_soundevent
+origin                         CString    -8076.120117 5664.000000 -5094.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4750
+_template_lump_ent_index       CString    57
+@OnUser1 StartSound !self
+
+====58====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_000.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_p_2
+classname                      CString    info_particle_system
+origin                         CString    -8076.120117 4464.000000 -5094.000000
+angles                         CString    15.000000 164.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4757
+_template_lump_ent_index       CString    58
+@OnUser1 Stop !self
+@OnUser1 Delay=0.05 Start !self
+@OnUser2 Stop !self
+
+====59====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.steam_release_2.door
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_p_2
+classname                      CString    point_soundevent
+origin                         CString    -8076.120117 4464.000000 -5094.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4758
+_template_lump_ent_index       CString    59
+@OnUser1 StartSound !self
+
+====60====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.steam_release_2.door
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_p_2
+classname                      CString    point_soundevent
+origin                         CString    -8076.120117 4464.000000 -5094.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4759
+_template_lump_ent_index       CString    60
+@OnUser1 StartSound !self
+
+====61====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/luffaren/custom_particle_000.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_p_2
+classname                      CString    info_particle_system
+origin                         CString    -8492.000000 4464.000000 -5094.000000
+angles                         CString    15.000000 15.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4764
+_template_lump_ent_index       CString    61
+@OnUser1 Stop !self
+@OnUser1 Delay=0.05 Start !self
+@OnUser2 Stop !self
+
+====62====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.steam_release_2.door
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_p_2
+classname                      CString    point_soundevent
+origin                         CString    -8492.000000 4464.000000 -5094.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4765
+_template_lump_ent_index       CString    62
+@OnUser1 StartSound !self
+
+====63====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    custom.santa.sfx.steam_release_2.door
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]bb_maingate_p_2
+classname                      CString    point_soundevent
+origin                         CString    -8492.000000 4464.000000 -5094.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4766
+_template_lump_ent_index       CString    63
+@OnUser1 StartSound !self
+

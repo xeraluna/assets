@@ -1,0 +1,261 @@
+====0====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+_minlight                      CString    0.000000
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    True
+explosion                      CString    0
+material                       CString    1
+health                         Integer    5000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]stage_3_door8
+classname                      CString    func_breakable
+origin                         CString    -9399.000000 -811.010010 -22431.949219
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2991
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_door8_2991.vmdl
+_template_lump_ent_index       CString    0
+@OnBreak Delay=15 Break [PR#]stage_3_door8
+@OnBreak Delay=8 FireUser1 [PR#]stage_4_ladder
+@OnBreak Kill [PR#]stage_2_clip_b
+
+====1====
+wait                           CString    -1
+filtername                     CString    [PR#]humanos
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_trigger7
+classname                      CString    trigger_once
+origin                         CString    -11151.000000 552.000000 -21013.199219
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7989
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_trigger7_7989.vmdl
+_template_lump_ent_index       CString    1
+@OnStartTouch OnlyOnce Command [PR#]consola say ** WAIT FOR SOME SECONDS! OTHER SURVIVORS COULD COME **
+@OnStartTouch Delay=30 OnlyOnce Break [PR#]stage_3_door9
+@OnStartTouch OnlyOnce Enable [PR#]stage_3_trigger8
+@OnStartTouch Delay=0.1 OnlyOnce StartSound [PR#]musica_st_3_3
+@OnStartTouch OnlyOnce Trigger [PR#]musica_muteAll
+@OnStartTouch Delay=6 OnlyOnce KeyValues [PR#]spawn_teleport_mass target stage_3_teleport_4
+
+====2====
+wait                           CString    -1
+filtername                     CString    [PR#]zombies
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_trigger8
+classname                      CString    trigger_once
+origin                         CString    -11151.000000 616.000000 -21013.199219
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7991
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_trigger8_7991.vmdl
+_template_lump_ent_index       CString    2
+@OnStartTouch OnlyOnce Command [PR#]consola say ** THE POSITION IS LOST ** RETREAT **
+@OnStartTouch OnlyOnce Break [PR#]stage_3_door9
+@OnStartTouch Delay=80 OnlyOnce Trigger [PR#]stage_3_relay3
+
+====3====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+_minlight                      CString    0.000000
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    True
+explosion                      CString    0
+material                       CString    1
+health                         Integer    0
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]stage_3_door9
+classname                      CString    func_breakable
+origin                         CString    -11208.019531 805.430054 -21045.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2899
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_door9_2899.vmdl
+_template_lump_ent_index       CString    3
+@OnBreak Command [PR#]consola say ** ALL GET IN!! ** PREPARE YOUR LAST DEFENSE **
+@OnBreak Delay=15 OnlyOnce StartForward [PR#]train_tele3
+
+====4====
+wait                           CString    -1
+filtername                     CString    [PR#]zombies
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_trigger9
+classname                      CString    trigger_once
+origin                         CString    -8383.000000 2216.000000 -20630.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7993
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_trigger9_7993.vmdl
+_template_lump_ent_index       CString    4
+@OnStartTouch OnlyOnce Close [PR#]stage_3_tracktrain_1
+
+====5====
+wait                           CString    -1
+filtername                     CString    [PR#]zombies
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_trigger9
+classname                      CString    trigger_once
+origin                         CString    -8607.000000 1600.000000 -20624.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7995
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_trigger9_7995.vmdl
+_template_lump_ent_index       CString    5
+@OnStartTouch OnlyOnce Close [PR#]stage_3_tracktrain_2
+
+====6====
+wait                           CString    -1
+filtername                     CString    [PR#]zombies
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_trigger9
+classname                      CString    trigger_once
+origin                         CString    -8383.000000 1004.000000 -20630.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7997
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_trigger9_7997.vmdl
+_template_lump_ent_index       CString    6
+@OnStartTouch OnlyOnce Close [PR#]stage_3_tracktrain_1_3
+
+====7====
+wait                           Float64    1
+filtername                     CString    [PR#]filter_0
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_trigger_aumentonivel
+classname                      CString    trigger_multiple
+origin                         CString    -6075.149902 1131.000000 -20591.900391
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8066
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_trigger_aumentonivel_8066.vmdl
+_template_lump_ent_index       CString    7
+@OnStartTouch Delay=2 KeyValues !activator targetname 1
+@OnStartTouch Delay=2 AddScore !activator 100
+
+====8====
+wait                           Float64    1
+filtername                     CString    [PR#]filter_4
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_trigger_aumentonivel
+classname                      CString    trigger_multiple
+origin                         CString    -6112.430176 1147.000000 -20607.900391
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8070
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_trigger_aumentonivel_8070.vmdl
+_template_lump_ent_index       CString    8
+@OnStartTouch Delay=2 KeyValues !activator targetname 5
+@OnStartTouch Delay=2 AddScore !activator 100
+
+====9====
+wait                           Float64    1
+filtername                     CString    [PR#]filter_2
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_trigger_aumentonivel
+classname                      CString    trigger_multiple
+origin                         CString    -6112.430176 1051.000000 -20605.900391
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8074
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_trigger_aumentonivel_8074.vmdl
+_template_lump_ent_index       CString    9
+@OnStartTouch Delay=2 KeyValues !activator targetname 3
+@OnStartTouch Delay=2 AddScore !activator 100
+
+====10====
+wait                           Float64    1
+filtername                     CString    [PR#]filter_3
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_trigger_aumentonivel
+classname                      CString    trigger_multiple
+origin                         CString    -6064.509766 2187.000000 -20603.900391
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8102
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_trigger_aumentonivel_8102.vmdl
+_template_lump_ent_index       CString    10
+@OnStartTouch Delay=2 KeyValues !activator targetname 4
+@OnStartTouch Delay=2 AddScore !activator 100
+
+====11====
+wait                           Float64    1
+filtername                     CString    [PR#]filter_1
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]stage_3_trigger_aumentonivel
+classname                      CString    trigger_multiple
+origin                         CString    -6123.250000 2049.090088 -20611.900391
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8106
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\stage_3_trigger_aumentonivel_8106.vmdl
+_template_lump_ent_index       CString    11
+@OnStartTouch Delay=2 KeyValues !activator targetname 2
+@OnStartTouch Delay=2 AddScore !activator 100
+

@@ -1,0 +1,119 @@
+====0====
+canbepickedup                  Boolean    True
+spawnflags                     Integer    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <82, 154, 232>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+targetname                     CString    [PR#]Item_electro
+classname                      CString    weapon_glock
+origin                         CString    -25.000000 -2.000000 10.580299
+angles                         Vector     <-0, 0, 0>
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4739
+_template_lump_ent_index       CString    0
+@OnPlayerPickup OnlyOnce Command [PR#]Cmd say ** Player has picked up Electro magic. **
+@OnPlayerPickup Delay=0.1 AddAttribute !activator Player_Electro
+
+====1====
+spawnflags                     Integer64  17409
+forcenpcexclude                Boolean    False
+lip                            Integer    0
+wait                           Float64    2
+speed                          Integer    0
+movedir                        Vector     <0, 0, 0>
+locked_sound                   CString    Buzz.off
+use_sound                      CString    Buzz
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Item_electro
+targetname                     CString    [PR#]Button_electro
+classname                      CString    func_button
+origin                         CString    -6.500000 -1.000000 68.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4740
+model                          CString    maps\ze_8bit\entities\Button_electro_4740.vmdl
+_template_lump_ent_index       CString    1
+@OnPressed TestActivator [PR#]Filter_electro
+
+====2====
+filterattribute                CString    Player_Electro
+negated                        CString    0
+targetname                     CString    [PR#]Filter_electro
+classname                      CString    filter_activator_attribute_int
+origin                         CString    0.000000 0.000000 16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4742
+_template_lump_ent_index       CString    2
+@OnPass Delay=0.1 Enable [PR#]Material_Electro_trigger
+@OnPass Delay=50 Start [PR#]Partical_electro_materia
+@OnPass Delay=0.1 Stop [PR#]Partical_electro_materia
+@OnPass Delay=5 Kill [PR#]Material_Electro_trigger
+@OnPass Delay=0.05 Lock [PR#]Button_electro
+@OnPass Delay=50 Unlock [PR#]Button_electro
+@OnPass Delay=0.1 Start [PR#]Particle_material_electro
+@OnPass Delay=5 Kill [PR#]Particle_material_electro
+@OnPass Delay=0.01 ForceSpawn [PR#]Maker_electro
+
+====3====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Template_electro
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Item_electro
+targetname                     CString    [PR#]Maker_electro
+classname                      CString    env_entity_maker
+origin                         CString    16.000000 0.000000 16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4744
+_template_lump_ent_index       CString    3
+
+====4====
+flag_as_weather                CString    0
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    True
+effect_name                    CString    particles/8bit_particles/item_electro.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Item_electro
+targetname                     CString    [PR#]Partical_electro_materia
+classname                      CString    info_particle_system
+origin                         CString    36.000000 0.000000 38.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4745
+_template_lump_ent_index       CString    4
+

@@ -1,0 +1,195 @@
+====0====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/arcana_particles/custom_particle_075.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Snake_1_Train&0000
+targetname                     CString    [PR#]Snake_1_Particle&0000
+classname                      CString    info_particle_system
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4771
+_template_lump_ent_index       CString    0
+
+====1====
+movesoundmaxtime               Float64    0
+movesoundmintime               Float64    0
+movesoundmaxpitch              Integer    200
+movesoundminpitch              Integer    60
+volume                         Integer    10
+dmg                            Integer    0
+bank                           CString    0
+height                         Integer    4
+wheels                         Integer    50
+orientationtype                CString    0
+velocitytype                   CString    2
+speed                          Integer    0
+startspeed                     Integer    200
+target                         CString    [PR#]Snake_1_Path_1&0000
+spawnflags                     Integer64  538
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNone
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Snake_1_Train&0000
+classname                      CString    func_tracktrain
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4769
+model                          CString    maps\ze_arcana_heart\entities\Snake_1_Train_4769.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]Snake_1_Path_2&0000
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Snake_1_Path_1&0000
+classname                      CString    path_track
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4720
+_template_lump_ent_index       CString    2
+@OnPass Start [PR#]Snake_1_Particle&0000
+@OnPass StartForward [PR#]Snake_1_Train&0000
+
+====3====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]Snake_1_Path_3&0000
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Snake_1_Path_2&0000
+classname                      CString    path_track
+origin                         CString    -450.000000 450.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4727
+_template_lump_ent_index       CString    3
+
+====4====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]Snake_1_Path_4&0000
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Snake_1_Path_3&0000
+classname                      CString    path_track
+origin                         CString    0.000000 496.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4730
+_template_lump_ent_index       CString    4
+
+====5====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]Snake_1_Path_5&0000
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Snake_1_Path_4&0000
+classname                      CString    path_track
+origin                         CString    450.000000 450.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4733
+_template_lump_ent_index       CString    5
+
+====6====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]Snake_1_Path_6&0000
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Snake_1_Path_5&0000
+classname                      CString    path_track
+origin                         CString    688.000000 384.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4768
+_template_lump_ent_index       CString    6
+
+====7====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]Snake_1_Path_7&0000
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Snake_1_Path_6&0000
+classname                      CString    path_track
+origin                         CString    912.000000 224.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4735
+_template_lump_ent_index       CString    7
+
+====8====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]Snake_1_Path_8&0000
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Snake_1_Path_7&0000
+classname                      CString    path_track
+origin                         CString    816.000000 80.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4766
+_template_lump_ent_index       CString    8
+
+====9====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Snake_1_Path_8&0000
+classname                      CString    path_track
+origin                         CString    672.000000 0.000000 -8.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4767
+_template_lump_ent_index       CString    9
+@OnPass Delay=0.02 Kill !activator
+@OnPass ForceSpawnAtEntityOrigin [PR#]Boss_S4_Skill_Snake_Maker !caller
+@OnPass Delay=0.02 Kill [PR#]Snake_1_Path_1&0000
+@OnPass Delay=0.02 Kill [PR#]Snake_1_Path_2&0000
+@OnPass Delay=0.02 Kill [PR#]Snake_1_Path_3&0000
+@OnPass Delay=0.02 Kill [PR#]Snake_1_Path_4&0000
+@OnPass Delay=0.02 Kill [PR#]Snake_1_Path_5&0000
+@OnPass Delay=0.02 Kill [PR#]Snake_1_Path_6&0000
+@OnPass Delay=0.02 Kill [PR#]Snake_1_Path_7&0000
+@OnPass Delay=0.02 Kill [PR#]Snake_1_Path_8&0000
+

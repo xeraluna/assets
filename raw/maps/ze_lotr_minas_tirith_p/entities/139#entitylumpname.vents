@@ -1,0 +1,264 @@
+====0====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+randomanimation                CString    0
+mindxlevel                     CString    0
+minanimtime                    CString    5
+maxdxlevel                     CString    0
+maxanimtime                    CString    10
+fadescale                      CString    1
+_minlight                      CString    0.000000
+health                         Integer    0
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/pmodels/items/armors/shield_guard/shield_guard.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_armor_2_c&0000
+targetname                     CString    [PR#]item_armor_2_4&0000
+classname                      CString    prop_dynamic_override
+origin                         CString    20.290039 1.089966 39.400391
+angles                         CString    0.000000 -179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    142
+_template_lump_ent_index       CString    0
+
+====1====
+nointerpolate                  Boolean    False
+touchoutputperentitydelay      Float64    0
+enableuseoutput                Boolean    False
+damagetoenablemotion           Integer    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+uselocaloffset                 Boolean    False
+spawnobject                    CString    0
+spawnflags                     Integer64  8442880
+rendermode                     CString    10
+renderfx                       CString    0
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    0
+propdata                       CString    0
+pressuredelay                  Float64    0
+preferredcarryangles           Vector     <0, 0, 0>
+performancemode                CString    0
+parentname                     CString    [PR#]item_armor_2_c&0000
+notsolid                       CString    0
+nodamageforces                 Boolean    True
+material                       CString    2
+massscale                      Float64    0
+health                         Integer    9999999
+gibdir                         CString    0 0 0
+forcetoenablemotion            Float64    0
+fadescale                      CString    1
+fademindist                    Float64    -1
+explosion                      CString    0
+exploitablebyplayer            CString    0
+exploderadius                  Float64    0
+explodemagnitude               Integer    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+disablereceiveshadows          Boolean    True
+damagetype                     CString    0
+damagefilter                   CString    [PR#]zombies_y_items
+targetname                     CString    [PR#]ph_item_armor_2_d2&0000
+classname                      CString    func_physbox
+origin                         CString    15.000000 0.810059 42.799805
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    143
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\ph_item_armor_2_d2_143.vmdl
+_template_lump_ent_index       CString    1
+@OnHealthChanged Subtract [PR#]item_armor_2_5&0000 1
+
+====2====
+case02                         CString    PlayerOff
+targetname                     CString    [PR#]armourui&0000
+vscripts                       CString    game_ui
+classname                      CString    logic_case
+origin                         CString    -28.906250 -16.874390 38.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    13343
+_template_lump_ent_index       CString    2
+@OnCase02 Delay=2 OnlyOnce KeyValues !activator max_health 100
+@OnCase02 Delay=2 OnlyOnce KeyValues !activator speed 1
+@OnCase02 OnlyOnce KeyValues !activator max_health 101
+@OnCase02 OnlyOnce KeyValues !activator speed 1.5
+@OnCase02 Delay=2 OnlyOnce SetDamageFilter !activator
+
+====3====
+max                            Integer    3
+min                            Integer    0
+startvalue                     Integer    3
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]item_armor_2_5&0000
+classname                      CString    math_counter
+origin                         CString    11.969727 -28.599976 5.099609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    146
+_template_lump_ent_index       CString    3
+@OnHitMin Kill [PR#]item_armor_2_3
+@OnHitMin Kill [PR#]item_armor_2_d&0000
+@OnHitMin Kill [PR#]item_armor_2_4&0000
+
+====4====
+max                            Integer    7
+min                            Integer    0
+startvalue                     Integer    7
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]item_armor_2_5&0000
+classname                      CString    math_counter
+origin                         CString    31.429688 -28.579956 5.099609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    147
+_template_lump_ent_index       CString    4
+@OnHitMin Delay=0.6 Kill [PR#]item_armor_2_2
+@OnHitMin Enable [PR#]item_armor_2_6
+@OnHitMin Break [PR#]ph_item_armor_2_d2&0000
+@OnHitMin Delay=0.6 Kill [PR#]item_armor_2_1&0000
+@OnHitMin Deactivate [PR#]armourui&0000
+
+====5====
+fadescale                      CString    1
+canbepickedup                  Boolean    True
+spawnflags                     Integer    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+targetname                     CString    [PR#]item_armor_2_c&0000
+classname                      CString    weapon_knife
+origin                         CString    -4.639648 0.329956 -1.700195
+angles                         Vector     <-0, 0, 0>
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    145
+_template_lump_ent_index       CString    5
+@OnPlayerPickup Delay=0.02 OnlyOnce SetParentAttachment [PR#]item_armor_2_2 c4
+@OnPlayerPickup Delay=0.01 OnlyOnce SetParent [PR#]item_armor_2_2 !activator
+@OnPlayerPickup OnlyOnce SetDamageFilter !activator [PR#]nozombies
+@OnPlayerPickup OnlyOnce KeyValues !activator health 275
+@OnPlayerPickup OnlyOnce KeyValues !activator speed 0.88
+@OnPlayerPickup OnlyOnce Add [PR#]h_t_armor_c 1
+@OnPlayerPickup OnlyOnce KeyValues !activator max_health 275
+@OnPlayerPickup OnlyOnce KeyValues !activator gravity 1.08
+@OnPlayerPickup Activate [PR#]armourui&0000
+@OnPlayerPickup AddOutput !activator OnKilled>resetplayeritem>Trigger>>3>1
+
+====6====
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    512
+pushdir                        Vector     <0, 0, 0>
+filtername                     CString    [PR#]zombies
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_armor_2_c&0000
+targetname                     CString    [PR#]item_armor_2_d&0000
+classname                      CString    trigger_push
+origin                         CString    15.000000 0.810059 42.799805
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7953
+model                          CString    maps\ze_lotr_minas_tirith_p\entities\item_armor_2_d_7953.vmdl
+_template_lump_ent_index       CString    6
+
+====7====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+randomanimation                CString    0
+mindxlevel                     CString    0
+minanimtime                    CString    5
+maxdxlevel                     CString    0
+maxanimtime                    CString    10
+fadescale                      CString    1
+_minlight                      CString    0.000000
+health                         Integer    0
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/pmodels/items/armors/player_armors/player_armor_plate_magic_x1_2.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_armor_2_c&0000
+targetname                     CString    [PR#]item_armor_2_1&0000
+classname                      CString    prop_dynamic_override
+origin                         CString    -11.000000 0.000000 33.000000
+angles                         CString    1.742733 -86.007858 -87.636330
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    64
+_template_lump_ent_index       CString    7
+

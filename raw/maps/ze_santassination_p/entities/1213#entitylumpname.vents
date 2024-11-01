@@ -1,0 +1,1781 @@
+====0====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    10000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]fs_zazubreak
+classname                      CString    func_breakable
+origin                         CString    -736.000000 -6684.000000 -18726.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    8052
+model                          CString    maps\ze_santassination_p\entities\fs_zazubreak_8052.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]truth
+classname                      CString    logic_relay
+origin                         CString    1564.000000 -6584.000000 -2342.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3299
+_template_lump_ent_index       CString    1
+@OnTrigger Delay=15 FireUser2 [PR#]skybox_swapper_t_timer
+@OnTrigger Delay=15 Enable [PR#]cena_relay_long
+@OnTrigger Delay=13 StartSound [PR#]overlay2_wingo_s
+@OnTrigger Delay=12 StartSound [PR#]overlay2_winclock_s
+@OnTrigger Delay=11 StartSound [PR#]overlay2_winclock_s
+@OnTrigger Delay=10 StartSound [PR#]overlay2_winclock_s
+@OnTrigger Delay=7 Trigger [PR#]fade_intro_fix
+@OnTrigger Delay=7 FireUser1 [PR#]overlay_frametrigger
+@OnTrigger Disable [PR#]cena_relay_normal
+@OnTrigger Delay=0.05 FireUser1 [PR#]overlay_frametrigger
+@OnTrigger StartSound [PR#]overlay2_win_s
+@OnTrigger Delay=9.5 Command [PR#]server say ***THIS IS WRONG...***
+@OnTrigger Delay=19 Command [PR#]server say ***THIS.. IS THE TRUTH***
+@OnTrigger Delay=7.1 Enable [PR#]teleport_truth
+@OnTrigger Delay=35 Break [PR#]tele_truthzbreak
+@OnTrigger Enable [PR#]teleport_truthz
+@OnTrigger Delay=15 FireUser1 [PR#]fog_truth
+@OnTrigger Delay=8 FireUser1 [PR#]music_truth
+@OnTrigger Delay=30 Open [PR#]fs_finalgatetruth
+@OnTrigger KeyValues [PR#]teleport_destination origin 2208 -13312 -11016
+@OnTrigger KeyValues [PR#]teleport_destination angles 0 180 0
+@OnTrigger Disable [PR#]predator_horn_timer
+@OnTrigger Delay=24 Enable [PR#]predator_horn_timer
+@OnTrigger Delay=7 StopSound [PR#]music_fs_win
+@OnTrigger Delay=15 Open [PR#]truth_hugeface_mover1
+@OnTrigger Delay=15 Open [PR#]truth_hugeface_mover2
+@OnTrigger Delay=15 Open [PR#]truth_hugeface_mover3
+@OnTrigger Delay=20 FireUser1 [PR#]teleport_s4_6
+@OnTrigger Delay=15 OnlyOnce Disable [PR#]sun
+@OnTrigger Delay=15 OnlyOnce FireUser2 [PR#]SkyBB
+@OnTrigger Delay=15 OnlyOnce FireUser2 [PR#]SkyBridge
+@OnTrigger Delay=15 OnlyOnce FireUser2 [PR#]SkyCastle
+@OnTrigger Delay=15 OnlyOnce FireUser2 [PR#]SkyLionking
+@OnTrigger Delay=15 OnlyOnce FireUser2 [PR#]SkySnow
+@OnTrigger SetValue [PR#]overlay_framemath 14
+@OnTrigger Delay=15 FireUser2 [PR#]overlay_frametrigger
+@OnTrigger Delay=6.95 SetValue [PR#]overlay_framemath 15
+@OnTrigger OnlyOnce ForceSpawn [PR#]items_s5
+@OnTrigger Delay=0.2 OnlyOnce Kill [PR#]items_s5
+@OnTrigger Delay=7.5 Disable [PR#]eternaltruth_music_timer
+@OnTrigger Delay=7.5 StopSound [PR#]music_truth
+@OnTrigger Delay=7.5 StopSound [PR#]music_truth
+@OnTrigger Delay=5 OnlyOnce ForceSpawn [PR#]etruth_benderspawn_a3t
+@OnTrigger Delay=15.05 Trigger [PR#]truthdark_truth
+@OnTrigger Delay=15 OnlyOnce FireUser2 [PR#]SkyCastleWallBreak
+@OnTrigger Delay=15 OnlyOnce FireUser2 [PR#]SkyBridgeTower
+@OnTrigger Delay=15 OnlyOnce FireUser2 [PR#]SkyBridgeCave
+
+====2====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    10000
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    1
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]truth_bosspathbreak
+classname                      CString    func_breakable
+origin                         CString    9488.000000 -44.000000 -26766.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2666
+model                          CString    maps\ze_santassination_p\entities\truth_bosspathbreak_2666.vmdl
+_template_lump_ent_index       CString    2
+
+====3====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    100000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]truth_elevatorbreak
+classname                      CString    func_breakable
+origin                         CString    12956.000000 -11176.000000 -24454.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7743
+model                          CString    maps\ze_santassination_p\entities\truth_elevatorbreak_7743.vmdl
+_template_lump_ent_index       CString    3
+
+====4====
+wait                           Float64    0.10000000149011612
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    12220.000000 -6823.990234 -23238.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3665
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_3665.vmdl
+_template_lump_ent_index       CString    4
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger Delay=40 OnlyOnce Break [PR#]truth_socrates2
+@OnTrigger OnlyOnce Command [PR#]server say ***SOCRATES WISHES SILENTLY***
+@OnTrigger Delay=10 OnlyOnce Command [PR#]server say ***SOCRATES FEELS YOU***
+@OnTrigger Delay=40 OnlyOnce Command [PR#]server say ***SOCRATES REGRETS YOUR DEEDS***
+@OnTrigger Delay=20 OnlyOnce Command [PR#]server say ***SOCRATES CRAVES***
+@OnTrigger Delay=30 OnlyOnce Command [PR#]server say ***SOCRATES PLAYS NINTENDO 64***
+
+====5====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    1
+health                         Integer    500
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    func_breakable
+origin                         CString    -4076.000000 -6840.000000 -16630.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5600
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_5600.vmdl
+_template_lump_ent_index       CString    5
+
+====6====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    1
+health                         Integer    500
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    func_breakable
+origin                         CString    -4260.000000 -6592.000000 -16630.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5603
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_5603.vmdl
+_template_lump_ent_index       CString    6
+
+====7====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    1
+health                         Integer    500
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    func_breakable
+origin                         CString    -4260.000000 -7088.000000 -16630.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5606
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_5606.vmdl
+_template_lump_ent_index       CString    7
+
+====8====
+wait                           Float64    0.10000000149011612
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    10012.000000 -3144.000000 -24646.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5611
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_5611.vmdl
+_template_lump_ent_index       CString    8
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger Delay=20 OnlyOnce Break [PR#]truth_socrates5
+@OnTrigger OnlyOnce Command [PR#]server say ***SOCRATES IS NEAR***
+@OnTrigger Delay=10 OnlyOnce Command [PR#]server say ***SOCRATES WELCOMES YOU***
+@OnTrigger Delay=20 OnlyOnce Command [PR#]server say ***SOCRATES IS SANTA***
+
+====9====
+wait                           Float64    0.10000000149011612
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    4316.000000 -12744.000000 -23110.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5633
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_5633.vmdl
+_template_lump_ent_index       CString    9
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger Delay=30 OnlyOnce Break [PR#]truth_socrates1
+@OnTrigger OnlyOnce Command [PR#]server say ***SOCRATES IS JUDGING YOU***
+@OnTrigger Delay=10 OnlyOnce Command [PR#]server say ***SOCRATES HAS TO CLEANSE YOU***
+@OnTrigger Delay=30 OnlyOnce Command [PR#]server say ***SOCRATES DESPISES YOU***
+@OnTrigger Delay=20 OnlyOnce Command [PR#]server say ***SOCRATES IMAGINES***
+
+====10====
+wait                           Float64    0.10000000149011612
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    6716.000000 -4712.000000 -24614.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5652
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_5652.vmdl
+_template_lump_ent_index       CString    10
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger Delay=20 OnlyOnce Break [PR#]truth_socrates4
+@OnTrigger OnlyOnce Command [PR#]server say ***SOCRATES WILL ARRIVE***
+@OnTrigger Delay=10 OnlyOnce Command [PR#]server say ***SOCRATES WILL CLEANSE***
+@OnTrigger Delay=20 OnlyOnce Command [PR#]server say ***SOCRATES WILL DESTROY***
+@OnTrigger Delay=10 OnlyOnce FireUser1 [PR#]teleport_s4_14
+
+====11====
+wait                           Float64    0.10000000149011612
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    9227.990234 -4856.000000 -24774.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5768
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_5768.vmdl
+_template_lump_ent_index       CString    11
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger Delay=30 OnlyOnce Break [PR#]truth_socrates3
+@OnTrigger OnlyOnce Command [PR#]server say ***SOCRATES CARES FOR NO MAN***
+@OnTrigger Delay=10 OnlyOnce Command [PR#]server say ***SOCRATES IS***
+@OnTrigger Delay=30 OnlyOnce Command [PR#]server say ***SOCRATES NEEDS BENDER***
+@OnTrigger Delay=20 OnlyOnce Command [PR#]server say ***SOCRATES FEEDS***
+@OnTrigger OnlyOnce Enable [PR#]truth_hugeface3
+
+====12====
+wait                           Float64    0.10000000149011612
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    -580.000000 -8584.000000 -11534.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3365
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_3365.vmdl
+_template_lump_ent_index       CString    12
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger Delay=1 OnlyOnce FireUser1 [PR#]reindeer_3
+
+====13====
+wait                           Float64    0.10000000149011612
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    10012.000000 -2680.000000 -24918.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3343
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_3343.vmdl
+_template_lump_ent_index       CString    13
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger OnlyOnce FireUser1 [PR#]bosss_start2
+@OnTrigger Delay=5 OnlyOnce Close [PR#]truth_hugeface_mover1
+@OnTrigger Delay=6 OnlyOnce SetAnimationLooping [PR#]truth_hugeface4 face_bite
+@OnTrigger Delay=9.8 OnlyOnce SetAnimationLooping [PR#]truth_hugeface4 face_idle
+@OnTrigger Delay=15 OnlyOnce FireUser1 [PR#]teleport_s4_15
+@OnTrigger Delay=35 OnlyOnce FireUser1 [PR#]skybox_swapper_t_timer
+@OnTrigger Delay=50 OnlyOnce FireUser2 [PR#]skybox_swapper_t_timer
+@OnTrigger Delay=70 OnlyOnce FireUser1 [PR#]skybox_swapper_t_timer
+@OnTrigger Delay=100 OnlyOnce FireUser2 [PR#]skybox_swapper_t_timer
+
+====14====
+wait                           Float64    0.10000000149011612
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    -260.000000 -6712.000000 -13110.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3271
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_3271.vmdl
+_template_lump_ent_index       CString    14
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger Delay=5 OnlyOnce KeyValues [PR#]fs_tele_firstinner angles 0 180 0
+@OnTrigger Delay=5 OnlyOnce KeyValues [PR#]fs_tele_firstinner origin 2550 -6780 -2400
+@OnTrigger Delay=5 OnlyOnce KeyValues [PR#]teleport_destination origin 2550 -6780 -2400
+@OnTrigger Delay=5 OnlyOnce KeyValues [PR#]teleport_destination angles 0 180 0
+@OnTrigger OnlyOnce Subtract [PR#]fs_connect_math 666
+@OnTrigger OnlyOnce ForceSpawn [PR#]npc_s4_3
+
+====15====
+wait                           Float64    0.10000000149011612
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    -4404.000000 -7052.000000 -10694.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3258
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_3258.vmdl
+_template_lump_ent_index       CString    15
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger Command [PR#]server say ***OUTER GATE WILL OPEN IN 20 SECONDS***
+@OnTrigger Delay=15 Command [PR#]server say ***OUTER GATE WILL OPEN IN 5 SECONDS***
+@OnTrigger Delay=20 Command [PR#]server say ***MOVE IT***
+@OnTrigger Delay=20 Break [PR#]fs_outerbreakgate2
+@OnTrigger Delay=2 Break [PR#]fs_outerbreakgate
+@OnTrigger Delay=20 OnlyOnce ForceSpawn [PR#]npc_s4_5
+
+====16====
+wait                           Float64    0.10000000149011612
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    12988.000000 -10616.000000 -23990.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3243
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_3243.vmdl
+_template_lump_ent_index       CString    16
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger Delay=30 OnlyOnce StartForward [PR#]truth_elevator
+@OnTrigger Delay=30 OnlyOnce Command [PR#]server say ***THE TRUE ELEVATOR IS LEAVING***
+@OnTrigger Delay=25 OnlyOnce Command [PR#]server say ***THE TRUE ELEVATOR IS LEAVING IN 5 SECONDS***
+@OnTrigger OnlyOnce Command [PR#]server say ***THE TRUE ELEVATOR IS LEAVING IN 30 SECONDS***
+@OnTrigger OnlyOnce enable [PR#]truth_elevator_light
+@OnTrigger Delay=30 OnlyOnce Open [PR#]truth_elevator_light_mover
+
+====17====
+wait                           Float64    0.10000000149011612
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    11164.000000 -7544.000000 -23206.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3240
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_3240.vmdl
+_template_lump_ent_index       CString    17
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger Delay=1 OnlyOnce SetAnimationLooping [PR#]truth_hugeface2 face_bite
+@OnTrigger OnlyOnce Close [PR#]truth_hugeface_mover2
+@OnTrigger Delay=6 OnlyOnce Open [PR#]truth_hugeface_mover2
+@OnTrigger Delay=12 OnlyOnce Kill [PR#]truth_hugeface_mover2
+@OnTrigger Delay=3.8 OnlyOnce SetAnimationLooping [PR#]truth_hugeface2 face_idle
+@OnTrigger Delay=15 OnlyOnce ForceSpawn [PR#]npc_s5_5
+
+====18====
+wait                           Float64    0.10000000149011612
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    12956.000000 -13752.000000 -23718.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3238
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_3238.vmdl
+_template_lump_ent_index       CString    18
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger OnlyOnce Close [PR#]truth_hugeface_mover3
+@OnTrigger Delay=3.8 OnlyOnce SetAnimationLooping [PR#]truth_hugeface1 face_bite
+@OnTrigger Delay=7.6 OnlyOnce SetAnimationLooping [PR#]truth_hugeface1 face_idle
+
+====19====
+wait                           Float64    0.10000000149011612
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    112.000000 -6868.000000 -18974.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3194
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_3194.vmdl
+_template_lump_ent_index       CString    19
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger OnlyOnce ForceSpawn [PR#]fs_lowernpcfall
+@OnTrigger Delay=0.5 OnlyOnce Kill [PR#]fs_lowernpcfall
+
+====20====
+wait                           Float64    0.10000000149011612
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    8716.000000 -13592.000000 -24262.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3185
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_3185.vmdl
+_template_lump_ent_index       CString    20
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger Delay=30 OnlyOnce Break [PR#]truth_socrates22
+@OnTrigger OnlyOnce Command [PR#]server say ***SOCRATES PONDERS***
+@OnTrigger Delay=10 OnlyOnce Command [PR#]server say ***SOCRATES CRIES***
+@OnTrigger Delay=30 OnlyOnce Command [PR#]server say ***SOCRATES IS BLOSSOMING***
+@OnTrigger Delay=55 OnlyOnce FireUser1 [PR#]reindeer_6
+@OnTrigger Delay=20 OnlyOnce Command [PR#]server say ***SOCRATES ERECTS***
+
+====21====
+wait                           Float64    0.10000000149011612
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    14588.000000 -9560.000000 -23654.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2767
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_2767.vmdl
+_template_lump_ent_index       CString    21
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger OnlyOnce SetAnimationLooping [PR#]sf_babysecond2 freaky
+@OnTrigger Delay=0.02 OnlyOnce SetIdleAnimationLooping [PR#]sf_babysecond2 freaky
+@OnTrigger OnlyOnce StartSound [PR#]sf_babylon22
+@OnTrigger Delay=8 OnlyOnce StartSound [PR#]sf_babylon22
+@OnTrigger Delay=17 OnlyOnce StartSound [PR#]sf_babylon22
+@OnTrigger Delay=26 OnlyOnce StartSound [PR#]sf_babylon22
+
+====22====
+wait                           Float64    0.10000000149011612
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    5388.000000 -6072.000000 -24646.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2729
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_2729.vmdl
+_template_lump_ent_index       CString    22
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger Delay=20 OnlyOnce Break [PR#]truth_socrates44
+@OnTrigger OnlyOnce Command [PR#]server say ***SOCRATES CANNOT KEEP***
+@OnTrigger Delay=10 OnlyOnce Command [PR#]server say ***SOCRATES RUMBLES YOUR WILL***
+@OnTrigger Delay=20 OnlyOnce Command [PR#]server say ***SOCRATES SELLS GASOLINE***
+
+====23====
+wait                           Float64    0.10000000149011612
+filtername                     CString    [PR#]filter_t
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    1563.949951 -8232.000000 -6918.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2727
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_2727.vmdl
+_template_lump_ent_index       CString    23
+@OnTrigger OnlyOnce FireUser4 !self
+@OnTrigger OnlyOnce FireUser1 [PR#]teleport_s4_4
+@OnUser4 OnlyOnce Kill !self
+
+====24====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    func_button
+origin                         CString    4892.000000 -7304.000000 -16026.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2590
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_2590.vmdl
+_template_lump_ent_index       CString    24
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed OnlyOnce Command [PR#]server say ***CENTER GATE IS OPENING IN 30 SECONDS***
+@OnPressed Delay=30 OnlyOnce Open [PR#]fs_elevatordoorfirst
+@OnPressed Delay=25 OnlyOnce Command [PR#]server say ***CENTER GATE IS OPENING IN 5 SECONDS***
+@OnPressed Delay=30 OnlyOnce Command [PR#]server say ***CENTER GATE IS OPENING***
+@OnPressed Delay=30 OnlyOnce ForceSpawn [PR#]npc_s4_2
+@OnPressed Delay=1 OnlyOnce Disable [PR#]truth_light_4
+
+====25====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    func_button
+origin                         CString    -548.000000 -6808.000000 -12122.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2574
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_2574.vmdl
+_template_lump_ent_index       CString    25
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed OnlyOnce Command [PR#]server say ***OUTER WALL ENTRANCE IS OPENING IN 30 SECONDS***
+@OnPressed Delay=25 OnlyOnce Command [PR#]server say ***OUTER WALL ENTRANCE IS OPENING IN 5 SECONDS***
+@OnPressed Delay=30 OnlyOnce Command [PR#]server say ***OUTER WALL ENTRANCE IS OPENING***
+@OnPressed Delay=30 OnlyOnce Open [PR#]fs_inneruppergate2
+@OnPressed Delay=60 OnlyOnce FireUser1 [PR#]teleport_s4_2
+@OnPressed Delay=35 OnlyOnce ForceSpawn [PR#]npc_s4_4
+@OnPressed Delay=1 OnlyOnce Disable [PR#]truth_light_13
+@OnPressed Delay=60 Stop [PR#]fs_particle_towersmoke
+
+====26====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    func_button
+origin                         CString    -1956.000000 -7320.000000 -15130.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2570
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_2570.vmdl
+_template_lump_ent_index       CString    26
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed Delay=40 OnlyOnce Open [PR#]fs_inneruppergate
+@OnPressed Delay=40 OnlyOnce Command [PR#]server say ***INNER UPPER GATE IS OPENING***
+@OnPressed OnlyOnce Command [PR#]server say ***INNER UPPER GATE IS OPENING IN 40 SECONDS***
+@OnPressed Delay=35 OnlyOnce Command [PR#]server say ***INNER UPPER GATE IS OPENING IN 5 SECONDS***
+@OnPressed Delay=1 OnlyOnce Disable [PR#]truth_light_11
+
+====27====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    func_button
+origin                         CString    2364.000000 -5560.000000 -14618.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2566
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_2566.vmdl
+_template_lump_ent_index       CString    27
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed Delay=60 OnlyOnce Subtract [PR#]fs_connect_math 666
+@OnPressed OnlyOnce Subtract [PR#]fs_connect_math 1
+@OnPressed OnlyOnce KeyValues [PR#]fs_tele_firstinner angles 0 0 0
+@OnPressed OnlyOnce KeyValues [PR#]fs_tele_firstinner origin 930 -8000 -3945
+@OnPressed Delay=1 OnlyOnce Disable [PR#]truth_light_12
+
+====28====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    func_button
+origin                         CString    4876.000000 -5576.000000 -15578.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2562
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_2562.vmdl
+_template_lump_ent_index       CString    28
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed Delay=25 OnlyOnce Command [PR#]server say ***ELEVATOR SHAFT GATE IS OPENING IN 5 SECONDS***
+@OnPressed Delay=30 OnlyOnce Command [PR#]server say ***ELEVATOR SHAFT GATE IS OPENING***
+@OnPressed Delay=30 OnlyOnce Open [PR#]fs_elevatordoormain
+@OnPressed OnlyOnce Command [PR#]server say ***ELEVATOR SHAFT GATE IS OPENING IN 30 SECONDS***
+@OnPressed Delay=1 OnlyOnce Disable [PR#]truth_light_5
+
+====29====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    func_button
+origin                         CString    2172.000000 -7511.990234 -19354.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2558
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_2558.vmdl
+_template_lump_ent_index       CString    29
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed OnlyOnce Command [PR#]server say ***LOWER ELEVATOR IS LEAVING IN 20 SECONDS***
+@OnPressed Delay=15 OnlyOnce Command [PR#]server say ***LOWER ELEVATOR IS LEAVING IN 5 SECONDS***
+@OnPressed Delay=20 OnlyOnce Command [PR#]server say ***LOWER ELEVATOR IS LEAVING***
+@OnPressed Delay=20 OnlyOnce SetSpeed [PR#]fs_lowerelevator 1
+@OnPressed Delay=5 OnlyOnce KeyValues [PR#]fs_tele_lower origin -288 -6950 -7380
+@OnPressed Delay=5 OnlyOnce KeyValues [PR#]fs_tele_lower angles 0 0 0
+@OnPressed Delay=1 Disable [PR#]truth_light_10
+@OnPressed Delay=1 OnlyOnce Enable [PR#]fs_lowerelevator_light
+@OnPressed Delay=20 OnlyOnce Open [PR#]fs_lowerelevator_light_mover
+
+====30====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    func_button
+origin                         CString    -388.000000 -6712.000000 -19034.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2554
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_2554.vmdl
+_template_lump_ent_index       CString    30
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed OnlyOnce Command [PR#]server say ***LOWER GATE IS OPENING IN 35 SECONDS***
+@OnPressed Delay=30 OnlyOnce Command [PR#]server say ***LOWER GATE IS OPENING IN 5 SECONDS***
+@OnPressed Delay=35 OnlyOnce Command [PR#]server say ***LOWER GATE IS OPENING***
+@OnPressed Delay=35 OnlyOnce Open [PR#]fs_lowergate
+@OnPressed Delay=42 OnlyOnce Break [PR#]fs_zazubreak
+@OnPressed Delay=1 OnlyOnce Disable [PR#]truth_light_9
+
+====31====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    func_button
+origin                         CString    -3164.000000 -8096.000000 -18426.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2550
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_2550.vmdl
+_template_lump_ent_index       CString    31
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed Delay=1 OnlyOnce Open [PR#]fs_innerlowergate
+@OnPressed Delay=1 OnlyOnce Disable [PR#]truth_light_8
+
+====32====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    func_button
+origin                         CString    -4412.000000 -8952.000000 -16410.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2546
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_2546.vmdl
+_template_lump_ent_index       CString    32
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed OnlyOnce Command [PR#]server say ***LOWER ELEVATOR IS LEAVING IN 20 SECONDS***
+@OnPressed Delay=15 OnlyOnce Command [PR#]server say ***LOWER ELEVATOR IS LEAVING IN 5 SECONDS***
+@OnPressed Delay=20 OnlyOnce Command [PR#]server say ***LOWER ELEVATOR IS LEAVING***
+@OnPressed Delay=20 OnlyOnce SetSpeed [PR#]fs_firstelevator 1
+@OnPressed OnlyOnce Open [PR#]fs_rightelevator_door
+@OnPressed Delay=18.5 OnlyOnce Close [PR#]fs_rightelevator_door
+@OnPressed Delay=25 OnlyOnce Open [PR#]fs_rightelevator_door
+@OnPressed Delay=1 OnlyOnce Disable [PR#]truth_light_7
+@OnPressed Delay=1 OnlyOnce Enable [PR#]fs_firstelevator_light
+@OnPressed Delay=20 OnlyOnce Open [PR#]fs_firstelevator_light_parent
+
+====33====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    func_button
+origin                         CString    12.000000 -3480.000000 -14618.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2542
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_2542.vmdl
+_template_lump_ent_index       CString    33
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed OnlyOnce Command [PR#]server say ***OUTER ELEVATOR IS LEAVING IN 40 SECONDS***
+@OnPressed Delay=35 OnlyOnce Command [PR#]server say ***OUTER ELEVATOR IS LEAVING IN 5 SECONDS***
+@OnPressed Delay=40 OnlyOnce Command [PR#]server say ***OUTER ELEVATOR IS LEAVING***
+@OnPressed Delay=40 OnlyOnce SetSpeed [PR#]fs_outerelevator_1 1
+@OnPressed Delay=1 OnlyOnce Disable [PR#]truth_light_3
+
+====34====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    func_button
+origin                         CString    -4132.000000 -5560.000000 -16666.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2538
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_2538.vmdl
+_template_lump_ent_index       CString    34
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed OnlyOnce Command [PR#]server say ***TRAM 1 IS LEAVING IN 20 SECONDS***
+@OnPressed Delay=20 OnlyOnce Command [PR#]server say ***TRAM 1 IS LEAVING***
+@OnPressed Delay=21 OnlyOnce Command [PR#]server say ***TRAM 2 IS LEAVING IN 10 SECONDS***
+@OnPressed Delay=30 OnlyOnce Command [PR#]server say ***TRAM 2 IS LEAVING***
+@OnPressed Delay=20 OnlyOnce StartForward [PR#]fs_tram_1
+@OnPressed Delay=30 OnlyOnce StartForward [PR#]fs_tram_2
+@OnPressed Delay=1 OnlyOnce Disable [PR#]truth_light_1
+
+====35====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    func_button
+origin                         CString    -2852.000000 -6904.000000 -6682.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2534
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_2534.vmdl
+_template_lump_ent_index       CString    35
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed OnlyOnce Command [PR#]server say ***THE FINAL ELEVATOR IS LEAVING IN 50 SECONDS***
+@OnPressed Delay=30 OnlyOnce Command [PR#]server say ***THE FINAL ELEVATOR IS LEAVING IN 20 SECONDS***
+@OnPressed Delay=40 OnlyOnce Command [PR#]server say ***THE FINAL ELEVATOR IS LEAVING IN 10 SECONDS***
+@OnPressed Delay=45 OnlyOnce Command [PR#]server say ***THE FINAL ELEVATOR IS LEAVING IN 5 SECONDS***
+@OnPressed Delay=50 OnlyOnce Command [PR#]server say ***THE FINAL ELEVATOR IS LEAVING***
+@OnPressed Delay=50 OnlyOnce SetSpeed [PR#]fs_finalelevator 1
+@OnPressed Delay=70 OnlyOnce Stop [PR#]fs_particle_towersmoke
+@OnPressed Delay=60 OnlyOnce ForceSpawn [PR#]npc_s4_7
+@OnPressed Delay=1 OnlyOnce Disable [PR#]truth_light_16
+
+====36====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    func_button
+origin                         CString    -132.000000 -6424.000000 -6042.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1326
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_1326.vmdl
+_template_lump_ent_index       CString    36
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed Delay=20 OnlyOnce Open [PR#]fs_mufasadoor
+@OnPressed OnlyOnce Command [PR#]server say ***UPPER TOWER DOOR IS OPENING IN 20 SECONDS***
+@OnPressed Delay=20 OnlyOnce Command [PR#]server say ***UPPER TOWER DOOR IS OPENING***
+@OnPressed Delay=1 OnlyOnce Disable [PR#]truth_light_15
+
+====37====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    func_button
+origin                         CString    -2036.000000 -6728.000000 -10394.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    942
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_942.vmdl
+_template_lump_ent_index       CString    37
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed Delay=20 OnlyOnce Open [PR#]fs_bossdoor1
+@OnPressed Delay=30 OnlyOnce Close [PR#]fs_bossdoor1
+@OnPressed Delay=35 OnlyOnce FireUser1 [PR#]bosss_start
+@OnPressed OnlyOnce Command [PR#]server say ***SANTA'S DOOR IS OPENING IN 20 SECONDS***
+@OnPressed Delay=20 OnlyOnce Command [PR#]server say ***SANTA'S DOOR IS OPENING***
+@OnPressed Delay=30 OnlyOnce Command [PR#]server say ***SANTA'S DOOR IS CLOSING***
+@OnPressed Delay=25 OnlyOnce Command [PR#]server say ***SANTA'S DOOR IS CLOSING IN 5 SECONDS***
+@OnPressed Delay=26 OnlyOnce Command [PR#]server say ***SANTA'S DOOR IS CLOSING IN 4 SECONDS***
+@OnPressed Delay=27 OnlyOnce Command [PR#]server say ***SANTA'S DOOR IS CLOSING IN 3 SECONDS***
+@OnPressed Delay=28 OnlyOnce Command [PR#]server say ***SANTA'S DOOR IS CLOSING IN 2 SECONDS***
+@OnPressed Delay=29 OnlyOnce Command [PR#]server say ***SANTA'S DOOR IS CLOSING IN 1 SECONDS***
+@OnPressed Delay=21 OnlyOnce Command [PR#]server say ***FALL BACK***
+@OnPressed Delay=1 OnlyOnce Disable [PR#]truth_light_14
+
+====38====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    func_button
+origin                         CString    3324.000000 -6640.000000 -13946.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    938
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_938.vmdl
+_template_lump_ent_index       CString    38
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed Delay=60 OnlyOnce Subtract [PR#]fs_connect_math 666
+@OnPressed OnlyOnce Subtract [PR#]fs_connect_math 1
+@OnPressed Delay=1 OnlyOnce Disable [PR#]truth_light_6
+
+====39====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    func_button
+origin                         CString    -1156.000000 -3544.000000 -14618.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    934
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_934.vmdl
+_template_lump_ent_index       CString    39
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed OnlyOnce Command [PR#]server say ***OUTER GATE IS OPENING IN 50 SECONDS***
+@OnPressed Delay=40 OnlyOnce Command [PR#]server say ***OUTER GATE IS OPENING IN 10 SECONDS***
+@OnPressed Delay=50 OnlyOnce Command [PR#]server say ***OUTER GATE IS OPENING***
+@OnPressed Delay=50 OnlyOnce Open [PR#]fs_outeruppergate
+@OnPressed Delay=5 OnlyOnce FireUser1 [PR#]reindeer_1
+@OnPressed Delay=20 OnlyOnce KeyValues [PR#]fs_tele_firstouter origin -2215 -4365 -4025
+@OnPressed Delay=20 OnlyOnce KeyValues [PR#]fs_tele_firstouter angles 0 0 0
+@OnPressed Delay=1 OnlyOnce Disable [PR#]truth_light_2
+
+====40====
+wait                           Float64    0.10000000149011612
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    4892.000000 -9640.000000 -24710.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    726
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_726.vmdl
+_template_lump_ent_index       CString    40
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger Delay=40 OnlyOnce Break [PR#]truth_socrates6
+@OnTrigger OnlyOnce Command [PR#]server say ***SOCRATES IS ALL***
+@OnTrigger Delay=10 OnlyOnce Command [PR#]server say ***SOCRATES IS NOTHING***
+@OnTrigger Delay=40 OnlyOnce Command [PR#]server say ***SOCRATES IS AWAKENED***
+@OnTrigger Delay=20 OnlyOnce Command [PR#]server say ***SOCRATES IS NOTHING AT ALL***
+@OnTrigger Delay=30 OnlyOnce Command [PR#]server say ***SOCRATES DOES NOT EXIST***
+
+====41====
+wait                           Float64    0.10000000149011612
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    trigger_multiple
+origin                         CString    9904.000000 -12344.000000 -23446.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    613
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_613.vmdl
+_template_lump_ent_index       CString    41
+@OnTrigger OnlyOnce Kill !self
+@OnTrigger OnlyOnce Break [PR#]fs_mexisled_break
+@OnTrigger OnlyOnce Enable [PR#]fs_mexisled_light
+@OnTrigger OnlyOnce StartSound [PR#]fs_mexisled_s
+@OnTrigger Delay=0.25 OnlyOnce Enable [PR#]fs_mexisled_hurt
+@OnTrigger OnlyOnce Open [PR#]fs_mexisled_mover
+@OnTrigger OnlyOnce SetAnimationLooping [PR#]fs_mexisled_model run
+@OnTrigger Delay=0.02 OnlyOnce SetIdleAnimationLooping [PR#]fs_mexisled_model run
+@OnTrigger Delay=15.5 OnlyOnce Enable [PR#]fs_mexisled_hurt2
+@OnTrigger Delay=15.4 OnlyOnce Start [PR#]fs_mexisled_p
+@OnTrigger Delay=15.3 OnlyOnce Stop [PR#]fs_mexisled_p
+@OnTrigger Delay=26 OnlyOnce Stop [PR#]fs_mexisled_p
+@OnTrigger Delay=26 OnlyOnce Disable [PR#]fs_mexisled_hurt
+@OnTrigger Delay=26 OnlyOnce Disable [PR#]fs_mexisled_hurt2
+@OnTrigger Delay=26 OnlyOnce Disable [PR#]fs_mexisled_model
+@OnTrigger Delay=26 OnlyOnce Kill [PR#]fs_mexisled_mover
+@OnTrigger Delay=26.1 OnlyOnce Kill [PR#]fs_mexisled_p
+@OnTrigger OnlyOnce ForceSpawnAtEntityOrigin [PR#]s_explosion_maker [PR#]fs_mexisled_hurt
+@OnTrigger Delay=26 OnlyOnce ForceSpawnAtEntityOrigin [PR#]s_explosion_maker [PR#]fs_mexisled_hurt2
+@OnTrigger Delay=26.1 OnlyOnce Kill [PR#]fs_mexisled_hurt2
+@OnTrigger Delay=26.1 OnlyOnce Kill [PR#]fs_mexisled_hurt
+@OnTrigger Delay=26 OnlyOnce StopSound [PR#]fs_mexisled_s
+@OnTrigger Delay=5 OnlyOnce KeyValues [PR#]teleport_destination origin 7838 -13156 -13450
+@OnTrigger Delay=5 OnlyOnce KeyValues [PR#]teleport_destination angles 0 0 0
+@OnTrigger Delay=30 OnlyOnce KeyValues [PR#]teleport_destination origin 5123 -14598 -11916
+@OnTrigger Delay=30 OnlyOnce KeyValues [PR#]teleport_destination angles 0 0 0
+
+====42====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    0
+wait                           Float64    -1
+speed                          Integer    50
+movedir                        Vector     <0, 180, 0>
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.lever4
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    func_button
+origin                         CString    -1056.000000 -2946.000000 -14598.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    147
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_147.vmdl
+_template_lump_ent_index       CString    42
+@OnPressed Delay=2 OnlyOnce Open [PR#]fs_truthgate
+
+====43====
+spawnflags                     Integer64  1024
+forcenpcexclude                Boolean    False
+lip                            Integer    -3
+wait                           Float64    -1
+speed                          Integer    10
+movedir                        Vector     <90, 0, 0>
+unlocked_sound                 CString    Buttons.snd9
+locked_sound                   CString    Buttons.snd8
+use_sound                      CString    custom.sfx.doors.button10
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_event_triggers
+classname                      CString    func_button
+origin                         CString    15892.000000 -15608.000000 -24570.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    56
+model                          CString    maps\ze_santassination_p\entities\truth_event_triggers_56.vmdl
+_template_lump_ent_index       CString    43
+@OnPressed OnlyOnce Lock !self
+@OnPressed Delay=5 OnlyOnce Kill !self
+@OnPressed Delay=30 OnlyOnce StartForward [PR#]truth_tram
+@OnPressed Delay=30 OnlyOnce Command [PR#]server say ***THE TRUE TRAM IS LEAVING***
+@OnPressed Delay=25 OnlyOnce Command [PR#]server say ***THE TRUE TRAM IS LEAVING IN 5 SECONDS***
+@OnPressed OnlyOnce Command [PR#]server say ***THE TRUE TRAM IS LEAVING IN 30 SECONDS***
+@OnPressed Delay=5 OnlyOnce KeyValues [PR#]teleport_destination origin 10765 -11409 -12331
+@OnPressed Delay=5 OnlyOnce KeyValues [PR#]teleport_destination angles 0 270 0
+@OnPressed Delay=38 OnlyOnce KeyValues [PR#]teleport_destination origin 15748 -15683 -12946
+@OnPressed Delay=38 OnlyOnce KeyValues [PR#]teleport_destination angles 0 0 0
+@OnPressed Delay=1 OnlyOnce Disable [PR#]truth_light_17
+@OnPressed Delay=1 OnlyOnce Enable [PR#]truth_tram_light
+@OnPressed Delay=6.66 OnlyOnce FireUser1 [PR#]teleport_s4_8
+
+====44====
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_LOOPING
+idleanim                       CString    face_idle
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    face_idle
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    2
+skin                           CString    0
+model                          CString    models/luff_mindmash/face.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]truth_hugeface_mover3
+targetname                     CString    [PR#]truth_hugeface1
+classname                      CString    prop_dynamic
+origin                         CString    14980.000000 -14088.000000 -23718.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7994
+_template_lump_ent_index       CString    44
+
+====45====
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_LOOPING
+idleanim                       CString    face_idle
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    face_idle
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    2
+skin                           CString    0
+model                          CString    models/luff_mindmash/face.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]truth_hugeface_mover2
+targetname                     CString    [PR#]truth_hugeface2
+classname                      CString    prop_dynamic
+origin                         CString    9308.000000 -8120.000000 -23686.000000
+angles                         CString    -0.000000 -89.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7995
+_template_lump_ent_index       CString    45
+
+====46====
+clothscale                     Float64    1
+startdisabled                  Boolean    True
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_LOOPING
+idleanim                       CString    face_idle
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    face_idle
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    2
+skin                           CString    0
+model                          CString    models/luff_mindmash/face.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_hugeface3
+classname                      CString    prop_dynamic
+origin                         CString    3868.000000 -7736.000000 -25094.000000
+angles                         CString    -0.000000 -89.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7996
+_template_lump_ent_index       CString    46
+
+====47====
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_LOOPING
+idleanim                       CString    face_idle
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    face_idle
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    2
+skin                           CString    0
+model                          CString    models/luff_mindmash/face.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]truth_hugeface_mover1
+targetname                     CString    [PR#]truth_hugeface4
+classname                      CString    prop_dynamic
+origin                         CString    10188.000000 -1016.000000 -26870.000000
+angles                         CString    0.000000 -179.999985 90.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7997
+_template_lump_ent_index       CString    47
+
+====48====
+createnavobstacle              Boolean    True
+movedir                        Vector     <90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  4140
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    False
+dmg                            Integer    0
+lip                            Integer    0
+wait                           Integer    -1
+speed                          Float64    500
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_hugeface_mover1
+classname                      CString    func_door
+origin                         CString    8764.000000 -408.000000 -26118.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3206
+model                          CString    maps\ze_santassination_p\entities\truth_hugeface_mover1_3206.vmdl
+_template_lump_ent_index       CString    48
+
+====49====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 180, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  4140
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    False
+dmg                            Integer    0
+lip                            Integer    0
+wait                           Integer    -1
+speed                          Float64    400
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_hugeface_mover2
+classname                      CString    func_door
+origin                         CString    10140.000000 -9304.000000 -23096.800781
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3211
+model                          CString    maps\ze_santassination_p\entities\truth_hugeface_mover2_3211.vmdl
+_template_lump_ent_index       CString    49
+
+====50====
+createnavobstacle              Boolean    True
+movedir                        Vector     <90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  4140
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    False
+dmg                            Integer    0
+lip                            Integer    0
+wait                           Integer    -1
+speed                          Float64    500
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]truth_hugeface_mover3
+classname                      CString    func_door
+origin                         CString    14076.000000 -13016.000000 -24486.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3213
+model                          CString    maps\ze_santassination_p\entities\truth_hugeface_mover3_3213.vmdl
+_template_lump_ent_index       CString    50
+
+====51====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]truth_not
+classname                      CString    logic_relay
+origin                         CString    1420.000000 -6584.000000 -2366.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3312
+_template_lump_ent_index       CString    51
+@OnTrigger Command [PR#]server say ***MAP RESET - GOING BACK TO PROLOUGE***
+@OnTrigger Delay=2 Command [PR#]server say ***IT FEELS LIKE YOU MISSED SOMETHING***
+@OnTrigger Delay=4 Command [PR#]server say ***IS THIS THE REAL ENDING?***
+@OnTrigger Delay=6 PickRandom [PR#]predator_horn
+@OnTrigger Delay=6.5 Command [PR#]server say ***WHAT...***
+@OnTrigger FireUser1 [PR#]stage_1
+@OnTrigger FireUser1 [PR#]kill_all
+@OnTrigger Delay=6.3 FireUser1 [PR#]sound_truthfade
+
+====52====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    1000000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]truth_socrates1
+classname                      CString    func_breakable
+origin                         CString    4316.000000 -12744.000000 -23046.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5635
+model                          CString    maps\ze_santassination_p\entities\truth_socrates1_5635.vmdl
+_template_lump_ent_index       CString    52
+@OnBreak Delay=20 OnlyOnce FireUser1 [PR#]teleport_s4_7
+@OnBreak Delay=5 OnlyOnce ForceSpawn [PR#]npc_s5_2
+@OnBreak Delay=25 OnlyOnce FireUser1 [PR#]skybox_swapper_t_timer
+
+====53====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    1000000
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+performancemode                CString    2
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]truth_socrates2
+classname                      CString    func_breakable
+origin                         CString    12220.000000 -6823.990234 -23174.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3667
+model                          CString    maps\ze_santassination_p\entities\truth_socrates2_3667.vmdl
+_template_lump_ent_index       CString    53
+@OnBreak Delay=20 OnlyOnce FireUser1 [PR#]teleport_s4_11
+@OnBreak Delay=5 OnlyOnce FireUser2 [PR#]skybox_swapper_t_timer
+

@@ -1,0 +1,57 @@
+====0====
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    8
+health                         Integer    5000
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    1
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]lionking_mufasaskip
+classname                      CString    func_breakable
+origin                         CString    -14.200195 12.299805 -41.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    7903
+model                          CString    maps\ze_santassination_p\entities\lionking_mufasaskip_7903.vmdl
+_template_lump_ent_index       CString    0
+@OnUser1 OnlyOnce Kill !self
+@OnBreak OnlyOnce Command [PR#]server say ***YOU HAVE DEFILED MUFASAS CORPSE***
+@OnBreak Delay=2 OnlyOnce Command [PR#]server say ***YOU SICK BASTARDS...***
+@OnBreak Delay=1 OnlyOnce Command [PR#]server say ***SKIPPING CUTSCENE***
+@OnBreak OnlyOnce FireUser1 [PR#]stage_2
+@OnBreak Delay=3 OnlyOnce Command [PR#]server say ***PROLOGUE COMPLETE***
+@OnBreak OnlyOnce FireUser1 [PR#]KILL_ALL
+@OnBreak Stop [PR#]lionking_sprite_mufasadead
+@OnBreak ForceSpawnAtEntityOrigin [PR#]s_sexysound_maker !activator
+@OnBreak Delay=1 ForceSpawnAtEntityOrigin [PR#]s_sexysound_maker !activator
+@OnBreak Delay=2 ForceSpawnAtEntityOrigin [PR#]s_sexysound_maker !activator
+@OnBreak Delay=3 ForceSpawnAtEntityOrigin [PR#]s_sexysound_maker !activator
+@OnBreak Delay=0.2 ForceSpawnAtEntityOrigin [PR#]s_sexysound_maker !activator
+@OnBreak Delay=0.4 ForceSpawnAtEntityOrigin [PR#]s_sexysound_maker !activator
+@OnBreak Delay=5 ForceSpawnAtEntityOrigin [PR#]s_sexysound_maker !activator
+@OnBreak OnlyOnce Stop [PR#]lionking_mufasaskip_p
+@OnBreak Delay=0.02 OnlyOnce Start [PR#]lionking_mufasaskip_p
+@OnBreak Delay=0.5 OnlyOnce Stop [PR#]lionking_mufasaskip_p
+@OnBreak Delay=0.52 OnlyOnce Start [PR#]lionking_mufasaskip_p
+

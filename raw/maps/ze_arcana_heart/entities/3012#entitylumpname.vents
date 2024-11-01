@@ -1,0 +1,1019 @@
+====0====
+wait                           Float64    1
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Trigger
+classname                      CString    trigger_multiple
+origin                         CString    9200.000000 -3984.000000 778.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2022
+model                          CString    maps\ze_arcana_heart\entities\S1_Trigger_2022.vmdl
+_template_lump_ent_index       CString    0
+@OnStartTouch KeyValue !activator absvelocity 0 200 1000
+
+====1====
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Trigger
+classname                      CString    trigger_once
+origin                         CString    2032.000000 -6544.000000 3352.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3211
+model                          CString    maps\ze_arcana_heart\entities\S1_Trigger_3211.vmdl
+_template_lump_ent_index       CString    1
+@OnTrigger OnlyOnce FireUser1 [PR#]S1_Trigger_Final_Boss
+@OnTrigger Delay=10 OnlyOnce FireUser1 [PR#]S1_Afk_5
+@OnTrigger OnlyOnce Command [PR#]Server say >>Motion or Stillness<<
+
+====2====
+wait                           Float64    1
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Trigger
+classname                      CString    trigger_multiple
+origin                         CString    9008.000000 -7408.000000 778.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3610
+model                          CString    maps\ze_arcana_heart\entities\S1_Trigger_3610.vmdl
+_template_lump_ent_index       CString    2
+@OnStartTouch KeyValue !activator absvelocity 0 -200 1000
+
+====3====
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Trigger
+classname                      CString    trigger_once
+origin                         CString    9840.000000 -3664.000000 5352.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3957
+model                          CString    maps\ze_arcana_heart\entities\S1_Trigger_3957.vmdl
+_template_lump_ent_index       CString    3
+@OnStartTouch Kill [PR#]S1_Trigger_Push_3
+@OnStartTouch Kill !self
+
+====4====
+wait                           Float64    1
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Trigger
+classname                      CString    trigger_multiple
+origin                         CString    9840.000000 -4560.000000 4234.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3963
+model                          CString    maps\ze_arcana_heart\entities\S1_Trigger_3963.vmdl
+_template_lump_ent_index       CString    4
+@OnStartTouch KeyValue !activator absvelocity 0 0 1500
+
+====5====
+wait                           Float64    1
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Trigger
+classname                      CString    trigger_multiple
+origin                         CString    9392.000000 -7408.000000 778.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4021
+model                          CString    maps\ze_arcana_heart\entities\S1_Trigger_4021.vmdl
+_template_lump_ent_index       CString    5
+@OnStartTouch KeyValue !activator absvelocity 0 200 1000
+
+====6====
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Trigger
+classname                      CString    trigger_once
+origin                         CString    9200.000000 -12976.000000 232.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4054
+model                          CString    maps\ze_arcana_heart\entities\S1_Trigger_4054.vmdl
+_template_lump_ent_index       CString    6
+@OnTrigger OnlyOnce Trigger [PR#]S1_Trigger_Relay
+@OnTrigger OnlyOnce Enable [PR#]Map_Trigger_Counter_S1_1
+
+====7====
+wait                           Float64    1
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Trigger
+classname                      CString    trigger_multiple
+origin                         CString    9552.000000 -1584.000000 762.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4305
+model                          CString    maps\ze_arcana_heart\entities\S1_Trigger_4305.vmdl
+_template_lump_ent_index       CString    7
+@OnStartTouch KeyValue !activator absvelocity 0 0 1000
+
+====8====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    99999
+damage                         Integer    99999
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Trigger
+classname                      CString    trigger_hurt
+origin                         CString    2032.000000 -11088.000000 2288.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2794
+model                          CString    maps\ze_arcana_heart\entities\S1_Trigger_2794.vmdl
+_template_lump_ent_index       CString    8
+
+====9====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    2
+damage                         Integer    2
+filtername                     CString    [PR#]Filter_T
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Trigger
+classname                      CString    trigger_hurt
+origin                         CString    2032.000000 -11088.000000 2288.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6279
+model                          CString    maps\ze_arcana_heart\entities\S1_Trigger_6279.vmdl
+_template_lump_ent_index       CString    9
+@OnHurtPlayer KeyValue !activator speed 0.7
+@OnHurtPlayer Delay=0.49 KeyValue !activator speed 1
+
+====10====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    99999
+damage                         Integer    99999
+filtername                     CString    [PR#]Filter_CT
+startdisabled                  Boolean    False
+spawnflags                     Integer64  4097
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Trigger
+classname                      CString    trigger_hurt
+origin                         CString    9840.000000 -2128.000000 2040.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6300
+model                          CString    maps\ze_arcana_heart\entities\S1_Trigger_6300.vmdl
+_template_lump_ent_index       CString    10
+
+====11====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    99999
+damage                         Integer    99999
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Trigger
+classname                      CString    trigger_hurt
+origin                         CString    9840.000000 -2128.000000 2680.000000
+angles                         CString    -0.000000 179.999954 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6314
+model                          CString    maps\ze_arcana_heart\entities\S1_Trigger_6314.vmdl
+_template_lump_ent_index       CString    11
+
+====12====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    99999
+damage                         Integer    99999
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Trigger
+classname                      CString    trigger_hurt
+origin                         CString    9840.000000 -2128.000000 3320.000000
+angles                         CString    -0.000000 89.999947 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6340
+model                          CString    maps\ze_arcana_heart\entities\S1_Trigger_6340.vmdl
+_template_lump_ent_index       CString    12
+
+====13====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    99999
+damage                         Integer    99999
+filtername                     CString    [PR#]Filter_CT
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Trigger
+classname                      CString    trigger_hurt
+origin                         CString    9840.000000 -2128.000000 3960.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6353
+model                          CString    maps\ze_arcana_heart\entities\S1_Trigger_6353.vmdl
+_template_lump_ent_index       CString    13
+
+====14====
+check_if_dest_clear_for_player Boolean    False
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]Spawn_Tele_Des
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Trigger
+classname                      CString    trigger_teleport
+origin                         CString    9264.000000 -3776.000000 -264.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    12083
+model                          CString    maps\ze_arcana_heart\entities\S1_Trigger_12083.vmdl
+_template_lump_ent_index       CString    14
+
+====15====
+max                            Integer    4
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Map_Trigger_Counter_S1_1
+classname                      CString    math_counter
+origin                         CString    7656.000000 -12504.000000 848.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3616
+_template_lump_ent_index       CString    15
+@OnHitMax Delay=15 Open [PR#]S1_Door_1_L
+@OnHitMax Kill !self
+@OnHitMax Enable [PR#]Map_Trigger_Counter_S1_2
+@OnHitMax Delay=15 Open [PR#]S1_Door_1_R
+@OnHitMax FireUser1 [PR#]Map_Count_Particle
+@OnHitMax Delay=30 FireUser1 [PR#]S1_Afk_1
+@OnHitMax Start [PR#]Map_Trigger_Particle
+@OnHitMax Delay=5 Stop [PR#]Map_Trigger_Particle
+
+====16====
+max                            Integer    2
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Map_Trigger_Counter_S1_2
+classname                      CString    math_counter
+origin                         CString    9320.000000 -7336.000000 768.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1794
+_template_lump_ent_index       CString    16
+@OnHitMax Delay=20 Open [PR#]S1_Door_2
+@OnHitMax Kill !self
+@OnHitMax Delay=5 Enable [PR#]Map_Trigger_Counter_S1_3
+@OnHitMax Delay=5 FireUser1 [PR#]Map_Count_Particle
+@OnHitMax Delay=60 FireUser1 [PR#]S1_Afk_2
+@OnHitMax Delay=5 Stop [PR#]Map_Trigger_Particle
+@OnHitMax Start [PR#]Map_Trigger_Particle
+
+====17====
+max                            Integer    2
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Map_Trigger_Counter_S1_3
+classname                      CString    math_counter
+origin                         CString    9576.000000 -1864.000000 768.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3179
+_template_lump_ent_index       CString    17
+@OnHitMax Delay=15 Open [PR#]S1_Door_3
+@OnHitMax Kill !self
+@OnHitMax FireUser1 [PR#]S1_Trigger_Push_1
+@OnHitMax Delay=25 FireUser1 [PR#]S1_Door_4
+@OnHitMax Delay=10 FireUser1 [PR#]Map_Count_Particle
+@OnHitMax Delay=5 Enable [PR#]Map_Trigger_Counter_S1_4
+@OnHitMax Delay=5 Stop [PR#]Map_Trigger_Particle
+@OnHitMax Start [PR#]Map_Trigger_Particle
+
+====18====
+max                            Integer    1
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Map_Trigger_Counter_S1_4
+classname                      CString    math_counter
+origin                         CString    10032.000000 -1616.000000 4096.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1413
+_template_lump_ent_index       CString    18
+@OnHitMax Delay=15 FireUser1 [PR#]S1_Door_5_a
+@OnHitMax Kill !self
+@OnHitMax FireUser1 [PR#]Map_Count_Particle
+@OnHitMax Delay=5 Enable [PR#]Map_Trigger_Counter_S1_5
+@OnHitMax PickRandom [PR#]S1_Wall_Case
+@OnHitMax Delay=5 Stop [PR#]Map_Trigger_Particle
+@OnHitMax Start [PR#]Map_Trigger_Particle
+
+====19====
+max                            Integer    3
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]Map_Trigger_Counter_S1_5
+classname                      CString    math_counter
+origin                         CString    9776.000000 -4496.000000 4240.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4038
+_template_lump_ent_index       CString    19
+@OnHitMax Kill !self
+@OnHitMax FireUser1 [PR#]Map_Count_Particle
+@OnHitMax FireUser1 [PR#]S1_Door_7
+@OnHitMax FireUser1 [PR#]S1_Door_8
+@OnHitMax FireUser1 [PR#]S1_Door_9
+@OnHitMax FireUser1 [PR#]S1_Door_10
+@OnHitMax FireUser1 [PR#]S1_Door_11
+@OnHitMax FireUser1 [PR#]S1_Trigger_Final_Boss_Move
+@OnHitMax Delay=15 Enable [PR#]S1_Trigger_Tele_2
+@OnHitMax Kill [PR#]S1_Trigger_Push_2
+@OnHitMax Enable [PR#]S1_Trigger_Push_4
+@OnHitMax Delay=17 FireUser1 [PR#]S1_Afk_4
+@OnHitMax Delay=5 Stop [PR#]Map_Trigger_Particle
+@OnHitMax Start [PR#]Map_Trigger_Particle
+
+====20====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer    1
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    20
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Scene
+classname                      CString    func_rotating
+origin                         CString    3744.000000 -5248.000000 3892.099609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    863
+model                          CString    maps\ze_arcana_heart\entities\S1_Scene_863.vmdl
+_template_lump_ent_index       CString    20
+
+====21====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer64  3
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    20
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Scene
+classname                      CString    func_rotating
+origin                         CString    320.000000 -5248.009766 3892.099609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1354
+model                          CString    maps\ze_arcana_heart\entities\S1_Scene_1354.vmdl
+_template_lump_ent_index       CString    21
+
+====22====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer    1
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    20
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Scene
+classname                      CString    func_rotating
+origin                         CString    3760.000000 -9487.939453 3892.099609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1458
+model                          CString    maps\ze_arcana_heart\entities\S1_Scene_1458.vmdl
+_template_lump_ent_index       CString    22
+
+====23====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer64  3
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    20
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Scene
+classname                      CString    func_rotating
+origin                         CString    304.000000 -13712.000000 3892.099609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1745
+model                          CString    maps\ze_arcana_heart\entities\S1_Scene_1745.vmdl
+_template_lump_ent_index       CString    23
+
+====24====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer64  3
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    20
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Scene
+classname                      CString    func_rotating
+origin                         CString    304.000000 -9488.000000 3892.099609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1777
+model                          CString    maps\ze_arcana_heart\entities\S1_Scene_1777.vmdl
+_template_lump_ent_index       CString    24
+
+====25====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    100
+speed                          Integer    100
+authoredposition               CString    0
+startposition                  Float64    0
+movedir                        Vector     <0, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+uselocaloffset                 Boolean    False
+spawnflags                     Integer64  8
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+fademindist                    Float64    -1
+fademaxdist                    Float64    0
+disablereceiveshadows          Boolean    False
+targetname                     CString    [PR#]S1_Scene
+classname                      CString    func_movelinear
+origin                         CString    2032.000000 -6096.000000 7352.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1984
+model                          CString    maps\ze_arcana_heart\entities\S1_Scene_1984.vmdl
+_template_lump_ent_index       CString    25
+
+====26====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    100
+speed                          Integer    100
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    384
+fademindist                    Float64    256
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Scene
+classname                      CString    func_movelinear
+origin                         CString    9840.000000 -2128.000000 2040.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3302
+model                          CString    maps\ze_arcana_heart\entities\S1_Scene_3302.vmdl
+_template_lump_ent_index       CString    26
+
+====27====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer    1
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    20
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Scene
+classname                      CString    func_rotating
+origin                         CString    3760.000000 -11599.990234 3892.099609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3538
+model                          CString    maps\ze_arcana_heart\entities\S1_Scene_3538.vmdl
+_template_lump_ent_index       CString    27
+
+====28====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer64  3
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    20
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Scene
+classname                      CString    func_rotating
+origin                         CString    304.000000 -7376.000000 3892.099609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3816
+model                          CString    maps\ze_arcana_heart\entities\S1_Scene_3816.vmdl
+_template_lump_ent_index       CString    28
+
+====29====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer64  3
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    20
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Scene
+classname                      CString    func_rotating
+origin                         CString    304.000000 -15824.000000 3892.099609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3825
+model                          CString    maps\ze_arcana_heart\entities\S1_Scene_3825.vmdl
+_template_lump_ent_index       CString    29
+
+====30====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer    1
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    20
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Scene
+classname                      CString    func_rotating
+origin                         CString    3760.000000 -7376.040039 3892.099609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4329
+model                          CString    maps\ze_arcana_heart\entities\S1_Scene_4329.vmdl
+_template_lump_ent_index       CString    30
+
+====31====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer    1
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    20
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Scene
+classname                      CString    func_rotating
+origin                         CString    3760.000000 -13712.000000 3892.099609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4455
+model                          CString    maps\ze_arcana_heart\entities\S1_Scene_4455.vmdl
+_template_lump_ent_index       CString    31
+
+====32====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    500
+damage                         Integer    500
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Scene
+classname                      CString    trigger_hurt
+origin                         CString    2032.000000 -6096.000000 7352.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4682
+model                          CString    maps\ze_arcana_heart\entities\S1_Scene_4682.vmdl
+_template_lump_ent_index       CString    32
+
+====33====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer64  3
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    20
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Scene
+classname                      CString    func_rotating
+origin                         CString    304.000000 -11600.000000 3892.099609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4791
+model                          CString    maps\ze_arcana_heart\entities\S1_Scene_4791.vmdl
+_template_lump_ent_index       CString    33
+
+====34====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer    1
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    20
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Scene
+classname                      CString    func_rotating
+origin                         CString    3760.000000 -15824.000000 3892.099609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4793
+model                          CString    maps\ze_arcana_heart\entities\S1_Scene_4793.vmdl
+_template_lump_ent_index       CString    34
+
+====35====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    100
+speed                          Integer    100
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Scene
+classname                      CString    func_movelinear
+origin                         CString    2032.000000 -6096.000000 8728.000000
+angles                         CString    -0.000000 0.000000 -179.999985
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5295
+model                          CString    maps\ze_arcana_heart\entities\S1_Scene_5295.vmdl
+_template_lump_ent_index       CString    35
+
+====36====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    100
+speed                          Integer    100
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    384
+fademindist                    Float64    256
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Scene
+classname                      CString    func_movelinear
+origin                         CString    9840.000000 -2128.000000 2680.000000
+angles                         CString    0.000000 -179.999954 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5344
+model                          CString    maps\ze_arcana_heart\entities\S1_Scene_5344.vmdl
+_template_lump_ent_index       CString    36
+
+====37====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    100
+speed                          Integer    100
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    384
+fademindist                    Float64    256
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Scene
+classname                      CString    func_movelinear
+origin                         CString    9840.000000 -2128.000000 3320.000000
+angles                         CString    -0.000000 90.000015 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5357
+model                          CString    maps\ze_arcana_heart\entities\S1_Scene_5357.vmdl
+_template_lump_ent_index       CString    37
+
+====38====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    100
+speed                          Integer    100
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    384
+fademindist                    Float64    256
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Scene
+classname                      CString    func_movelinear
+origin                         CString    9840.000000 -2128.000000 3960.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5370
+model                          CString    maps\ze_arcana_heart\entities\S1_Scene_5370.vmdl
+_template_lump_ent_index       CString    38
+
+====39====
+snapshot_mesh                  Integer    0
+alphascale                     Float64    1
+selfillumscale                 Float64    1
+colortint                      Vector     <255, 255, 255>
+scale                          Float64    1
+start_active                   Boolean    True
+effect_name                    CString    particles/cs2/dustmotes_01.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Scene
+classname                      CString    env_particle_glow
+origin                         CString    9552.000000 -1584.000000 760.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5464
+_template_lump_ent_index       CString    39
+
+====40====
+snapshot_mesh                  Integer    0
+alphascale                     Float64    1
+selfillumscale                 Float64    1
+colortint                      Vector     <255, 255, 255>
+scale                          Float64    1
+start_active                   Boolean    True
+effect_name                    CString    particles/cs2/dustmotes_02.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Scene
+classname                      CString    env_particle_glow
+origin                         CString    9840.000000 -4560.000000 4232.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5465
+_template_lump_ent_index       CString    40
+
+====41====
+snapshot_mesh                  Integer    0
+alphascale                     Float64    1
+selfillumscale                 Float64    1
+colortint                      Vector     <255, 255, 255>
+scale                          Float64    1
+start_active                   Boolean    True
+effect_name                    CString    particles/cs2/dustmotes_02.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Scene
+classname                      CString    env_particle_glow
+origin                         CString    2032.000000 -6096.000000 8040.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5467
+_template_lump_ent_index       CString    41
+
+====42====
+snapshot_mesh                  Integer    0
+alphascale                     Float64    1
+selfillumscale                 Float64    1
+colortint                      Vector     <255, 255, 255>
+scale                          Float64    1
+start_active                   Boolean    True
+effect_name                    CString    particles/cs2/dustmotes_03.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]S1_Scene
+classname                      CString    env_particle_glow
+origin                         CString    2032.000000 -6096.000000 8040.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5468
+_template_lump_ent_index       CString    42
+

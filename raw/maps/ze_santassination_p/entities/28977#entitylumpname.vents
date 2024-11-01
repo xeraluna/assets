@@ -1,0 +1,81 @@
+====0====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    True
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]init_santa_model&0000
+classname                      CString    logic_relay
+origin                         CString    0.000000 31.999992 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    28980
+_template_lump_ent_index       CString    0
+@OnTrigger Delay=0.1 TestActivator [PR#]filter_infect&0000
+@OnTrigger Delay=0.05 FollowEntity [PR#]santa_model&0000 !activator
+@OnTrigger Delay=0.1 alpha !activator 0
+
+====1====
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer64  256
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+bodygroups                     CString    {
+	defusekit = 0
+}
+skin                           CString    default
+model                          CString    models/characters/luffaren/santa/santa.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]santa_model&0000
+classname                      CString    prop_dynamic
+origin                         CString    0.000000 0.200684 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    28978
+_template_lump_ent_index       CString    1
+
+====2====
+filterteam                     CString    2
+negated                        CString    0
+targetname                     CString    [PR#]filter_infect&0000
+classname                      CString    filter_activator_team
+origin                         CString    0.000244 32.200676 16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    28979
+_template_lump_ent_index       CString    2
+@OnPass Kill [PR#]pmodel2
+@OnPass Alpha !activator 255
+@OnPass Kill [PR#]filter_cure
+@OnFail Delay=0.1 TestActivator [PR#]filter_cure
+
