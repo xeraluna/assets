@@ -1,0 +1,594 @@
+====0====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    0
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]2_vent1
+classname                      CString    func_breakable
+origin                         CString    -1024.000000 976.000000 -808.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2576
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\2_vent1_2576.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    0
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]2_vent1
+classname                      CString    func_breakable
+origin                         CString    -1024.000000 -64.000000 -808.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2578
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\2_vent1_2578.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    0
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]2_vent1
+classname                      CString    func_breakable
+origin                         CString    -1024.000000 -64.000000 -408.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2580
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\2_vent1_2580.vmdl
+_template_lump_ent_index       CString    2
+
+====3====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    0
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]2_vent1
+classname                      CString    func_breakable
+origin                         CString    -1024.000000 976.000000 -408.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2582
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\2_vent1_2582.vmdl
+_template_lump_ent_index       CString    3
+
+====4====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    0
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]2_vent2
+classname                      CString    func_breakable
+origin                         CString    -2112.000000 -64.000000 -408.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2584
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\2_vent2_2584.vmdl
+_template_lump_ent_index       CString    4
+
+====5====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    0
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]2_vent2
+classname                      CString    func_breakable
+origin                         CString    -2112.000000 976.000000 40.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2586
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\2_vent2_2586.vmdl
+_template_lump_ent_index       CString    5
+
+====6====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    0
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]2_vent2
+classname                      CString    func_breakable
+origin                         CString    -2112.000000 -64.000000 40.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2588
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\2_vent2_2588.vmdl
+_template_lump_ent_index       CString    6
+
+====7====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    0
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]2_vent2
+classname                      CString    func_breakable
+origin                         CString    -2112.000000 976.000000 -408.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2949
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\2_vent2_2949.vmdl
+_template_lump_ent_index       CString    7
+
+====8====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    0
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]2_vent3
+classname                      CString    func_breakable
+origin                         CString    -1024.000000 -64.000000 40.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2590
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\2_vent3_2590.vmdl
+_template_lump_ent_index       CString    8
+
+====9====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    0
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]2_vent3
+classname                      CString    func_breakable
+origin                         CString    -1024.000000 976.000000 40.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2592
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\2_vent3_2592.vmdl
+_template_lump_ent_index       CString    9
+
+====10====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    0
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]2_vent3
+classname                      CString    func_breakable
+origin                         CString    -1024.000000 -136.000000 -32.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2594
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\2_vent3_2594.vmdl
+_template_lump_ent_index       CString    10
+
+====11====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    0
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]2_vent3
+classname                      CString    func_breakable
+origin                         CString    -1024.000000 1048.000000 -32.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2596
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\2_vent3_2596.vmdl
+_template_lump_ent_index       CString    11
+
+====12====
+movewithoutpushingblockers     Boolean    True
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    256
+speed                          Integer    64
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer    0
+movedir                        Vector     <-90, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]2_door2
+classname                      CString    func_movelinear
+origin                         CString    -4280.000000 456.000000 -1112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1739
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\2_door2_1739.vmdl
+_template_lump_ent_index       CString    12
+@OnFullyOpen OnlyOnce Kill !self
+
+====13====
+movewithoutpushingblockers     Boolean    True
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    257
+speed                          Integer    64
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer    0
+movedir                        Vector     <90, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]2_door3
+classname                      CString    func_movelinear
+origin                         CString    -2376.000000 200.000000 -744.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    348
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\2_door3_348.vmdl
+_template_lump_ent_index       CString    13
+@OnFullyOpen Kill !self
+
+====14====
+movewithoutpushingblockers     Boolean    True
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    257
+speed                          Integer    64
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer    0
+movedir                        Vector     <90, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]2_door3
+classname                      CString    func_movelinear
+origin                         CString    -2376.000000 712.000000 -744.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    350
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\2_door3_350.vmdl
+_template_lump_ent_index       CString    14
+@OnFullyOpen Kill !self
+

@@ -1,0 +1,127 @@
+====0====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    4
+damagecap                      Integer    9999999
+damage                         Integer    9999999
+filtername                     CString    [PR#]zombie
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]item_holy_sword_effect
+classname                      CString    trigger_hurt
+origin                         CString    0.000000 32.000000 48.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    280
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\item_holy_sword_effect_280.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/koyo/minolila/cus1.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]item_holy_sword_effect_particle
+classname                      CString    info_particle_system
+origin                         CString    56.000000 30.899994 0.000000
+angles                         CString    -89.999992 -0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2367
+_template_lump_ent_index       CString    1
+
+====2====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+holdanimation                  CString    0
+maxanimtime                    CString    10
+minanimtime                    CString    5
+randomanimation                CString    0
+clothscale                     Float64    1
+startdisabled                  Boolean    True
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <148, 188, 242>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    3
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    0
+model                          CString    models/misaka/sword.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]item_holy_sword_dynamic_main
+classname                      CString    prop_dynamic
+origin                         CString    56.500000 31.744995 2.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    5.000000 5.000000 5.000000
+hammeruniqueid                 CString    2369
+_template_lump_ent_index       CString    2
+
+====3====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/koyo/minolila/dabaojian.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]item_holy_sword_effect_particle2
+classname                      CString    info_particle_system
+origin                         CString    55.900391 32.000000 2.052734
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2347
+_template_lump_ent_index       CString    3
+

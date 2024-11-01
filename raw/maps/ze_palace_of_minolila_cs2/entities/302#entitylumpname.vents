@@ -1,0 +1,374 @@
+====0====
+fadescale                      CString    1
+canbepickedup                  Boolean    True
+spawnflags                     Integer    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+targetname                     CString    [PR#]item_wind_weapon
+classname                      CString    weapon_elite
+origin                         CString    -3.299805 0.129883 0.000000
+angles                         Vector     <-0, 0, 0>
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    303
+_template_lump_ent_index       CString    0
+@OnPlayerPickup Kill [PR#]item_wind_glow
+@OnPlayerPickup Command [PR#]command say << A player has picked up wind magic >>
+@OnPlayerPickup RunScriptCode [PR#]item_wind_text WindText()
+@OnPlayerPickup Delay=0.1 Display [PR#]item_wind_text
+@OnPlayerPickup keyvalue [PR#]wind_user targetname player
+@OnPlayerPickup Delay=0.1 keyvalue !activator targetname wind_user
+
+====1====
+health                         CString    0
+fadescale                      CString    1
+spawnflags                     Integer64  17409
+forcenpcexclude                Boolean    False
+lip                            Integer    0
+wait                           Float64    0.009999999776482582
+speed                          Integer    5
+movedir                        Vector     <0, 0, 0>
+unlocked_sound                 CString    0
+locked_sound                   CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_wind_weapon
+vscripts                       CString    exprop.lua
+targetname                     CString    [PR#]item_wind_button
+classname                      CString    func_button
+origin                         CString    43.000000 -2.000000 8.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    304
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\item_wind_button_304.vmdl
+_template_lump_ent_index       CString    1
+@OnUser1 Stop [PR#]item_wind_particle
+@OnUser1 Enable [PR#]item_wind_effect1
+@OnUser1 Enable [PR#]item_wind_effect2
+@OnUser1 Enable [PR#]item_wind_effect3
+@OnUser1 Enable [PR#]item_wind_effect4
+@OnUser1 Enable [PR#]item_wind_effect5
+@OnUser1 Enable [PR#]item_wind_effect7
+@OnUser1 Enable [PR#]item_wind_effect8
+@OnUser1 Delay=7 Disable [PR#]item_wind_effect8
+@OnUser1 Delay=7 Disable [PR#]item_wind_effect7
+@OnUser1 Delay=7 Disable [PR#]item_wind_effect5
+@OnUser1 Delay=7 Disable [PR#]item_wind_effect4
+@OnUser1 Delay=7 Disable [PR#]item_wind_effect3
+@OnUser1 Delay=7 Disable [PR#]item_wind_effect2
+@OnUser1 Delay=7 Disable [PR#]item_wind_effect1
+@OnUser1 Start [PR#]item_wind_effect_particle
+@OnUser1 Delay=7 Stop [PR#]item_wind_effect_particle
+@OnUser1 Delay=65 Start [PR#]item_wind_particle
+@OnUser1 Enable [PR#]item_wind_effect6
+@OnUser1 Delay=7 Disable [PR#]item_wind_effect6
+@OnUser1 Lock !self
+@OnUser1 Delay=65 Unlock !self
+@OnPressed TestActivator [PR#]item_wind_filter
+@OnUser1 StartSound [PR#]item_wind_sound
+
+====2====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/koyo/minolila/windsq.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_wind_weapon
+targetname                     CString    [PR#]item_wind_effect_particle
+classname                      CString    info_particle_system
+origin                         CString    39.000000 -2.060059 2.049999
+angles                         CString    -89.999992 -0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2371
+_template_lump_ent_index       CString    2
+
+====3====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/ex_robs_014.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_wind_weapon
+targetname                     CString    [PR#]item_wind_particle
+classname                      CString    info_particle_system
+origin                         CString    28.000000 0.000000 56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2370
+_template_lump_ent_index       CString    3
+
+====4====
+onlyfallingplayers             CString    0
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    400
+pushdir                        Vector     <0, 90, 0>
+filtername                     CString    [PR#]zombie
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_wind_weapon
+targetname                     CString    [PR#]item_wind_effect3
+classname                      CString    trigger_push
+origin                         CString    70.299805 304.819946 48.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    295
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\item_wind_effect3_295.vmdl
+_template_lump_ent_index       CString    4
+
+====5====
+onlyfallingplayers             CString    0
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    400
+pushdir                        Vector     <0, 135, 0>
+filtername                     CString    [PR#]zombie
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_wind_weapon
+targetname                     CString    [PR#]item_wind_effect4
+classname                      CString    trigger_push
+origin                         CString    -235.500000 235.550049 48.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    293
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\item_wind_effect4_293.vmdl
+_template_lump_ent_index       CString    5
+
+====6====
+onlyfallingplayers             CString    0
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    400
+pushdir                        Vector     <0, 45, 0>
+filtername                     CString    [PR#]zombie
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_wind_weapon
+targetname                     CString    [PR#]item_wind_effect2
+classname                      CString    trigger_push
+origin                         CString    237.500000 235.530029 48.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    291
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\item_wind_effect2_291.vmdl
+_template_lump_ent_index       CString    6
+
+====7====
+onlyfallingplayers             CString    0
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    400
+pushdir                        Vector     <0, 0, 0>
+filtername                     CString    [PR#]zombie
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_wind_weapon
+targetname                     CString    [PR#]item_wind_effect1
+classname                      CString    trigger_push
+origin                         CString    237.500000 -0.949951 48.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    289
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\item_wind_effect1_289.vmdl
+_template_lump_ent_index       CString    7
+
+====8====
+onlyfallingplayers             CString    0
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    400
+pushdir                        Vector     <0, 315, 0>
+filtername                     CString    [PR#]zombie
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_wind_weapon
+targetname                     CString    [PR#]item_wind_effect8
+classname                      CString    trigger_push
+origin                         CString    237.500000 -237.469971 48.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    287
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\item_wind_effect8_287.vmdl
+_template_lump_ent_index       CString    8
+
+====9====
+onlyfallingplayers             CString    0
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    400
+pushdir                        Vector     <0, 270, 0>
+filtername                     CString    [PR#]zombie
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_wind_weapon
+targetname                     CString    [PR#]item_wind_effect7
+classname                      CString    trigger_push
+origin                         CString    1.000000 -237.469971 48.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    285
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\item_wind_effect7_285.vmdl
+_template_lump_ent_index       CString    9
+
+====10====
+onlyfallingplayers             CString    0
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    400
+pushdir                        Vector     <0, 225, 0>
+filtername                     CString    [PR#]zombie
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_wind_weapon
+targetname                     CString    [PR#]item_wind_effect6
+classname                      CString    trigger_push
+origin                         CString    -235.500000 -237.449951 48.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    299
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\item_wind_effect6_299.vmdl
+_template_lump_ent_index       CString    10
+
+====11====
+onlyfallingplayers             CString    0
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    400
+pushdir                        Vector     <0, 180, 0>
+filtername                     CString    [PR#]zombie
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_wind_weapon
+targetname                     CString    [PR#]item_wind_effect5
+classname                      CString    trigger_push
+origin                         CString    -235.500000 -0.969971 48.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    297
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\item_wind_effect5_297.vmdl
+_template_lump_ent_index       CString    11
+
+====12====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+clothscale                     Float64    1
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+idleanim                       CString    default
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+glowteam                       Integer    -1
+glowrangemin                   Integer    0
+glowrange                      Integer    1000
+glowstate                      CString    3
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+burstscale                     Float64    100
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+startdisabled                  Boolean    False
+spawnflags                     Integer    0
+solid                          CString    0
+skin                           CString    0
+rendermode                     CString    kRenderGlow
+renderfx                       CString    0
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+pressuredelay                  Float64    0
+performancemode                CString    0
+model                          CString    models/weapons/w_pist_elite.vmdl
+glowcolor                      Vector     <0, 255, 0>
+fademindist                    Float64    1500
+fademaxdist                    Float64    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+disablereceiveshadows          Boolean    False
+targetname                     CString    [PR#]item_wind_glow
+classname                      CString    prop_dynamic
+origin                         CString    -8.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    301
+_template_lump_ent_index       CString    12
+
+====13====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    kaze
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_wind_weapon
+targetname                     CString    [PR#]item_wind_sound
+classname                      CString    point_soundevent
+origin                         CString    -0.729492 3.220947 12.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4192
+_template_lump_ent_index       CString    13
+

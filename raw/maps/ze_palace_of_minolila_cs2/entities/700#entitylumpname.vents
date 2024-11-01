@@ -1,0 +1,174 @@
+====0====
+orientationtype                CString    0
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]3_boss_skill3_path2&0000
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]3_boss_skill3_path1&0000
+classname                      CString    path_track
+origin                         CString    0.000000 0.000000 -248.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    704
+_template_lump_ent_index       CString    0
+
+====1====
+orientationtype                CString    0
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]3_boss_skill3_path3&0000
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]3_boss_skill3_path2&0000
+classname                      CString    path_track
+origin                         CString    0.000000 0.000000 224.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    701
+_template_lump_ent_index       CString    1
+
+====2====
+orientationtype                CString    0
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]3_boss_skill3_path4&0000
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]3_boss_skill3_path3&0000
+classname                      CString    path_track
+origin                         CString    0.000000 -1792.000000 224.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    702
+_template_lump_ent_index       CString    2
+
+====3====
+orientationtype                CString    0
+radius                         Float64    0
+speed                          Float64    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]3_boss_skill3_path4&0000
+classname                      CString    path_track
+origin                         CString    0.000000 -1792.000000 -248.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    703
+_template_lump_ent_index       CString    3
+@OnPass Kill [PR#]3_boss_skill3_path1&0000
+@OnPass Kill [PR#]3_boss_skill3_path2&0000
+@OnPass Kill [PR#]3_boss_skill3_path3&0000
+@OnPass Kill [PR#]3_boss_skill3_train&0000
+@OnPass Kill !self
+
+====4====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]3_boss_skill3_train_relay&0000
+classname                      CString    logic_relay
+origin                         CString    -48.000000 -1584.000000 -256.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    706
+_template_lump_ent_index       CString    4
+@OnSpawn StartForward [PR#]3_boss_skill3_train&0000
+@OnSpawn Delay=0.05 Kill !self
+
+====5====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1
+damagecap                      Integer    20
+damage                         Integer    100
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]3_boss_skill3_train&0000
+targetname                     CString    [PR#]3_boss_skill3_hurt&0000
+classname                      CString    trigger_hurt
+origin                         CString    0.000000 0.000000 -248.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    661
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\3_boss_skill3_hurt_661.vmdl
+_template_lump_ent_index       CString    5
+@OnHurtPlayer setdamagefilter !activator [PR#]bugdamage
+@OnHurtPlayer Delay=0.5 setdamagefilter !activator [PR#]nfd
+
+====6====
+fadescale                      CString    1
+movesoundmaxtime               Float64    0
+movesoundmintime               Float64    0
+movesoundmaxpitch              Integer    200
+movesoundminpitch              Integer    60
+volume                         Integer    10
+dmg                            Integer    0
+bank                           CString    0
+height                         Integer    4
+wheels                         Integer    50
+orientationtype                CString    1
+velocitytype                   CString    0
+speed                          Integer    0
+startspeed                     Integer    320
+target                         CString    [PR#]3_boss_skill3_path1&0000
+spawnflags                     Integer64  26
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 0, 0>
+renderamt                      Integer    100
+rendermode                     CString    1
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]3_boss_skill3_train&0000
+classname                      CString    func_tracktrain
+origin                         CString    0.000000 0.000000 -248.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    446
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\3_boss_skill3_train_446.vmdl
+_template_lump_ent_index       CString    6
+
+====7====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    0
+speed                          Integer    100
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]3_boss_skill3_train&0000
+targetname                     CString    [PR#]3_boss_skill3_move&0000
+classname                      CString    func_movelinear
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    448
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\3_boss_skill3_move_448.vmdl
+_template_lump_ent_index       CString    7
+

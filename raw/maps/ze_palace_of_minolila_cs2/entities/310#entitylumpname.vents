@@ -1,0 +1,70 @@
+====0====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    4
+damagecap                      Integer    20
+damage                         Integer    1000
+filtername                     CString    [PR#]zombie
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]item_electro_effect
+classname                      CString    trigger_hurt
+origin                         CString    31.000000 32.000000 -24.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    314
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\item_electro_effect_314.vmdl
+_template_lump_ent_index       CString    0
+@OnHurtPlayer TestActivator [PR#]healzombie_speedcontrol
+
+====1====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <168, 210, 253>
+tint_cp                        Integer    3
+data_cp_value                  Vector     <350, 12, 16>
+data_cp                        Integer    2
+snapshot_mesh                  Integer    -1
+no_save                        Boolean    False
+start_active                   Boolean    True
+effect_name                    CString    particles/koyo/minolila/tesla.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]item_electro_tesla
+classname                      CString    info_particle_system
+origin                         CString    108.000000 19.000000 30.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4041
+_template_lump_ent_index       CString    1
+@OnUser1 FireUser2 !self
+@OnUser2 Delay=0.6 FireUser1 !self
+@OnUser2 Delay=0.4 Start !self
+@OnUser2 Delay=0.2 Stop !self
+@OnUser2 Delay=0.2 StartSound [PR#]item_electro_sound
+
+====2====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    dian
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_electro_tesla
+targetname                     CString    [PR#]item_electro_sound
+classname                      CString    point_soundevent
+origin                         CString    106.000000 24.000000 36.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4193
+_template_lump_ent_index       CString    2
+

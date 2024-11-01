@@ -1,0 +1,165 @@
+====0====
+canbepickedup                  Boolean    True
+spawnflags                     Integer    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+targetname                     CString    [PR#]item_electro_weapon
+classname                      CString    weapon_elite
+origin                         CString    -4.299805 1.099976 0.000000
+angles                         Vector     <-0, 0, 0>
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    307
+_template_lump_ent_index       CString    0
+@OnPlayerPickup Kill [PR#]item_electro_glow
+@OnPlayerPickup Command [PR#]command say << A player has picked up electro magic >>
+@OnPlayerPickup Delay=0.1 Display [PR#]item_electro_text
+@OnPlayerPickup RunScriptCode [PR#]item_electro_text ElectroText()
+@OnPlayerPickup keyvalue [PR#]electro_user targetname player
+@OnPlayerPickup Delay=0.1 keyvalue !activator targetname electro_user
+
+====1====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+clothscale                     Float64    1
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+idleanim                       CString    default
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+glowteam                       Integer    -1
+glowrangemin                   Integer    0
+glowrange                      Integer    1000
+glowstate                      CString    3
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+burstscale                     Float64    100
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+startdisabled                  Boolean    False
+spawnflags                     Integer    0
+solid                          CString    0
+skin                           CString    0
+rendermode                     CString    kRenderGlow
+renderfx                       CString    kRenderFxNone
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+pressuredelay                  Float64    0
+performancemode                CString    0
+model                          CString    models/weapons/w_pist_elite.vmdl
+glowcolor                      Vector     <255, 255, 0>
+fademindist                    Float64    1500
+fademaxdist                    Float64    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+disablereceiveshadows          Boolean    False
+targetname                     CString    [PR#]item_electro_glow
+classname                      CString    prop_dynamic
+origin                         CString    -9.000000 1.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    308
+_template_lump_ent_index       CString    1
+
+====2====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/koyo/minolila/dianqiu.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_electro_weapon
+targetname                     CString    [PR#]item_electro_particle
+classname                      CString    info_particle_system
+origin                         CString    26.000000 2.000000 56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2372
+_template_lump_ent_index       CString    2
+
+====3====
+health                         CString    0
+fadescale                      CString    1
+spawnflags                     Integer64  17409
+forcenpcexclude                Boolean    False
+lip                            Integer    0
+wait                           Float64    0.009999999776482582
+speed                          Integer    5
+movedir                        Vector     <0, 0, 0>
+unlocked_sound                 CString    0
+locked_sound                   CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_electro_weapon
+vscripts                       CString    exprop.lua
+targetname                     CString    [PR#]item_electro_button
+classname                      CString    func_button
+origin                         CString    42.000000 -8.000000 40.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    312
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\item_electro_button_312.vmdl
+_template_lump_ent_index       CString    3
+@OnUser1 Stop [PR#]item_electro_particle
+@OnUser1 Delay=60 Start [PR#]item_electro_particle
+@OnUser1 ForceSpawn [PR#]item_electro_effect_maker
+@OnUser1 Delay=0.05 Enable [PR#]item_electro_effect
+@OnUser1 Delay=6 Kill [PR#]item_electro_effect
+@OnUser1 Delay=0.05 FireUser1 [PR#]item_electro_tesla
+@OnUser1 Lock !self
+@OnUser1 Delay=60 Unlock !self
+@OnPressed TestActivator [PR#]item_electro_filter
+@OnUser1 Delay=6 Kill [PR#]item_electro_tesla
+@OnUser1 Delay=6 Kill [PR#]item_electro_sound
+
+====4====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]item_electro_effect_template
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_electro_weapon
+targetname                     CString    [PR#]item_electro_effect_maker
+classname                      CString    env_entity_maker
+origin                         CString    72.000000 -8.000000 24.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    309
+_template_lump_ent_index       CString    4
+

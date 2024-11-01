@@ -1,0 +1,67 @@
+====0====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    4416
+speed                          Integer    1200
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_final2_laser2&0000
+classname                      CString    func_movelinear
+origin                         CString    0.000000 0.500000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    65
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\4_final2_laser2_65.vmdl
+_template_lump_ent_index       CString    0
+@OnFullyOpen KillHierarchy !self
+
+====1====
+check_if_dest_clear_for_player Boolean    False
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]4_zdest2
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]4_final2_laser2&0000
+targetname                     CString    [PR#]4_final2_laser2_hurt&0000
+classname                      CString    trigger_teleport
+origin                         CString    24.000000 0.500000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    63
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\4_final2_laser2_hurt_63.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]4_final2_laser2_relay&0000
+classname                      CString    logic_relay
+origin                         CString    368.000000 -128.000000 -208.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    68
+_template_lump_ent_index       CString    2
+@OnSpawn Open [PR#]4_final2_laser2&0000
+@OnSpawn Delay=0.05 Kill !self
+

@@ -1,0 +1,81 @@
+====0====
+wait                           Float64    1
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]ex2_boss_blue_multiple
+classname                      CString    trigger_multiple
+origin                         CString    0.000000 0.000000 -16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    976
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\ex2_boss_blue_multiple_976.vmdl
+_template_lump_ent_index       CString    0
+@OnStartTouch keyvalue !activator basevelocity 0 0 1000
+
+====1====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    96
+speed                          Integer    256
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <-90, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]ex2_boss_blue_arrow
+classname                      CString    func_movelinear
+origin                         CString    0.000000 0.000000 -112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    971
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\ex2_boss_blue_arrow_971.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    0
+speed                          Integer    100
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]ex2_boss_blue_bottom
+classname                      CString    func_movelinear
+origin                         CString    0.000000 0.000000 -63.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    974
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\ex2_boss_blue_bottom_974.vmdl
+_template_lump_ent_index       CString    2
+

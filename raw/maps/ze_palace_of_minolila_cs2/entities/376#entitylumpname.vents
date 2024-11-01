@@ -1,0 +1,53 @@
+====0====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    0
+speed                          Integer    100
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]ex1_boss_skill_base2
+classname                      CString    func_movelinear
+origin                         CString    448.000000 -1360.000000 -31.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    373
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\ex1_boss_skill_base2_373.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1
+damagecap                      Integer    20
+damage                         Integer    200
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]ex1_boss_skill_hurt2
+classname                      CString    trigger_hurt
+origin                         CString    448.000000 -1360.000000 -16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    371
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\ex1_boss_skill_hurt2_371.vmdl
+_template_lump_ent_index       CString    1
+

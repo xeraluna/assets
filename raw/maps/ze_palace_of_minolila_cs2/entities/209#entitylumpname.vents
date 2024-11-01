@@ -1,0 +1,172 @@
+====0====
+filtername                     CString    [PR#]zitem_block
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]weapon_strip3
+classname                      CString    trigger_once
+origin                         CString    4.000000 1.000000 2.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    214
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\weapon_strip3_214.vmdl
+_template_lump_ent_index       CString    0
+@OnStartTouch TriggerForActivatedPlayer [PR#]weapon_drop
+@OnStartTouch Delay=0.1 Kill !self
+
+====1====
+canbepickedup                  Boolean    True
+spawnflags                     Integer    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+targetname                     CString    [PR#]item_zmheal_weapon
+classname                      CString    weapon_knife
+origin                         CString    -0.299805 1.099976 0.000000
+angles                         Vector     <-0, 0, 0>
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    216
+_template_lump_ent_index       CString    1
+@OnPlayerPickup Delay=0.1 Display [PR#]item_zheal_text
+@OnPlayerPickup RunScriptCode [PR#]item_zheal_text ZHealText()
+@OnPlayerPickup Command [PR#]command say << A zombie has picked up heal magic >>
+@OnPlayerPickup keyvalue [PR#]zheal_user targetname player
+@OnPlayerPickup Delay=0.1 keyvalue !activator health 30000
+@OnPlayerPickup Delay=0.1 keyvalue !activator targetname zheal_user
+@OnPlayerPickup Delay=0.1 SetDamageFilter !activator [PR#]healzombie
+
+====2====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/ex_robs_011.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_zmheal_weapon
+targetname                     CString    [PR#]item_zmheal_effect_particle
+classname                      CString    info_particle_system
+origin                         CString    40.000000 0.000000 0.000000
+angles                         CString    -89.999992 -0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2351
+_template_lump_ent_index       CString    2
+
+====3====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/koyo/minolila/js_heal.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_zmheal_weapon
+targetname                     CString    [PR#]item_zmheal_particle
+classname                      CString    info_particle_system
+origin                         CString    24.000000 0.000000 50.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2350
+_template_lump_ent_index       CString    3
+
+====4====
+health                         CString    0
+fadescale                      CString    1
+spawnflags                     Integer64  17409
+forcenpcexclude                Boolean    False
+lip                            Integer    0
+wait                           Float64    0.009999999776482582
+speed                          Integer    5
+movedir                        Vector     <0, 0, 0>
+unlocked_sound                 CString    0
+locked_sound                   CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_zmheal_weapon
+vscripts                       CString    exprop.lua
+targetname                     CString    [PR#]item_zmheal_button
+classname                      CString    func_button
+origin                         CString    46.000000 0.000000 16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    210
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\item_zmheal_button_210.vmdl
+_template_lump_ent_index       CString    4
+@OnPressed TestActivator [PR#]item_zheal_filter
+
+====5====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1
+damagecap                      Integer    20
+damage                         Integer    -15000
+filtername                     CString    [PR#]zombie
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_zmheal_weapon
+targetname                     CString    [PR#]item_zmheal_effect
+classname                      CString    trigger_hurt
+origin                         CString    0.000000 0.000000 -8.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    212
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\item_zmheal_effect_212.vmdl
+_template_lump_ent_index       CString    5
+@OnStartTouch keyvalue !activator max_health 30000
+
+====6====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    zmheal
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_zmheal_weapon
+targetname                     CString    [PR#]item_zmheal_sound
+classname                      CString    point_soundevent
+origin                         CString    -0.845703 -8.718506 30.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4185
+_template_lump_ent_index       CString    6
+

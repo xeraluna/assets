@@ -1,0 +1,15 @@
+====0====
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]event_door
+targetname                     CString    [PR#]event_trigger
+classname                      CString    trigger_once
+origin                         CString    0.500000 0.500000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    19
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\event_trigger_19.vmdl
+_template_lump_ent_index       CString    0
+@OnStartTouch OnlyOnce RunScriptCode [PR#]event_door GetPlayer <- null;GetPlayer = activator;
+

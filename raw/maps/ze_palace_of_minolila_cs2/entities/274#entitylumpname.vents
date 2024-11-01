@@ -1,0 +1,277 @@
+====0====
+fadescale                      CString    1
+canbepickedup                  Boolean    True
+spawnflags                     Integer    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+targetname                     CString    [PR#]item_holy_sword_weapon
+classname                      CString    weapon_elite
+origin                         CString    -4.299805 1.100006 0.000000
+angles                         Vector     <-0, 0, 0>
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    279
+_template_lump_ent_index       CString    0
+@OnPlayerPickup Kill [PR#]item_holy_sword_glow
+@OnPlayerPickup Delay=0.1 Display [PR#]item_holy_sword_text
+@OnPlayerPickup RunScriptCode [PR#]item_holy_sword_text HolySwordText()
+@OnPlayerPickup Command [PR#]command say << A player has picked up Frostmourn >>
+@OnPlayerPickup keyvalue [PR#]holy_user targetname player
+@OnPlayerPickup Delay=0.1 keyvalue !activator targetname holy_user
+
+====1====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+clothscale                     Float64    1
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+idleanim                       CString    default
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+glowteam                       Integer    -1
+glowrangemin                   Integer    0
+glowrange                      Integer    1000
+glowstate                      CString    3
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+burstscale                     Float64    100
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+startdisabled                  Boolean    False
+spawnflags                     Integer    0
+solid                          CString    0
+skin                           CString    0
+rendermode                     CString    kRenderGlow
+renderfx                       CString    0
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+pressuredelay                  Float64    0
+performancemode                CString    0
+model                          CString    models/weapons/w_pist_elite.vmdl
+glowcolor                      Vector     <0, 0, 255>
+fademindist                    Float64    1500
+fademaxdist                    Float64    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+disablereceiveshadows          Boolean    False
+targetname                     CString    [PR#]item_holy_sword_glow
+classname                      CString    prop_dynamic
+origin                         CString    -9.000000 1.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    273
+_template_lump_ent_index       CString    1
+
+====2====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]item_holy_sword_move
+target                         CString    [PR#]item_holy_sword_dynamic
+measurereference               CString    [PR#]item_holy_sword_move
+measuretarget                  CString    [PR#]item_holy_sword_move
+targetname                     CString    [PR#]item_holy_sword_measure
+classname                      CString    logic_measure_movement
+origin                         CString    4.000000 -90.837891 -6.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3980
+_template_lump_ent_index       CString    2
+
+====3====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <66, 142, 242>
+glowrangemin                   Integer    0
+glowrange                      Integer    500
+glowstate                      CString    3
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderTransColor
+renderfx                       CString    0
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer64  256
+performancemode                CString    PM_NO_GIBS
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+skin                           CString    0
+model                          CString    models/misaka/sword.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]item_holy_sword_dynamic
+classname                      CString    prop_dynamic
+origin                         CString    78.000000 0.000000 64.000000
+angles                         CString    -44.999989 -179.999985 -179.999985
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2368
+_template_lump_ent_index       CString    3
+
+====4====
+health                         CString    0
+fadescale                      CString    1
+spawnflags                     Integer64  17409
+forcenpcexclude                Boolean    False
+lip                            Integer    0
+wait                           Float64    0.009999999776482582
+speed                          Integer    5
+movedir                        Vector     <0, 0, 0>
+unlocked_sound                 CString    0
+locked_sound                   CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_holy_sword_weapon
+vscripts                       CString    exprop.lua
+targetname                     CString    [PR#]item_holy_sword_button
+classname                      CString    func_button
+origin                         CString    42.000000 0.000000 40.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    277
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\item_holy_sword_button_277.vmdl
+_template_lump_ent_index       CString    4
+@OnUser1 OnlyOnce Kill [PR#]item_holy_sword_dynamic
+@OnUser1 OnlyOnce ForceSpawn [PR#]item_holy_sword_effect_maker
+@OnUser1 Delay=0.05 OnlyOnce Start [PR#]item_holy_sword_effect_particle
+@OnUser1 Delay=15 OnlyOnce Kill [PR#]item_holy_sword_effect_particle
+@OnUser1 Delay=15 OnlyOnce Enable [PR#]item_holy_sword_effect
+@OnUser1 Delay=16 OnlyOnce Kill [PR#]item_holy_sword_effect
+@OnUser1 Delay=0.1 OnlyOnce Enable [PR#]item_holy_sword_dynamic_main
+@OnUser1 Delay=16 OnlyOnce Kill [PR#]item_holy_sword_dynamic_main
+@OnUser1 Delay=0.05 OnlyOnce keyvalues [PR#]item_holy_sword_dynamic_main modelscale 5
+@OnUser1 Delay=5 OnlyOnce Start [PR#]item_holy_sword_effect_particle2
+@OnUser1 Delay=15 OnlyOnce Kill [PR#]item_holy_sword_effect_particle2
+@OnUser1 Delay=14 OnlyOnce Fade [PR#]holy_fade
+@OnUser1 Delay=0.5 Kill !self
+@OnPressed TestActivator [PR#]item_holy_filter
+@OnUser1 Delay=15 OnlyOnce Kill [PR#]item_ztinfect_effect
+@OnUser1 Delay=15 OnlyOnce Kill [PR#]item_ztinfect_effect_particle
+@OnUser1 OnlyOnce StartSound [PR#]item_holy_sword_sound
+@OnUser1 Delay=15 OnlyOnce StartSound [PR#]item_holy_sword_sound2
+
+====5====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]item_holy_sword_effect_template
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_holy_sword_weapon
+targetname                     CString    [PR#]item_holy_sword_effect_maker
+classname                      CString    env_entity_maker
+origin                         CString    0.000000 -32.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    275
+_template_lump_ent_index       CString    5
+
+====6====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    100
+speed                          Integer    100
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_holy_sword_weapon
+targetname                     CString    [PR#]item_holy_sword_move
+classname                      CString    func_movelinear
+origin                         CString    54.000000 2.000000 40.000000
+angles                         CString    -45.000004 -179.999969 -179.999969
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3981
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\item_holy_sword_move_3981.vmdl
+_template_lump_ent_index       CString    6
+
+====7====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    holy_start
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_holy_sword_weapon
+targetname                     CString    [PR#]item_holy_sword_sound
+classname                      CString    point_soundevent
+origin                         CString    -1.434570 0.790283 16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4190
+_template_lump_ent_index       CString    7
+
+====8====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    holy_end
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_holy_sword_weapon
+targetname                     CString    [PR#]item_holy_sword_sound2
+classname                      CString    point_soundevent
+origin                         CString    -1.434570 16.000000 16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4191
+_template_lump_ent_index       CString    8
+

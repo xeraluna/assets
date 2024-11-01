@@ -1,0 +1,243 @@
+====0====
+fadescale                      CString    1
+canbepickedup                  Boolean    True
+spawnflags                     Integer    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+targetname                     CString    [PR#]item_heal_weapon
+classname                      CString    weapon_elite
+origin                         CString    -4.299805 1.100098 0.000000
+angles                         Vector     <-0, 0, 0>
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    328
+_template_lump_ent_index       CString    0
+@OnPlayerPickup Command [PR#]command say << A player has picked up heal magic >>
+@OnPlayerPickup Kill [PR#]item_heal_glow
+@OnPlayerPickup Delay=0.1 Display [PR#]item_heal_text
+@OnPlayerPickup RunScriptCode [PR#]item_heal_text HealText()
+@OnPlayerPickup Delay=0.1 keyvalue !activator targetname heal_user
+@OnPlayerPickup keyvalue [PR#]heal_user targetname player
+
+====1====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+clothscale                     Float64    1
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+idleanim                       CString    default
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+glowteam                       Integer    -1
+glowrangemin                   Integer    0
+glowrange                      Integer    1000
+glowstate                      CString    3
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+burstscale                     Float64    100
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+startdisabled                  Boolean    False
+spawnflags                     Integer    0
+solid                          CString    0
+skin                           CString    0
+rendermode                     CString    kRenderGlow
+renderfx                       CString    0
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+pressuredelay                  Float64    0
+performancemode                CString    0
+model                          CString    models/weapons/w_pist_elite.vmdl
+glowcolor                      Vector     <255, 255, 255>
+fademindist                    Float64    1500
+fademaxdist                    Float64    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+disablereceiveshadows          Boolean    False
+targetname                     CString    [PR#]item_heal_glow
+classname                      CString    prop_dynamic
+origin                         CString    -9.000000 1.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    333
+_template_lump_ent_index       CString    1
+
+====2====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/ex_robs_001.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_heal_weapon
+targetname                     CString    [PR#]item_heal_effect_particle
+classname                      CString    info_particle_system
+origin                         CString    4.000000 -1.100098 2.049999
+angles                         CString    -89.999992 -0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2377
+_template_lump_ent_index       CString    2
+
+====3====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/ex_robs_013.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_heal_weapon
+targetname                     CString    [PR#]item_heal_particle
+classname                      CString    info_particle_system
+origin                         CString    26.000000 2.000000 56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2378
+_template_lump_ent_index       CString    3
+
+====4====
+health                         CString    0
+fadescale                      CString    1
+spawnflags                     Integer64  17409
+forcenpcexclude                Boolean    False
+lip                            Integer    0
+wait                           Float64    0.009999999776482582
+speed                          Integer    5
+movedir                        Vector     <0, 0, 0>
+unlocked_sound                 CString    0
+locked_sound                   CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_heal_weapon
+vscripts                       CString    exprop.lua
+targetname                     CString    [PR#]item_heal_button
+classname                      CString    func_button
+origin                         CString    36.000000 0.000000 40.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    329
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\item_heal_button_329.vmdl
+_template_lump_ent_index       CString    4
+@OnUser1 Stop [PR#]item_heal_particle
+@OnUser1 Start [PR#]item_heal_effect_particle
+@OnUser1 Delay=6 Stop [PR#]item_heal_effect_particle
+@OnUser1 Delay=60 Start [PR#]item_heal_particle
+@OnUser1 SetDamage [PR#]item_ztinfect_effect 100
+@OnUser1 Delay=6.05 SetDamage [PR#]item_ztinfect_effect 2000
+@OnUser1 Lock !self
+@OnUser1 Delay=60 Unlock !self
+@OnPressed TestActivator [PR#]item_heal_filter
+@OnUser1 SetDamage [PR#]item_ztinfect_effect2 100
+@OnUser1 Delay=6.05 SetDamage [PR#]item_ztinfect_effect2 2000
+@OnUser1 StartSound [PR#]item_heal_sound
+@OnUser1 Delay=0.01 sethealth [PR#]heal_user 195
+@OnUser1 keyvalue [PR#]heal_user max_health 195
+@OnUser1 setdamagefilter [PR#]heal_user [PR#]zmig
+@OnUser1 Delay=7 setdamagefilter [PR#]heal_user [PR#]nfd
+@OnUser1 Delay=6 Disable [PR#]item_heal_effect
+@OnUser1 Enable [PR#]item_heal_effect
+@OnUser1 Delay=0.5 Enable [PR#]healtimer
+@OnUser1 Delay=6 Disable [PR#]healtimer
+
+====5====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagecap                      Integer    -390
+damagetype                     CString    1
+damage                         Integer    -390
+filtername                     CString    [PR#]human
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_heal_weapon
+targetname                     CString    [PR#]item_heal_effect
+classname                      CString    trigger_hurt
+origin                         CString    0.000000 0.000000 -8.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    331
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\item_heal_effect_331.vmdl
+_template_lump_ent_index       CString    5
+@OnStartTouch keyvalue !activator max_health 195
+@OnStartTouch setdamagefilter !activator [PR#]zmig
+@OnStartTouch Delay=7 setdamagefilter !activator [PR#]nfd
+@OnEndTouch Delay=0.1 setdamagefilter !activator [PR#]nfd
+
+====6====
+initialdelay                   Float64    0.5
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    False
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]healtimer
+classname                      CString    logic_timer
+origin                         CString    -18.048828 -69.119629 98.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    12655
+_template_lump_ent_index       CString    6
+@OnTimer sethealth [PR#]heal_user 195
+
+====7====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    heal
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_heal_weapon
+targetname                     CString    [PR#]item_heal_sound
+classname                      CString    point_soundevent
+origin                         CString    0.018555 21.170898 15.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4196
+_template_lump_ent_index       CString    7
+

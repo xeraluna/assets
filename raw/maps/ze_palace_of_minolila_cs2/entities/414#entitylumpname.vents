@@ -1,0 +1,80 @@
+====0====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1
+damagecap                      Integer    20
+damage                         Integer    30
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]ex1_boss_random_fire_hurt
+classname                      CString    trigger_hurt
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    412
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\ex1_boss_random_fire_hurt_412.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    0
+speed                          Integer    100
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]ex1_boss_random_fire
+classname                      CString    func_movelinear
+origin                         CString    0.000000 0.000000 -15.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    379
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\ex1_boss_random_fire_379.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+spawnflags                     CString    2
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/ex_robs_029.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]ex1_boss_random_fire_particle
+classname                      CString    info_particle_system
+origin                         CString    0.000000 0.000000 -16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2437
+_template_lump_ent_index       CString    2
+

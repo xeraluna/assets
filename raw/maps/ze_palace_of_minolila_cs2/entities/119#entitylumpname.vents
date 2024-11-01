@@ -1,0 +1,633 @@
+====0====
+check_if_dest_clear_for_player Boolean    False
+uselandmarkangles              CString    0
+checkdestifclearforplayer      CString    0
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]4_dest1
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_tele_1
+classname                      CString    trigger_teleport
+origin                         CString    298.176086 -68.790039 127.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    110
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\4_tele_1_110.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/custom_particle_011.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_particle1
+classname                      CString    info_particle_system
+origin                         CString    298.176086 -68.790039 -1.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2340
+_template_lump_ent_index       CString    1
+
+====2====
+check_if_dest_clear_for_player Boolean    False
+uselandmarkangles              CString    0
+checkdestifclearforplayer      CString    0
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]4_dest2
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_tele_2
+classname                      CString    trigger_teleport
+origin                         CString    -597.823914 -84.790039 127.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    112
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\4_tele_2_112.vmdl
+_template_lump_ent_index       CString    2
+
+====3====
+depth_render_offset            Float64    0.125
+reorient_mode                  CString    0
+justify_vertical               CString    0
+justify_horizontal             CString    0
+font_name                      CString    Arial
+font_size                      Float64    200
+world_units_per_pixel          Float64    0.10000000149011612
+color                          Vector     <208, 208, 235>
+fullbright                     Boolean    True
+enabled                        Boolean    True
+message                        CString    Center
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    True
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    1000
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderGlow
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_text2
+classname                      CString    point_worldtext
+origin                         CString    -105.823898 -848.790039 151.000000
+angles                         CString    0.000000 -179.999969 89.999977
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3879
+_template_lump_ent_index       CString    3
+
+====4====
+depth_render_offset            Float64    0.125
+reorient_mode                  CString    0
+justify_vertical               CString    0
+justify_horizontal             CString    0
+font_name                      CString    Arial
+font_size                      Float64    200
+world_units_per_pixel          Float64    0.10000000149011612
+color                          Vector     <208, 208, 235>
+fullbright                     Boolean    True
+enabled                        Boolean    True
+message                        CString    Minolila Palace
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    True
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    1000
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderGlow
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_text2
+classname                      CString    point_worldtext
+origin                         CString    -595.556335 -116.790039 139.000000
+angles                         CString    -0.000000 90.000015 89.999977
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3881
+_template_lump_ent_index       CString    4
+
+====5====
+depth_render_offset            Float64    0.125
+reorient_mode                  CString    0
+justify_vertical               CString    0
+justify_horizontal             CString    0
+font_name                      CString    Arial
+font_size                      Float64    200
+world_units_per_pixel          Float64    0.10000000149011612
+color                          Vector     <208, 208, 235>
+fullbright                     Boolean    True
+enabled                        Boolean    True
+message                        CString    Laboratory
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    True
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    1000
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderGlow
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_text2
+classname                      CString    point_worldtext
+origin                         CString    282.716614 -28.790039 143.747925
+angles                         CString    -0.000000 -90.000000 89.999977
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3882
+_template_lump_ent_index       CString    5
+
+====6====
+depth_render_offset            Float64    0.125
+reorient_mode                  CString    0
+justify_vertical               CString    0
+justify_horizontal             CString    0
+font_name                      CString    Arial
+font_size                      Float64    200
+world_units_per_pixel          Float64    0.10000000149011612
+color                          Vector     <255, 255, 255>
+fullbright                     Boolean    True
+enabled                        Boolean    True
+message                        CString    ZE_PALACE_OF_MINOLILA
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    True
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    1000
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderGlow
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_text2
+classname                      CString    point_worldtext
+origin                         CString    4574.065918 -2183.790039 4495.094238
+angles                         CString    -0.000000 0.000000 89.999977
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3883
+_template_lump_ent_index       CString    6
+
+====7====
+depth_render_offset            Float64    0.125
+reorient_mode                  CString    0
+justify_vertical               CString    0
+justify_horizontal             CString    0
+font_name                      CString    Arial
+font_size                      Float64    200
+world_units_per_pixel          Float64    0.10000000149011612
+color                          Vector     <255, 255, 255>
+fullbright                     Boolean    True
+enabled                        Boolean    True
+message                        CString    MAP BY MISAKA
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    True
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    1000
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderGlow
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_text2
+classname                      CString    point_worldtext
+origin                         CString    4574.065918 -2183.790039 4455.000000
+angles                         CString    -0.000000 0.000000 89.999977
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3884
+_template_lump_ent_index       CString    7
+
+====8====
+depth_render_offset            Float64    0.125
+reorient_mode                  CString    0
+justify_vertical               CString    0
+justify_horizontal             CString    0
+font_name                      CString    Arial
+font_size                      Float64    200
+world_units_per_pixel          Float64    0.10000000149011612
+color                          Vector     <255, 255, 255>
+fullbright                     Boolean    True
+enabled                        Boolean    True
+message                        CString    THANKS FOR PLAYING :)
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    True
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    1000
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderGlow
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_text2
+classname                      CString    point_worldtext
+origin                         CString    4574.065918 -2183.790039 4419.000000
+angles                         CString    -0.000000 0.000000 89.999977
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3885
+_template_lump_ent_index       CString    8
+
+====9====
+depth_render_offset            Float64    0.125
+reorient_mode                  CString    0
+justify_vertical               CString    0
+justify_horizontal             CString    0
+font_name                      CString    Arial
+font_size                      Float64    200
+world_units_per_pixel          Float64    0.10000000149011612
+color                          Vector     <255, 255, 255>
+fullbright                     Boolean    True
+enabled                        Boolean    True
+message                        CString    live.bilibili.com/1040936
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    True
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    1000
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderGlow
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_text2
+classname                      CString    point_worldtext
+origin                         CString    4574.065918 -2183.790039 4383.000000
+angles                         CString    -0.000000 0.000000 89.999977
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3886
+_template_lump_ent_index       CString    9
+
+====10====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/custom_particle_010.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_particle2
+classname                      CString    info_particle_system
+origin                         CString    -597.823914 -84.790039 -1.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2341
+_template_lump_ent_index       CString    10
+
+====11====
+check_if_dest_clear_for_player Boolean    False
+uselandmarkangles              CString    0
+checkdestifclearforplayer      CString    0
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]4_dest3
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_tele_3
+classname                      CString    trigger_teleport
+origin                         CString    -133.823898 -852.790039 127.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    114
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\4_tele_3_114.vmdl
+_template_lump_ent_index       CString    11
+
+====12====
+depth_render_offset            Float64    0.125
+reorient_mode                  CString    0
+justify_vertical               CString    0
+justify_horizontal             CString    0
+font_name                      CString    Arial
+font_size                      Float64    200
+world_units_per_pixel          Float64    0.10000000149011612
+color                          Vector     <208, 208, 235>
+fullbright                     Boolean    True
+enabled                        Boolean    True
+message                        CString    Center
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    True
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    1000
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderGlow
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_text2
+classname                      CString    point_worldtext
+origin                         CString    -105.823898 -848.790039 151.000000
+angles                         CString    0.000000 -179.999969 89.999977
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3879
+_template_lump_ent_index       CString    12
+
+====13====
+depth_render_offset            Float64    0.125
+reorient_mode                  CString    0
+justify_vertical               CString    0
+justify_horizontal             CString    0
+font_name                      CString    Arial
+font_size                      Float64    200
+world_units_per_pixel          Float64    0.10000000149011612
+color                          Vector     <208, 208, 235>
+fullbright                     Boolean    True
+enabled                        Boolean    True
+message                        CString    Minolila Palace
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    True
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    1000
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderGlow
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_text2
+classname                      CString    point_worldtext
+origin                         CString    -595.556335 -116.790039 139.000000
+angles                         CString    -0.000000 90.000015 89.999977
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3881
+_template_lump_ent_index       CString    13
+
+====14====
+depth_render_offset            Float64    0.125
+reorient_mode                  CString    0
+justify_vertical               CString    0
+justify_horizontal             CString    0
+font_name                      CString    Arial
+font_size                      Float64    200
+world_units_per_pixel          Float64    0.10000000149011612
+color                          Vector     <208, 208, 235>
+fullbright                     Boolean    True
+enabled                        Boolean    True
+message                        CString    Laboratory
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    True
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    1000
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderGlow
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_text2
+classname                      CString    point_worldtext
+origin                         CString    282.716614 -28.790039 143.747925
+angles                         CString    -0.000000 -90.000000 89.999977
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3882
+_template_lump_ent_index       CString    14
+
+====15====
+depth_render_offset            Float64    0.125
+reorient_mode                  CString    0
+justify_vertical               CString    0
+justify_horizontal             CString    0
+font_name                      CString    Arial
+font_size                      Float64    200
+world_units_per_pixel          Float64    0.10000000149011612
+color                          Vector     <255, 255, 255>
+fullbright                     Boolean    True
+enabled                        Boolean    True
+message                        CString    ZE_PALACE_OF_MINOLILA
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    True
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    1000
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderGlow
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_text2
+classname                      CString    point_worldtext
+origin                         CString    4574.065918 -2183.790039 4495.094238
+angles                         CString    -0.000000 0.000000 89.999977
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3883
+_template_lump_ent_index       CString    15
+
+====16====
+depth_render_offset            Float64    0.125
+reorient_mode                  CString    0
+justify_vertical               CString    0
+justify_horizontal             CString    0
+font_name                      CString    Arial
+font_size                      Float64    200
+world_units_per_pixel          Float64    0.10000000149011612
+color                          Vector     <255, 255, 255>
+fullbright                     Boolean    True
+enabled                        Boolean    True
+message                        CString    MAP BY MISAKA
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    True
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    1000
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderGlow
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_text2
+classname                      CString    point_worldtext
+origin                         CString    4574.065918 -2183.790039 4455.000000
+angles                         CString    -0.000000 0.000000 89.999977
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3884
+_template_lump_ent_index       CString    16
+
+====17====
+depth_render_offset            Float64    0.125
+reorient_mode                  CString    0
+justify_vertical               CString    0
+justify_horizontal             CString    0
+font_name                      CString    Arial
+font_size                      Float64    200
+world_units_per_pixel          Float64    0.10000000149011612
+color                          Vector     <255, 255, 255>
+fullbright                     Boolean    True
+enabled                        Boolean    True
+message                        CString    THANKS FOR PLAYING :)
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    True
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    1000
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderGlow
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_text2
+classname                      CString    point_worldtext
+origin                         CString    4574.065918 -2183.790039 4419.000000
+angles                         CString    -0.000000 0.000000 89.999977
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3885
+_template_lump_ent_index       CString    17
+
+====18====
+depth_render_offset            Float64    0.125
+reorient_mode                  CString    0
+justify_vertical               CString    0
+justify_horizontal             CString    0
+font_name                      CString    Arial
+font_size                      Float64    200
+world_units_per_pixel          Float64    0.10000000149011612
+color                          Vector     <255, 255, 255>
+fullbright                     Boolean    True
+enabled                        Boolean    True
+message                        CString    live.bilibili.com/1040936
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    True
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    1000
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderGlow
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_text2
+classname                      CString    point_worldtext
+origin                         CString    4574.065918 -2183.790039 4383.000000
+angles                         CString    -0.000000 0.000000 89.999977
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    3886
+_template_lump_ent_index       CString    18
+
+====19====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/custom_particle_010.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_particle3
+classname                      CString    info_particle_system
+origin                         CString    -133.823898 -852.790039 -1.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2342
+_template_lump_ent_index       CString    19
+
+====20====
+check_if_dest_clear_for_player Boolean    False
+uselandmarkangles              CString    0
+checkdestifclearforplayer      CString    0
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]4_dest4
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_tele_4
+classname                      CString    trigger_teleport
+origin                         CString    -5285.823730 5067.209961 -4265.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    124
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\4_tele_4_124.vmdl
+_template_lump_ent_index       CString    20
+
+====21====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/custom_particle_010.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_particle4
+classname                      CString    info_particle_system
+origin                         CString    -5285.823730 5067.209961 -4369.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2343
+_template_lump_ent_index       CString    21
+
+====22====
+check_if_dest_clear_for_player Boolean    False
+uselandmarkangles              CString    0
+checkdestifclearforplayer      CString    0
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]4_dest4
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]4_tele_5
+classname                      CString    trigger_teleport
+origin                         CString    13370.175781 3211.209961 1199.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    126
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\4_tele_5_126.vmdl
+_template_lump_ent_index       CString    22
+

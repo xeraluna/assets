@@ -1,0 +1,81 @@
+====0====
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    10
+health                         Integer    0
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]12_final_wall
+classname                      CString    func_breakable
+origin                         CString    -197.507095 118.419922 19.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2787
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\12_final_wall_2787.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+health                         CString    0
+fadescale                      CString    1
+spawnflags                     Integer64  1025
+forcenpcexclude                Boolean    False
+lip                            Integer    0
+wait                           Float64    -1
+speed                          Integer    5
+movedir                        Vector     <0, 0, 0>
+unlocked_sound                 CString    0
+locked_sound                   CString    0
+use_sound                      CString    Buttons.snd9
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]1_back_button
+classname                      CString    func_button
+origin                         CString    -9.507099 -5529.580078 47.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1306
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\1_back_button_1306.vmdl
+_template_lump_ent_index       CString    1
+@OnPressed OnlyOnce Command [PR#]command say << Door will open in 5 seconds >>
+@OnPressed Delay=5 OnlyOnce Open [PR#]door1
+@OnPressed Delay=9.1 OnlyOnce Kill [PR#]door1
+@OnPressed OnlyOnce Close [PR#]start_door2
+@OnPressed Delay=15 OnlyOnce Break [PR#]m_back_break
+@OnPressed OnlyOnce Enable [PR#]trigger4
+@OnPressed Delay=15 OnlyOnce Break [PR#]m_back_break2
+@OnPressed OnlyOnce Start [PR#]m_particle
+

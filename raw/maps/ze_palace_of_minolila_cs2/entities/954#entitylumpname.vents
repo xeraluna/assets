@@ -1,0 +1,108 @@
+====0====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1
+damagecap                      Integer    20
+damage                         Integer    100
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ex2_boss_red_train
+targetname                     CString    [PR#]ex2_boss_red_hurt
+classname                      CString    trigger_hurt
+origin                         CString    644.000000 0.000000 4.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    955
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\ex2_boss_red_hurt_955.vmdl
+_template_lump_ent_index       CString    0
+@OnHurtPlayer SetDamageFilter !activator [PR#]bugdamage
+@OnHurtPlayer Delay=0.5 SetDamageFilter !activator [PR#]nfd
+
+====1====
+fadescale                      CString    1
+movesoundmaxtime               Float64    0
+movesoundmintime               Float64    0
+movesoundmaxpitch              Integer    200
+movesoundminpitch              Integer    60
+volume                         Integer    10
+dmg                            Integer    0
+bank                           CString    0
+height                         Integer    4
+wheels                         Integer    50
+orientationtype                CString    1
+velocitytype                   CString    0
+speed                          Integer    0
+startspeed                     Integer    322
+target                         CString    [PR#]ex2_boss_red_path1
+spawnflags                     Integer64  26
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]ex2_boss_red_train
+classname                      CString    func_tracktrain
+origin                         CString    644.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    947
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\ex2_boss_red_train_947.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+target                         CString    [PR#]ex2_boss_red_path2
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]ex2_boss_red_path1
+classname                      CString    path_track
+origin                         CString    647.879883 -0.020020 0.000000
+angles                         CString    0.000000 -179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    952
+_template_lump_ent_index       CString    2
+
+====3====
+orientationtype                CString    1
+radius                         Float64    0
+speed                          Float64    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]ex2_boss_red_path2
+classname                      CString    path_track
+origin                         CString    -640.000000 0.000000 0.000000
+angles                         CString    0.000000 -179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    953
+_template_lump_ent_index       CString    3
+@OnPass Kill [PR#]ex2_boss_red_path1
+@OnPass KillHierarchy [PR#]ex2_boss_red_train
+@OnPass Kill !self
+
+====4====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]ex2_boss_red_start_relay
+classname                      CString    logic_relay
+origin                         CString    400.000000 416.000000 -288.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    887
+_template_lump_ent_index       CString    4
+@OnTrigger StartForward [PR#]ex2_boss_red_train
+@OnTrigger Delay=0.5 Kill !self
+

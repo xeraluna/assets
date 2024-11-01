@@ -1,0 +1,94 @@
+====0====
+nointerpolate                  Boolean    False
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    0
+health                         Integer    2500
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]3_boss_skill_normal_y
+classname                      CString    func_breakable
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2459
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\3_boss_skill_normal_y_2459.vmdl
+_template_lump_ent_index       CString    0
+@OnBreak Delay=30 PickRandom [PR#]3_boss_skill_normal_case
+@OnBreak Kill [PR#]3_boss_skill_normal_y_*
+
+====1====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1
+damagecap                      Integer    20
+damage                         Integer    40
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]3_boss_skill_normal_y_h
+classname                      CString    trigger_hurt
+origin                         CString    0.000000 0.000000 -184.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    631
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\3_boss_skill_normal_y_h_631.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    0
+speed                          Integer    100
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]3_boss_skill_normal_y_b
+classname                      CString    func_movelinear
+origin                         CString    0.000000 0.000000 -191.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    625
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\3_boss_skill_normal_y_b_625.vmdl
+_template_lump_ent_index       CString    2
+

@@ -1,0 +1,173 @@
+====0====
+filtername                     CString    [PR#]zitem_block
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]weapon_strip4
+classname                      CString    trigger_once
+origin                         CString    4.000000 1.000000 2.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    224
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\weapon_strip4_224.vmdl
+_template_lump_ent_index       CString    0
+@OnStartTouch TriggerForActivatedPlayer [PR#]weapon_drop
+@OnStartTouch Delay=0.1 Kill !self
+
+====1====
+fadescale                      CString    1
+canbepickedup                  Boolean    True
+spawnflags                     Integer    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+targetname                     CString    [PR#]item_zice_weapon
+classname                      CString    weapon_knife
+origin                         CString    -0.299805 1.099976 0.000000
+angles                         Vector     <-0, 0, 0>
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    226
+_template_lump_ent_index       CString    1
+@OnPlayerPickup Command [PR#]command say << A zombie has picked up ice magic >>
+@OnPlayerPickup Delay=0.1 Display [PR#]item_zice_text
+@OnPlayerPickup RunScriptCode [PR#]item_zice_text ZIceText()
+@OnPlayerPickup Delay=0.1 keyvalue !activator health 30000
+@OnPlayerPickup Delay=0.1 keyvalue !activator targetname zice_user
+@OnPlayerPickup keyvalue [PR#]zice_user targetname player
+
+====2====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/ex_robs_016.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_zice_weapon
+targetname                     CString    [PR#]item_zice_particle
+classname                      CString    info_particle_system
+origin                         CString    24.000000 0.000000 48.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2353
+_template_lump_ent_index       CString    2
+
+====3====
+health                         CString    0
+fadescale                      CString    1
+spawnflags                     Integer64  17409
+forcenpcexclude                Boolean    False
+lip                            Integer    0
+wait                           Float64    0.009999999776482582
+speed                          Integer    5
+movedir                        Vector     <0, 0, 0>
+unlocked_sound                 CString    0
+locked_sound                   CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_zice_weapon
+vscripts                       CString    exprop.lua
+targetname                     CString    [PR#]item_zice_button
+classname                      CString    func_button
+origin                         CString    46.000000 0.000000 24.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    220
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\item_zice_button_220.vmdl
+_template_lump_ent_index       CString    3
+@OnPressed TestActivator [PR#]item_zice_filter
+
+====4====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1
+damagecap                      Integer    20
+damage                         Integer    20
+filtername                     CString    [PR#]human
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_zice_weapon
+targetname                     CString    [PR#]item_zice_effect
+classname                      CString    trigger_hurt
+origin                         CString    0.000000 0.000000 -32.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    222
+model                          CString    maps\ze_palace_of_minolila_cs2\entities\item_zice_effect_222.vmdl
+_template_lump_ent_index       CString    4
+@OnHurtPlayer keyvalue !activator speed 0.3
+@OnHurtPlayer Delay=0.5 keyvalue !activator speed 1
+
+====5====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/custom_particle_143.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_zice_weapon
+targetname                     CString    [PR#]item_zice_effect_particle
+classname                      CString    info_particle_system
+origin                         CString    0.000000 0.000000 32.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2352
+_template_lump_ent_index       CString    5
+
+====6====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    zmice
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]item_zice_weapon
+targetname                     CString    [PR#]item_zice_sound
+classname                      CString    point_soundevent
+origin                         CString    -1.000000 -27.142334 40.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4186
+_template_lump_ent_index       CString    6
+

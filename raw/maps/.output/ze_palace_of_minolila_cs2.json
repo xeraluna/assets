@@ -1,0 +1,244 @@
+[
+    {
+        "name": "item_ztinfect_weapon",
+        "shortname": "item_ztinfect_weapon",
+        "hammerid": "194",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "3923",
+                "event": "OnPressed",
+                "mode": 9999999,
+                "cooldown": 9999999,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "item_zmheal_weapon",
+        "shortname": "item_zmheal_weapon",
+        "hammerid": "216",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "210",
+                "event": "OnPressed",
+                "mode": 9999999,
+                "cooldown": 9999999,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "item_zice_weapon",
+        "shortname": "item_zice_weapon",
+        "hammerid": "226",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "220",
+                "event": "OnPressed",
+                "mode": 9999999,
+                "cooldown": 9999999,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "item_zmgravity_weapon",
+        "shortname": "item_zmgravity_weapon",
+        "hammerid": "248",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "241",
+                "event": "OnPressed",
+                "mode": 9999999,
+                "cooldown": 9999999,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "item_gravity_weapon",
+        "shortname": "item_gravity_weapon",
+        "hammerid": "251",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "252",
+                "event": "OnPressed",
+                "mode": 9999999,
+                "cooldown": 9999999,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "item_wall_weapon",
+        "shortname": "item_wall_weapon",
+        "hammerid": "266",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "269",
+                "event": "OnPressed",
+                "mode": 9999999,
+                "cooldown": 9999999,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "item_holy_sword_weapon",
+        "shortname": "item_holy_sword_weapon",
+        "hammerid": "279",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "277",
+                "event": "OnPressed",
+                "mode": 9999999,
+                "cooldown": 9999999,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "item_wind_weapon",
+        "shortname": "item_wind_weapon",
+        "hammerid": "303",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "304",
+                "event": "OnPressed",
+                "mode": 9999999,
+                "cooldown": 9999999,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "item_electro_weapon",
+        "shortname": "item_electro_weapon",
+        "hammerid": "307",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "312",
+                "event": "OnPressed",
+                "mode": 9999999,
+                "cooldown": 9999999,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "item_snow_weapon",
+        "shortname": "item_snow_weapon",
+        "hammerid": "317",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "323",
+                "event": "OnPressed",
+                "mode": 9999999,
+                "cooldown": 9999999,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "item_heal_weapon",
+        "shortname": "item_heal_weapon",
+        "hammerid": "328",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "329",
+                "event": "OnPressed",
+                "mode": 9999999,
+                "cooldown": 9999999,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    }
+]
