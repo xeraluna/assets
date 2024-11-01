@@ -1,0 +1,18 @@
+====0====
+entityindexselection           CString    0
+saveandrestore                 Boolean    False
+stoponnew                      Boolean    True
+tolocalplayer                  Boolean    False
+startonspawn                   Boolean    False
+soundname                      CString    solo_sound
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]insane2_final_sound
+classname                      CString    point_soundevent
+origin                         CString    -16.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    25105
+_template_lump_ent_index       CString    0
+@OnUser1 Trigger [PR#]music_stop
+@OnUser1 Delay=0.01 StartSound !self
+

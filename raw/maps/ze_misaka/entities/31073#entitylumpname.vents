@@ -1,0 +1,194 @@
+====0====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <0, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    default
+model                          CString    models/koyomaple/wand/wand2.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]heal_parent_bridge
+targetname                     CString    [PR#]heal_model
+classname                      CString    prop_dynamic
+origin                         CString    33.840088 25.439941 -9.741333
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    31077
+_template_lump_ent_index       CString    0
+
+====1====
+canbepickedup                  Boolean    True
+spawnflags                     Integer    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+targetname                     CString    [PR#]heal_elite
+classname                      CString    weapon_elite
+origin                         CString    -14.159912 57.439941 22.258667
+angles                         Vector     <-0, 0, 0>
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    31069
+_template_lump_ent_index       CString    1
+@OnPlayerPickup Command [PR#]command say << A player has picked up heal >>
+@OnPlayerPickup Delay=0.1 addcontext !activator heal_user:1
+@OnPlayerPickup Color !activator 0 0 255
+@OnPlayerPickup CountPlayersInZone [PR#]heal_zone
+
+====2====
+spawnflags                     Integer64  17409
+forcenpcexclude                Boolean    False
+lip                            Integer    0
+wait                           Float64    1
+speed                          Integer    5
+movedir                        Vector     <0, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]heal_elite
+targetname                     CString    [PR#]heal_button
+classname                      CString    func_button
+origin                         CString    10.340088 57.439941 70.258667
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    31078
+model                          CString    maps\ze_misaka\entities\heal_button_31078.vmdl
+_template_lump_ent_index       CString    2
+@OnPressed TestActivator [PR#]heal_filter
+
+====3====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1
+damagecap                      Integer    -60
+damage                         Integer    -60
+filtername                     CString    [PR#]human
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]heal_elite
+targetname                     CString    [PR#]heal_effect
+classname                      CString    trigger_hurt
+origin                         CString    -14.159912 53.439941 42.258667
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    31070
+model                          CString    maps\ze_misaka\entities\heal_effect_31070.vmdl
+_template_lump_ent_index       CString    3
+@OnStartTouch KeyValue !activator max_health 120
+
+====4====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    -1
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/ex_misaka/ex_misaka_005.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]heal_elite
+targetname                     CString    [PR#]heal_particle
+classname                      CString    info_particle_system
+origin                         CString    -16.159912 54.439941 29.258667
+angles                         CString    -89.999977 -0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    31074
+_template_lump_ent_index       CString    4
+
+====5====
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]heal_zone
+classname                      CString    game_zone_player
+origin                         CString    -63.128906 143.633301 44.401123
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    31076
+_template_lump_ent_index       CString    5
+@PlayersOutCount TestActivator [PR#]heal_filter_remove
+
+====6====
+wait                           Float64    1
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]heal_parent_bridge
+classname                      CString    trigger_multiple
+origin                         CString    -14.159912 57.439941 22.258667
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    31066
+model                          CString    maps\ze_misaka\entities\heal_parent_bridge_31066.vmdl
+_template_lump_ent_index       CString    6
+
+====7====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]heal_elite
+target                         CString    [PR#]heal_parent_bridge
+measurereference               CString    [PR#]heal_elite
+measuretarget                  CString    [PR#]heal_elite
+targetname                     CString    [PR#]heal_measure
+classname                      CString    logic_measure_movement
+origin                         CString    -10.420654 27.378906 -5.741333
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    31068
+_template_lump_ent_index       CString    7
+

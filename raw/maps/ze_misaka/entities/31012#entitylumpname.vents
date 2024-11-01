@@ -1,0 +1,64 @@
+====0====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+authoredposition               CString    0
+startposition                  Float64    0
+movedistance                   Float64    100
+movedir                        Vector     <0, 0, 0>
+speed                          Integer    100
+spawnflags                     Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]final_plat_1
+classname                      CString    func_movelinear
+origin                         CString    -62.708984 92.899902 -184.560974
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    31010
+model                          CString    maps\ze_misaka\entities\final_plat_1_31010.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+authoredposition               CString    0
+startposition                  Float64    0
+movedistance                   Float64    100
+movedir                        Vector     <0, 0, 0>
+speed                          Integer    100
+spawnflags                     Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]final_plat_2
+classname                      CString    func_movelinear
+origin                         CString    -762.708984 92.899902 -184.560974
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    31008
+model                          CString    maps\ze_misaka\entities\final_plat_2_31008.vmdl
+_template_lump_ent_index       CString    1
+

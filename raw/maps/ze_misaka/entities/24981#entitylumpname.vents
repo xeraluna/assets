@@ -1,0 +1,72 @@
+====0====
+movesoundmaxtime               Float64    0
+movesoundmintime               Float64    0
+movesoundmaxpitch              Integer    200
+movesoundminpitch              Integer    60
+volume                         Integer    10
+dmg                            Integer    0
+bank                           CString    0
+height                         Integer    0
+wheels                         Integer    50
+orientationtype                CString    1
+velocitytype                   CString    0
+startspeed                     Integer    224
+target                         CString    [PR#]l2_holy_plat2_path1
+disableshadows                 CString    0
+speed                          Integer    0
+spawnflags                     Integer64  530
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]l2_holy_plat2
+classname                      CString    func_tracktrain
+origin                         CString    -1240.000000 -16.000000 -56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    24976
+model                          CString    maps\ze_misaka\entities\l2_holy_plat2_24976.vmdl
+_template_lump_ent_index       CString    0
+@OnNext Delay=4 Kill !self
+
+====1====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]l2_holy_relay2
+classname                      CString    logic_relay
+origin                         CString    0.000000 -16.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    24979
+_template_lump_ent_index       CString    1
+@OnSpawn StartForward [PR#]l2_holy_plat2
+@OnSpawn Delay=0.5 Kill !self
+
+====2====
+check_if_dest_clear_for_player Boolean    False
+mirror_player                  Boolean    False
+use_landmark_angles            Boolean    False
+target                         CString    [PR#]lv2_boss_dest
+filtername                     CString    [PR#]HUMAN
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]l2_holy_plat2
+targetname                     CString    [PR#]STUCK_TELE_2
+classname                      CString    trigger_teleport
+origin                         CString    -1112.620117 -14.534180 -55.998047
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    31383
+model                          CString    maps\ze_misaka\entities\STUCK_TELE_2_31383.vmdl
+_template_lump_ent_index       CString    2
+

@@ -1,0 +1,49 @@
+====0====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    6
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+skin                           CString    default
+model                          CString    models/koyomaple/yuban/yuban.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]boss_misaka&0000
+classname                      CString    prop_dynamic
+origin                         CString    56.000000 304.000000 -455.000000
+angles                         CString    -0.000000 90.000008 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    27055
+_template_lump_ent_index       CString    0
+

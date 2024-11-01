@@ -1,0 +1,19 @@
+====0====
+template02                     CString    [PR#]final_plat_2
+template01                     CString    [PR#]final_plat_1
+clientonlyentitybehavior       CString    CREATE_FOR_CURRENTLY_CONNECTED_CLIENTS_ONLY
+spawngrouptype                 CString    INSERT_INTO_POINT_TEMPLATE_SPAWN_GROUP
+timeoutinterval                Float64    0
+asynchronous                   Boolean    False
+spawnflags                     Integer64  2
+clientsideentity               CString    0
+targetname                     CString    [PR#]final_plat_temp
+classname                      CString    point_template
+origin                         CString    -35.566406 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    31012
+worldname                      CString    maps\ze_misaka
+entitylumpname                 CString    31012#entityLumpName
+_template_lump_ent_index       CString    0
+

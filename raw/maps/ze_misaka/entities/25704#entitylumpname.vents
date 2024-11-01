@@ -1,0 +1,72 @@
+====0====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]lv3_guard_laser_r_h&0000
+classname                      CString    logic_relay
+origin                         CString    -4.600586 61.339844 13.324463
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    25703
+_template_lump_ent_index       CString    0
+@OnSpawn Open [PR#]lv3_guard_laser_h&0000
+
+====1====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    1152
+speed                          Integer    1000
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]lv3_guard_laser_h&0000
+classname                      CString    func_movelinear
+origin                         CString    177.099609 103.459961 63.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    25693
+model                          CString    maps\ze_misaka\entities\lv3_guard_laser_h_25693.vmdl
+_template_lump_ent_index       CString    1
+@OnFullyOpen KillHierarchy [PR#]lv3_guard_laser_h&0000
+@OnFullyOpen KillHierarchy [PR#]lv3_guard_laser_h_h&0000
+
+====2====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1
+damagecap                      Integer    100000
+damage                         Integer    200
+filtername                     CString    [PR#]human
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]lv3_guard_laser_h&0000
+targetname                     CString    [PR#]lv3_guard_laser_h_h&0000
+classname                      CString    trigger_hurt
+origin                         CString    189.099609 103.459961 63.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    25699
+model                          CString    maps\ze_misaka\entities\lv3_guard_laser_h_h_25699.vmdl
+_template_lump_ent_index       CString    2
+@OnHurtPlayer Delay=0.5 SetDamageFilter !activator [PR#]nfd
+@OnHurtPlayer SetDamageFilter !activator [PR#]bugdamage
+

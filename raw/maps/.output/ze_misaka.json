@@ -1,0 +1,68 @@
+[
+    {
+        "name": "heal_elite",
+        "shortname": "heal_elite",
+        "hammerid": "31069",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "31078",
+                "event": "OnPressed",
+                "mode": 9999999,
+                "cooldown": 9999999,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "item_wind_gun",
+        "shortname": "item_wind_gun",
+        "hammerid": "31104",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "31109",
+                "event": "OnPressed",
+                "mode": 9999999,
+                "cooldown": 9999999,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "item_zombie_speed",
+        "shortname": "item_zombie_speed",
+        "hammerid": "31121",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "31123",
+                "event": "OnPressed",
+                "mode": 9999999,
+                "cooldown": 9999999,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    }
+]

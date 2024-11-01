@@ -1,0 +1,78 @@
+====0====
+nointerpolate                  Boolean    False
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    0
+health                         Integer    0
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]fuzi_protect
+classname                      CString    func_breakable
+origin                         CString    -33.989990 1865.900391 189.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    27069
+model                          CString    maps\ze_misaka\entities\fuzi_protect_27069.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+nointerpolate                  Boolean    False
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    0
+health                         Integer    0
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]fuzi_protect
+classname                      CString    func_breakable
+origin                         CString    -33.989990 169.900391 189.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    27071
+model                          CString    maps\ze_misaka\entities\fuzi_protect_27071.vmdl
+_template_lump_ent_index       CString    1
+

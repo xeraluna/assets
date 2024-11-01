@@ -1,0 +1,51 @@
+====0====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]lv3_rzombie_1
+classname                      CString    logic_relay
+origin                         CString    -43.060059 12.699219 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    25571
+_template_lump_ent_index       CString    0
+@OnSpawn Delay=1 StartForward [PR#]lv3_boss_zombie1
+
+====1====
+movesoundmaxtime               Float64    0
+movesoundmintime               Float64    0
+movesoundmaxpitch              Integer    200
+movesoundminpitch              Integer    60
+volume                         Integer    10
+dmg                            Integer    0
+bank                           CString    0
+height                         Integer    0
+wheels                         Integer    50
+orientationtype                CString    1
+velocitytype                   CString    0
+startspeed                     Integer    96
+target                         CString    [PR#]lv3_boss_zombie1_path1
+disableshadows                 CString    0
+speed                          Integer    0
+spawnflags                     Integer64  530
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]lv3_boss_zombie1
+classname                      CString    func_tracktrain
+origin                         CString    -343.880005 -63.400391 -33.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    25559
+model                          CString    maps\ze_misaka\entities\lv3_boss_zombie1_25559.vmdl
+_template_lump_ent_index       CString    1
+

@@ -1,0 +1,35 @@
+====0====
+wait                           Float64    0.10000000149011612
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]insane_hp
+classname                      CString    trigger_multiple
+origin                         CString    -381.000000 106.899902 -260.560974
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    25124
+model                          CString    maps\ze_misaka\entities\insane_hp_25124.vmdl
+_template_lump_ent_index       CString    0
+@OnStartTouch SetHealth !activator [PR#]1
+@OnStartTouch Delay=0.01 KeyValue !activator max_health 100
+
+====1====
+wait                           Float64    1
+filtername                     CString    [PR#]human
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]win_insane_1
+classname                      CString    trigger_multiple
+origin                         CString    -371.000000 92.899902 -260.560974
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    25111
+model                          CString    maps\ze_misaka\entities\win_insane_1_25111.vmdl
+_template_lump_ent_index       CString    1
+@OnStartTouch Delay=3 OnlyOnce Enable [PR#]human_win_nuke
+@OnStartTouch Delay=3 OnlyOnce Command [PR#]command say << INSANE I Complete >>
+@OnStartTouch Delay=3.1 OnlyOnce SetValue [PR#]stage_counter [PR#]6
+@OnStartTouch Delay=2.9 OnlyOnce Trigger [PR#]zr_toggle_respawn
+

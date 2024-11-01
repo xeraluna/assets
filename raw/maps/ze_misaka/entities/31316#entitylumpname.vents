@@ -1,0 +1,102 @@
+====0====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    128
+authoredposition               CString    0
+startposition                  Float64    0
+movedir                        Vector     <0, 180, 0>
+height                         CString    0
+speed                          Integer    32
+startspeed                     CString    32
+target                         CString    enda_laser_p1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+spawnflags                     Integer64  8
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]enda_laser&0000
+classname                      CString    func_movelinear
+origin                         CString    8101.599609 19609.009766 -7277.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    31323
+model                          CString    maps\ze_misaka\entities\enda_laser_31323.vmdl
+_template_lump_ent_index       CString    0
+@OnFullyOpen Close [PR#]enda_laser&0000
+@OnFullyClosed Open [PR#]enda_laser&0000
+
+====1====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1
+damagecap                      Integer    9999
+damage                         Integer    9999
+filtername                     CString    [PR#]human
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]enda_laser&0000
+targetname                     CString    [PR#]enda_laser_hurt&0000
+classname                      CString    trigger_hurt
+origin                         CString    8165.599609 19609.009766 -7277.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    31310
+model                          CString    maps\ze_misaka\entities\enda_laser_hurt_31310.vmdl
+_template_lump_ent_index       CString    1
+@OnHurtPlayer SetDamageFilter !activator [PR#]bugdamage
+@OnHurtPlayer Delay=0.5 SetDamageFilter !activator [PR#]nfd
+
+====2====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1
+damagecap                      Integer    9999
+damage                         Integer    9999
+filtername                     CString    [PR#]human
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]enda_laser&0000
+targetname                     CString    [PR#]enda_laser2_hurt&0000
+classname                      CString    trigger_hurt
+origin                         CString    8037.599609 19609.009766 -7277.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    31312
+model                          CString    maps\ze_misaka\entities\enda_laser2_hurt_31312.vmdl
+_template_lump_ent_index       CString    2
+@OnHurtPlayer SetDamageFilter !activator [PR#]bugdamage
+@OnHurtPlayer Delay=0.5 SetDamageFilter !activator [PR#]nfd
+
+====3====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]enda_laser_relay&0000
+classname                      CString    logic_relay
+origin                         CString    8155.366211 19785.597656 -7283.853516
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    31318
+_template_lump_ent_index       CString    3
+@OnSpawn Delay=2 Open [PR#]enda_laser&0000
+@OnSpawn Delay=2 Enable [PR#]enda_laser_hurt&0000
+@OnSpawn Delay=2 Enable [PR#]enda_laser2_hurt&0000
+@OnSpawn Delay=20 KillHierarchy [PR#]enda_laser&0000
+

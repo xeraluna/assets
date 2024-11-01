@@ -1,0 +1,71 @@
+====0====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    1024
+speed                          Integer    512
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <90, 0, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]lv3_fall&0000
+classname                      CString    func_movelinear
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    25253
+model                          CString    maps\ze_misaka\entities\lv3_fall_25253.vmdl
+_template_lump_ent_index       CString    0
+@OnFullyOpen OnlyOnce KillHierarchy !self
+
+====1====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1
+damagecap                      Integer    30
+damage                         Integer    30
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]lv3_fall&0000
+targetname                     CString    [PR#]lv3_fall_hurt&0000
+classname                      CString    trigger_hurt
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    25255
+model                          CString    maps\ze_misaka\entities\lv3_fall_hurt_25255.vmdl
+_template_lump_ent_index       CString    1
+@OnHurtPlayer Delay=0.5 SetDamageFilter !activator [PR#]nfd
+@OnHurtPlayer SetDamageFilter !activator [PR#]bugdamage
+
+====2====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]lv3_fall_relay&0000
+classname                      CString    logic_relay
+origin                         CString    -104.729980 238.400391 -507.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    25260
+_template_lump_ent_index       CString    2
+@OnSpawn Open [PR#]lv3_fall&0000
+@OnSpawn Delay=0.05 Kill !self
+

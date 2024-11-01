@@ -1,0 +1,70 @@
+====0====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    1500
+speed                          Integer    1400
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 90, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]l_l&0000
+classname                      CString    func_movelinear
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    26203
+model                          CString    maps\ze_misaka\entities\l_l_26203.vmdl
+_template_lump_ent_index       CString    0
+@OnFullyOpen OnlyOnce KillHierarchy !self
+
+====1====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]l_l_r&0000
+classname                      CString    logic_relay
+origin                         CString    262.000000 -318.720215 112.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    26212
+_template_lump_ent_index       CString    1
+@OnSpawn Open [PR#]l_l&0000
+
+====2====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1
+damagecap                      Integer    999999
+damage                         Integer    80
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]l_l&0000
+targetname                     CString    [PR#]l_l_h&0000
+classname                      CString    trigger_hurt
+origin                         CString    0.000000 20.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    26209
+model                          CString    maps\ze_misaka\entities\l_l_h_26209.vmdl
+_template_lump_ent_index       CString    2
+@OnHurtPlayer SetDamageFilter !activator [PR#]bugdamage
+@OnHurtPlayer Delay=0.5 SetDamageFilter !activator [PR#]nfd
+

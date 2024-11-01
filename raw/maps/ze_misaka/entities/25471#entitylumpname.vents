@@ -1,0 +1,69 @@
+====0====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+createmovablenavmesh           Boolean    False
+createnavobstacle              Boolean    False
+blockdamage                    Float64    0
+movedistance                   Float64    500
+speed                          Integer    500
+authoredposition               CString    0
+startposition                  Float64    0
+spawnflags                     Integer64  8
+movedir                        Vector     <0, 90, 0>
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 0>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]lv3_true_final_laser_4&0000
+classname                      CString    func_movelinear
+origin                         CString    64.000000 287.900391 46.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    25452
+model                          CString    maps\ze_misaka\entities\lv3_true_final_laser_4_25452.vmdl
+_template_lump_ent_index       CString    0
+@OnFullyOpen OnlyOnce KillHierarchy !self
+
+====1====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1
+damagecap                      Integer    999999
+damage                         Integer    999999
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]lv3_true_final_laser_4&0000
+targetname                     CString    [PR#]lv3_true_final_laser_4h&0000
+classname                      CString    trigger_hurt
+origin                         CString    64.000000 299.900391 46.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    25454
+model                          CString    maps\ze_misaka\entities\lv3_true_final_laser_4h_25454.vmdl
+_template_lump_ent_index       CString    1
+@OnHurtPlayer Subtract [PR#]lv3_true_boss_hp 45
+
+====2====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]lv3_true_boss_relay_4&0000
+classname                      CString    logic_relay
+origin                         CString    34.399902 -10.099609 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    25470
+_template_lump_ent_index       CString    2
+@OnSpawn Open [PR#]lv3_true_final_laser_4&0000
+

@@ -1,0 +1,55 @@
+====0====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1
+damagecap                      Integer    30
+damage                         Integer    30
+spawnflags                     Integer64  4097
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]lv3_jdjh
+targetname                     CString    [PR#]jdjh_h
+classname                      CString    trigger_hurt
+origin                         CString    -148.780029 -409.299805 -7.876953
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    25266
+model                          CString    maps\ze_misaka\entities\jdjh_h_25266.vmdl
+_template_lump_ent_index       CString    0
+@OnHurtPlayer SetDamageFilter !activator [PR#]bugdamage
+@OnHurtPlayer Delay=0.5 SetDamageFilter !activator [PR#]nfd
+
+====1====
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+solidbsp                       CString    0
+dmg                            Integer    0
+spawnflags                     Integer64  576
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    80
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]jdjh_move
+targetname                     CString    [PR#]lv3_jdjh
+classname                      CString    func_rotating
+origin                         CString    -148.780029 -409.299805 -8.201416
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    27077
+model                          CString    maps\ze_misaka\entities\lv3_jdjh_27077.vmdl
+_template_lump_ent_index       CString    1
+

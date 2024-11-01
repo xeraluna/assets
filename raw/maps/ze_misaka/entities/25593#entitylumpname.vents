@@ -1,0 +1,46 @@
+====0====
+nointerpolate                  Boolean    False
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+notsolid                       CString    0
+preferredcarryangles           Vector     <0, 0, 0>
+enableuseoutput                Boolean    False
+forcetoenablemotion            Float64    0
+damagetoenablemotion           Integer    0
+massscale                      Float64    0
+damagetype                     CString    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    True
+explosion                      CString    0
+material                       CString    0
+health                         Integer    999999
+propdata                       CString    0
+spawnflags                     Integer64  49152
+uselocaloffset                 Boolean    False
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+targetname                     CString    [PR#]lv3_boss_break
+classname                      CString    func_physbox
+origin                         CString    1319.824951 -256.000000 232.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    27116
+model                          CString    maps\ze_misaka\entities\lv3_boss_break_27116.vmdl
+_template_lump_ent_index       CString    0
+@OnHealthChanged Subtract [PR#]lv3_boss_hp [PR#]1
+
