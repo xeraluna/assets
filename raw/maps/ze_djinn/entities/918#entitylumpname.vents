@@ -1,0 +1,206 @@
+====0====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_abxz
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]sklm_rot&0000
+targetname                     CString    [PR#]sklm_maker1&0000
+classname                      CString    env_entity_maker
+origin                         CString    0.000000 -96.000000 0.000000
+angles                         CString    -0.000000 -90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    909
+_template_lump_ent_index       CString    0
+
+====1====
+fadescale                      CString    1
+solidbsp                       CString    0
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+dmg                            Integer    0
+spawnflags                     Integer64  65
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    15
+disableshadows                 CString    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    10
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sklm_rot&0000
+classname                      CString    func_rotating
+origin                         CString    0.009766 -0.009766 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1779
+model                          CString    maps\ze_djinn\entities\sklm_rot_1779.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]sklm_relay&0000
+classname                      CString    logic_relay
+origin                         CString    0.000000 0.000000 24.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    917
+_template_lump_ent_index       CString    2
+@OnSpawn OnlyOnce Kill !self
+@OnSpawn OnlyOnce ForceSpawn [PR#]sklm_maker1&0000
+@OnSpawn OnlyOnce ForceSpawn [PR#]sklm_maker2&0000
+@OnSpawn OnlyOnce ForceSpawn [PR#]sklm_maker3&0000
+@OnSpawn OnlyOnce ForceSpawn [PR#]sklm_maker4&0000
+@OnSpawn OnlyOnce ForceSpawn [PR#]sklm_maker5&0000
+@OnSpawn OnlyOnce ForceSpawn [PR#]sklm_maker6&0000
+@OnSpawn OnlyOnce ForceSpawn [PR#]sklm_maker7&0000
+@OnSpawn OnlyOnce ForceSpawn [PR#]sklm_maker8&0000
+@OnSpawn Delay=3.04 OnlyOnce Kill [PR#]sklm_rot&0000
+@OnSpawn Delay=3.04 OnlyOnce Kill [PR#]sklm_maker8&0000
+@OnSpawn Delay=3.04 OnlyOnce Kill [PR#]sklm_maker7&0000
+@OnSpawn Delay=3.04 OnlyOnce Kill [PR#]sklm_maker6&0000
+@OnSpawn Delay=3.04 OnlyOnce Kill [PR#]sklm_maker5&0000
+@OnSpawn Delay=3.04 OnlyOnce Kill [PR#]sklm_maker4&0000
+@OnSpawn Delay=3.04 OnlyOnce Kill [PR#]sklm_maker3&0000
+@OnSpawn Delay=3.04 OnlyOnce Kill [PR#]sklm_maker2&0000
+@OnSpawn Delay=3.04 OnlyOnce Kill [PR#]sklm_maker1&0000
+@OnSpawn Delay=3 OnlyOnce ForceSpawn [PR#]sklm_maker8&0000
+@OnSpawn Delay=3 OnlyOnce ForceSpawn [PR#]sklm_maker7&0000
+@OnSpawn Delay=3 OnlyOnce ForceSpawn [PR#]sklm_maker6&0000
+@OnSpawn Delay=3 OnlyOnce ForceSpawn [PR#]sklm_maker5&0000
+@OnSpawn Delay=3 OnlyOnce ForceSpawn [PR#]sklm_maker4&0000
+@OnSpawn Delay=3 OnlyOnce ForceSpawn [PR#]sklm_maker3&0000
+@OnSpawn Delay=3 OnlyOnce ForceSpawn [PR#]sklm_maker2&0000
+@OnSpawn Delay=3 OnlyOnce ForceSpawn [PR#]sklm_maker1&0000
+
+====3====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_abxz
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]sklm_rot&0000
+targetname                     CString    [PR#]sklm_maker2&0000
+classname                      CString    env_entity_maker
+origin                         CString    0.000000 96.000000 0.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    910
+_template_lump_ent_index       CString    3
+
+====4====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_abxz
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]sklm_rot&0000
+targetname                     CString    [PR#]sklm_maker3&0000
+classname                      CString    env_entity_maker
+origin                         CString    -96.000000 0.000000 0.000000
+angles                         CString    -0.000000 -179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    912
+_template_lump_ent_index       CString    4
+
+====5====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_abxz
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]sklm_rot&0000
+targetname                     CString    [PR#]sklm_maker4&0000
+classname                      CString    env_entity_maker
+origin                         CString    96.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    911
+_template_lump_ent_index       CString    5
+
+====6====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_abxz
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]sklm_rot&0000
+targetname                     CString    [PR#]sklm_maker5&0000
+classname                      CString    env_entity_maker
+origin                         CString    67.900391 -67.879883 0.000000
+angles                         CString    -0.000000 -45.000004 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    913
+_template_lump_ent_index       CString    6
+
+====7====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_abxz
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]sklm_rot&0000
+targetname                     CString    [PR#]sklm_maker6&0000
+classname                      CString    env_entity_maker
+origin                         CString    -67.879883 -67.879883 0.000000
+angles                         CString    -0.000000 -144.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    914
+_template_lump_ent_index       CString    7
+
+====8====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_abxz
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]sklm_rot&0000
+targetname                     CString    [PR#]sklm_maker7&0000
+classname                      CString    env_entity_maker
+origin                         CString    -67.879883 67.879883 0.000000
+angles                         CString    -0.000000 124.999992 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    915
+_template_lump_ent_index       CString    8
+
+====9====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_abxz
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]sklm_rot&0000
+targetname                     CString    [PR#]sklm_maker8&0000
+classname                      CString    env_entity_maker
+origin                         CString    67.900391 67.879883 0.000000
+angles                         CString    -0.000000 45.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    916
+_template_lump_ent_index       CString    9
+

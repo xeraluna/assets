@@ -1,0 +1,292 @@
+====0====
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    550
+pushdir                        Vector     <0, 0, 0>
+filtername                     CString    [PR#]filter_zombies
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ksdk_door
+targetname                     CString    [PR#]ksdk_push
+classname                      CString    trigger_push
+origin                         CString    169.600098 -169.799805 240.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    782
+model                          CString    maps\ze_djinn\entities\ksdk_push_782.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    550
+pushdir                        Vector     <0, 0, 0>
+filtername                     CString    [PR#]filter_zombies
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ksdk_door
+targetname                     CString    [PR#]ksdk_push
+classname                      CString    trigger_push
+origin                         CString    240.000000 0.200195 240.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    784
+model                          CString    maps\ze_djinn\entities\ksdk_push_784.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    550
+pushdir                        Vector     <0, 0, 0>
+filtername                     CString    [PR#]filter_zombies
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ksdk_door
+targetname                     CString    [PR#]ksdk_push
+classname                      CString    trigger_push
+origin                         CString    169.819824 169.599609 240.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    786
+model                          CString    maps\ze_djinn\entities\ksdk_push_786.vmdl
+_template_lump_ent_index       CString    2
+
+====3====
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    550
+pushdir                        Vector     <0, 0, 0>
+filtername                     CString    [PR#]filter_zombies
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ksdk_door
+targetname                     CString    [PR#]ksdk_push
+classname                      CString    trigger_push
+origin                         CString    0.189941 -240.000000 240.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    788
+model                          CString    maps\ze_djinn\entities\ksdk_push_788.vmdl
+_template_lump_ent_index       CString    3
+
+====4====
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    550
+pushdir                        Vector     <0, 0, 0>
+filtername                     CString    [PR#]filter_zombies
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ksdk_door
+targetname                     CString    [PR#]ksdk_push
+classname                      CString    trigger_push
+origin                         CString    -169.810059 -169.500000 240.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    790
+model                          CString    maps\ze_djinn\entities\ksdk_push_790.vmdl
+_template_lump_ent_index       CString    4
+
+====5====
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    550
+pushdir                        Vector     <0, 0, 0>
+filtername                     CString    [PR#]filter_zombies
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ksdk_door
+targetname                     CString    [PR#]ksdk_push
+classname                      CString    trigger_push
+origin                         CString    -239.990234 -0.099609 240.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    792
+model                          CString    maps\ze_djinn\entities\ksdk_push_792.vmdl
+_template_lump_ent_index       CString    5
+
+====6====
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    550
+pushdir                        Vector     <0, 0, 0>
+filtername                     CString    [PR#]filter_zombies
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ksdk_door
+targetname                     CString    [PR#]ksdk_push
+classname                      CString    trigger_push
+origin                         CString    -169.589844 169.799805 240.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    794
+model                          CString    maps\ze_djinn\entities\ksdk_push_794.vmdl
+_template_lump_ent_index       CString    6
+
+====7====
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    550
+pushdir                        Vector     <0, 0, 0>
+filtername                     CString    [PR#]filter_zombies
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ksdk_door
+targetname                     CString    [PR#]ksdk_push
+classname                      CString    trigger_push
+origin                         CString    -0.169922 240.000000 240.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    796
+model                          CString    maps\ze_djinn\entities\ksdk_push_796.vmdl
+_template_lump_ent_index       CString    7
+
+====8====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/djinn_items_go/custom_particle_603.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ksdk_door
+targetname                     CString    [PR#]ksdk_p
+classname                      CString    info_particle_system
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1740
+_template_lump_ent_index       CString    8
+
+====9====
+fadescale                      CString    1
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  4108
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    False
+dmg                            Integer    0
+lip                            Integer    2500
+wait                           Integer    -1
+speed                          Float64    250
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]ksdk_angle
+targetname                     CString    [PR#]ksdk_door
+classname                      CString    func_door
+origin                         CString    0.000000 0.000000 56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    798
+model                          CString    maps\ze_djinn\entities\ksdk_door_798.vmdl
+_template_lump_ent_index       CString    9
+@OnFullyOpen OnlyOnce Kill !self
+@OnFullyOpen OnlyOnce Kill [PR#]ksdk_push
+@OnFullyOpen OnlyOnce Kill [PR#]ksdk_p
+@OnFullyOpen OnlyOnce Kill [PR#]ksdk_angle
+
+====10====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]ksdk_relay
+classname                      CString    logic_relay
+origin                         CString    16.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    801
+_template_lump_ent_index       CString    10
+@OnSpawn OnlyOnce Kill !self
+@OnSpawn OnlyOnce Open [PR#]ksdk_door
+@OnSpawn OnlyOnce Start [PR#]ksdk_p
+
+====11====
+clothscale                     Float64    1
+startdisabled                  Boolean    True
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    10
+renderfx                       CString    kRenderFxNone
+breakablecontentstype          CString    BC_DEFAULT
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+nointerpolate                  Boolean    False
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+skin                           CString    0
+model                          CString    models/editor/playerstart.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]ksdk_angle
+classname                      CString    prop_dynamic
+origin                         CString    0.000000 0.000000 72.000000
+angles                         CString    -0.000000 -179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1785
+_template_lump_ent_index       CString    11
+

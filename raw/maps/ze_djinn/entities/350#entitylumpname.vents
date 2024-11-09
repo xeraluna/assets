@@ -1,0 +1,758 @@
+====0====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    4
+damagecap                      Integer    20
+damage                         Integer    60
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]djinn_Model
+targetname                     CString    [PR#]djinn_Hurt
+classname                      CString    trigger_hurt
+origin                         CString    22.000000 -1.400391 109.400391
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    353
+model                          CString    maps\ze_djinn\entities\djinn_Hurt_353.vmdl
+_template_lump_ent_index       CString    0
+@OnHurtPlayer FireUser1 [PR#]NoDamage
+
+====1====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+enableuseoutput                Boolean    False
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]djinn_Model
+nointerpolate                  Boolean    False
+spawnobject                    CString    0
+spawnflags                     Integer64  52224
+rendermode                     CString    0
+renderfx                       CString    0
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+propdata                       CString    0
+pressuredelay                  Float64    0
+preferredcarryangles           Vector     <0, 0, 0>
+performancemode                CString    0
+notsolid                       CString    0
+nodamageforces                 Boolean    False
+material                       CString    2
+massscale                      Float64    0
+health                         Integer    99999999
+gibdir                         CString    0 0 0
+forcetoenablemotion            Float64    0
+fadescale                      CString    1
+fademindist                    Float64    -1
+explosion                      CString    0
+exploderadius                  Float64    0
+explodemagnitude               Integer    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+disablereceiveshadows          Boolean    False
+damagetype                     CString    0
+damagetoenablemotion           Integer    0
+damagefilter                   CString    [PR#]Filter_Nada
+targetname                     CString    [PR#]djinn_Hitbox
+classname                      CString    func_physbox
+origin                         CString    -1.200195 -7.400391 90.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    351
+model                          CString    maps\ze_djinn\entities\djinn_Hitbox_351.vmdl
+_template_lump_ent_index       CString    1
+@OnHealthChanged Subtract [PR#]djinn_Health 1
+@OnBreak OnlyOnce Kill [PR#]djinn_Hurt
+@OnBreak OnlyOnce Kill [PR#]djinn_attack_case
+@OnBreak OnlyOnce Kill [PR#]djinn_attack_timer
+@OnBreak OnlyOnce Kill [PR#]djinn_fire_p
+@OnBreak OnlyOnce Kill [PR#]djinn_fire_hurt
+@OnBreak OnlyOnce Kill [PR#]djinn_gravity_p
+@OnBreak OnlyOnce Kill [PR#]djinn_gravity_trig
+@OnBreak OnlyOnce Start [PR#]djinn_death_p
+@OnBreak OnlyOnce Stop [PR#]djinn_hpbar
+@OnBreak Delay=4 OnlyOnce ForceSpawn [PR#]template_phase2
+@OnBreak OnlyOnce StopSound [PR#]s1_music05
+@OnBreak Delay=5 OnlyOnce PlaySound [PR#]s1_music06
+@OnBreak Delay=0.02 OnlyOnce Kill [PR#]CY01Physic
+@OnBreak Delay=0.02 OnlyOnce Kill [PR#]thruster_forward
+@OnBreak Delay=0.02 OnlyOnce Kill [PR#]thruster_side
+@OnBreak Delay=0.02 OnlyOnce Kill [PR#]Boss_Keepupright
+@OnBreak Delay=3 OnlyOnce Kill [PR#]djinn*
+@OnBreak Delay=3 OnlyOnce Kill [PR#]wxc_djinn*
+@OnBreak OnlyOnce FireUser4 [PR#]Boss_Physbox
+
+====2====
+initialdelay                   Float64    0
+refiretime                     Float64    0.5
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    False
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]djinn_Timer
+classname                      CString    logic_timer
+origin                         CString    -342.000000 -76.600586 42.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    371
+_template_lump_ent_index       CString    2
+
+====3====
+defaultanim                    CString    idle
+fadescale                      CString    1
+maxanimtime                    CString    10
+minanimtime                    CString    5
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_LOOPING
+idleanim                       CString    grimreaper_attack_motion__idle_0
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    grimreaper_attack_motion__idle_0
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+breakablecontentstype          CString    BC_DEFAULT
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+nointerpolate                  Boolean    False
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    default
+model                          CString    models/monster/grimreaper/grimreaper_altheron.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]djinn_Model
+classname                      CString    prop_dynamic
+origin                         CString    -1.200195 -7.400391 34.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1673
+_template_lump_ent_index       CString    3
+@OnUser1 OnlyOnce Enable [PR#]djinn_Timer
+
+====4====
+wait                           Float64    1
+filtername                     CString    [PR#]Filter_Grenade
+spawnflags                     Integer64  1088
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]djinn_Hitbox
+targetname                     CString    [PR#]djinn_Nade
+classname                      CString    trigger_multiple
+origin                         CString    -6.000000 -4.600586 122.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    355
+model                          CString    maps\ze_djinn\entities\djinn_Nade_355.vmdl
+_template_lump_ent_index       CString    4
+@OnStartTouch Subtract [PR#]djinn_Health 10
+@OnStartTouch Delay=0.01 Subtract [PR#]djinn_Health 10
+@OnStartTouch Delay=0.02 Subtract [PR#]djinn_Health 10
+@OnStartTouch Delay=0.03 Subtract [PR#]djinn_Health 10
+@OnStartTouch Kill !activator
+@OnStartTouch Delay=0.01 ForceSpawnAtEntityOrigin [PR#]Global_Gren_Maker !caller
+@OnStartTouch PlaySound [PR#]global_nade_bosssound
+@OnStartTouch Delay=0.01 StopSound [PR#]global_nade_bosssound
+
+====5====
+max                            Integer    9999999
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]djinn_Health
+classname                      CString    math_counter
+origin                         CString    -358.200195 -48.600586 42.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    360
+_template_lump_ent_index       CString    5
+@OnHitMin GetValue [PR#]djinn_HealthBackup
+
+====6====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]djinn_relay
+classname                      CString    logic_relay
+origin                         CString    -390.000000 -48.600586 42.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    357
+_template_lump_ent_index       CString    6
+@OnSpawn Delay=0.04 OnlyOnce SetAnimation [PR#]djinn_Model grimreaper_attack_motion__grimreaper_althe_summon_gate_7
+@OnSpawn Delay=3 OnlyOnce SetAnimation [PR#]djinn_Model grimreaper_attack_motion__grimreaper_run_46
+@OnSpawn OnlyOnce Kill !self
+@OnSpawn Delay=3 OnlyOnce FireUser1 [PR#]djinn_Model
+@OnSpawn Delay=0.4 OnlyOnce Enable [PR#]s1_djinn_addhp
+@OnSpawn Delay=0.44 OnlyOnce Start [PR#]djinn_hpbar
+@OnSpawn Delay=0.4 OnlyOnce SetDamageFilter [PR#]djinn_Hitbox
+@OnSpawn Delay=0.44 OnlyOnce Enable [PR#]djinn_Nade
+@OnSpawn Delay=0.06 OnlyOnce SetIdleAnimationLooping [PR#]djinn_Model grimreaper_attack_motion__grimreaper_althe_summon_gate_7
+@OnSpawn Delay=3.02 OnlyOnce SetIdleAnimationLooping [PR#]djinn_Model grimreaper_attack_motion__grimreaper_run_46
+@OnSpawn Delay=1.64 OnlyOnce SetAnimation [PR#]djinn_Model grimreaper_attack_motion__idle_0
+@OnSpawn Delay=1.66 OnlyOnce SetIdleAnimationLooping [PR#]djinn_Model grimreaper_attack_motion__idle_0
+
+====7====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/djinn_particles_go/custom_particle_110.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]djinn_Model
+targetname                     CString    [PR#]djinn_gravity_p
+classname                      CString    info_particle_system
+origin                         CString    -1.200195 0.599609 226.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1677
+_template_lump_ent_index       CString    7
+
+====8====
+case28                         CString    UnpressedDuck
+case27                         CString    UnpressedSpeed
+case26                         CString    UnpressedAttack2
+case25                         CString    UnpressedAttack
+case24                         CString    UnpressedMoveRight
+case23                         CString    UnpressedBack
+case22                         CString    UnpressedMoveLeft
+case21                         CString    UnpressedForward
+case18                         CString    PressedDuck
+case17                         CString    PressedSpeed
+case16                         CString    PressedAttack2
+case15                         CString    PressedAttack
+case14                         CString    PressedMoveRight
+case13                         CString    PressedBack
+case12                         CString    PressedMoveLeft
+case11                         CString    PressedForward
+case02                         CString    PlayerOff
+case01                         CString    PlayerOn
+spawnflags                     Integer    0
+targetname                     CString    [PR#]djinn_anim_case
+classname                      CString    logic_case
+origin                         CString    -390.000000 15.399414 42.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    364
+_template_lump_ent_index       CString    8
+@OnCase01 Delay=0.02 SetAnimation [PR#]djinn_Model grimreaper_attack_motion__grimreaper_althe_attack_double_swing_4
+@OnCase01 Delay=1.4 SetAnimation [PR#]djinn_Model grimreaper_attack_motion__grimreaper_run_46
+@OnCase02 Delay=0.02 SetAnimation [PR#]djinn_Model grimreaper_attack_motion__grimreaper_althe_attack_left_16
+@OnCase02 Delay=1.4 SetAnimation [PR#]djinn_Model grimreaper_attack_motion__grimreaper_run_46
+@OnCase03 Delay=1.4 SetAnimation [PR#]djinn_Model grimreaper_attack_motion__grimreaper_run_46
+@OnCase03 Delay=0.02 SetAnimation [PR#]djinn_Model grimreaper_attack_motion__grimreaper_althe_attack_right_17
+@OnCase04 Delay=2 SetAnimation [PR#]djinn_Model grimreaper_attack_motion__grimreaper_run_46
+@OnCase04 Delay=0.02 SetAnimation [PR#]djinn_Model grimreaper_attack_motion__grimreaper_zenon_attack_slash_range_28
+@OnCase01 Disable [PR#]djinn_multipleanimtrig
+@OnCase01 Delay=1.42 Enable [PR#]djinn_multipleanimtrig
+@OnCase02 Delay=1.42 Enable [PR#]djinn_multipleanimtrig
+@OnCase02 Disable [PR#]djinn_multipleanimtrig
+@OnCase03 Delay=1.42 Enable [PR#]djinn_multipleanimtrig
+@OnCase03 Disable [PR#]djinn_multipleanimtrig
+@OnCase04 Disable [PR#]djinn_multipleanimtrig
+@OnCase04 Delay=2.02 Enable [PR#]djinn_multipleanimtrig
+@OnCase05 Delay=2.02 Enable [PR#]djinn_multipleanimtrig
+@OnCase05 Delay=2 SetAnimation [PR#]djinn_Model grimreaper_attack_motion__grimreaper_run_46
+@OnCase05 Delay=0.02 SetAnimation [PR#]djinn_Model grimreaper_attack_motion__grimreaper_zenon_attack_sword_throw_29
+@OnCase05 Disable [PR#]djinn_multipleanimtrig
+
+====9====
+max                            Integer    9999999
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]djinn_HealthBackup
+classname                      CString    math_counter
+origin                         CString    -374.200195 -48.600586 42.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    361
+_template_lump_ent_index       CString    9
+@OnGetValue Add [PR#]djinn_Health
+@OnGetValue Add [PR#]djinn_HealthCount 1
+@OnGetValue IncrementTextureIndex [PR#]djinn_Texture
+
+====10====
+target                         CString    None
+targetname                     CString    [PR#]djinn_Texture
+classname                      CString    env_texturetoggle
+origin                         CString    -326.000000 -48.600586 42.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    358
+_template_lump_ent_index       CString    10
+
+====11====
+fadescale                      CString    1
+solidbsp                       CString    0
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+dmg                            Integer    0
+spawnflags                     Integer64  65
+volume                         Integer    10
+fanfriction                    Integer    0
+maxspeed                       Integer    200
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]djinn_Hitbox
+targetname                     CString    [PR#]djinn_Rotate
+classname                      CString    func_rotating
+origin                         CString    -3.600586 0.000000 -0.700195
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1674
+model                          CString    maps\ze_djinn\entities\djinn_Rotate_1674.vmdl
+_template_lump_ent_index       CString    11
+
+====12====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/djinn_particles_go/custom_particle_090.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]djinn_Hitbox
+targetname                     CString    [PR#]djinn_fire_p
+classname                      CString    info_particle_system
+origin                         CString    -1.200195 0.599609 -6.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1680
+_template_lump_ent_index       CString    12
+
+====13====
+max                            Integer    10
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]djinn_HealthCount
+classname                      CString    math_counter
+origin                         CString    -342.200195 -48.600586 42.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    359
+_template_lump_ent_index       CString    13
+@OnHitMax OnlyOnce Break [PR#]djinn_Hitbox
+@OutValue InValue [PR#]djinn_HealthCountCASE
+
+====14====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1024
+damagecap                      Integer    20
+damage                         Integer    20
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]djinn_fire_hurt
+classname                      CString    trigger_hurt
+origin                         CString    6.799805 -15.400391 58.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    375
+model                          CString    maps\ze_djinn\entities\djinn_fire_hurt_375.vmdl
+_template_lump_ent_index       CString    14
+@OnStartTouch IgniteLifetime !activator 3
+@OnHurtPlayer FireUser1 [PR#]NoDamage
+
+====15====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_npc_particle
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]djinn_Hitbox
+targetname                     CString    [PR#]djinn_npc_maker
+classname                      CString    env_entity_maker
+origin                         CString    -1.200195 80.599609 34.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    385
+_template_lump_ent_index       CString    15
+
+====16====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_wxc
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]djinn_Rotate
+targetname                     CString    [PR#]djinn_wxc_maker
+classname                      CString    env_entity_maker
+origin                         CString    -1.200195 0.599609 -31.572266
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    396
+_template_lump_ent_index       CString    16
+
+====17====
+case28                         CString    UnpressedDuck
+case27                         CString    UnpressedSpeed
+case26                         CString    UnpressedAttack2
+case25                         CString    UnpressedAttack
+case24                         CString    UnpressedMoveRight
+case23                         CString    UnpressedBack
+case22                         CString    UnpressedMoveLeft
+case21                         CString    UnpressedForward
+case18                         CString    PressedDuck
+case17                         CString    PressedSpeed
+case16                         CString    PressedAttack2
+case15                         CString    PressedAttack
+case14                         CString    PressedMoveRight
+case13                         CString    PressedBack
+case12                         CString    PressedMoveLeft
+case11                         CString    PressedForward
+case02                         CString    PlayerOff
+case01                         CString    PlayerOn
+spawnflags                     Integer    0
+targetname                     CString    [PR#]djinn_attack_case
+classname                      CString    logic_case
+origin                         CString    -390.000000 63.399414 42.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    365
+_template_lump_ent_index       CString    17
+@OnCase01 Delay=4 Stop [PR#]djinn_fire_p
+@OnCase01 Delay=0.02 Start [PR#]djinn_fire_p
+@OnCase01 Delay=2.04 Enable [PR#]djinn_fire_hurt
+@OnCase01 Delay=2.2 Disable [PR#]djinn_fire_hurt
+@OnCase01 Delay=0.04 SetAnimation [PR#]djinn_Model grimreaper_attack_motion__grimreaper_maios_attack_debuff_38
+@OnCase01 Delay=0.06 SetIdleAnimationLooping [PR#]djinn_Model grimreaper_attack_motion__grimreaper_maios_attack_debuff_38
+@OnCase01 Delay=2.04 SetAnimation [PR#]djinn_Model grimreaper_attack_motion__grimreaper_run_46
+@OnCase01 Delay=2.06 SetIdleAnimationLooping [PR#]djinn_Model grimreaper_attack_motion__grimreaper_run_46
+@OnCase02 Disable [PR#]djinn_multipleanimtrig
+@OnCase02 Disable [PR#]djinn_multipleanimtrig
+@OnCase02 Delay=2.5 Enable [PR#]djinn_gravity_trig
+@OnCase02 Delay=0.02 SetAnimation [PR#]djinn_Model grimreaper_attack_motion__grimreaper_maios_attack_staff_bolt_39
+@OnCase02 Delay=5 Disable [PR#]djinn_gravity_trig
+@OnCase02 Delay=5 SetIdleAnimationLooping [PR#]djinn_Model grimreaper_attack_motion__grimreaper_run_46
+@OnCase02 Delay=2.5 Start [PR#]djinn_gravity_p
+@OnCase02 Delay=4.9 Stop [PR#]djinn_gravity_p
+@OnCase03 Start [PR#]djinn_npc_p
+@OnCase03 Delay=1.5 ForceSpawn [PR#]djinn_npc_maker
+@OnCase03 Delay=4 ForceSpawn [PR#]djinn_npc_maker
+@OnCase03 Delay=5 Stop [PR#]djinn_npc_p
+@OnCase04 ForceSpawn [PR#]djinn_wxc_maker
+@OnCase04 Delay=3.5 ForceSpawn [PR#]djinn_wxc_maker
+@OnCase04 Delay=7 ForceSpawn [PR#]djinn_wxc_maker
+@OnCase02 Delay=5 Keyvalue [PR#]Boss_ThrusterForward force 600
+@OnCase02 Delay=5 Keyvalue [PR#]Boss_ThrusterLeft force 700
+@OnCase02 Delay=5 Keyvalue [PR#]Boss_ThrusterLeft2 force 1400
+@OnCase02 Delay=5 Keyvalue [PR#]Boss_ThrusterRight force 700
+@OnCase02 Delay=5 Keyvalue [PR#]Boss_ThrusterRight2 force 1400
+@OnCase02 Delay=0.02 Keyvalue [PR#]Boss_ThrusterForward force 23
+@OnCase02 Delay=0.02 Keyvalue [PR#]Boss_ThrusterLeft force 12
+@OnCase02 Delay=0.02 Keyvalue [PR#]Boss_ThrusterLeft2 force 12
+@OnCase02 Delay=0.02 Keyvalue [PR#]Boss_ThrusterRight force 12
+@OnCase02 Delay=0.02 Keyvalue [PR#]Boss_ThrusterRight2 force 12
+
+====18====
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    280
+pushdir                        Vector     <0, 270, 0>
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]djinn_Hitbox
+targetname                     CString    [PR#]djinn_gravity_trig
+classname                      CString    trigger_push
+origin                         CString    6.799805 -15.400391 138.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    377
+model                          CString    maps\ze_djinn\entities\djinn_gravity_trig_377.vmdl
+_template_lump_ent_index       CString    18
+
+====19====
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    280
+pushdir                        Vector     <0, 90, 0>
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]djinn_Hitbox
+targetname                     CString    [PR#]djinn_gravity_trig
+classname                      CString    trigger_push
+origin                         CString    6.799805 0.599609 138.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    379
+model                          CString    maps\ze_djinn\entities\djinn_gravity_trig_379.vmdl
+_template_lump_ent_index       CString    19
+
+====20====
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    280
+pushdir                        Vector     <0, 0, 0>
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]djinn_Hitbox
+targetname                     CString    [PR#]djinn_gravity_trig
+classname                      CString    trigger_push
+origin                         CString    6.799805 -15.400391 138.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    381
+model                          CString    maps\ze_djinn\entities\djinn_gravity_trig_381.vmdl
+_template_lump_ent_index       CString    20
+
+====21====
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    280
+pushdir                        Vector     <0, 180, 0>
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]djinn_Hitbox
+targetname                     CString    [PR#]djinn_gravity_trig
+classname                      CString    trigger_push
+origin                         CString    6.799805 0.599609 138.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    383
+model                          CString    maps\ze_djinn\entities\djinn_gravity_trig_383.vmdl
+_template_lump_ent_index       CString    21
+
+====22====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/djinn_particles_go/custom_particle_100.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]djinn_Hitbox
+targetname                     CString    [PR#]djinn_death_p
+classname                      CString    info_particle_system
+origin                         CString    -1.200195 -7.400391 73.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1682
+_template_lump_ent_index       CString    22
+
+====23====
+s1 env_sprite material         CString    nostar_djinn/djinn_hpbar.vmt
+snapshot_mesh                  Integer    0
+alphascale                     Float64    0
+selfillumscale                 Float64    1
+colortint                      Vector     <255, 255, 255>
+scale                          Float64    0.4000000059604645
+start_active                   Boolean    False
+effect_name                    CString    particles/ex_cube_small.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]djinn_Rotate
+targetname                     CString    [PR#]djinn_hpbar
+classname                      CString    env_particle_glow
+origin                         CString    -6.000000 0.599609 210.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1676
+_template_lump_ent_index       CString    23
+
+====24====
+filtername                     CString    [PR#]Tar_djinn_Tar
+negated                        CString    0
+targetname                     CString    [PR#]djinn_Tar_Filt
+classname                      CString    filter_activator_name
+origin                         CString    -358.000000 -76.600586 42.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    374
+_template_lump_ent_index       CString    24
+
+====25====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/djinn_particles_go/custom_particle_111.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]djinn_Physbox
+targetname                     CString    [PR#]djinn_npc_p
+classname                      CString    info_particle_system
+origin                         CString    -1.200195 0.599609 -6.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1681
+_template_lump_ent_index       CString    25
+
+====26====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1024
+damagecap                      Integer    20
+damage                         Integer    50
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]djinn_Hitbox
+targetname                     CString    [PR#]djinn_smash_hurt
+classname                      CString    trigger_hurt
+origin                         CString    -6.000000 -0.600586 24.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    366
+model                          CString    maps\ze_djinn\entities\djinn_smash_hurt_366.vmdl
+_template_lump_ent_index       CString    26
+@OnStartTouch KeyValues !activator basevelocity 0 0 450
+@OnHurtPlayer FireUser1 [PR#]NoDamage
+
+====27====
+initialdelay                   Float64    0
+upperrandombound               Float64    16
+lowerrandombound               Float64    11
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    True
+spawnflags                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]djinn_attack_timer
+classname                      CString    logic_timer
+origin                         CString    -406.000000 63.399414 42.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    370
+_template_lump_ent_index       CString    27
+@OnTimer PickRandomShuffle [PR#]djinn_attack_case
+
+====28====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Tar_djinn_Tem
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]djinn_Tar_Env
+classname                      CString    env_entity_maker
+origin                         CString    -326.000000 -76.800781 50.000000
+angles                         CString    -0.000000 -90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    373
+_template_lump_ent_index       CString    28
+
+====29====
+wait                           Float64    1.5
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]djinn_Model
+targetname                     CString    [PR#]djinn_multipleanimtrig
+classname                      CString    trigger_multiple
+origin                         CString    38.000000 -1.400391 109.400391
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    362
+model                          CString    maps\ze_djinn\entities\djinn_multipleanimtrig_362.vmdl
+_template_lump_ent_index       CString    29
+@OnTrigger PickRandomShuffle [PR#]djinn_anim_case
+

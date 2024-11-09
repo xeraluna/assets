@@ -1,0 +1,107 @@
+====0====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    0
+damagecap                      Integer    20
+damage                         Integer    600
+filtername                     CString    [PR#]filter_zombies
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sd_sand_hurt
+classname                      CString    trigger_hurt
+origin                         CString    0.000000 120.000000 224.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    746
+model                          CString    maps\ze_djinn\entities\sd_sand_hurt_746.vmdl
+_template_lump_ent_index       CString    0
+@OnStartTouch Keyvalue !activator speed 0.3
+@OnStartTouch Delay=7 Keyvalue !activator speed 1
+@OnHurtPlayer FireUser1 [PR#]NoDamage
+@OnStartTouch Delay=0.5 Keyvalue !activator speed 0.3
+@OnStartTouch Delay=1 Keyvalue !activator speed 0.3
+@OnStartTouch Delay=1.5 Keyvalue !activator speed 0.3
+@OnStartTouch Delay=2 Keyvalue !activator speed 0.3
+@OnStartTouch Delay=2.5 Keyvalue !activator speed 0.3
+@OnStartTouch Delay=3 Keyvalue !activator speed 0.3
+@OnStartTouch Delay=3.5 Keyvalue !activator speed 0.3
+@OnStartTouch Delay=4 Keyvalue !activator speed 0.3
+@OnStartTouch Delay=4.5 Keyvalue !activator speed 0.3
+@OnStartTouch Delay=5 Keyvalue !activator speed 0.3
+@OnStartTouch Delay=5.5 Keyvalue !activator speed 0.3
+@OnStartTouch Delay=6 Keyvalue !activator speed 0.3
+@OnStartTouch Delay=6.5 Keyvalue !activator speed 0.3
+
+====1====
+fadescale                      CString    1
+maxanimtime                    CString    10
+minanimtime                    CString    5
+modelscale                     CString    1.000000
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+lightingorigin                 CString    [PR#]sd_sand_hurt
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+breakablecontentstype          CString    BC_DEFAULT
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+nointerpolate                  Boolean    False
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+skin                           CString    0
+model                          CString    models/m4dara_contest/gold_sand.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]sd_sand_model
+classname                      CString    prop_dynamic
+origin                         CString    0.000000 0.000000 44.099609
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1732
+_template_lump_ent_index       CString    1
+
+====2====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]sd_sand_relay
+classname                      CString    logic_relay
+origin                         CString    288.000000 -224.000000 201.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    748
+_template_lump_ent_index       CString    2
+@OnSpawn OnlyOnce Kill !self
+@OnSpawn Delay=7 OnlyOnce Kill [PR#]sd_sand_hurt
+@OnSpawn Delay=7 OnlyOnce Kill [PR#]sd_sand_model
+

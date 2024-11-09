@@ -1,0 +1,52 @@
+====0====
+force                          CString    700
+forcetime                      CString    0
+attach1                        CString    [PR#]CY01Physic
+spawnflags                     Integer64  28
+targetname                     CString    [PR#]thruster_side
+classname                      CString    phys_thruster
+origin                         CString    56.000000 0.000000 1.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    12
+_template_lump_ent_index       CString    0
+
+====1====
+force                          CString    1800
+forcetime                      CString    0
+attach1                        CString    [PR#]CY01Physic
+spawnflags                     Integer64  58
+targetname                     CString    [PR#]thruster_forward
+classname                      CString    phys_thruster
+origin                         CString    32.000000 0.000000 1.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    11
+_template_lump_ent_index       CString    1
+
+====2====
+dampallrotation                Boolean    False
+angularlimit                   Float64    50
+attach1                        CString    [PR#]CY01Physic
+spawnflags                     Integer    0
+targetname                     CString    [PR#]Boss_Keepupright
+classname                      CString    phys_keepupright
+origin                         CString    0.000000 0.000000 1.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    13
+_template_lump_ent_index       CString    2
+
+====3====
+dampallrotation                Boolean    False
+angularlimit                   Float64    200
+attach1                        CString    [PR#]Boss_Physbox
+spawnflags                     Integer    0
+targetname                     CString    [PR#]Boss_Keepupright
+classname                      CString    phys_keepupright
+origin                         CString    9508.723633 17598.570312 -6273.372070
+angles                         CString    -0.000000 -179.999924 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2004
+_template_lump_ent_index       CString    3
+

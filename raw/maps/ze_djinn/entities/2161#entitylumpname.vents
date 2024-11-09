@@ -1,0 +1,1596 @@
+====0====
+fadescale                      CString    1
+createnavobstacle              Boolean    True
+movedir                        Vector     <90, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  4108
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    False
+dmg                            Integer    0
+lip                            Integer    32
+wait                           Integer    -1
+speed                          Float64    30
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_rotating
+targetname                     CString    [PR#]phase3_doorbeamball
+classname                      CString    func_door
+origin                         CString    184.000000 187.741211 -2048.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    299
+model                          CString    maps\ze_djinn\entities\phase3_doorbeamball_299.vmdl
+_template_lump_ent_index       CString    0
+@OnFullyOpen Close !self
+@OnFullyClosed Open !self
+
+====1====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_hwx
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]phase3_rot_firemaker
+classname                      CString    env_entity_maker
+origin                         CString    184.000000 191.741211 -2079.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    854
+_template_lump_ent_index       CString    1
+
+====2====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]phase3_att2
+classname                      CString    logic_relay
+origin                         CString    48.000000 403.741211 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    301
+_template_lump_ent_index       CString    2
+@OnTrigger Enable [PR#]phase3_timer_dodge
+@OnTrigger Delay=10 Disable [PR#]phase3_timer_dodge
+@OnTrigger Delay=8.5 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=8.52 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=13 PickRandomShuffle [PR#]phase3_attack_case
+@OnTrigger Delay=8.54 PickRandomShuffle [PR#]phase3_rez_case
+
+====3====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]phase3_att9
+classname                      CString    logic_relay
+origin                         CString    336.000000 355.741211 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    866
+_template_lump_ent_index       CString    3
+@OnTrigger Start [PR#]phase3_gravity_p
+@OnTrigger Delay=13 PickRandomShuffle [PR#]phase3_attack_case
+@OnTrigger Delay=1.5 Enable [PR#]phase3_push
+@OnTrigger Delay=5 Disable [PR#]phase3_push
+@OnTrigger Delay=5.5 Enable [PR#]phase3_timer_dodge
+@OnTrigger Delay=8.5 Disable [PR#]phase3_timer_dodge
+@OnTrigger Delay=5 Stop [PR#]phase3_gravity_p
+
+====4====
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    400
+pushdir                        Vector     <0, 270, 0>
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]phase3_push
+classname                      CString    trigger_push
+origin                         CString    184.000000 971.741211 -1656.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    858
+model                          CString    maps\ze_djinn\entities\phase3_push_858.vmdl
+_template_lump_ent_index       CString    4
+
+====5====
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    400
+pushdir                        Vector     <0, 90, 0>
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]phase3_push
+classname                      CString    trigger_push
+origin                         CString    184.000000 -564.258789 -1656.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    860
+model                          CString    maps\ze_djinn\entities\phase3_push_860.vmdl
+_template_lump_ent_index       CString    5
+
+====6====
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    400
+pushdir                        Vector     <0, 0, 0>
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]phase3_push
+classname                      CString    trigger_push
+origin                         CString    -584.000000 203.741211 -1656.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    862
+model                          CString    maps\ze_djinn\entities\phase3_push_862.vmdl
+_template_lump_ent_index       CString    6
+
+====7====
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    400
+pushdir                        Vector     <0, 180, 0>
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]phase3_push
+classname                      CString    trigger_push
+origin                         CString    952.000000 203.741211 -1656.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    864
+model                          CString    maps\ze_djinn\entities\phase3_push_864.vmdl
+_template_lump_ent_index       CString    7
+
+====8====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_rez
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_rotating
+targetname                     CString    [PR#]phase3_rez_maker4
+classname                      CString    env_entity_maker
+origin                         CString    -840.000000 187.741211 -2080.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    286
+_template_lump_ent_index       CString    8
+
+====9====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_rez
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_rotating
+targetname                     CString    [PR#]phase3_rez_maker9
+classname                      CString    env_entity_maker
+origin                         CString    1123.040039 -783.298828 -2080.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    310
+_template_lump_ent_index       CString    9
+
+====10====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_try
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_doorbeamball
+targetname                     CString    [PR#]phase3_ballbeam_maker8
+classname                      CString    env_entity_maker
+origin                         CString    96.319946 96.061523 -2064.000000
+angles                         CString    -0.000000 -144.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    336
+_template_lump_ent_index       CString    10
+@OnUser1 ForceSpawnAtEntityOrigin [PR#]fsq_sphere_maker !caller
+@OnUser2 ForceSpawnAtEntityOrigin [PR#]pads_maker !caller
+@OnUser3 ForceSpawnAtEntityOrigin [PR#]maker_sklm !caller
+@OnUser4 ForceSpawnAtEntityOrigin [PR#]maker_brpz !caller
+
+====11====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 90, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_try
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_doorbeamball
+targetname                     CString    [PR#]phase3_ballbeam_maker3
+classname                      CString    env_entity_maker
+origin                         CString    184.000000 307.741211 -2064.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    296
+_template_lump_ent_index       CString    11
+@OnUser1 ForceSpawnAtEntityOrigin [PR#]fsq_sphere_maker !caller
+@OnUser3 ForceSpawnAtEntityOrigin [PR#]maker_sklm !caller
+@OnUser2 ForceSpawnAtEntityOrigin [PR#]pads_maker !caller
+@OnUser4 ForceSpawnAtEntityOrigin [PR#]maker_brpz !caller
+
+====12====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_try
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_doorbeamball
+targetname                     CString    [PR#]phase3_ballbeam_maker6
+classname                      CString    env_entity_maker
+origin                         CString    271.680054 96.061523 -2064.000000
+angles                         CString    -0.000000 -45.000004 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    334
+_template_lump_ent_index       CString    12
+@OnUser1 ForceSpawnAtEntityOrigin [PR#]fsq_sphere_maker !caller
+@OnUser3 ForceSpawnAtEntityOrigin [PR#]maker_sklm !caller
+@OnUser2 ForceSpawnAtEntityOrigin [PR#]pads_maker !caller
+@OnUser4 ForceSpawnAtEntityOrigin [PR#]maker_brpz !caller
+
+====13====
+initialdelay                   Float64    0
+refiretime                     Float64    0.05000000074505806
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    False
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]phase3_timer_dodge
+classname                      CString    logic_timer
+origin                         CString    48.000000 371.741211 16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    298
+_template_lump_ent_index       CString    13
+@OnTimer PickRandomShuffle [PR#]phase3_dodge_choose
+
+====14====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/djinn_particles_go/custom_particle_160.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]phase3_circle_p
+classname                      CString    info_particle_system
+origin                         CString    184.000000 189.741211 -2084.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1746
+_template_lump_ent_index       CString    14
+
+====15====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/djinn_phase3_go/custom_particle_510.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]phase3_gravity_p
+classname                      CString    info_particle_system
+origin                         CString    184.219971 219.741211 -1848.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1759
+_template_lump_ent_index       CString    15
+
+====16====
+case28                         CString    UnpressedDuck
+case27                         CString    UnpressedSpeed
+case26                         CString    UnpressedAttack2
+case25                         CString    UnpressedAttack
+case24                         CString    UnpressedMoveRight
+case23                         CString    UnpressedBack
+case22                         CString    UnpressedMoveLeft
+case21                         CString    UnpressedForward
+case18                         CString    PressedDuck
+case17                         CString    PressedSpeed
+case16                         CString    PressedAttack2
+case15                         CString    PressedAttack
+case14                         CString    PressedMoveRight
+case13                         CString    PressedBack
+case12                         CString    PressedMoveLeft
+case11                         CString    PressedForward
+case02                         CString    PlayerOff
+case01                         CString    PlayerOn
+spawnflags                     Integer    0
+targetname                     CString    [PR#]phase3_attack_case
+classname                      CString    logic_case
+origin                         CString    48.000000 51.741211 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    331
+_template_lump_ent_index       CString    16
+@OnCase01 Trigger [PR#]phase3_att1
+@OnCase02 Trigger [PR#]phase3_att2
+@OnCase03 Trigger [PR#]phase3_att3
+@OnCase04 Trigger [PR#]phase3_att4
+@OnCase05 Trigger [PR#]phase3_att5
+@OnCase06 Trigger [PR#]phase3_att6
+@OnCase07 Trigger [PR#]phase3_att7
+@OnCase08 Trigger [PR#]phase3_att8
+@OnCase09 Trigger [PR#]phase3_att9
+@OnCase10 Trigger [PR#]phase3_att10
+@OnCase11 Trigger [PR#]phase3_att11
+@OnCase12NO Trigger [PR#]phase3_att12
+@OnCase13 Trigger [PR#]phase3_att13
+@OnCase14 Trigger [PR#]phase3_att14
+@OnCase15 Trigger [PR#]phase3_att15
+@OnCase16 Trigger [PR#]phase3_att16
+
+====17====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_npc_particle
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_rotating
+targetname                     CString    [PR#]phase3_npc_maker1
+classname                      CString    env_entity_maker
+origin                         CString    184.000000 395.741211 -2024.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    304
+_template_lump_ent_index       CString    17
+
+====18====
+reversefadeduration            CString    2
+rendercolor                    Vector     <126, 1, 11>
+renderamt                      Integer    250
+holdtime                       CString    0
+duration                       CString    3
+spawnflags                     Integer    1
+targetname                     CString    [PR#]phase3_fadedeath
+classname                      CString    env_fade
+origin                         CString    0.000000 67.741211 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    730
+_template_lump_ent_index       CString    18
+
+====19====
+initialdelay                   Float64    0
+refiretime                     Float64    0.800000011920929
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    False
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]phase3_square_timer
+classname                      CString    logic_timer
+origin                         CString    0.000000 339.741211 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1094
+_template_lump_ent_index       CString    19
+@OnTimer FireUser4 [PR#]phase3_ballbeam_maker*
+
+====20====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]phase3_death_relay
+classname                      CString    logic_relay
+origin                         CString    0.000000 51.741211 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    658
+_template_lump_ent_index       CString    20
+@OnTrigger kill [PR#]s1_tp_zm_bossattack
+@OnTrigger OnlyOnce Kill [PR#]s1_tp05
+@OnTrigger OnlyOnce Enable [PR#]s1_tp07_endzm
+@OnTrigger Delay=0.04 OnlyOnce Kill [PR#]s1_tp05_b
+@OnTrigger Delay=0.04 OnlyOnce Kill [PR#]s1_tp06
+@OnTrigger Delay=0.04 OnlyOnce Kill [PR#]s1_hurt_humans_arena
+@OnTrigger Delay=0.04 OnlyOnce Kill [PR#]s1_safeboss_tpzm
+@OnTrigger Delay=3 OnlyOnce Kill [PR#]s1_tp_djinn_arena_humains
+@OnTrigger Delay=3 OnlyOnce Command [PR#]cmd say *** JUMP DOWN NOW AND ESCAPE THE OBELISK ***
+@OnTrigger OnlyOnce Fade [PR#]phase3_fadedeath
+@OnTrigger Delay=1 OnlyOnce ForceSpawn [PR#]template_xz_havan
+@OnTrigger OnlyOnce StopSound [PR#]s1_music07
+@OnTrigger Delay=2 OnlyOnce PlaySound [PR#]s1_music08
+@OnTrigger OnlyOnce Toggle [PR#]stage1_ending_toggle
+@OnTrigger OnlyOnce Open [PR#]s1_door_obelisk1
+@OnTrigger OnlyOnce Open [PR#]s1_door_obelisk2
+@OnTrigger Delay=10 OnlyOnce Break [PR#]s1_breakzm_room
+@OnTrigger OnlyOnce Toggle [PR#]stage1_antiglitch_toggle
+@OnTrigger OnlyOnce Enable [PR#]s1_tp_zmreset_attack
+@OnTrigger Delay=1 OnlyOnce Kill [PR#]s1_tp_zmreset_attack
+@OnTrigger Delay=0.02 OnlyOnce kill [PR#]phase3_*
+@OnTrigger OnlyOnce kill [PR#]kml*
+@OnTrigger OnlyOnce kill [PR#]try*
+@OnTrigger OnlyOnce kill [PR#]fsq*
+@OnTrigger OnlyOnce kill [PR#]pads*
+@OnTrigger OnlyOnce kill [PR#]rez*
+@OnTrigger OnlyOnce kill [PR#]jlk*
+@OnTrigger OnlyOnce kill [PR#]hze*
+@OnTrigger OnlyOnce kill [PR#]hwx*
+@OnTrigger OnlyOnce kill [PR#]abxz*
+@OnTrigger OnlyOnce kill [PR#]sklm*
+@OnTrigger OnlyOnce kill [PR#]pads*
+@OnTrigger OnlyOnce kill [PR#]mze*
+@OnTrigger OnlyOnce kill [PR#]bry*
+@OnTrigger OnlyOnce kill [PR#]brpz*
+
+====21====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+enableuseoutput                Boolean    False
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+uselocaloffset                 Boolean    False
+nointerpolate                  Boolean    False
+spawnobject                    CString    0
+spawnflags                     Integer64  52224
+rendermode                     CString    5
+renderfx                       CString    0
+rendercolor                    Vector     <255, 185, 151>
+renderamt                      Integer    255
+propdata                       CString    0
+pressuredelay                  Float64    0
+preferredcarryangles           Vector     <0, 0, 0>
+performancemode                CString    0
+parentname                     CString    [PR#]phase3_rotating
+notsolid                       CString    0
+nodamageforces                 Boolean    False
+material                       CString    0
+massscale                      Float64    0
+health                         Integer    4000
+gibdir                         CString    0 0 0
+forcetoenablemotion            Float64    0
+fadescale                      CString    1
+fademindist                    Float64    -1
+explosion                      CString    0
+exploderadius                  Float64    0
+explodemagnitude               Integer    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+disablereceiveshadows          Boolean    False
+damagetype                     CString    0
+damagetoenablemotion           Integer    0
+damagefilter                   CString    [PR#]filter_humans
+targetname                     CString    [PR#]phase3_break7
+classname                      CString    func_physbox
+origin                         CString    16.000000 -101.258789 -1752.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    266
+model                          CString    maps\ze_djinn\entities\phase3_break7_266.vmdl
+_template_lump_ent_index       CString    21
+
+====22====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]phase3_att13
+classname                      CString    logic_relay
+origin                         CString    144.000000 355.741211 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1024
+_template_lump_ent_index       CString    22
+@OnTrigger Delay=18 PickRandomShuffle [PR#]phase3_attack_case
+@OnTrigger ForceSpawn [PR#]template_mze
+@OnTrigger Delay=3.5 ForceSpawn [PR#]phase3_maker_beam
+@OnTrigger Delay=8 ForceSpawn [PR#]phase3_maker_beam
+
+====23====
+case28                         CString    UnpressedDuck
+case27                         CString    UnpressedSpeed
+case26                         CString    UnpressedAttack2
+case25                         CString    UnpressedAttack
+case24                         CString    UnpressedMoveRight
+case23                         CString    UnpressedBack
+case22                         CString    UnpressedMoveLeft
+case21                         CString    UnpressedForward
+case18                         CString    PressedDuck
+case17                         CString    PressedSpeed
+case16                         CString    PressedAttack2
+case15                         CString    PressedAttack
+case14                         CString    PressedMoveRight
+case13                         CString    PressedBack
+case12                         CString    PressedMoveLeft
+case11                         CString    PressedForward
+case02                         CString    PlayerOff
+case01                         CString    PlayerOn
+spawnflags                     Integer    0
+targetname                     CString    [PR#]phase3_dodge_choose
+classname                      CString    logic_case
+origin                         CString    48.000000 371.741211 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    297
+_template_lump_ent_index       CString    23
+@OnCase01 ForceSpawn [PR#]phase3_ballbeam_maker1
+@OnCase02 ForceSpawn [PR#]phase3_ballbeam_maker2
+@OnCase03 ForceSpawn [PR#]phase3_ballbeam_maker3
+@OnCase04 ForceSpawn [PR#]phase3_ballbeam_maker4
+@OnCase05 ForceSpawn [PR#]phase3_ballbeam_maker5
+@OnCase06 ForceSpawn [PR#]phase3_ballbeam_maker6
+@OnCase07 ForceSpawn [PR#]phase3_ballbeam_maker7
+@OnCase08 ForceSpawn [PR#]phase3_ballbeam_maker8
+
+====24====
+max                            Integer    9999999
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]phase3_health_main
+classname                      CString    math_counter
+origin                         CString    16.000000 35.741211 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    279
+_template_lump_ent_index       CString    24
+@OnHitMin Subtract [PR#]phase3_healthcount 1
+
+====25====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_rez
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_rotating
+targetname                     CString    [PR#]phase3_rez_maker13
+classname                      CString    env_entity_maker
+origin                         CString    -755.039978 1094.781250 -2080.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    314
+_template_lump_ent_index       CString    25
+
+====26====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_rez
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_rotating
+targetname                     CString    [PR#]phase3_rez_maker16
+classname                      CString    env_entity_maker
+origin                         CString    1512.000000 155.741211 -2080.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    309
+_template_lump_ent_index       CString    26
+
+====27====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]phase3_att5
+classname                      CString    logic_relay
+origin                         CString    192.000000 403.741211 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    320
+_template_lump_ent_index       CString    27
+@OnTrigger ForceSpawn [PR#]template_nvb
+@OnTrigger Delay=3 ForceSpawn [PR#]template_nvb
+@OnTrigger Delay=6 ForceSpawn [PR#]template_nvb
+@OnTrigger Delay=3 Enable [PR#]phase3_timer_dodge
+@OnTrigger Delay=9 Disable [PR#]phase3_timer_dodge
+@OnTrigger Delay=11 PickRandomShuffle [PR#]phase3_attack_case
+
+====28====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]phase3_att8
+classname                      CString    logic_relay
+origin                         CString    336.000000 403.741211 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    855
+_template_lump_ent_index       CString    28
+@OnTrigger ForceSpawn [PR#]phase3_rot_firemaker
+@OnTrigger Delay=15 PickRandomShuffle [PR#]phase3_attack_case
+@OnTrigger Delay=7 Enable [PR#]phase3_timer_dodge
+@OnTrigger Delay=12 Disable [PR#]phase3_timer_dodge
+
+====29====
+case28                         CString    UnpressedDuck
+case27                         CString    UnpressedSpeed
+case26                         CString    UnpressedAttack2
+case25                         CString    UnpressedAttack
+case24                         CString    UnpressedMoveRight
+case23                         CString    UnpressedBack
+case22                         CString    UnpressedMoveLeft
+case21                         CString    UnpressedForward
+case18                         CString    PressedDuck
+case17                         CString    PressedSpeed
+case16                         CString    PressedAttack2
+case15                         CString    PressedAttack
+case14                         CString    PressedMoveRight
+case13                         CString    PressedBack
+case12                         CString    PressedMoveLeft
+case11                         CString    PressedForward
+case02                         CString    PlayerOff
+case01                         CString    PlayerOn
+spawnflags                     Integer    0
+targetname                     CString    [PR#]phase3_rez_case
+classname                      CString    logic_case
+origin                         CString    0.000000 387.741211 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    295
+_template_lump_ent_index       CString    29
+@OnCase01 ForceSpawn [PR#]phase3_rez_maker1
+@OnCase02 ForceSpawn [PR#]phase3_rez_maker2
+@OnCase03 ForceSpawn [PR#]phase3_rez_maker3
+@OnCase04 ForceSpawn [PR#]phase3_rez_maker4
+@OnCase05 ForceSpawn [PR#]phase3_rez_maker5
+@OnCase06 ForceSpawn [PR#]phase3_rez_maker6
+@OnCase07 ForceSpawn [PR#]phase3_rez_maker7
+@OnCase08 ForceSpawn [PR#]phase3_rez_maker8
+@OnCase09 ForceSpawn [PR#]phase3_rez_maker9
+@OnCase10 ForceSpawn [PR#]phase3_rez_maker10
+@OnCase11 ForceSpawn [PR#]phase3_rez_maker11
+@OnCase12 ForceSpawn [PR#]phase3_rez_maker12
+@OnCase13 ForceSpawn [PR#]phase3_rez_maker13
+@OnCase14 ForceSpawn [PR#]phase3_rez_maker14
+@OnCase15 ForceSpawn [PR#]phase3_rez_maker15
+@OnCase16 ForceSpawn [PR#]phase3_rez_maker16
+
+====30====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_rez
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_rotating
+targetname                     CString    [PR#]phase3_rez_maker5
+classname                      CString    env_entity_maker
+origin                         CString    -541.250000 908.991211 -2080.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    287
+_template_lump_ent_index       CString    30
+
+====31====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_try
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_doorbeamball
+targetname                     CString    [PR#]phase3_ballbeam_maker2
+classname                      CString    env_entity_maker
+origin                         CString    96.319946 271.420898 -2064.000000
+angles                         CString    -0.000000 124.999992 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    338
+_template_lump_ent_index       CString    31
+@OnUser1 ForceSpawnAtEntityOrigin [PR#]fsq_sphere_maker !caller
+@OnUser3 ForceSpawnAtEntityOrigin [PR#]maker_sklm !caller
+@OnUser2 ForceSpawnAtEntityOrigin [PR#]pads_maker !caller
+@OnUser4 ForceSpawnAtEntityOrigin [PR#]maker_brpz !caller
+
+====32====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_try
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_doorbeamball
+targetname                     CString    [PR#]phase3_ballbeam_maker5
+classname                      CString    env_entity_maker
+origin                         CString    308.000000 183.741211 -2064.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    333
+_template_lump_ent_index       CString    32
+@OnUser1 ForceSpawnAtEntityOrigin [PR#]fsq_sphere_maker !caller
+@OnUser3 ForceSpawnAtEntityOrigin [PR#]maker_sklm !caller
+@OnUser2 ForceSpawnAtEntityOrigin [PR#]pads_maker !caller
+@OnUser4 ForceSpawnAtEntityOrigin [PR#]maker_brpz !caller
+
+====33====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+enableuseoutput                Boolean    False
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+uselocaloffset                 Boolean    False
+nointerpolate                  Boolean    False
+spawnobject                    CString    0
+spawnflags                     Integer64  52224
+rendermode                     CString    0
+renderfx                       CString    0
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+propdata                       CString    0
+pressuredelay                  Float64    0
+preferredcarryangles           Vector     <0, 0, 0>
+performancemode                CString    0
+notsolid                       CString    0
+nodamageforces                 Boolean    False
+material                       CString    2
+massscale                      Float64    0
+health                         Integer    99999999
+gibdir                         CString    0 0 0
+forcetoenablemotion            Float64    0
+fadescale                      CString    1
+fademindist                    Float64    -1
+explosion                      CString    0
+exploderadius                  Float64    0
+explodemagnitude               Integer    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+disablereceiveshadows          Boolean    False
+damagetype                     CString    0
+damagetoenablemotion           Integer    0
+damagefilter                   CString    [PR#]Filter_Nada
+targetname                     CString    [PR#]phase3_hitbox
+classname                      CString    func_physbox
+origin                         CString    168.000000 203.741211 -1816.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    281
+model                          CString    maps\ze_djinn\entities\phase3_hitbox_281.vmdl
+_template_lump_ent_index       CString    33
+@OnHealthChanged Subtract [PR#]phase3_health_main 1
+@OnBreak OnlyOnce Trigger [PR#]phase3_death_relay
+
+====34====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_stack
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_rotating
+targetname                     CString    [PR#]phase3_stack_maker1
+classname                      CString    env_entity_maker
+origin                         CString    -488.000000 187.741211 -2079.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1054
+_template_lump_ent_index       CString    34
+
+====35====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_kml
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_rotating
+targetname                     CString    [PR#]phase3_kml_maker
+classname                      CString    env_entity_maker
+origin                         CString    184.000000 195.741211 -2080.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    302
+_template_lump_ent_index       CString    35
+
+====36====
+wait                           Float64    1
+filtername                     CString    [PR#]filter_zombies
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]phase3_trigger_gravity_arenazm
+classname                      CString    trigger_multiple
+origin                         CString    152.000000 187.741211 -1912.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    345
+model                          CString    maps\ze_djinn\entities\phase3_trigger_gravity_arenazm_345.vmdl
+_template_lump_ent_index       CString    36
+@OnStartTouch Keyvalue !activator Speed 0.75
+@OnStartTouch Keyvalue !activator gravity 0.25
+
+====37====
+defaultanim                    CString    idle
+fadescale                      CString    1
+maxanimtime                    CString    10
+minanimtime                    CString    5
+modelscale                     CString    1.200000
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_LOOPING
+idleanim                       CString    grimreaper_attack_motion__idle_0
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    grimreaper_attack_motion__idle_0
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+breakablecontentstype          CString    BC_DEFAULT
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+nointerpolate                  Boolean    False
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    default
+model                          CString    models/monster/grimreaper/grimreaper_altheron.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_rotating
+targetname                     CString    [PR#]phase3_model
+classname                      CString    prop_dynamic
+origin                         CString    188.000000 219.741211 -1968.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1670
+_template_lump_ent_index       CString    37
+
+====38====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+enableuseoutput                Boolean    False
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+uselocaloffset                 Boolean    False
+nointerpolate                  Boolean    False
+spawnobject                    CString    0
+spawnflags                     Integer64  52224
+rendermode                     CString    5
+renderfx                       CString    0
+rendercolor                    Vector     <255, 185, 151>
+renderamt                      Integer    255
+propdata                       CString    0
+pressuredelay                  Float64    0
+preferredcarryangles           Vector     <0, 0, 0>
+performancemode                CString    0
+parentname                     CString    [PR#]phase3_rotating
+notsolid                       CString    0
+nodamageforces                 Boolean    False
+material                       CString    0
+massscale                      Float64    0
+health                         Integer    4000
+gibdir                         CString    0 0 0
+forcetoenablemotion            Float64    0
+fadescale                      CString    1
+fademindist                    Float64    -1
+explosion                      CString    0
+exploderadius                  Float64    0
+explodemagnitude               Integer    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+disablereceiveshadows          Boolean    False
+damagetype                     CString    0
+damagetoenablemotion           Integer    0
+damagefilter                   CString    [PR#]filter_humans
+targetname                     CString    [PR#]phase3_break3
+classname                      CString    func_physbox
+origin                         CString    352.000000 476.741211 -1752.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    254
+model                          CString    maps\ze_djinn\entities\phase3_break3_254.vmdl
+_template_lump_ent_index       CString    38
+
+====39====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+enableuseoutput                Boolean    False
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+uselocaloffset                 Boolean    False
+nointerpolate                  Boolean    False
+spawnobject                    CString    0
+spawnflags                     Integer64  52224
+rendermode                     CString    5
+renderfx                       CString    0
+rendercolor                    Vector     <255, 185, 151>
+renderamt                      Integer    255
+propdata                       CString    0
+pressuredelay                  Float64    0
+preferredcarryangles           Vector     <0, 0, 0>
+performancemode                CString    0
+parentname                     CString    [PR#]phase3_rotating
+notsolid                       CString    0
+nodamageforces                 Boolean    False
+material                       CString    0
+massscale                      Float64    0
+health                         Integer    4000
+gibdir                         CString    0 0 0
+forcetoenablemotion            Float64    0
+fadescale                      CString    1
+fademindist                    Float64    -1
+explosion                      CString    0
+exploderadius                  Float64    0
+explodemagnitude               Integer    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+disablereceiveshadows          Boolean    False
+damagetype                     CString    0
+damagetoenablemotion           Integer    0
+damagefilter                   CString    [PR#]filter_humans
+targetname                     CString    [PR#]phase3_break6
+classname                      CString    func_physbox
+origin                         CString    269.560059 -135.409180 -1752.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    263
+model                          CString    maps\ze_djinn\entities\phase3_break6_263.vmdl
+_template_lump_ent_index       CString    39
+
+====40====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]phase3_att14
+classname                      CString    logic_relay
+origin                         CString    96.000000 355.741211 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1056
+_template_lump_ent_index       CString    40
+@OnTrigger Delay=12 PickRandomShuffle [PR#]phase3_attack_case
+@OnTrigger PickRandom [PR#]phase3_stack_case
+@OnTrigger Command [PR#]CMD say *** STACK ***
+@OnTrigger Delay=2 ForceSpawn [PR#]phase3_maker_beam
+@OnTrigger Delay=3.5 ForceSpawn [PR#]phase3_maker_beam
+@OnTrigger Delay=5 ForceSpawn [PR#]phase3_maker_beam
+@OnTrigger Delay=9 ForceSpawn [PR#]template_nvb
+
+====41====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_rez
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_rotating
+targetname                     CString    [PR#]phase3_rez_maker12
+classname                      CString    env_entity_maker
+origin                         CString    -1144.000000 155.741211 -2080.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    313
+_template_lump_ent_index       CString    41
+
+====42====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_rez
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_rotating
+targetname                     CString    [PR#]phase3_rez_maker15
+classname                      CString    env_entity_maker
+origin                         CString    1123.040039 1094.781250 -2080.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    308
+_template_lump_ent_index       CString    42
+
+====43====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]phase3_startrelay
+classname                      CString    logic_relay
+origin                         CString    48.000000 35.741211 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    285
+_template_lump_ent_index       CString    43
+@OnTrigger OnlyOnce Enable [PR#]phase3_addhp
+@OnTrigger Delay=0.04 OnlyOnce Disable [PR#]phase3_addhp
+@OnTrigger Delay=0.1 OnlyOnce SetDamageFilter [PR#]phase3_hitbox
+@OnTrigger Delay=0.1 OnlyOnce Open [PR#]phase3_doorbeamball
+@OnTrigger Delay=0.1 OnlyOnce PickRandomShuffle [PR#]phase3_attack_case
+@OnTrigger OnlyOnce Start [PR#]phase3_circle_p
+@OnTrigger OnlyOnce Kill [PR#]s1_torch_sprite
+@OnTrigger OnlyOnce Kill [PR#]s1_torch_particle
+@OnTrigger OnlyOnce Kill [PR#]s1_green_light_p
+@OnTrigger OnlyOnce Kill [PR#]s1_cyan_big_light_particle
+@OnTrigger OnlyOnce Kill [PR#]boulder_particle
+@OnTrigger OnlyOnce Kill [PR#]s1_boostup_p
+@OnTrigger OnlyOnce Kill [PR#]s1_havan_small_maker
+
+====44====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]phase3_att1
+classname                      CString    logic_relay
+origin                         CString    0.000000 403.741211 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    294
+_template_lump_ent_index       CString    44
+@OnTrigger PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=0.02 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=0.04 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=3 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=3.02 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=3.04 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=0.06 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=3.08 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=8 PickRandomShuffle [PR#]phase3_attack_case
+@OnTrigger Delay=0.08 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=0.1 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=0.12 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=3.1 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=3.12 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=0.14 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=0.16 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=3.14 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=3.16 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=3 ForceSpawn [PR#]template_nvb
+@OnTrigger Delay=6.02 ForceSpawn [PR#]template_nvb
+@OnTrigger Delay=5.16 FireUser4 [PR#]phase3_ballbeam_maker*
+@OnTrigger Delay=6.16 FireUser4 [PR#]phase3_ballbeam_maker*
+@OnTrigger Delay=1.4 FireUser2 [PR#]phase3_ballbeam_maker*
+@OnTrigger Delay=1.6 FireUser2 [PR#]phase3_ballbeam_maker*
+@OnTrigger Delay=1.8 FireUser2 [PR#]phase3_ballbeam_maker*
+@OnTrigger Delay=2 FireUser2 [PR#]phase3_ballbeam_maker*
+@OnTrigger Delay=3.2 FireUser2 [PR#]phase3_ballbeam_maker*
+@OnTrigger Delay=3.4 FireUser2 [PR#]phase3_ballbeam_maker*
+@OnTrigger Delay=3.6 FireUser2 [PR#]phase3_ballbeam_maker*
+@OnTrigger Delay=3.8 FireUser2 [PR#]phase3_ballbeam_maker*
+@OnTrigger Delay=4 FireUser2 [PR#]phase3_ballbeam_maker*
+@OnTrigger Delay=4.2 FireUser2 [PR#]phase3_ballbeam_maker*
+
+====45====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]phase3_att4
+classname                      CString    logic_relay
+origin                         CString    144.000000 403.741211 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    306
+_template_lump_ent_index       CString    45
+@OnTrigger ForceSpawn [PR#]phase3_npc_maker2
+@OnTrigger Delay=11 PickRandom [PR#]phase3_rez_case
+@OnTrigger Delay=5 ForceSpawn [PR#]phase3_npc_maker1
+@OnTrigger Delay=11.02 PickRandom [PR#]phase3_rez_case
+@OnTrigger Delay=15 PickRandomShuffle [PR#]phase3_attack_case
+@OnTrigger Delay=10 PickRandom [PR#]phase3_rez_case
+@OnTrigger Delay=10.02 PickRandom [PR#]phase3_rez_case
+@OnTrigger Delay=10.04 PickRandom [PR#]phase3_rez_case
+@OnTrigger Delay=10.06 PickRandom [PR#]phase3_rez_case
+@OnTrigger Delay=11.04 PickRandom [PR#]phase3_rez_case
+@OnTrigger Delay=2 ForceSpawn [PR#]template_nvb
+@OnTrigger Delay=5.02 ForceSpawn [PR#]template_nvb
+@OnTrigger Delay=6 Enable [PR#]phase3_timer_dodge
+@OnTrigger Delay=12.5 Disable [PR#]phase3_timer_dodge
+
+====46====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_rez
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_rotating
+targetname                     CString    [PR#]phase3_rez_maker1
+classname                      CString    env_entity_maker
+origin                         CString    1063.350098 -322.258789 -2080.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    291
+_template_lump_ent_index       CString    46
+
+====47====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_rez
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_rotating
+targetname                     CString    [PR#]phase3_rez_maker6
+classname                      CString    env_entity_maker
+origin                         CString    180.000000 1207.741211 -2080.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    288
+_template_lump_ent_index       CString    47
+
+====48====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_try
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_doorbeamball
+targetname                     CString    [PR#]phase3_ballbeam_maker1
+classname                      CString    env_entity_maker
+origin                         CString    60.000000 183.741211 -2064.000000
+angles                         CString    -0.000000 -179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    337
+_template_lump_ent_index       CString    48
+@OnUser1 ForceSpawnAtEntityOrigin [PR#]fsq_sphere_maker !caller
+@OnUser3 ForceSpawnAtEntityOrigin [PR#]maker_sklm !caller
+@OnUser2 ForceSpawnAtEntityOrigin [PR#]pads_maker !caller
+@OnUser4 ForceSpawnAtEntityOrigin [PR#]maker_brpz !caller
+
+====49====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_try
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_doorbeamball
+targetname                     CString    [PR#]phase3_ballbeam_maker4
+classname                      CString    env_entity_maker
+origin                         CString    271.680054 271.420898 -2064.000000
+angles                         CString    -0.000000 45.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    332
+_template_lump_ent_index       CString    49
+@OnUser1 ForceSpawnAtEntityOrigin [PR#]fsq_sphere_maker !caller
+@OnUser3 ForceSpawnAtEntityOrigin [PR#]maker_sklm !caller
+@OnUser2 ForceSpawnAtEntityOrigin [PR#]pads_maker !caller
+@OnUser4 ForceSpawnAtEntityOrigin [PR#]maker_brpz !caller
+
+====50====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_npc_particle
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_rotating
+targetname                     CString    [PR#]phase3_npc_maker2
+classname                      CString    env_entity_maker
+origin                         CString    184.000000 19.741211 -2024.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    305
+_template_lump_ent_index       CString    50
+
+====51====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_bry
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_rotating_fast
+targetname                     CString    [PR#]phase3_redbeam_maker
+classname                      CString    env_entity_maker
+origin                         CString    184.000000 187.741211 -2040.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1069
+_template_lump_ent_index       CString    51
+
+====52====
+wait                           Float64    1
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]phase3_addhp
+classname                      CString    trigger_multiple
+origin                         CString    184.000000 187.741211 -1864.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    283
+model                          CString    maps\ze_djinn\entities\phase3_addhp_283.vmdl
+_template_lump_ent_index       CString    52
+@OnStartTouch Add [PR#]phase3_health_main 100
+
+====53====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+enableuseoutput                Boolean    False
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+uselocaloffset                 Boolean    False
+nointerpolate                  Boolean    False
+spawnobject                    CString    0
+spawnflags                     Integer64  52224
+rendermode                     CString    5
+renderfx                       CString    0
+rendercolor                    Vector     <255, 185, 151>
+renderamt                      Integer    255
+propdata                       CString    0
+pressuredelay                  Float64    0
+preferredcarryangles           Vector     <0, 0, 0>
+performancemode                CString    0
+parentname                     CString    [PR#]phase3_rotating
+notsolid                       CString    0
+nodamageforces                 Boolean    False
+material                       CString    0
+massscale                      Float64    0
+health                         Integer    4000
+gibdir                         CString    0 0 0
+forcetoenablemotion            Float64    0
+fadescale                      CString    1
+fademindist                    Float64    -1
+explosion                      CString    0
+exploderadius                  Float64    0
+explodemagnitude               Integer    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+disablereceiveshadows          Boolean    False
+damagetype                     CString    0
+damagetoenablemotion           Integer    0
+damagefilter                   CString    [PR#]filter_humans
+targetname                     CString    [PR#]phase3_break2
+classname                      CString    func_physbox
+origin                         CString    98.439941 510.891602 -1752.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    275
+model                          CString    maps\ze_djinn\entities\phase3_break2_275.vmdl
+_template_lump_ent_index       CString    53
+
+====54====
+fadescale                      CString    1
+solidbsp                       CString    0
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+dmg                            Integer    0
+spawnflags                     Integer64  65
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    75
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]phase3_rotating_fast
+classname                      CString    func_rotating
+origin                         CString    188.000000 187.741211 -1808.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1795
+model                          CString    maps\ze_djinn\entities\phase3_rotating_fast_1795.vmdl
+_template_lump_ent_index       CString    54
+
+====55====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_hze
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_rotating
+targetname                     CString    [PR#]phase3_maker_beam
+classname                      CString    env_entity_maker
+origin                         CString    184.000000 203.741211 -2048.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    890
+_template_lump_ent_index       CString    55
+
+====56====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]phase3_att10
+classname                      CString    logic_relay
+origin                         CString    288.000000 355.741211 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    891
+_template_lump_ent_index       CString    56
+@OnTrigger Delay=16 PickRandomShuffle [PR#]phase3_attack_case
+@OnTrigger Delay=3.5 Enable [PR#]phase3_timer_dodge
+@OnTrigger Delay=10 Disable [PR#]phase3_timer_dodge
+@OnTrigger ForceSpawn [PR#]phase3_maker_beam
+@OnTrigger Delay=4.52 ForceSpawn [PR#]phase3_maker_beam
+@OnTrigger Delay=9.04 ForceSpawn [PR#]phase3_maker_beam
+@OnTrigger Delay=3 ForceSpawn [PR#]phase3_maker_beam
+@OnTrigger Delay=7 ForceSpawn [PR#]phase3_maker_beam
+@OnTrigger Delay=10 ForceSpawn [PR#]phase3_maker_beam
+@OnTrigger Delay=9 ForceSpawn [PR#]template_nvb
+@OnTrigger Delay=12.02 ForceSpawn [PR#]template_nvb
+
+====57====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]phase3_att15
+classname                      CString    logic_relay
+origin                         CString    48.000000 355.741211 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1070
+_template_lump_ent_index       CString    57
+@OnTrigger Delay=14 PickRandomShuffle [PR#]phase3_attack_case
+@OnTrigger ForceSpawn [PR#]phase3_redbeam_maker
+@OnTrigger Delay=4 ForceSpawn [PR#]phase3_redbeam_maker
+@OnTrigger Delay=1.5 ForceSpawn [PR#]template_nvb
+@OnTrigger Delay=3.02 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=3.04 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=3.06 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=3.08 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=5 ForceSpawn [PR#]template_nvb
+@OnTrigger Delay=6.02 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=6.04 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=6.06 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=6.08 PickRandomShuffle [PR#]phase3_rez_case
+@OnTrigger Delay=8 ForceSpawn [PR#]template_nvb
+@OnTrigger Delay=7 FireUser3 [PR#]phase3_ballbeam_maker*
+
+====58====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_rez
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_rotating
+targetname                     CString    [PR#]phase3_rez_maker11
+classname                      CString    env_entity_maker
+origin                         CString    -755.039978 -783.298828 -2080.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    312
+_template_lump_ent_index       CString    58
+
+====59====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_rez
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_rotating
+targetname                     CString    [PR#]phase3_rez_maker14
+classname                      CString    env_entity_maker
+origin                         CString    184.000000 1483.741211 -2080.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    307
+_template_lump_ent_index       CString    59
+
+====60====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]phase3_att7
+classname                      CString    logic_relay
+origin                         CString    288.000000 403.741211 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    848
+_template_lump_ent_index       CString    60
+@OnTrigger Delay=17 PickRandomShuffle [PR#]phase3_attack_case
+@OnTrigger Delay=11.5 ForceSpawn [PR#]phase3_redbeam_maker
+@OnTrigger Delay=14 ForceSpawn [PR#]template_nvb
+@OnTrigger FireUser1 [PR#]phase3_ballbeam_maker*
+@OnTrigger Delay=5 FireUser1 [PR#]phase3_ballbeam_maker*
+@OnTrigger Delay=10 FireUser1 [PR#]phase3_ballbeam_maker*
+
+====61====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_rez
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_rotating
+targetname                     CString    [PR#]phase3_rez_maker2
+classname                      CString    env_entity_maker
+origin                         CString    444.000000 -797.499023 -2080.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    292
+_template_lump_ent_index       CString    61
+
+====62====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_rez
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]phase3_rotating
+targetname                     CString    [PR#]phase3_rez_maker7
+classname                      CString    env_entity_maker
+origin                         CString    901.250000 908.991211 -2080.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    289
+_template_lump_ent_index       CString    62
+
+====63====
+initialdelay                   Float64    0
+refiretime                     Float64    0.699999988079071
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    False
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]phase3_timer_ball
+classname                      CString    logic_timer
+origin                         CString    240.000000 339.741211 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    898
+_template_lump_ent_index       CString    63
+@OnTimer FireUser2 [PR#]phase3_ballbeam_maker*
+
+====64====
+fadescale                      CString    1
+solidbsp                       CString    0
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+dmg                            Integer    0
+spawnflags                     Integer64  65
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    22
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]phase3_rotating
+classname                      CString    func_rotating
+origin                         CString    188.000000 187.741211 -1788.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1671
+model                          CString    maps\ze_djinn\entities\phase3_rotating_1671.vmdl
+_template_lump_ent_index       CString    64
+
+====65====
+max                            Integer    10
+min                            Integer    0
+startvalue                     Integer    10
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]phase3_healthcount
+classname                      CString    math_counter
+origin                         CString    32.000000 35.741211 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    280
+_template_lump_ent_index       CString    65
+@OnHitMin Trigger [PR#]phase3_death_relay
+@OutValue Delay=0.04 Disable [PR#]phase3_addhp
+@OutValue Enable [PR#]phase3_addhp
+

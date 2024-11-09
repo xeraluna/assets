@@ -1,0 +1,681 @@
+====0====
+case28                         CString    UnpressedDuck
+case27                         CString    UnpressedSpeed
+case26                         CString    UnpressedAttack2
+case25                         CString    UnpressedAttack
+case24                         CString    UnpressedMoveRight
+case23                         CString    UnpressedBack
+case22                         CString    UnpressedMoveLeft
+case21                         CString    UnpressedForward
+case18                         CString    PressedDuck
+case17                         CString    PressedSpeed
+case16                         CString    PressedAttack2
+case15                         CString    PressedAttack
+case14                         CString    PressedMoveRight
+case13                         CString    PressedBack
+case12                         CString    PressedMoveLeft
+case11                         CString    10
+case10                         CString    9
+case09                         CString    8
+case08                         CString    7
+case07                         CString    6
+case06                         CString    5
+case05                         CString    4
+case04                         CString    3
+case03                         CString    2
+case02                         CString    1
+case01                         CString    0
+spawnflags                     Integer    0
+targetname                     CString    [PR#]havan_HealthCountCASE
+classname                      CString    logic_case
+origin                         CString    -338.663086 -12.742188 41.999023
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1990
+_template_lump_ent_index       CString    0
+@OnCase01 setalphascale [PR#]havan_hpbar 0
+@OnCase02 setalphascale [PR#]havan_hpbar 1
+@OnCase03 setalphascale [PR#]havan_hpbar 2
+@OnCase04 setalphascale [PR#]havan_hpbar 3
+@OnCase05 setalphascale [PR#]havan_hpbar 4
+@OnCase06 setalphascale [PR#]havan_hpbar 5
+@OnCase07 setalphascale [PR#]havan_hpbar 6
+@OnCase08 setalphascale [PR#]havan_hpbar 7
+@OnCase09 setalphascale [PR#]havan_hpbar 8
+@OnCase10 setalphascale [PR#]havan_hpbar 9
+@OnCase11 setalphascale [PR#]havan_hpbar 10
+
+====1====
+filtername                     CString    [PR#]Tar_havan_Tar
+negated                        CString    0
+targetname                     CString    [PR#]havan_Tar_Filt
+classname                      CString    filter_activator_name
+origin                         CString    -358.000000 -76.600586 42.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    197
+_template_lump_ent_index       CString    1
+
+====2====
+wait                           Float64    1.5
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]havan_Model
+targetname                     CString    [PR#]havan_multipleanimtrig
+classname                      CString    trigger_multiple
+origin                         CString    73.599609 -24.200195 236.700195
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    167
+model                          CString    maps\ze_djinn\entities\havan_multipleanimtrig_167.vmdl
+_template_lump_ent_index       CString    2
+@OnTrigger PickRandomShuffle [PR#]havan_anim_case
+
+====3====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_tornadohavan
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]havan_rotatingtornado
+targetname                     CString    [PR#]havan_tornadomaker1
+classname                      CString    env_entity_maker
+origin                         CString    66.000000 -0.600586 -6.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    185
+_template_lump_ent_index       CString    3
+
+====4====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_tornadohavan
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]havan_rotatingtornado
+targetname                     CString    [PR#]havan_tornadomaker4
+classname                      CString    env_entity_maker
+origin                         CString    2.000000 63.399414 -6.000000
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    187
+_template_lump_ent_index       CString    4
+
+====5====
+initialdelay                   Float64    0
+upperrandombound               Float64    13
+lowerrandombound               Float64    9
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    True
+spawnflags                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]havan_attack_timer
+classname                      CString    logic_timer
+origin                         CString    -406.000000 63.399414 42.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    193
+_template_lump_ent_index       CString    5
+@OnTimer PickRandomShuffle [PR#]havan_attack_case
+
+====6====
+max                            Integer    9999999
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]havan_Health
+classname                      CString    math_counter
+origin                         CString    -358.200195 -48.600586 42.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    165
+_template_lump_ent_index       CString    6
+@OnHitMin GetValue [PR#]havan_HealthBackup
+
+====7====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    4
+damagecap                      Integer    20
+damage                         Integer    60
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]havan_Model
+targetname                     CString    [PR#]havan_Hurt
+classname                      CString    trigger_hurt
+origin                         CString    57.599609 -24.200195 236.700195
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    158
+model                          CString    maps\ze_djinn\entities\havan_Hurt_158.vmdl
+_template_lump_ent_index       CString    7
+@OnHurtPlayer FireUser1 [PR#]NoDamage
+
+====8====
+initialdelay                   Float64    0
+refiretime                     Float64    0.5
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    False
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]havan_Timer
+classname                      CString    logic_timer
+origin                         CString    -342.000000 -76.600586 42.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    194
+_template_lump_ent_index       CString    8
+
+====9====
+fadescale                      CString    1
+solidbsp                       CString    0
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+dmg                            Integer    0
+spawnflags                     Integer64  65
+volume                         Integer    10
+fanfriction                    Integer    0
+maxspeed                       Integer    200
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]havan_Hitbox
+targetname                     CString    [PR#]havan_Rotate
+classname                      CString    func_rotating
+origin                         CString    -3.600586 0.000000 -0.700195
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1623
+model                          CString    maps\ze_djinn\entities\havan_Rotate_1623.vmdl
+_template_lump_ent_index       CString    9
+
+====10====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/djinn_particles_go/custom_particle_060.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]havan_Physbox
+targetname                     CString    [PR#]havan_impact_p
+classname                      CString    info_particle_system
+origin                         CString    2.000000 108.599609 2.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1626
+_template_lump_ent_index       CString    10
+
+====11====
+wait                           Float64    1
+filtername                     CString    [PR#]Filter_Grenade
+spawnflags                     Integer64  1088
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]havan_Hitbox
+targetname                     CString    [PR#]havan_Nade
+classname                      CString    trigger_multiple
+origin                         CString    -6.000000 -4.600586 122.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    160
+model                          CString    maps\ze_djinn\entities\havan_Nade_160.vmdl
+_template_lump_ent_index       CString    11
+@OnStartTouch Subtract [PR#]havan_Health 10
+@OnStartTouch Delay=0.01 Subtract [PR#]havan_Health 10
+@OnStartTouch Delay=0.02 Subtract [PR#]havan_Health 10
+@OnStartTouch Delay=0.03 Subtract [PR#]havan_Health 10
+@OnStartTouch Kill !activator
+@OnStartTouch Delay=0.01 ForceSpawnAtEntityOrigin [PR#]Global_Gren_Maker !caller
+@OnStartTouch PlaySound [PR#]global_nade_bosssound
+@OnStartTouch Delay=0.01 StopSound [PR#]global_nade_bosssound
+
+====12====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]havan_relay
+classname                      CString    logic_relay
+origin                         CString    -390.000000 -48.600586 42.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    162
+_template_lump_ent_index       CString    12
+@OnSpawn Delay=0.04 OnlyOnce SetAnimation [PR#]havan_Model standup
+@OnSpawn Delay=2 OnlyOnce SetAnimation [PR#]havan_Model _havan_common_motion__run_6
+@OnSpawn OnlyOnce Kill !self
+@OnSpawn Delay=2 OnlyOnce FireUser1 [PR#]havan_Model
+@OnSpawn Delay=0.4 OnlyOnce Enable [PR#]s1_havanhp_once
+@OnSpawn Delay=0.44 OnlyOnce Start [PR#]havan_hpbar
+@OnSpawn Delay=0.4 OnlyOnce SetDamageFilter [PR#]havan_Hitbox
+@OnSpawn Delay=0.44 OnlyOnce Enable [PR#]havan_Nade
+@OnSpawn Delay=0.06 OnlyOnce SetIdleAnimationLooping [PR#]havan_Model standup
+@OnSpawn Delay=2.02 OnlyOnce SetIdleAnimationLooping [PR#]havan_Model _havan_common_motion__run_6
+
+====13====
+fadescale                      CString    1
+solidbsp                       CString    0
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+dmg                            Integer    0
+spawnflags                     Integer64  65
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    8
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]havan_Hitbox
+targetname                     CString    [PR#]havan_rotatingtornado
+classname                      CString    func_rotating
+origin                         CString    2.000000 -0.600586 10.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1629
+model                          CString    maps\ze_djinn\entities\havan_rotatingtornado_1629.vmdl
+_template_lump_ent_index       CString    13
+
+====14====
+max                            Integer    10
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]havan_HealthCount
+classname                      CString    math_counter
+origin                         CString    -342.200195 -48.600586 42.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    164
+_template_lump_ent_index       CString    14
+@OnHitMax OnlyOnce Break [PR#]havan_Hitbox
+@OutValue InValue [PR#]havan_HealthCountCASE
+
+====15====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]Tar_havan_Tem
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]havan_Tar_Env
+classname                      CString    env_entity_maker
+origin                         CString    -326.000000 -76.800781 50.000000
+angles                         CString    -0.000000 -90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    196
+_template_lump_ent_index       CString    15
+
+====16====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1024
+damagecap                      Integer    20
+damage                         Integer    50
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]havan_Hitbox
+targetname                     CString    [PR#]havan_smash_hurt
+classname                      CString    trigger_hurt
+origin                         CString    -6.000000 -0.600586 24.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    171
+model                          CString    maps\ze_djinn\entities\havan_smash_hurt_171.vmdl
+_template_lump_ent_index       CString    16
+@OnStartTouch KeyValues !activator basevelocity 0 0 300
+@OnHurtPlayer FireUser1 [PR#]NoDamage
+
+====17====
+max                            Integer    9999999
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]havan_HealthBackup
+classname                      CString    math_counter
+origin                         CString    -374.200195 -48.600586 42.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    166
+_template_lump_ent_index       CString    17
+@OnGetValue Add [PR#]havan_Health
+@OnGetValue Add [PR#]havan_HealthCount 1
+@OnGetValue IncrementTextureIndex [PR#]havan_Texture
+
+====18====
+defaultanim                    CString    idle
+fadescale                      CString    1
+maxanimtime                    CString    10
+minanimtime                    CString    5
+modelscale                     CString    1.200000
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_LOOPING
+idleanim                       CString    _havan_common_motion__idle_0
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    _havan_common_motion__idle_0
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+BreakableContentsType          CString    BC_DEFAULT
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+nointerpolate                  Boolean    False
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    default
+model                          CString    models/monster/havan/havan_reference.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]havan_Model
+classname                      CString    prop_dynamic
+origin                         CString    -5.200195 -8.600586 96.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1622
+_template_lump_ent_index       CString    18
+@OnUser1 OnlyOnce Enable [PR#]havan_Timer
+
+====19====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+enableuseoutput                Boolean    False
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]havan_Model
+nointerpolate                  Boolean    False
+spawnobject                    CString    0
+spawnflags                     Integer64  52224
+rendermode                     CString    0
+renderfx                       CString    0
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+propdata                       CString    0
+pressuredelay                  Float64    0
+preferredcarryangles           Vector     <0, 0, 0>
+performancemode                CString    0
+notsolid                       CString    0
+nodamageforces                 Boolean    False
+material                       CString    2
+massscale                      Float64    0
+health                         Integer    99999999
+gibdir                         CString    0 0 0
+forcetoenablemotion            Float64    0
+fadescale                      CString    1
+fademindist                    Float64    -1
+explosion                      CString    0
+exploderadius                  Float64    0
+explodemagnitude               Integer    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+disablereceiveshadows          Boolean    False
+damagetype                     CString    0
+damagetoenablemotion           Integer    0
+damagefilter                   CString    [PR#]Filter_Nada
+targetname                     CString    [PR#]havan_Hitbox
+classname                      CString    func_physbox
+origin                         CString    -6.000000 -0.600586 252.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    156
+model                          CString    maps\ze_djinn\entities\havan_Hitbox_156.vmdl
+_template_lump_ent_index       CString    19
+@OnHealthChanged Subtract [PR#]havan_Health 1
+@OnBreak OnlyOnce Kill [PR#]havan_multipleanimtrig
+@OnBreak OnlyOnce Kill [PR#]havan_Hurt
+@OnBreak Delay=0.06 OnlyOnce SetAnimation [PR#]havan_Model _havan_common_motion__dying_from_back_2
+@OnBreak Delay=0.08 OnlyOnce SetIdleAnimationLooping [PR#]havan_Model _havan_common_motion__dying_from_back_2
+@OnBreak OnlyOnce Kill [PR#]havan_smash_hurt
+@OnBreak Delay=4 OnlyOnce Enable [PR#]s1_tp_havandead_humans
+@OnBreak Delay=11 OnlyOnce Enable [PR#]s1_tp_havandead_zm
+@OnBreak Delay=4 OnlyOnce ForceSpawn [PR#]template_xyz_havan
+@OnBreak Delay=4 OnlyOnce Toggle [PR#]level_limit_toggle
+@OnBreak Delay=25 OnlyOnce Open [PR#]s1_door06
+@OnBreak OnlyOnce StopSound [PR#]s1_music02
+@OnBreak Delay=2 OnlyOnce PlaySound [PR#]s1_music03
+@OnBreak Delay=0.02 OnlyOnce Kill [PR#]CY01Physic
+@OnBreak Delay=0.02 OnlyOnce Kill [PR#]thruster_forward
+@OnBreak Delay=0.02 OnlyOnce Kill [PR#]thruster_side
+@OnBreak Delay=0.02 OnlyOnce Kill [PR#]Boss_Keepupright
+@OnBreak OnlyOnce Kill [PR#]havan_tornadomaker*
+@OnBreak OnlyOnce Kill [PR#]tornado_hurt*
+@OnBreak OnlyOnce Kill [PR#]tornado_p1*
+@OnBreak OnlyOnce Kill [PR#]tornado_door1*
+@OnBreak Delay=4 OnlyOnce Kill [PR#]havan*
+@OnBreak OnlyOnce ClearParent [PR#]havan_Model
+@OnBreak Delay=0.5 OnlyOnce FireUser4 [PR#]Boss_Physbox
+
+====20====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_tornadohavan
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]havan_rotatingtornado
+targetname                     CString    [PR#]havan_tornadomaker3
+classname                      CString    env_entity_maker
+origin                         CString    2.000000 -64.600586 -6.000000
+angles                         CString    -0.000000 -90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    188
+_template_lump_ent_index       CString    20
+
+====21====
+case28                         CString    UnpressedDuck
+case27                         CString    UnpressedSpeed
+case26                         CString    UnpressedAttack2
+case25                         CString    UnpressedAttack
+case24                         CString    UnpressedMoveRight
+case23                         CString    UnpressedBack
+case22                         CString    UnpressedMoveLeft
+case21                         CString    UnpressedForward
+case18                         CString    PressedDuck
+case17                         CString    PressedSpeed
+case16                         CString    PressedAttack2
+case15                         CString    PressedAttack
+case14                         CString    PressedMoveRight
+case13                         CString    PressedBack
+case12                         CString    PressedMoveLeft
+case11                         CString    PressedForward
+case02                         CString    PlayerOff
+case01                         CString    PlayerOn
+spawnflags                     Integer    0
+targetname                     CString    [PR#]havan_attack_case
+classname                      CString    logic_case
+origin                         CString    -390.000000 63.399414 42.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    170
+_template_lump_ent_index       CString    21
+@OnCase01 Delay=0.02 SetAnimation [PR#]havan_Model _havan_attack_motion__havan_attack_smash_01_7
+@OnCase01 Delay=2.3 SetAnimation [PR#]havan_Model _havan_common_motion__run_6
+@OnCase01 Disable [PR#]havan_multipleanimtrig
+@OnCase01 Delay=2.32 Enable [PR#]havan_multipleanimtrig
+@OnCase01 Delay=2.1 Start [PR#]havan_impact_p
+@OnCase01 Delay=2.5 Stop [PR#]havan_impact_p
+@OnCase01 Delay=2.1 Enable [PR#]havan_smash_hurt
+@OnCase01 Delay=2.3 Disable [PR#]havan_smash_hurt
+@OnCase01 Delay=0.04 SetIdleAnimationLooping [PR#]havan_Model _havan_attack_motion__havan_attack_smash_01_7
+@OnCase02 Delay=0.02 SetAnimation [PR#]havan_Model _havan_attack_motion__havan_attack_smash_heavy_10
+@OnCase02 Disable [PR#]havan_multipleanimtrig
+@OnCase02 Delay=2.65 Start [PR#]havan_impact_p
+@OnCase02 Delay=2.65 Enable [PR#]havan_smash_hurt
+@OnCase02 Delay=2.8 Disable [PR#]havan_smash_hurt
+@OnCase02 Delay=2.82 SetAnimation [PR#]havan_Model _havan_common_motion__run_6
+@OnCase02 Delay=2.84 Enable [PR#]havan_multipleanimtrig
+@OnCase02 Delay=0.04 SetIdleAnimationLooping [PR#]havan_Model _havan_attack_motion__havan_attack_smash_heavy_10
+@OnCase03 Delay=0.02 SetAnimation [PR#]havan_Model _havan_attack_motion__havan_attack_sandstorm_5
+@OnCase03 Disable [PR#]havan_multipleanimtrig
+@OnCase03 Delay=11.02 Enable [PR#]havan_multipleanimtrig
+@OnCase03 Delay=11 SetAnimation [PR#]havan_Model _havan_common_motion__run_6
+@OnCase03 Delay=1 Forcespawn [PR#]havan_tornadomaker*
+@OnCase03 Delay=3 Forcespawn [PR#]havan_tornadomaker*
+@OnCase03 Delay=5 Forcespawn [PR#]havan_tornadomaker*
+@OnCase03 Delay=7 Forcespawn [PR#]havan_tornadomaker*
+@OnCase03 Delay=9 Forcespawn [PR#]havan_tornadomaker*
+@OnCase03 Delay=0.02 Keyvalue [PR#]Boss_ThrusterForward force 23
+@OnCase03 Delay=0.02 Keyvalue [PR#]Boss_ThrusterLeft force 12
+@OnCase03 Delay=0.02 Keyvalue [PR#]Boss_ThrusterLeft2 force 12
+@OnCase03 Delay=0.02 Keyvalue [PR#]Boss_ThrusterRight force 12
+@OnCase03 Delay=0.02 Keyvalue [PR#]Boss_ThrusterRight2 force 12
+@OnCase03 Delay=10 Keyvalue [PR#]Boss_ThrusterForward force 450
+@OnCase03 Delay=10 Keyvalue [PR#]Boss_ThrusterLeft force 500
+@OnCase03 Delay=10 Keyvalue [PR#]Boss_ThrusterLeft2 force 1000
+@OnCase03 Delay=10 Keyvalue [PR#]Boss_ThrusterRight force 500
+@OnCase03 Delay=10 Keyvalue [PR#]Boss_ThrusterRight2 force 1000
+
+====22====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_tornadohavan
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]havan_rotatingtornado
+targetname                     CString    [PR#]havan_tornadomaker2
+classname                      CString    env_entity_maker
+origin                         CString    -62.000000 -0.600586 -6.000000
+angles                         CString    -0.000000 -179.999985 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    186
+_template_lump_ent_index       CString    22
+
+====23====
+case28                         CString    UnpressedDuck
+case27                         CString    UnpressedSpeed
+case26                         CString    UnpressedAttack2
+case25                         CString    UnpressedAttack
+case24                         CString    UnpressedMoveRight
+case23                         CString    UnpressedBack
+case22                         CString    UnpressedMoveLeft
+case21                         CString    UnpressedForward
+case18                         CString    PressedDuck
+case17                         CString    PressedSpeed
+case16                         CString    PressedAttack2
+case15                         CString    PressedAttack
+case14                         CString    PressedMoveRight
+case13                         CString    PressedBack
+case12                         CString    PressedMoveLeft
+case11                         CString    PressedForward
+case02                         CString    PlayerOff
+case01                         CString    PlayerOn
+spawnflags                     Integer    0
+targetname                     CString    [PR#]havan_anim_case
+classname                      CString    logic_case
+origin                         CString    -390.000000 15.399414 42.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    169
+_template_lump_ent_index       CString    23
+@OnCase01 SetAnimation [PR#]havan_Model _havan_attack_motion__havan_attack_multiple_left_1
+@OnCase01 Delay=1.4 SetAnimation [PR#]havan_Model _havan_common_motion__run_6
+@OnCase02 SetAnimation [PR#]havan_Model _havan_attack_motion__havan_attack_multiple_right_2
+@OnCase02 Delay=1.4 SetAnimation [PR#]havan_Model _havan_common_motion__run_6
+@OnCase03 Delay=1.4 SetAnimation [PR#]havan_Model _havan_common_motion__run_6
+@OnCase03 SetAnimation [PR#]havan_Model _havan_attack_motion__havan_attack_turnleft_13
+@OnCase04 Delay=1.4 SetAnimation [PR#]havan_Model _havan_common_motion__run_6
+@OnCase04 SetAnimation [PR#]havan_Model _havan_attack_motion__havan_attack_turnright_14
+
+====24====
+s1 env_sprite material         CString    nostar_djinn/djinn_hpbar.vmt
+snapshot_mesh                  Integer    0
+alphascale                     Float64    0
+selfillumscale                 Float64    1
+colortint                      Vector     <255, 255, 255>
+scale                          Float64    1
+start_active                   Boolean    False
+effect_name                    CString    particles/ex_cube_small.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]havan_Rotate
+targetname                     CString    [PR#]havan_hpbar
+classname                      CString    env_particle_glow
+origin                         CString    -6.000000 -0.600586 618.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1625
+_template_lump_ent_index       CString    24
+
+====25====
+target                         CString    None
+targetname                     CString    [PR#]havan_Texture
+classname                      CString    env_texturetoggle
+origin                         CString    -326.000000 -48.600586 42.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    163
+_template_lump_ent_index       CString    25
+

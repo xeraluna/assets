@@ -1,0 +1,220 @@
+====0====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1024
+damagecap                      Integer    20
+damage                         Integer    70
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]hze_rot&0000
+targetname                     CString    [PR#]hze_hurt&0000
+classname                      CString    trigger_hurt
+origin                         CString    8.000000 8.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    883
+model                          CString    maps\ze_djinn\entities\hze_hurt_883.vmdl
+_template_lump_ent_index       CString    0
+@OnHurtPlayer FireUser1 [PR#]NoDamage
+
+====1====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]hze_relay&0000
+classname                      CString    logic_relay
+origin                         CString    0.000000 0.000000 57.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    888
+_template_lump_ent_index       CString    1
+@OnSpawn OnlyOnce Start [PR#]hze_p2&0000
+@OnSpawn OnlyOnce Kill !self
+@OnSpawn Delay=4 OnlyOnce Enable [PR#]hze_hurt&0000
+@OnSpawn Delay=4.5 OnlyOnce Kill [PR#]hze_hurt&0000
+@OnSpawn Delay=4.5 OnlyOnce Kill [PR#]hze_p2&0000
+@OnSpawn OnlyOnce PickRandom [PR#]hze_case&0000
+@OnSpawn Delay=4.5 OnlyOnce Kill [PR#]hze_case&0000
+@OnSpawn Delay=4.5 OnlyOnce Kill [PR#]hze_p3&0000
+@OnSpawn Delay=4.5 OnlyOnce Kill [PR#]hze_p4&0000
+@OnSpawn Delay=4.5 OnlyOnce Kill [PR#]hze_p5&0000
+@OnSpawn OnlyOnce Start [PR#]hze_p3&0000
+@OnSpawn OnlyOnce Start [PR#]hze_p4&0000
+@OnSpawn OnlyOnce Start [PR#]hze_p5&0000
+
+====2====
+fadescale                      CString    1
+solidbsp                       CString    0
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+dmg                            Integer    0
+spawnflags                     Integer64  66
+volume                         Integer    10
+fanfriction                    Integer    20
+maxspeed                       Integer    20
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]hze_rot&0000
+classname                      CString    func_rotating
+origin                         CString    0.000000 0.000000 73.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1775
+model                          CString    maps\ze_djinn\entities\hze_rot_1775.vmdl
+_template_lump_ent_index       CString    2
+
+====3====
+case28                         CString    UnpressedDuck
+case27                         CString    UnpressedSpeed
+case26                         CString    UnpressedAttack2
+case25                         CString    UnpressedAttack
+case24                         CString    UnpressedMoveRight
+case23                         CString    UnpressedBack
+case22                         CString    UnpressedMoveLeft
+case21                         CString    UnpressedForward
+case18                         CString    PressedDuck
+case17                         CString    PressedSpeed
+case16                         CString    PressedAttack2
+case15                         CString    PressedAttack
+case14                         CString    PressedMoveRight
+case13                         CString    PressedBack
+case12                         CString    PressedMoveLeft
+case11                         CString    PressedForward
+case02                         CString    PlayerOff
+case01                         CString    PlayerOn
+spawnflags                     Integer    0
+targetname                     CString    [PR#]hze_case&0000
+classname                      CString    logic_case
+origin                         CString    0.000000 2.000000 90.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    892
+_template_lump_ent_index       CString    3
+@OnCase01 Delay=0.02 OnlyOnce Start [PR#]hze_rot&0000
+@OnCase02 OnlyOnce Reverse [PR#]hze_rot&0000
+@OnCase02 Delay=0.02 OnlyOnce Start [PR#]hze_rot&0000
+@OnCase01 Delay=3.8 OnlyOnce Stop [PR#]hze_rot&0000
+@OnCase02 Delay=3.8 OnlyOnce Stop [PR#]hze_rot&0000
+
+====4====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/djinn_phase3_go/custom_particle_550.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]hze_rot&0000
+targetname                     CString    [PR#]hze_p2&0000
+classname                      CString    info_particle_system
+origin                         CString    0.000000 -0.049805 0.000000
+angles                         CString    -0.000000 -45.000004 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1774
+_template_lump_ent_index       CString    4
+
+====5====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/djinn_phase3_go/custom_particle_550.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]hze_rot&0000
+targetname                     CString    [PR#]hze_p3&0000
+classname                      CString    info_particle_system
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1771
+_template_lump_ent_index       CString    5
+
+====6====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/djinn_phase3_go/custom_particle_550.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]hze_rot&0000
+targetname                     CString    [PR#]hze_p4&0000
+classname                      CString    info_particle_system
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 -90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1772
+_template_lump_ent_index       CString    6
+
+====7====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/djinn_phase3_go/custom_particle_550.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]hze_rot&0000
+targetname                     CString    [PR#]hze_p5&0000
+classname                      CString    info_particle_system
+origin                         CString    0.000000 -0.049805 0.000000
+angles                         CString    -0.000000 -135.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1773
+_template_lump_ent_index       CString    7
+

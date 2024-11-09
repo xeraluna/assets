@@ -1,0 +1,178 @@
+====0====
+fadescale                      CString    1
+ammo                           CString    900
+canbepickedup                  Boolean    True
+spawnflags                     Integer    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+targetname                     CString    [PR#]human_pyramid_elite
+classname                      CString    weapon_elite
+origin                         CString    -6.599609 -2.200195 -0.700195
+angles                         Vector     <-0, 0, 0>
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    767
+_template_lump_ent_index       CString    0
+@OnPlayerPickup Keyvalue !activator targetname player_human_pyramid
+@OnPlayerPickup OnlyOnce Command [PR#]CMD say *** PLAYER HAS PICKED UP PYRAMID ***
+
+====1====
+health                         CString    0
+fadescale                      CString    1
+spawnflags                     Integer64  17409
+forcenpcexclude                Boolean    False
+lip                            Integer    0
+wait                           Float64    0.10000000149011612
+speed                          Integer    5
+movedir                        Vector     <0, 0, 0>
+unlocked_sound                 CString    0
+locked_sound                   CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]human_pyramid_elite
+targetname                     CString    [PR#]human_pyramid_button
+classname                      CString    func_button
+origin                         CString    15.100098 26.599609 62.799805
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    769
+model                          CString    maps\ze_djinn\entities\human_pyramid_button_769.vmdl
+_template_lump_ent_index       CString    1
+@OnPressed TestActivator [PR#]human_pyramid_filter
+
+====2====
+postspawninheritangles         Boolean    False
+postspawndirectionvariance     Float64    0.15000000596046448
+postspawndirection             Vector     <0, 0, 0>
+postspawnspeed                 Float64    0
+entitytemplate                 CString    [PR#]template_pyramid
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]human_pyramid_elite
+targetname                     CString    [PR#]human_pyramid_maker
+classname                      CString    env_entity_maker
+origin                         CString    411.200195 0.599609 -16.700195
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    768
+_template_lump_ent_index       CString    2
+
+====3====
+fadescale                      CString    1
+maxanimtime                    CString    10
+minanimtime                    CString    5
+modelscale                     CString    1.000000
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+breakablecontentstype          CString    BC_DEFAULT
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+nointerpolate                  Boolean    False
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+skin                           CString    0
+model                          CString    models/m4dara_contest/pyramid_item.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]human_pyramid_eff
+classname                      CString    prop_dynamic
+origin                         CString    29.200195 -3.400391 32.938477
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1736
+_template_lump_ent_index       CString    3
+
+====4====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]human_pyramid_door
+target                         CString    [PR#]human_pyramid_eff
+measurereference               CString    [PR#]human_pyramid_door
+measuretarget                  CString    [PR#]human_pyramid_door
+targetname                     CString    [PR#]human_pyramid_mm
+classname                      CString    logic_measure_movement
+origin                         CString    61.407715 -2.858398 27.203125
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2159
+_template_lump_ent_index       CString    4
+
+====5====
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  8
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    False
+dmg                            Integer    0
+lip                            Integer    0
+wait                           Integer    4
+speed                          Float64    100
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]human_pyramid_elite
+targetname                     CString    [PR#]human_pyramid_door
+classname                      CString    func_door
+origin                         CString    29.200195 -3.400391 32.899414
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2158
+model                          CString    maps\ze_djinn\entities\human_pyramid_door_2158.vmdl
+_template_lump_ent_index       CString    5
+

@@ -1,0 +1,99 @@
+====0====
+fadescale                      CString    1
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 180, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  4108
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    False
+dmg                            Integer    0
+lip                            Integer    6000
+wait                           Integer    -1
+speed                          Float64    600
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]wq_movelinear&0000
+classname                      CString    func_door
+origin                         CString    0.000000 0.000000 39.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    683
+model                          CString    maps\ze_djinn\entities\wq_movelinear_683.vmdl
+_template_lump_ent_index       CString    0
+@OnFullyOpen OnlyOnce Kill !self
+
+====1====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/djinn_particles_go/custom_particle_170.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]wq_movelinear&0000
+targetname                     CString    [PR#]wq_p&0000
+classname                      CString    info_particle_system
+origin                         CString    0.000000 0.000000 0.029785
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1725
+_template_lump_ent_index       CString    1
+
+====2====
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    400
+pushdir                        Vector     <0, 0, 0>
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]wq_movelinear&0000
+targetname                     CString    [PR#]wq_push&0000
+classname                      CString    trigger_push
+origin                         CString    0.000000 0.000000 175.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    681
+model                          CString    maps\ze_djinn\entities\wq_push_681.vmdl
+_template_lump_ent_index       CString    2
+
+====3====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]wq_relay&0000
+classname                      CString    logic_relay
+origin                         CString    0.000000 0.000000 87.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    685
+_template_lump_ent_index       CString    3
+@OnSpawn OnlyOnce Kill !self
+@OnSpawn OnlyOnce Start [PR#]wq_p&0000
+@OnSpawn Delay=0.2 OnlyOnce Open [PR#]wq_movelinear&0000
+

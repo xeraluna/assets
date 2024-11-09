@@ -1,0 +1,57 @@
+====0====
+fadescale                      CString    1
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    2
+health                         Integer    1250
+propdata                       CString    0
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+nointerpolate                  Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+damagefilter                   CString    [PR#]filter_zombies
+targetname                     CString    [PR#]redsq_break
+classname                      CString    func_breakable
+origin                         CString    0.000000 32.000000 216.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1737
+model                          CString    maps\ze_djinn\entities\redsq_break_1737.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]redsq_relay
+classname                      CString    logic_relay
+origin                         CString    0.000000 0.000000 384.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    775
+_template_lump_ent_index       CString    1
+@OnSpawn OnlyOnce Kill !self
+@OnSpawn Delay=7 OnlyOnce Break [PR#]redsq_break
+

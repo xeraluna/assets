@@ -1,0 +1,41 @@
+====0====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    -1
+no_save                        Boolean    False
+start_active                   Boolean    True
+effect_name                    CString    particles/explosions_fx/explosion_hegrenade_snow.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Global_Gren_Particle&0000
+classname                      CString    info_particle_system
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2152
+_template_lump_ent_index       CString    0
+
+====1====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]Global_Gren_R&0000
+classname                      CString    logic_relay
+origin                         CString    0.000000 -22.603516 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2155
+_template_lump_ent_index       CString    1
+@OnSpawn Delay=1 OnlyOnce Kill [PR#]Global_Gren_Particle&0000
+@OnSpawn Delay=1.1 OnlyOnce Kill !self
+

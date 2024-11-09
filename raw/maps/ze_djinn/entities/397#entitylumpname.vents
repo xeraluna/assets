@@ -1,0 +1,817 @@
+====0====
+defaultanim                    CString    idle
+fadescale                      CString    1
+maxanimtime                    CString    10
+minanimtime                    CString    5
+modelscale                     CString    1.000000
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_LOOPING
+idleanim                       CString    idle
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    idle
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+breakablecontentstype          CString    BC_DEFAULT
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+nointerpolate                  Boolean    False
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+skin                           CString    0
+model                          CString    models/monster/golem/golem_ahglan.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Npc_Physbox&0000
+targetname                     CString    [PR#]golem_model&0000
+classname                      CString    prop_dynamic
+origin                         CString    -8.000000 0.000000 -8.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1683
+_template_lump_ent_index       CString    0
+@OnUser1 SetAnimation [PR#]golem_model&0000 golem_low_health
+@OnUser1 Delay=0.05 SetIdleAnimationLooping [PR#]golem_model&0000 golem_low_health
+@OnUser2 Delay=0.05 SetIdleAnimationLooping [PR#]golem_model&0000 walk
+@OnUser2 SetAnimation [PR#]golem_model&0000 walk
+
+====1====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1024
+damagecap                      Integer    20
+damage                         Integer    80
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Npc_Physbox&0000
+targetname                     CString    [PR#]golem_ents5&0000
+classname                      CString    trigger_hurt
+origin                         CString    0.000000 -72.500000 160.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    398
+model                          CString    maps\ze_djinn\entities\golem_ents5_398.vmdl
+_template_lump_ent_index       CString    1
+@OnHurtPlayer FireUser2 [PR#]golem_ents5&0000
+@OnHurtPlayer Trigger [PR#]golem_random_anim_relay&0000
+@OnHurtPlayer FireUser1 [PR#]NoDamage
+
+====2====
+initialdelay                   Float64    0
+refiretime                     Float64    0.10000000149011612
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    False
+spawnflags                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]golem_ents5&0000
+classname                      CString    logic_timer
+origin                         CString    8.000000 128.000000 -32.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    406
+_template_lump_ent_index       CString    2
+@OnTimer Deactivate [PR#]golem_t_s5
+@OnTimer Deactivate [PR#]golem_t_f5
+
+====3====
+dampallrotation                Boolean    False
+angularlimit                   Float64    115
+attach1                        CString    [PR#]golem_physbox
+spawnflags                     Integer    0
+targetname                     CString    [PR#]golem_ents5&0000
+classname                      CString    phys_keepupright
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    409
+_template_lump_ent_index       CString    3
+
+====4====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]golem_ents5&0000
+classname                      CString    logic_relay
+origin                         CString    -24.000000 128.000000 -32.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    418
+_template_lump_ent_index       CString    4
+@OnSpawn OnlyOnce Kill !self
+@OnSpawn Delay=60 OnlyOnce Break [PR#]golem_physbox_break&0000
+@OnSpawn OnlyOnce FireUser2 [PR#]Npc_Physbox&0000
+@OnSpawn Delay=5 OnlyOnce Enable [PR#]golem_wind_timer&0000
+
+====5====
+wait                           Float64    1
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Npc_Physbox&0000
+targetname                     CString    [PR#]golem_ents5&0000
+classname                      CString    trigger_multiple
+origin                         CString    69.220703 -64.824951 243.939453
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2133
+model                          CString    maps\ze_djinn\entities\golem_ents5_2133.vmdl
+_template_lump_ent_index       CString    5
+@OnTrigger Disable !self
+@OnTrigger FireUser1 [PR#]golem_ents5&0000
+@OnTrigger FireUser2 [PR#]Npc_Physbox&0000
+@OnTrigger OnlyOnce FireUser2 [PR#]golem_model&0000
+
+====6====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/djinn_particles_go/custom_particle_060.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Npc_Physbox&0000
+targetname                     CString    [PR#]golem_particle_impact&0000
+classname                      CString    info_particle_system
+origin                         CString    168.000000 -0.500000 24.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1684
+_template_lump_ent_index       CString    6
+
+====7====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+enableuseoutput                Boolean    False
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+uselocaloffset                 Boolean    False
+nointerpolate                  Boolean    False
+spawnobject                    CString    0
+spawnflags                     Integer64  50176
+rendermode                     CString    0
+renderfx                       CString    0
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+propdata                       CString    0
+pressuredelay                  Float64    0
+preferredcarryangles           Vector     <0, 0, 0>
+performancemode                CString    1
+parentname                     CString    [PR#]Npc_Physbox&0000
+overridescript                 CString    damping0.5rotdamping40
+notsolid                       CString    0
+nodamageforces                 Boolean    False
+material                       CString    8
+massscale                      Float64    0
+health                         Integer    2400
+gibdir                         CString    0 0 0
+forcetoenablemotion            Float64    0
+fadescale                      CString    1
+fademindist                    Float64    -1
+explosion                      CString    0
+exploderadius                  Float64    0
+explodemagnitude               Integer    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+disablereceiveshadows          Boolean    False
+damagetype                     CString    0
+damagetoenablemotion           Integer    0
+targetname                     CString    [PR#]golem_physbox_break&0000
+classname                      CString    func_physbox
+origin                         CString    0.000000 -72.500000 152.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    416
+model                          CString    maps\ze_djinn\entities\golem_physbox_break_416.vmdl
+_template_lump_ent_index       CString    7
+@OnBreak OnlyOnce FireUser1 [PR#]Npc_Physbox&0000
+@OnBreak OnlyOnce FireUser4 [PR#]Npc_Physbox&0000
+
+====8====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]golem_random_anim_relay&0000
+classname                      CString    logic_relay
+origin                         CString    -8.000000 128.000000 -32.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    419
+_template_lump_ent_index       CString    8
+@OnTrigger SetAnimation [PR#]golem_model&0000 golem_attack_onehand
+@OnTrigger Delay=1.3 SetAnimation [PR#]golem_model&0000 walk
+@OnTrigger Delay=1.32 SetIdleAnimationLooping [PR#]golem_model&0000 walk
+@OnTrigger PlaySound [PR#]golem_sound_attack&0000
+
+====9====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/djinn_particles_go/custom_particle_141.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Npc_Physbox&0000
+targetname                     CString    [PR#]golem_particle_wind&0000
+classname                      CString    info_particle_system
+origin                         CString    0.000000 23.500000 9.500000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1685
+_template_lump_ent_index       CString    9
+
+====10====
+spawnflags                     Integer64  48
+radius                         CString    1250
+cspinup                        Integer    0
+lfomodvol                      Integer    0
+lfomodpitch                    Integer    0
+lforate                        Integer    0
+lfotype                        Integer    0
+spindown                       Integer    0
+spinup                         Integer    0
+pitchstart                     Integer    100
+pitch                          Integer    100
+fadeoutsecs                    Integer    0
+fadeinsecs                     Integer    0
+volstart                       Integer    10
+preset                         CString    0
+health                         Integer    10
+message                        CString    rock_sound_uchiha
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]golem_model&0000
+targetname                     CString    [PR#]golem_sound_death&0000
+classname                      CString    ambient_generic
+origin                         CString    136.453125 -6.217529 37.621094
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2096
+_template_lump_ent_index       CString    10
+
+====11====
+spawnflags                     Integer64  48
+radius                         CString    1250
+cspinup                        Integer    0
+lfomodvol                      Integer    0
+lfomodpitch                    Integer    0
+lforate                        Integer    0
+lfotype                        Integer    0
+spindown                       Integer    0
+spinup                         Integer    0
+pitchstart                     Integer    100
+pitch                          Integer    100
+fadeoutsecs                    Integer    0
+fadeinsecs                     Integer    0
+volstart                       Integer    10
+preset                         CString    0
+health                         Integer    10
+message                        CString    Boulder.ImpactHard
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]golem_sound_attack&0000
+classname                      CString    ambient_generic
+origin                         CString    120.453125 -6.217529 37.621094
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2095
+_template_lump_ent_index       CString    11
+
+====12====
+initialdelay                   Float64    0
+upperrandombound               Float64    40
+lowerrandombound               Float64    12
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    True
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]golem_wind_timer&0000
+classname                      CString    logic_timer
+origin                         CString    28.000000 127.500000 -32.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    422
+_template_lump_ent_index       CString    12
+@OnTimer Delay=0.02 OnlyOnce SetAnimation [PR#]golem_model&0000 golem_attack_windmill
+@OnTimer Delay=0.02 OnlyOnce DisableMotion [PR#]golem_physbox
+@OnTimer Delay=0.62 OnlyOnce Enable [PR#]golem_push_trigger&0000
+@OnTimer OnlyOnce CancelPending [PR#]golem_random_anim_relay&0000
+@OnTimer Delay=6 OnlyOnce Disable [PR#]golem_push_trigger&0000
+@OnTimer Delay=6 OnlyOnce EnableMotion [PR#]golem_physbox
+@OnTimer Delay=0.06 OnlyOnce SetIdleAnimationLooping [PR#]golem_model&0000 golem_attack_windmill
+@OnTimer Delay=6.02 OnlyOnce SetAnimation [PR#]golem_model&0000 walk
+@OnTimer Delay=6.06 OnlyOnce SetIdleAnimationLooping [PR#]golem_model&0000 walk
+@OnTimer Delay=0.52 OnlyOnce Start [PR#]golem_particle_wind&0000
+@OnTimer Delay=6 OnlyOnce Stop [PR#]golem_particle_wind&0000
+
+====13====
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    350
+pushdir                        Vector     <0, 90, 0>
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Npc_Physbox&0000
+targetname                     CString    [PR#]golem_push_trigger&0000
+classname                      CString    trigger_push
+origin                         CString    0.000000 167.500000 296.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    423
+model                          CString    maps\ze_djinn\entities\golem_push_trigger_423.vmdl
+_template_lump_ent_index       CString    13
+
+====14====
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    350
+pushdir                        Vector     <0, 0, 0>
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Npc_Physbox&0000
+targetname                     CString    [PR#]golem_push_trigger&0000
+classname                      CString    trigger_push
+origin                         CString    176.000000 -8.500000 296.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    425
+model                          CString    maps\ze_djinn\entities\golem_push_trigger_425.vmdl
+_template_lump_ent_index       CString    14
+
+====15====
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    350
+pushdir                        Vector     <0, 270, 0>
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Npc_Physbox&0000
+targetname                     CString    [PR#]golem_push_trigger&0000
+classname                      CString    trigger_push
+origin                         CString    0.000000 -184.500000 296.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    427
+model                          CString    maps\ze_djinn\entities\golem_push_trigger_427.vmdl
+_template_lump_ent_index       CString    15
+
+====16====
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    350
+pushdir                        Vector     <0, 180, 0>
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Npc_Physbox&0000
+targetname                     CString    [PR#]golem_push_trigger&0000
+classname                      CString    trigger_push
+origin                         CString    -176.000000 -8.500000 296.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    429
+model                          CString    maps\ze_djinn\entities\golem_push_trigger_429.vmdl
+_template_lump_ent_index       CString    16
+
+====17====
+wait                           Float64    0
+filtername                     CString    [PR#]Npc_TargetFilter&0000
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Npc_TriggerForward&0000
+classname                      CString    trigger_multiple
+origin                         CString    23.403320 -8.435059 0.631836
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2075
+model                          CString    maps\ze_djinn\entities\Npc_TriggerForward_2075.vmdl
+_template_lump_ent_index       CString    17
+@OnEndTouchAll Deactivate [PR#]Npc_ThrusterForward&0000
+@OnTrigger Activate [PR#]Npc_ThrusterForward&0000
+
+====18====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]Npc_TriggerLeft2&0000
+target                         CString    [PR#]Npc_TriggerLeft2&0000
+measurereference               CString    [PR#]Npc_TriggerLeft2&0000
+measuretarget                  CString    [PR#]Npc_Physbox&0000
+targetname                     CString    [PR#]Npc_TriggerMeasure&0000
+classname                      CString    logic_measure_movement
+origin                         CString    87.403320 7.564941 0.631836
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2079
+_template_lump_ent_index       CString    18
+
+====19====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]Npc_TriggerRight2&0000
+target                         CString    [PR#]Npc_TriggerRight2&0000
+measurereference               CString    [PR#]Npc_TriggerRight2&0000
+measuretarget                  CString    [PR#]Npc_Physbox&0000
+targetname                     CString    [PR#]Npc_TriggerMeasure&0000
+classname                      CString    logic_measure_movement
+origin                         CString    87.403320 -24.435059 0.631836
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2080
+_template_lump_ent_index       CString    19
+
+====20====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]Npc_TriggerLeft&0000
+target                         CString    [PR#]Npc_TriggerLeft&0000
+measurereference               CString    [PR#]Npc_TriggerLeft&0000
+measuretarget                  CString    [PR#]Npc_Physbox&0000
+targetname                     CString    [PR#]Npc_TriggerMeasure&0000
+classname                      CString    logic_measure_movement
+origin                         CString    71.403320 7.564941 0.631836
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2081
+_template_lump_ent_index       CString    20
+
+====21====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]Npc_TriggerRight&0000
+target                         CString    [PR#]Npc_TriggerRight&0000
+measurereference               CString    [PR#]Npc_TriggerRight&0000
+measuretarget                  CString    [PR#]Npc_Physbox&0000
+targetname                     CString    [PR#]Npc_TriggerMeasure&0000
+classname                      CString    logic_measure_movement
+origin                         CString    71.403320 -24.435059 0.631836
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2082
+_template_lump_ent_index       CString    21
+
+====22====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]Npc_TriggerForward&0000
+target                         CString    [PR#]Npc_TriggerForward&0000
+measurereference               CString    [PR#]Npc_TriggerForward&0000
+measuretarget                  CString    [PR#]Npc_Physbox&0000
+targetname                     CString    [PR#]Npc_TriggerMeasure&0000
+classname                      CString    logic_measure_movement
+origin                         CString    71.403320 -8.435059 0.631836
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2083
+_template_lump_ent_index       CString    22
+
+====23====
+force                          CString    600
+forcetime                      CString    0.030000
+attach1                        CString    [PR#]Npc_Physbox&0000
+spawnflags                     Integer64  30
+targetname                     CString    [PR#]Npc_ThrusterLeft&0000
+classname                      CString    phys_thruster
+origin                         CString    56.403320 31.564941 16.631836
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2071
+_template_lump_ent_index       CString    23
+
+====24====
+wait                           Float64    5.03000020980835
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Npc_TargetRotating&0000
+targetname                     CString    [PR#]Npc_TargetTrigger&0000
+classname                      CString    trigger_multiple
+origin                         CString    23.403320 -8.435059 0.631836
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2068
+model                          CString    maps\ze_djinn\entities\Npc_TargetTrigger_2068.vmdl
+_template_lump_ent_index       CString    24
+@OnTrigger Disable [PR#]Npc_TriggerForward&0000
+@OnTrigger Disable [PR#]Npc_TriggerLeft&0000
+@OnTrigger Disable [PR#]Npc_TriggerLeft2&0000
+@OnTrigger Disable [PR#]Npc_TriggerRight&0000
+@OnTrigger Disable [PR#]Npc_TriggerRight2&0000
+@OnTrigger Delay=0.02 Enable [PR#]Npc_TriggerForward&0000
+@OnTrigger Delay=0.02 Enable [PR#]Npc_TriggerLeft&0000
+@OnTrigger Delay=0.02 Enable [PR#]Npc_TriggerLeft2&0000
+@OnTrigger Delay=0.02 Enable [PR#]Npc_TriggerRight&0000
+@OnTrigger Delay=0.02 Enable [PR#]Npc_TriggerRight2&0000
+@OnTrigger Delay=5 RemoveContext !activator NpcTarget
+@OnTrigger AddContext !activator NpcTarget:1
+
+====25====
+wait                           Float64    0
+filtername                     CString    [PR#]Npc_TargetFilter&0000
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Npc_TriggerRight2&0000
+classname                      CString    trigger_multiple
+origin                         CString    23.403320 -8.435059 0.631836
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2086
+model                          CString    maps\ze_djinn\entities\Npc_TriggerRight2_2086.vmdl
+_template_lump_ent_index       CString    25
+@OnEndTouchAll Deactivate [PR#]Npc_ThrusterRight2&0000
+@OnTrigger Activate [PR#]Npc_ThrusterRight2&0000
+
+====26====
+wait                           Float64    0
+filtername                     CString    [PR#]Npc_TargetFilter&0000
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Npc_TriggerLeft&0000
+classname                      CString    trigger_multiple
+origin                         CString    23.403320 -8.435059 0.631836
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2077
+model                          CString    maps\ze_djinn\entities\Npc_TriggerLeft_2077.vmdl
+_template_lump_ent_index       CString    26
+@OnEndTouchAll Deactivate [PR#]Npc_ThrusterLeft&0000
+@OnTrigger Activate [PR#]Npc_ThrusterLeft&0000
+
+====27====
+force                          CString    1000
+forcetime                      CString    0.030000
+attach1                        CString    [PR#]Npc_Physbox&0000
+spawnflags                     Integer64  30
+targetname                     CString    [PR#]Npc_ThrusterRight2&0000
+classname                      CString    phys_thruster
+origin                         CString    71.403320 -53.435059 16.631836
+angles                         CString    -0.000000 -90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2074
+_template_lump_ent_index       CString    27
+
+====28====
+negated                        CString    0
+responsecontext                CString    NpcTarget
+targetname                     CString    [PR#]Npc_TargetFilter&0000
+classname                      CString    filter_activator_context
+origin                         CString    7.403320 -8.435059 16.631836
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2065
+_template_lump_ent_index       CString    28
+
+====29====
+dampallrotation                Boolean    False
+angularlimit                   Float64    150
+attach1                        CString    [PR#]Npc_Physbox&0000
+spawnflags                     Integer    0
+targetname                     CString    [PR#]Npc_Keepupright&0000
+classname                      CString    phys_keepupright
+origin                         CString    23.403320 -8.435059 16.631836
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2094
+_template_lump_ent_index       CString    29
+
+====30====
+force                          CString    450
+forcetime                      CString    0.100000
+attach1                        CString    [PR#]Npc_Physbox&0000
+spawnflags                     Integer64  30
+targetname                     CString    [PR#]Npc_ThrusterForward&0000
+classname                      CString    phys_thruster
+origin                         CString    39.403320 -8.435059 16.631836
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2070
+_template_lump_ent_index       CString    30
+
+====31====
+wait                           Float64    0
+filtername                     CString    [PR#]Npc_TargetFilter&0000
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Npc_TriggerRight&0000
+classname                      CString    trigger_multiple
+origin                         CString    23.403320 -8.435059 0.631836
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2084
+model                          CString    maps\ze_djinn\entities\Npc_TriggerRight_2084.vmdl
+_template_lump_ent_index       CString    31
+@OnEndTouchAll Deactivate [PR#]Npc_ThrusterRight
+@OnTrigger Activate [PR#]Npc_ThrusterRight
+
+====32====
+force                          CString    1000
+forcetime                      CString    0.030000
+attach1                        CString    [PR#]Npc_Physbox&0000
+spawnflags                     Integer64  30
+targetname                     CString    [PR#]Npc_ThrusterLeft2&0000
+classname                      CString    phys_thruster
+origin                         CString    71.403320 35.564941 16.631836
+angles                         CString    -0.000000 90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2072
+_template_lump_ent_index       CString    32
+
+====33====
+wait                           Float64    0
+filtername                     CString    [PR#]Npc_TargetFilter&0000
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Npc_TriggerLeft2&0000
+classname                      CString    trigger_multiple
+origin                         CString    23.403320 -8.435059 0.631836
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2090
+model                          CString    maps\ze_djinn\entities\Npc_TriggerLeft2_2090.vmdl
+_template_lump_ent_index       CString    33
+@OnEndTouchAll Deactivate [PR#]Npc_ThrusterLeft2&0000
+@OnTrigger Activate [PR#]Npc_ThrusterLeft2&0000
+
+====34====
+solidbsp                       CString    0
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+dmg                            Integer    0
+spawnflags                     Integer64  65
+volume                         Integer    0
+fanfriction                    Integer    0
+maxspeed                       Integer    400
+disableshadows                 CString    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Npc_Physbox&0000
+targetname                     CString    [PR#]Npc_TargetRotating&0000
+classname                      CString    func_rotating
+origin                         CString    23.403320 -8.435059 0.631836
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2066
+model                          CString    maps\ze_djinn\entities\Npc_TargetRotating_2066.vmdl
+_template_lump_ent_index       CString    34
+
+====35====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+enableuseoutput                Boolean    False
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+uselocaloffset                 Boolean    False
+nointerpolate                  Boolean    False
+spawnobject                    CString    0
+spawnflags                     Integer64  8440833
+rendermode                     CString    0
+renderfx                       CString    0
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+propdata                       CString    0
+pressuredelay                  Float64    0
+preferredcarryangles           Vector     <0, 0, 0>
+performancemode                CString    1
+overridescript                 CString    damping,0.5,rotdamping,38
+notsolid                       CString    0
+nodamageforces                 Boolean    False
+material                       CString    8
+massscale                      Float64    0
+health                         Integer    99999999
+gibdir                         CString    0 0 0
+forcetoenablemotion            Float64    0
+fadescale                      CString    1
+fademindist                    Float64    -1
+explosion                      CString    0
+exploderadius                  Float64    0
+explodemagnitude               Integer    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+disablereceiveshadows          Boolean    False
+damagetype                     CString    0
+damagetoenablemotion           Integer    0
+targetname                     CString    [PR#]Npc_Physbox&0000
+classname                      CString    func_physbox
+origin                         CString    24.000000 -8.000000 32.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    400
+model                          CString    maps\ze_djinn\entities\Npc_Physbox_400.vmdl
+_template_lump_ent_index       CString    35
+@OnUser1 OnlyOnce FireUser3 [PR#]golem_ents5&0000
+@OnUser1 Delay=2 OnlyOnce Kill !self
+@OnUser1 OnlyOnce Kill [PR#]golem_t_f5
+@OnUser1 OnlyOnce Kill [PR#]golem_t_s5
+@OnUser1 Delay=0.05 OnlyOnce Kill [PR#]golem_ents5&0000
+@OnUser1 OnlyOnce Kill [PR#]golem_trigger5
+@OnUser1 OnlyOnce FireUser1 [PR#]golem_model&0000
+@OnUser1 Delay=1.8 OnlyOnce Alpha [PR#]golem_model&0000 200
+@OnUser1 OnlyOnce Kill [PR#]golem_random_anim_relay&0000
+@OnUser1 OnlyOnce PlaySound [PR#]golem_sound_death&0000
+@OnUser1 Delay=2 OnlyOnce Kill [PR#]golem_sound_death&0000
+@OnUser1 OnlyOnce Kill [PR#]golem_wind_timer&0000
+@OnUser1 OnlyOnce Kill [PR#]golem_particle_impact&0000
+@OnUser1 OnlyOnce Kill [PR#]golem_particle_wind&0000
+@OnUser1 OnlyOnce Kill [PR#]golem_push_trigger&0000
+@OnUser4 OnlyOnce Kill [PR#]Npc_Keepupright&0000
+@OnUser4 OnlyOnce Kill [PR#]Npc_TargetRotating&0000
+@OnUser4 OnlyOnce Kill [PR#]Npc_ThrusterRight2&0000
+@OnUser4 OnlyOnce Kill [PR#]Npc_TriggerMeasure&0000
+@OnUser4 OnlyOnce Kill [PR#]Npc_TargetTrigger&0000
+@OnUser4 OnlyOnce Kill [PR#]Npc_TargetFilter&0000
+@OnUser4 OnlyOnce Kill [PR#]Npc_ThrusterForward&0000
+@OnUser4 OnlyOnce Kill [PR#]Npc_ThrusterLeft2&0000
+@OnUser4 OnlyOnce Kill [PR#]Npc_ThrusterLeft&0000
+@OnUser4 OnlyOnce Kill [PR#]Npc_ThrusterRight
+@OnUser4 OnlyOnce Kill [PR#]Npc_TriggerForward&0000
+@OnUser4 OnlyOnce Kill [PR#]Npc_TriggerRight&0000
+@OnUser4 OnlyOnce Kill [PR#]Npc_TriggerRight2&0000
+@OnUser4 OnlyOnce Kill [PR#]Npc_TriggerLeft&0000
+@OnUser4 OnlyOnce Kill [PR#]Npc_TriggerLeft2&0000
+@OnUser4 Delay=0.1 OnlyOnce Kill [PR#]Npc_Physbox&0000
+@OnUser2 Enable [PR#]Npc_TargetTrigger&0000
+@OnUser2 OnlyOnce EnableMotion [PR#]Npc_Physbox&0000
+@OnUser4 OnlyOnce ClearParent [PR#]golem_model&0000
+@OnUser1 Delay=2.1 OnlyOnce Kill [PR#]golem_model&0000
+@OnUser1 Delay=1.9 OnlyOnce Alpha [PR#]golem_model&0000 140
+@OnUser1 Delay=2 OnlyOnce Alpha [PR#]golem_model&0000 70
+

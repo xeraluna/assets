@@ -1,0 +1,599 @@
+====0====
+max                            Integer    9999999
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]xyz_havan_Health
+classname                      CString    math_counter
+origin                         CString    -336.000000 -1456.199707 24.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    699
+_template_lump_ent_index       CString    0
+@OnHitMin GetValue [PR#]xyz_havan_HealthBackup
+
+====1====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]xyz_havan_relaynpc4
+classname                      CString    logic_relay
+origin                         CString    -932.000000 13.320312 56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    236
+_template_lump_ent_index       CString    1
+@OnTrigger ForceSpawnAtEntityOrigin [PR#]maker_bvn !caller
+
+====2====
+s1 env_sprite material         CString    nostar_djinn/djinn_hpbar.vmt
+snapshot_mesh                  Integer    0
+alphascale                     Float64    0
+selfillumscale                 Float64    1
+colortint                      Vector     <255, 255, 255>
+scale                          Float64    1
+start_active                   Boolean    False
+effect_name                    CString    particles/ex_cube_big.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]xyz_havan_hpbar
+classname                      CString    env_particle_glow
+origin                         CString    -496.000000 -32.679688 1354.950195
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1659
+_template_lump_ent_index       CString    2
+
+====3====
+initialdelay                   Float64    0
+upperrandombound               Float64    14
+lowerrandombound               Float64    9
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    True
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]xyz_havan_attack_timer
+classname                      CString    logic_timer
+origin                         CString    -416.000000 -1407.999512 24.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    242
+_template_lump_ent_index       CString    3
+@OnTimer PickRandomShuffle [PR#]xyz_havan_attack_case
+
+====4====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+enableuseoutput                Boolean    False
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+uselocaloffset                 Boolean    False
+nointerpolate                  Boolean    False
+spawnobject                    CString    0
+spawnflags                     Integer64  52224
+rendermode                     CString    0
+renderfx                       CString    0
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+propdata                       CString    0
+pressuredelay                  Float64    0
+preferredcarryangles           Vector     <0, 0, 0>
+performancemode                CString    0
+notsolid                       CString    0
+nodamageforces                 Boolean    False
+material                       CString    2
+massscale                      Float64    0
+health                         Integer    99999999
+gibdir                         CString    0 0 0
+forcetoenablemotion            Float64    0
+fadescale                      CString    1
+fademindist                    Float64    -1
+explosion                      CString    0
+exploderadius                  Float64    0
+explodemagnitude               Integer    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+disablereceiveshadows          Boolean    False
+damagetype                     CString    0
+damagetoenablemotion           Integer    0
+damagefilter                   CString    [PR#]Filter_Nada
+targetname                     CString    [PR#]xyz_havan_Hitbox
+classname                      CString    func_physbox
+origin                         CString    144.000000 -29.639648 408.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    219
+model                          CString    maps\ze_djinn\entities\xyz_havan_Hitbox_219.vmdl
+_template_lump_ent_index       CString    4
+@OnHealthChanged Subtract [PR#]xyz_havan_Health 1
+@OnBreak OnlyOnce Kill [PR#]xyz_havan_case_npc
+@OnBreak OnlyOnce Kill [PR#]xyz_havan_npc_timer
+@OnBreak OnlyOnce Kill [PR#]xyz_havan_attack_timer
+@OnBreak OnlyOnce Kill [PR#]xyz_havan_attack_case
+@OnBreak OnlyOnce Kill [PR#]xyz_havan_smashhurt
+@OnBreak OnlyOnce Kill [PR#]xyz_havan_push
+@OnBreak OnlyOnce SetAnimation [PR#]xyz_havan_Model havan_attack_cliff_downknee
+@OnBreak Delay=0.04 OnlyOnce SetIdleAnimationLooping [PR#]xyz_havan_Model havan_attack_cliff_downknee
+@OnBreak OnlyOnce Kill [PR#]xyz_havan_hpbar
+@OnBreak OnlyOnce Kill [PR#]xyz_havan_hurtmain
+@OnBreak OnlyOnce Start [PR#]s1_havan_end_p
+@OnBreak Delay=3.2 OnlyOnce Kill [PR#]s1_havan_end_p
+@OnBreak OnlyOnce Command [PR#]CMD say *** NOT BAD ***
+@OnBreak Delay=1 OnlyOnce Command [PR#]CMD say *** DEFEND UNTIL SOMETHING HAPPEN ***
+@OnBreak Delay=6 OnlyOnce Open [PR#]s1_door_obelisk2
+@OnBreak Delay=21 OnlyOnce Start [PR#]s1_boostup_p
+@OnBreak Delay=21 OnlyOnce Enable [PR#]s1_push_to_djinn
+@OnBreak Delay=21 OnlyOnce Command [PR#]CMD say *** JUMP NOW ***
+@OnBreak Delay=35 OnlyOnce Kill [PR#]s1_boostup_p
+@OnBreak Delay=35 OnlyOnce Kill [PR#]s1_push_to_djinn
+@OnBreak Delay=34 OnlyOnce Enable [PR#]s1_tp_djinn_arena_humains
+@OnBreak Delay=36 OnlyOnce ForceSpawn [PR#]s1_djinn_maker
+@OnBreak Delay=33 OnlyOnce StopSound [PR#]s1_music04
+@OnBreak Delay=31 OnlyOnce Volume [PR#]s1_music04 2
+@OnBreak Delay=29 OnlyOnce Volume [PR#]s1_music04 4
+@OnBreak Delay=27 OnlyOnce Volume [PR#]s1_music04 6
+@OnBreak Delay=25 OnlyOnce Volume [PR#]s1_music04 8
+@OnBreak Delay=36 OnlyOnce PlaySound [PR#]s1_music05
+@OnBreak Delay=36 OnlyOnce Enable [PR#]s1_hurt_humans_arena
+@OnBreak Delay=36 OnlyOnce PlaySound [PR#]s1_whogoes_there
+@OnBreak Delay=40 OnlyOnce Kill [PR#]s1_whogoes_there
+@OnBreak OnlyOnce Kill [PR#]s1_door01
+@OnBreak OnlyOnce Kill [PR#]s1_button02
+@OnBreak OnlyOnce Kill [PR#]s1_button01
+@OnBreak OnlyOnce Kill [PR#]s1_door02
+@OnBreak OnlyOnce Kill [PR#]s1_lift
+@OnBreak OnlyOnce Kill [PR#]s1_door03
+@OnBreak OnlyOnce Kill [PR#]s1_button03
+@OnBreak OnlyOnce Kill [PR#]s1_button04
+@OnBreak OnlyOnce Kill [PR#]s1_door04
+@OnBreak OnlyOnce Kill [PR#]s1_door04_1
+@OnBreak OnlyOnce Kill [PR#]s1_button05
+@OnBreak OnlyOnce Kill [PR#]s1_movelinear_triggerplat
+@OnBreak OnlyOnce Kill [PR#]s1_button06
+@OnBreak OnlyOnce Kill [PR#]s1_door_05
+@OnBreak OnlyOnce Kill [PR#]s1_door06
+@OnBreak Delay=36 OnlyOnce Enable [PR#]s1_tp06
+@OnBreak Delay=36 OnlyOnce KeyValues [PR#]boss_move_temp origin 1728 9024 -3008
+@OnBreak Delay=36.1 OnlyOnce ForceSpawn [PR#]boss_move_temp
+@OnBreak OnlyOnce Kill [PR#]xyz_havan_relaynpc*
+@OnBreak Delay=3 OnlyOnce Kill [PR#]xyz_havan*
+@OnBreak Delay=36 OnlyOnce ForceSpawn [PR#]SETH_BOSS_MAKER2
+@OnBreak Delay=36.5 OnlyOnce SetParent [PR#]djinn_Model [PR#]Boss_Physbox
+@OnBreak Delay=38 OnlyOnce FireUser1 [PR#]Boss_Physbox
+@OnBreak Delay=37 OnlyOnce KeyValues [PR#]Boss_ThrusterForward force 600
+@OnBreak Delay=37 OnlyOnce KeyValues [PR#]Boss_ThrusterRight force 700
+@OnBreak Delay=37 OnlyOnce KeyValues [PR#]Boss_ThrusterLeft force 700
+@OnBreak Delay=37 OnlyOnce KeyValues [PR#]Boss_ThrusterRight2 force 1400
+@OnBreak Delay=37 OnlyOnce KeyValues [PR#]Boss_ThrusterLeft2 force 1400
+
+====5====
+case28                         CString    UnpressedDuck
+case27                         CString    UnpressedSpeed
+case26                         CString    UnpressedAttack2
+case25                         CString    UnpressedAttack
+case24                         CString    UnpressedMoveRight
+case23                         CString    UnpressedBack
+case22                         CString    UnpressedMoveLeft
+case21                         CString    UnpressedForward
+case18                         CString    PressedDuck
+case17                         CString    PressedSpeed
+case16                         CString    PressedAttack2
+case15                         CString    PressedAttack
+case14                         CString    PressedMoveRight
+case13                         CString    PressedBack
+case12                         CString    PressedMoveLeft
+case11                         CString    PressedForward
+case02                         CString    PlayerOff
+case01                         CString    PlayerOn
+spawnflags                     Integer    0
+targetname                     CString    [PR#]xyz_havan_case_npc
+classname                      CString    logic_case
+origin                         CString    -376.000000 -1367.999512 24.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    229
+_template_lump_ent_index       CString    5
+@OnCase01 Trigger [PR#]xyz_havan_relaynpc1
+@OnCase02 Trigger [PR#]xyz_havan_relaynpc2
+@OnCase03 Trigger [PR#]xyz_havan_relaynpc3
+@OnCase04 Trigger [PR#]xyz_havan_relaynpc4
+@OnCase05 Trigger [PR#]xyz_havan_relaynpc5
+@OnCase06 Trigger [PR#]xyz_havan_relaynpc6
+@OnCase07 Trigger [PR#]xyz_havan_relaynpc7
+@OnCase08 Trigger [PR#]xyz_havan_relaynpc8
+
+====6====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]xyz_havan_relaynpc5
+classname                      CString    logic_relay
+origin                         CString    -1082.000000 581.320312 56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    237
+_template_lump_ent_index       CString    6
+@OnTrigger ForceSpawnAtEntityOrigin [PR#]maker_bvn !caller
+
+====7====
+initialdelay                   Float64    0
+upperrandombound               Float64    20
+lowerrandombound               Float64    14
+pauseafterfiring               Boolean    False
+userandomtime                  Boolean    True
+spawnflags                     Integer    0
+startdisabled                  Boolean    True
+targetname                     CString    [PR#]xyz_havan_npc_timer
+classname                      CString    logic_timer
+origin                         CString    -376.000000 -1351.999512 24.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    241
+_template_lump_ent_index       CString    7
+@OnTimer PickRandomShuffle [PR#]xyz_havan_case_npc
+@OnTimer Delay=0.02 PickRandomShuffle [PR#]xyz_havan_case_npc
+
+====8====
+max                            Integer    9999999
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]xyz_havan_HealthBackup
+classname                      CString    math_counter
+origin                         CString    -336.000000 -1472.199707 24.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    698
+_template_lump_ent_index       CString    8
+@OnGetValue Add [PR#]xyz_havan_Health
+@OnGetValue Add [PR#]xyz_havan_HealthCount 1
+@OnGetValue IncrementTextureIndex [PR#]xyz_havan_Texture
+
+====9====
+fallingspeedthreshold          CString    -150
+alternateticksfix              CString    0
+triggeronstarttouch            Boolean    False
+speed                          Integer    725
+pushdir                        Vector     <0, 0, 0>
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]xyz_havan_push
+classname                      CString    trigger_push
+origin                         CString    -816.000000 64.000000 152.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    226
+model                          CString    maps\ze_djinn\entities\xyz_havan_push_226.vmdl
+_template_lump_ent_index       CString    9
+
+====10====
+max                            Integer    10
+min                            Integer    0
+startvalue                     Integer    0
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]xyz_havan_HealthCount
+classname                      CString    math_counter
+origin                         CString    -336.000000 -1440.199707 24.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    700
+_template_lump_ent_index       CString    10
+@OnHitMax OnlyOnce Break [PR#]xyz_havan_Hitbox
+@OutValue InValue [PR#]xyz_havan_HealthCountCASE
+
+====11====
+case28                         CString    UnpressedDuck
+case27                         CString    UnpressedSpeed
+case26                         CString    UnpressedAttack2
+case25                         CString    UnpressedAttack
+case24                         CString    UnpressedMoveRight
+case23                         CString    UnpressedBack
+case22                         CString    UnpressedMoveLeft
+case21                         CString    UnpressedForward
+case18                         CString    PressedDuck
+case17                         CString    PressedSpeed
+case16                         CString    PressedAttack2
+case15                         CString    PressedAttack
+case14                         CString    PressedMoveRight
+case13                         CString    PressedBack
+case12                         CString    PressedMoveLeft
+case11                         CString    PressedForward
+case02                         CString    PlayerOff
+case01                         CString    PlayerOn
+spawnflags                     Integer    0
+targetname                     CString    [PR#]xyz_havan_attack_case
+classname                      CString    logic_case
+origin                         CString    -416.000000 -1423.999512 24.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    222
+_template_lump_ent_index       CString    11
+@OnCase01 SetAnimation [PR#]xyz_havan_Model havan_attack_cliff_smash_left
+@OnCase01 Delay=3.8 Start [PR#]xyz_havan_smash_left_p
+@OnCase01 Delay=8 SetAnimation [PR#]xyz_havan_Model idle
+@OnCase01 Delay=8.02 SetIdleAnimationLooping [PR#]xyz_havan_Model idle
+@OnCase01 Delay=3.8 StartShake [PR#]xyz_havan_smash_shake
+@OnCase01 Delay=3.8 Enable [PR#]xyz_havan_smashhurt
+@OnCase01 Delay=3.9 Disable [PR#]xyz_havan_smashhurt
+@OnCase02 Delay=12.02 SetIdleAnimationLooping [PR#]xyz_havan_Model idle
+@OnCase02 Delay=12 SetAnimation [PR#]xyz_havan_Model idle
+@OnCase02 Delay=11 Disable [PR#]xyz_havan_push
+@OnCase02 Delay=8 Enable [PR#]xyz_havan_push
+@OnCase02 Delay=8 StartShake [PR#]xyz_havan_smash_shake
+@OnCase02 SetAnimation [PR#]xyz_havan_Model havan_attack_cliff_roar_wave_00
+@OnCase03 Delay=10.02 SetIdleAnimationLooping [PR#]xyz_havan_Model idle
+@OnCase03 Delay=10 SetAnimation [PR#]xyz_havan_Model idle
+@OnCase03 Delay=5.9 Disable [PR#]xyz_havan_smashhurt
+@OnCase03 Delay=5.8 Start [PR#]xyz_havan_smash_right_p
+@OnCase03 Delay=5.8 StartShake [PR#]xyz_havan_smash_shake
+@OnCase03 Delay=5.8 Enable [PR#]xyz_havan_smashhurt
+@OnCase03 SetAnimation [PR#]xyz_havan_Model havan_attack_cliff_smash_right
+@OnCase01 Delay=8 Color [PR#]xyz_havan_Model 255 128 0
+@OnCase02 Delay=12 Color [PR#]xyz_havan_Model 255 128 0
+@OnCase03 Delay=10 Color [PR#]xyz_havan_Model 255 128 0
+
+====12====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]xyz_havan_relaynpc1
+classname                      CString    logic_relay
+origin                         CString    -970.000000 -768.679688 56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    228
+_template_lump_ent_index       CString    12
+@OnTrigger ForceSpawnAtEntityOrigin [PR#]maker_bvn !caller
+
+====13====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]xyz_havan_relaynpc6
+classname                      CString    logic_relay
+origin                         CString    -616.000000 600.000000 56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    238
+_template_lump_ent_index       CString    13
+@OnTrigger ForceSpawnAtEntityOrigin [PR#]maker_bvn !caller
+
+====14====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1024
+damagecap                      Integer    20
+damage                         Integer    50
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]xyz_havan_hurtmain
+classname                      CString    trigger_hurt
+origin                         CString    400.000000 64.000000 280.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    244
+model                          CString    maps\ze_djinn\entities\xyz_havan_hurtmain_244.vmdl
+_template_lump_ent_index       CString    14
+@OnHurtPlayer FireUser1 [PR#]NoDamage
+
+====15====
+frequency                      Float64    2.5
+duration                       Float64    3
+radius                         Float64    1344
+amplitude                      Float64    4
+spawnflags                     Integer    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]xyz_havan_smash_shake
+classname                      CString    env_shake
+origin                         CString    -1648.000000 32.000000 1.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    225
+_template_lump_ent_index       CString    15
+
+====16====
+target                         CString    None
+targetname                     CString    [PR#]xyz_havan_Texture
+classname                      CString    env_texturetoggle
+origin                         CString    -336.000000 -1423.999512 24.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    697
+_template_lump_ent_index       CString    16
+
+====17====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]xyz_havan_relaynpc2
+classname                      CString    logic_relay
+origin                         CString    -592.000000 -632.000000 56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    234
+_template_lump_ent_index       CString    17
+@OnTrigger ForceSpawnAtEntityOrigin [PR#]maker_bvn !caller
+
+====18====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]xyz_havan_relaynpc7
+classname                      CString    logic_relay
+origin                         CString    -1398.000000 743.320312 56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    239
+_template_lump_ent_index       CString    18
+@OnTrigger ForceSpawnAtEntityOrigin [PR#]maker_bvn !caller
+
+====19====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/djinn_particles_go/custom_particle_080.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]xyz_havan_smash_left_p
+classname                      CString    info_particle_system
+origin                         CString    -1264.000000 -320.000000 8.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1660
+_template_lump_ent_index       CString    19
+
+====20====
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+lightingorigin                 CString    [PR#]yea
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_LOOPING
+idleanim                       CString    idle
+startinganimationloopmode      CString    ANIM_LOOP_MODE_LOOPING
+startinganim                   CString    idle
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 128, 0>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+breakablecontentstype          CString    BC_DEFAULT
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer    0
+nointerpolate                  Boolean    False
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    default
+model                          CString    models/monster/havan/havan_giant_reference.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]xyz_havan_Model
+classname                      CString    prop_dynamic
+origin                         CString    512.000000 -29.639648 -124.387207
+angles                         CString    -0.000000 -179.999985 0.000000
+scales                         CString    1.200000 1.200000 1.200000
+hammeruniqueid                 CString    1658
+_template_lump_ent_index       CString    20
+
+====21====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1024
+damagecap                      Integer    20
+damage                         Integer    80
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]xyz_havan_smashhurt
+classname                      CString    trigger_hurt
+origin                         CString    -944.000000 64.000000 56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    223
+model                          CString    maps\ze_djinn\entities\xyz_havan_smashhurt_223.vmdl
+_template_lump_ent_index       CString    21
+@OnStartTouch KeyValues !activator basevelocity 0 0 550
+@OnHurtPlayer FireUser1 [PR#]NoDamage
+
+====22====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]xyz_havan_relaynpc3
+classname                      CString    logic_relay
+origin                         CString    -966.000000 -346.679688 56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    235
+_template_lump_ent_index       CString    22
+@OnTrigger ForceSpawnAtEntityOrigin [PR#]maker_bvn !caller
+
+====23====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]xyz_havan_relaynpc8
+classname                      CString    logic_relay
+origin                         CString    -1426.000000 -902.679688 56.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    240
+_template_lump_ent_index       CString    23
+@OnTrigger ForceSpawnAtEntityOrigin [PR#]maker_bvn !caller
+
+====24====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/djinn_particles_go/custom_particle_080.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]xyz_havan_smash_right_p
+classname                      CString    info_particle_system
+origin                         CString    -1136.000000 416.000000 8.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1661
+_template_lump_ent_index       CString    24
+

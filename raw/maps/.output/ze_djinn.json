@@ -1,0 +1,122 @@
+[
+    {
+        "name": "human_heal_elite",
+        "shortname": "human_heal_elite",
+        "hammerid": "739",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "741",
+                "event": "OnPressed",
+                "mode": 9999999,
+                "cooldown": 9999999,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "human_sand_elite",
+        "shortname": "human_sand_elite",
+        "hammerid": "750",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "752",
+                "event": "OnPressed",
+                "mode": 9999999,
+                "cooldown": 9999999,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "human_ammo_elite",
+        "shortname": "human_ammo_elite",
+        "hammerid": "760",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "757",
+                "event": "OnPressed",
+                "mode": 9999999,
+                "cooldown": 9999999,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            },
+            {
+                "type": "counter",
+                "hammerid": "2147",
+                "event": "OnPressed",
+                "mode": 9999999,
+                "cooldown": 9999999,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "human_pyramid_elite",
+        "shortname": "human_pyramid_elite",
+        "hammerid": "767",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "769",
+                "event": "OnPressed",
+                "mode": 9999999,
+                "cooldown": 9999999,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    },
+    {
+        "name": "human_tornado_elite",
+        "shortname": "human_tornado_elite",
+        "hammerid": "776",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": [
+            {
+                "type": "button",
+                "hammerid": "777",
+                "event": "OnPressed",
+                "mode": 9999999,
+                "cooldown": 9999999,
+                "maxuses": 0,
+                "message": true,
+                "ui": true
+            }
+        ]
+    }
+]

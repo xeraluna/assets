@@ -1,0 +1,189 @@
+====0====
+fadescale                      CString    1
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  4108
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    False
+dmg                            Integer    0
+lip                            Integer    0
+wait                           Integer    4
+speed                          Float64    100
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <0, 0, 255>
+renderamt                      Integer    255
+rendermode                     CString    1
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]mze_door
+classname                      CString    func_door
+origin                         CString    0.000000 16.000000 -10.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    921
+model                          CString    maps\ze_djinn\entities\mze_door_921.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+fadescale                      CString    1
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  4108
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    False
+dmg                            Integer    0
+lip                            Integer    0
+wait                           Integer    4
+speed                          Float64    100
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <80, 100, 241>
+renderamt                      Integer    0
+rendermode                     CString    1
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]mze_door2
+classname                      CString    func_door
+origin                         CString    0.000000 16.000000 -10.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    996
+model                          CString    maps\ze_djinn\entities\mze_door2_996.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1024
+damagecap                      Integer    20
+damage                         Integer    50
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]mze_hurt
+classname                      CString    trigger_hurt
+origin                         CString    0.000000 16.000000 196.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    971
+model                          CString    maps\ze_djinn\entities\mze_hurt_971.vmdl
+_template_lump_ent_index       CString    2
+@OnHurtPlayer FireUser1 [PR#]NoDamage
+
+====3====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1024
+damagecap                      Integer    20
+damage                         Integer    50
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]mze_hurt2
+classname                      CString    trigger_hurt
+origin                         CString    0.000000 16.000000 92.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1021
+model                          CString    maps\ze_djinn\entities\mze_hurt2_1021.vmdl
+_template_lump_ent_index       CString    3
+@OnHurtPlayer FireUser1 [PR#]NoDamage
+
+====4====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/djinn_phase3_go/custom_particle_570.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]mze_p
+classname                      CString    info_particle_system
+origin                         CString    0.000000 16.000000 -4.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1783
+_template_lump_ent_index       CString    4
+
+====5====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    0
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/djinn_phase3_go/custom_particle_571.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]mze_p2
+classname                      CString    info_particle_system
+origin                         CString    0.000000 16.000000 -4.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1784
+_template_lump_ent_index       CString    5
+
+====6====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]mze_relay
+classname                      CString    logic_relay
+origin                         CString    0.000000 -32.000000 -3.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    970
+_template_lump_ent_index       CString    6
+@OnSpawn OnlyOnce Kill !self
+@OnSpawn Delay=3 OnlyOnce Start [PR#]mze_p
+@OnSpawn Delay=3 OnlyOnce Enable [PR#]mze_hurt
+@OnSpawn Delay=3 OnlyOnce Kill [PR#]mze_door
+@OnSpawn Delay=10 OnlyOnce Alpha [PR#]mze_door2 255
+@OnSpawn Delay=13 OnlyOnce Kill [PR#]mze_door2
+@OnSpawn Delay=10 OnlyOnce Kill [PR#]mze_hurt
+@OnSpawn Delay=10 OnlyOnce Kill [PR#]mze_p
+@OnSpawn Delay=13 OnlyOnce Start [PR#]mze_p2
+@OnSpawn Delay=13 OnlyOnce Enable [PR#]mze_hurt2
+@OnSpawn Delay=15 OnlyOnce Kill [PR#]mze_hurt2
+@OnSpawn Delay=15 OnlyOnce Kill [PR#]mze_p2
+

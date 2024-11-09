@@ -1,0 +1,103 @@
+====0====
+thinkalways                    Boolean    False
+nodmgforce                     Boolean    False
+forgivedelay                   Float64    3
+damagemodel                    CString    0
+damagetype                     CString    1024
+damagecap                      Integer    20
+damage                         Integer    40
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]wxc_djinn_hurt&0000
+classname                      CString    trigger_hurt
+origin                         CString    0.000000 -8.000000 153.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    391
+model                          CString    maps\ze_djinn\entities\wxc_djinn_hurt_391.vmdl
+_template_lump_ent_index       CString    0
+@OnHurtPlayer FireUser1 [PR#]NoDamage
+
+====1====
+fadescale                      CString    1
+createnavobstacle              Boolean    True
+movedir                        Vector     <0, 0, 0>
+loopmovesound                  Boolean    False
+spawnflags                     Integer64  4108
+spawnpos                       CString    0
+health                         Integer    0
+ignoredebris                   Boolean    False
+forceclosed                    Boolean    False
+dmg                            Integer    0
+lip                            Integer    0
+wait                           Integer    -1
+speed                          Float64    0
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    125
+rendermode                     CString    1
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]wxc_djinn_doorbeam&0000
+classname                      CString    func_door
+origin                         CString    0.000000 -48.000000 28.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    387
+model                          CString    maps\ze_djinn\entities\wxc_djinn_doorbeam_387.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]wxc_djinn_relay&0000
+classname                      CString    logic_relay
+origin                         CString    -152.000000 -392.000000 6.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    390
+_template_lump_ent_index       CString    2
+@OnSpawn Delay=2.5 OnlyOnce Alpha [PR#]wxc_djinn_doorbeam&0000 250
+@OnSpawn Delay=2.5 OnlyOnce PlaySound [PR#]wxc_djinn_sound&0000
+@OnSpawn Delay=2.5 OnlyOnce Enable [PR#]wxc_djinn_hurt&0000
+@OnSpawn Delay=3 OnlyOnce Kill [PR#]wxc_djinn_doorbeam&0000
+@OnSpawn Delay=3 OnlyOnce Kill [PR#]wxc_djinn_sound&0000
+@OnSpawn Delay=3 OnlyOnce Kill [PR#]wxc_djinn_hurt&0000
+@OnSpawn OnlyOnce Kill !self
+
+====3====
+spawnflags                     Integer64  49
+radius                         CString    1250
+cspinup                        Integer    0
+lfomodvol                      Integer    0
+lfomodpitch                    Integer    0
+lforate                        Integer    0
+lfotype                        Integer    0
+spindown                       Integer    0
+spinup                         Integer    0
+pitchstart                     Integer    100
+pitch                          Integer    100
+fadeoutsecs                    Integer    0
+fadeinsecs                     Integer    0
+volstart                       Integer    0
+preset                         CString    0
+health                         Integer    8
+message                        CString    line_impact
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]wxc_djinn_sound&0000
+classname                      CString    ambient_generic
+origin                         CString    -152.000000 -392.000000 22.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    394
+_template_lump_ent_index       CString    3
+

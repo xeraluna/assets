@@ -1,0 +1,379 @@
+====0====
+touchoutputperentitydelay      Float64    0
+exploitablebyplayer            CString    0
+notsolid                       CString    0
+preferredcarryangles           Vector     <0, 0, 0>
+enableuseoutput                Boolean    False
+forcetoenablemotion            Float64    0
+damagetoenablemotion           Integer    0
+massscale                      Float64    0
+damagetype                     CString    0
+skippresettle                  Boolean    False
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    0
+health                         Integer    0
+propdata                       CString    0
+spawnflags                     Integer64  8440833
+uselocaloffset                 Boolean    False
+nointerpolate                  Boolean    False
+performancemode                CString    0
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    1
+damagefilter                   CString    [PR#]Filter_na
+targetname                     CString    [PR#]Boss_Physbox
+classname                      CString    func_physbox
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 -179.999924 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2001
+model                          CString    maps\ze_djinn\entities\Boss_Physbox_2001.vmdl
+_template_lump_ent_index       CString    0
+@OnUser1 Enable [PR#]Boss_TargetTrigger
+@OnUser2 Disable [PR#]Boss_TargetTrigger
+@OnUser4 OnlyOnce Kill [PR#]Boss_Keepupright
+@OnUser4 OnlyOnce Kill [PR#]Boss_TargetFilter
+@OnUser4 OnlyOnce Kill [PR#]Boss_Thruster*
+@OnUser4 OnlyOnce Kill [PR#]Boss_Trigger*
+@OnUser2NO Delay=0.01 CountPlayersInZone [PR#]Global_Boss_ClearZone
+@OnUser1 OnlyOnce EnableMotion [PR#]Boss_Physbox
+@OnUser2 DisableMotion [PR#]Boss_Physbox
+@OnUser4 OnlyOnce Kill [PR#]Boss_TargetRotating
+@OnUser4 Delay=0.05 OnlyOnce Kill [PR#]Boss_Physbox
+@OnUser4 OnlyOnce Kill [PR#]Boss_TargetTrigger
+
+====1====
+dampallrotation                Boolean    False
+angularlimit                   Float64    50
+attach1                        CString    [PR#]CY01Physic
+spawnflags                     Integer    0
+targetname                     CString    [PR#]Boss_Keepupright
+classname                      CString    phys_keepupright
+origin                         CString    -9508.723633 -17598.570312 6290.372070
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    13
+_template_lump_ent_index       CString    1
+
+====2====
+dampallrotation                Boolean    False
+angularlimit                   Float64    200
+attach1                        CString    [PR#]Boss_Physbox
+spawnflags                     Integer    0
+targetname                     CString    [PR#]Boss_Keepupright
+classname                      CString    phys_keepupright
+origin                         CString    0.000000 0.000000 16.000000
+angles                         CString    -0.000000 -179.999924 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2004
+_template_lump_ent_index       CString    2
+
+====3====
+force                          CString    450
+forcetime                      CString    0.100000
+attach1                        CString    [PR#]Boss_Physbox
+spawnflags                     Integer64  30
+targetname                     CString    [PR#]Boss_ThrusterForward
+classname                      CString    phys_thruster
+origin                         CString    -16.000000 0.000000 16.000000
+angles                         CString    -0.000000 -179.999924 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2005
+_template_lump_ent_index       CString    3
+
+====4====
+force                          CString    500
+forcetime                      CString    0.030000
+attach1                        CString    [PR#]Boss_Physbox
+spawnflags                     Integer64  30
+targetname                     CString    [PR#]Boss_ThrusterLeft
+classname                      CString    phys_thruster
+origin                         CString    -33.000000 -40.000000 16.000000
+angles                         CString    -0.000000 -89.999969 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2006
+_template_lump_ent_index       CString    4
+
+====5====
+force                          CString    1000
+forcetime                      CString    0.030000
+attach1                        CString    [PR#]Boss_Physbox
+spawnflags                     Integer64  30
+targetname                     CString    [PR#]Boss_ThrusterLeft2
+classname                      CString    phys_thruster
+origin                         CString    -48.000000 -44.000000 16.000000
+angles                         CString    -0.000000 -89.999969 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2011
+_template_lump_ent_index       CString    5
+
+====6====
+force                          CString    500
+forcetime                      CString    0.030000
+attach1                        CString    [PR#]Boss_Physbox
+spawnflags                     Integer64  30
+targetname                     CString    [PR#]Boss_ThrusterRight
+classname                      CString    phys_thruster
+origin                         CString    -33.000000 40.000000 16.000000
+angles                         CString    -0.000000 90.000008 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2007
+_template_lump_ent_index       CString    6
+
+====7====
+force                          CString    1000
+forcetime                      CString    0.030000
+attach1                        CString    [PR#]Boss_Physbox
+spawnflags                     Integer64  30
+targetname                     CString    [PR#]Boss_ThrusterRight2
+classname                      CString    phys_thruster
+origin                         CString    -48.000000 45.000000 16.000000
+angles                         CString    -0.000000 90.000008 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2010
+_template_lump_ent_index       CString    7
+
+====8====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]Boss_TriggerLeft2
+target                         CString    [PR#]Boss_TriggerLeft2
+measurereference               CString    [PR#]Boss_TriggerLeft2
+measuretarget                  CString    [PR#]Boss_Physbox
+targetname                     CString    [PR#]Boss_TriggerMeasure
+classname                      CString    logic_measure_movement
+origin                         CString    -64.000000 -16.000000 0.000000
+angles                         CString    -0.000000 -179.999924 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1995
+_template_lump_ent_index       CString    8
+
+====9====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]Boss_TriggerRight2
+target                         CString    [PR#]Boss_TriggerRight2
+measurereference               CString    [PR#]Boss_TriggerRight2
+measuretarget                  CString    [PR#]Boss_Physbox
+targetname                     CString    [PR#]Boss_TriggerMeasure
+classname                      CString    logic_measure_movement
+origin                         CString    -64.000000 16.000000 0.000000
+angles                         CString    -0.000000 -179.999924 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1996
+_template_lump_ent_index       CString    9
+
+====10====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]Boss_TriggerLeft
+target                         CString    [PR#]Boss_TriggerLeft
+measurereference               CString    [PR#]Boss_TriggerLeft
+measuretarget                  CString    [PR#]Boss_Physbox
+targetname                     CString    [PR#]Boss_TriggerMeasure
+classname                      CString    logic_measure_movement
+origin                         CString    -48.000000 -16.000000 0.000000
+angles                         CString    -0.000000 -179.999924 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1997
+_template_lump_ent_index       CString    10
+
+====11====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]Boss_TriggerRight
+target                         CString    [PR#]Boss_TriggerRight
+measurereference               CString    [PR#]Boss_TriggerRight
+measuretarget                  CString    [PR#]Boss_Physbox
+targetname                     CString    [PR#]Boss_TriggerMeasure
+classname                      CString    logic_measure_movement
+origin                         CString    -48.000000 16.000000 0.000000
+angles                         CString    -0.000000 -179.999924 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2000
+_template_lump_ent_index       CString    11
+
+====12====
+measuretype                    CString    0
+targetscale                    Float64    1
+targetreference                CString    [PR#]Boss_TriggerForward
+target                         CString    [PR#]Boss_TriggerForward
+measurereference               CString    [PR#]Boss_TriggerForward
+measuretarget                  CString    [PR#]Boss_Physbox
+targetname                     CString    [PR#]Boss_TriggerMeasure
+classname                      CString    logic_measure_movement
+origin                         CString    -48.000000 0.000000 0.000000
+angles                         CString    -0.000000 -179.999924 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2008
+_template_lump_ent_index       CString    12
+
+====13====
+wait                           Float64    0
+filtername                     CString    [PR#]Boss_TargetFilter
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Boss_TriggerForward
+classname                      CString    trigger_multiple
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 -179.999924 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2018
+model                          CString    maps\ze_djinn\entities\Boss_TriggerForward_2018.vmdl
+_template_lump_ent_index       CString    13
+@OnEndTouchAll Deactivate [PR#]Boss_ThrusterForward
+@OnTrigger Activate [PR#]Boss_ThrusterForward
+
+====14====
+wait                           Float64    0
+filtername                     CString    [PR#]Boss_TargetFilter
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Boss_TriggerLeft
+classname                      CString    trigger_multiple
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 -179.999924 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2022
+model                          CString    maps\ze_djinn\entities\Boss_TriggerLeft_2022.vmdl
+_template_lump_ent_index       CString    14
+@OnEndTouchAll Deactivate [PR#]Boss_ThrusterLeft
+@OnTrigger Activate [PR#]Boss_ThrusterLeft
+
+====15====
+wait                           Float64    0
+filtername                     CString    [PR#]Boss_TargetFilter
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Boss_TriggerLeft2
+classname                      CString    trigger_multiple
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 -179.999924 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2024
+model                          CString    maps\ze_djinn\entities\Boss_TriggerLeft2_2024.vmdl
+_template_lump_ent_index       CString    15
+@OnEndTouchAll Deactivate [PR#]Boss_ThrusterLeft2
+@OnTrigger Activate [PR#]Boss_ThrusterLeft2
+
+====16====
+wait                           Float64    0
+filtername                     CString    [PR#]Boss_TargetFilter
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Boss_TriggerRight
+classname                      CString    trigger_multiple
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 -179.999924 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2016
+model                          CString    maps\ze_djinn\entities\Boss_TriggerRight_2016.vmdl
+_template_lump_ent_index       CString    16
+@OnEndTouchAll Deactivate [PR#]Boss_ThrusterRight
+@OnTrigger Activate [PR#]Boss_ThrusterRight
+
+====17====
+wait                           Float64    0
+filtername                     CString    [PR#]Boss_TargetFilter
+spawnflags                     Integer    1
+startdisabled                  Boolean    False
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]Boss_TriggerRight2
+classname                      CString    trigger_multiple
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 -179.999924 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2012
+model                          CString    maps\ze_djinn\entities\Boss_TriggerRight2_2012.vmdl
+_template_lump_ent_index       CString    17
+@OnEndTouchAll Deactivate [PR#]Boss_ThrusterRight2
+@OnTrigger Activate [PR#]Boss_ThrusterRight2
+
+====18====
+solidbsp                       CString    0
+movewithoutpushingblockers     Boolean    False
+nointerpolate                  Boolean    False
+dmg                            Integer    0
+spawnflags                     Integer64  65
+volume                         Integer    0
+fanfriction                    Integer    0
+maxspeed                       Integer    400
+disableshadows                 CString    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    True
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_Physbox
+targetname                     CString    [PR#]Boss_TargetRotating
+classname                      CString    func_rotating
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 -179.999924 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    1998
+model                          CString    maps\ze_djinn\entities\Boss_TargetRotating_1998.vmdl
+_template_lump_ent_index       CString    18
+
+====19====
+wait                           Float64    5.03000020980835
+filtername                     CString    [PR#]filter_humans
+spawnflags                     Integer    1
+startdisabled                  Boolean    True
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]Boss_TargetRotating
+targetname                     CString    [PR#]Boss_TargetTrigger
+classname                      CString    trigger_multiple
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 -179.999924 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2020
+model                          CString    maps\ze_djinn\entities\Boss_TargetTrigger_2020.vmdl
+_template_lump_ent_index       CString    19
+@OnTrigger Disable [PR#]Boss_TriggerForward
+@OnTrigger Disable [PR#]Boss_TriggerLeft
+@OnTrigger Disable [PR#]Boss_TriggerLeft2
+@OnTrigger Disable [PR#]Boss_TriggerRight
+@OnTrigger Disable [PR#]Boss_TriggerRight2
+@OnTrigger Delay=0.02 Enable [PR#]Boss_TriggerForward
+@OnTrigger Delay=0.02 Enable [PR#]Boss_TriggerLeft
+@OnTrigger Delay=0.02 Enable [PR#]Boss_TriggerLeft2
+@OnTrigger Delay=0.02 Enable [PR#]Boss_TriggerRight
+@OnTrigger Delay=0.02 Enable [PR#]Boss_TriggerRight2
+@OnTrigger Delay=5 RemoveContext !activator BossTarget
+@OnTrigger AddContext !activator BossTarget:1
+
+====20====
+negated                        CString    0
+responsecontext                CString    BossTarget
+targetname                     CString    [PR#]Boss_TargetFilter
+classname                      CString    filter_activator_context
+origin                         CString    16.000000 0.000000 16.000000
+angles                         CString    -0.000000 -179.999924 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2009
+_template_lump_ent_index       CString    20
+
