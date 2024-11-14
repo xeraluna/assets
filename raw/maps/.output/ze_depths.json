@@ -1,0 +1,35 @@
+[
+    {
+        "name": "i_trail_elite",
+        "shortname": "i_trail_elite",
+        "hammerid": "12016",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "i_fuel_elites",
+        "shortname": "i_fuel_elites",
+        "hammerid": "5363",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    },
+    {
+        "name": "i_push_elite",
+        "shortname": "i_push_elite",
+        "hammerid": "11782",
+        "message": true,
+        "ui": true,
+        "transfer": true,
+        "color": "",
+        "triggers": [],
+        "handlers": []
+    }
+]

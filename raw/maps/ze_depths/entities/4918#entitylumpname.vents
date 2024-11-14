@@ -1,0 +1,134 @@
+====0====
+fadescale                      CString    1
+movesoundmaxtime               Float64    0
+movesoundmintime               Float64    0
+movesoundmaxpitch              Integer    200
+movesoundminpitch              Integer    60
+volume                         Integer    10
+dmg                            Integer    0
+bank                           CString    0
+height                         Integer    4
+wheels                         Integer    50
+orientationtype                CString    1
+velocitytype                   CString    0
+speed                          Integer    200
+startspeed                     Integer    400
+target                         CString    [PR#]st2_bigbox_path1
+spawnflags                     Integer64  10
+disableshadows                 CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]mm_bigbox_main&0000
+classname                      CString    func_tracktrain
+origin                         CString    0.000000 0.000000 -128.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4912
+model                          CString    maps\ze_depths\entities\mm_bigbox_main_4912.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    1
+health                         Integer    0
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]mm_bigbox_main&0000
+nointerpolate                  Boolean    False
+performancemode                CString    PM_FULL_GIBS
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]mm_bigbox_clip&0000
+classname                      CString    func_breakable
+origin                         CString    0.000000 0.000000 -128.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4513
+model                          CString    maps\ze_depths\entities\mm_bigbox_clip_4513.vmdl
+_template_lump_ent_index       CString    1
+
+====2====
+randomanimation                CString    0
+minanimtime                    CString    5
+maxanimtime                    CString    10
+holdanimation                  CString    0
+fadescale                      CString    1
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+breakablecontentstype          CString    BC_DEFAULT
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer64  256
+nointerpolate                  Boolean    False
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    default
+model                          CString    models/depths/new_box5.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]mm_bigbox_main&0000
+targetname                     CString    [PR#]mm_bigbox_box&0000
+classname                      CString    prop_dynamic
+origin                         CString    0.000000 0.000000 168.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    6883
+_template_lump_ent_index       CString    2
+

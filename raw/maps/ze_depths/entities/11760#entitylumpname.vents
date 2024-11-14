@@ -1,0 +1,43 @@
+====0====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    -1
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/nyafi_smallpush1.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+targetname                     CString    [PR#]i_push_particle1
+classname                      CString    info_particle_system
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    11769
+_template_lump_ent_index       CString    0
+
+====1====
+passthroughcaller              Boolean    False
+fastretrigger                  Boolean    False
+triggeronce                    Boolean    False
+startdisabled                  Boolean    False
+targetname                     CString    [PR#]i_push_particle1_relay
+classname                      CString    logic_relay
+origin                         CString    0.000000 0.000000 16.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    11757
+_template_lump_ent_index       CString    1
+@OnSpawn Start [PR#]i_push_particle1
+@OnSpawn Delay=1 Stop [PR#]i_push_particle1
+@OnSpawn Delay=2 Kill !self
+@OnSpawn Delay=1.5 Kill [PR#]i_push_particle1
+

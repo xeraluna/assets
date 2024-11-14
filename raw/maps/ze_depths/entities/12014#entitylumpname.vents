@@ -1,0 +1,50 @@
+====0====
+canbepickedup                  Boolean    True
+spawnflags                     Integer    1
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    0
+renderfx                       CString    0
+targetname                     CString    [PR#]i_trail_elite
+classname                      CString    weapon_glock
+origin                         CString    -4.000000 0.000000 -8.000000
+angles                         Vector     <-0, 0, 0>
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    12016
+_template_lump_ent_index       CString    0
+@OnPlayerPickup OnlyOnce Start [PR#]i_trail_particle
+@OnPlayerPickup Delay=0.02 OnlyOnce SetParent [PR#]i_trail_particle [PR#]i_trail_elite
+
+====1====
+cpoint7_parent                 Integer    0
+cpoint6_parent                 Integer    0
+cpoint5_parent                 Integer    0
+cpoint4_parent                 Integer    0
+cpoint3_parent                 Integer    0
+cpoint2_parent                 Integer    0
+cpoint1_parent                 Integer    0
+tint_cp_color                  Vector     <255, 255, 255>
+tint_cp                        Integer    -1
+data_cp_value                  Vector     <0, 0, 0>
+data_cp                        Integer    -1
+snapshot_mesh                  Integer    -1
+no_save                        Boolean    False
+start_active                   Boolean    False
+effect_name                    CString    particles/nyafi_trail1.vpcf
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]i_trail_elite
+targetname                     CString    [PR#]i_trail_particle
+classname                      CString    info_particle_system
+origin                         CString    0.000000 0.000000 0.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    12015
+_template_lump_ent_index       CString    1
+

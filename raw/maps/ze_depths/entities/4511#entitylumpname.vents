@@ -1,0 +1,151 @@
+====0====
+gibdir                         CString    0 0 0
+physdamagescale                Float64    1
+overrideblocklos               CString    0
+gamemass                       Integer    0
+minhealthdmg                   Integer    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+pressuredelay                  Float64    0
+explodemagnitude               Integer    0
+spawnobject                    CString    0
+nodamageforces                 Boolean    False
+explosion                      CString    0
+material                       CString    1
+health                         Integer    0
+propdata                       CString    0
+spawnflags                     Integer    1
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]st2_end_train
+nointerpolate                  Boolean    False
+performancemode                CString    PM_FULL_GIBS
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+targetname                     CString    [PR#]mm_end_box_clip
+classname                      CString    func_breakable
+origin                         CString    -100.000000 -100.000000 -188.000000
+angles                         CString    -0.000000 0.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    4828
+model                          CString    maps\ze_depths\entities\mm_end_box_clip_4828.vmdl
+_template_lump_ent_index       CString    0
+
+====1====
+randomanimation                CString    0
+minanimtime                    CString    5
+maxanimtime                    CString    10
+holdanimation                  CString    0
+fadescale                      CString    1
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+breakablecontentstype          CString    BC_DEFAULT
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer64  256
+nointerpolate                  Boolean    False
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    default
+model                          CString    models/depths/new_box4.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]st2_end_train
+targetname                     CString    [PR#]mm_end_box_main
+classname                      CString    prop_dynamic
+origin                         CString    0.000000 -104.000000 0.000000
+angles                         CString    -0.000000 -90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    5966
+_template_lump_ent_index       CString    1
+
+====2====
+breakablecontentstype          CString    BC_DEFAULT
+nointerpolate                  Boolean    False
+fadescale                      CString    1
+holdanimation                  CString    0
+maxanimtime                    CString    10
+minanimtime                    CString    5
+randomanimation                CString    0
+clothscale                     Float64    1
+startdisabled                  Boolean    False
+forcenpcexclude                Boolean    False
+createnavobstacle              Boolean    False
+animateonserver                Boolean    False
+lagcompensate                  Boolean    False
+randomizecycle                 Boolean    False
+idleanimationloopmode          CString    ANIM_LOOP_MODE_NOT_LOOPING
+startinganimationloopmode      CString    ANIM_LOOP_MODE_NOT_LOOPING
+use_animgraph                  Boolean    True
+disablelowviolence             CString    0
+solid                          CString    0
+glowteam                       Integer    -1
+glowcolor                      Vector     <0, 0, 0>
+glowrangemin                   Integer    0
+glowrange                      Integer    0
+glowstate                      CString    0
+lightmapstatic                 CString    0
+rendertocubemaps               Boolean    False
+object_culling                 CString    0
+fademaxdist                    Float64    0
+fademindist                    Float64    -1
+disablereceiveshadows          Boolean    False
+rendercolor                    Vector     <255, 255, 255>
+renderamt                      Integer    255
+rendermode                     CString    kRenderNormal
+renderfx                       CString    kRenderFxNone
+burstscale                     Float64    100
+pressuredelay                  Float64    0
+spawnflags                     Integer64  256
+performancemode                CString    PM_NORMAL
+exploderadius                  Float64    0
+explodedamage                  Float64    0
+disableshadows                 CString    0
+skin                           CString    default
+model                          CString    models/depths/new_box4.vmdl
+clientsideentity               CString    0
+uselocaloffset                 Boolean    False
+parentname                     CString    [PR#]st2_end_train
+targetname                     CString    [PR#]mm_end_box_main
+classname                      CString    prop_dynamic
+origin                         CString    0.000000 108.000000 0.000000
+angles                         CString    -0.000000 -90.000000 0.000000
+scales                         CString    1.000000 1.000000 1.000000
+hammeruniqueid                 CString    2077
+_template_lump_ent_index       CString    2
+
