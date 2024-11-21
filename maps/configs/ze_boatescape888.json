@@ -1,0 +1,115 @@
+{
+    "description": "Boatescape 888",
+    "mapper": "Tenshi",
+    "stages": 1,
+    "extraStages": 0,
+    "tier": "1",
+    "tags": [
+        "laser",
+        "balls",
+        "random"
+    ],
+    "items": [],
+    "music": [
+        {
+            "name": "Sakuzyo - Aldebaran",
+            "link": "https://www.youtube.com/watch?v=061ZblXVJ9M"
+        },
+        {
+            "name": "a_hisa - kinetic dance",
+            "link": "https://www.youtube.com/watch?v=8ypP5nAwvE4"
+        },
+        {
+            "name": "花たん - アルカンシェル",
+            "link": "https://www.youtube.com/watch?v=WqzBLcufkxw"
+        },
+        {
+            "name": "Blue Archive - 優しさの記憶 / Memories of Kindness",
+            "link": "https://www.youtube.com/watch?v=LT7g8Ul-yRI"
+        },
+        {
+            "name": "SawanoHiroyuki[nZk]:mizuki - Avid",
+            "link": "https://www.youtube.com/watch?v=YGOX7Tj0dMY"
+        },
+        {
+            "name": "ReoNa - ANIMA",
+            "link": "https://www.youtube.com/watch?v=Qo_4XqKwrSM"
+        },
+        {
+            "name": "amazarashi - kyoukaisen",
+            "link": "https://www.youtube.com/watch?v=gB3gUq5A1W0"
+        },
+        {
+            "name": "Final Fantasy XIV - Athena, The Tireless One",
+            "link": "https://www.youtube.com/watch?v=QaIdk-fpevk"
+        },
+        {
+            "name": "Syrufit - Jump!",
+            "link": "https://www.youtube.com/watch?v=Gar78UpefXI"
+        },
+        {
+            "name": "EFS - 永遠の花が降る",
+            "link": "https://www.youtube.com/watch?v=bcXqvNkcbKI"
+        },
+        {
+            "name": "Yonder Voice - Flowery Moonlit Nigh",
+            "link": "https://www.youtube.com/watch?v=7LthTzz26Hc"
+        },
+        {
+            "name": "SawanoHiroyuki[nZk] - FAKEit",
+            "link": "https://www.youtube.com/watch?v=a_iU8YeH944"
+        },
+        {
+            "name": "KAF - You call it the world",
+            "link": "https://www.youtube.com/watch?v=w6eWno3iAjk"
+        },
+        {
+            "name": "東方 Vocal - Spring Comes Along",
+            "link": "https://www.youtube.com/watch?v=FV7pX5VSoTo"
+        },
+        {
+            "name": "Mayuiro - sajou no hana",
+            "link": "https://www.youtube.com/watch?v=zbd5p5LCGBY"
+        },
+        {
+            "name": "SawanoHiroyuki[nZk] - Unti-L 100S-R2",
+            "link": "https://www.youtube.com/watch?v=ij7VnIkT44E"
+        },
+        {
+            "name": "Aimer - wavy flow",
+            "link": "https://www.youtube.com/watch?v=tjJFF8NMXXk"
+        },
+        {
+            "name": "NieR: Automata - Grandma Destruction",
+            "link": "https://www.youtube.com/watch?v=tDHRpWNq2-s"
+        },
+        {
+            "name": "Lazerhawk - Arrival",
+            "link": "https://www.youtube.com/watch?v=pOpkzF1FnuM"
+        },
+        {
+            "name": "AvEtaDeltaV & Lyvia - In_sensibilitv",
+            "link": "https://www.youtube.com/watch?v=0yYEUaBNnYw"
+        },
+        {
+            "name": "NeLiME - Leviathan",
+            "link": "https://www.youtube.com/watch?v=k_XVi7gE_Gs"
+        },
+        {
+            "name": "sakuzyo - Neurotoxin",
+            "link": "https://www.youtube.com/watch?v=Msfsal5EJqI"
+        },
+        {
+            "name": "Feryquitous - Ran",
+            "link": "https://www.youtube.com/watch?v=5fLkZwUtNZU"
+        },
+        {
+            "name": "We Are All Astronauts - Violent Delights",
+            "link": "https://www.youtube.com/watch?v=amRoh96Z2to"
+        },
+        {
+            "name": "Tales Runner OST - Survival",
+            "link": "https://www.youtube.com/watch?v=AxIQpWnVZzY"
+        }
+    ]
+}
