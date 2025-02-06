@@ -1,0 +1,49 @@
+{
+    "description": "Star Wars Death Star",
+    "mapper": "FreeZe",
+    "stages": 1,
+    "extraStages": 0,
+    "tier": "1",
+    "tags": [
+        "secrets",
+        "items"
+    ],
+    "items": [
+        {
+            "name": "Blue Lightsaber",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 20,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Red Lightsaber",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 20,
+                    "maxuses": 0
+                }
+            ]
+        }
+    ],
+    "music": [
+        {
+            "name": "Star Wars: The Phantom Menace OST - Augies Great Municipal Band",
+            "link": "https://www.youtube.com/watch?v=DqLSBS8E7Do"
+        },
+        {
+            "name": "John Williams - Cantina Band",
+            "link": "https://www.youtube.com/watch?v=EsvfptdFXf4"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "description": "Surf Vortex",
+    "mapper": "reflelia",
+    "stages": 1,
+    "extraStages": 0,
+    "tier": "1",
+    "tags": [
+        "surf",
+        "laser",
+        "secrets",
+        "items"
+    ],
+    "items": [
+        {
+            "name": "Wall",
+            "description": "Obstruct way",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 3,
+                    "cooldown": 0,
+                    "maxuses": 1
+                }
+            ]
+        }
+    ],
+    "music": [
+        {
+            "name": "BlackY - ΑΩ",
+            "link": "https://www.youtube.com/watch?v=SkDpTOFvpWg"
+        },
+        {
+            "name": "xi - Anima",
+            "link": "https://www.youtube.com/watch?v=FQs9cV0jycg"
+        },
+        {
+            "name": "xi - Grand Chariot",
+            "link": "https://www.youtube.com/watch?v=73TXOKga1og"
+        },
+        {
+            "name": "Kanome Sano - crêpe suzette",
+            "link": "https://www.youtube.com/watch?v=5LJGcsNOcQg"
+        },
+        {
+            "name": "BlackY - Paradission",
+            "link": "https://www.youtube.com/watch?v=SKe56U8QJjA"
+        },
+        {
+            "name": "IckPo - Happy Sensation",
+            "link": "https://www.youtube.com/watch?v=v5Ryv6V1y6k"
+        },
+        {
+            "name": "COOKIE MONSTERS - Witch in Sweetsland",
+            "link": "https://www.youtube.com/watch?v=Hhk9koZi3g0"
+        },
+        {
+            "name": "Sanaas & Hurce - Twinkle Wink",
+            "link": "https://www.youtube.com/watch?v=V6G6d8qqMfI"
+        },
+        {
+            "name": "TAG - ZEPHYRANTHES",
+            "link": "https://www.youtube.com/watch?v=vCEdk-vIaZw"
+        }
+    ]
+}

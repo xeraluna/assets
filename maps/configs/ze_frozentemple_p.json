@@ -1,0 +1,29 @@
+{
+    "description": "Frozen Temple",
+    "mapper": "George",
+    "stages": 1,
+    "extraStages": 0,
+    "tier": "2",
+    "tags": [
+        "bosses"
+    ],
+    "items": [],
+    "music": [
+        {
+            "name": "Granblue Fantasy OST - Leviathan Magna (Omega)",
+            "link": "https://youtu.be/qQ5TBh5Qkdk?si=jZFpmeB0aGJbTxaW"
+        },
+        {
+            "name": "Granblue Fantasy OST - Runaway",
+            "link": "https://youtu.be/k01gX-OLyYg?si=0uCTfv3yVoItBLla"
+        },
+        {
+            "name": "Granblue Fantasy OST - Nalhegrande",
+            "link": "https://youtu.be/aHShvBVNVps?si=7C6D0yrnvhHoHPsk"
+        },
+        {
+            "name": "Granblue Fantasy Versus Extract - Battle 5 (Tower of Babel)",
+            "link": "https://youtu.be/I6vqmAuOW-Y?si=0ctgEwX5JP7T9gXO"
+        }
+    ]
+}

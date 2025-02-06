@@ -1,0 +1,88 @@
+{
+    "description": "Grey Cube Map",
+    "mapper": "Kune",
+    "stages": 3,
+    "extraStages": 1,
+    "tier": "3",
+    "tags": [
+        "bosses",
+        "grey",
+        "items"
+    ],
+    "items": [
+        {
+            "name": "Outline",
+            "description": "A slow healing pool around the user.",
+            "usage": []
+        },
+        {
+            "name": "Zombie Slow 1",
+            "description": "Right click to summon a particle that slows human.",
+            "usage": []
+        },
+        {
+            "name": "Zombie Slow 2",
+            "description": "Right click to summon a slow particles that slows human.",
+            "usage": []
+        },
+        {
+            "name": "Zombie Speed",
+            "description": "Increase the user speed for a brief moment.",
+            "usage": []
+        }
+    ],
+    "music": [
+        {
+            "name": "REVOLVER360 RE:ACTOR OST - Re-Sidence",
+            "link": "https://www.youtube.com/watch?v=bqqIIUVg8Nc"
+        },
+        {
+            "name": "onoken - F-mine",
+            "link": "https://www.youtube.com/watch?v=IYby3uKbOow"
+        },
+        {
+            "name": "RADIAL :II Endroll - Feryquitous",
+            "link": "https://www.youtube.com/watch?v=-AeQrVQ9PaQ"
+        },
+        {
+            "name": "削除 - Agiel",
+            "link": "https://www.youtube.com/watch?v=lVaxS42VRXs"
+        },
+        {
+            "name": "a_hisa - Anhedonia",
+            "link": "https://www.youtube.com/watch?v=Fh293AC19yY"
+        },
+        {
+            "name": "litmus* as Ester - Dizzolve",
+            "link": "https://www.youtube.com/watch?v=UNpy_Uj5SiI"
+        },
+        {
+            "name": "TaQ - era",
+            "link": "https://www.youtube.com/watch?v=6HznCzbzwZM"
+        },
+        {
+            "name": "Nhelv / Silentroom × 駿",
+            "link": "https://www.youtube.com/watch?v=XtXRvEsWzQo"
+        },
+        {
+            "name": "【Wing Of Winds】Sig - 超越へのレゾナンス(Code: Transendence)",
+            "link": "https://soundcloud.com/bene-paste/sig_resonance_to_transcendence"
+        },
+        {
+            "name": "kanone - CO5M1C R4ILR0AD",
+            "link": "https://www.youtube.com/watch?v=MSkcd7kLiUU"
+        },
+        {
+            "name": "kanone - NeutrΦn Reaper",
+            "link": "https://www.youtube.com/watch?v=T0s4JTyOBXo"
+        },
+        {
+            "name": "無人区 - Vacuum Track",
+            "link": "https://www.youtube.com/watch?v=1pS7H0idJok"
+        },
+        {
+            "name": "t+pazolite - Tempestissimo",
+            "link": "https://www.youtube.com/watch?v=Plu8_rCyaG4"
+        }
+    ]
+}

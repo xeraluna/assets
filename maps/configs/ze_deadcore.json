@@ -1,0 +1,136 @@
+{
+    "description": "Deadcore",
+    "mapper": " Airvulpes",
+    "stages": 4,
+    "extraStages": 1,
+    "tier": "4",
+    "tags": [
+        "bosses",
+        "laser",
+        "balls",
+        "items"
+    ],
+    "items": [
+        {
+            "name": "Cannon 1",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 1,
+                    "cooldown": 0,
+                    "maxuses": 0
+                },
+                {
+                    "description": "",
+                    "type": "counter",
+                    "mode": 7
+                }
+            ]
+        },
+        {
+            "name": "Cannon 2",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 1,
+                    "cooldown": 0,
+                    "maxuses": 0
+                },
+                {
+                    "description": "",
+                    "type": "counter",
+                    "mode": 7
+                }
+            ]
+        },
+        {
+            "name": "Cannon 3",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 1,
+                    "cooldown": 0,
+                    "maxuses": 0
+                },
+                {
+                    "description": "",
+                    "type": "counter",
+                    "mode": 6
+                }
+            ]
+        }
+    ],
+    "music": [
+        {
+            "name": "xi - Niflheimr",
+            "link": "https://www.youtube.com/watch?v=W6iPHHsyd-0"
+        },
+        {
+            "name": "Cytus - Green Eyes",
+            "link": "https://www.youtube.com/watch?v=4x-mk2Ik4ns"
+        },
+        {
+            "name": "a_hisa - Anhedonia",
+            "link": "https://www.youtube.com/watch?v=Fh293AC19yY"
+        },
+        {
+            "name": "AcuticNotes - Roaris",
+            "link": "https://www.youtube.com/watch?v=H6Iq0Mh0tEY"
+        },
+        {
+            "name": "Persona - Area184 -Platinum Mix-",
+            "link": "https://www.youtube.com/watch?v=VtLU9MS-GHY"
+        },
+        {
+            "name": "Sakuzyo - AXION",
+            "link": "https://www.youtube.com/watch?v=DA3hOQ7d8qU"
+        },
+        {
+            "name": "Yuri Yuzriha - Cor puella",
+            "link": "https://www.youtube.com/watch?v=QKQoqeH_8jM"
+        },
+        {
+            "name": "There Came an Echo OST - LAX",
+            "link": "https://www.youtube.com/watch?v=9NCfih31l-w"
+        },
+        {
+            "name": "Yuri Yuzriha - At The Distant World of Stars",
+            "link": "https://www.youtube.com/watch?v=QKQoqeH_8jM"
+        },
+        {
+            "name": "Sonic Species - The Force",
+            "link": "https://www.youtube.com/watch?v=h4mNTo2ASrM"
+        },
+        {
+            "name": "Cytus - Galaxy Collapse",
+            "link": "https://www.youtube.com/watch?v=LIdSGPuORfc"
+        },
+        {
+            "name": "Arnaud Noble & Aymeric Schwartz - End Of Line (Main Menu Theme)",
+            "link": "https://www.youtube.com/watch?v=EM57uUWPBW4"
+        },
+        {
+            "name": "Yugo Kanno - The System Holds Justice at Gunpoint",
+            "link": "https://www.youtube.com/watch?v=3V2gd4itdYY"
+        },
+        {
+            "name": "Yugo Kanno - PSYCHO-PASS",
+            "link": "https://www.youtube.com/watch?v=rKI7F1hhWSo"
+        },
+        {
+            "name": "EGOIST - Namae no Nai Kaibutsu (Instrumental)",
+            "link": "https://www.youtube.com/watch?v=-H-_65rzHXI"
+        },
+        {
+            "name": "EGOIST - Namae no Nai Kaibutsu ",
+            "link": "https://www.youtube.com/watch?v=pS_OEmjIRxo"
+        }
+        
+    ]
+}

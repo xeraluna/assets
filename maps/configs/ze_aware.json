@@ -1,0 +1,47 @@
+{
+    "description": "Aware",
+    "mapper": "Maqu",
+    "stages": 3,
+    "extraStages": 0,
+    "tier": "3",
+    "tags": [
+        "bosses",
+        "laser",
+        "balls"
+    ],
+    "items": [],
+    "music": [
+        {
+            "name": "Feryquitous - Percel of CYAN",
+            "link": "https://youtu.be/ahHTzD3b-fA?si=8ZtuZ_qczBigD3JI"
+        },
+        {
+            "name": "Keiichi Okabe - Fortress of Lies",
+            "link": "https://youtu.be/0Vcoh3KgXCk?si=3qoRJcHz_8WTC9z2"
+        },
+        {
+            "name": "Feryquitous - ALiUS",
+            "link": "https://youtu.be/CRNbIXhRQBs?si=dhTdUG-esTiGmWG0"
+        },
+        {
+            "name": "Feryquitous - Maquitous",
+            "link": "https://youtu.be/bDMhGSutctE?si=5EReL4RMKl06Yu9h"
+        },
+        {
+            "name": "Yuni Minami - Kanagawa Cyber Culvert",
+            "link": "https://youtu.be/ImUiRy7bV7Q?si=ub1YXja_cujep1nE"
+        },
+        {
+            "name": "Taishi - All for the Time",
+            "link": "https://youtu.be/NkJ_YGBuJp8?si=kPO79pkclGFAMLm6"
+        },
+        {
+            "name": "Keiichi Okabe - 友歌/ガブリエル",
+            "link": "https://youtu.be/7oIcPfMPIAE?si=OHSst8GxXseiuHJy"
+        },
+        {
+            "name": "Feryquitous - Ran",
+            "link": "https://youtu.be/5fLkZwUtNZU?si=NfQPmWJtkjae6b6Z"
+        }
+    ]
+}

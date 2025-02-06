@@ -1,0 +1,433 @@
+{
+    "description": "Last Man Standing",
+    "mapper": "Hannibal",
+    "stages": 10,
+    "extraStages": 0,
+    "tier": "4",
+    "tags": [
+        "bosses",
+        "items"
+    ],
+    "items": [
+        {
+            "name": "Prototype Flamethrower",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 1,
+                    "cooldown": 0,
+                    "maxuses": 0
+                },
+                {
+                    "description": "",
+                    "type": "counter",
+                    "mode": 6
+                }
+            ]
+        },
+        {
+            "name": "Fuel Can",
+            "description": "",
+            "usage": []
+        },
+        {
+            "name": "Zombie Shockwave",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 7,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Antlion",
+            "description": "",
+            "usage": []
+        },
+        {
+            "name": "Immunizer Backpack",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 4,
+                    "cooldown": 20,
+                    "maxuses": 1
+                }
+            ]
+        },
+        {
+            "name": "Unlimited Ammo",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 3,
+                    "cooldown": 0,
+                    "maxuses": 1
+                }
+            ]
+        },
+        {
+            "name": "Hyperboost",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 4,
+                    "cooldown": 48,
+                    "maxuses": 1
+                }
+            ]
+        },
+        {
+            "name": "Immunizer Weapon",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 1,
+                    "cooldown": 0,
+                    "maxuses": 0
+                },
+                {
+                    "description": "",
+                    "type": "counter",
+                    "mode": 6
+                }
+            ]
+        },
+        {
+            "name": "Zero Gravity",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 30,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Mutator Backpack",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 10,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Portal Gun",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 1,
+                    "cooldown": 0,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Thunder Gun",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 3,
+                    "cooldown": 0,
+                    "maxuses": 4
+                }
+            ]
+        },
+        {
+            "name": "Juggernaut",
+            "description": "",
+            "usage": []
+        },
+        {
+            "name": "Soldier NPC",
+            "description": "",
+            "usage": []
+        },
+        {
+            "name": "Zombie Jumper",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 5,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Vortigaunt",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 5,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Freezer",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 25,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Mines",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 3,
+                    "cooldown": 0,
+                    "maxuses": 16
+                }
+            ]
+        },
+        {
+            "name": "Zombie Summoner",
+            "description": "",
+            "usage": []
+        },
+        {
+            "name": "Zombie Predator",
+            "description": "",
+            "usage": []
+        },
+        {
+            "name": "M60 Minigun",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 1,
+                    "cooldown": 0,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Gauss Beam Rifle",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 45,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Tank",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "game_ui",
+                    "mode": 1,
+                    "cooldown": 0,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Turret",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 1,
+                    "cooldown": 0,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Alma",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 15,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Alex Mercer",
+            "description": "",
+            "usage": []
+        },
+        {
+            "name": "Mech",
+            "description": "",
+            "usage": []
+        },
+        {
+            "name": "Train Driver",
+            "description": "",
+            "usage": []
+        }
+    ],
+    "music": [
+        {
+            "name": "Phantom Power - Overpowered",
+            "link": "https://www.youtube.com/watch?v=nvRDAPE1Eac"
+        },
+        {
+            "name": "XCOM Enemy Unknown OST - Our Last Hope (Finale)",
+            "link": "https://www.youtube.com/watch?v=TBiZu6dGfMo"
+        },
+        {
+            "name": "Metal Gear Solid: The Twin Snakes OST - Ambush",
+            "link": "https://www.youtube.com/watch?v=qCXEL_ljLiI"
+        },
+        {
+            "name": "Halo 3 OST - Warthog Run",
+            "link": "https://www.youtube.com/watch?v=t-T6lEYJHm8"
+        },
+        {
+            "name": "Crysis Warhead OST - Train Battle Theme",
+            "link": "https://www.youtube.com/watch?v=z51solWn8Z4"
+        },
+        {
+            "name": "Damjan Mravunac - Boss Fight Strings (Serious Sam 3 OST)",
+            "link": "https://www.youtube.com/watch?v=UPbJhuAqDzk"
+        },
+        {
+            "name": "Really Slow Motion - Reborn From Ashes",
+            "link": "https://www.youtube.com/watch?v=HxJCncfuOhU"
+        },
+        {
+            "name": "Cris Velasco - Escape the Tower (ZombiU OST)",
+            "link": "https://www.youtube.com/watch?v=3IzCMtzipM4"
+        },
+        {
+            "name": "Crysis Warhead OST - Airfield 1",
+            "link": "https://www.youtube.com/watch?v=Rijwe_NFtas"
+        },
+        {
+            "name": "Call of Duty 2: Modern Warfare 2 OST - Boat Ride",
+            "link": "https://www.youtube.com/watch?v=5ns-MAji3yY"
+        },
+        {
+            "name": "SawanoHiroyuki[nZk] - 進撃st-hrn-egt20130629巨人",
+            "link": "https://www.youtube.com/watch?v=4o9_6ykX4T8"
+        },
+        {
+            "name": "Crysis Warhead OST - Airfield Hero Theme",
+            "link": "https://www.youtube.com/watch?v=1djMWs1XyK8"
+        },
+        {
+            "name": "Daft Punk - TRON Legacy (End Titles)",
+            "link": "https://www.youtube.com/watch?v=G6tuvKE6_lA"
+        },
+        {
+            "name": "Jack Wall - Suicide Mission (Mass Effect 2 OST)",
+            "link": "https://www.youtube.com/watch?v=VTsD2FjmLsw&rco=1"
+        },
+        {
+            "name": "The Bloody Beetroots - Rocksteady",
+            "link": "https://www.youtube.com/watch?v=uepBi6p904o"
+        },
+        {
+            "name": "The Prodigy - Omen",
+            "link": "https://www.youtube.com/watch?v=ySfbujeCSvI"
+        },
+        {
+            "name": "The Prodigy - Invaders Must Die",
+            "link": "https://www.youtube.com/watch?v=1T-sGC37XHE"
+        },
+        {
+            "name": "Pendulum - The Vulture",
+            "link": "https://www.youtube.com/watch?v=-NfTuf5wIfw"
+        },
+        {
+            "name": "Pendulum - Self vs Self",
+            "link": "https://www.youtube.com/watch?v=ubBT_AQxZ4c"
+        },
+        {
+            "name": "Pendulum - Immunize (ft. Liam Howlett)",
+            "link": "https://www.youtube.com/watch?v=daHsEZXERr8"
+        },
+        {
+            "name": "Linkin Park - The Catalyst (Pendulum Remix)",
+            "link": "https://www.youtube.com/watch?v=ACEwdNxdKZw"
+        },
+        {
+            "name": "The Qemists - Stompbox",
+            "link": "https://www.youtube.com/watch?v=ukXhVcJCrXA"
+        },
+        {
+            "name": "Pendulum - Crush",
+            "link": "https://www.youtube.com/watch?v=4anUYfgxyf4"
+        },
+        {
+            "name": "Pendulum - Encoder",
+            "link": "https://www.youtube.com/watch?v=dbQFh0IeZdg"
+        },
+        {
+            "name": "Pendulum - The Other Side",
+            "link": "https://www.youtube.com/watch?v=z0hwFJ1rbbU"
+        },
+        {
+            "name": "Madeon - Finale (Netsky Remix)",
+            "link": "https://www.youtube.com/watch?v=TIv-qSL2NKA"
+        },
+        {
+            "name": "Pendulum - Witchcraft x Watercolour (Mashup)",
+            "link": "https://www.youtube.com/watch?v=H6HzBxlAfxU"
+        },
+        {
+            "name": "Pendulum - The Tempest (Live at Brixton Academy)",
+            "link": "https://www.youtube.com/watch?v=_p-jQho-Mr0"
+        },
+        {
+            "name": "Imagine Dragons - On Top of the World",
+            "link": "https://www.youtube.com/watch?v=w5tWYmIOWGk"
+        }
+    ]
+}

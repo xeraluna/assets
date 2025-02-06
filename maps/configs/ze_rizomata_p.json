@@ -1,0 +1,211 @@
+{
+    "description": "Elemental Running Sim",
+    "mapper": "Airvulpes",
+    "stages": 5,
+    "extraStages": 0,
+    "tier": "3",
+    "tags": [
+        "bosses",
+        "items",
+        "itemlevels"
+    ],
+    "items": [
+        {
+            "name": "Heal",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 55,
+                    "maxuses": 0
+                },
+                {
+                    "description": "Mouse2",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 30,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Earth",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 50,
+                    "maxuses": 0
+                },
+                {
+                    "description": "Mouse2",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 10,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Water",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 50,
+                    "maxuses": 0
+                },
+                {
+                    "description": "Mouse2",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 40,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Wind",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 50,
+                    "maxuses": 0
+                },
+                {
+                    "description": "Mouse2",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 20,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Death",
+            "description": "",
+            "usage": [
+                {
+                    "description": "Mouse2",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 10,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Haste",
+            "description": "",
+            "usage": [
+                {
+                    "description": "Mouse2",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 30,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Curse",
+            "description": "",
+            "usage": [
+                {
+                    "description": "Mouse2",
+                    "type": "game_ui",
+                    "mode": 2,
+                    "cooldown": 60,
+                    "maxuses": 0
+                }
+            ]
+        }
+    ],
+    "music": [
+        {
+            "name": "Fantasy Celtic Music - Spirit of the Wild",
+            "link": "https://www.youtube.com/watch?v=g-jGHbkM8e4"
+        },
+        {
+            "name": "Fantasy Medieval Music - Rise of a Kingdom",
+            "link": "https://www.youtube.com/watch?v=ADzazbh1WG0"
+        },
+        {
+            "name": "Epic Fantasy Music - Mother Earth",
+            "link": "https://www.youtube.com/watch?v=POhigiOQxPk"
+        },
+        {
+            "name": "Ori and the Blind Forest - Escaping the Ruins",
+            "link": "https://www.youtube.com/watch?v=3z1LhUNAk0M"
+        },
+        {
+            "name": "NieR Replicant ver.1.22 OST - The Dark Colossus Destroys All",
+            "link": "https://www.youtube.com/watch?v=sh0k6SUE4Ow"
+        },
+        {
+            "name": "Ivan Torrent - Human Legacy",
+            "link": "https://www.youtube.com/watch?v=9NzlDUeS1U4"
+        },
+        {
+            "name": "Ramin Djawadi - Main Title (Game of Thrones OST)",
+            "link": "https://www.youtube.com/watch?v=eCemS3f-LDU"
+        },
+        {
+            "name": "Game of Thrones: Season 3 OST - Mhysa",
+            "link": "https://www.youtube.com/watch?v=OG55MPQjhwo"
+        },
+        {
+            "name": "NieR Replicant ver.1.22 OST - Gods Bound by Rules",
+            "link": "https://www.youtube.com/watch?v=_NwYIkPiCus"
+        },
+        {
+            "name": "Game of Thrones: Season 1 OST - Finale",
+            "link": "https://www.youtube.com/watch?v=0EF2t4hFGzo"
+        },
+        {
+            "name": "Two Steps From Hell - El Dorado (SkyWorld)",
+            "link": "https://www.youtube.com/watch?v=qiB98Wbsdlo"
+        },
+        {
+            "name": "The Island - 14 My Name Is Lincoln",
+            "link": "https://www.youtube.com/watch?v=_iu-t1n821M"
+        },
+        {
+            "name": "James Horner HD - Becoming One Of The People-Becoming One With Neytiri",
+            "link": "https://www.youtube.com/watch?v=5yR3jP_OxUU"
+        },
+        {
+            "name": "Two Steps From Hell - Clock Tower Parade",
+            "link": "https://www.youtube.com/watch?v=bAgMSK3umic"
+        },
+        {
+            "name": "NieR Replicant ver.1.22 OST - Emil Karma",
+            "link": "https://www.youtube.com/watch?v=Ui-0igeqwJU"
+        },
+        {
+            "name": "Fantasy Music - Age of Wonders",
+            "link": "https://www.youtube.com/watch?v=vIsBuFKy0YI"
+        },
+        {
+            "name": "NieR Replicant ver.1.22 OST - Kainé / Escape",
+            "link": "https://www.youtube.com/watch?v=ERxpokOo9K0"
+        },
+        {
+            "name": "NieR Gestalt Replicant OST - Deep Crimson Foe",
+            "link": "https://www.youtube.com/watch?v=2Vs1DxFK3f4"
+        },
+        {
+            "name": "NieR Replicant ver.1.22 OST - Shadowlord's Castle Roar",
+            "link": "https://www.youtube.com/watch?v=k4M7QMMr3zg"
+        }
+    ]
+}

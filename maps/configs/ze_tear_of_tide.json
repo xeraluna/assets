@@ -1,0 +1,228 @@
+{
+    "description": "Ori Ginso Tree Escape",
+    "mapper": "lopb",
+    "stages": 2,
+    "extraStages": 0,
+    "tier": "4",
+    "tags": [
+        "bosses",
+        "laser",
+        "balls",
+        "items",
+        "gimmick"
+    ],
+    "items": [
+        {
+            "name": "Heal",
+            "description": "Static healing for human up to 11HP maximum.",
+            "usage": [
+                {
+                    "description": "Mouse2 (x2)",
+                    "type": "",
+                    "mode": 2,
+                    "cooldown": 20,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Burst",
+            "description": "Pushes zombie with a smaller AOE for 2 seconds.",
+            "usage": [
+                {
+                    "description": "Mouse2 (x2)",
+                    "type": "",
+                    "mode": 2,
+                    "cooldown": 10,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Jumper",
+            "description": "Pushes you upward up to 500 units, reflecting base velocity.",
+            "usage": [
+                {
+                    "description": "Mouse2 (x2)",
+                    "type": "",
+                    "mode": 2,
+                    "cooldown": 10,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Freeze",
+            "description": "Damages and freezes zombie for up to 0.5 seconds.",
+            "usage": [
+                {
+                    "description": "Mouse2 (x2)",
+                    "type": "",
+                    "mode": 2,
+                    "cooldown": 80,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Wind",
+            "description": "Pushes zombie with a larger AOE for 5 seconds.",
+            "usage": [
+                {
+                    "description": "Mouse2 (x2)",
+                    "type": "",
+                    "mode": 2,
+                    "cooldown": 80,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Sprint",
+            "description": "Pushes you upward, reflecting current speed and direction.",
+            "usage": [
+                {
+                    "description": "Mouse2 (x2)",
+                    "type": "",
+                    "mode": 2,
+                    "cooldown": 10,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Shift",
+            "description": "Pushes you upward, reflecting current speed and direction, with slightly less effectiveness than Sprint.",
+            "usage": [
+                {
+                    "description": "Shift",
+                    "type": "",
+                    "mode": 2,
+                    "cooldown": 5,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Speed",
+            "description": "Increases zombie speed by .15 times base speed.",
+            "usage": [
+                {
+                    "description": "Mouse2 (x2)",
+                    "type": "",
+                    "mode": 2,
+                    "cooldown": 10,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Absorb",
+            "description": "Pulls human towards zombie with a static gravity pull.",
+            "usage": [
+                {
+                    "description": "Mouse2 (x2)",
+                    "type": "",
+                    "mode": 2,
+                    "cooldown": 30,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Jumper",
+            "description": "Pushes you upward up to 300 units, reflecting base velocity.",
+            "usage": [
+                {
+                    "description": "Mouse2 (x2)",
+                    "type": "",
+                    "mode": 2,
+                    "cooldown": 10,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Raid",
+            "description": "Heals zombies and increases speed by up to .4 times base speed for 5 seconds.",
+            "usage": [
+                {
+                    "description": "Mouse2 (x2)",
+                    "type": "",
+                    "mode": 2,
+                    "cooldown": 60,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Zombie Perish",
+            "description": "Kills human, similar to ZM_Warp effect.",
+            "usage": [
+                {
+                    "description": "Mouse2 (x2)",
+                    "type": "",
+                    "mode": 2,
+                    "cooldown": 80,
+                    "maxuses": 0
+                }
+            ]
+        },
+		{
+            "name": "Zombie Sprint",
+            "description": "Pushes you upward, reflecting current speed and direction.",
+            "usage": [
+                {
+                    "description": "Mouse2 (x2)",
+                    "type": "",
+                    "mode": 2,
+                    "cooldown": 10,
+                    "maxuses": 0
+                }
+            ]
+        },
+		{
+            "name": "Zombie Shift",
+            "description": "Applies AOE damage around zombie to human and cannot be used if main skill is on cooldown.",
+            "usage": [
+                {
+                    "description": "Shift",
+                    "type": "",
+                    "mode": 2,
+                    "cooldown": 3,
+                    "maxuses": 0
+                }
+            ]
+        }
+    ],
+    "music": [
+        {
+            "name": "Gareth Coker - Mora the Spider",
+            "link": "https://www.youtube.com/watch?v=AVChO2jMQM4"
+        },
+        {
+            "name": "Gareth Coker - Mora the Spider (2nd Phase Looped)",
+            "link": "https://www.youtube.com/watch?v=VRZ40QfVipA"
+        },
+        {
+            "name": "Aethoro - Riverlight (feat. vally.exe)",
+            "link": "https://www.youtube.com/watch?v=ghOBBl12qbc"
+        },
+        {
+            "name": "Gareth Coker - Dashing and Bashing",
+            "link": "https://www.youtube.com/watch?v=CMZ6PV_6QG0"
+        },
+        {
+            "name": "Crawk / くろーく - Shadowless Tree",
+            "link": "https://www.youtube.com/watch?v=EwJTtCuNAhk"
+        },
+        {
+            "name": "Gareth Coker - Restoring the Light, Facing the Dark (Extended)",
+            "link": "https://www.youtube.com/watch?v=DcuEVjS6urk"
+        },
+        {
+            "name": "Gareth Coker - Trailer (feat. Aeralie Brighton)",
+            "link": "https://www.youtube.com/watch?v=hCzrWdjxYx8"
+        }
+    ]
+}

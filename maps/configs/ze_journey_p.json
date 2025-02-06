@@ -1,0 +1,118 @@
+{
+    "description": "Journey",
+    "mapper": "Soft Serve",
+    "stages": 1,
+    "extraStages": 0,
+    "tier": "3",
+    "tags": [
+        "items",
+        "kz"
+    ],
+    "items": [
+        {
+            "name": "Abyssal Orb",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 60,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Lightning Orb",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 20,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Gust Orb",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 20,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Glacial Orb",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 20,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Divine Orb",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 60,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Burning Orb",
+            "description": "",
+            "usage": [
+                {
+                    "description": "",
+                    "type": "button",
+                    "mode": 2,
+                    "cooldown": 20,
+                    "maxuses": 0
+                }
+            ]
+        },
+        {
+            "name": "Celestial Embrace",
+            "description": "",
+            "usage": []
+        }
+    ],
+    "music": [
+        {
+            "name": "Motoi Sakuraba - Flexile Sentry",
+            "link": "https://www.youtube.com/watch?v=Vh60cMvQNgg"
+        },
+        {
+            "name": "Motoi Sakuraba - Pinwheel",
+            "link": "https://www.youtube.com/watch?v=Dw7ewRkzPGk"
+        },
+        {
+            "name": "Michiru Yamane - Prayer",
+            "link": "https://www.youtube.com/watch?v=thP7slmSOss"
+        },
+        {
+            "name": "Yuka Kitamura - Ruin Sentinel",
+            "link": "https://www.youtube.com/watch?v=KwQ5eLfhc_I"
+        },
+        {
+            "name": "Yuka Kitamura - Zallen And Lud",
+            "link": "https://www.youtube.com/watch?v=ggpjao9u7tw"
+        }
+    ]
+}
